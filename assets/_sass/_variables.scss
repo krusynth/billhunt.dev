@@ -1,0 +1,51 @@
+// This is the place to place Bootstrap's variables overrides.
+// As example you can start by importing the _variables.scss file from one of the
+// theme provided by https://bootswatch.com .
+
+$fa-font-path: '/assets/npm/@fortawesome/fontawesome-pro/webfonts/';
+
+/* Colors */
+$purple : #8255A6;
+$teal : #4BD9C2; /* #70D9A8; */
+$lemon : #F7E765;
+$sienna : #D9503C;
+$skyblue : #4ABAF7;
+$orange : #D97B36;
+$khaki : #F2E3A7;
+$white : #fffcf6;
+
+$link-color: $skyblue;
+$link-hover-color: $skyblue;
+$link-hover-decoration: none;
+
+$nav-link-hover-bg: rgba(#fff, 0.3);
+
+
+/* Fonts */
+
+$main-font: 'Raleway';
+$main-font-stack: $main-font, sans-serif; /* Raleway by Matt McInerney et al. */
+// $accent-font: 'Roboto';
+// $accent-font-stack: $accent-font, sans-serif; /* Oswald by Vernon Adams */
+$code-font: monospace;
+
+// $font-weight-normal: normal !default;
+
+// $color-main-bg: #332e2b; // Warm Charcoal
+// $color-content-bg: #fbf7ea; // Parchment
+// $color-main-text: #332e2b; // Warm Charcoal
+// $color-main-link: #086EB1;
+
+// $font-family-serif: 'Merriweather', "Times New Roman", Times, serif !default;
+// $font-family-base: $font-family-serif;
+
+// $body-bg: $color-main-bg;
+// $text-color: $color-main-text;
+// $link-color: $color-main-link;
+// $link-hover-color: lighten($link-color, 15%);
+
+// $navbar-height: 40px;
+// $navbar-default-color: inherit;
+// $navbar-default-bg: $color-content-bg;
+
+$header-height: 70px;

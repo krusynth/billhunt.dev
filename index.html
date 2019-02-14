@@ -1,0 +1,56 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="about-header">
+  <div class="block block-profile">
+    <img class="profile-photo" src="/uploads/2009/03/bill-hunt.jpg" alt="Photo of Bill Hunt" />
+
+    Bill Hunt<br>
+    Washington, DC, US
+  </div>
+  <div class="block block-description">
+    <p>
+      Mission Operations Lead at the Office of the Federal CIO, Office of Management and Budget (OMB / White House).<br>
+      Previously: USDS at the VA, Sunlight Foundation, OpenGov Foundation, etc.
+    </p>
+    <p>
+      Enthusiastic about Transparency, Civic Tech, Open Data, and Tea.
+      <a href="/about/">More about me</a>.
+    </p>
+  </div>
+</section>
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+<article>
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p class="author">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+  </p>
+  <div class="page-content">
+    {{ post.content | strip_html | truncatewords:75 }}
+  </div>
+  <a href="{{ post.url }}">Read More</a>
+</article>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

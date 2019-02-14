@@ -1,0 +1,24 @@
+{
+  "name": "krues8dr",
+  "version": "4.0.0",
+  "description": "krues8dr theme for jekyll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krues8dr/krues8dr.com.git"
+  },
+  "author": "krues8dr",
+  "license": "None",
+  "bugs": {
+    "url": "https://github.com/krues8dr/krues8dr.com/issues"
+  },
+  "homepage": "https://github.com/krues8dr/krues8dr.com#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.7.2",
+    "bootstrap": "^4.3.0",
+    "jquery": "3"
+  }
+}

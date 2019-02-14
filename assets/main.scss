@@ -1,0 +1,262 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "_sass/variables";
+@import "npm/bootstrap/scss/bootstrap";
+@import "_sass/bootstrap_customization";
+@import "_sass/web-fonts";
+@import "npm/@fortawesome/fontawesome-pro/scss/fontawesome";
+// @import "npm/@fortawesome/fontawesome-pro/scss/solid.scss";
+// @import "npm/@fortawesome/fontawesome-pro/scss/light.scss";
+@import "npm/@fortawesome/fontawesome-pro/scss/regular.scss";
+@import "npm/@fortawesome/fontawesome-pro/scss/brands.scss";
+
+@include web-fonts(
+ // ($accent-font: ("400")),
+ ($main-font: ("400", "400 italic", "700", "700 italic"))
+);
+
+@mixin text-outline($color: #000) {
+  text-shadow:
+    -1px -1px 0 $color,
+    1px -1px 0 $color,
+    -1px 1px 0 $color,
+    1px 1px 0 $color;
+}
+
+body {
+  margin-top: $header-height;
+  background: #d9d5cd url(/assets/images/bedge_grunge.jpg);
+  font-family: $main-font-stack;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $main-font-stack;
+  font-weight: 400;
+  a {
+    color: inherit;
+  }
+}
+
+input {
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: .85em;
+}
+
+a {
+  color: $skyblue;
+  border-bottom: 1px dotted $skyblue;
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  padding: 0px;
+  margin: 0 1rem 0 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+
+  a:hover {
+    background: $nav-link-hover-bg;
+  }
+}
+
+.nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-toggler {
+  padding: 0.5rem 0.25rem 0rem;
+}
+
+.navbar-toggler-icon {
+  @extend .far;
+  @extend .fa-bars;
+  color: $white;
+}
+
+code {
+  font-family: $code-font;
+}
+
+.content {
+  @extend .container;
+  background: $white;
+  margin-bottom: 4rem;
+}
+
+.example {
+  display: none;
+}
+
+.example.active {
+  display: block;
+}
+
+.content article {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 15px;
+
+  .about-header & {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.about-header {
+  @extend .row;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #999;
+
+  .block-profile {
+    @extend .col-md-3;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .block-description {
+    @extend .col-md-9;
+    font-size: 0.9rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+}
+
+/**
+ * Navbar
+ */
+
+.navbar {
+  background: rgba($teal, 0.9);
+  padding-top: 0;
+  padding-bottom: 0;
+
+  a {
+    color: white;
+    border-bottom: none;
+  }
+
+  .navbar-toggle {
+    border: 1px solid $white;
+    .icon-bar {
+      background-color: $white;
+    }
+  }
+}
+
+.nav-pages {
+  flex-grow: 1;
+}
+
+.nav-social {
+  margin-left: auto !important;
+
+  .icon {
+    @extend .fab;
+    margin-right: 0.5rem;
+  }
+  .linkedin .icon {
+    @extend .fa-linkedin;
+  }
+  .github .icon {
+    @extend .fa-github;
+  }
+  .twitter .icon {
+    @extend .fa-twitter;
+  }
+  .spotify .icon {
+    @extend .fa-spotify;
+  }
+}
+
+.navbar-expand-lg .navbar-collapse {
+
+}
+
+.collapse:not(.collapsing):not(.show) {
+  .nav-social {
+    a {
+      font-size: 24px;
+      width: 60px;
+      display: inline-block;
+      position: relative;
+      height: 2.5rem;
+      overflow: hidden;
+      text-align: center;
+      .icon {
+        padding-top: 12px;
+      }
+
+      span:not(.icon) {
+        width: 100%;
+        font-size: 12px;
+        @include text-outline(darken($teal, 20%));
+        transition: top 0.25s ease-in;
+        position: absolute;
+        left: 0;
+        top: 45px;
+      }
+      &:hover span:not(.icon) {
+        top: 11px;
+      }
+    }
+  }
+}
+
+/**
+ * Footer
+ */
+
+ .page-footer {
+  @extend .container;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: $sienna;
+  color: $white;
+  font-size: 0.85em;
+
+  .copyright, .site-generator {
+    @extend .col-md-6;
+  }
+
+  .site-generator {
+    text-align: right;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+/**
+ * Pagination
+ */
+
+.pagination {
+  span.previous {
+    display: none;
+  }
+
+  .page_number, .previous {
+    margin-right: 1rem;
+  }
+}

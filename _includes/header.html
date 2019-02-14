@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg fixed-top container">
+  <div class="container-fluid">
+    <a class="navbar-brand" rel="author" href="/">{{ site.title | escape }}</a>
+
+    {%- assign page_paths = site.header_pages -%}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav nav-pages">
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          </li>
+          {%- endif -%}
+        {% endfor -%}
+      </ul>
+      <ul class="nav navbar-nav nav-social">
+        <li class="linkedin">
+          <a href="http://www.linkedin.com/in/krues8dr/" title="LinkedIn"><span class="icon"></span><span>LinkedIn</span></a>
+        </li>
+        <li class="github">
+          <a href="https://github.com/krues8dr?tab=repositories" title="GitHub"><span class="icon"></span><span>GitHub</span></a>
+        </li>
+        <li class="twitter">
+          <a href="https://twitter.com/krues8dr" title="Twitter"><span class="icon"></span><span>Twitter</span></a>
+        </li>
+        <li class="spotify">
+          <a href="http://open.spotify.com/user/krues8dr" title="Spotify"><span class="icon"></span><span>Spotify</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
