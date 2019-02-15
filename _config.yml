@@ -50,3 +50,5 @@ exclude:
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
+  - yarn.lock
+  - yarn-error.log
