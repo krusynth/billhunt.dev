@@ -2,15 +2,15 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "_sass/variables";
-@import "npm/bootstrap/scss/bootstrap";
-@import "_sass/bootstrap_customization";
-@import "_sass/web-fonts";
-@import "npm/@fortawesome/fontawesome-pro/scss/fontawesome";
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap_customization";
+@import "web-fonts";
+@import "@fortawesome/fontawesome-pro/scss/fontawesome";
 // @import "npm/@fortawesome/fontawesome-pro/scss/solid.scss";
 // @import "npm/@fortawesome/fontawesome-pro/scss/light.scss";
-@import "npm/@fortawesome/fontawesome-pro/scss/regular.scss";
-@import "npm/@fortawesome/fontawesome-pro/scss/brands.scss";
+@import "@fortawesome/fontawesome-pro/scss/regular.scss";
+@import "@fortawesome/fontawesome-pro/scss/brands.scss";
 
 @include web-fonts(
  // ($accent-font: ("400")),

@@ -11,7 +11,7 @@ permalink: /blog/2017/06/12/the-myth-of-the-flat-organization/
 
 <div class="section-content">
   <div class="section-inner sectionLayout--insetColumn">
-    <img class="size-full wp-image-613" src="/uploads/2017/08/1-oR4vIZ3Sl7iSLacSJV4AZQ.jpeg" alt="" width="1000" height="683" srcset="https://krues8dr.com/wp-content/uploads/2017/08/1-oR4vIZ3Sl7iSLacSJV4AZQ.jpeg 1000w, https://krues8dr.com/wp-content/uploads/2017/08/1-oR4vIZ3Sl7iSLacSJV4AZQ-300x205.jpeg 300w, https://krues8dr.com/wp-content/uploads/2017/08/1-oR4vIZ3Sl7iSLacSJV4AZQ-768x525.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" />
+    <img class="size-full wp-image-613" src="/uploads/2017/08/1-oR4vIZ3Sl7iSLacSJV4AZQ.jpeg" alt=""  />
 
     <p class="wp-caption-text">
       &#8220;Floor 1997–2000&#8221; by artist Do-Ho Suh

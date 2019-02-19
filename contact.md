@@ -3,7 +3,7 @@ title: Contact
 author: Bill Hunt
 type: page
 date: 2016-08-08T13:53:45+00:00
-
+permalink: /contact/
 ---
 &nbsp;
 

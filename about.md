@@ -3,7 +3,7 @@ title: About
 author: Bill Hunt
 type: page
 date: 2009-03-16T19:16:43+00:00
-
+permalink: /about/
 ---
 
 <img class="profile-photo" src="/uploads/2009/03/bill-hunt.jpg" alt="Photo of Bill Hunt"/>
@@ -16,7 +16,7 @@ date: 2009-03-16T19:16:43+00:00
 
 &nbsp;
 
-Currently I&#8217;m the **Mission Operations Lead** at the **Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB / White House)**, where I oversee Federal policy efforts on cloud & data centers, shared services, and workforce reskilling. Within my first year at OFCIO, I distinguished myself through my work as architect of the **Federal Cloud Computing Strategy (Cloud Smart)**, and for which I received the Professional Achievement Award from OMB, an honor usually reserved for three years of exceptional service.
+Currently I&#8217;m the **Mission Operations Lead** at the **Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB / White House)**, where I oversee Federal policy efforts on cloud & data centers, shared services, and workforce reskilling. Within my first year at OFCIO, I distinguished myself through my work as architect of the [**Federal Cloud Computing Strategy (Cloud Smart)**](https://cloud.cio.gov/strategy/), and for which I received the Professional Achievement Award from OMB, an honor usually reserved for three years of exceptional service.
 
 [Kat Duffy][1] and I were named Legal Hackers of the Year 2016 by [DC Legal Hackers][2] for our work at Sunlight Labs. I was also an original member of the [Free Law Founders][3], working on open law, legislation, data policy, and open standards. I&#8217;m also a core developer on [The State Decoded][4], an open source legal data platform.
 

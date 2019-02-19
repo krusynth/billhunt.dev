@@ -30,6 +30,11 @@ paginate_path: "/blog/:num/"
 sass:
     sass_dir: assets
 
+sass:
+    load_paths:
+        - assets/_sass
+        - node_modules
+
 # Build settings
 plugins:
   - jekyll-feed

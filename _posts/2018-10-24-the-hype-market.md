@@ -13,27 +13,27 @@ permalink: /blog/2018/10/24/the-hype-market/
 <span style="font-weight: 400;">Most businesses and government services aim to connect a person’s intention to an outcome. Whether we’re helping someone call a restaurant to make a reservation, or helping a Veteran to understand their benefits, we’re aiding someone to solve a problem. In short, we’re bridging the gap between a customer and a service.</span>
 
 
-<img class="alignnone size-full wp-image-1241" src="/uploads/2018/10/1-user-service.png" alt="" width="320" height="200" srcset="https://krues8dr.com/wp-content/uploads/2018/10/1-user-service.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/1-user-service-300x188.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1241" src="/uploads/2018/10/1-user-service.png" alt=""  />
 
 <span style="font-weight: 400;">Technology is introduced into the process of delivering a service to a customer to automate one or more steps, it effectively shortens the gap. In general, technology is not seamless in this process &#8211; that is, there are almost always steps between the customer’s intent and the resulting action that have to be filled through human intervention or additional services. You can’t think “pizza” and have a pizza instantly appear  &#8211; but an app to order pizza removes some of the burden of calling the pizza place and having them take your order, prepare it, and deliver it to your doorstep.</span>
 
 
-<img class="alignnone size-full wp-image-1242" src="/uploads/2018/10/2-technology.png" alt="" width="320" height="200" srcset="https://krues8dr.com/wp-content/uploads/2018/10/2-technology.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/2-technology-300x188.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1242" src="/uploads/2018/10/2-technology.png" />
 
 <span style="font-weight: 400;">Today there are new automation tools available to practitioners who want to create access to services through technology. If you want to create a service so that someone is able to order a pizza, you can set up a website or a mobile app to do so, because there’s already computers, and the Internet, and web browsers on the computers, and protocols for everything to talk to each other. So for anyone trying to solve a problem, the real value is in making the process simpler or easier through </span>_<span style="font-weight: 400;">further</span>_ _<span style="font-weight: 400;">automation</span>_ <span style="font-weight: 400;">&#8211; say, having your website be able to actually show the order automatically at the pizza place on a screen, or automatically send you a text when the pizza is out for delivery with an ETA. Based on the previous diagram, the goal is to expand the boundaries of technology to further fill the gaps between the customer and the service.</span>
 
 
-<img class="alignnone size-full wp-image-1243" src="/uploads/2018/10/3-potential-value.png" alt="" width="320" height="200" srcset="https://krues8dr.com/wp-content/uploads/2018/10/3-potential-value.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/3-potential-value-300x188.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1243" src="/uploads/2018/10/3-potential-value.png" />
 
 <span style="font-weight: 400;">However, that gap is not where the technology industry focus most of its time and money. Software engineers are spending more and more of our resources mucking about with tools that are simply thinner and thinner slices of micromanagement around already-solved problems. In practice, the industry is just creating additional layers that are largely unnecessary for the end customer.</span>
 
 
-<img class="alignnone size-full wp-image-1244" src="/uploads/2018/10/4-complexity.png" alt="" width="320" height="200" srcset="https://krues8dr.com/wp-content/uploads/2018/10/4-complexity.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/4-complexity-300x188.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1244" src="/uploads/2018/10/4-complexity.png" />
 
 <span style="font-weight: 400;">Here’s a real world example, again using a website.  In 1998, it took a few hours to set up a website. Most of our time was spent on designing it, then hand-coding HTML to post on a webserver.  As our tools evolved, the time to perform these steps decreased, but the complexity of the tools themselves has increased dramatically. Today, it can take ten times as long to create a basic website as it did decades ago.</span>
 
 
-<img class="alignnone size-full wp-image-1245" src="/uploads/2018/10/5-website.png" alt="" width="600" height="400" srcset="https://krues8dr.com/wp-content/uploads/2018/10/5-website.png 600w, https://krues8dr.com/wp-content/uploads/2018/10/5-website-300x200.png 300w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="alignnone size-full wp-image-1245" src="/uploads/2018/10/5-website.png" />
 
 <span style="font-weight: 400;">After twenty years, technology has moved a little closer to the person requesting the information due to improved User Experience, and the end user can get to the information a little faster and easier, but mostly there’s lots of additional complexity in the middle layers. These middle layers have created a very rich market of expensive services and skills based on these bleeding-edge technologies.</span>
 
@@ -42,27 +42,27 @@ permalink: /blog/2018/10/24/the-hype-market/
 <span style="font-weight: 400;">As a result, the world has seen the rise of numerous solutions with overblown promises of impact, fueled by speculation of venture capital. Blockchain (or distributed ledgers) is a popular example, which has elevated itself with an innate brand of “value” due to being associated with Bitcoin, a popular cryptocurrency using the technology. </span>
 
 
-<img class="alignnone size-full wp-image-1246" src="/uploads/2018/10/bc-1-traditional.png" alt="" width="320" height="245" srcset="https://krues8dr.com/wp-content/uploads/2018/10/bc-1-traditional.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/bc-1-traditional-300x230.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1246" src="/uploads/2018/10/bc-1-traditional.png" />
 
 <span style="font-weight: 400;">Most computer systems take data from one person, put it into a storage location (usually a database), and then output it for someone else’s review. One problem that people have with these systems is that there’s no way to validate that the data submitted by the first person is the same as what the person on the other end receives.</span>
 
 
-<img class="alignnone size-full wp-image-1247" src="/uploads/2018/10/bc-2-vulnerabilities.png" alt="" width="320" height="245" srcset="https://krues8dr.com/wp-content/uploads/2018/10/bc-2-vulnerabilities.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/bc-2-vulnerabilities-300x230.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1247" src="/uploads/2018/10/bc-2-vulnerabilities.png" />
 
 <span style="font-weight: 400;">There are numerous points along that path where a malicious actor &#8211; or broken process &#8211; can modify or corrupt the data. That can be a hacker exploiting a vulnerable system, data corruption due to failed hardware, or any number of other failures. The submitting person could also just be lying about the data, or the person receiving it could lie about the results. </span>
 
 
-<img class="alignnone size-full wp-image-1248" src="/uploads/2018/10/bc-3-think.png" alt="" width="320" height="245" srcset="https://krues8dr.com/wp-content/uploads/2018/10/bc-3-think.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/bc-3-think-300x230.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1248" src="/uploads/2018/10/bc-3-think.png" />
 
 <span style="font-weight: 400;">Companies selling blockchain as a solution make the promise that these points of failure can be eliminated by having an authoritative record &#8211; or ledger &#8211; of all changes to the data. However, in reality, blockchain fulfills only a small piece of this process.</span>
 
 
-<img class="alignnone size-full wp-image-1249" src="/uploads/2018/10/bc-4-real.png" alt="" width="320" height="245" srcset="https://krues8dr.com/wp-content/uploads/2018/10/bc-4-real.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/bc-4-real-300x230.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1249" src="/uploads/2018/10/bc-4-real.png" />
 
 <span style="font-weight: 400;">In most cases, it simply replaces the database with another type of database, which provides additional checks. This still doesn’t solve the original problem of ensuring that the data is valid on both ends.</span>
 
 
-<img class="alignnone size-full wp-image-1250" src="/uploads/2018/10/bc-5-vulnerabilities.png" alt="" width="320" height="245" srcset="https://krues8dr.com/wp-content/uploads/2018/10/bc-5-vulnerabilities.png 320w, https://krues8dr.com/wp-content/uploads/2018/10/bc-5-vulnerabilities-300x230.png 300w" sizes="(max-width: 320px) 100vw, 320px" />
+<img class="alignnone size-full wp-image-1250" src="/uploads/2018/10/bc-5-vulnerabilities.png" />
 
 <span style="font-weight: 400;">To visualize this, let’s say I have four apples.  I write down on paper that I have six apples. You read the paper and double check that I do in fact say that I have six apples. You have no proof I ever had six apples, only the promise that I did.  You could then go report that I have eight apples and that you double-checked that fact and you promise that it’s true. This is how blockchain gives a false sense of security.</span>
 
