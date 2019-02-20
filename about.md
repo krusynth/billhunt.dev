@@ -37,7 +37,7 @@ Previously, I worked as Digital Services Expert for the [United States Digital
  [3]: http://freelawfounders.org/
  [4]: https://www.statedecoded.com/
  [5]: http://www.linkedin.com/in/krues8dr/
- [6]: /wp-content/uploads/2018/07/BillHunt-Resume072018-1.pdf
+ [6]: /uploads/2019/02/BillHunt-Resume.pdf
  [7]: https://sunlightfoundation.com/
  [8]: http://opengovfoundation.org/
  [9]: https://www.usds.gov/
