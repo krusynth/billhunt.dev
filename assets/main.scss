@@ -32,6 +32,20 @@
     1px 1px 0 $color;
 }
 
+
+%shadow {
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+%header-decoration {
+  @extend %shadow;
+  &:hover {
+    border-bottom: 1px solid $white;
+    margin-bottom: -1px;
+  }
+
+}
+
 body {
   margin-top: $header-height;
   background: #d9d5cd url(/assets/images/bedge_grunge.jpg);
@@ -66,20 +80,24 @@ strong {
   @extend %semibold;
 }
 
+
 .navbar-brand {
   font-size: 1.2rem;
   padding: 0px;
   margin: 0 1rem 0 0;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-
-  a:hover {
-    background: $nav-link-hover-bg;
-  }
+  @extend %header-decoration;
 }
 
 .nav-link {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0!important;
+  margin: 0 0.5rem;
+  @extend %header-decoration;
+}
+
+.nav-social a {
+  /* Slightly lighter text shadow than we use on text. */
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+
 }
 
 .navbar-toggler {
