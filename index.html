@@ -27,6 +27,9 @@ title: Blog
     </span>
   </p>
   <div class="page-content">
+    {% if post.image %}
+      <img src="{{ post.image }}" alt="{{ post.title }}"/>
+    {% endif %}
     {% if post.excerpt %}
       {{ post.excerpt }}
     {% else %}

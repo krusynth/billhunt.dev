@@ -1,12 +1,14 @@
 ---
-title: 'RPG Maker MV: Dynamic Maps'
+title: 'RPG Maker MV: Dynamic Maps Plugin'
 author: Bill Hunt
 type: post
 date: 2018-11-28T02:13:58+00:00
 url: /2018/11/27/rpg-maker-mv-dynamic-maps/
 categories:
   - Hometown Hero
-  - Uncategorized
+tags:
+  - Javascript
+  - RPG Maker MV
 
 ---
 One of the core aspects that I wanted to add to Hometown Hero is the ability for towns to grow and change over time. However, due to the map system that comes with RPG Maker MV, you can only achieve this with lots of complicated events. As a result, I&#8217;ve created a plugin to make this easier.
