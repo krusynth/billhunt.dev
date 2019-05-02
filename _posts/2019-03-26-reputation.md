@@ -47,5 +47,12 @@ size than your standard icons. The plugin also allows you to change shop prices,
 offering a discount to friends or allowing you to sell back items for better
 prices than the default 50% builtin to the  engine.
 
+{:.links-list}
+* [live demo](/demo/Kru_Reputation/)
+* [download](https://raw.githubusercontent.com/krues8dr/rpgmakermv-plugins/master/Kru_Reputation.js)
+* [documentation](https://github.com/krues8dr/rpgmakermv-plugins/wiki/Kru_Reputation)
+
+This plugin requires [Kru_Core](https://raw.githubusercontent.com/krues8dr/rpgmakermv-plugins/master/Kru_Core.js).
+
 [You can download the plugin, along with all of my other RPG Maker MV plugins,
 from my GitHub repository.](https://github.com/krues8dr/rpgmakermv-plugins)
