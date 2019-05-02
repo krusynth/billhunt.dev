@@ -460,3 +460,25 @@ article {
     margin-right: 1rem;
   }
 }
+
+/**
+ * Content
+ */
+
+.links-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    border-right: 1px solid $black;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      border-right: none;
+      padding-right: 0rem;
+      margin-right: 0rem;
+    }
+  }
+}
