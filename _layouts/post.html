@@ -14,6 +14,9 @@ layout: default
         • {{ page.author }}
       {%- endif -%}
     </p>
+    <nav aria-label="breadcrumb">
+      {% include breadcrumbs.html path=page.path title=page.title %}
+    </nav>
   </header>
 
   <section>

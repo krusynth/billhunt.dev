@@ -58,3 +58,17 @@ exclude:
   - yarn-error.log
   - "*.sublime-project"
   - "*.sublime-workspace"
+
+permalink: /:categories/:title:output_ext
+
+collections:
+  category:
+    output: true
+
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#       type: category
+#     values:
+#       layout: "category"
