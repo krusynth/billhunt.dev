@@ -1,11 +1,10 @@
 ---
-title: 'RPG Maker MV: Reputation Plugin'
+title: 'Reputation Plugin'
 author: Bill Hunt
 type: post
 date: 2019-03-26T19:39:00+00:00
-url: /2019/03/26/rpg-maker-mv-dynamic-maps/
-categories:
-  - Hometown Hero
+
+categories: [RPG-Maker-MV, Plugins]
 tags:
   - Javascript
   - RPG Maker MV
