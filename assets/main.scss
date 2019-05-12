@@ -363,6 +363,26 @@ article {
   }
 }
 
+.dropdown {
+  display: flex;
+
+  a + .dropdown-toggle {
+    margin-left: -0.5rem;
+  }
+}
+
+.dropdown-menu {
+  border: none;
+  border-top: 1px dotted $white;
+  border-radius: 0;
+  background: rgba($teal, 0.9);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: transparent;
+}
+
 .nav-pages {
   flex-grow: 1;
 }
