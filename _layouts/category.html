@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article>
+
+  <header>
+    <h1>{{ page.title | replace: "-", " " }}</h1>
+
+    <nav aria-label="breadcrumb">
+      {% include breadcrumbs.html path=page.path title=page.title %}
+    </nav>
+  </header>
+
+  <section>
+    {{ content }}
+  </section>
+
+  {% if page.children %}
+    <ul>
+      {% for child in page.children %}
+        <li>
+          <a href="{{page.url}}/{{ child | slugify }}">{{ child | replace: "-", " " }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <ul>
+      {% for post in site.categories[page.title] %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+</article>
