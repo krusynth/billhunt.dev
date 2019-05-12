@@ -1,0 +1,46 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import url("//fonts.googleapis.com/css?family=Raleway:400,400italic,600,600 italic");
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+a {
+  color: #4ABAF7;
+}
+
+code.pre {
+  white-space: pre-wrap;
+}
+
+.game-wrapper {
+  display: flex;
+}
+
+.game-instructions {
+  max-width: calc(100% - 816px - 30px);
+  padding: 0 15px;
+}
+
+.game-instructions li {
+  margin-bottom: 1rem;
+}
+
+.game-container {
+  position: relative;
+  height: 624px;
+  width: 816px;
+  justify-self: center;
+}
+
+.keyword {
+  color: #33ff9b;
+  font-weight: bold;
+}
