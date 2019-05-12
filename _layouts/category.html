@@ -19,7 +19,7 @@ layout: default
     <ul>
       {% for child in page.children %}
         <li>
-          <a href="{{page.url}}/{{ child | slugify }}">{{ child | replace: "-", " " }}</a>
+          <a href="{{page.url}}{{ child | slugify }}/">{{ child | replace: "-", " " }}</a>
         </li>
       {% endfor %}
     </ul>
