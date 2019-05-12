@@ -1,11 +1,12 @@
 ---
-title: Customizable Class Skills
+title: 'RPG Maker MV: Customizable Class Skills Plugin'
 author: Bill Hunt
 type: post
 date: 2018-09-09T19:20:26+00:00
-url: /2018/09/09/customizable-class-skills/
+
 categories:
-  - Hometown Hero
+  - RPG-Maker-MV
+  - Plugins
 tags:
   - Javascript
   - RPG Maker MV

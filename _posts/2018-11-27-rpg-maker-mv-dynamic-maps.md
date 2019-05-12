@@ -3,9 +3,10 @@ title: 'RPG Maker MV: Dynamic Maps Plugin'
 author: Bill Hunt
 type: post
 date: 2018-11-28T02:13:58+00:00
-url: /2018/11/27/rpg-maker-mv-dynamic-maps/
+
 categories:
-  - Hometown Hero
+  - RPG-Maker-MV
+  - Plugins
 tags:
   - Javascript
   - RPG Maker MV

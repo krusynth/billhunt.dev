@@ -1,10 +1,12 @@
 ---
-title: 'Reputation Plugin'
+title: 'RPG Maker MV: Reputation Plugin'
 author: Bill Hunt
 type: post
 date: 2019-03-26T19:39:00+00:00
 
-categories: [RPG-Maker-MV, Plugins]
+categories:
+  - RPG-Maker-MV
+  - Plugins
 tags:
   - Javascript
   - RPG Maker MV
