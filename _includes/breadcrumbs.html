@@ -6,7 +6,7 @@
 	{% for category in page.categories %}
 		{% assign route = route | append: '/' | append: category %}
 		<li class="breadcrumb-item">
-			<a href="{{ route | absolute_url }}">{{ category | replace: "-", " ") }}</a>
+			<a href="{{ route | absolute_url }}">{{ category | replace: "-", " " }}</a>
 		</li>
 	{% endfor %}
 	<li class="breadcrumb-item active" aria-current="page">
