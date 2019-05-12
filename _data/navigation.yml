@@ -1,5 +1,10 @@
 - title: RPG Maker MV
-  url: /rpg-maker-mv
+  url: /rpg-maker-mv/
   sublinks:
     - title: Plugins
-      url: /rpg-maker-mv/plugins
+      url: /rpg-maker-mv/plugins/
+- title: Minecraft
+  url: /minecraft/
+  sublinks:
+    - title: Lazuli
+      url: /minecraft/lazuli/
