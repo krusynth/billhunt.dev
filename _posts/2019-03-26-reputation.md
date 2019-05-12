@@ -13,11 +13,14 @@ tags:
 image: /uploads/2019/03/reputation-1.jpg
 
 ---
-![Final Fantasy VI banquet with Emperor Gestahl](/uploads/2019/03/ff6.jpg)![Harvest Moon heart affection ranks](/uploads/2019/03/harvestmoon.jpg)
 
 I was always enjoyed the classic RPGs where it felt like your decisions actually
 impacted the fictional world, especially by interacting with the characters you
-encountered in your adventures. Final Fantasy VI featured several complicated
+encountered in your adventures.
+
+![Final Fantasy VI banquet with Emperor Gestahl](/uploads/2019/03/ff6.jpg)![Harvest Moon heart affection ranks](/uploads/2019/03/harvestmoon.jpg)
+
+Final Fantasy VI featured several complicated
 scenes where the player had to answer questions or talk to people in town to
 gain status with the Emperor. Harvest Moon featured the ability to woo a
 townsperson by chatting with them or bringing them gifts over time to gain their
@@ -55,5 +58,5 @@ prices than the default 50% builtin to the  engine.
 
 This plugin requires [Kru_Core](https://raw.githubusercontent.com/krues8dr/rpgmakermv-plugins/master/Kru_Core.js).
 
-[You can download the plugin, along with all of my other RPG Maker MV plugins,
-from my GitHub repository.](https://github.com/krues8dr/rpgmakermv-plugins)
+You can download this plugin, along with all of my other RPG Maker MV plugins,
+from [my GitHub repository.](https://github.com/krues8dr/rpgmakermv-plugins)

@@ -5,8 +5,8 @@ type: post
 date: 2018-09-09T18:26:01+00:00
 url: /2018/09/09/hometown-hero/
 categories:
-  - RPG Maker MV
-  - Hometown Hero
+  - RPG-Maker-MV
+  - Hometown-Hero
 
 tags:
   - RPG Maker MV
