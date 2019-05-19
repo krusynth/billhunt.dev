@@ -54,6 +54,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - package.json
   - node_modules
   - update_boostrap.sh
   - yarn.lock
