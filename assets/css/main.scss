@@ -80,6 +80,9 @@ strong {
   @extend %semibold;
 }
 
+.print-only {
+  display: none;
+}
 
 .navbar-brand {
   font-size: 1.2rem;
@@ -140,6 +143,7 @@ article {
   .page-about & {
     width: 150px;
     height: 150px;
+    margin-bottom: 2rem;
   }
 }
 
@@ -155,6 +159,7 @@ article {
 
   .page-about & {
     border-bottom: none;
+    margin-bottom: none;
   }
 
   .block-profile {
@@ -187,12 +192,12 @@ article {
     }
 
     &-position {
-      @extend %semibold;
+      margin-top: 0.25rem;
+      font-size: 1.1rem;
     }
 
     &-company {
-      margin-top: 0.25rem;
-      font-size: 1.1rem;
+      @extend %semibold;
     }
   }
 
@@ -326,7 +331,7 @@ article {
       &-text {
         font-size: 1.75rem;
       }
-      &-company {
+      &-position {
         font-size: 0.8em;
       }
     }

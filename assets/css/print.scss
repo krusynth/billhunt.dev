@@ -2,6 +2,82 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@page { size: auto;  margin: 0mm; }
+
+body {
+  margin-top: 0;
+  background-image: none;
+  background-color: #ffffff !important;
+}
+
+a {
+  border-bottom: none;
+  text-decoration: none !important;
+  color: #000000;
+}
+
+.web-only {
+  display: none;
+}
+
+.print-only {
+  display: block;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+}
+
+.job {
+  page-break-inside: avoid;
+
+  &-title {
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    &-position {
+      font-size: 1em;
+      font-weight: bold;
+    }
+  }
+
+  &-timeline {
+    &-start{
+      &.job-timeline-overlap {
+        display: inline;
+      }
+    }
+  }
+}
+
+.profile-photo,
+.page-header,
+.page-footer,
 .breadcrumb-container {
   display: none;
+}
+
+.about-header {
+  justify-content: space-between;
+}
+
+.container, .content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.content {
+  margin-bottom: 0;
+}
+
+.qr-code {
+  float: right;
+
+  &-img {
+    width: 100px;
+    height: 100px;
+  }
 }
