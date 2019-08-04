@@ -18,17 +18,18 @@ permalink: /about/
   </div>
 </header>
 
-<p>
-  Currently I'm the <strong>Cloud Policy Lead</strong> for the <strong>Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB)</strong>, where I lead the White House's efforts on Cloud and data center policy. As architect of the <a href="https://cloud.cio.gov/strategy/"><strong>Federal Cloud Computing Strategy ("Cloud Smart")</strong></a>, I work with cabinet-level agencies to drive IT modernization and maturity across the Federal enterprise.
-</p>
+<section class="about-summary">
+  <p>
+    Currently I'm the <strong>Cloud Policy Lead</strong> for the <strong>Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB)</strong>, where I lead the White House's efforts on Cloud and data center policy. As architect of the <a href="https://cloud.cio.gov/"><strong>Federal Cloud Computing Strategy (Cloud Smart)</strong></a>, I work with cabinet-level agencies to drive IT modernization and maturity across the Federal enterprise.
+  </p>
 
-<p>
-  At heart, I believe in openness, collaboration, equity, and transparency to make things better &mdash; software, teams, and government. <span class="web-only">You can read all about everything I've done below, or <a href="/uploads/2019/02/BillHunt-Resume.pdf">download my resume</a>.</span>
-</p>
-
-<h2 class="section-title">Experience</h2>
+  <p>
+    At heart, I believe in openness, collaboration, equity, and transparency to make things better &mdash; software, teams, and government. <span class="web-only">You can read all about everything I've done below, or <a href="/uploads/2019/02/BillHunt-Resume.pdf">download my resume</a>.</span>
+  </p>
+</section>
 
 <section class="experience">
+  <h2 class="section-title">Experience</h2>
   <article class="job">
     <div class="job-timeline">
       <span class="job-timeline-start job-timeline-overlap">September 2017</span>
@@ -44,7 +45,7 @@ permalink: /about/
     </div>
     <div class="job-description">
       <p>
-        As Cloud Policy Lead for OFCIO, I work with stakeholders across the Federal Government to drive mature practices in infrastructure. I am also currently acting as Mission Operations Lead, managing our teams working on workforce reskilling, shared government-wide services, network modernization, and migration to cloud services. In 2018, I created the Federal Cloud Computing Strategy (Cloud Smart) to address the three largest barriers to IT modernization - cybersecurity, procurement, and workforce skills. This strategy was enthusiastically endorsed by the Administration, our agency partners, and private industry. I also run the Data Center Optimization Initiative, overseeing the management of 12,000 data centers, which has saved taxpayers $2 billion over the last two years.
+        As Cloud Policy Lead for OFCIO, I work with stakeholders across the Federal Government to drive mature practices in infrastructure, a portfolio representing approximately $20 billion. I am also currently acting as Mission Operations Lead, managing our teams working on workforce reskilling, shared government-wide services, network modernization, and migration to cloud services. I created the <a href="https://cloud.cio.gov/">Federal Cloud Computing Strategy (Cloud Smart)</a> to address the three largest barriers to IT modernization - cybersecurity, procurement, and workforce skills. This strategy was enthusiastically endorsed by the Administration, our agency partners, and private industry. I also run the <a href="https://datacenters.cio.gov/">Data Center Optimization Initiative</a>, overseeing the management of 12,000 data centers, which has saved taxpayers $2 billion over the last two years.
       </p>
       <p>
         In my first year at OMB, I received the prestigious Professional Achievement Award &mdash; an honor usually given after three years of exceptional service &mdash; for my innovative, collaborative approach to this work. In 2019 I was also named to the <a href="https://fcw.com/articles/2019/02/04/congratulations-2019-federal-100-award-winners.aspx">Federal 100</a> list.
@@ -55,6 +56,7 @@ permalink: /about/
         <li class="award"><span><i></i></span>2019 Federal 100</li>
         <li class="award"><span><i></i></span>2018 OMB Professional Achievement Award</li>
         <li class="document"><span><i></i></span>Federal Cloud Computing Strategy (Cloud Smart)</li>
+        <li class="document"><span><i></i></span>M-19-19 Update to Data Center Optimization Initiative (DCOI)</li>
       </ul>
     </div>
   </article>
@@ -242,7 +244,7 @@ permalink: /about/
   <h2 class="section-title">Volunteer Experience</h2>
   <article class="job">
     <div class="job-timeline">
-      <span class="job-timeline-start">October 2018</span>
+      <span class="job-timeline-start">2018</span>
       <span class="divider">&mdash;</span>
       <span class="job-timeline-end">Present</span>
     </div>
@@ -255,9 +257,9 @@ permalink: /about/
   </article>
   <article class="job">
     <div class="job-timeline">
-      <span class="job-timeline-start">July 2014</span>
+      <span class="job-timeline-start">2014</span>
       <span class="divider">&mdash;</span>
-      <span class="job-timeline-end">August 2016</span>
+      <span class="job-timeline-end">2016</span>
     </div>
     <div class="job-title">
       <h3>
@@ -273,9 +275,27 @@ permalink: /about/
     <div class="job-title">
       <h3>
         <span class="job-title-company">World Wide Web Consortium (W3C)</span>
-        <span class="job-title-company">Web Annotation Working Group </span>
+        <span class="job-title-company">Web Annotation Working Group</span>
         <span class="job-title-position">Subject Matter Expert</span>
       </h3>
+    </div>
+  </article>
+  <article class="job">
+    <div class="job-timeline">
+      <span class="job-timeline-start">2016</span>
+      <span class="divider">&mdash;</span>
+      <span class="job-timeline-end">Present</span>
+    </div>
+    <div class="job-title">
+      <h3>
+        <span class="job-title-position">Guest Lecturer</span>
+      </h3>
+    </div>
+    <div class="job-events">
+      <ul>
+        <li class="job-title-company job-events-speaking"><span><i></i></span>George Washington University Law School</li>
+        <li class="job-title-company job-events-speaking"><span><i></i></span>Harvard Berkman Klein Center</li>
+      </ul>
     </div>
   </article>
 </section>

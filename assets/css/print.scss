@@ -8,6 +8,7 @@ body {
   margin-top: 0;
   background-image: none;
   background-color: #ffffff !important;
+  font-size: 1rem;
 }
 
 a {
@@ -32,6 +33,7 @@ a {
 
 .job {
   page-break-inside: avoid;
+  margin-bottom: 1rem;
 
   &-title {
     h3 {
@@ -44,12 +46,24 @@ a {
     }
   }
 
+  &-description {
+    margin-bottom: 0;
+  }
+
   &-timeline {
+    grid-row: 1 / span 3;
+
     &-start{
       &.job-timeline-overlap {
         display: inline;
       }
     }
+  }
+
+  &-accomplishments {
+    margin-top: 0;
+    grid-row: 3;
+    grid-column: 2 / span 1;
   }
 }
 

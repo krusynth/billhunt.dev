@@ -158,8 +158,8 @@ article {
   border-bottom: 3px solid #999;
 
   .page-about & {
-    border-bottom: none;
-    margin-bottom: none;
+    border-bottom: 0;
+    margin-bottom: 0;
   }
 
   .block-profile {
@@ -177,6 +177,10 @@ article {
 }
 
 /* About page */
+.about-summary {
+  text-align: justify;
+}
+
 .job {
   &-title {
 
@@ -203,6 +207,7 @@ article {
 
   &-description {
     margin-bottom: 1rem;
+    text-align: justify;
 
     :first-child {
       padding-top: 0;
@@ -211,7 +216,10 @@ article {
 
   &-accomplishments {
     font-size: 0.9rem;
+  }
 
+  &-accomplishments,
+  &-events {
     ul {
       list-style: none;
       @extend %bold;
@@ -250,6 +258,11 @@ article {
     .application i {
       @extend .far;
       @extend .fa-browser;
+    }
+
+    &-speaking i {
+      @extend .far;
+      @extend .fa-keynote;
     }
   }
 
@@ -312,13 +325,15 @@ article {
       justify-content: space-between;
     }
 
-    &-description {
+    &-description,
+    &-events {
       grid-row: 2 / span 1;
       grid-column: 2 / span 2;
       margin-bottom: 1rem;
     }
 
     &-accomplishments {
+      margin-top: 4.5rem;
       grid-row: 1 / span 1;
       grid-column: 3 / span 1;
     }
