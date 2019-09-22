@@ -20,9 +20,11 @@ permalink: /about/
 
 <section class="about-summary">
   <p>
-    Currently I'm the <strong>Cloud Policy Lead</strong> for the <strong>Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB)</strong>, where I lead the White House's efforts on Cloud and data center policy. As architect of the <a href="https://cloud.cio.gov/"><strong>Federal Cloud Computing Strategy (Cloud Smart)</strong></a>, I work with cabinet-level agencies to drive IT modernization and maturity across the Federal enterprise.
+    Currently I'm the <strong>Chief Enterprise Architect</strong> at the <strong>U.S. Small Business Administration</strong>.
   </p>
-
+  <p>
+    Previously, I served as the <strong>Cloud Policy Lead</strong> for the <strong>Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB)</strong>, where I led the White House's efforts on Cloud and data center policy. As architect of the <a href="https://cloud.cio.gov/"><strong>Federal Cloud Computing Strategy (Cloud Smart)</strong></a>, I worked with cabinet-level agencies to drive IT modernization and maturity across the Federal enterprise.
+  </p>
   <p>
     At heart, I believe in openness, collaboration, equity, and transparency to make things better &mdash; software, teams, and government. <span class="web-only">You can read all about everything I've done below, or <a href="/uploads/2019/02/BillHunt-Resume.pdf">download my resume</a>.</span>
   </p>
@@ -32,9 +34,25 @@ permalink: /about/
   <h2 class="section-title">Experience</h2>
   <article class="job">
     <div class="job-timeline">
-      <span class="job-timeline-start job-timeline-overlap">September 2017</span>
+      <span class="job-timeline-start job-timeline-overlap">September 2019</span>
       <span class="divider">&mdash;</span>
       <span class="job-timeline-end">Present</span>
+    </div>
+    <div class="job-title">
+      <h3>
+        <span class="job-title-company">U.S. Small Business Administration</span>
+        <span class="job-title-position">Chief Enterprise Architect</span>
+      </h3>
+    </div>
+    <div class="job-description">
+      I currently lead EA efforts for SBA, planning IT modernization and evaluating possible future states.  A key part of this program is implementing Cloud Smart, DCOI, and the Application Rationalization Playbook which I worked on in my previous role at OMB.
+    </div>
+  </article>
+  <article class="job">
+    <div class="job-timeline">
+      <span class="job-timeline-start job-timeline-overlap">September 2017</span>
+      <span class="divider">&mdash;</span>
+      <span class="job-timeline-end">September 2019</span>
     </div>
     <div class="job-title">
       <h3>
@@ -45,7 +63,10 @@ permalink: /about/
     </div>
     <div class="job-description">
       <p>
-        As Cloud Policy Lead for OFCIO, I work with stakeholders across the Federal Government to drive mature practices in infrastructure, a portfolio representing approximately $20 billion. I am also currently acting as Mission Operations Lead, managing our teams working on workforce reskilling, shared government-wide services, network modernization, and migration to cloud services. I created the <a href="https://cloud.cio.gov/">Federal Cloud Computing Strategy (Cloud Smart)</a> to address the three largest barriers to IT modernization - cybersecurity, procurement, and workforce skills. This strategy was enthusiastically endorsed by the Administration, our agency partners, and private industry. I also run the <a href="https://datacenters.cio.gov/">Data Center Optimization Initiative</a>, overseeing the management of 12,000 data centers, which has saved taxpayers $2 billion over the last two years.
+        As Cloud Policy Lead for OFCIO, I worked with stakeholders across the Federal Government to drive mature practices in infrastructure, a portfolio of approximately $20 billion annually. I also acted as Mission Operations Lead, managing our teams working on workforce reskilling, shared government-wide services, network modernization, and migration to cloud services. I created the <a href="https://cloud.cio.gov/">Federal Cloud Computing Strategy (Cloud Smart)</a> to address the three largest barriers to IT modernization - cybersecurity, procurement, and workforce skills. This strategy was enthusiastically endorsed by the Administration, our agency partners, and private industry.
+      </p>
+      <p>
+        I also ran the <a href="https://datacenters.cio.gov/">Data Center Optimization Initiative (DCOI)</a>, overseeing the management of 12,000 data centers, which has saved taxpayers $2 billion over the last two years. Since data center management and cloud strategy both are a question of application and data placement, I worked with the CIO Council and GSA to create the <a href="https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf">Application Rationalization Playbook</a>, based on industry best practices.
       </p>
       <p>
         In my first year at OMB, I received the prestigious Professional Achievement Award &mdash; an honor usually given after three years of exceptional service &mdash; for my innovative, collaborative approach to this work. In 2019 I was also named to the <a href="https://fcw.com/articles/2019/02/04/congratulations-2019-federal-100-award-winners.aspx">Federal 100</a> list.
