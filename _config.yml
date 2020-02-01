@@ -19,10 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Krusynth Games development blog.
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: krues8dr
-#github_username:  krues8dr
 
-repository: "krues8dr/krues8dr.com"
+repository: "krusynth/billhunt.dev"
 
 paginate: 5
 paginate_path: "/blog/:num/"
