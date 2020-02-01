@@ -8,3 +8,4 @@ Gemfile.lock
 *.sublime-project
 yarn-error.log
 assets/npm/
+log
