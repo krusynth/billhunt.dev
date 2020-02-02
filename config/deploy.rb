@@ -3,7 +3,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.2"
 
-set :application, "billhunt.dev"
+set :application, "games.billhunt.dev"
 set :repo_url, "git@github.com:krusynth/billhunt.dev.git"
 
 set :user, "deploy"
