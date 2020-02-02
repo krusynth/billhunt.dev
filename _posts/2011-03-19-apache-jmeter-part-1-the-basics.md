@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2011-03-19T17:22:42+00:00
 permalink: /blog/2011/03/19/apache-jmeter-part-1-the-basics/
-
+layout: post
 ---
 Recently, I&#8217;ve been doing a bit of **load testing** on **Amazon AWS** after reading <a style="text-decoration: none" href="http://www.cloudstoragewizard.com/"><font color="black">cloud storage reviews</font></a> to determine how much abuse our web application can take without killing the server. I&#8217;ve been attempting to use [Apache JMeter][1] to do the hard part, but came up against a slew of problems. The documentation provided seems targetted at dyed-in-the-wool Java developers (that &#8220;J&#8221; at the beginning is clearly a warning shot), and makes pretty big assumptions about the knowledge of the audience. Here are the basic concepts of how to get started using it, targeted for us LAMP developers.
 

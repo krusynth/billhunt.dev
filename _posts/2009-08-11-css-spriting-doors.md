@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2009-08-11T13:38:49+00:00
 permalink: /blog/2009/08/11/css-spriting-doors/
-
+layout: post
 ---
 When we redesigned [hotelicopter][1], I had to spend a lot of time cutting up images for a bunch of buttons and boxes. I was using the now-standard [Sliding Doors][2] technique, so that we could have flexible boxes. Today, I realized that I could combine this technique with another [A List Apart][3] favorite, [image sprites][4], so that you can have sliding doors **using only one image**. <!--more-->
 

@@ -5,7 +5,7 @@ type: post
 date: 2016-09-27T21:14:55+00:00
 excerpt: 'The world of civic tech has changed radically in the last few years. Many of the old bastions of transparency and civic innovation have started to crumble, shrinking dramatically in both size and scope. It’s clear that the future of civic tech will appear radically different – moving out from under the umbrellas of sprawling nonprofit organizations and back into smaller, focused efforts.  Below, I discuss what we’re currently seeing today, and what will need to be done in the future for us to continue our work effectively.'
 permalink: /blog/2016/09/27/the-end-of-the-second-act-of-civic-tech/
-
+layout: post
 ---
 <p dir="ltr">
   <strong>Disclaimers:</strong>

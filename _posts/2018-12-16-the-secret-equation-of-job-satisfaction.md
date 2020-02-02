@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2018-12-17T01:48:34+00:00
 permalink: /blog/2018/12/16/the-secret-equation-of-job-satisfaction/
-
+layout: post
 ---
 <span style="font-weight: 400;">Many lengthy books and articles have been written on how to be fulfilled at work, good management, and keeping your staff engaged and excited. However, I’ve found one simple equation that is the secret to all of these.</span>
 

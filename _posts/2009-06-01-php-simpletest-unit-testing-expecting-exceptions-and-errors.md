@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2009-06-01T21:12:03+00:00
 permalink: /blog/2009/06/01/php-simpletest-unit-testing-expecting-exceptions-and-errors/
-
+layout: post
 ---
 Like a good programmer, I try to be good about unit testing [More Info][1]. And also as a good programmer, I throw errors in my PHP where appropriate. I just learned today after a bit of digging through the codebase, that [SimpleTest][2] can be told to expect an Exception (or error) to be thrown in the test. <!--more-->
 

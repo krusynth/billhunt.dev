@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2008-02-07T17:10:02+00:00
 permalink: /blog/2008/02/07/javascript-event-handling-with-prototypes-bind/
-
+layout: post
 ---
 In Javascript, the native event handlers have the infuriating problem of not allowing the user to pass in additional parameters. Normally, when you want to handle an onclick or the like, you can only reference _this_ (meaning the event itself). So everything you want to handle, you have to create a completely isolated custom function for. Not at all efficient. The [Prototype][1] library provides a solution.<!--more-->
 

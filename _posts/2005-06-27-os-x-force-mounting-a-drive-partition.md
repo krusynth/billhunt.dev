@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2005-06-28T03:50:07+00:00
 permalink: /blog/2005/06/27/os-x-force-mounting-a-drive-partition/
-
+layout: post
 ---
 For once, it’s not my laptop that’s broken; it’s my external hard drive. For future reference, in <em class="tech">OS X</em>, if you encounter a drive partition that is recognized by the <em class="tech">Disc Utility</em>, but refuses to mount, try running these commands in the <em class="tech">Terminal</em>:
 

@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2006-07-24T15:24:10+00:00
 permalink: /blog/2006/07/24/xhtml-the-myth-and-you/
-
+layout: post
 ---
 A couple of years back, XHTML became the big new buzzword for webdevelopers and everyone (myself included) jumped on the bandwagon, converting all of their pages from HTML 4.01. However, what we didn’t realize at the time was that we were being lied to. And as a result, most everyone is still using it incorrectly.
 

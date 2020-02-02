@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2013-10-21T22:16:11+00:00
 permalink: /blog/2013/10/21/a-brief-history-of-the-web/
-
+layout: post
 ---
 A few months back, there was a rather interesting discussion on Reddit about different internet technologies. I put the following comment together as a bit of historical perspective.  In retrospect, it&#8217;s probably not 100% accurate, and a bit or a rant, but I figured other people might find it interesting.
 

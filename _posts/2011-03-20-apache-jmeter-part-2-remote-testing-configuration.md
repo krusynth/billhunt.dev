@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2011-03-20T18:39:49+00:00
 permalink: /blog/2011/03/20/apache-jmeter-part-2-remote-testing-configuration/
-
+layout: post
 ---
 Let&#8217;s say you&#8217;ve [already gotten through the basics of JMeter][1] and you&#8217;re ready to start setting up your testing. If you&#8217;re doing any sort of remote testing, you&#8217;ll inevitably need to know how to setup your client/server relationships. <!--more-->
 

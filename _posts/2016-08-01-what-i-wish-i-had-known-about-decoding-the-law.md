@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2016-08-01T13:28:54+00:00
 permalink: /blog/2016/08/01/what-i-wish-i-had-known-about-decoding-the-law/
-
+layout: post
 ---
 <p dir="ltr">
   After a little over three years of working on <a href="http://www.statedecoded.com/">The State Decoded</a> (and a bit less than that on <a href="https://mymadison.io/">Madison</a>), I’ve learned quite a few things about the law.  The process of translating legal code into machine-readable data is not an easy one, but after thousands of hours working on this problem we’ve made some solid progress in automating it.

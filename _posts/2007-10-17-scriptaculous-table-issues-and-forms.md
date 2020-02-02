@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2007-10-18T03:55:43+00:00
 permalink: /blog/2007/10/17/scriptaculous-table-issues-and-forms/
-
+layout: post
 ---
 So I&#8217;ve been playing with <a href="http://script.aculo.us/" target="_blank">Scriptaculous</a> a bit, and doing some debugging. I have a table, in which certain rows would should appear when a link is clicked. I&#8217;ve got it set with a display:none by default and I&#8217;m using Effect.SlideDown to have it appear. Now due to how display and opacity on tables, trs, and tds are handled by just about every browser, there were several unexpected results.
 

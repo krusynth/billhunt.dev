@@ -8,7 +8,7 @@ originallyappeared_site_name:
   - OpenGov Foundation Blog
 originallyappeared_site_url:
   - http://opengovfoundation.org/govify-org-the-story-behind-opengovs-april-fools-prank/
-
+layout: post
 ---
 <h3 dir="ltr">
   A Brief Summary

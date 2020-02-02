@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2008-02-25T14:56:34+00:00
 permalink: /blog/2008/02/25/quick-tip-google-reader-folders-and-tags/
-
+layout: post
 ---
 For those not so in-the-know, RSS feeds are a different way of reading content from your favorite sites. The advantage is that all of your content is aggregated into a single location, for easy reading. The main problem is that most every feed-reader sucks or is overpriced. Google has finally polished their free Reader app, and I&#8217;ve switched to it exclusively. The big benefit of it is the ability to group feeds by user-defined categories.<!--more-->
 

@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2006-06-22T15:27:27+00:00
 permalink: /blog/2006/06/22/the-having-clause/
-
+layout: post
 ---
 This one has been driving me crazy for years [helpful site][1].
 

@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2006-07-10T15:31:04+00:00
 permalink: /blog/2006/07/10/mysql-php-internationalization/
-
+layout: post
 ---
 Oh, man. This was a toughie. What follows is an account of how to deal intelligently with foreign characters and data entry in PHP/MySQL.
 

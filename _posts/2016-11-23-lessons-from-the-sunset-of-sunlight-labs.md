@@ -5,7 +5,7 @@ type: post
 date: 2016-11-23T16:37:58+00:00
 permalink: /blog/2016/11/23/lessons-from-the-sunset-of-sunlight-labs/
 featured_image: /uploads/2016/11/sunlight-small-125x125.jpg
-
+layout: post
 ---
 <p dir="ltr">
   A few months ago, I joined <a href="https://sunlightfoundation.com/">Sunlight Foundation</a> as their Senior Technology Adviser. <a href="https://twitter.com/rightsduff">Kat Duffy</a>, who was then the Sunlight Labs director, brought me on to help bolster their programming efforts and lend support across the organization. However, only a couple of weeks later we learned that <a href="http://sunlightfoundation.com/2016/09/20/statement-from-sunlight-foundations-board-chairman/">Sunlight Labs was being shut down entirely</a>. <!--more-->With the time we had until the official closure, we quickly shifted our focus to

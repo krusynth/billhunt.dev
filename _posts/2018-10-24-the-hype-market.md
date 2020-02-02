@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2018-10-25T01:46:55+00:00
 permalink: /blog/2018/10/24/the-hype-market/
-
+layout: post
 ---
 <span style="font-weight: 400;">It takes time, money, and other resources to execute on any new information technology initiative. In theory, there should be a return on investment for any new IT development. However, in the current market landscape, a lot of effort is being wasted on reinventing the wheel or misapplying solutions, rather than driving towards proving greater value to citizens and customers. The relatively low cost of experimentation and implementation of processes result in a fetishization of abstraction, leading to further and further complexity even if a proportional benefit is not achieved. </span><!--more-->
 

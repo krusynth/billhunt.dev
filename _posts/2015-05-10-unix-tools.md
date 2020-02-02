@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2015-05-11T02:19:21+00:00
 permalink: /blog/2015/05/10/unix-tools/
-
+layout: post
 ---
 Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you&#8217;ll probably find that there are already tools written to do what you want.
 

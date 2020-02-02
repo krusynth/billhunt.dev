@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2010-04-09T19:51:42+00:00
 permalink: /blog/2010/04/09/defensive-programming/
-
+layout: post
 ---
 As a web developer, the greater part of my job is not creating new apps, but hacking together disparate software packages into Frankensteinian amalgamations that (supposedly) work together seamlessly.  This is universally a headache, as the original authors tend to write code thinking that their app is the only one that will be installed.  [WordPress][1], [Vanilla][2], and [Interspire&#8217;s Email Marketer][3] are some of the worst offenders that I struggle with regularly.
 

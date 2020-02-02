@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2013-11-01T13:50:49+00:00
 permalink: /blog/2013/11/01/upgrading-solr-from-4-2-to-4-3-on-centos-6-4/
-
+layout: post
 ---
 I ran into an issue with a Solr configuration that was working for me locally, but not on our CentOS 6.4 server. I&#8217;ve documented below all of the issues I encountered along the way, as the upgrade from Solr 4.2 to 4.3+ is a pretty nasty one, due to major changes in the logging system (**LOG4J / SLF4J**)
 

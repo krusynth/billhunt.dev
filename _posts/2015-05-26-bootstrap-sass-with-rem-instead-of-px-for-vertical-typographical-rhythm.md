@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2015-05-26T23:43:18+00:00
 permalink: /blog/2015/05/26/bootstrap-sass-with-rem-instead-of-px-for-vertical-typographical-rhythm/
-
+layout: post
 ---
 A huge number of sites use **Bootstrap** as a css framework these days. Using Bootstrap is even easier with the [`bootstrap-sass`][1] package, which uses [`SASS`][2] to allow developers to customize nearly every aspect of the framework. Unfortunately, [the current version doesn&#8217;t support units other than pixels (px)][3], so using percent, `em`s, or `rem`s isn&#8217;t easy. It also is rather hard to establish a **vertical grid for typography rhythm** aside from the default, since so many values are hardcoded.
 

@@ -8,7 +8,7 @@ originallyappeared_site_name:
   - OpenGov Foundation Blog
 originallyappeared_site_url:
   - http://opengovfoundation.org/a-coders-take-on-code-for-america-summit-2013/
-
+layout: post
 ---
 There were far too many great talks to summarize them all, but <a href="http://opengovfoundation.us6.list-manage2.com/track/click?u=9d450bf68b3df1185fc9f62b2&id=e66284339d&e=686ab1518d" target="_blank">CFA has posted the full agenda online</a> as well as <a href="http://opengovfoundation.us6.list-manage.com/track/click?u=9d450bf68b3df1185fc9f62b2&id=1d153d2320&e=686ab1518d" target="_blank">videos of all of the talks</a>.  Here are a few of our favorites.<!--more-->
 

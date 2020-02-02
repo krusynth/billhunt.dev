@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2014-11-07T01:02:45+00:00
 permalink: /blog/2014/11/06/programming-books/
-
+layout: post
 ---
 [I&#8217;ve started a list of books to improve help programmers improve their craft.][1]  It&#8217;s also grown to include topics on management, design, business, and philosophy.  Have a look!
 

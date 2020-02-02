@@ -5,7 +5,7 @@ type: post
 date: 2017-06-12T14:15:08+00:00
 excerpt: Over the last few years, an increasing number of technology companies and agencies have adopted a flat hierarchical structure. This organizational system promises to improve the efficiency of organizations by removing management structures, leaving as few management layers as possible. I believe that it is also almost entirely imaginary.
 permalink: /blog/2017/06/12/the-myth-of-the-flat-organization/
-
+layout: post
 ---
 <section class="section section--body section--first">
 

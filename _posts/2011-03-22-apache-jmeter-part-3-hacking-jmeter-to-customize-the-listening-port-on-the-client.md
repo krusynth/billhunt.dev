@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2011-03-22T17:45:11+00:00
 permalink: /blog/2011/03/22/apache-jmeter-part-3-hacking-jmeter-to-customize-the-listening-port-on-the-client/
-
+layout: post
 ---
 By default, there&#8217;s no way to set which port that the **Apache JMeter client (master) listens on for the response of a test** &#8211; and it **always uses a random port** instead! That means you have to open up your firewall on ports **45000-70000** to run it, which sucks. It&#8217;s easy enough to patch, though! Below, you can download my patched source to build your own copy:
 

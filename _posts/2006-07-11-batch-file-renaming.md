@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2006-07-11T15:27:28+00:00
 permalink: /blog/2006/07/11/batch-file-renaming/
-
+layout: post
 ---
 How many times have you had a bunch of files that you wanted to change the extension on? <!--more-->And all you really want to do is make
 

@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2007-12-12T02:49:03+00:00
 permalink: /blog/2007/12/11/scriptaculous-simultaneous-animation-effects/
-
+layout: post
 ---
 I remember my first programming class. I was seven. For the life of me, I could not make that damn turtle draw a star while playing music at the same time to save my life (or my grade). This is generally just as painful and traumatic to do in Javascript as it is in Logo.
 

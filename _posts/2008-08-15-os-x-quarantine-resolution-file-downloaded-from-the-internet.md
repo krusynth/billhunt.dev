@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2008-08-15T14:02:10+00:00
 permalink: /blog/2008/08/15/os-x-quarantine-resolution-file-downloaded-from-the-internet/
-
+layout: post
 ---
 If you&#8217;ve had the pleasure of upgrading to 10.5, you may have noticed that OS X suddenly began acting like Windows. Whenever you download a file, it now prompts you with a message, asking if you really actually want to open the file. <!--more-->What possessed the fevered brains of the development team is beyond my comprehension. Well, yes, thank you, I downloaded the file for a pretty effing good reason and I&#8217;m rather sure that I want to open the file that I, myself, downloaded. I wasn&#8217;t just saving it for a special occasion.
 

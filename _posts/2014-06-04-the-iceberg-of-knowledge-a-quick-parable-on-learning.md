@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2014-06-05T00:07:57+00:00
 permalink: /blog/2014/06/04/the-iceberg-of-knowledge-a-quick-parable-on-learning/
-
+layout: post
 ---
 This was inspired by [Dawn Casey&#8217;s article on learning programming][1].
 

@@ -8,7 +8,7 @@ originallyappeared_site_name:
   - OpenGov Foundation Blog
 originallyappeared_site_url:
   - http://opengovfoundation.org/setting-the-standards-for-open-government-data/
-
+layout: post
 ---
 City and state governments across America are adopting Open Data policies at a fantastic clip. Technology hotbed San Francisco has one, but places far from Silicon Valley &#8211; like Pittsburgh, PA &#8211; are also joining the municipal open data movement. The increasing availability of free tools and enthusiastic volunteer software developers has opened the door for a vast amount of new government data to be made publicly available in digital form. But merely putting this data out there on the Internet is only the first step.
 

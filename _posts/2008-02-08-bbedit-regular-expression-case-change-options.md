@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2008-02-08T18:36:37+00:00
 permalink: /blog/2008/02/08/bbedit-regular-expression-case-change-options/
-
+layout: post
 ---
 I&#8217;m a huge fan of [Regular Expressions][1]. They are, without a doubt, the single most powerful tool in the programmer&#8217;s toolbox. [BBEdit][2], my favorite text editor, happens to have really excellent regular expression support. Among its features is the ability to change the case of matched text &#8211; which is really great if you&#8217;re having to reformat lists or, say, rename every function in your code.<!--more-->
 

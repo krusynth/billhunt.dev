@@ -4,6 +4,7 @@ author: Bill Hunt
 type: page
 date: 2009-03-16T19:16:43+00:00
 permalink: /about/
+layout: page
 ---
 
 <div class="qr-code print-only">

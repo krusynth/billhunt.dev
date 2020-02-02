@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2008-05-29T19:50:49+00:00
 permalink: /blog/2008/05/29/getting-a-handle-on-pandora/
-
+layout: post
 ---
 I&#8217;m a huge fan of [Pandora][1]. &#8211; it&#8217;s great for finding new music or just chilling out listening to some of my well-crafted stations. However, the fact that I&#8217;m completely tied to my browser to enjoy it makes me crazy. In particular, the fact that I can&#8217;t control the player without the window being active, as I&#8217;m able to do with iTunes (and some clever [Quicksilver][2]/Applescript magic). Enter [PandoraBoy][3]. It&#8217;s a Mac-only application that interfaces with Pandora. The best part is that it&#8217;s scriptable.<!--more-->
 

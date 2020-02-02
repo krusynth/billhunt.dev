@@ -4,7 +4,7 @@ author: Bill Hunt
 type: post
 date: 2009-06-09T18:20:16+00:00
 permalink: /blog/2009/06/09/symfony-doctrine-update-a-record-using-models/
-
+layout: post
 ---
 The [Doctrine manual][1] is really, really confusing in places. If you want to do something as simple as updating a record, the examples suggest that you use `Doctrine_Query::create()`. This doesn&#8217;t make a lot of sense, because we only want to manipulate the model, we shouldn&#8217;t have to even look at a query.<!--more--> Assuming you have the primary id of the record in question, you can do the following to easily modify a record:
 
