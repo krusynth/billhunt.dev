@@ -38,6 +38,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # A list of the pages to display in the navigation bar
 header_pages:
@@ -59,6 +60,13 @@ exclude:
   - yarn-error.log
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - Capfile
+  - config
+  - log
+  - demo
+
+symlinks:
+  - _uploads
 
 permalink: /:categories/:title:output_ext
 

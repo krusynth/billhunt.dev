@@ -18,6 +18,8 @@ set :branch, "www"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/releases/#{fetch(:application)}/#{fetch(:stage)}"
 
+set :dist, "_site"
+
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -33,7 +35,9 @@ set :deploy_to, "/var/www/releases/#{fetch(:application)}/#{fetch(:stage)}"
 # append :linked_files, "config/database.yml"
 
 # Default value for linked_dirs is []
-# append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+append :linked_dirs, "uploads"
+
+# set :shared_directory, ""
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
