@@ -38,6 +38,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -53,6 +54,13 @@ exclude:
   - yarn-error.log
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - Capfile
+  - config
+  - log
+  - demo
+
+symlinks:
+  - _uploads
 
 permalink: /:categories/:title:output_ext
 
