@@ -43,13 +43,19 @@ layout: page
       <h3>
         <span class="job-title-company">U.S. Small Business Administration</span>
         <span class="job-title-position">Director of IT Services <em>(acting)</em></span>
-        <span class="job-title-position">Chief Enterprise Architect</span>
       </h3>
     </div>
     <div class="job-description">
       <p>
         I currently am acting as Director of IT Services for SBA, overseeing every aspect of our IT portfolio.  This includes our enterprise-wide upgrade to Windows 10, Enterprise Infrastructure Solutions (EIS) and software-defined networking (SD-WAN), implementation of Zero Trust Networking, consolidation and optimization of our data centers, and migration to commercial Cloud services. In this role, I manage a budget of nearly $25 million, and oversee a staff of over a dozen direct reports and nearly 50 contractors.
       </p>
+    </div>
+    <div class="job-title">
+      <h3>
+        <span class="job-title-position">Chief Enterprise Architect</span>
+      </h3>
+    </div>
+    <div class="job-description">
       <p>
         My official position is to lead EA efforts for SBA, planning IT modernization and evaluating possible future states.  A key part of this program is implementing Cloud Smart, DCOI, and the Application Rationalization Playbook which I worked on in my previous role at OMB.
       </p>
