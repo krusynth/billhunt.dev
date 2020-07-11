@@ -68,8 +68,8 @@ input {
 }
 
 a {
-  color: $skyblue;
-  border-bottom: 1px dotted $skyblue;
+  color: $blue;
+  border-bottom: 1px dotted $blue;
   &:hover {
     border-bottom: none;
   }
@@ -120,6 +120,7 @@ code {
   @extend .container;
   background: $white;
   margin-bottom: 4rem;
+  min-height: 70vh;
 }
 
 .example {
@@ -239,6 +240,10 @@ article {
 
     i {
       font-size: 1.3rem;
+      color: $blue;
+    }
+
+    a {
       color: $blue;
     }
 

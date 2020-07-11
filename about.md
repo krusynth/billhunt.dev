@@ -42,22 +42,38 @@ layout: page
     <div class="job-title">
       <h3>
         <span class="job-title-company">U.S. Small Business Administration</span>
-        <span class="job-title-position">Director of IT Services <em>(acting)</em></span>
-      </h3>
-    </div>
-    <div class="job-description">
-      <p>
-        I currently am acting as Director of IT Services for SBA, overseeing every aspect of our IT portfolio.  This includes our enterprise-wide upgrade to Windows 10, Enterprise Infrastructure Solutions (EIS) and software-defined networking (SD-WAN), implementation of Zero Trust Networking, consolidation and optimization of our data centers, and migration to commercial Cloud services. In this role, I manage a budget of nearly $25 million, and oversee a staff of over a dozen direct reports and nearly 50 contractors.
-      </p>
-    </div>
-    <div class="job-title">
-      <h3>
         <span class="job-title-position">Chief Enterprise Architect</span>
       </h3>
     </div>
     <div class="job-description">
       <p>
-        My official position is to lead EA efforts for SBA, planning IT modernization and evaluating possible future states.  A key part of this program is implementing Cloud Smart, DCOI, and the Application Rationalization Playbook which I worked on in my previous role at OMB.
+        My official role at SBA is Chief Enterprise Architect, where I help to set the roadmap for technology across the organization. As chair of the Architecture Review Board, I work with agency offices to ensure they stay in compliance with Federal law, policy, as well as adhering to the enterprise-wide future state plan. This includes evaluation of new technology solutions, performing analyses of alternatives, and the rationalization of system and application portfolios.
+      </p>
+    </div>
+  </article>
+  <article class="job">
+    <div class="job-timeline">
+      <span class="job-timeline-start job-timeline-overlap">September 2019</span>
+      <span class="divider">&mdash;</span>
+      <span class="job-timeline-end">April 2020</span>
+    </div>
+    <div class="job-title">
+      <h3>
+        <span class="job-title-position">Director of IT Services <em>(acting)</em></span>
+      </h3>
+    </div>
+    <div class="job-description">
+      <p>
+        I temporarily served as the Director of IT Services for SBA, overseeing all of our operations and infrastructure, overseeing a staff of 15 Federal employees and 35 contractors, and managing a budget of approximately $20 million. During this period, I performed employee evaluations and hiring, drafted and oversaw contracts, established budget targets, and created a program for service level and performance measurement.
+      </p>
+      <p>
+        Early in 2020, the COVID-19 pandemic broke out in the United States. This resulted in two major intertwined initiatives. First, Congress tasked SBA with distributing approximately $350 billion in small business loans and grants. Second, many agency offices moved to 100% telework. These combined to create a “perfect storm” of massive demand on SBA’s infrastructure and resources.
+      </p>
+      <p>
+        By quickly standing up small teams to contain and resolve the many emerging problems, I was able to keep our core services available to staff during this difficult time. This included moving services to both cloud-based and hybrid solutions to increase capacity for the many citizens accessing our services, as well as our own staff. We also deployed advanced identity and security capabilities (as part of our Zero Trust Networking initiative), and accelerated the rollout of many new remote work features to enable the sudden flood of new teleworkers. I also created a “fallback headquarters” to handle distribution of hardware and devices, in advance of the shutdown of the DC-based office.
+      </p>
+      <p>
+        During this time, we were able to onboard over 5000 new staff using these new processes and tools, and kept the American economy strong through the distribution of loans and grants to small businesses.
       </p>
     </div>
   </article>
@@ -76,21 +92,25 @@ layout: page
     </div>
     <div class="job-description">
       <p>
-        As Cloud Policy Lead for OFCIO, I worked with stakeholders across the Federal Government to drive mature practices in infrastructure, a portfolio of approximately $20 billion annually. I also acted as Mission Operations Lead, managing our teams working on workforce reskilling, shared government-wide services, network modernization, and migration to cloud services. I created the <a href="https://cloud.cio.gov/">Federal Cloud Computing Strategy (Cloud Smart)</a> to address the three largest barriers to IT modernization - cybersecurity, procurement, and workforce skills. This strategy was enthusiastically endorsed by the Administration, our agency partners, and private industry.
+        As Cloud Policy Lead for the Federal Government, I collaborated daily with Cabinet-level CIOs and practitioners across the entire Federal enterprise to drive modern and mature practices in IT infrastructure for government services, a portfolio of approximately $20 billion annually. I further served as Mission Operations Lead for OFCIO, managing teams for workforce reskilling, shared government-wide services, network modernization, cloud email migration, and other related initiatives. I also led the White House’s work on the National Action Plan for Open Government, bringing my experience in government transparency and civic tech to set a national vision for openness.
       </p>
       <p>
-        I also ran the <a href="https://datacenters.cio.gov/">Data Center Optimization Initiative (DCOI)</a>, overseeing the management of 12,000 data centers, which has saved taxpayers $2 billion over the last two years. Since data center management and cloud strategy both are a question of application and data placement, I worked with the CIO Council and GSA to create the <a href="https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf">Application Rationalization Playbook</a>, based on industry best practices.
+        In these roles, I oversaw Federal employees and contractors, built cross-agency coalitions, oversaw initiatives, and drafted policy. I also regularly briefed senior Federal agency and White House leadership on a variety of topics, prepared them for Congressional hearings, and represented the White House speaking at frequent public events.
       </p>
       <p>
-        In my first year at OMB, I received the prestigious Professional Achievement Award &mdash; an honor usually given after three years of exceptional service &mdash; for my innovative, collaborative approach to this work. In 2019 I was also named to the <a href="https://fcw.com/articles/2019/02/04/congratulations-2019-federal-100-award-winners.aspx">Federal 100</a> list.
+        To address the government’s largest barriers to IT modernization, I worked with agency and vendor partners to create the <a href="https://cloud.cio.gov/">2019 Federal Cloud Computing Strategy (Cloud Smart)</a>, as well as a revised <a href="https://datacenters.cio.gov/">Data Center Optimization Initiative (M-19-19)</a>. I also worked closely with the CIO Council to direct the creation of an <a href="https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf">Application Rationalization Playbook</a>, to help enable agencies to modernize their IT systems using a data-driven approach. These practical policies and guides focus on improving agency maturity across the Federal Enterprise, including customer experience, cybersecurity, procurement, and workforce. I also oversaw the optimization and consolidation of over 12,000 Federal data centers, which has saved taxpayers $2 billion over two years, while reducing the reporting burden per agency by as much as 10,000 hours per year.
+      </p>
+      <p>
+        In my first year at OMB, I received the prestigious Professional Achievement Award — an honor usually reserved for three years or more of exceptional service — for my innovative, collaborative approach to this work. In 2019, I was also named to the <a href="https://fcw.com/articles/2019/03/21/fed-100-hunt-bill.aspx">Federal 100</a>, after being nominated by my peers both inside and outside of government.
       </p>
     </div>
     <div class="job-accomplishments">
       <ul>
-        <li class="award"><span><i></i></span>2019 Federal 100</li>
+        <li class="award"><span><i></i></span><a href="https://fcw.com/articles/2019/03/21/fed-100-hunt-bill.aspx">2019 Federal 100</a></li>
         <li class="award"><span><i></i></span>2018 OMB Professional Achievement Award</li>
-        <li class="document"><span><i></i></span>Federal Cloud Computing Strategy (Cloud Smart)</li>
-        <li class="document"><span><i></i></span>M-19-19 Update to Data Center Optimization Initiative (DCOI)</li>
+        <li class="document"><span><i></i></span><a href="https://cloud.cio.gov/">Federal Cloud Computing Strategy (Cloud Smart)</a></li>
+        <li class="document"><span><i></i></span><a href="https://datacenters.cio.gov/">M-19-19 Update to Data Center Optimization Initiative (DCOI)</a></li>
+        <li class="document"><span><i></i></span><a href="https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf">Application Rationalization Playbook</a></li>
       </ul>
     </div>
   </article>
@@ -127,12 +147,12 @@ layout: page
     </div>
     <div class="job-description">
       <p>
-        The Sunlight Foundation is a national, nonpartisan, nonprofit organization that uses civic technologies, open data, policy analysis and journalism to make government and politics more accountable and transparent to all. I served as Senior Technology Adviser through their board transition, working with the Labs Director to shut down their technology program responsibly. This involved transferring their dozens of projectsto new maintainers, and ensuring that all of their tools were released as open source software for the public to use. <a href="https://twitter.com/rightsduff">Kat Duffy</a> and I were named <a href="http://dclegalhackers.org/lehackies">Legal Hackers of the Year 2016</a> by DC Legal Hackers for this work.
+        The Sunlight Foundation is a national, nonpartisan, nonprofit organization that uses civic technologies, open data, policy analysis and journalism to make government and politics more accountable and transparent to all. I served as Senior Technology Adviser through their board transition, working with the Labs Director to shut down their technology program responsibly. This involved transferring their dozens of projectsto new maintainers, and ensuring that all of their tools were released as open source software for the public to use. <a href="https://twitter.com/rightsduff">Kat Duffy</a> and I were named <a href="http://dclegalhackers.org/lehackies#lehackies32016winners">Legal Hackers of the Year 2016</a> by DC Legal Hackers for this work.
       </p>
     </div>
     <div class="job-accomplishments">
       <ul>
-        <li class="award"><span><i></i></span>2016 Legal Hacker of the Year (DC Legal Hackers)</li>
+        <li class="award"><span><i></i></span><a href="http://dclegalhackers.org/lehackies#lehackies32016winners">2016 Legal Hacker of the Year (DC Legal Hackers)</a></li>
       </ul>
     </div>
   </article>

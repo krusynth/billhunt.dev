@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "jekyll", "~> 3.7.3"
+gem "jekyll", "~> 3.8.7"
 gem "jekyll-feed",  "~> 0.13.0"
 gem "jekyll-sitemap", "~> 1.4.0"
 gem "jekyll-paginate", "~> 1.1.0"
