@@ -79,6 +79,12 @@ strong {
   @extend %semibold;
 }
 
+hr {
+  margin-top: 0;
+  border-top: 3px solid $gray-500;
+  width: 80%;
+}
+
 .print-only {
   display: none;
 }
@@ -186,10 +192,19 @@ article {
 }
 
 .job {
-  &-title {
+  display: flex;
+  flex-direction: column;
 
+  padding: 0;
+
+  &-title {
+    order: 1;
     display: flex;
     justify-content: space-between;
+
+    h3 {
+      @extend %semibold;
+    }
 
     &-text {
       font-size: 1.3rem;
@@ -209,7 +224,13 @@ article {
     }
   }
 
+  &-timeline {
+    order: 2;
+    padding-bottom: 0.5rem;
+  }
+
   &-description {
+    order: 3;
     margin-bottom: 1rem;
     text-align: justify;
 
@@ -219,6 +240,7 @@ article {
   }
 
   &-accomplishments {
+    order: 4;
     font-size: 0.9rem;
   }
 
@@ -274,16 +296,6 @@ article {
     }
   }
 
-  &-divider {
-    padding-top: 0;
-    text-align: center;
-    span {
-      display: inline-block;
-      width: 80%;
-      border-top: 3px solid $gray-500;
-    }
-  }
-
   /* Medium window format */
   $timelinewidth: 150px;
   @include media-breakpoint-up(md) {
@@ -301,6 +313,8 @@ article {
       display: flex;
       flex-direction: column;
       text-align: center;
+
+      padding-bottom: 0;
 
       &-start{
         order: 3;
