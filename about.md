@@ -17,7 +17,7 @@ experience:
         type: award
         link: https://fedtechmagazine.com/article/2020/07/30-federal-it-influencers-worth-follow-2020
   - company: U.S. Small Business Administration
-    title: Chief Enterprise Architect
+    title: Director of IT Services (acting)
     start: September 2019
     end: April 2020
     description: |+
