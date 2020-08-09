@@ -12,9 +12,13 @@
 @import "@fortawesome/fontawesome-pro/scss/brands.scss";
 
 @include web-fonts(
- // ($accent-font: ("400")),
+ ($accent-font: ("600", 700)),
  ($main-font: ("400", "400 italic", "600", "600 italic"))
 );
+
+%font-normal {
+  font-weight: 400;
+}
 
 %semibold {
   font-weight: 600;
@@ -37,39 +41,44 @@
 }
 
 %header-decoration {
-  @extend %shadow;
+  // @extend %shadow;
   &:hover {
-    border-bottom: 1px solid $white;
-    margin-bottom: -1px;
+    border-bottom: 2px solid $dark;
+    margin-bottom: -2px;
   }
 
 }
 
 body {
-  margin-top: $header-height;
+  margin-top: $header-height + 20px;
   background: #d9d5cd url(/assets/images/bedge_grunge.jpg);
   font-family: $main-font-stack;
-  font-weight: 300;
+  @extend %font-normal;
   line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: $main-font-stack;
-  font-weight: 400;
+  font-family: $accent-font-stack;
+  @extend %font-normal;
   a {
     color: inherit;
   }
 }
 
+p:last-child {
+  // margin-bottom: 0;
+}
+
 input {
   font-family: $main-font;
-  font-weight: 300;
+  @extend %font-normal;
   font-size: .85em;
 }
 
 a {
-  color: $blue;
-  border-bottom: 1px dotted $blue;
+  color: $link-color;
+  border-bottom: 1px dotted $link-color;
+
   &:hover {
     border-bottom: none;
   }
@@ -87,35 +96,6 @@ hr {
 
 .print-only {
   display: none;
-}
-
-.navbar-brand {
-  font-size: 1.2rem;
-  padding: 0px;
-  margin: 0 1rem 0 0;
-  @extend %header-decoration;
-}
-
-.nav-link {
-  padding: 0!important;
-  margin: 0 0.5rem;
-  @extend %header-decoration;
-}
-
-.nav-social a {
-  /* Slightly lighter text shadow than we use on text. */
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
-
-}
-
-.navbar-toggler {
-  padding: 0.5rem 0.25rem 0rem;
-}
-
-.navbar-toggler-icon {
-  @extend .far;
-  @extend .fa-bars;
-  color: $white;
 }
 
 code {
@@ -142,6 +122,10 @@ article {
   padding-bottom: 1rem;
 }
 
+.post-multiple {
+  margin-bottom: 1rem;
+}
+
 .profile-photo {
   width: 75px;
   height: 75px;
@@ -159,9 +143,9 @@ article {
   grid-gap: 1rem $grid-gutter-width/2;
 
   padding-top: 1rem;
-  padding-bottom: 0rem;
-  margin-bottom: 2rem;
-  border-bottom: 3px solid #999;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid $dark;
 
   .page-about & {
     border-bottom: 0;
@@ -178,7 +162,11 @@ article {
     flex-grow: 1;
     font-size: 0.9rem;
     line-height: 1;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   li {
@@ -262,7 +250,11 @@ article {
 
     i {
       font-size: 1.3rem;
-      color: $blue;
+      color: $link-color;
+    }
+
+    a {
+      color: $link-color;
     }
 
     a {
@@ -331,7 +323,7 @@ article {
       // Draw our connecting line;
       .divider {
         align-self: center;
-        border-left: 5px dotted $blue;
+        border-left: 5px dotted $link-color;
         width: 1px;
         order: 2;
         flex: 1;
@@ -385,12 +377,21 @@ article {
  */
 
 .navbar {
+  font-family: $accent-font-stack;
+  @extend %bold;
+
   background: rgba($teal, 0.9);
-  padding-top: 0;
-  padding-bottom: 0;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   a {
-    color: white;
+    color: $dark;
     border-bottom: none;
   }
 
@@ -400,6 +401,37 @@ article {
       background-color: $white;
     }
   }
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  line-height: 1;
+  padding: 0px;
+  @extend %header-decoration;
+
+  -webkit-text-stroke: 2px $dark;
+  -webkit-text-fill-color: $main-background;
+}
+
+.nav-link {
+  padding: 0!important;
+  margin: 0 0.5rem;
+  @extend %header-decoration;
+}
+
+.nav-social a {
+  /* Slightly lighter text shadow than we use on text. */
+  // text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+}
+
+.navbar-toggler {
+  padding: 0.5rem 0.25rem 0rem;
+}
+
+.navbar-toggler-icon {
+  @extend .far;
+  @extend .fa-bars;
+  color: $white;
 }
 
 .nav-pages {
@@ -435,7 +467,7 @@ article {
   .nav-social {
     a {
       font-size: 24px;
-      width: 60px;
+      width: 70px;
       display: inline-block;
       position: relative;
       height: 2.5rem;
@@ -447,8 +479,9 @@ article {
 
       span:not(.icon) {
         width: 100%;
-        font-size: 12px;
-        @include text-outline(darken($teal, 20%));
+        font-size: 14px;
+        // @include text-outline(darken($teal, 20%));
+        @include text-outline($white);
         transition: top 0.25s ease-in;
         position: absolute;
         left: 0;
