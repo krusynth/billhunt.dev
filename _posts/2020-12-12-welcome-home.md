@@ -6,6 +6,13 @@ date: 2020-12-12T17:33:00+00:00
 permalink: /blog/2020/12/12/welcome-home/
 layout: post
 ---
+
+I see many of my former technology-colleagues now suddenly eager to
+return to government- or join for the first time- and I'm very excited
+to work with you all again! That being said, here are a few thoughts
+from someone who stuck around for the hard parts over the last 4
+years.
+
 This post originally appeared as [a thread on my Twitter
 account](https://twitter.com/krusynth/status/1325804228426805248).
 I've reposted it here for posterity with additional context. This was
@@ -14,12 +21,6 @@ these topics, I highly recommend reading [Cyd
 Harrell](https://twitter.com/cydharrell)'s
 fantastic book, [A Civic Technologist's Practice
 Guide](https://cydharrell.com/book/)
-
-I see many of my former technology-colleagues now suddenly eager to
-return to government- or join for the first time- and I'm very excited
-to work with you all again! That being said, here are a few thoughts
-from someone who stuck around for the hard parts over the last 4
-years.
 
 1. "Move fast and break things" failed. As a result, we inherited a
 lot of fast-moving broken things. Sustainability is the most important
