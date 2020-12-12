@@ -2,8 +2,8 @@
 title: Welcome Home
 author: Bill Hunt
 type: post
-date: 2020-12-12T17:33:00+00:00
-permalink: /blog/2020/12/12/welcome-home/
+date: 2020-11-09T09:15:00+00:00
+permalink: /blog/2020/11/09/welcome-home/
 layout: post
 ---
 
