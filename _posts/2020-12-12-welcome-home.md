@@ -3,7 +3,7 @@ title: Welcome Home
 author: Bill Hunt
 type: post
 date: 2020-12-12T17:33:00+00:00
-permalink: /blog/2020/12/12/welcome-home
+permalink: /blog/2020/12/12/welcome-home/
 layout: post
 ---
 This post originally appeared as [a thread on my Twitter
