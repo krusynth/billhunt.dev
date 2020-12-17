@@ -7,8 +7,8 @@ permalink: /about/
 layout: page
 experience:
   - company: U.S. Small Business Administration
-    title: Chief Enterprise Archtect
-    start: April 2020
+    title: Chief Enterprise Architect
+    start: September 2019
     end: Present
     description: |+
       My official role at SBA is Chief Enterprise Architect, where I help to set the roadmap for technology across the organization. As chair of the Architecture Review Board, I work with agency offices to ensure they stay in compliance with Federal law, policy, as well as adhering to the enterprise-wide future state plan. This includes evaluation of new technology solutions, performing analyses of alternatives, and the rationalization of system and application portfolios.
@@ -74,7 +74,7 @@ experience:
     highlights:
       - name: 2016 Legal Hacker of the Year (DC Legal Hackers)
         type: award
-        link: http://dclegalhackers.org/lehackies#lehackies32016winners></li>
+        link: http://dclegalhackers.org/lehackies#lehackies32016winners
   - company: OpenGov Foundation
     title: Lead Developer
     start: August 2013
@@ -224,7 +224,7 @@ volunteer:
       <div class="job-accomplishments">
         <ul>
           {% for highlight in job.highlights %}
-            <li class="{{highlight.type}}"><span><i></i></span>{% if highlight.link %}<a href="{{highlight.link}}">{{highlight.name}}</a>{% else %}{{highlight.name}}{% endif %}</li>
+            <li class="{{highlight.type}}" title="{{highlight.type | capitalize}} - {{highlight.name}}"><span><i></i></span>{% if highlight.link %}<a href="{{highlight.link}}">{{highlight.name}}</a>{% else %}{{highlight.name}}{% endif %}</li>
           {% endfor %}
         </ul>
       </div>
