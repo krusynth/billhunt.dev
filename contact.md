@@ -10,7 +10,7 @@ layout: page
 
 I&#8217;m currently located in Washington, DC.
 
-Please feel free to reach me at <bill@krues8dr.com>.
+Please feel free to reach me at <hello@billhunt.email>.
 
 &nbsp;
 
