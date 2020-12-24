@@ -1,7 +1,7 @@
 {% assign route="" %}
 <ul class="breadcrumb">
 	<li class="breadcrumb-item">
-		<a href="{{ '/' | absolute_url }}">Home</a>
+		<a href="{{ '/' }}">Home</a>
 	</li>
 	{% for category in page.categories %}
 		{% assign route = route | append: '/' | append: category %}
