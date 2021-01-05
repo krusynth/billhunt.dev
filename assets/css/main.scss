@@ -13,7 +13,8 @@
 
 @include web-fonts(
  ($accent-font: ("600", 700)),
- ($main-font: ("400", "400 italic", "600", "600 italic"))
+ ($main-font: ("400", "400 italic", "600", "600 italic")),
+ ($special-font: ("400"))
 );
 
 %font-normal {
@@ -49,8 +50,9 @@
 
 }
 
+
 body {
-  margin-top: $header-height + 20px;
+  margin-top: 115px;
   background: #d9d5cd url(/assets/images/bedge_grunge.jpg);
   font-family: $main-font-stack;
   @extend %font-normal;
@@ -350,10 +352,12 @@ article {
 
   padding-top: 10px;
   padding-bottom: 10px;
+  flex-wrap: wrap;
 
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
+    flex-wrap: wrap;
   }
 
   a {
@@ -366,6 +370,21 @@ article {
     .icon-bar {
       background-color: $white;
     }
+  }
+}
+
+.navbar-tagline {
+  width: 100%;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  font-family: $special-font-stack;
+  text-align: center;
+  color: $white;
+
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+    line-height: 1.5rem;
+    height: 1rem;
   }
 }
 
@@ -383,11 +402,6 @@ article {
   padding: 0!important;
   margin: 0 0.5rem;
   @extend %header-decoration;
-}
-
-.nav-social a {
-  /* Slightly lighter text shadow than we use on text. */
-  // text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
 }
 
 .navbar-toggler {
@@ -426,7 +440,8 @@ article {
 }
 
 .navbar-expand-lg .navbar-collapse {
-
+  flex-shrink: 0;
+  width: 100%;
 }
 
 .collapse:not(.collapsing):not(.show) {
@@ -436,17 +451,13 @@ article {
       width: 70px;
       display: inline-block;
       position: relative;
-      height: 2.5rem;
+      line-height: 1;
       overflow: hidden;
       text-align: center;
-      .icon {
-        padding-top: 12px;
-      }
 
       span:not(.icon) {
         width: 100%;
         font-size: 14px;
-        // @include text-outline(darken($teal, 20%));
         @include text-outline($white);
         transition: top 0.25s ease-in;
         position: absolute;
@@ -454,7 +465,7 @@ article {
         top: 45px;
       }
       &:hover span:not(.icon) {
-        top: 11px;
+        top: 5px;
       }
     }
   }

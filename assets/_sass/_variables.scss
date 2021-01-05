@@ -27,10 +27,12 @@ $nav-link-hover-bg: rgba(#fff, 0.3);
 /* Fonts */
 
 $main-font: 'Raleway';
-$main-font-stack: $main-font, sans-serif; /* Raleway by Matt McInerney et al. */
+$main-font-stack: $main-font, sans-serif;
 $accent-font: 'Montserrat';
-$accent-font-stack: $accent-font, sans-serif; /* Oswald by Vernon Adams */
+$accent-font-stack: $accent-font, sans-serif;
 $code-font: monospace;
+$special-font: 'Sacramento';
+$special-font-stack: $special-font, cursive;
 
 // $font-weight-normal: normal !default;
 
@@ -50,5 +52,3 @@ $code-font: monospace;
 // $navbar-height: 40px;
 // $navbar-default-color: inherit;
 // $navbar-default-bg: $color-content-bg;
-
-$header-height: 48px;
