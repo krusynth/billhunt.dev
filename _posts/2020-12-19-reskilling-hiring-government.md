@@ -9,7 +9,7 @@ excerpt:
   Since the Reagan era, government agencies have outsourced more and more IT tasks to contractors and vendors, under the false promise of reduced risk and increased savings for taxpayers. This effort has lobotomized government by eliminating subject matter experts, reducing its ability to manage change, and as a result has greatly increased — rather than reduced — the risk for Federal agencies.
 ---
 
-This article is part two in a series on IT policy recommendations. A PDF of the full recommendations may be [downloaded here](https://billhunt.dev/uploads/2020/12/IT-Policy-Recommendations-2021-2024.pdf).
+This article is part two in a [series on IT policy recommendations](/policy-recs/). A PDF of the full recommendations may be [downloaded here](https://billhunt.dev/uploads/2020/12/IT-Policy-Recommendations-2021-2024.pdf).
 
 The nature of business is **change** — we move, refine, and combine goods and services and data, which generates *value* — and this is true both in the public and the private sector. Technology is just one of the ways that we *manage* that change. Those organizations that do best at managing change are often the best equipped to deal with the relentless pace of transformation within the IT field itself. Government, however, tends to resist change because of misaligned value incentives which prioritize *stability *and avoid *risk*, though these elements do not necessarily need to be at odds with one another.
 

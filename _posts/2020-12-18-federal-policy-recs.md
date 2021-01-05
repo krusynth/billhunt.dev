@@ -9,7 +9,7 @@ excerpt:
   The work improving technology in government through policy initiatives over the last twelve years has been very successful, however there will always be more work that needs to be done. Today, there are several key steps that the Biden Administration could immediately address and work on over the next four years to continue to build trust and drive maturity in technology across government to “Build Back Better” — not just at the Federal level, but state and local as well.
 ---
 
-This article is part one in a series on IT policy recommendations. A PDF of the full recommendations may be [downloaded here](https://billhunt.dev/uploads/2020/12/IT-Policy-Recommendations-2021-2024.pdf).
+This article is part one in a [series on IT policy recommendations](/policy-recs/). A PDF of the full recommendations may be [downloaded here](https://billhunt.dev/uploads/2020/12/IT-Policy-Recommendations-2021-2024.pdf).
 
 ## Executive Summary
 

@@ -3,13 +3,13 @@ title: Principles for Automation in Government
 author: Bill Hunt
 type: post
 date: 2020-12-21T00:00:00+00:00
-permalink: /blog/2020/12/21/federal-policy-recs/
+permalink: /blog/2020/12/21/ai-ml-rpa-principles/
 layout: post
 excerpt:
   Artificial Intelligence (AI), Machine Learning (ML), Robotic Processing Automation (RPA), and other related predictive algorithm technologies continue to gain attention. However, at the moment their promises are far greater than the reality, and instead of successes we continue to see the worst of ourselves reflected back.
 ---
 
-This article is part three in a series on IT policy recommendations. A PDF of the full recommendations may be [downloaded here](https://billhunt.dev/uploads/2020/12/IT-Policy-Recommendations-2021-2024.pdf).
+This article is part three in a [series on IT policy recommendations](/policy-recs/). A PDF of the full recommendations may be [downloaded here](https://billhunt.dev/uploads/2020/12/IT-Policy-Recommendations-2021-2024.pdf).
 
 Artificial Intelligence (AI), Machine Learning (ML), Robotic Processing Automation (RPA)[^1], and other related predictive algorithm technologies [continue to gain attention](https://www.congress.gov/bill/116th-congress/house-bill/5901/text/enr). However, at the moment their promises are far greater than the reality, and instead of successes we continue to see [the worst of ourselves reflected back](https://www.aclu.org/blog/privacy-technology/surveillance-technologies/amazons-face-recognition-falsely-matched-28). Vendors also continue to oversell the functionality of these tools, while glossing over major expenses and difficulties, such as acquiring and tagging training data.
 

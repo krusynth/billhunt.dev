@@ -73,6 +73,8 @@ permalink: /:categories/:title:output_ext
 collections:
   category:
     output: true
+  landings:
+    output: true
 
 # defaults:
 #   -
