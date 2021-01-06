@@ -135,9 +135,16 @@ experience:
     description: |+
       I've spent over two decades building hundreds of sites and applications for a variety of clients. Throughout my work, I’ve stayed current with the latest cutting-edge tools. I've created plugins and themes for popular content management systems, built custom applications in a dozen different programming languages, and written many articles about various topics from technology to management to data standards policy.
 volunteer:
+  - company: U.S. Federal Chief Information Officers (CIO) Council
+    title: Cloud & Infrastructure Community of Practice - Advisory Board Member
+    start: September 2020
+    end: Present
   - company: Advanced Technology Academic Research Center (ATARC)
-    title: Government Advisory Board Liaison
+    title: Government Advisory Board Member
     start: October 2018
+    end: Present
+  - title: Cloud & Infrastructure Working Group Chair
+    start: September 2019
     end: Present
   - company: ACT-IAC
     title: Customer Experience (CX) Working Group Board Member
@@ -239,7 +246,7 @@ volunteer:
       </div>
       <div class="job-title">
         <h3>
-          <span class="job-title-company">{{ role.company }}</span>
+          {% if role.company %}<span class="job-title-company">{{ role.company }}</span>{% endif %}
           <span class="job-title-position">{{ role.title }}</span>
         </h3>
       </div>
