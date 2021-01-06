@@ -161,15 +161,11 @@ volunteer:
   <img class="qr-code-img" src="/assets/images/qr-code.svg" alt="QR Code" />
 </div>
 
-<header class="about-header">
-  <img class="profile-photo" src="/uploads/2009/03/bill-hunt.jpg" alt="Photo of Bill Hunt"/>
-  <div class="block block-profile">
-    <h2>Bill Hunt</h2>
-    <strong>Washington, DC, US</strong>
-  </div>
-</header>
-
 <section class="about-summary">
+  <img class="profile-photo" src="/uploads/2009/03/bill-hunt.jpg" alt="Photo of Bill Hunt"/>
+  <p>
+    Location: <strong>Washington, DC, US</strong>
+  </p>
   <p>
     I work at the intersection of business, technology, and policy to improve people’s access to government services and information. I currently serve as the Chief Enterprise Architect at the U.S. Small Business Administration, overseeing the technology roadmap for the agency.
   </p>
