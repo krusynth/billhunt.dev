@@ -146,9 +146,9 @@ volunteer:
   - title: Cloud & Infrastructure Working Group Chair
     start: September 2019
     end: Present
-  - company: ACT-IAC
+  - company: American Council for Technology and Industry Advisory Council (ACT-IAC)
     title: Customer Experience (CX) Working Group Board Member
-    start: September 201
+    start: September 2019
     end: Present
   - company: Free Law Founders
     title: Member
@@ -241,8 +241,10 @@ volunteer:
     <article class="job">
       <div class="job-timeline">
         <span class="job-timeline-start">{{ role.start }}</span>
+        {% if role.start != role.end %}
         <span class="divider">&mdash;</span>
         <span class="job-timeline-end">{{ role.end }}</span>
+        {% endif %}
       </div>
       <div class="job-title">
         <h3>
