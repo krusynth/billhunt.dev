@@ -71,6 +71,10 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+h3 {
+  font-size: 1.3rem;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -217,7 +221,6 @@ article {
 
     h3 {
       @extend %semibold;
-      font-size: 1.3rem;
     }
 
     &-text {
