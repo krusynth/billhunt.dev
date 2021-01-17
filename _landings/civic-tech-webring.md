@@ -28,9 +28,11 @@ You may request your site to be added to the webring if it meets the following c
 
 ### How to Join
 
-To join the webring, please [open a request to add a new site through GitHub issues](https://github.com/krusynth/civic-tech-webring/issues/new/choose).
+To join the webring, please [open a request to add a new site through GitHub issues](https://github.com/krusynth/civic-tech-webring/issues/new/choose). After you're approved, you'll need to add the webring code to your website:
 
-### Adding the Code
+### Adding the Banner
+
+#### Self-Hosted Websites
 You can show the webring on your site by pasting the following html snippet wherever you want it to appear:
 
 ```
@@ -46,6 +48,62 @@ If you'd like to disable the default styles, you can use this snippet instead:
 ```
 
 (You can, of course, also [download the `webring.js` file from GitHub](https://github.com/krusynth/civic-tech-webring/blob/main/webring.js) and host it yourself, but it'll be up to you to keep this file up-to-date as changes are made!)
+
+
+#### Hosted Blogs
+
+If you're using a service to host your blog which does not allow JavaScript, you can use a static version instead, either on your bio and/or posts. Use the generator below to generate the html for your page:
+
+<form id="webring-generator" class="webring-form">
+  <fieldset class="form-group">
+    <label for="website">Your Website:</label>
+    <input id="website" class="webring-input form-control" name="website" placeholder="https://billhunt.dev/"/>
+  </fieldset>
+  <fieldset class="form-check form-group">
+    <input type="radio" class="webring-input webring-type form-check-input" id="type-full" name="webring-type" value="full" checked/><label for="type-full" class="form-check-label">Full Banner</label><br>
+    <input type="radio" class="webring-input webring-type form-check-input" id="type-short" name="webring-type" value="short"/><label for="type-short" class="form-check-label">Short Banner</label>
+  </fieldset>
+</form>
+
+Get your code:
+
+<pre class="webring-html" id="webring-html"></pre>
+
+How it will appear:
+
+<div class="webring-generated" id="webring-generated"></div>
+
+<script>
+  function updateCode(e) {
+    console.log('update', e);
+    if(e) e.preventDefault();
+
+    let codeType = document.querySelector('input[name="webring-type"]:checked').value;
+    let website = encodeURIComponent(document.getElementById('website').value);
+
+    let code = `<a href="https://static.billhunt.dev/civictech/webring.html?dir=prev&from=${website}">&larr;</a> &#124; <a href="https://github.com/krusynth/civic-tech-webring/">Civic Tech Webring</a> &#124;  <a href="https://static.billhunt.dev/civictech/webring.html?from=${website}">&rarr;</a>`;
+
+    if(codeType == 'full') {
+      code = `This blog is part of the <a href="https://github.com/krusynth/civic-tech-webring/">Civic Tech Webring</a>. &#124; <a href="https://static.billhunt.dev/civictech/webring.html?dir=prev&from=${website}">Previous Site</a> &#124;
+    <a href="https://static.billhunt.dev/civictech/webring.html?from=${website}">Next Site</a>`;
+    }
+
+    document.getElementById('webring-html').innerHTML = '';
+    document.getElementById('webring-html').appendChild(document.createTextNode('  '+code));
+
+    document.getElementById('webring-generated').innerHTML = code;
+
+    return false;
+  }
+  updateCode();
+
+  document.getElementById('webring-generator').addEventListener('submit', updateCode, true);
+
+  const inputs = document.querySelectorAll('.webring-input');
+  for(let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('change', updateCode, true);
+  }
+</script>
 
 [View and contribute to the code on GitHub.](https://github.com/krusynth/civic-tech-webring)
 

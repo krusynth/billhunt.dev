@@ -365,6 +365,29 @@ article {
   }
 }
 
+/*
+ * Webring
+ */
+
+.webring-form {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+}
+
+.webring-html {
+  margin-top: 1rem;
+}
+
+.webring-generated {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: $gray-200;
+}
+
 /**
  * Navbar
  */
