@@ -79,4 +79,4 @@ collections:
     output: true
 
 feed:
-  posts_limit: 100
+  posts_limit: 20
