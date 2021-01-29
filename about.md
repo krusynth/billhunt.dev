@@ -183,7 +183,10 @@ volunteer:
     Realizing that I could have a greater impact working inside of government, in 2017 I served a tour with the United States Digital Service (USDS), delivering human-centered modern services at the Department of Veterans Affairs. Following that, I spent several years as the Cloud Policy Lead for the Office of Management and Budget (OMB), where I used my technical expertise to drive the White House’s agenda on Cloud and IT modernization – including cybersecurity, procurement and workforce reskilling initiatives. I’ve been recognized by my peers for my efforts across government, and have been recognized in the Fed100 in 2019, an annual list of government and industry leaders who have made a major impact in the U.S. Government, as well as FedTech Magazine’s Top 30 Influencers in 2020.
   </p>
   <p>
-    I have continued my work with non-profit and educational institutions, and am currently serving on several boards and committees, lecturing at universities, and speaking on topics including technology, policy, and government advocacy for a variety of audiences.
+    I have continued my work with non-profit and educational institutions, and am currently serving on several boards and committees, lecturing at universities, and speaking on topics including technology, policy, and government advocacy for a variety of audiences. I also co-host ATARC's biweekly <a href="https://atarc.org/event/cloud-coffee/">Cloud & Coffee</a> video series, where we have informal conversations about technology topics with leaders in government and industry.
+  </p>
+  <p>
+    I also still write code in my very limited spare time. Recently I've created <a href="https://twitter.com/EOPbot">@EOPbot</a> - a Twitter bot that tweets presidential actions as they happen in realtime, <a href="https://billhunt.dev/civic-tech-webring/">The Civic Tech Webring</a> - a collection of blogs from civic-tech-minded humans, and <a href="https://job.hunt.works/">Job.Hunt.Works</a> - a website to make job searching easier, as well as <a href="https://github.com/krusynth/">other little free tools</a>.
   </p>
   <p>
     At heart, I believe in collaboration, transparency, and equity to make things better - teams, software, and government.
