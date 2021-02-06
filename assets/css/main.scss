@@ -160,6 +160,10 @@ article {
   max-width: 100%;
 }
 
+.spaced-list li {
+  margin-bottom: 1.5rem;
+}
+
 .featured-icon {
   @extend .fas;
   @extend .fa-star;

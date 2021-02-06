@@ -26,6 +26,7 @@ Harrell](https://twitter.com/cydharrell)'s
 fantastic book, [A Civic Technologist's Practice
 Guide](https://cydharrell.com/book/)
 
+{:.spaced-list}
 1. "Move fast and break things" failed. As a result, we inherited a
 lot of fast-moving broken things. Sustainability is the most important
 principle in government tech today. **"Move carefully and fix
