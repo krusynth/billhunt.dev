@@ -156,6 +156,10 @@ article {
   padding: 1rem;
 }
 
+.content img {
+  max-width: 100%;
+}
+
 .featured-icon {
   @extend .fas;
   @extend .fa-star;
