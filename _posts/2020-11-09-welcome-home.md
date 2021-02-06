@@ -13,6 +13,10 @@ to work with you all again! That being said, here are a few thoughts
 from someone who stuck around for the hard parts over the last 4
 years.
 
+{:.featured}
+Update February 6th, 2021: This little post has gotten way more attention than I ever could have expected! If you'd like to show everyone that you also want to **Move Carefully and Fix Things**, I'd like to send you a sticker **for free**! [Here's how to get yours!](/move-carefully/)
+
+
 This post originally appeared as [a thread on my Twitter
 account](https://twitter.com/krusynth/status/1325804228426805248).
 I've reposted it here for posterity with additional context. This was
@@ -24,8 +28,8 @@ Guide](https://cydharrell.com/book/)
 
 1. "Move fast and break things" failed. As a result, we inherited a
 lot of fast-moving broken things. Sustainability is the most important
-principle in government tech today. "Move carefully and fix
-things."
+principle in government tech today. **"Move carefully and fix
+things."**
 
 2. "Build with, not for" -
 [@elle_mccann](https://twitter.com/elle_mccann)
