@@ -67,5 +67,3 @@ Think about what you're willing to sacrifice before signing up.
 
 That all being said... Welcome Home. I'm looking forward to
 collaborating with you all soon.
-
-![Screengrab from FLCL - Naota and Haruko hitting the giant baseball together](/uploads/2020/12/flcl-hit.gif)
