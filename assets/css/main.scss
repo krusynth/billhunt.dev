@@ -156,7 +156,13 @@ article {
   padding: 1rem;
 }
 
-.content img {
+.featured + .featured {
+  margin-top: -1rem;
+  padding-top: 0;
+}
+
+.content img,
+.content iframe {
   max-width: 100%;
 }
 

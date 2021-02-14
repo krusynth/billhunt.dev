@@ -16,6 +16,9 @@ years.
 {:.featured}
 Update February 6th, 2021: This little post has gotten way more attention than I ever could have expected! If you'd like to show everyone that you also want to **Move Carefully and Fix Things**, I'd like to send you a sticker **for free**! [Here's how to get yours!](/move-carefully/)
 
+{:.featured}
+Update February 14th, 2021: This post is now a [free downloadable print-and-fold zine](//billhunt.dev/uploads/2021/02/welcome-home-zine.pdf)! You can find folding [instructions at the bottom of this page.](#instructions-for-the-zine)
+
 
 This post originally appeared as [a thread on my Twitter
 account](https://twitter.com/krusynth/status/1325804228426805248).
@@ -67,3 +70,11 @@ Think about what you're willing to sacrifice before signing up.
 
 That all being said... Welcome Home. I'm looking forward to
 collaborating with you all soon.
+
+## Instructions for the Zine
+
+{:.featured}
+![Folding instructions for the zine](//billhunt.dev/uploads/2021/02/zine-instructions.png)
+
+{:.featured}
+Once folded, the outside should have Welcome Home on both the front and back, and the first pages upon opening should be 2 and 3.
