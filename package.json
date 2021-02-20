@@ -1,16 +1,19 @@
 {
-  "name": "krues8dr",
+  "name": "krusynth",
   "version": "4.0.0",
-  "description": "krues8dr theme for jekyll",
+  "description": "krusynth theme for jekyll",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "rm -Rf _site && JEKYLL_ENV=production jekyll serve --port 8000 --host 0.0.0.0 --incremental",
+    "staging": "cap staging deploy",
+    "deploy": "cap production deploy",
+    "careless": "cap staging deploy && cap production deploy"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:krusynth/billhunt.dev.git"
   },
-  "author": "krues8dr",
+  "author": "krusynth",
   "license": "None",
   "bugs": {
     "url": "https://github.com/krusynth/billhunt.dev/issues"
