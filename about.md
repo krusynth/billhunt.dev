@@ -230,7 +230,17 @@ volunteer:
       <div class="job-accomplishments">
         <ul>
           {% for highlight in job.highlights %}
-            <li class="{{highlight.type}}" title="{{highlight.type | capitalize}} - {{highlight.name}}"><span><i></i></span>{% if highlight.link %}<a href="{{highlight.link}}">{{highlight.name}}</a>{% else %}{{highlight.name}}{% endif %}</li>
+            <li class="{{highlight.type}}" title="{{highlight.type | capitalize}} - {{highlight.name}}">
+              {% if highlight.type == "award" %}{% fas fa-award %}
+              {% elsif highlight.type == "document" %}{% fas fa-file-signature %}
+              {% elsif highlight.type == "group" %}{% fas fa-users %}
+              {% elsif highlight.type == "application" %}{% far fa-browser %}
+              {% endif %}
+
+              {% if highlight.link %}<a href="{{highlight.link}}">{{highlight.name}}</a>
+              {% else %}{{highlight.name}}
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
       </div>

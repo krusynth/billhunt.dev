@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/krusynth/billhunt.dev#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-pro": "^5.7.2",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1"
   }

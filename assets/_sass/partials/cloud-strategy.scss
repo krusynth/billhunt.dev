@@ -1,0 +1,225 @@
+.page-cloudbusting {
+  .feature-image {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.page-cloud-strategy-guide {
+
+$extra-accent-stack: 'Times New Roman', Times, serif;
+
+.post-content {
+  border: 2vw solid red;
+}
+
+.post-content p {
+  padding: 0 1rem;
+}
+
+.post-content p:first-of-type {
+  padding-top: 1rem;
+}
+
+.post-content p:last-of-type {
+  padding-bottom: 1rem;
+}
+
+.post-content h2 {
+  font-family: $extra-accent-stack;
+  padding: 0.25rem 1rem;
+  background-color: #110471;
+  color: $white;
+  margin: 2rem -2vw 1rem;
+}
+
+.table-of-contents {
+  list-style-type: none;
+
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+// .post-content p + p{
+//   padding-top: 0;
+//   margin-top: -1rem;
+// }
+
+.outlined {
+  color: #f8e300;
+  -webkit-text-stroke: #fb0f03 2px;
+  -webkit-text-fill: #f8e300;
+}
+
+.wrapper-outer {
+  background-color: #fb0f03;
+  padding: 0rem 0 2rem;
+}
+
+.wrapper-inner {
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+    max-width: 40vw;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
+}
+
+.subtitle-first {
+  text-transform: uppercase;
+  @extend %bold;
+  font-family: $accent-font-stack;
+}
+
+.wrapper-subtitle {
+  order: 2;
+  transform: skew(-35deg);
+  padding: 0;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  white-space: nowrap;
+
+  @include media-breakpoint-up(sm) {
+    width: 150%;
+    font-size: 4rem;
+  }
+}
+
+.wrapper-inner .fa-bars {
+  transform: scaleX(2.5);
+  margin: 0 2px;
+
+  @include media-breakpoint-up(sm) {
+    transform: scaleX(3.5);
+    margin: 0 10px;
+  }
+}
+
+.wrapper-inner .fa-bars:first-child {
+  transform-origin: 100% 50% 0;
+}
+.wrapper-inner .fa-bars:last-child {
+  transform-origin: 0 50% 0;
+}
+
+.subtitle-wrapper-text {
+  font-family: $extra-accent-stack;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  margin-right: -1em;
+}
+
+.subtitle-wrapper-text.top-text {
+  order: 1;
+  letter-spacing: 2.2vw;
+  margin-right: -2.2vw;
+}
+
+.subtitle-wrapper-text.bottom-text {
+  order: 3;
+  letter-spacing: 5vw;
+  margin-right: -5vw;
+}
+
+.fa-ban {
+  color: #fb0f03;
+}
+
+.checklist {
+  margin: 0 1rem 1rem;
+  min-width: 50%;
+
+  thead {
+    background-color: $dark;
+    color: $white;
+  }
+  th {
+    font-family: $accent-font-stack;
+    font-size: 1.2em;
+    padding: 0.25rem 0;
+
+    /* We can't colspan in markdown, so balance second col */
+    &:first-child {
+      width: 2rem;
+    }
+    &:last-child {
+      text-align: center;
+      padding-right: 2rem;
+    }
+  }
+
+  td, th {
+    border: 2px solid $dark;
+  }
+
+  td {
+    padding: 0.25rem 0.5rem;
+
+    &>.far, &>.fas, &>.fal {
+      font-size: 1.4em;
+      position: relative;
+      top: 0.1em;
+    }
+
+    &:first-child {
+      text-align: center;
+      width: 2rem;
+      line-height: 2rem;
+      // height: 2.5rem;
+    }
+  }
+}
+
+@keyframes flippin {
+  0%   {transform: scaleX(1)  rotate(0deg); left: 0px;}
+  10%  {transform: scaleX(1)  rotate(-35deg);}
+  20%  {transform: scaleX(1)  rotate(0deg);}
+  30%  {transform: scaleX(1)  rotate(-35deg);}
+  40%  {transform: scaleX(1)  rotate(0deg);}
+  49%  {transform: scaleX(1)  rotate(-35deg);}
+  50%  {transform: scaleX(-1) rotate(-35deg); left: 15px;}
+  60%  {transform: scaleX(-1) rotate(0deg);}
+  70%  {transform: scaleX(-1) rotate(-35deg);}
+  80%  {transform: scaleX(-1) rotate(0deg);}
+  90%  {transform: scaleX(-1) rotate(-35deg);}
+  99%  {transform: scaleX(-1) rotate(0deg);}
+  100% {transform: scaleX(1)  rotate(0deg); left: 0px;}
+}
+
+.fa-broom {
+  --fa-primary-color: #ffa802;
+  --fa-secondary-color: #7b5203;
+  --fa-secondary-opacity: 1;
+  animation: flippin 2s ease-in-out infinite;
+  position: relative;
+  left: 0;
+
+  float: right;
+}
+
+.secret-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+
+  background-color: #33a7de;
+  background-image: url('https://billhunt.dev/uploads/2021/02/servercloud.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+}

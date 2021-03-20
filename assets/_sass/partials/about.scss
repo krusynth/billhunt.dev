@@ -1,0 +1,140 @@
+/* About page */
+.about-summary {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: .5rem 1rem;
+
+  &-title {
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      @extend %semibold;
+    }
+
+    &-text {
+      font-size: 1.3rem;
+    }
+
+    span {
+      display: block;
+    }
+
+    &-position {
+      margin-top: 0.25rem;
+      font-size: 1.1rem;
+    }
+
+    &-company {
+      @extend %semibold;
+    }
+  }
+
+  &-timeline {
+    @extend %semibold;
+    order: 2;
+    padding-bottom: 0.5rem;
+  }
+
+  &-description {
+    order: 3;
+    margin-bottom: 1rem;
+    text-align: justify;
+
+    :first-child {
+      padding-top: 0;
+    }
+  }
+
+  &-accomplishments {
+    order: 4;
+    font-size: 0.9rem;
+  }
+
+  &-accomplishments,
+  &-events {
+    ul {
+      list-style: none;
+      @extend %bold;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    li span {
+      margin-left: -2rem;
+      width: 2rem;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      top: 0.2rem;
+      font-size: 1.3rem;
+    }
+
+
+    a {
+      color: $link-color;
+    }
+
+    a {
+      color: $blue;
+    }
+
+  }
+
+  /* Medium window format */
+  @include media-breakpoint-up(md) {
+
+    display: grid;
+    grid-gap: 0 $grid-gutter-width;
+    grid-template-columns: auto 30%;
+    padding: 0;
+
+    /* Our timeline should be a vertical column */
+    &-timeline {
+      grid-column: 1 / span 1;
+    }
+
+    &-title {
+      grid-column: 1 / span 1;
+    }
+
+    &-description,
+    &-events {
+      grid-column: 1 / span 1;
+    }
+
+    &-accomplishments {
+      grid-row: 3 / span 2;
+      grid-column: 2 / span 1;
+    }
+  }
+  /* Large window format */
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: auto 250px;
+
+    &-title {
+      &-text {
+        font-size: 1.75rem;
+      }
+      &-position {
+        font-size: 0.85em;
+      }
+    }
+    &-description {
+
+    }
+    &-accomplishments {
+      font-size: 1rem;
+    }
+  }
+}
