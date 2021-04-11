@@ -21,26 +21,14 @@ experience:
     start: September 2019
     end: April 2020
     description: |+
-      For my first six months at SBA, I temporarily served as the Director of IT Services, managing all of our operations and infrastructure, overseeing a staff of 15 Federal employees and 35 contractors, representing a budget of approximately $20 million. During this period, I performed employee evaluations and hiring, drafted and oversaw contracts, established budget targets, and created a program for service level and performance measurement. In this role, I coordinated closely with the Chief Information Officer, Chief Technology Officer, Director of Business Technology Solutions, Chief Information Security Officer, as well as program leads for the Office of Capital Access, the Office of Disaster Assistance, and Office of the Chief Financial Officer, among others.
-
-      Early in 2020, the COVID-19 pandemic broke out in the United States. This resulted in two major intertwined initiatives. First, Congress tasked SBA with distributing approximately $350 billion in small business loans and grants. Second, many agency offices moved to 100% telework. These combined to create a “perfect storm” of massive demand on SBA’s infrastructure and resources.
-
-      By quickly standing up small teams to contain and resolve the many emerging problems, I was able to keep our core services available to staff during this difficult time. This included moving services to both cloud-based and hybrid solutions to increase capacity for the many citizens accessing our services, as well as our own staff. We also deployed advanced identity and security capabilities (as part of our Zero Trust Networking initiative), and accelerated the rollout of many new remote work features to enable the sudden flood of new teleworkers. I also created a “fallback headquarters” to handle distribution of hardware and devices, in advance of the shutdown of the DC-based office.
-
-      During this time, we were able to onboard over 5000 new staff using these new processes and tools, and kept the American economy strong through the distribution of loans and grants to small businesses.
+      For my first six months at SBA, I served as the acting Director of IT Services, managing all of our operations and infrastructure. During the COVID-19 pandemic, I led efforts to keep staff connected and working as the agency rapidly shifted to telework. I also supported implementation of cloud-based services for implementation of the CARES Act, enabling the agency to distribute over $350 billion in loans.
   - company: Office of the Federal Chief Information Officer
     company2: Office of Management and Budget
     title: Cloud Policy Lead
     start: September 2017
     end: September 2019
     description: |+
-      As Cloud Policy Lead for the Federal Government, I collaborated daily with White House officials, Cabinet-level CIOs, and practitioners across the entire Federal enterprise to drive modern and mature practices in IT infrastructure for government services. To address the government’s largest barriers to IT modernization, the capstone of my work was creating the 2019 Federal Cloud Computing Strategy, “Cloud Smart.” This strategy was a bold new direction for IT management in the Federal government, bringing together a large number sweeping policy reforms in cybersecurity, IT procurement, and workforce reskilling. In a 2020 study by Meritalk, 71% of Federal agencies said Cloud Smart increased their pace of cloud adoption.
-
-      To operationalize this work, I created a public 25-point action plan for execution of the strategy, co-created with agency leads. I also lead the CIO Council effort on the creation of the Application Rationalization Playbook, to help enable agencies to modernize their IT systems using a data-driven approach. Furthermore, I oversaw the optimization and consolidation of over 12,000 Federal data centers, a portfolio representing approximately $8 billion annually. I personally crafted a revised Data Center Optimization Initiative policy (M-19-19), which saved taxpayers $2 billion over two years, while reducing the reporting burden by as much as 10,000 hours per agency, per year.
-
-      I further served as Mission Operations Lead for OFCIO, managing teams for workforce reskilling, shared government-wide services, network modernization, cloud email migration, and other related initiatives. I also led the White House’s work on the National Action Plan for Open Government, bringing my experience in government transparency and civic tech to set a national vision for openness.
-
-      In these roles, I oversaw Federal employees and contractors, built cross-agency coalitions, oversaw initiatives, and drafted policy. I also regularly briefed senior Federal agency and White House leadership on a variety of topics, prepared them for Congressional hearings, and represented the White House speaking at frequent public events.
+      As Cloud Policy Lead for the Federal Government, I collaborated daily with White House officials, Cabinet-level CIOs, and practitioners across the entire Federal enterprise to drive modern and mature practices in IT infrastructure for government services. To address the government’s largest barriers to IT modernization, the capstone of my work was creating the 2019 Federal Cloud Computing Strategy, “Cloud Smart.”
 
       In my first year at OMB, I received the prestigious Professional Achievement Award — an honor usually reserved for three years or more of exceptional service — for my innovative, collaborative approach to this work. In 2019, I was also named to the Fed100, after being nominated by my peers both inside and outside of government.
     highlights:
@@ -52,7 +40,7 @@ experience:
       - name: Federal Cloud Computing Strategy (Cloud Smart)
         type: document
         link: https://cloud.cio.gov/
-      - name: M-19-19 Update to Data Center Optimization Initiative (DCOI)
+      - name: M-19-19 Data Center Optimization Initiative
         type: document
         link: https://datacenters.cio.gov/
       - name: Application Rationalization Playbook
@@ -171,30 +159,35 @@ volunteer:
 <section class="about-summary">
   <img class="profile-photo" src="/uploads/2009/03/bill-hunt.jpg" alt="Photo of Bill Hunt"/>
   <p>
-    Location: <strong>Washington, DC, US</strong>
+    I'm a civic technologist and policy enthusiast working for the US Federal Government. After over two decades leading award-winning Agile engineering teams building cutting-edge solutions for some of the best-known companies in the world, I turned my skills towards improving government.
   </p>
   <p>
-    I work at the intersection of business, technology, and policy to improve people’s access to government services and information. I currently serve as the Chief Enterprise Architect at the U.S. Small Business Administration, overseeing the technology roadmap for the agency.
-  </p>
-  <p>
-    After over two decades leading award-winning Agile engineering teams building cutting-edge solutions for some of the best-known companies in the world, I turned my skills towards improving government. As technical lead at prominent civic tech organizations including the Sunlight Foundation and the OpenGov Foundation, I created coalitions, policy, and open-source tools to help citizens access information and services. In 2016, I was named Legal Hacker of the Year for this work.
-  </p>
-  <p>
-    Realizing that I could have a greater impact working inside of government, in 2017 I served a tour with the United States Digital Service (USDS), delivering human-centered modern services at the Department of Veterans Affairs. Following that, I spent several years as the Cloud Policy Lead for the Office of Management and Budget (OMB), where I used my technical expertise to drive the White House’s agenda on Cloud and IT modernization – including cybersecurity, procurement and workforce reskilling initiatives. I’ve been recognized by my peers for my efforts across government, and have been recognized in the Fed100 in 2019, an annual list of government and industry leaders who have made a major impact in the U.S. Government, as well as FedTech Magazine’s Top 30 Influencers in 2020.
-  </p>
-  <p>
-    I have continued my work with non-profit and educational institutions, and am currently serving on several boards and committees, lecturing at universities, and speaking on topics including technology, policy, and government advocacy for a variety of audiences. I also co-host ATARC's biweekly <a href="https://atarc.org/event/cloud-coffee/">Cloud & Coffee</a> video series, where we have informal conversations about technology topics with leaders in government and industry.
-  </p>
-  <p>
-    I also still write code in my very limited spare time. Recently I've created <a href="https://twitter.com/EOPbot">@EOPbot</a> - a Twitter bot that tweets presidential actions as they happen in realtime, <a href="https://billhunt.dev/civic-tech-webring/">The Civic Tech Webring</a> - a collection of blogs from civic-tech-minded humans, and <a href="https://job.hunt.works/">Job.Hunt.Works</a> - a website to make job searching easier, as well as <a href="https://github.com/krusynth/">other little free tools</a>.
+    Currently, I work as the Chief Enterprise Architect at the US Small Business Administration in Washington, DC. Previously, I've worked in policy and technology at the Office of Management and Budget (The White House), the US Digital Service at the Department of Veterans Affairs, Sunlight Foundation, OpenGov Foundation, etc.
   </p>
   <p>
     At heart, I believe in collaboration, transparency, and equity to make things better - teams, software, and government.
   </p>
+
+  <h2 class="subsection-title">Highlights</h2>
+  <h3 class="subsubsection-title">Work</h3>
+  <ul class="about-highlights">
+    <li>{% far fa-user-tie %} Chief Enterprise Architect at US Small Business Administration</li>
+    <li>{% far fa-university %} US Federal CIO Council – <a href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/executive-committee/">Cloud & Infrastructure Community of Practice</a> Advisory Board Member</li>
+    <li>{% far fa-book-open %} ATARC <a href="https://atarc.org/atarc-board/">Board Member</a> and <a href="https://atarc.org/working-groups/cloud-working-group/">Cloud & Infrastructure Working Group Chair</a></li>
+    <li>{% far fa-users %} ACT-IAC <a href="https://www.actiac.org/group/customer-experience-community-interest">Customer Experience (CX) Community of Interest</a> Board Member</li>
+    <li>{% far fa-cloud %} Previously: OMB (The White House), USDS at the Department of Veterans Affairs, Sunlight Foundation, etc.</li>
+  </ul>
+  <h3 class="subsubsection-title">Projects</h3>
+  <ul class="about-highlights">
+    <li>{% far fa-headphones %} Host of <a href="https://atarc.org/event/cloud-coffee/">Cloud & Coffee</a> - a biweekly podcast featuring technology leaders in government</li>
+    <li>{% far fa-robot %} <a href="https://twitter.com/EOPbot">@EOPbot</a> - a Twitter bot that tweets presidential actions as they happen</li>
+    <li>{% far fa-link %} <a href="https://billhunt.dev/civic-tech-webring/">The Civic Tech Webring</a> - a collection of blogs for-and-by civic-tech-minded humans</li>
+    <li>{% far fa-search %} <a href="https://job.hunt.works/">Job.Hunt.Works</a> - a website to make job searching easier</li>
+  </ul>
 </section>
 
 <section class="experience">
-  <h2 class="section-title">Experience</h2>
+  <h2 class="section-title">Resume</h2>
   {% assign prev = 0 %}
   {% for job in page.experience %}
     {% assign next = page.experience[forloop.index] %}

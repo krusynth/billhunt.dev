@@ -4,6 +4,36 @@
   margin-bottom: 2rem;
 }
 
+.about-highlights {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: block;
+      width: 50%;
+      padding: 0 1rem 0.25rem;
+      text-align: left;
+
+      span {
+        font-size: 1.7rem;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.5rem;
+        width: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
 .job {
   display: flex;
   flex-direction: column;
