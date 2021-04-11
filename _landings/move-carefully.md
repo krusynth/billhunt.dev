@@ -14,10 +14,10 @@ Well, my [little post on joining government service](/blog/2020/11/09/welcome-ho
 ![Photo of Move Carefully and Fix Things stickers](/uploads/2021/02/movecarefully-photo.jpg)
 
 {:.featured}
-**Update February 28th, 2021**: Wow! In the first month, you all have raised nearly a thousand dollars for charity! I've given away over 400 stickers and I'm getting ready to print a second batch! The sticker fund is being reset for March, and any funds I receive will go towards the second printing! However, please keep **donating directly to the charity of the month** below.  Also, *I love stickers!* If you have stickers of your own, I'd certainly appreciate if you sent me some back as well! No pressure!
+**Update February 28th, 2021**: Wow! In the first month, I covered my costs and you all have raised nearly a thousand dollars for charity! I've given away over 400 stickers and I'm getting ready to print a second batch! The sticker fund is being reset for March, and any funds I receive will go towards the second printing! However, please keep **donating directly to the charity of the month** below.  Also, *I love stickers!* If you have stickers of your own, I'd certainly appreciate if you sent me some back as well! No pressure!
 
 {:.featured}
-As of March 369th, the sticker fund is at *$9.85*{: style="color: green"} (US dollars), which will go towards the second printing of stickers. You all have raised **$1,322.00** for charity! So far, I've spent out of pocket about $160 for 500 stickers (about $0.32/sticker), $23 on packing materials, and $67.20 in postage. Mailing a standard, 1oz envelope to anywhere in the US costs $0.55, while international letters cost $1.20.
+As of March 23rd, the sticker fund is at *$9.85*{: style="color: green"} (US dollars), which will go towards the second printing of stickers. You all have raised **$1,472.00** for charity! So far, I've spent out of pocket about $160 for 500 stickers (about $0.32/sticker), $23 on packing materials, and $67.20 in postage. Mailing a standard, 1oz envelope to anywhere in the US costs $0.55, while international letters cost $1.20.
 
 During pre-pandemic times, I'd just be going around handing these out at events. But today, it's a lot harder for me to give these to everyone. I also have no interest in going into the sticker business, so I want to try something _different_. So here's the deal:
 
