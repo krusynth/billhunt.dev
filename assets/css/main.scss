@@ -126,6 +126,11 @@ article {
   padding: 1rem;
 }
 
+.old-warning {
+  @extend .featured;
+  margin-bottom: 1rem;
+}
+
 .featured + .featured {
   margin-top: -1rem;
   padding-top: 0;

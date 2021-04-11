@@ -80,3 +80,4 @@ collections:
 
 feed:
   posts_limit: 20
+  age: 1451624400
