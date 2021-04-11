@@ -59,6 +59,11 @@ title: Move Carefully and Fix Things
                 {{ post.date | date: date_format }}
             </span>
           </p>
+          {% if post.image %}
+            <p>
+              <img src="{{ post.image }}" class="featured-image">
+            </p>
+          {% endif %}
           <div class="page-content">
             {% if post.excerpt %}
               {{ post.excerpt }}

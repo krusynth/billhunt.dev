@@ -5,7 +5,6 @@ type: post
 date: 2020-12-18T09:01:00+00:00
 permalink: /blog/2020/12/18/federal-policy-recs/
 layout: post
-featured: true
 excerpt:
   The work improving technology in government through policy initiatives over the last twelve years has been very successful, however there will always be more work that needs to be done. Today, there are several key steps that the Biden Administration could immediately address and work on over the next four years to continue to build trust and drive maturity in technology across government to “Build Back Better” — not just at the Federal level, but state and local as well.
 ---
