@@ -162,9 +162,6 @@ volunteer:
     I'm a civic technologist and policy enthusiast working for the US Federal Government. After over two decades leading award-winning Agile engineering teams building cutting-edge solutions for some of the best-known companies in the world, I turned my skills towards improving government.
   </p>
   <p>
-    Currently, I work as the Chief Enterprise Architect at the US Small Business Administration in Washington, DC. Previously, I've worked in policy and technology at the Office of Management and Budget (The White House), the US Digital Service at the Department of Veterans Affairs, Sunlight Foundation, OpenGov Foundation, etc.
-  </p>
-  <p>
     At heart, I believe in collaboration, transparency, and equity to make things better - teams, software, and government.
   </p>
 
