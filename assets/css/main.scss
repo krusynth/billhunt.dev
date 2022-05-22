@@ -21,11 +21,15 @@
 
 
 body {
-  margin-top: $header-height + 20px;
   background: #d9d5cd url(/assets/images/bedge_grunge.jpg);
   font-family: $main-font-stack;
   @extend %font-normal;
   line-height: 1.5;
+
+  margin-top: 75px;
+  @include media-breakpoint-up(md) {
+    margin-top: 111px;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -36,8 +40,28 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+h3 {
+  font-size: 1.3rem;
+}
+
 p:last-child {
   margin-bottom: 0;
+}
+
+.long {
+  display: none;
+}
+.short {
+  display: block;
+}
+
+@include media-breakpoint-up(md) {
+  .long {
+    display: block;
+  }
+  .short {
+    display: none;
+  }
 }
 
 input {
@@ -86,6 +110,7 @@ blockquote {
   @extend .container;
   background: $white;
   margin-bottom: 4rem;
+  min-height: 70vh;
 }
 
 .example {
@@ -148,8 +173,11 @@ article {
 }
 
 .profile-photo {
-  width: 75px;
-  height: 75px;
+  width: 110px;
+  height: 110px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  float: left;
 
   .page-about & {
     width: 150px;
@@ -371,10 +399,7 @@ article {
   font-family: $accent-font-stack;
   @extend %bold;
 
-  background: rgba($teal, 0.9);
-
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background: $newblue;
 
   .container-fluid {
     padding-left: 0;
@@ -461,17 +486,17 @@ article {
       width: 70px;
       display: inline-block;
       position: relative;
-      height: 2.5rem;
+      line-height: 1;
       overflow: hidden;
       text-align: center;
       .icon {
-        padding-top: 12px;
+
       }
 
       span:not(.icon) {
         width: 100%;
         font-size: 14px;
-        // @include text-outline(darken($teal, 20%));
+        // @include text-outline(darken($newblue, 20%));
         @include text-outline($white);
         transition: top 0.25s ease-in;
         position: absolute;
@@ -483,6 +508,29 @@ article {
       }
     }
   }
+}
+
+/*
+ * Webring
+ */
+
+.webring-form {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+}
+
+.webring-html {
+  margin-top: 1rem;
+}
+
+.webring-generated {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: $gray-200;
 }
 
 /**
