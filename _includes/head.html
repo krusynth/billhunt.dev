@@ -1,17 +1,15 @@
-
-
 <head>
  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/css/main.css?20210305" | relative_url }}">
-  <link rel="stylesheet" media="print" href="{{ "/assets/css/print.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css?" | append: timestamp | relative_url }}">
+  <link rel="stylesheet" media="print" href="{{ "/assets/css/print.css?" | append: timestamp | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml" />
-  <script src="{{ "/assets/js/jquery.min.js" | relative_url }}"></script>
-  <script src="{{ "/assets/js/bootstrap.bundle.min.js" | relative_url }}"></script>
-  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
-  <script src="https://kit.fontawesome.com/8820ed646c.js" crossorigin="anonymous"></script>
+  <script src="{{ "/assets/js/jquery.min.js?" | append: timestamp | relative_url }}"></script>
+  <script src="{{ "/assets/js/bootstrap.bundle.min.js?" | append: timestamp | relative_url }}"></script>
+  <script src="{{ "/assets/js/main.js?" | append: timestamp | relative_url }}"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome/fontawesome.min.js?{{ timestamp }}"></script>
 
   <!-- Matomo -->
   <script type="text/javascript">
