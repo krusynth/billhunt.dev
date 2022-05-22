@@ -2,7 +2,8 @@
 // As example you can start by importing the _variables.scss file from one of the
 // theme provided by https://bootswatch.com .
 
-$fa-font-path: '/assets/fonts';
+$font-path: 'https://static.billhunt.dev/assets/fonts/';
+$fa-font-path: $font-path + 'fontawesome/';
 
 /* Colors */
 $purple : #8255A6;
@@ -25,12 +26,10 @@ $nav-link-hover-bg: rgba(#fff, 0.3);
 
 
 /* Fonts */
-
-$main-font: 'Raleway';
-$main-font-stack: $main-font, sans-serif; /* Raleway by Matt McInerney et al. */
-$accent-font: 'Montserrat';
-$accent-font-stack: $accent-font, sans-serif; /* Oswald by Vernon Adams */
+$main-font-stack: 'Raleway', sans-serif;
+$accent-font-stack: 'Montserrat', sans-serif;
 $code-font: monospace;
+$special-font-stack: 'Sacramento', cursive;
 
 // $font-weight-normal: normal !default;
 

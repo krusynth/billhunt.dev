@@ -9,3 +9,5 @@ Gemfile.lock
 yarn-error.log
 assets/npm/
 log
+demo
+.jekyll-cache
