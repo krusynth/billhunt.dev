@@ -6,12 +6,22 @@ date: 2009-03-16T19:16:43+00:00
 permalink: /about/
 layout: page
 experience:
+  - company: U.S. Securities and Exchange Commission
+    title: Assistant Director, Cloud Center of Excellence
+    start: May 2021
+    end: Present
+    description: |+
+      Currently, I lead the Cloud Center of Excellence at the SEC, overseeing modernization efforts of our many applications and tools for regulatory oversight.
+    highlights:
+      - name: FedTech Magazine – 2021 Top 30 Federal IT Influencers
+        type: award
+        link: https://fedtechmagazine.com/article/2021/07/30-federal-it-influencers-worth-follow-2021
   - company: U.S. Small Business Administration
     title: Chief Enterprise Architect
     start: September 2019
-    end: Present
+    end: May 2021
     description: |+
-      My official role at SBA is Chief Enterprise Architect, where I help to set the roadmap for technology across the organization. As chair of the Architecture Review Board, I work with agency offices to ensure they stay in compliance with Federal law, policy, as well as adhering to the enterprise-wide future state plan. This includes evaluation of new technology solutions, performing analyses of alternatives, and the rationalization of system and application portfolios.
+      As the Chief Enterprise Architect of the SBA, I helped to set the roadmap for technology across the organization. As chair of the Architecture Review Board, I worked with agency offices to ensure they were in compliance with Federal law, policy, as well as adhering to the enterprise-wide future state plans. This included the evaluation of new technology solutions, performing analyses of alternatives, and the rationalization of agency system and application portfolios.
     highlights:
       - name: FedTech Magazine – 2020 Top 30 Federal IT Influencers
         type: award
@@ -62,7 +72,7 @@ experience:
     highlights:
       - name: 2016 Legal Hacker of the Year (DC Legal Hackers)
         type: award
-        link: http://dclegalhackers.org/lehackies#lehackies32016winners
+        link: https://dc.legalhackers.org/2017/01/le-hackies-3-2016-winners/
   - company: OpenGov Foundation
     title: Lead Developer
     start: August 2013
@@ -137,7 +147,7 @@ volunteer:
   - company: American Council for Technology and Industry Advisory Council (ACT-IAC)
     title: Customer Experience (CX) Working Group Board Member
     start: September 2019
-    end: Present
+    end: April 2022
   - company: Free Law Founders
     title: Member
     start: July 2014
@@ -168,15 +178,19 @@ volunteer:
   <h2 class="subsection-title">Highlights</h2>
   <h3 class="subsubsection-title">Work</h3>
   <ul class="about-highlights">
-    <li>{% far fa-user-tie %} Chief Enterprise Architect at US Small Business Administration</li>
-    <li>{% far fa-university %} US Federal CIO Council – <a href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/executive-committee/">Cloud & Infrastructure Community of Practice</a> Advisory Board Member</li>
-    <li>{% far fa-book-open %} ATARC <a href="https://atarc.org/atarc-board/">Board Member</a> and <a href="https://atarc.org/working-groups/cloud-working-group/">Cloud & Infrastructure Working Group Chair</a></li>
-    <li>{% far fa-users %} ACT-IAC <a href="https://www.actiac.org/group/customer-experience-community-interest">Customer Experience (CX) Community of Interest</a> Board Member</li>
-    <li>{% far fa-cloud %} Previously: OMB (The White House), USDS at the Department of Veterans Affairs, Sunlight Foundation, etc.</li>
+    <li>{% far fa-user-tie %} U.S. Securities and Exchange Commission – Assistant Director, Cloud Center of Excellence</li>
+    <li>{% far fa-university %} US Federal CIO Council – <a href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/executive-committee/">Cloud & Infrastructure Community of Practice</a> Executive Committee Member</li>
+    <li>{% far fa-book-open %} <a href="https://atarc.org/atarc-board/">ATARC</a> Board Member and <a href="https://atarc.org/working-groups/cloud-working-group/">Cloud & Infrastructure Working Group</a> Government Chair</li>
+  </ul>
+  <h3 class="subsubsection-title">Previous Work</h3>
+  <ul class="about-highlights">
+    <li>{% far fa-cloud %} Cloud Policy Lead at OMB (The White House)</li>
+    <li>{% far fa-building %} COVID relief programs at US SBA</li>
+    <li>{% far fa-hospital %} US Digital Service at the Department of Veterans Affairs</li>
+    <li>{% far fa-eye %} Government transparency work at Sunlight Foundation & OpenGov Foundation</li>
   </ul>
   <h3 class="subsubsection-title">Projects</h3>
   <ul class="about-highlights">
-    <li>{% far fa-headphones %} Host of <a href="https://atarc.org/event/cloud-coffee/">Cloud & Coffee</a> - a biweekly podcast featuring technology leaders in government</li>
     <li>{% far fa-robot %} <a href="https://twitter.com/EOPbot">@EOPbot</a> - a Twitter bot that tweets presidential actions as they happen</li>
     <li>{% far fa-link %} <a href="https://billhunt.dev/civic-tech-webring/">The Civic Tech Webring</a> - a collection of blogs for-and-by civic-tech-minded humans</li>
     <li>{% far fa-search %} <a href="https://job.hunt.works/">Job.Hunt.Works</a> - a website to make job searching easier</li>
