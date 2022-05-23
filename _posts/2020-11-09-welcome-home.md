@@ -36,11 +36,11 @@ principle in government tech today. **"Move carefully and fix
 things."**
 
 2. "Build with, not for" -
-[@elle_mccann](https://twitter.com/elle_mccann)
+[Cuán McCann](https://linktr.ee/buildwith)
 
     *(that one is still the most important and gets its own tweet)*
 
-    Note: Laurenellen's talk at CFA Summit in 2014 begins with "At the
+    Note: Cuán's talk at CFA Summit in 2014 begins with "At the
     risk of creating a massive existential crisis..." and the following
     five minutes created one for me. It completely changed how I look at the
     world and approach The Work.
