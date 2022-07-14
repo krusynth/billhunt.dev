@@ -296,6 +296,7 @@ article {
 
     li span {
       @extend .fa-li;
+      left: 0;
     }
 
     i {

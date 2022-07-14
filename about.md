@@ -236,15 +236,17 @@ volunteer:
         <ul>
           {% for highlight in job.highlights %}
             <li class="{{highlight.type}}" title="{{highlight.type | capitalize}} - {{highlight.name}}">
+              {% if highlight.link %}<a href="{{highlight.link}}">{% endif %}
+
               {% if highlight.type == "award" %}{% fas fa-award %}
               {% elsif highlight.type == "document" %}{% fas fa-file-signature %}
               {% elsif highlight.type == "group" %}{% fas fa-users %}
               {% elsif highlight.type == "application" %}{% far fa-browser %}
               {% endif %}
 
-              {% if highlight.link %}<a href="{{highlight.link}}">{{highlight.name}}</a>
-              {% else %}{{highlight.name}}
-              {% endif %}
+             {{highlight.name}}
+
+             {% if highlight.link %}</a>{% endif %}
             </li>
           {% endfor %}
         </ul>
