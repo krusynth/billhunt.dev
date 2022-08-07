@@ -1,12 +1,7 @@
 ---
 ---
 @import "variables";
-@import "web-fonts-local";
-@include web-fonts(
-  ("Montserrat", "montserrat", (500, 700)),
-  ("Raleway", "raleway-v22-latin", (400, (400, italic), 600)),
-  ("Sacramento", "sacramento-v8-latin", (400))
-);
+
 
 // @import "bootstrap/scss/bootstrap";
 @import "bootstrap_customization";
@@ -21,15 +16,17 @@
 
 
 body {
-  background: #d9d5cd url(/assets/images/bedge_grunge.jpg);
+  @include dotbg(lighten($lemon, 20%), $white);
   font-family: $main-font-stack;
   @extend %font-normal;
+  font-size: 0.85em;
   line-height: 1.5;
 
-  margin-top: 75px;
-  @include media-breakpoint-up(md) {
-    margin-top: 111px;
-  }
+  // Only if there's a fixed navbar.
+  // margin-top: 75px;
+  // @include media-breakpoint-up(md) {
+  //   margin-top: 111px;
+  // }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -40,8 +37,12 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+h2 {
+  font-size: 1.1rem;
+}
+
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.0rem;
 }
 
 p:last-child {
@@ -74,7 +75,42 @@ a {
   color: $link-color;
   border-bottom: 1px dotted $link-color;
   &:hover {
-    border-bottom: none;
+    color: darken($link-color, 15%);
+  }
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  color: $white;
+  background-color: $newblue;
+  line-height: 1.5;
+  border: 1px solid $dark;
+  padding: 0rem 0.5rem;
+  margin-top: 0.75rem;
+
+  font-family: $special-font-stack;
+  font-size: 1.1rem;
+
+  @extend %shadow-float;
+  &:hover {
+    top: 5px;
+    box-shadow: none;
+    color: $white;
+    background-color: lighten($newblue, 5%);
+  }
+
+  &.disabled {
+    color: lighten($dark, 20%);
+    background-color: #aaa;
+    box-shadow: none;
+    &:hover {
+      top: 0;
+      color: inherit;
+      background-color: inherit;
+    }
+
+
   }
 }
 
@@ -108,8 +144,12 @@ blockquote {
 
 .content {
   @extend .container;
+  @extend %shadow;
+  border: 3px solid $dark;
+  border-top: none;
   background: $white;
   margin-bottom: 4rem;
+  padding-bottom: 1rem;
   min-height: 70vh;
 }
 
@@ -127,22 +167,66 @@ article {
 }
 
 .post-multiple {
+  @extend %bordered-box;
   margin-bottom: 1rem;
 }
 
+.section-title {
+  font-family: $special-font-stack;
+  font-size: 1.2rem;
+  @include text-outline($white, 2px);
+}
+
+.page-blog .content {
+}
+
 .featured {
-  background-color: rgba($newblue, 0.1);
-  padding: 1rem;
+  align-self: start;
+  position: relative;
+  padding: 0.5rem 1rem;
+
+  @include dotbg(lighten($newblue, 20%));
+
+  .post-title {
+    margin-left: 12px;
+    padding-left: 18px;
+  }
+
+  & + & {
+    margin-top: -1rem;
+    padding-top: 0;
+  }
+
+  &-icon {
+    color: $white;
+    background-color: $lemon;
+
+    // @include linebg($newblue, $white);
+    -webkit-text-stroke: 2px $dark;
+
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-left: -3px;
+    width: 32px;
+    height: 32px;
+    padding-left: 1px;
+    border-radius: 30px;
+    @extend %bordered;
+    font-size: 30px;
+    line-height: 23px
+  }
+}
+
+.posts {
+  @include dotbg($sienna);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .old-warning {
   @extend .featured;
   margin-bottom: 1rem;
-}
-
-.featured + .featured {
-  margin-top: -1rem;
-  padding-top: 0;
 }
 
 .content img,
@@ -153,13 +237,6 @@ article {
 
 .spaced-list li {
   margin-bottom: 1.5rem;
-}
-
-.featured-icon {
-  color: $lemon;
-  font-size: 2rem;
-  float: right;
-  margin-left: 0.5rem;
 }
 
 .photo-comparison {
@@ -194,7 +271,7 @@ article {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid $dark;
+  border-bottom: 3px dotted $lemon;
 
   .page-about & {
     border-bottom: 0;
@@ -392,124 +469,6 @@ article {
   }
 }
 
-/**
- * Navbar
- */
-
-.navbar {
-  font-family: $accent-font-stack;
-  @extend %bold;
-
-  background: $newblue;
-
-  .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  a {
-    color: $dark;
-    border-bottom: none;
-  }
-
-  .navbar-toggle {
-    border: 1px solid $white;
-    .icon-bar {
-      background-color: $white;
-    }
-  }
-}
-
-.navbar-brand {
-  font-size: 3rem;
-  line-height: 1;
-  padding: 0px;
-  @extend %header-decoration;
-
-  -webkit-text-stroke: 2px $dark;
-  -webkit-text-fill-color: $main-background;
-}
-
-.nav-link {
-  padding: 0!important;
-  margin: 0 0.5rem;
-  @extend %header-decoration;
-}
-
-.nav-social a {
-  /* Slightly lighter text shadow than we use on text. */
-  // text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
-}
-
-.navbar-toggler {
-  padding: 0.5rem 0.25rem 0rem;
-}
-
-.navbar-toggler-icon {
-  @extend .far;
-  @extend .fa-bars;
-  color: $white;
-}
-
-.nav-pages {
-  flex-grow: 1;
-}
-
-.nav-social {
-  margin-left: auto !important;
-
-  .icon {
-    @extend .fab;
-    margin-right: 0.5rem;
-  }
-  .linkedin .icon {
-    @extend .fa-linkedin;
-  }
-  .github .icon {
-    @extend .fa-github;
-  }
-  .twitter .icon {
-    @extend .fa-twitter;
-  }
-  .spotify .icon {
-    @extend .fa-spotify;
-  }
-}
-
-.navbar-expand-lg .navbar-collapse {
-
-}
-
-.collapse:not(.collapsing):not(.show) {
-  .nav-social {
-    a {
-      font-size: 24px;
-      width: 70px;
-      display: inline-block;
-      position: relative;
-      line-height: 1;
-      overflow: hidden;
-      text-align: center;
-      .icon {
-
-      }
-
-      span:not(.icon) {
-        width: 100%;
-        font-size: 14px;
-        // @include text-outline(darken($newblue, 20%));
-        @include text-outline($white);
-        transition: top 0.25s ease-in;
-        position: absolute;
-        left: 0;
-        top: 45px;
-      }
-      &:hover span:not(.icon) {
-        top: 11px;
-      }
-    }
-  }
-}
 
 /*
  * Webring

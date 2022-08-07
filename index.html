@@ -3,6 +3,8 @@ layout: default
 title: Blog
 ---
 
+<div class="row">
+<div class="col">
 <section class="about-header">
   <div class="block block-description">
     <img class="profile-photo" src="/uploads/2009/03/bill-hunt.jpg" alt="Photo of Bill Hunt" />
@@ -27,24 +29,24 @@ title: Blog
   {% assign featured_posts = site.posts | where:"featured","true" %}
   {%- if featured_posts.size > 0 -%}
     <section class="featured">
-      <strong>Featured</strong>
+      <h2 class="section-title">Featured</h2>
 
       <article class="post-multiple">
-        {% fas "fa-star featured-icon" %}
-        <h2><a href="/move-carefully/">Move Carefully and Fix Things Stickers</a></h2>
+        <span class="featured-icon">★</span>
+        <h3 class="post-title"><a href="/move-carefully/">Move Carefully and Fix Things Stickers</a></h3>
         <div class="page-content">
           <img alt="Photo of Move Carefully and Fix Things stickers" src="/uploads/2021/02/movecarefully-photo.jpg">
         </div>
         <div class="page-content">
           After my <a href="/blog/2020/11/09/welcome-home/">little post on joining government service</a>, a lot of people asked about stickers for “Move Carefully and Fix Things." I had some made and now I want to give them to you for free! (But maybe we can also help good causes at the same time!)
         </div>
-        <a href="/move-carefully/">Get a free sticker!</a>
+        <a href="/move-carefully/" class="btn">Get a free sticker!</a>
       </article>
 
       {% for post in featured_posts -%}
         <article class="post-multiple">
-          {% fas "fa-star featured-icon" %}
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <span class="featured-icon">★</span>
+          <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
           <p class="author">
             <span class="date">
                 {{ post.date | date: date_format }}
@@ -62,17 +64,21 @@ title: Blog
               {{ post.content | strip_html | truncatewords:75 }}
             {% endif %}
           </div>
-          <a href="{{ post.url }}">Read More</a>
+          <a href="{{ post.url }}" class="btn">Read More</a>
         </article>
       {% endfor %}
     </section>
   {% endif %}
 {% endif %}
+</div>
 
+<div class="col">
+<section class="posts">
+  <h2 class="section-title">Recent Posts</h2>
 {% for post in paginator.posts %}
 {% if post.featured == nil %}
 <article class="post-multiple">
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p class="author">
     <span class="date">
         {{ post.date | date: date_format }}
@@ -85,26 +91,32 @@ title: Blog
       {{ post.content | strip_html | truncatewords:75 }}
     {% endif %}
   </div>
-  <a href="{{ post.url }}">Read More</a>
+  <a href="{{ post.url }}" class="btn">Read More</a>
 </article>
 {% endif %}
 {% endfor %}
+</section>
+</div>
+</div>
+
+<div class="row">
 
 <!-- Pagination links -->
-<div class="pagination">
+<div class="pagination row">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
+    <a href="{{ paginator.previous_page_path }}" class="previous btn">
       Previous
     </a>
   {% else %}
-    <span class="previous">Previous</span>
+    <span class="previous btn disabled">Previous</span>
   {% endif %}
   <span class="page_number ">
     Page: {{ paginator.page }} of {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="next btn">Next</a>
   {% else %}
-    <span class="next ">Next</span>
+    <span class="next btn disabled">Next</span>
   {% endif %}
+</div>
 </div>

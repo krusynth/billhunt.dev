@@ -1,9 +1,8 @@
-// This is the place to place Bootstrap's variables overrides.
-// As example you can start by importing the _variables.scss file from one of the
-// theme provided by https://bootswatch.com .
+// $font-path: 'https://static.billhunt.dev/assets/fonts/';
+$font-path: '/assets/fonts/';
+$fa-font-path: $font-path + 'fontawesome';
 
-$font-path: 'https://static.billhunt.dev/assets/fonts/';
-$fa-font-path: $font-path + 'fontawesome/';
+@import "web-fonts-local";
 
 /* Colors */
 $purple : #8255A6;
@@ -28,11 +27,21 @@ $main-background: $white;
 $nav-link-hover-bg: rgba(#fff, 0.3);
 
 
+$border-weight-thin: 2px;
+$border-weight-thick: 2px;
+
 /* Fonts */
 $main-font-stack: 'Raleway', sans-serif;
 $accent-font-stack: 'Montserrat', sans-serif;
 $code-font: monospace;
-$special-font-stack: 'Sacramento', cursive;
+$special-font-stack: 'VT323', monospace;
+
+@include web-fonts(
+  ("Montserrat", "montserrat", (500, 700)),
+  ("Raleway", "raleway-v22-latin", (400, (400, italic), 600)),
+  // ("Sacramento", "sacramento-v8-latin", (400))
+  ("VT323", "vt323", (400))
+);
 
 // $font-weight-normal: normal !default;
 
@@ -64,21 +73,24 @@ $special-font-stack: 'Sacramento', cursive;
   font-weight: 700;
 }
 
-@mixin text-outline($color: #000) {
+@mixin text-outline($color: #000, $size:1px) {
   text-shadow:
-    -1px -1px 0 $color,
-    1px -1px 0 $color,
-    -1px 1px 0 $color,
-    1px 1px 0 $color;
+    (-1*$size) (-1*$size) 0 $color,
+    $size (-1*$size) 0 $color,
+    (-1*$size) $size 0 $color,
+    $size $size 0 $color;
 }
 
 
 %shadow {
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  box-shadow: 10px 0px rgba(00,00,00,0.4);
+}
+
+%shadow-float {
+  box-shadow: 5px 5px rgba(00,00,00,0.4);
 }
 
 %header-decoration {
-  // @extend %shadow;
   &:hover {
     border-bottom: 2px solid $dark;
     margin-bottom: -2px;
@@ -105,5 +117,67 @@ $special-font-stack: 'Sacramento', cursive;
 
   td {
     display: block;
+  }
+}
+
+
+// Dimensions
+$bg-dot-size: 2px;
+$bg-dot-space: 4px;
+@mixin dotbg($dot-color, $bg-color: $white, $dot-size: $bg-dot-size, $dot-space: $bg-dot-space) {
+  background:
+    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+}
+
+@mixin linebg($line-color, $bg-color: $white, $line-size: $bg-dot-size, $line-space: $bg-dot-size) {
+  background: repeating-linear-gradient(
+    45deg,
+    $line-color 0,
+    $line-color $line-size,
+    $bg-color $line-size,
+    $bg-color ($line-size+$line-space)
+  );
+}
+
+%bordered {
+  border: 2px solid $dark;
+}
+
+%bordered-double {
+  @extend %bordered;
+
+  position: relative;
+
+  $padding: 2px;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: $padding;
+    left: $padding;
+    right: $padding;
+    bottom: $padding;
+    border: $padding solid darken($newblue, 10%);
+  }
+}
+
+%bordered-box {
+  @extend %bordered-double;
+
+  background-color: $white;
+  padding: 15px;
+
+  .post-title {
+    $border-width: 1px;
+    $corner-size: 10px;
+    border: $border-width solid $dark;
+    background-color: $newblue;
+
+    color: $white;
+    padding: 4px 7px;
+    border-top-right-radius: 30px;
   }
 }
