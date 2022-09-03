@@ -7,12 +7,17 @@
   resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-pro/-/5.15.4/fontawesome-pro-5.15.4.tgz#aae79a86621a79ae972772ad2906a13ade650a06"
   integrity sha512-ApOqpDdKgA79xfLZH3B5PucZxj+TZyQUSrZ4bKkbJCR+zjmveQ4/gp/uXc5bNNhsdtJUy16BYJ/lAVydca2Y5Q==
 
-bootstrap@^4.4.1:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.1.tgz#bc25380c2c14192374e8dec07cf01b2742d222a2"
-  integrity sha512-0dj+VgI9Ecom+rvvpNZ4MUZJz8dcX7WCX+eTID9+/8HgOkv3dsRzi8BGeZJCQU6flWQVYxwTQnEZFrmJSEO7og==
-
 jquery@^3.5.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
+unpoly@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/unpoly/-/unpoly-2.6.1.tgz#48b3bc0df908bd79a983cbcacf284ebf9f2dd79a"
+  integrity sha512-/n4vkyILGcZKbzDlWc9xX44kwuVJb4BfbxqgtANTzwjgWKVsq2cXsKI394GeVlu77wrDch4yPgH43aD4yKaYbw==
+
+web-midi-player@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/web-midi-player/-/web-midi-player-1.4.1.tgz#2a2a07eb46f726d66afdd090e9f3fb7a3b975ef5"
+  integrity sha512-bPK19kcDfMqzS/i8+1RRNDgd2KKuX6HO0bBwfZveQHsalS1S3K+sAAdiA7Pmnxp7J70IQwTDb4OSeN3z2uvnpQ==

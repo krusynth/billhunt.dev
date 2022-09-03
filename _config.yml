@@ -26,7 +26,7 @@ author:
   name: "Bill Hunt"
   email: "hello@billhunt.email"
 
-paginate: 10
+paginate: 6
 paginate_path: "/blog/:num/"
 
 sass:
@@ -79,5 +79,5 @@ collections:
     output: true
 
 feed:
-  posts_limit: 20
+  posts_limit: 30
   age: 1451624400

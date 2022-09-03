@@ -1,0 +1,24 @@
+.audioplayer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0px 4px;
+}
+
+.player-button {
+  font-size: 0.8rem;
+  border-left: 2px solid $dark;
+  border-right: 2px solid $dark;
+  border-top: none;
+  border-bottom: none;
+  background: $white;
+  padding: 3px 5px;
+  flex-grow: 0;
+}
+
+.tracklist {
+  font-family: $special-font-stack;
+  font-size: 0.75rem;
+  flex-grow: 1;
+  overflow: hidden;
+}

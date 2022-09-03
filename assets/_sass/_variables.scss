@@ -1,5 +1,5 @@
-// $font-path: 'https://static.billhunt.dev/assets/fonts/';
-$font-path: '/assets/fonts/';
+$font-path: 'https://static.billhunt.dev/assets/fonts/';
+// $font-path: '/assets/fonts/';
 $fa-font-path: $font-path + 'fontawesome';
 
 @import "web-fonts-local";
@@ -9,14 +9,16 @@ $purple : #8255A6;
 $teal : rgba(17, 198, 169, 1);
 $lemon : #ffc107;
 $sienna : #D9503C;
-$skyblue : #4ABAF7;
 $orange : #D97B36;
 $khaki : #F2E3A7;
 $white : #fffcf6;
 $dark: #2f2f35;
-$newblue: #4f9cff;
+$blue: #4f9cff;
+$iceblue: #4abaf7;
+$green: #4a8a16;
+$red: #ba2618;
 
-$accent-color: $newblue;
+$accent-color: $blue;
 
 $link-color: $accent-color;
 $link-hover-color: $accent-color;
@@ -27,20 +29,29 @@ $main-background: $white;
 $nav-link-hover-bg: rgba(#fff, 0.3);
 
 
+/* Sizes */
+$page-width: 1140px;
+$column-width: 380px;
+
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+$grid-gutter-width: 10px;
+
 $border-weight-thin: 2px;
 $border-weight-thick: 2px;
 
 /* Fonts */
-$main-font-stack: 'Raleway', sans-serif;
+$main-font-stack: Verdana, Arial, Helvetica, sans-serif;
 $accent-font-stack: 'Montserrat', sans-serif;
 $code-font: monospace;
-$special-font-stack: 'VT323', monospace;
+$special-font-stack: 'Silkscreen', monospace;
 
 @include web-fonts(
   ("Montserrat", "montserrat", (500, 700)),
-  ("Raleway", "raleway-v22-latin", (400, (400, italic), 600)),
+  // ("Raleway", "raleway-v22-latin", (400, (400, italic), 600)),
   // ("Sacramento", "sacramento-v8-latin", (400))
-  ("VT323", "vt323", (400))
+  ("Silkscreen", "silkscreen", (400, 800))
 );
 
 // $font-weight-normal: normal !default;
@@ -62,6 +73,20 @@ $special-font-stack: 'VT323', monospace;
 // $navbar-default-color: inherit;
 // $navbar-default-bg: $color-content-bg;
 
+.container {
+  max-width: $page-width + (2*$grid-gutter-width) + (2*$border-weight-thick);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $breakpoint-md) {
+    border: $border-weight-thick solid $dark;
+  }
+}
+
+@mixin standard-padding {
+  padding: 5px $grid-gutter-width;
+}
+
 %font-normal {
   font-weight: 400;
 }
@@ -82,7 +107,7 @@ $special-font-stack: 'VT323', monospace;
 }
 
 
-%shadow {
+@mixin shadow() {
   box-shadow: 10px 0px rgba(00,00,00,0.4);
 }
 
@@ -146,38 +171,72 @@ $bg-dot-space: 4px;
   border: 2px solid $dark;
 }
 
-%bordered-double {
-  @extend %bordered;
-
-  position: relative;
-
-  $padding: 2px;
+@mixin bordered-box($bgcolor) {
+  padding: 0;
 
   &::before {
-    content: " ";
-    position: absolute;
-    top: $padding;
-    left: $padding;
-    right: $padding;
-    bottom: $padding;
-    border: $padding solid darken($newblue, 10%);
+    border-color: $bgcolor;
+  }
+
+  .post-header {
+    transition: all .1s ease-in-out;
+    $border-width: 1px;
+    $corner-size: 10px;
+    border: 2px solid $dark;
+    border-bottom: none;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    color:  $white;
+    background-color: $bgcolor;
+
+    .post-date {
+      float: right;
+      margin-right: 30px;
+      font-size: 0.9rem;
+      line-height: 2rem;
+      font-family: $special-font-stack;
+    }
+
+    &.hoverable {
+      &:hover {
+        background-color: lighten($bgcolor, 10%);
+        color: $white;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 1px 7px;
+    }
+  }
+
+  .post-title {
+    margin-bottom: 0;
+    display: inline-block;
+  }
+
+  .post-content {
+    background-color: $white;
+    padding: 0.25rem $grid-gutter-width 0.25rem;
+    border: $border-weight-thick solid $dark;
+  }
+
+  .btn {
+    color:  $white;
+    background-color: $bgcolor;
+    &:hover {
+      color:  $white;
+      background-color: lighten($bgcolor, 10%);
+    }
   }
 }
 
-%bordered-box {
-  @extend %bordered-double;
+%major-border {
+  border: 2px solid $dark;
+}
 
-  background-color: $white;
-  padding: 15px;
-
-  .post-title {
-    $border-width: 1px;
-    $corner-size: 10px;
-    border: $border-width solid $dark;
-    background-color: $newblue;
-
-    color: $white;
-    padding: 4px 7px;
-    border-top-right-radius: 30px;
-  }
+%minor-border {
+  border: 1px solid $dark;
 }

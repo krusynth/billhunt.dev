@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css?" | append: timestamp | relative_url }}">
   <link rel="stylesheet" media="print" href="{{ "/assets/css/print.css?" | append: timestamp | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml" />
-  <script src="{{ "/assets/js/jquery.min.js?" | append: timestamp | relative_url }}"></script>
-  <script src="{{ "/assets/js/bootstrap.bundle.min.js?" | append: timestamp | relative_url }}"></script>
-  <script src="{{ "/assets/js/main.js?" | append: timestamp | relative_url }}"></script>
+
+  <script src="https://static.billhunt.dev/assets/js/jquery.min.js?{{ timestamp }}"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?{{ timestamp }}"></script>
   <script src="https://static.billhunt.dev/assets/js/fontawesome/fontawesome.min.js?{{ timestamp }}"></script>
+  <script src="https://static.billhunt.dev/assets/js/web-midi-player.js?{{ timestamp }}"></script>
+  <script type="module" src="https://static.billhunt.dev/assets/js/main.js?{{ timestamp }}"></script>
 </head>

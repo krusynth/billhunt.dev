@@ -86,7 +86,7 @@ eos
         extra = ' title="' + icon_extra + '"'
       end
 
-      "<span class=\"#{icon}\"#{extra}></span>"
+      "<span class=\"fa #{icon}\"#{extra}></span>"
     end
   end
 end

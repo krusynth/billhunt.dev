@@ -6,10 +6,9 @@ date: 2022-03-15-T19:12:53-0400
 permalink: /blog/2022/03/15/federal-budget-challenges/
 layout: post
 excerpt: One of the main reasons government IT is bad is that it's chronically underfunded and also not funded in the right way. Here's why the Technology Modernization Fund alone is not enough to fix the challenges in the Federal Budget Process.
-image: /uploads/2022/03/electronic-soccer.jpg
 ---
 
-{:.featured}
+{:.banner}
 *Just a reminder that this is my personal account and these are my personal thoughts that I'm posting on my personal time. I do not speak for my current or previous government agencies here.*
 
 After six months of delay, Congress just passed the annual [federal appropriations bill for Fiscal Year 2022](https://rules.house.gov/sites/democrats.rules.house.gov/files/BILLS-117HR2471SA-RCP-117-35.pdf) (which we are halfway through currently). I just saw [Jason Miller](https://twitter.com/jmillerWFED)'s article for Federal News Network [pointing out that the Technology Modernization Fund (TMF) had it's budget completely cut this year](https://federalnewsnetwork.com/reporters-notebook-jason-miller/2022/03/in-a-reversal-of-roles-congress-tells-the-tmf-to-show-me-the-money/).

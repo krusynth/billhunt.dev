@@ -1,39 +1,58 @@
 <nav class="navbar navbar-expand-lg container">
-  <div class="navbar-tagline">Move carefully and fix things</div>
-  <div class="container-fluid navbar-container">
-    <a class="navbar-brand" rel="author" href="/">{{ site.title | escape }}</a>
-
-    {%- assign page_paths = site.header_pages -%}
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon far fa-bars"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="navbarSupportedContent">
-      <ul class="nav navbar-nav nav-pages">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about/">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact/">Contact</a>
-        </li>
-        <li class="nav-item stickers">
-          <a class="nav-link" href="/move-carefully/">STICKERS!</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav nav-social">
-        <li class="linkedin">
-          <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn">{% fab "fa-linkedin icon" %}<span>LinkedIn</span></a>
-        </li>
-        <li class="github">
-          <a href="https://github.com/krusynth" title="GitHub">{% fab "fa-github icon" %}<span>GitHub</span></a>
-        </li>
-        <li class="twitter">
-          <a href="https://twitter.com/krusynth" title="Twitter">{% fab "fa-twitter icon" %}<span>Twitter</span></a>
-        </li>
-      </ul>
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" up-follow>{{ site.title | escape }}</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
     </div>
   </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/contact/" up-follow>Contact</a>
+      </li>
+      <li class="nav-item nav-page stickers">
+        <a class="nav-link" href="/move-carefully/" up-follow>STICKERS!</a>
+      </li>
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link">{% fab "fa-linkedin icon" %}</a>
+      </li>
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link">{% fab "fa-github icon" %}</a>
+      </li>
+      <li class="twitter nav-item nav-social">
+        <a href="https://twitter.com/krusynth" title="Twitter" class="nav-link">{% fab "fa-twitter icon" %}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fa fa-solid fa-play" id="playbutton"></span><span class="fa fa-solid fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.mid">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.mid">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.mid">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.mid">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.mid">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.mid">Tool - Aenima</option>
+        <option value="Rammstein-Engel.mid">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.mid">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.mid">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.mid">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.mid">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.mid">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
 </nav>

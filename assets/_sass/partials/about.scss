@@ -12,7 +12,7 @@
     margin-bottom: 0.5rem;
   }
 
-  @include media-breakpoint-up(md) {
+  @media (min-width: $breakpoint-md) {
     display: flex;
     flex-wrap: wrap;
 
@@ -23,11 +23,11 @@
       text-align: left;
 
       span {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         display: inline-block;
         vertical-align: top;
-        margin-right: 0.5rem;
-        width: 2rem;
+        margin-right: 2px;
+        width: 1.3rem;
         text-align: center;
       }
     }
@@ -90,7 +90,7 @@
 
   &-accomplishments {
     order: 4;
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
   }
 
   &-accomplishments,
@@ -119,14 +119,10 @@
       color: $link-color;
     }
 
-    a {
-      color: $blue;
-    }
-
   }
 
   /* Medium window format */
-  @include media-breakpoint-up(md) {
+  @media (min-width: $breakpoint-md) {
 
     display: grid;
     grid-gap: 0 $grid-gutter-width;
@@ -153,7 +149,7 @@
     }
   }
   /* Large window format */
-  @include media-breakpoint-up(lg) {
+  @media (min-width: $breakpoint-md) {
     grid-template-columns: auto 250px;
 
     &-title {
@@ -168,7 +164,7 @@
 
     }
     &-accomplishments {
-      font-size: 1rem;
+      // font-size: 1rem;
     }
   }
 }

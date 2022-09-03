@@ -2,29 +2,49 @@
  * Navbar
  */
 
+%navbox {
+  @extend %major-border;
+  background-color: $blue;
+}
+
 .navbar {
   font-family: $accent-font-stack;
-  @extend %bold;
-  @extend %shadow;
-  border: 3px solid $dark;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: $grid-gutter-width;
+  @include dotbg($blue);
 
-  background: $accent-color;
+  & > * {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    gap: $grid-gutter-width $grid-gutter-width;
+    grid-template-columns: ($column-width - $grid-gutter-width) 1fr ($column-width - $grid-gutter-width);
+    grid-template-rows: 50px 25px;
+    grid-template-areas:
+      "branding about about"
+      "branding nav player";
+
+    @include standard-padding;
+    @include shadow;
+  }
+
+  * {
+    // align-self: start;
+  }
+
+  // @extend %shadow;
+  // border: 3px solid $dark;
+
+  // background: $accent-color;
   flex-wrap: wrap;
 
-  @include media-breakpoint-down(sm) {
+  @media (max-width: $breakpoint-md) {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-    flex-wrap: wrap;
-  }
-
-  a {
-    color: $dark;
-    border-bottom: none;
   }
 
   .navbar-toggle {
@@ -35,28 +55,36 @@
   }
 }
 
-.navbar-tagline {
-  width: 100%;
-  flex-shrink: 0;
-  font-size: 0.6rem;
-  font-family: $special-font-stack;
+.branding {
+  @extend %navbox;
+  grid-area: branding;
   text-align: center;
+}
+
+.navbar-tagline {
+  text-align: center;
+  font-size: 1rem;
+  font-family: $special-font-stack;
   color: $white;
 
-  @include media-breakpoint-up(md) {
-    font-size: 0.7rem;
-    line-height: 1.8rem;
-    height: 1rem;
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.8rem;
+    line-height: 44px;
   }
 }
 
 .navbar-brand {
-  font-size: 2rem;
+  @extend %bold;
+  font-size: 4rem;
   line-height: 1;
   padding: 0px;
   @extend %header-decoration;
-  -webkit-text-stroke: 1px $dark;
+  -webkit-text-stroke: 2px $dark;
   // -webkit-text-fill-color: $main-background;
+
+  &:hover {
+    border-bottom: none;
+  }
 
   background: linear-gradient(180deg,
     $white 0%,
@@ -69,67 +97,111 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @include media-breakpoint-up(md) {
-    font-size: 4rem;
-    -webkit-text-stroke: 3px $dark;
-    // -webkit-text-fill-color: $main-background;
+  @media (min-width: $breakpoint-md) {
+
+  }
+}
+
+.navlink-container {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: end;
+}
+
+.about-description {
+  font-size: 0.75rem;
+  color: $white;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @extend %navbox;
+}
+
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  // padding: 2px 4px;
+
+  &:not(:last-child) {
+    border-right: 1px solid $dark;
+  }
+  .nav-social & {
+    flex-grow: 0;
   }
 }
 
 .nav-link {
-  padding: 0!important;
-  margin: 0 0.5rem;
+  display: inline-block;
+  width: 100%;
+  padding: 3px 6px;
+  height: 21px;
+  margin: 0;
+  font-family: $special-font-stack;
+  font-size: 0.75rem;
   @extend %header-decoration;
-}
+  color: white;
+  transition: all .25s ease-in-out;
+  background-color: rgba(darken($white, 10%), 0);
 
-.navbar-toggler {
-  padding: 0.5rem 0.25rem 0rem;
-}
+  &:hover {
+    color: $dark;
+    background-color: rgba(darken($white, 10%), 1);
+    border-bottom: none;
+  }
 
-.navbar-toggler-icon {
-  color: $white;
-}
-
-.nav-pages {
-  flex-grow: 1;
-}
-
-.nav-social {
-  margin-left: auto !important;
-
-  .icon {
-    margin-right: 0.5rem;
+  .nav-social & {
+    padding: 2px 3px;
+    font-size: 18px;
+    line-height: 15px;
   }
 }
 
-.navbar-expand-lg .navbar-collapse {
-  flex-shrink: 0;
-  width: 100%;
+.audioplayer-block {
+  grid-area: player;
+  @extend %navbox;
+  // align-self: end;
 }
 
-.collapse:not(.collapsing):not(.show) {
-  .nav-social {
-    a {
-      font-size: 24px;
-      width: 70px;
-      display: inline-block;
-      position: relative;
-      line-height: 1;
-      overflow: hidden;
-      text-align: center;
+.about-header{
+  order: 1;
+  grid-area: about;
+  justify-content: center;
+  align-items: center;
+  @extend %navbox;
+  align-self: stretch;
 
-      span:not(.icon) {
-        width: 100%;
-        font-size: 14px;
-        @include text-outline($white);
-        transition: top 0.25s ease-in;
-        position: absolute;
-        left: 0;
-        top: 45px;
-      }
-      &:hover span:not(.icon) {
-        top: 5px;
-      }
+  font-size: 0.75rem;
+
+  /* Animation */
+  overflow: hidden;
+
+  & > * {
+    animation: 15s slide-down 0s ease-in-out infinite;
+    transform:translateY(-80px);
+  }
+
+  @keyframes slide-down {
+    0% {
+      transform:translateY(-100px);
+    }
+    10% {
+      transform:translateY(0);
+    }
+    90% {
+      transform:translateY(0);
+    }
+    100% {
+      transform:translateY(200px);
     }
   }
+  /* End Animation */
 }

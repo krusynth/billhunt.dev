@@ -1,0 +1,92 @@
+.taxi {
+  %taxi-title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+  }
+  background: #fff url('/assets/images/check.png');
+
+  .navbar, .page-footer {
+    background: $lemon;
+  }
+
+  .navbar {
+    grid-template-rows: 185px 25px;
+  }
+
+  .about-header,
+  .audioplayer-block,
+  .navbar-nav,
+  .branding {
+    background: transparent;
+    border: none;
+  }
+
+  .navbar-brand {
+    background: transparent url('/assets/images/flame2.png') no-repeat;
+    background-size: contain;
+    @extend %taxi-title;
+    -webkit-text-stroke: 0px $dark;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    padding: 80px 200px 80px 20px;
+    display: block;
+    width: 400px;
+    height: 200px;
+  }
+
+  .posts {
+    @include dotbg($lemon);
+  }
+
+  .post-multiple {
+    @include bordered-box($lemon);
+  }
+
+
+  .featured .post-multiple {
+    @include bordered-box($red);
+  }
+
+  .featured-icon {
+    margin-top: 0px;
+    color: transparent !important;
+    -webkit-text-stroke: 0px !important;
+    height: 20px;
+    width: 24px;
+    border: none;
+    background: transparent url('/assets/images/arrow.png') no-repeat;
+
+    @keyframes point {
+      from {
+        margin-left: -15px;
+      }
+      to {
+        margin-left: 0px;
+      }
+    }
+    animation: 0.5s infinite alternate point;
+  }
+
+  .featured .post-multiple .post-title a {
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+
+  .content {
+    background-color: $lemon;
+  }
+
+  .featured, .posts, .recommended, .jobs {
+    background: transparent;
+
+    .post-title a {
+      background: $red;
+      border: none  !important;
+      @extend %taxi-title;
+    }
+  }
+
+}

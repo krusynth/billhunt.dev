@@ -11,11 +11,11 @@
 
   {%- include head.html -%}
 
-  <body class="page-{{page.title | slugify }}">
+  <body>
 
     {%- include header.html -%}
 
-    <div class="content">
+    <div class="content" id="main" up-main>
         {{ content }}
     </div>
 

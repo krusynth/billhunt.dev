@@ -1,0 +1,63 @@
+---
+layout: default
+title: Blog
+---
+
+<!-- This loops through the paginated posts -->
+
+{%- assign date_format = "%Y.%m.%d" -%}
+
+
+<section class="posts content-container page-blog">
+  <h2 class="section-title">Posts
+    <a href="/feed.xml" class="rss-link" title="RSS Feed"><span class="icon fa fas fa-rss"></span></a>
+  </h2>
+
+  <div class="posts-container">
+    {% for post in paginator.posts %}
+      <article class="post-multiple">
+        <header class="post-header hoverable">
+          <h3 class="post-title"><a href="{{ post.url }}" up-follow>{{ post.title }}</a></h3>
+        </header>
+        <div class="post-content">
+          {% if post.image %}
+            <p>
+              <img src="https://billhunt.dev{{ post.image }}" class="featured-image">
+            </p>
+          {% endif %}
+          <p>
+            <span class="date">
+              {{ post.date | date: date_format }}
+            </span> –
+          {% if post.excerpt %}
+            {{ post.excerpt | strip_html }}
+          {% else %}
+            {{ post.content | strip_html | truncatewords:75 }}
+          {% endif %}
+          </p>
+          <p>
+            <a href="{{ post.url }}" class="btn" up-follow>Read This</a>
+          </p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous btn" up-follow>
+        Previous
+      </a>
+    {% else %}
+      <span class="previous btn disabled">Previous</span>
+    {% endif %}
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next btn" up-follow>Next</a>
+    {% else %}
+      <span class="next btn disabled">Next</span>
+    {% endif %}
+  </div>
+</section>

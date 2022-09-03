@@ -1,0 +1,141 @@
+.page-blog {
+
+}
+.row {
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    gap: $grid-gutter-width $grid-gutter-width;
+    grid-template-columns: $column-width $column-width $column-width;
+  }
+}
+
+.posts {
+  @include dotbg(lighten($blue, 20%));
+  @include standard-padding;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.page-content {
+  text-align: justify;
+}
+
+.featured {
+  $feature-color: $sienna;
+
+  @include dotbg(lighten($feature-color, 20%));
+  @include standard-padding;
+
+
+  .post-multiple {
+    @include bordered-box($feature-color);
+
+    .post-title a {
+      padding-left: 18px;
+    }
+  }
+
+  & + & {
+    margin-top: -1rem;
+    padding-top: 0;
+  }
+
+}
+
+.recommended {
+  $recommended-color: $green;
+
+  @include dotbg(lighten($recommended-color, 20%));
+  @include standard-padding;
+
+  .post-multiple {
+    @include bordered-box($recommended-color);
+  }
+  .btn {
+    background-color: $recommended-color;
+  }
+}
+
+.jobs {
+  margin-top: $grid-gutter-width;
+
+  $jobs-color: $purple;
+
+  @include dotbg(lighten($jobs-color, 20%));
+  @include standard-padding;
+
+  .post-multiple {
+    @include bordered-box($jobs-color);
+  }
+}
+
+.featured-icon {
+  color: $white;
+  background-color: $lemon;
+
+  // @include linebg($blue, $white);
+  -webkit-text-stroke: 2px $dark;
+
+  position: absolute;
+  margin-top: -3px;
+  margin-left: -18px;
+  width: 32px;
+  height: 32px;
+  padding-left: 1px;
+  border-radius: 30px;
+  @extend %bordered;
+  font-size: 30px;
+  line-height: 23px
+}
+
+.rss-link {
+  // @include linebg($blue, $white);
+  // -webkit-text-stroke: 2px $dark;
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 30px;
+  @extend %bordered;
+  font-size: 14px;
+  line-height: 1;
+
+  color: $dark;
+  background-color: $lemon;
+
+  transition: all .1s ease-in-out;
+  @extend %shadow-float;
+
+  &:hover {
+    top: 5px;
+    box-shadow: none;
+    color: $white;
+    // background-color: lighten($blue, 5%);
+    opacity: 0.80;
+  }
+
+  .icon {
+    position: relative;
+    left: 5px;
+    top: 2px;
+    text-shadow: none;
+    padding: 0;
+    display: inline-block;
+  }
+}
+
+/**
+ * Pagination
+ */
+
+.pagination {
+  span.previous {
+    display: none;
+  }
+
+  .page_number, .previous {
+    margin-right: 1rem;
+  }
+}

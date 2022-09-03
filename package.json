@@ -18,7 +18,10 @@
   "homepage": "https://github.com/krusynth/billhunt.dev#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-pro": "^5.15.4",
-    "bootstrap": "^4.4.1",
     "jquery": "^3.5.0"
+  },
+  "dependencies": {
+    "unpoly": "^2.6.1",
+    "web-midi-player": "^1.4.1"
   }
 }

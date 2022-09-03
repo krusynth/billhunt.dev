@@ -8,10 +8,31 @@
 .page-cloud-strategy-guide {
 
 $extra-accent-stack: 'Times New Roman', Times, serif;
+$cloud-red: #fb0f03;
 
-.post-content {
-  border: 2vw solid red;
+&.post-single {
+  background: $cloud-red;
+
+  .post-content {
+    border: none;
+    padding: 0;
+    margin: 0 2vw 2vw;
+  }
+
+  .post-header {
+    background: none;
+    border: none;
+  }
+
+  .post-title {
+    display: none;
+  }
 }
+
+.post-date {
+   font-family: $special-font-stack;
+}
+
 
 .post-content p {
   padding: 0 1rem;
@@ -48,12 +69,12 @@ $extra-accent-stack: 'Times New Roman', Times, serif;
 
 .outlined {
   color: #f8e300;
-  -webkit-text-stroke: #fb0f03 2px;
+  -webkit-text-stroke: $cloud-red 2px;
   -webkit-text-fill: #f8e300;
 }
 
 .wrapper-outer {
-  background-color: #fb0f03;
+  background-color: $cloud-red;
   padding: 0rem 0 2rem;
 }
 
@@ -68,7 +89,7 @@ $extra-accent-stack: 'Times New Roman', Times, serif;
   text-align: center;
     max-width: 40vw;
 
-  @include media-breakpoint-up(md) {
+  @media (min-width: $breakpoint-md) {
     font-size: 2rem;
   }
 }
@@ -89,7 +110,7 @@ $extra-accent-stack: 'Times New Roman', Times, serif;
   font-size: 2rem;
   white-space: nowrap;
 
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $breakpoint-md) {
     width: 150%;
     font-size: 4rem;
   }
@@ -99,7 +120,7 @@ $extra-accent-stack: 'Times New Roman', Times, serif;
   transform: scaleX(2.5);
   margin: 0 2px;
 
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $breakpoint-md) {
     transform: scaleX(3.5);
     margin: 0 10px;
   }
@@ -132,7 +153,7 @@ $extra-accent-stack: 'Times New Roman', Times, serif;
 }
 
 .fa-ban {
-  color: #fb0f03;
+  color: $cloud-red;
 }
 
 .checklist {
