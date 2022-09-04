@@ -309,6 +309,11 @@ blockquote {
     border-left: none;
     border-right: none;
   }
+
+  & + & {
+    margin-top: calc( -0.5rem - 2px);
+    border-top: none;
+  }
 }
 
 /**
