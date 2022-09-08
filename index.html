@@ -64,15 +64,14 @@ permalink: /
 {% endif %}
 </div>
 
-{% assign normal_posts = site.posts | where:"featured",nil | slice: 0, 4 %}
+{% assign normal_posts = site.posts | where:"featured",nil %}
 
 <div class="col">
   <section class="posts">
     <h2 class="section-title">Recent Posts
       <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fa fas fa-rss"></span></a>
     </h2>
-    {% for post in normal_posts %}
-    {% if post.featured == nil %}
+    {% for post in normal_posts limit:4 %}
       <article class="post-multiple">
         <header class="post-header hoverable">
           <h3 class="post-title"><a href="{{ post.url }}" up-follow>{{ post.title }}</a></h3>
@@ -98,7 +97,6 @@ permalink: /
           </p>
         </section>
       </article>
-    {% endif %}
     {% endfor %}
     <!-- Pagination links -->
     <div class="pagination">
@@ -110,8 +108,7 @@ permalink: /
 <div class="col">
   <section class="recommended">
     <h2 class="section-title">Recommended</h2>
-    {% assign recommended = site.data.reposts | slice: 0, 4 %}
-    {% for post in recommended %}
+    {% for post in site.data.reposts limit:3 %}
       <article class="post-multiple">
         {% if post.title %}
           <header class="post-header hoverable">
@@ -129,14 +126,14 @@ permalink: /
         </section>
       </article>
     {% endfor %}
-    <a href="/recommended/" class="btn" up-follow>See More</a>
+    <a href="/recommended/" class="btn" up-follow>More Links</a>
   </section>
 
   <section class="jobs">
     <h2 class="section-title">Cool Jobs
       <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fa fas fa-rss"></span></a>
     </h2>
-    {% for post in site.data.jobs %}
+    {% for post in site.data.jobs limit:3 %}
       {%- assign now = 'now' | date: '%s' -%}
       {%- assign closes = post.closes | date: '%s' -%}
       {%- if closes == nil or closes == '' or closes > now  -%}
@@ -160,7 +157,7 @@ permalink: /
       </article>
       {% endif %}
     {% endfor %}
-
+    <a href="/jobs/" class="btn" up-follow>More Jobs</a>
   </section>
 </div>
 

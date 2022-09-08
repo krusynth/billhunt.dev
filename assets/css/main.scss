@@ -216,6 +216,7 @@ blockquote {
 .col {
   display: flex;
   flex-direction: column;
+  gap: $grid-gutter-width;
 
   & > section:last-child {
     flex-grow:1;
