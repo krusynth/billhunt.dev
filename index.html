@@ -133,8 +133,13 @@ permalink: /
   </section>
 
   <section class="jobs">
-    <h2 class="section-title">Cool Jobs</h2>
+    <h2 class="section-title">Cool Jobs
+      <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fa fas fa-rss"></span></a>
+    </h2>
     {% for post in site.data.jobs %}
+      {%- assign now = 'now' | date: '%s' -%}
+      {%- assign closes = post.closes | date: '%s' -%}
+      {%- if closes == nil or closes == '' or closes > now  -%}
       <article class="post-multiple">
         {% if post.title %}
           <header class="post-header hoverable">
@@ -153,6 +158,7 @@ permalink: /
           <a href="{{ post.url }}" class="btn">Apply</a>
         </section>
       </article>
+      {% endif %}
     {% endfor %}
 
   </section>

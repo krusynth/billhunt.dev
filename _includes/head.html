@@ -5,7 +5,11 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/main.css?" | append: timestamp | relative_url }}">
   <link rel="stylesheet" media="print" href="{{ "/assets/css/print.css?" | append: timestamp | relative_url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml" />
+
+  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - All Content" href="{{ site.url }}/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Posts Only" href="{{ site.url }}/posts.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Jobs Only" href="{{ site.url }}/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Recommended Links Only" href="{{ site.url }}/recommended.xml" />
 
   <script src="https://static.billhunt.dev/assets/js/jquery.min.js?{{ timestamp }}"></script>
   <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?{{ timestamp }}"></script>
