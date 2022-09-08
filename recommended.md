@@ -30,7 +30,7 @@ permalink: /recommended/
             <span class="date">
               {{ post.date | date: date_format }}
             </span> –
-            {{ post.content }}
+            {{ post.content | markdownify }}
           </p>
           <p>
             <a href="{{ post.url }}" class="btn">Check It Out</a>

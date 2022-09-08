@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cool Goverment IT Jobs
+title: Cool Govtech Jobs
 permalink: /jobs/
 ---
 
