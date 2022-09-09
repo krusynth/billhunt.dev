@@ -108,7 +108,7 @@ permalink: /
 <div class="col">
   <section class="recommended">
     <h2 class="section-title">Recommended</h2>
-    {% for post in site.data.reposts limit:3 %}
+    {% for post in site.data.recommended limit:3 %}
       <article class="post-multiple">
         {% if post.title %}
           <header class="post-header hoverable">

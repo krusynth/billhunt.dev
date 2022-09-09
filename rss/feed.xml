@@ -15,7 +15,7 @@ permalink: /feed.xml
     <email>{{ site.author.email }}</email>
   </author>
   <rights type="text">All content copyright © {{ site.author.name }}. All rights reserved.</rights>
-  {% assign items = site.posts | concat: site.data.reposts | concat: site.data.jobs | sort: 'date' | reverse -%}
+  {% assign items = site.posts | concat: site.data.recommended | concat: site.data.jobs | sort: 'date' | reverse -%}
   {%- for post in items limit:site.feed.posts_limit -%}
 
     {%- assign url = post.url | replace: '&', '&amp;'-%}

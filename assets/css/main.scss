@@ -225,7 +225,18 @@ blockquote {
 
 .post-multiple {
   @include bordered-box($blue);
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  .post-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.post-content .action-box {
+  margin-top: auto;
 }
 
 .post-single {
@@ -249,13 +260,24 @@ blockquote {
   }
 }
 
+.post-multiple {
+  margin-bottom: 1rem;
+}
+
 .posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: $grid-gutter-width;
+
   @media (min-width: $breakpoint-md) {
     display: grid;
+    align-items: stretch;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: masonry;
-    gap: $grid-gutter-width $grid-gutter-width;
+    // grid-template-rows: masonry;
+  }
 
+  .post-multiple {
+    margin-bottom: 0;
   }
 }
 
@@ -279,6 +301,10 @@ blockquote {
 .content iframe {
   max-width: 100%;
   max-height: 40vh;
+}
+
+.featured-image-box {
+  text-align: center;
 }
 
 .spaced-list li {

@@ -32,7 +32,8 @@
   .post-multiple {
     @include bordered-box($feature-color);
 
-    .post-title a {
+
+    .featured-icon + .post-title a {
       padding-left: 18px;
     }
   }

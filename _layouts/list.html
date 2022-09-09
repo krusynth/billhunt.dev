@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="page-{{page.title | slugify }}">
+  <section class="post-content">
+    {% if page.banner %}
+    <section class="banner stickers">
+      {{ page.banner | markdownify }}
+    </section>
+    {% endif %}
+    <section class="{{page.datum}} content-container">
+      <h2 class="section-title">{{ page.title }}</h2>
+      <div class="posts-container">
+        {% for post in site.data[page.datum] %}
+          {% assign content = post.content %}
+          {% if post.closes %}{% assign content = content | append: ' **Closes ' | append:post.closes | append: '.**' %}
+          {% elsif post.date %}{% assign content = content | prepend: '**{:.date} – '  | prepend: post.date | prepend: '**' %}
+          {% endif %}
+          <article class="post-multiple">
+            <header class="post-header hoverable">
+              <h3 class="post-title"><a href="{{ post.url }}" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>{{ post.title }}</a></h3>
+            </header>
+            <section class="post-content">
+              {% if post.image %}
+                <p class="featured-image-box">
+                  <img src="{{ post.image }}" class="featured-image" alt="Image of {{ post.title }}">
+                </p>
+              {% endif %}
+              <p>
+                {{ content | markdownify }}
+              </p>
+              <p class="action-box">
+                <a href="{{ post.url }}" class="btn" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>Get This!</a>
+              </p>
+            </section>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  </section>
+</article>
