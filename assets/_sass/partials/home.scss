@@ -22,7 +22,8 @@
   text-align: justify;
 }
 
-.featured {
+.featured,
+.shop {
   $feature-color: $sienna;
 
   @include dotbg(lighten($feature-color, 20%));

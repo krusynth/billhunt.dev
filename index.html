@@ -26,7 +26,7 @@ permalink: /
         <p>
           After my <a href="/blog/2020/11/09/welcome-home/">little post on joining government service</a>, a lot of people asked about stickers for “Move Carefully and Fix Things." I had some made and now I want to give them to you for free! (But maybe we can also help good causes at the same time!)
         </p>
-        <p>
+        <p class="action-box">
           <a href="/move-carefully/" class="btn" up-follow>Get a free sticker!</a>
         </p>
       </section>
@@ -54,7 +54,7 @@ permalink: /
             {{ post.content | strip_html | truncatewords:75 }}
           {% endif %}
           </p>
-          <p>
+          <p class="action-box">
             <a href="{{ post.url }}" class="btn" up-follow>Read This</a>
           </p>
         </section>
@@ -92,7 +92,7 @@ permalink: /
             {{ post.content | strip_html | truncatewords:75 }}
           {% endif %}
           </p>
-          <p>
+          <p class="action-box">
             <a href="{{ post.url }}" class="btn" up-follow>Read This</a>
           </p>
         </section>
@@ -122,7 +122,9 @@ permalink: /
             </span> –
             {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
           </p>
-          <a href="{{ post.url }}" class="btn">Check It Out</a>
+          <p class="action-box">
+            <a href="{{ post.url }}" class="btn">Check It Out</a>
+          </p>
         </section>
       </article>
     {% endfor %}
@@ -152,7 +154,9 @@ permalink: /
               </span>
             {% endif %}
           </p>
-          <a href="{{ post.url }}" class="btn">Apply</a>
+          <p class="action-box">
+            <a href="{{ post.url }}" class="btn">Apply</a>
+          </p>
         </section>
       </article>
       {% endif %}
