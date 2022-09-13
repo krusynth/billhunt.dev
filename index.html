@@ -96,10 +96,7 @@ permalink: /
         </section>
       </article>
     {% endfor %}
-    <!-- Pagination links -->
-    <div class="pagination">
-      <a href="/blog/{% if normal_posts.size == site.paginate %}2/{% endif %}" class="next btn" up-follow>More Posts</a>
-    </div>
+    <a href="/blog/{% if normal_posts.size == site.paginate %}2/{% endif %}" class="btn" up-follow>More Posts</a>
   </section>
 </div>
 
