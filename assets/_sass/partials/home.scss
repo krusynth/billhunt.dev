@@ -128,17 +128,3 @@
     display: inline-block;
   }
 }
-
-/**
- * Pagination
- */
-
-.pagination {
-  span.previous {
-    display: none;
-  }
-
-  .page_number, .previous {
-    margin-right: 1rem;
-  }
-}
