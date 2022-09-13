@@ -9,8 +9,6 @@ permalink: /
 
 <!-- This loops through the paginated posts -->
 
-{%- assign date_format = "%Y.%m.%d" -%}
-
 {% assign featured_posts = site.posts | where:"featured","true" %}
 {%- if featured_posts.size > 0 -%}
   <section class="featured">
@@ -46,7 +44,7 @@ permalink: /
           {% endif %}
           <p>
             <span class="date">
-              {{ post.date | date: date_format }}
+              {{ post.date | date: site.date_format  }}
             </span> –
           {% if post.excerpt %}
             {{ post.excerpt }}
@@ -84,7 +82,7 @@ permalink: /
           {% endif %}
           <p>
             <span class="date">
-              {{ post.date | date: date_format }}
+              {{ post.date | date: site.date_format  }}
             </span> –
           {% if post.excerpt %}
             {{ post.excerpt }}
@@ -118,7 +116,7 @@ permalink: /
         <section class="post-content">
           <p>
             <span class="date">
-              {{ post.date | date: date_format }}
+              {{ post.date | date: site.date_format  }}
             </span> –
             {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
           </p>
@@ -150,7 +148,7 @@ permalink: /
             {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
             {% if post.closes %}
                <span class="date">
-                Closes {{ post.closes | date: date_format }}
+                Closes {{ post.closes | date: site.date_format  }}
               </span>
             {% endif %}
           </p>

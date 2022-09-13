@@ -20,8 +20,7 @@ layout: default
       {%- for post in site.posts -%}
       <li>
         <span class="text-muted">
-          {%- assign date_format = "%b %-d, %Y" -%}
-          {{ post.date | date: date_format }}
+          {{ post.date | date: site.date_format }}
         </span>
         <p class="h5">
           <a href="{{ post.url | relative_url }}">

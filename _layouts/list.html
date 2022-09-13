@@ -13,8 +13,13 @@ layout: default
       <div class="posts-container">
         {% for post in site.data[page.datum] %}
           {% assign content = post.content %}
-          {% if post.closes %}{% assign content = content | append: ' **Closes ' | append:post.closes | append: '.**' %}
-          {% elsif post.date %}{% assign content = content | prepend: '**{:.date} – '  | prepend: post.date | prepend: '**' %}
+          {% if post.date and post.date != "" %}
+            {% assign post_date = post.date | date: site.date_format %}
+            {% assign content = content | prepend: '**{:.date} – '  | prepend: post_date | prepend: '**' %}
+          {% endif %}
+          {% if post.closes %}
+            {% assign post_closes = post.closes | date: site.date_format %}
+            {% assign content = content | append: ' **Closes ' | append: post_closes | append: '**' %}
           {% endif %}
           <article class="post-multiple">
             <header class="post-header hoverable">

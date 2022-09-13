@@ -29,6 +29,8 @@ author:
 paginate: 6
 paginate_path: "/blog/:num/"
 
+date_format: "%Y.%m.%d"
+
 sass:
   sass_dir: assets
   load_paths:
