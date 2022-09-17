@@ -221,6 +221,10 @@ blockquote {
   & > section:last-child {
     flex-grow:1;
   }
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: $grid-gutter-width;
+  }
 }
 
 .post-multiple {
@@ -447,5 +451,55 @@ blockquote {
       text-decoration: none;
     }
   }
+}
 
+.oldschool-buttons {
+  display: flex;
+  gap: $grid-gutter-width / 2;
+}
+
+
+.old-button {
+  display: inline-block;
+  height: (30px + 6px);
+  width: (100px + 6px);
+  background-size: contain;
+  border-width: 3px;
+  border-style: solid;
+  border-top-color: $white;
+  border-left-color: $white;
+  border-right-color: $dark;
+  border-bottom-color: $dark;
+  color: transparent !important;
+  transition: all .1s ease-in-out;
+
+
+  &:hover {
+    border-top-color: $dark;
+    border-left-color: $dark;
+    border-right-color: $white;
+    border-bottom-color: $white;
+  }
+
+  &.netscape {
+    background-image: url('/assets/images/buttons/netscape4-100x30.gif');
+
+    &:hover {
+      background-image: url('/assets/images/buttons/netscape4-100x30-ani.gif');
+    }
+    @media (max-width: $breakpoint-md) {
+      background-image: url('/assets/images/buttons/netscape4-100x30-ani.gif');
+    }
+  }
+
+  &.jekyll {
+    background-image: url('/assets/images/buttons/jekyll-100x30.png');
+
+    &:hover {
+      background-image: url('/assets/images/buttons/jekyll-100x30-ani.gif');
+    }
+    @media (max-width: $breakpoint-md) {
+      background-image: url('/assets/images/buttons/jekyll-100x30-ani.gif');
+    }
+  }
 }
