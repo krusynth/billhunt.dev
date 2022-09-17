@@ -142,6 +142,7 @@ permalink: /
         {% endif %}
         <section class="post-content">
           <p>
+            <strong>{{ post.date | date: site.date_format }}</strong> –
             {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
             {% if post.closes %}
                <span class="date">
