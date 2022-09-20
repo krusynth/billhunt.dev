@@ -14,8 +14,11 @@ layout: default
   </header>
   <section class="post-content">
       {% assign newDate = page.date | date: '%s' | minus: 0 %}
-      {% if newDate < site.feed.age %}
-        <div class="old-warning banner">
+      {% assign today = site.time | date: '%s' | minus: 0 %}
+      {% assign diff = today | minus: newDate %}
+      {% assign old = 365 | times: 24 | times: 60 | times: 60 %}
+      {% if diff > old %}
+        <div class="old-warning">
           <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
         </div>
       {% endif %}

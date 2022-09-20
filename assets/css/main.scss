@@ -297,7 +297,9 @@ blockquote {
 }
 
 .old-warning {
-  @extend .featured;
+  @include standard-padding;
+  border: 2px solid $blue;
+  background-color: lighten($blue, 30%);
   margin-bottom: 1rem;
 }
 

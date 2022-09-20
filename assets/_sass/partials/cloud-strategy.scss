@@ -243,4 +243,11 @@ $cloud-red: #fb0f03;
   background-repeat: no-repeat;
 }
 
+.old-warning {
+  margin: 0;
+  background: $cloud-red;
+  border: none;
+  font-style: italic;
+}
+
 }
