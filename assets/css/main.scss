@@ -5,11 +5,12 @@
 
 // @import "bootstrap/scss/bootstrap";
 // @import "bootstrap_customization";
-@import "@fortawesome/fontawesome-pro/scss/fontawesome.scss";
-@import "@fortawesome/fontawesome-pro/scss/solid.scss";
-@import "@fortawesome/fontawesome-pro/scss/regular.scss";
-@import "@fortawesome/fontawesome-pro/scss/brands.scss";
-
+// @import "@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+// @import "@fortawesome/fontawesome-pro/scss/solid.scss";
+// @import "@fortawesome/fontawesome-pro/scss/regular.scss";
+// @import "@fortawesome/fontawesome-pro/scss/light.scss";
+// @import "@fortawesome/fontawesome-pro/scss/brands.scss";
+@import "partials/fontawesome";
 @import "partials/navbar";
 @import "partials/webring";
 @import "partials/home";

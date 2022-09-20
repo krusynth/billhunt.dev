@@ -1,0 +1,266 @@
+/**
+ * Font Awesome
+ *
+ * This file lists just the specific icons used on the website, to reduce bloat.
+ **/
+
+/***** Weights & Types *****/
+
+.far, .fa-regular {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+}
+
+.fas, .fa-solid {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+}
+
+.fal, .fa-light {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300;
+}
+
+.fab, .fa-brands {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+
+.fa, .far, .fas, .fal, .fab {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* Helpers */
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.fa-stack-1x, .fa-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/***** Icons *****/
+
+/* Music Player */
+.fa-play::before {
+  content: "\f04b";
+}
+
+.fa-pause::before {
+  content: "\f04c";
+}
+
+/* Page */
+.fa-rss::before {
+  content: "\f09e";
+}
+
+/* Social */
+
+.fa-linkedin::before {
+  content: "\f08c";
+}
+
+.fa-github::before {
+  content: "\f09b";
+}
+
+.fa-twitter::before {
+  content: "\f099";
+}
+
+/* About */
+
+.fa-user-tie::before {
+  content: "\f508";
+}
+
+.fa-university::before {
+  content: "\f19c";
+}
+
+.fa-book-open::before {
+  content: "\f518";
+}
+
+.fa-cloud::before {
+  content: "\f0c2";
+}
+
+.fa-building::before {
+  content: "\f1ad";
+}
+
+.fa-hospital::before {
+  content: "\f0f8";
+}
+
+.fa-eye::before {
+  content: "\f06e";
+}
+
+.fa-book::before {
+  content: "\f02d";
+}
+
+.fa-robot::before {
+  content: "\f544";
+}
+
+.fa-link::before {
+  content: "\f0c1";
+}
+
+.fa-search::before {
+  content: "\f002";
+}
+
+.fa-award::before {
+  content: "\f559";
+}
+
+.fa-file-signature::before {
+  content: "\f573";
+}
+
+.fa-users::before {
+  content: "\f0c0";
+}
+
+.fa-browser::before {
+  content: "\f37e";
+}
+
+/* Cloud Article */
+.fa-bars::before {
+  content: "\f0c9";
+}
+
+.fa-cloud-download-alt::before {
+  content: "\f381";
+}
+
+.fa-balance-scale-right::before {
+  content: "\f516";
+}
+
+.fa-truck::before {
+  content: "\f0d1";
+}
+
+.fa-ban::before {
+  content: "\f05e";
+}
+
+.fa-cloud::before {
+  content: "\f0c2";
+}
+
+.fa-university::before {
+  content: "\f19c";
+}
+
+.fa-tag::before {
+  content: "\f02b";
+}
+
+.fa-snake::before {
+  content: "\f716";
+}
+
+.fa-bicycle::before {
+  content: "\f206";
+}
+
+.fa-mobile-alt::before {
+  content: "\f3cd";
+}
+
+.fa-user-graduate::before {
+  content: "\f501";
+}
+
+.fa-chess-clock::before {
+  content: "\f43d";
+}
+
+.fa-subway::before {
+  content: "\f239";
+}
+
+.fa-toggle-on::before {
+  content: "\f205";
+}
+
+.fa-binoculars::before {
+  content: "\f1e5";
+}
+
+.fa-cogs::before {
+  content: "\f085";
+}
+
+.fa-fingerprint::before {
+  content: "\f577";
+}
+
+.fa-id-badge::before {
+  content: "\f2c1";
+}
+
+.fa-chess-queen-alt::before {
+  content: "\f446";
+}
+
+.fa-door-open::before {
+  content: "\f52b";
+}
+
+.fa-unicorn::before {
+  content: "\f727";
+}
+
+.fa-comment-alt-smile::before {
+  content: "\f4aa";
+}
+
+.fa-exclamation-triangle::before {
+  content: "\f071";
+}
+
+.fa-crop-alt::before {
+  content: "\f565";
+}
+
+.fa-copy::before {
+  content: "\f0c5";
+}
+
+.fa-tractor::before {
+  content: "\f722";
+}
+
+.fa-broom::before {
+  content: "\f51a";
+}
