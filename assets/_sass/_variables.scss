@@ -212,17 +212,6 @@ $bg-dot-space: 4px;
     }
   }
 
-  .post-title {
-    margin-bottom: 0;
-    display: inline-block;
-  }
-
-  .post-content {
-    background-color: $white;
-    padding: 0.25rem $grid-gutter-width 0.25rem;
-    border: $border-weight-thick solid $dark;
-  }
-
   .btn {
     color:  $white;
     background-color: $bgcolor;

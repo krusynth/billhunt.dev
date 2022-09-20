@@ -8,6 +8,10 @@
 
 .webring-html {
   margin-top: 1rem;
+  max-width: 100%;
+  border: 1px solid;
+  overflow: scroll;
+  padding: 5px;
 }
 
 .webring-generated {

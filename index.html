@@ -69,7 +69,7 @@ permalink: /
     <h2 class="section-title">Recent Posts
       <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fa fas fa-rss"></span></a>
     </h2>
-    {% for post in normal_posts limit:4 %}
+    {% for post in normal_posts limit:5 %}
       <article class="post-multiple">
         <header class="post-header hoverable">
           <h3 class="post-title"><a href="{{ post.url }}" up-follow>{{ post.title }}</a></h3>
@@ -111,6 +111,11 @@ permalink: /
           </header>
         {% endif %}
         <section class="post-content">
+          {% if post.image %}
+            <p class="featured-image-box">
+              <img src="{{ post.image }}" class="featured-image" alt="Image of {{ post.title }}">
+            </p>
+          {% endif %}
           <p>
             <span class="date">
               {{ post.date | date: site.date_format  }}

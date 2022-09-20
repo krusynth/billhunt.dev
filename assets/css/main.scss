@@ -199,6 +199,7 @@ blockquote {
 .content-container {
   display: flex;
   flex-direction: column;
+  gap: $grid-gutter-width;
   // min-height: 70vh;
   .posts-container {
     flex-grow: 1;
@@ -293,7 +294,19 @@ blockquote {
   font-family: $special-font-stack;
   font-size: 1.2rem;
   @include text-outline($white, 2px);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+
+.post-title {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.post-content {
+  background-color: $white;
+  padding: 0.25rem $grid-gutter-width 0.25rem;
+  border: $border-weight-thick solid $dark;
 }
 
 .old-warning {
