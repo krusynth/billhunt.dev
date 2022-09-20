@@ -12,6 +12,10 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Jobs Only" href="{{ site.url }}/jobs.xml" />
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Recommended Links Only" href="{{ site.url }}/recommended.xml" />
 
+  {%- if page.parent %}
+  <link rev="child" href="{{ page.parent }}" />
+  {% endif -%}
+
   <script src="https://static.billhunt.dev/assets/js/jquery.min.js?{{ timestamp }}"></script>
   <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?{{ timestamp }}"></script>
   <script src="https://static.billhunt.dev/assets/js/fontawesome/fontawesome.min.js?{{ timestamp }}"></script>
