@@ -26,8 +26,20 @@ author:
   name: "Bill Hunt"
   email: "hello@billhunt.email"
 
-paginate: 6
-paginate_path: "/blog/:num/"
+pagination:
+  enabled: true
+  sort_reverse: true
+  per_page: 6
+  title: ':title'
+  permalink: "/blog/:num/"
+
+autopages:
+  enabled: true
+  collections:
+    layouts:
+      - 'blog.html'
+    title: ':coll'
+    permalink: '/:coll'
 
 date_format: "%Y.%m.%d"
 
@@ -41,7 +53,7 @@ sass:
 plugins:
   # - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-seo-tag
 
 # A list of the pages to display in the navigation bar
@@ -78,6 +90,8 @@ collections:
   category:
     output: true
   landings:
+    output: true
+  recommended:
     output: true
 
 feed:

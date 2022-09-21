@@ -14,7 +14,7 @@ gem "webrick"
 
 # gem "jekyll-feed",  "~> 0.13.0"
 gem "jekyll-sitemap"
-gem "jekyll-paginate"
+gem "jekyll-paginate-v2"
 gem "jekyll-seo-tag"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

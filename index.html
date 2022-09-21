@@ -103,11 +103,12 @@ permalink: /
 <div class="col">
   <section class="recommended">
     <h2 class="section-title">Recommended</h2>
-    {% for post in site.data.recommended limit:3 %}
+    {% assign recommended = site.recommended | reverse%}
+    {% for post in recommended limit:3 %}
       <article class="post-multiple">
         {% if post.title %}
           <header class="post-header hoverable">
-            <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <h3 class="post-title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
           </header>
         {% endif %}
         <section class="post-content">
@@ -123,7 +124,7 @@ permalink: /
             {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
           </p>
           <p class="action-box">
-            <a href="{{ post.url }}" class="btn">Check It Out</a>
+            <a href="{{ post.link }}" class="btn">Check It Out</a>
           </p>
         </section>
       </article>

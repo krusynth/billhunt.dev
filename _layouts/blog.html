@@ -2,35 +2,51 @@
 layout: default
 ---
 
-<section class="posts content-container page-blog">
-  <h2 class="section-title">Posts
-    <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fa fas fa-rss"></span></a>
+<section class="posts content-container {{ page.title | slugify }}">
+  <h2 class="section-title">{{ page.title }}
+    {% if page.title == 'Blog' %}
+      <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fa fas fa-rss"></span></a>
+    {% elsif page.title == 'recommended' %}
+      <a href="/recommended.xml" class="rss-link" title="Follow recommended posts only with RSS"><span class="icon fa fas fa-rss"></span></a>
+    {% endif %}
   </h2>
+
+  {% if page.content and page.content != '' %}
+    <section class="banner">
+      {{ page.content | markdownify }}
+    </section>
+  {% endif %}
 
   <div class="posts-container">
     {% for post in paginator.posts %}
+      {% assign url = post.url %}
+      {% if post.link %}{% assign url = post.link %}{% endif %}
       <article class="post-multiple">
         <header class="post-header hoverable">
-          <h3 class="post-title"><a href="{{ post.url }}" up-follow>{{ post.title }}</a></h3>
+          <h3 class="post-title"><a href="{{ url }}"{% if url contains 'http' %}{% else %}up-follow{% endif %}>{{ post.title }}</a></h3>
         </header>
         <div class="post-content">
           {% if post.image %}
             <p>
-              <img src="https://billhunt.dev{{ post.image }}" class="featured-image">
+              <img src="{{ post.image }}" class="featured-image">
             </p>
           {% endif %}
           <p>
             <span class="date">
               {{ post.date | date: site.date_format }}
             </span> –
-          {% if post.excerpt %}
-            {{ post.excerpt | strip_html }}
+          {% if page.title == 'Blog' %}
+            {% if post.excerpt %}
+              {{ post.excerpt | strip_html }}
+            {% else %}
+              {{ post.content | strip_html | truncatewords:75 }}
+            {% endif %}
           {% else %}
-            {{ post.content | strip_html | truncatewords:75 }}
+            {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
           {% endif %}
           </p>
           <p>
-            <a href="{{ post.url }}" class="btn" up-follow>Read This</a>
+            <a href="{{ url }}" class="btn"{% if url contains 'http' %}{% else %}up-follow{% endif %}>Read This</a>
           </p>
         </div>
       </article>

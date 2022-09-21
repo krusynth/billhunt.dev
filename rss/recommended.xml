@@ -15,17 +15,15 @@ permalink: /recommended.xml
     <email>{{ site.author.email }}</email>
   </author>
   <rights type="text">All content copyright © {{ site.author.name }}. All rights reserved.</rights>
-  {% assign items = site.data.recommended | sort: "date" | reverse -%}
+  {% assign items = site.recommended | sort: "date" | reverse -%}
   {%- for post in items limit:site.feed.posts_limit -%}
 
     {%- assign url = post.url | replace: '&', '&amp;'-%}
-    {%- if post.id -%}
+    {%- if post.closes -%}
+      {%- assign category = 'Jobs' -%}
+    {%- elsif post.id -%}
       {%- assign url = url | prepend: site.url -%}
       {%- assign category = post.category | default:'' -%}
-    {%- elsif post.closes -%}
-      {%- assign category = 'Jobs' -%}
-    {%- else -%}
-      {%- assign category = 'Recommended' -%}
     {%- endif -%}
 
   <entry>
