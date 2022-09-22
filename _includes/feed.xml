@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text" xml:lang="en">{{ site.title }} +++ {{ page.title }}</title>
+  <link type="application/atom+xml" href="{{ site.url }}/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+  <id>{{ site.url }}/</id>
+  <author>
+    <name>{{ site.author.name }}</name>
+    <email>{{ site.author.email }}</email>
+  </author>
+  <rights type="text">All content copyright © {{ site.author.name }}. All rights reserved.</rights>
+  {% for post in include.items limit:site.feed.posts_limit -%}
+
+    {%- assign url = post.url | replace: '&', '&amp;'-%}
+    {%- if post.closes -%}
+      {%- assign category = 'Jobs' -%}
+    {%- elsif post.id -%}
+      {%- assign url = url | prepend: site.url -%}
+      {%- assign category = post.category | default:'' -%}
+    {%- endif -%}
+
+  {%- assign now = 'now' | date: '%s' -%}
+  {%- assign closes = post.closes | date: '%s' -%}
+  {%- if closes == nil or closes == '' or closes > now  -%}
+  <entry>
+    <title>{{ post.title | xml_escape }}</title>
+    <link rel="alternate" type="text/html" href="{{ url }}" />
+    <published>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>{{ url }}</id>
+    <content type="html">{{ post.content | markdownify | strip | xml_escape }}
+      {%- if post.closes %}&lt;p&gt;Closes {{ post.closes | date: date_format }}.&lt;/p&gt;{% endif -%}
+      {%- if post.id -%}
+      {%- elsif post.closes -%}
+        &lt;p&gt;&lt;a href=&quot;{{ url | xml_escape }}&quot;&gt;Apply here!&lt;/a&gt;&lt;/p&gt;
+      {%- else -%}
+        &lt;p&gt;&lt;a href=&quot;{{ url | xml_escape }}&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+      {%- endif -%}
+    </content>
+    {%- if category != ""  %}
+    <category term="{{ category }}" />
+    {%- endif %}
+  </entry>
+  {% endif -%}
+  {% endfor %}
+</feed>
