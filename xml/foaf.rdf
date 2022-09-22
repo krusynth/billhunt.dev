@@ -11,7 +11,7 @@ permalink: /foaf.rdf
   <foaf:PersonalProfileDocument rdf:about="">
     <foaf:maker rdf:resource="#me"/>
     <foaf:primaryTopic rdf:resource="#me"/>
-    <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+    <admin:generatorAgent rdf:resource="https://github.com/krusynth/billhunt.dev/blob/www/xml/foaf.rdf"/>
   </foaf:PersonalProfileDocument>
   <foaf:Person rdf:ID="me">
     <foaf:name>{{ site.author.name }}</foaf:name>
