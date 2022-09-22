@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  {%- assign timestamp = 'now' | date: '%s' -%}
+  {%- assign timestamp = 'now' | date: '%s' %}
   <link rel="stylesheet" href="{{ "/assets/css/main.css?" | append: timestamp | relative_url }}">
   <link rel="stylesheet" media="print" href="{{ "/assets/css/print.css?" | append: timestamp | relative_url }}">
 
@@ -11,10 +11,10 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Posts Only" href="{{ site.url }}/posts.xml" />
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Jobs Only" href="{{ site.url }}/jobs.xml" />
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Recommended Links Only" href="{{ site.url }}/recommended.xml" />
-
-  {%- if page.parent %}
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="/foaf.rdf" />
+  {% if page.parent -%}
   <link rev="child" href="{{ page.parent }}" />
-  {% endif -%}
+  {%- endif %}
 
   <script src="https://static.billhunt.dev/assets/js/jquery.min.js?{{ timestamp }}"></script>
   <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?{{ timestamp }}"></script>

@@ -1,0 +1,39 @@
+---
+title: FOAF
+permalink: /foaf.rdf
+---
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:admin="http://webns.net/mvcb/">
+  <foaf:PersonalProfileDocument rdf:about="">
+    <foaf:maker rdf:resource="#me"/>
+    <foaf:primaryTopic rdf:resource="#me"/>
+    <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  </foaf:PersonalProfileDocument>
+  <foaf:Person rdf:ID="me">
+    <foaf:name>{{ site.author.name }}</foaf:name>
+    {%- if site.author.givenName %}
+    <foaf:givenName>{{ site.author.givenName }}</foaf:givenName>
+    {%- endif -%}
+    {%- if site.author.family_name %}
+    <foaf:familyName>{{ site.author.familyName }}</foaf:familyName>
+    {%- endif -%}
+    {%- if site.author.nick %}
+    <foaf:nick>{{ site.author.nick }}</foaf:nick>
+    {%- endif -%}
+    {%- if site.author.email %}
+    <foaf:mbox rdf:resource="mailto:{{ site.author.email }}"/>
+    {%- endif %}
+    <foaf:homepage rdf:resource="{{ site.url }}"/>
+    {%- if site.author.social %}
+      <foaf:account>
+      {%- for social in site.author.social %}
+          <foaf:OnlineAccount rdf:about="{{ social[1] }}"></foaf:OnlineAccount>
+      {%- endfor %}
+      <foaf:account>
+    {%- endif %}
+  </foaf:Person>
+</rdf:RDF>

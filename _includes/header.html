@@ -20,15 +20,13 @@
       <li class="nav-item nav-page">
         <a class="nav-link" href="/shop/" up-follow>Shop</a>
       </li>
-      <li class="linkedin nav-item nav-social">
-        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link">{% fab "fa-linkedin icon" %}</a>
+      {%- if site.author.social %}
+        {%- for social in site.author.social %}
+      <li class="{{ social[0] | downcase }} nav-item nav-social">
+        <a href="{{ social[1] }}" title="{{ social[0] }}" class="nav-link"><span class="fab fa-{{ social[0] | downcase }} icon"></span></a>
       </li>
-      <li class="github nav-item nav-social">
-        <a href="https://github.com/krusynth" title="GitHub" class="nav-link">{% fab "fa-github icon" %}</a>
-      </li>
-      <li class="twitter nav-item nav-social">
-        <a href="https://twitter.com/krusynth" title="Twitter" class="nav-link">{% fab "fa-twitter icon" %}</a>
-      </li>
+        {% endfor %}
+      {% endif %}
     </ul>
   </div>
 
