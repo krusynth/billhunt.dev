@@ -321,6 +321,7 @@ blockquote {
 .content iframe {
   max-width: 100%;
   max-height: 40vh;
+  border: $border-weight-thin solid $dark;
 }
 
 .featured-image-box {
