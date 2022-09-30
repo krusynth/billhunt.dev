@@ -7,7 +7,6 @@ permalink: /blog/2021/02/28/cloudbusting/
 layout: post
 excerpt: Get in loser, we're going cloudbusting! Common cloud myths, debunked.
 image: /uploads/2021/02/cloudbusting.png
-featured: true
 ---
 
 ![Title: Cloudbusting. Retro 80s video game (pixel art) style portrait of Kate Bush in front of a car](https://billhunt.dev/uploads/2021/02/cloudbusting.png){:.feature-image}
