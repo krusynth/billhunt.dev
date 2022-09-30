@@ -1,0 +1,36 @@
+$pumpkin: #E6530D;
+
+#halloweeeen {
+  background: $pumpkin url('/assets/images/bats.png');
+  /* Bats from www.textures4photoshop.com */
+
+  a {
+    color: $pumpkin;
+  }
+
+  .btn, a.nav-link {
+    color: $white;
+    background-color: $pumpkin;
+  }
+
+  .post-title a,
+  .page-footer a {
+    color: $white;
+  }
+
+  .about-header, .audioplayer-block, .navbar-nav, .branding,
+  .post-header {
+    background-color: $pumpkin;
+  }
+
+  .navbar, .featured, .shop, .posts, .recommended, .jobs,
+  .post-single {
+    background: black;
+  }
+
+  .banner {
+    border-color: $pumpkin;
+    background-color: lighten($pumpkin, 40%);
+  }
+
+}
