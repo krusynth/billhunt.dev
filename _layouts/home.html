@@ -4,12 +4,75 @@ layout: default
 
 <div class="row page-index">
 <div class="col">
-
-<!-- This loops through the paginated posts -->
-
-{% assign featured_posts = site.posts | where:"featured","true" %}
-{%- if featured_posts.size > 0 -%}
   <section class="featured">
+    <h2 class="section-title">Projects</h2>
+    <div class="post-multiple project-tabs">
+      <ul class="tabgroup" data-target="projects">
+        <li class="tab active">
+          <a href="#videogames">
+            <span class="icon fal fa-gamepad-modern"></span>
+            <span class="tab-title">Games</span>
+          </a>
+        </li>
+        <li class="tab">
+          <a href="#shirts">
+            <span class="icon fal fa-shirt"></span>
+            <span class="tab-title">Shirts</span>
+          </a>
+        </li>
+        <li class="tab">
+          <a href="#stickers">
+            <span class="icon fal fa-note-sticky"></span>
+            <span class="tab-title">Stickers</span>
+          </a>
+        </li>
+        <li class="tab">
+          <a href="#eopbot">
+            <span class="icon fal fa-robot"></span>
+            <span class="tab-title">EOPbot</span>
+          </a>
+        </li>
+        <li class="tab">
+          <a href="#policy">
+            <span class="icon fal fa-university"></span>
+            <span class="tab-title">Policy</span>
+          </a>
+        </li>
+      </ul>
+      <section id="projects" class="tab-target-container">
+        <article class="tab-target active" id="videogames">
+          <p>
+            Enderprise Architecture, my YouTube gaming channel
+          </p>
+          <a class="btn" href="https://www.youtube.com/channel/UCSL7BIdwgBEZ09BpD9xPPYQ">Watch Now!</a>
+        </article>
+        <article class="tab-target" id="shirts">
+          <p>
+            Govpunk T-shirts
+          </p>
+          <a class="btn" href="/shop/" up-follow>Get Dressed!</a>
+        </article>
+        <article class="tab-target" id="stickers">
+          <p>
+            Get a Move Carefully and Fix Things Sticker for FREE!
+          </p>
+          <a class="btn" href="/move-carefully/" up-follow>Get a Sticker!</a>
+        </article>
+        <article class="tab-target" id="eopbot">
+          <p>
+            My White House policy tweeting bot, @EOPbot!
+          </p>
+          <a class="btn" href="https://twitter.com/EOPbot">Follow @EOPbot!</a>
+        </article>
+        <article class="tab-target" id="policy">
+          <p>
+            My open source guide to US Government IT Policy
+          </p>
+          <a class="btn" href="https://digitalpolicy.us/">Learn Policy!</a>
+        </article>
+      </section>
+    </div>
+
     <h2 class="section-title">Featured</h2>
 
     <article class="post-multiple">
@@ -59,6 +122,8 @@ layout: default
       </section>
     </article>
 
+  <!-- This loops through the paginated posts -->
+  {% assign featured_posts = site.posts | where:"featured","true" %}
     {% for post in featured_posts -%}
       <article class="post-multiple">
         <header class="post-header hoverable">
@@ -88,7 +153,6 @@ layout: default
       </article>
     {% endfor %}
   </section>
-{% endif %}
 </div>
 
 {% assign normal_posts = site.posts | where:"featured",nil %}
@@ -96,7 +160,7 @@ layout: default
 <div class="col">
   <section class="posts">
     <h2 class="section-title">Recent Posts
-      <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fa fas fa-rss"></span></a>
+      <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fas fa-rss"></span></a>
     </h2>
     {% for post in normal_posts limit:6 %}
       <article class="post-multiple">
@@ -163,7 +227,7 @@ layout: default
 
   <section class="jobs">
     <h2 class="section-title">Cool Jobs
-      <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fa fas fa-rss"></span></a>
+      <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fas fa-rss"></span></a>
     </h2>
     {% for post in site.data.jobs limit:3 %}
       {%- assign now = 'now' | date: '%s' -%}

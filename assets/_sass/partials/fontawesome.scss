@@ -5,18 +5,16 @@
  **/
 
 /***** Weights & Types *****/
+$fa-path: 'https://static.billhunt.dev/assets/fonts/fontawesome-6/';
 
 @font-face {
   font-family: 'Font Awesome 5 Pro';
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-solid-900.eot");
-  src: url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-solid-900.woff2") format("woff2"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-solid-900.woff") format("woff"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-solid-900.ttf") format("truetype"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+  src:
+    url($fa-path + 'fa-solid-900.woff2') format('woff2'),
+    url($fa-path + 'fa-solid-900.ttf') format('truetype');
 }
 
 @font-face {
@@ -24,12 +22,19 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-regular-400.eot");
-  src: url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-regular-400.woff2") format("woff2"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-regular-400.woff") format("woff"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-regular-400.ttf") format("truetype"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg");
+  src:
+    url($fa-path + 'fa-regular-400.woff2') format('woff2'),
+    url($fa-path + 'fa-regular-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src:
+    url($fa-path + 'fa-light-300.woff2') format('woff2'),
+    url($fa-path + 'fa-light-300.ttf') format('truetype');
 }
 
 @font-face {
@@ -37,12 +42,9 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-brands-400.eot");
-  src: url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-brands-400.woff2") format("woff2"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-brands-400.woff") format("woff"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-brands-400.ttf") format("truetype"),
-    url("https://static.billhunt.dev/assets/fonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
+  src:
+    url($fa-path + 'fa-brands-400.woff2') format('woff2'),
+    url($fa-path + 'fa-brands-400.ttf') format('truetype');
 }
 
 .far, .fa-regular {
@@ -103,203 +105,216 @@
 
 /* Music Player */
 .fa-play::before {
-  content: "\f04b";
+  content: '\f04b';
 }
 
 .fa-pause::before {
-  content: "\f04c";
+  content: '\f04c';
 }
 
 /* Page */
 .fa-rss::before {
-  content: "\f09e";
+  content: '\f09e';
 }
 
 /* Social */
 
 .fa-linkedin::before {
-  content: "\f08c";
+  content: '\f08c';
 }
 
 .fa-github::before {
-  content: "\f09b";
+  content: '\f09b';
 }
 
 .fa-twitter::before {
-  content: "\f099";
+  content: '\f099';
 }
 
 /* About */
 
 .fa-user-tie::before {
-  content: "\f508";
+  content: '\f508';
 }
 
 .fa-university::before {
-  content: "\f19c";
+  content: '\f19c';
 }
 
 .fa-book-open::before {
-  content: "\f518";
+  content: '\f518';
 }
 
 .fa-cloud::before {
-  content: "\f0c2";
+  content: '\f0c2';
 }
 
 .fa-building::before {
-  content: "\f1ad";
+  content: '\f1ad';
 }
 
 .fa-hospital::before {
-  content: "\f0f8";
+  content: '\f0f8';
 }
 
 .fa-eye::before {
-  content: "\f06e";
+  content: '\f06e';
 }
 
 .fa-book::before {
-  content: "\f02d";
+  content: '\f02d';
 }
 
 .fa-robot::before {
-  content: "\f544";
+  content: '\f544';
 }
 
 .fa-link::before {
-  content: "\f0c1";
+  content: '\f0c1';
 }
 
 .fa-search::before {
-  content: "\f002";
+  content: '\f002';
 }
 
 .fa-award::before {
-  content: "\f559";
+  content: '\f559';
 }
 
 .fa-file-signature::before {
-  content: "\f573";
+  content: '\f573';
 }
 
 .fa-users::before {
-  content: "\f0c0";
+  content: '\f0c0';
 }
 
 .fa-browser::before {
-  content: "\f37e";
+  content: '\f37e';
 }
 
 /* Cloud Article */
 .fa-bars::before {
-  content: "\f0c9";
+  content: '\f0c9';
 }
 
 .fa-cloud-download-alt::before {
-  content: "\f381";
+  content: '\f381';
 }
 
 .fa-balance-scale-right::before {
-  content: "\f516";
+  content: '\f516';
 }
 
 .fa-truck::before {
-  content: "\f0d1";
+  content: '\f0d1';
 }
 
 .fa-ban::before {
-  content: "\f05e";
+  content: '\f05e';
 }
 
 .fa-cloud::before {
-  content: "\f0c2";
+  content: '\f0c2';
 }
 
 .fa-university::before {
-  content: "\f19c";
+  content: '\f19c';
 }
 
 .fa-tag::before {
-  content: "\f02b";
+  content: '\f02b';
 }
 
 .fa-snake::before {
-  content: "\f716";
+  content: '\f716';
 }
 
 .fa-bicycle::before {
-  content: "\f206";
+  content: '\f206';
 }
 
 .fa-mobile-alt::before {
-  content: "\f3cd";
+  content: '\f3cd';
 }
 
 .fa-user-graduate::before {
-  content: "\f501";
+  content: '\f501';
 }
 
 .fa-chess-clock::before {
-  content: "\f43d";
+  content: '\f43d';
 }
 
 .fa-subway::before {
-  content: "\f239";
+  content: '\f239';
 }
 
 .fa-toggle-on::before {
-  content: "\f205";
+  content: '\f205';
 }
 
 .fa-binoculars::before {
-  content: "\f1e5";
+  content: '\f1e5';
 }
 
 .fa-cogs::before {
-  content: "\f085";
+  content: '\f085';
 }
 
 .fa-fingerprint::before {
-  content: "\f577";
+  content: '\f577';
 }
 
 .fa-id-badge::before {
-  content: "\f2c1";
+  content: '\f2c1';
 }
 
 .fa-chess-queen-alt::before {
-  content: "\f446";
+  content: '\f446';
 }
 
 .fa-door-open::before {
-  content: "\f52b";
+  content: '\f52b';
 }
 
 .fa-unicorn::before {
-  content: "\f727";
+  content: '\f727';
 }
 
 .fa-comment-alt-smile::before {
-  content: "\f4aa";
+  content: '\f4aa';
 }
 
 .fa-exclamation-triangle::before {
-  content: "\f071";
+  content: '\f071';
 }
 
 .fa-crop-alt::before {
-  content: "\f565";
+  content: '\f565';
 }
 
 .fa-copy::before {
-  content: "\f0c5";
+  content: '\f0c5';
 }
 
 .fa-tractor::before {
-  content: "\f722";
+  content: '\f722';
 }
 
 .fa-broom::before {
-  content: "\f51a";
+  content: '\f51a';
+}
+
+/* Project Tabs */
+.fa-gamepad-modern::before {
+  content: '\e5a2';
+}
+
+.fa-shirt::before {
+  content: '\f553';
+}
+
+.fa-note-sticky::before {
+  content: '\f249';
 }
