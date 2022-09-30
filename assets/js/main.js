@@ -6,7 +6,9 @@ up.history.config.restoreTargets=[':main'];
 document.addEventListener('DOMContentLoaded', function () {
   console.log('Loaded');
 
-  init_tabs(document.getElementsByClassName('tabgroup')[0]);
+  if(document.getElementsByClassName('tabgroup').length) {
+    init_tabs(document.getElementsByClassName('tabgroup')[0]);
+  }
   up.compiler('.tabgroup', init_tabs);
 
   init_web_midi_player();
