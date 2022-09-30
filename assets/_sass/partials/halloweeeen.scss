@@ -33,4 +33,19 @@ $pumpkin: #E6530D;
     background-color: lighten($pumpkin, 40%);
   }
 
+  /* Replace RSS icon with bats */
+  .fa-rss::before {
+    content: "\f6b5";
+  }
+
+  .rss-link {
+    color: black;
+    .icon {
+      rotate: 45deg;
+      position: relative;
+      left: 1px;
+      top: 3px;
+    }
+  }
+
 }
