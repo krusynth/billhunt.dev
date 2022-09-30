@@ -14,8 +14,19 @@ $pumpkin: #E6530D;
   }
 
   .post-title a,
-  .page-footer a {
+  .page-footer a,
+  .tab.active a {
     color: $white;
+  }
+
+  .tab {
+    a {
+      color: lighten($pumpkin, 15%);
+    }
+
+    &:hover:not(.active) a {
+      color: $dark;
+    }
   }
 
   .about-header, .audioplayer-block, .navbar-nav, .branding,
