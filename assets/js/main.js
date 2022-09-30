@@ -6,15 +6,46 @@ up.history.config.restoreTargets=[':main'];
 document.addEventListener('DOMContentLoaded', function () {
   console.log('Loaded');
 
+  init_tabs(document.getElementsByClassName('tabgroup')[0]);
+  up.compiler('.tabgroup', init_tabs);
+
+  init_web_midi_player();
+
+}, false);
+
+function init_tabs(tabgroup) {
+  console.log('init tabs');
+    const tabs = tabgroup.getElementsByClassName('tab');
+    const target = document.getElementById(tabgroup.dataset.target);
+
+    for(const tab of tabs) {
+      const link = tab.getElementsByTagName('a')[0];
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        for(const elm of tabs) {
+          elm.classList.remove('active');
+        }
+        this.parentElement.classList.add('active');
+
+        const targets = target.getElementsByClassName('tab-target');
+        for(const inactive of targets) {
+          inactive.classList.remove('active');
+        }
+        target.querySelector(this.getAttribute('href')).classList.add('active');
+      });
+    }
+}
+
+function init_web_midi_player() {
   let state = null;
   let tagline = document.getElementById('tagline');
   let tagline0 = tagline.innerHTML;
-  let tagline1 = "Take me to the Pizza Hut";
-  let tagline2 = "learn to swim";
+  let tagline1 = 'Take me to the Pizza Hut';
+  let tagline2 = 'learn to swim';
 
   function stateMachine (event) {
     state = event.event;
-    console.log(state);
+    // console.log(state);
   }
 
   const midiPlayer = new MidiPlayer({
@@ -69,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
+}
 
-}, false);
 
 export default {};
