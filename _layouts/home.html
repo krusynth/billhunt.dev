@@ -10,7 +10,22 @@ layout: default
 {% assign featured_posts = site.posts | where:"featured","true" %}
 {%- if featured_posts.size > 0 -%}
   <section class="featured">
-    <h2 class="section-title">Featured Posts</h2>
+    <h2 class="section-title">Featured</h2>
+
+    <article class="post-multiple">
+      <header class="post-header hoverable">
+        <span class="featured-icon">★</span>
+        <h3 class="post-title"><a href="https://www.youtube.com/channel/UCSL7BIdwgBEZ09BpD9xPPYQ" up-follow>Enderprise Architecture</a></h3>
+      </header>
+      <section class="post-content">
+        <p>
+          For the last year, I've been thinking about starting a YouTube channel for playing Minecraft, Satisfactory, and other games - and I finally did it! The first few episodes of <strong>Enderprise Architecture</strong> are online, where I play the new Update 6 of Satisfactory! Don't forget to like and subscribe!!!
+        </p>
+        <p class="action-box">
+          <a href="https://www.youtube.com/channel/UCSL7BIdwgBEZ09BpD9xPPYQ" class="btn" up-follow>Check out the channel!</a>
+        </p>
+      </section>
+    </article>
 
     <article class="post-multiple">
       <header class="post-header hoverable">
