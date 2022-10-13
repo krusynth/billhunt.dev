@@ -29,7 +29,7 @@ $pumpkin: #E6530D;
     }
   }
 
-  .about-header, .audioplayer-block, .navbar-nav, .branding,
+  .audioplayer-block, .navbar-nav, .branding,
   .post-header {
     background-color: $pumpkin;
   }
@@ -59,4 +59,35 @@ $pumpkin: #E6530D;
     }
   }
 
+  .about-header {
+    background-color: black;
+    border: none;
+  }
+
+  .navbar-tagline {
+    font-size: 2.5rem;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: 1.5rem;
+      padding: 5px 0px;
+    }
+
+    margin-top: 2px;
+    font-weight: bold;
+    font-family:  "Montserrat", sans-serif;
+    -webkit-text-stroke: 0px black;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("/assets/images/firecloud.jpg");
+    background-repeat: repeat-x;
+
+  animation: 5s bgslide linear infinite;
+  transform:translateY(0);
+  }
+
+  @-webkit-keyframes bgslide {
+      from { background-position: 0% 0%}
+      to { background-position: 1024px 0% }
+  }
 }
