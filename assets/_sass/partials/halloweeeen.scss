@@ -81,6 +81,7 @@ $pumpkin: #E6530D;
     -webkit-text-fill-color: transparent;
     background-image: url("/assets/images/firecloud.jpg");
     background-repeat: repeat-x;
+    background-size: 512px 100px;
 
   animation: 5s bgslide linear infinite;
   transform:translateY(0);
@@ -88,6 +89,6 @@ $pumpkin: #E6530D;
 
   @-webkit-keyframes bgslide {
       from { background-position: 0% 0%}
-      to { background-position: 1024px 0% }
+      to { background-position: 512px 0% }
   }
 }
