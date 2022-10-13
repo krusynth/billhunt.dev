@@ -63,18 +63,6 @@
   text-align: center;
 }
 
-.navbar-tagline {
-  text-align: center;
-  font-size: 1rem;
-  font-family: $special-font-stack;
-  color: $white;
-
-  @media (min-width: $breakpoint-md) {
-    font-size: 1.8rem;
-    line-height: 44px;
-  }
-}
-
 .navbar-brand {
   @extend %bold;
   font-size: 4rem;
@@ -173,7 +161,7 @@
   // align-self: end;
 }
 
-.about-header{
+.about-header {
   order: 1;
   grid-area: about;
   justify-content: center;
@@ -185,11 +173,20 @@
 
   /* Animation */
   overflow: hidden;
+}
+.navbar-tagline {
+  text-align: center;
+  font-size: 1rem;
+  font-family: $special-font-stack;
+  color: $white;
 
-  & > * {
-    animation: 15s slide-down 0s ease-in-out infinite;
-    transform:translateY(-80px);
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.8rem;
+    line-height: 44px;
   }
+
+  animation: 15s slide-down 0s ease-in-out infinite;
+  transform:translateY(-80px);
 
   @keyframes slide-down {
     0% {
