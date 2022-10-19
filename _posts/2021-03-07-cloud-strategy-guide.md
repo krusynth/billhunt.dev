@@ -149,7 +149,7 @@ These strategies are a starting point towards a successful cloud rollout. If you
 
 
 
-{% fad "fa-broom secret-button" "ITS A SECRET TO EVERYBODY" %}
+{% fas "fa-broom secret-button" "ITS A SECRET TO EVERYBODY" %}
 
 <div class="secret-wrapper" style="display:none"></div>
 
