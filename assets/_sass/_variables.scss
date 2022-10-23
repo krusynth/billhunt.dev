@@ -191,12 +191,12 @@ $bg-dot-space: 4px;
     color:  $white;
     background-color: $bgcolor;
 
-    .post-date {
-      float: right;
-      margin-right: 30px;
-      font-size: 0.9rem;
-      line-height: 2rem;
-      font-family: $special-font-stack;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-md) {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
     }
 
     &.hoverable {
@@ -210,6 +210,13 @@ $bg-dot-space: 4px;
       display: block;
       padding: 1px 7px;
     }
+  }
+
+  .post-date {
+    margin-right: 30px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    font-family: $special-font-stack;
   }
 
   .btn {
