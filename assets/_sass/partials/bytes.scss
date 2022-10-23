@@ -1,0 +1,49 @@
+.page-bytes {
+
+  $bytes-stack: Garamond, 'Times New Roman', Times, serif;
+  $blood-red: #db0f03;
+
+  .post-title {
+    font-family: $bytes-stack;
+    font-weight: bold;
+  }
+
+  hr {
+    border-top: 2px solid $blood-red !important;
+    margin: 2rem auto;
+  }
+
+  &.post-single {
+    background: $dark;
+    font-family: $bytes-stack;
+    font-size: 1rem;
+
+    .post-header {
+      background-color: $blood-red;
+    }
+
+    .post-date {
+      line-height: 2rem;
+      font-family: $bytes-stack;
+      font-weight: bold;
+    }
+  }
+
+  .title {
+    font-family: $bytes-stack;
+    font-size: 2rem;
+  }
+
+  .divider {
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+
+    code {
+      background-color: transparent;
+    }
+  }
+
+
+}

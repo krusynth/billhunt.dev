@@ -19,6 +19,10 @@ $pumpkin: #E6530D;
     color: $white;
   }
 
+  hr {
+    border-top: 1px solid $pumpkin;
+  }
+
   .tab {
     a {
       color: lighten($pumpkin, 15%);
@@ -81,12 +85,26 @@ $pumpkin: #E6530D;
     background-repeat: repeat-x;
     background-size: 512px 100px;
 
-  animation: 5s bgslide linear infinite;
-  transform:translateY(0);
+    animation: 5s bgslide linear infinite;
+    transform:translateY(0);
   }
 
   @-webkit-keyframes bgslide {
       from { background-position: 0% 0%}
       to { background-position: 512px 0% }
+  }
+
+  .page-bytes {
+    .post-header {
+      background-image: url("/assets/images/firecloud.jpg");
+      background-repeat: repeat-x;
+      background-size: 512px 100px;
+      animation: 10s bgslide linear infinite;
+    }
+
+    .title {
+      font-size: 2rem;
+      color: #db0f03;
+    }
   }
 }
