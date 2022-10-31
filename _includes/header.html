@@ -23,7 +23,7 @@
       {%- if site.author.social %}
         {%- for social in site.author.social %}
       <li class="{{ social[0] | downcase }} nav-item nav-social">
-        <a href="{{ social[1] }}" title="{{ social[0] }}" class="nav-link"><span class="fab fa-{{ social[0] | downcase }} icon"></span></a>
+        <a href="{{ social[1] }}" title="{{ social[0] }}" class="nav-link" rel="me"><span class="fab fa-{{ social[0] | downcase }} icon"></span></a>
       </li>
         {% endfor %}
       {% endif %}
