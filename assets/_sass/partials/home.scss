@@ -55,7 +55,7 @@
   .post-multiple {
     @include bordered-box($recommended-color);
   }
-  .btn {
+  .btn, .page-number {
     background-color: $recommended-color;
   }
 }
