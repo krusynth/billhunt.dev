@@ -1,8 +1,8 @@
-- title: Department of Labor Configuration Branch Manager (GS-14, Supervisory)
-  url: https://www.usajobs.gov/job/688433000
-  date: 2022-11-14
-  closes: 2022-11-15
-  content: DOL is hiring a supervisory IT Specialist to oversee its IT Asset and Configuration Management Branch.
+- title: Cybersecurity and Infrastructure Security Agency Public Affairs Specialist (GS 11-13)
+  url: https://www.usajobs.gov/job/688441800
+  date: 2022-11-15
+  closes: 2022-11-22
+  content: CISA is hiring a social media manager to help them with their public outreach. Specifically, they are looking for looking for "someone who lives and breathes 280 characters and is fluent in memes, gifs, and snark."
 
 - title: Equal Employment Opportunity Commission Chief Data Officer (SES)
   url: https://www.usajobs.gov/job/684837600
@@ -28,12 +28,6 @@
   closes: 2022-11-22
   content: The CFTC is a US regulatory agency which oversees derivatives markets (futures, swaps, options, etc.), and they are looking for a Deputy Director for their Data Operations and Standards Branch! As a financial regulator, like the SEC, they have a higher special pay scale as well - this post tops at $261,400!
 
-- title: Centers for Medicare & Medicaid Services IT Specialist (GS-15)
-  url: https://www.usajobs.gov/job/688683200
-  date: 2022-11-10
-  closes: 2022-11-14
-  content: CMS (part of the Department of Health And Human Services) is hiring for a senior software engineer! This is a really amazing team, doing incredible work on Medicare & Medicaid!
-
 - title: Food and Drug Administration Data Management Specialist (GS 13-14)
   url: https://www.usajobs.gov/job/688274100
   date: 2022-11-10
@@ -45,12 +39,6 @@
   date: 2022-11-09
   closes: 2022-11-25
   content: OPM is searching for a new Deputy CDO! This is a great opportunity at a data-driven organization!
-
-- title: National Park Service Technology Program Manager (GS-14, Supervisory)
-  url: https://www.usajobs.gov/job/688166100
-  date: 2022-11-08
-  closes: 2022-11-15
-  content: The Park Service (part of the Department of Interior) is hiring an IT Program Manager, to oversee the team working on records management for their law enforcement division.
 
 - title: DC Office of the Chief Technology Officer IT Specialists
   url: https://octo.dc.gov/jobs
@@ -70,30 +58,6 @@
   closes: 2022-11-28
   content: SBA is looking for a new CIO! This is the top tech position in the organization, and an extremely rare federal CIO job posting!
 
-- title: Consumer Financial Protection Bureau Director of Records (CN 71)
-  url: https://www.usajobs.gov/job/686424300
-  date: 2022-11-06
-  closes: 2022-11-11
-  content: CFPB is one of the best places in the government to work! They're hiring a Director of Records, reporting to their Chief Data Officer, to oversee their records policies (FRA, etc.).
-
-- title: Department of Labor Data Platform Manager (GS-15)
-  url: https://www.usajobs.gov/job/686733400
-  date: 2022-11-05
-  closes: 2022-11-14
-  content: DOL is hiring for a Supervisory IT Specialist to oversee their enterprise data platform and Business Intelligence/Advanced Analytics branches. (This appears to be a second-level director reporting directly to the CTO.)
-
-- title: Department of Labor Enterprise Architect (GS-15)
-  url: https://www.usajobs.gov/job/686116600
-  date: 2022-11-05
-  closes: 2022-11-10
-  content: DOL is hiring an Enterprise Architect. This person will help set the technology roadmap for the organization. Having done this job for a fed agency in the past, I can say it's very helpful to have a background in solutions architecture - if you've done a lot of engineering and want to jump to policy, this is a great role on a great team!
-
-- title: GSA FAS Business Management Specialist (GS-13)
-  url: https://www.usajobs.gov/job/687311500
-  date: 2022-11-04
-  closes: 2022-11-15
-  content: The General Services Administration's Office of Category Management is responsible for providing IT solutions to other federal agencies to meet government's missions. This is a great organization to join, and they have three open slots for folks with experience in business development!
-
 - title: Department of Transportation Deputy CDO (GS-15)
   url: https://www.usajobs.gov/job/687408500
   date: 2022-11-03
@@ -106,53 +70,11 @@
   closes: 2022-11-17
   content: The Lab at The US Office of Personnel Management is hiring for a designer with experience in Human-Centered Design. This is a remote job!
 
-- title: FSA Director, Strategy and Performance (SES)
-  url: https://www.usajobs.gov/job/683994000
-  date: 2022-11-02
-  closes: 2022-11-08
-  content: Federal Student Aid (under the Department of Education) is hiring a director to lead strategy, organizational performance, risk management, data governance, and other operational improvement initiatives. As an SES position you'll want to create an [SES/ECQ resume](https://www.opm.gov/policy-data-oversight/senior-executive-service/executive-core-qualifications/) to apply.
-
-- title: Library of Congress Digital Strategy Director (SL)
-  url: https://www.usajobs.gov/job/686004100
-  date: 2022-10-31
-  closes: 2022-11-14
-  content: This is an amazing job, leading digital transformation at the Library of Congress!
-
 - title: California State Deputy Director of Service Innovation
   url: https://innovation.ca.gov/join-us/deputy-director-service-innovation/
   date: 2022-10-31
   closes:
   content: The California Office of Data and Innovation (ODI) is looking for a Deputy Director of Service Innovation. This is a fantastic role with real impact to the people of California.
-
-- title: SEC Database Admin (SK-14)
-  url: https://www.usajobs.gov/GetJob/ViewDetails/686276400
-  date: 2022-10-28
-  closes: 2022-11-07
-  content: The U.S. Securities and Exchange Commission is hiring for a database admin with experience with cloud migrations. This person will be working closely with my own team, to help the SEC modernize our many applications for finance market oversight! If that wasn't compelling enough, the SEC has great benefits and special pay ($134-$227K for this role)!
-
-- title: EPA Branch Chief, Office of Superfund Remediation & Technology Innovation (GS-15, Supervisory)
-  url: https://www.usajobs.gov/job/685927300
-  date: 2022-10-28
-  closes: 2022-11-07
-  content: The EPA is hiring an IT Supervisor to serve as a Branch Chief for the [Superfund Program](https://www.epa.gov/superfund).
-
-- title: GSA Cybersecurity Supervisor (GS-15, Supervisory)
-  url: https://www.usajobs.gov/job/685440700
-  date: 2022-10-28
-  closes: 2022-11-15
-  content: GSA is hiring a cybersecurity supervisor to oversee the ICAM, Policy, and ISSO Support divisions under the CISO. This is a [direct-hire position](https://digitalpolicy.us/policies/hiring/#direct-hire-authorities)!
-
-- title: US Patent and Trademark Office Tech Leads (GS-14)
-  url: https://www.usajobs.gov/job/680350700
-  date: 2022-10-26
-  closes: 2022-11-04
-  content: US PTO is looking for IT technical leads who also have great soft skills and interpersonal communication strengths.
-
-- title: SEC Director of Human Resources (SO)
-  url: https://www.usajobs.gov/job/685191200
-  date: 2022-10-26
-  closes: 2022-11-14
-  content: The U.S. Securities and Exchange Commission is looking for a new Senior Officer to run our HR team. Not a govtech job, but we really need someone who understands how to transform an organization into a tech-enabled, modern workforce! The SEC features amazing benefits and a special, higher pay band than normal federal agencies. (Tell your friends!)
 
 - title: Partnership for Public Service Senior Manager for CX
   url: https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=45713b53-21b1-4127-847f-73f3b4916607&ccId=19000101_000001&jobId=455642&source=CC2&lang=en_US
@@ -160,41 +82,11 @@
   closes:
   content: The Partnership for Public Service, a 501(c)(3) nonprofit, is looking for a Senior Manager to oversee research & programming for their customer experience projects.
 
-- title: DFC Oracle Developer (GS-14)
-  url: https://www.usajobs.gov/job/684612300
-  date: 2022-10-24
-  closes: 2022-11-04
-  content: The U.S. International Development Finance Corporation (formerly known as the Overseas Private Investment Corporation (OPIC)) is hiring for an Oracle Developer for their Enterprise Data Warehouse.
-
-- title: Justice Department VMware Engineer (GS-13)
-  url: https://www.usajobs.gov/job/684586900
-  date: 2022-10-24
-  closes: 2022-11-04
-  content: DOJ is looking for experts in VMware and VDI.
-
-- title: DFC Salesforce Developer (GS-14)
-  url: https://www.usajobs.gov/job/684612300
-  date: 2022-10-24
-  closes: 2022-11-03
-  content: The U.S. International Development Finance Corporation (formerly known as the Overseas Private Investment Corporation (OPIC)) is hiring for a Salesforce Developer.
-
-- title: Economic Development Administration (DOC) Chief Data Officer (GS-15)
-  url: https://www.usajobs.gov/job/682695800
-  date: 2022-10-14
-  closes: 2022-11-14
-  content: The Economic Development Administration in the Department of Commerce is hiring a Chief Data Officer!
-
 - title: Baltimore City Digital Service
   url: https://www.governmentjobs.com/careers/baltimorecity?keywords=%22Baltimore%20Digital%20-%20Mayor%27s%20Office%22
   date: 2022-10-14
   closes:
   content: The Baltimore Digital Service has a bunch of open roles right now, including for their Director, Product Manager, Lead Developer, and Lead UX Designer!
-
-- title: Social Security Executive Advisor for IT Transformation (SL)
-  url: https://www.usajobs.gov/job/683007400
-  date: 2022-10-14
-  closes: 2022-11-03
-  content: Want a job with impact? SSA provides services to every person in the U.S.! They are hiring a Senior Leader for their IT Transformation work in the Office of Systems! As an SL position you'll want to write an [SES/ECQ resume](https://www.opm.gov/policy-data-oversight/senior-executive-service/executive-core-qualifications/) to apply.
 
 - title: Mass Bay Transportation Authority
   url: https://jobs.lever.co/mbta
