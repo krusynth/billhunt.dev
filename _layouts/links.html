@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="posts content-container blog">
+  <h2 class="section-title">
+    {{ page.title }}
+    <a href="/foaf.rdf" class="rss-link" title="Download My FOAF RDF data"><span class="icon fas fa-rss"></span></a>
+  </h2>
+  <div class="intro post-content">
+    {{ page.content }}
+  </div>
+  <div class="posts-container">
+    {% for entry in site.data.links %}
+      <article class="post-multiple">
+        <header class="post-header hoverable">
+          <h3 class="post-title"><a href="{{ entry.url }}" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>{{ entry.name }}</a></h3>
+        </header>
+        <section class="post-content">
+          {% if entry.image %}
+            <p class="featured-image-box">
+              <img src="{{ entry.image }}" class="featured-image" alt="Image of {{ post.name }}">
+            </p>
+          {% endif %}
+          <p>
+            {{ entry.tags | join: ', ' }}
+          </p>
+          <p class="action-box">
+            <a href="{{ entry.url }}" class="btn">Surf Their Web</a>
+          </p>
+        </section>
+      </article>
+    {% endfor %}
+  </div>
+  </section>
+</article>

@@ -1,0 +1,80 @@
+- name: Waldo Jaquith
+  url: https://waldo.jaquith.org/
+  tags: [civic tech, govtech]
+
+- name: Vyki Englert
+  url: https://medium.com/@vyki_e
+  tags: [civic tech, govtech]
+
+- name: Hunter Owens
+  url: https://hunterowens.net/
+  tags: [civic tech, govtech]
+
+- name: Lauren Ancona
+  url: https://laurenancona.com/
+  tags: [neurodivergence, govtech]
+
+- name: Noah Krohn
+  url: https://monkeyguild.org/
+  tags: [tech, baking]
+
+- name: Matt Bailey
+  url: https://mattmattmatt.org/
+  tags: [human rights, music]
+
+- name: Rebecca Williams
+  url: https://rebeccawilliams.info/
+  tags: [policy, tech]
+
+- name: Justin Grimes
+  url: https://justgrimes.com/
+  tags: [civic tech, policy]
+
+- name: Brodrick Jones
+  url: https://www.jigsawfanclub.com/
+  tags: [art, puppetry]
+
+- name: Alex Howard
+  url: https://digiphile.info/
+  tags: [opengov, journalism]
+
+- name: Zac Cohn
+  url: https://www.zaccohn.com/
+  tags: [tech, govtech]
+
+- name: Matt Zagaja
+  url: https://www.zagaja.com/
+  tags: [civic tech, govtech]
+
+- name: Eric Mill
+  url: https://konklone.com/
+  tags: [civic tech, govtech]
+
+- name: Tom MacWright
+  url: https://macwright.com/
+  tags: [tech, maps]
+
+- name: Dave Guarino
+  url: https://www.daveguarino.com/
+  tags: [govtech, civic tech]
+
+- name: Phil Ashlock
+  url: phil.ashlock.us
+  tags: [govtech, opengov]
+
+- name: Sean Boots
+  url: https://sboots.ca/
+  tags: [govtech, policy]
+
+- name: Jacob Kaplan-Moss
+  url: https://jacobian.org/
+  tags: [tect, management]
+
+- name: Sarah Glassmeyer
+  url: https://sarahglassmeyer.com/
+  tags: [legal tech, tech]
+
+- name: Gareth Branwyn
+  url: https://www.getrevue.co/profile/garethbranwyn
+  tags: [making, cyberpunk]
+  notmutual: true
