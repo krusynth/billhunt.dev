@@ -1,8 +1,8 @@
-- title: Government Accountability Office Chief Information Officer (SES)
-  url: https://www.usajobs.gov/job/682743200
-  date: 2022-11-23
-  closes: 2022-11-24
-  content: I missed this one the first time around, but this is a huge deal! The CIO of GAO is an amazing role at the center of federal government-wide oversight! Closes today!!!
+- title: Office of the Comptroller of the Currency Chief Information Officer (NB 8)
+  url: https://www.usajobs.gov/job/689497800
+  date: 2022-11-28
+  closes: 2022-12-01
+  content: OCC (part of the Department of the Treasury) is looking to hire for their CIO slot! As an executive role at a financial agency, the salary for this position is $160-288K!
 
 - title: National Institutes of Health Deputy Chief Information Security Officer (GS-15)
   url: https://www.usajobs.gov/job/689155800
@@ -40,60 +40,6 @@
   closes: 2022-12-08
   content: FPCA (part of USDA) serves employees and customers across the Farm Service Agency (FSA), the Natural Resource Conservation Service (NRCS) and the Risk Management Agency (RMA). THe ACIO is responsible for planning, directing, and coordinating the Mission Area's information technology program.
 
-- title: Cybersecurity and Infrastructure Security Agency Public Affairs Specialist (GS 11-13)
-  url: https://www.usajobs.gov/job/688441800
-  date: 2022-11-15
-  closes: 2022-11-22
-  content: CISA is hiring a social media manager to help them with their public outreach. Specifically, they are looking for looking for "someone who lives and breathes 280 characters and is fluent in memes, gifs, and snark."
-
-- title: Equal Employment Opportunity Commission Chief Data Officer (SES)
-  url: https://www.usajobs.gov/job/684837600
-  date: 2022-11-10
-  closes: 2022-11-21
-  content: The U.S. Equal Employment Opportunity Commission (EEOC) is responsible for enforcing federal laws that make it illegal to discriminate against a job applicant or an employee. As the CDO, you'll have a critical role at a very important agency!
-
-- title: Cybersecurity and Infrastructure Security Agency Deputy Chief Information Officer (SES)
-  url: https://www.usajobs.gov/job/685927200
-  date: 2022-11-10
-  closes: 2022-11-17
-  content: CISA sets a lot of the Cybersecurity policy for the US Government, and is currently looking to fill their Deputy CIO role. This is a very big, central role for cyber in government. Please note that CISA is part of the Department of Homeland Security but is a civilian agency.
-
-- title: Department of Agriculture Director of Enterprise Application Services (GS-15, Supervisory)
-  url: https://www.usajobs.gov/job/688469400
-  date: 2022-11-10
-  closes: 2022-11-17
-  content: "USDA is hiring an IT director to oversee its enterprise-wide services. As a federated agency, that means you'd be serving [all of the many bureaus under USDA](https://www.usda.gov/our-agency/agencies) as well! This is a very big and impactful job!"
-
-- title: Commodity Futures Trading Commission Deputy Director for Data Operations and Standards (CT 16)
-  url: https://www.usajobs.gov/job/687993800
-  date: 2022-11-10
-  closes: 2022-11-22
-  content: The CFTC is a US regulatory agency which oversees derivatives markets (futures, swaps, options, etc.), and they are looking for a Deputy Director for their Data Operations and Standards Branch! As a financial regulator, like the SEC, they have a higher special pay scale as well - this post tops at $261,400!
-
-- title: Food and Drug Administration Data Management Specialist (GS 13-14)
-  url: https://www.usajobs.gov/job/688274100
-  date: 2022-11-10
-  closes: 2022-11-23
-  content: "The FDA (part of the Department of Health And Human Services) is hiring for data management specialists. There are two different job postings, this is for the GS-13:<br><a href=\"https://www.usajobs.gov/job/688271400\" class=\"btn\">Apply</a><br>... and the GS-14 below."
-
-- title: Office of Personnel Management Deputy Chief Data Officer (GS-15, Supervisory)
-  url: https://www.usajobs.gov/job/688529100
-  date: 2022-11-09
-  closes: 2022-11-25
-  content: OPM is searching for a new Deputy CDO! This is a great opportunity at a data-driven organization!
-
-- title: DC Office of the Chief Technology Officer IT Specialists
-  url: https://octo.dc.gov/jobs
-  date: 2022-11-08
-  closes: 2022-11-17
-  content: The DC government is hiring for a bunch of IT jobs right now, I see at least seven open roles! They range from data analystics to infrastructure to systems and everything in between.
-
-- title: U.S. Securities and Exchange Commission Big Data and Analytics Specialist (SK-14)
-  url: https://www.usajobs.gov/job/688000300
-  date: 2022-11-08
-  closes: 2022-11-23
-  content: The SEC is hiring for an expert in data & analytics within OIT. This person will work closely with my own cloud team to help build tools for our various oversight and enforcement activities! The SEC also features enhanced pay bands and extra benefits compared to most federal agencies.
-
 - title: Small Business Administration Chief Information Officer (SES)
   url: https://www.usajobs.gov/job/685333800
   date: 2022-11-07
@@ -105,12 +51,6 @@
   date: 2022-11-03
   closes: 2022-12-05
   content: The US Department of Transportation is hiring a Deputy Chief Data Officer. This is an amazing role for managing their enterprise data efforts and improving customer experience!
-
-- title: OPM Lab Design Operations Specialist (GS-12)
-  url: https://www.usajobs.gov/job/687069000
-  date: 2022-11-03
-  closes: 2022-11-17
-  content: The Lab at The US Office of Personnel Management is hiring for a designer with experience in Human-Centered Design. This is a remote job!
 
 - title: California State Deputy Director of Service Innovation
   url: https://innovation.ca.gov/join-us/deputy-director-service-innovation/
