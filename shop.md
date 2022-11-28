@@ -8,7 +8,7 @@ action: 'Get This'
 image: https://billhunt.dev/uploads/2022/09/tshirts.jpg
 ---
 
-**Update 2022.09.21: It looks like the earlier issue with checkout has been fixed - but please let me know if you have any problems!**
+Update 2022.11.28: **FOUR NEW DESIGNS** have been added to the shop for CyberMonday!!! ALSO all of my designs **now come in long-sleeve and hoodie versions** as well!!!
 
 Please note: I do not make any profit off of these items. All CafePress items such as shirts are sold at cost. I accept donations for the stickers I mail out personally, and anything beyond my costs is donated to charity. The best way to support my work is to tell people about it!
 

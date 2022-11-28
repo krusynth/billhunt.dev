@@ -37,7 +37,9 @@ layout: default
           <section class="post-content">
             {% if post.image %}
               <p class="featured-image-box">
-                <img src="{{ post.image }}" class="featured-image" alt="Image of {{ post.title }}">
+                <a href="{{ post.url }}" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>
+                  <img src="{{ post.image }}" class="featured-image" alt="Image of {{ post.title }}">
+                </a>
               </p>
             {% endif %}
             <p>
