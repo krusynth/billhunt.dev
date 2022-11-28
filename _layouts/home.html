@@ -231,7 +231,7 @@ layout: default
     </h2>
     {% for post in site.data.jobs limit:3 %}
       {%- assign now = 'now' | date: '%s' -%}
-      {%- assign closes = post.closes | date: '%s' -%}
+      {%- assign closes = post.closes | date: '%s' | add: 86400 -%}
       {%- if closes == nil or closes == '' or closes > now  -%}
       <article class="post-multiple">
         {% if post.title %}
