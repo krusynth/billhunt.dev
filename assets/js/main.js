@@ -1,6 +1,3 @@
-// import MidiPlayer from '/assets/js/web-midi-player.js';
-const { 'web-midi-player': { default: MidiPlayer } } = window;
-
 up.history.config.restoreTargets=[':main'];
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -11,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   up.compiler('.tabgroup', init_tabs);
 
-  init_web_midi_player();
+  init_web_music_player();
 
 }, false);
 
@@ -38,70 +35,84 @@ function init_tabs(tabgroup) {
     }
 }
 
-function init_web_midi_player() {
-  let state = null;
+function init_web_music_player() {
   let tagline = document.getElementById('tagline');
-  let tagline0 = tagline.innerHTML;
-  let tagline1 = 'Take me to the Pizza Hut';
-  let tagline2 = 'learn to swim';
+  const tagline0 = tagline.innerHTML;
+  const tagline1 = 'Take me to the Pizza Hut';
+  const tagline2 = 'learn to swim';
 
-  function stateMachine (event) {
-    state = event.event;
-    // console.log(state);
-  }
+  const player = document.createElement('audio');
 
-  const midiPlayer = new MidiPlayer({
-    patchUrl: 'https://static.billhunt.dev/assets/audio/patches/',
-    eventLogger: stateMachine
-  });
+  const path = 'https://static.billhunt.dev/assets/audio/mp3/';
 
-  let path = 'https://static.billhunt.dev/assets/audio/';
-
-  let selectlist = document.getElementById('audiofile');
+  const selectlist = document.getElementById('audiofile');
 
   selectlist.addEventListener('change', function(e) {
     // console.log('change');
-    midiPlayer.stop();
     document.getElementById('playbutton').classList.remove('hide');
     document.getElementById('pausebutton').classList.add('hide');
   });
 
 
-  document.getElementById('playpause').addEventListener('click', e => {
-    e.preventDefault();
-    if(state === 'MIDI_PLAY') {
-      midiPlayer.pause();
+  function isPlaying() {
+    return !player.paused;
+  }
+
+  function nextTrack() {
+    let next = selectlist.selectedIndex + 1
+    if(next > selectlist.options.length) {
+      next = 0;
+    }
+
+    selectlist.options[next].selected = true;
+    playPause();
+  }
+
+  function playPause() {
+    // Start a new track
+    let value = selectlist.options[selectlist.selectedIndex].value;
+    let file = path + value;
+    if(player.src != file) {
+      player.pause();
+      player.src = file;
+      player.load();
+    }
+
+    if(value === 'Offspring-All_I_Want.midi.mp3') {
+      document.body.classList.add('taxi');
+      tagline.innerHTML = tagline1;
+    }
+    else if(value === 'Tool-Aenima.midi.mp3') {
+      document.body.classList.remove('taxi');
+      tagline.innerHTML = tagline2;
+    }
+    else {
+      document.body.classList.remove('taxi');
+      tagline.innerHTML = tagline0;
+    }
+
+    if(isPlaying()) {
+      console.log('playing');
+      player.pause();
 
       document.getElementById('playbutton').classList.remove('hide');
       document.getElementById('pausebutton').classList.add('hide');
     }
-    else if(state === 'MIDI_PAUSE') {
-      midiPlayer.resume();
-
-      document.getElementById('playbutton').classList.add('hide');
-      document.getElementById('pausebutton').classList.remove('hide');
-    }
     else {
-      let file = selectlist.options[selectlist.selectedIndex].value;
-      midiPlayer.play({ url: path + file });
+      console.log('stopped');
+      player.play();
 
       document.getElementById('playbutton').classList.add('hide');
       document.getElementById('pausebutton').classList.remove('hide');
-
-      if(file === 'Offspring-All_I_Want.mid') {
-        document.body.classList.add('taxi');
-        tagline.innerHTML = tagline1;
-      }
-      else if(file === 'Tool-Aenima.mid') {
-        document.body.classList.remove('taxi');
-        tagline.innerHTML = tagline2;
-      }
-      else {
-        document.body.classList.remove('taxi');
-        tagline.innerHTML = tagline0;
-      }
     }
+  }
+
+  document.getElementById('playpause').addEventListener('click', e => {
+    e.preventDefault();
+    playPause();
   });
+
+  // player.addEventListener("ended", nextTrack);
 }
 
 
