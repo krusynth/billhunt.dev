@@ -194,7 +194,7 @@ volunteer:
   <h3 class="subsubsection-title">Projects</h3>
   <ul class="about-highlights">
     <li>{% far fa-book %} <a href="https://digitalpolicy.us/">Digital Policy Guide</a> - a brief introduction to key laws, policies, and guidance surrounding the practice of information technology in government.</li>
-    <li>{% far fa-robot %} <a href="https://twitter.com/EOPbot">@EOPbot</a> - a Twitter bot that tweets presidential actions as they happen</li>
+    <li>{% far fa-robot %} <a href="https://botsin.space/@EOPbot">EOPbot</a> - a Mastodon bot that posts presidential actions as they happen</li>
     <li>{% far fa-link %} <a href="https://billhunt.dev/civic-tech-webring/">The Civic Tech Webring</a> - a collection of blogs for-and-by civic-tech-minded humans</li>
     <li>{% far fa-search %} <a href="https://job.hunt.works/">Job.Hunt.Works</a> - a website to make job searching easier</li>
   </ul>
