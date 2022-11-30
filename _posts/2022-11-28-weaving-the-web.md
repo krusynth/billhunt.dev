@@ -79,7 +79,7 @@ My friend [Cuán McCann](https://www.buildwith.org/) often shares this Alice Wal
 
 Our networks are brittle and fragile.  What can we do to build sustainable connections?
 
-(I'm not going talk about actually building communities here - smarter folks have covered that better than I can.)
+(I'm not going to talk about actually building communities here - smarter folks have covered that better than I can.)
 
 The web, originally known as the World Wide Web, was so named because it was imagined as a spider's web, a series of interlinked but decentralized points. These days, it's become a depressingly small number of [central nodes](http://internet-map.net/) with a vast miasma of sites around them. But we can change that!
 
