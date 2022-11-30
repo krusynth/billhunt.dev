@@ -159,6 +159,10 @@ hr {
 code {
   font-family: $code-font;
   background-color: rgba(99,99,99,0.2);
+  &.block, .block & {
+    display: block;
+    padding: $grid-gutter-width;
+  }
 }
 
 blockquote {
