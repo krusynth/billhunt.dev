@@ -11,9 +11,14 @@ layout: default
   </div>
   <div class="posts-container">
     {% for entry in site.data.links %}
-      <article class="post-multiple">
+      <article class="post-multiple vcard">
         <header class="post-header hoverable">
-          <h3 class="post-title"><a href="{{ entry.url }}" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>{{ entry.name }}</a></h3>
+          <h3 class="post-title">
+            <a href="{{ entry.url }}" class="url fn"
+              {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>
+                {{ entry.name }}
+            </a>
+          </h3>
         </header>
         <section class="post-content">
           {% if entry.image %}

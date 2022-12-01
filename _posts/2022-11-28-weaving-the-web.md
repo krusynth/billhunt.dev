@@ -141,6 +141,9 @@ If you're using Jekyll, you can copy these few snippets and be **up and running 
 
 If you're using another static site generator, it should be easy enough to modify those scripts above. Also, a few folks have built [Wordpress FOAF plugins](https://mortenhf.dk/2004/07/foaf-output.phps) as well!
 
+Update 2022.11.30: I've updated the HTML template of the links page to support the [hCard 1.0 microformat](http://microformats.org/wiki/hcard) as well!
+{:.banner}
+
 ---
 
 I'm hoping to build more tools for exploring these sorts of connections in the near future to help with discoverability and to maintain these networks in an increasingly-decentralized world.  A few ideas I'm tinkering with:
