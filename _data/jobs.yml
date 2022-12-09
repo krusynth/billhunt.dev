@@ -1,20 +1,14 @@
+- title: Census Bureau - Cloud Engineers (GS 14)
+  url: https://www.usajobs.gov/job/693502100
+  date: 2022-12-09
+  closes: 2022-12-29
+  content: The Census Bureau (under the Department of Commerce) is hiring cloud engineers! Experience with DevSecOps/Security/SRE needed.
+
 - title: Health And Human Services - Data Scientists (GS 9-12)
   url: https://www.usajobs.gov/job/692391400
   date: 2022-12-05
   closes: 2022-12-16
   content: The Department of Health and Human Services (HHS) Office of Refugee Resettlement (ORR) is hiring for data scientists from entry level to seasoned professionals!
-
-- title: Health And Human Services Office of Inspector General - Chief Data Officer (SES)
-  url: https://www.usajobs.gov/job/691222400
-  date: 2022-12-02
-  closes: 2022-12-08
-  content: The Department of Health and Human Services (HHS) Office of Inspector General is hiring for a Chief Data Officer! As the primary organization for oversight within HHS, this is a key role in data and analytics!
-
-- title: Office of Personnel Management - Lab Supervisor (GS 14 Supervisory)
-  url: https://www.usajobs.gov/job/692310300
-  date: 2022-12-02
-  closes: 2022-12-08
-  content: The Lab at OPM is hiring a supervisor to oversee lab teams! This is an amazing organization to join a team at the forefront of Human-Centered Design and Customer Experience in the federal government! Also, this is a **remote position**!
 
 - title: Census Bureau - Middleware Sysadmin (GS 14)
   url: https://www.usajobs.gov/job/691966600
@@ -40,53 +34,17 @@
   closes:
   content: The New York City Office of Technology and Innovation is looking for a director for their Digital Services team!
 
-- title: Office of the Comptroller of the Currency - Chief Information Officer (NB 8)
-  url: https://www.usajobs.gov/job/689497800
-  date: 2022-11-28
-  closes: 2022-12-01
-  content: OCC (part of the Department of the Treasury) is looking to hire for their CIO slot! As an executive role at a financial agency, the salary for this position is $160-288K!
-
-- title: National Institutes of Health - Deputy Chief Information Security Officer (GS 15)
-  url: https://www.usajobs.gov/job/689155800
-  date: 2022-11-21
-  closes: 2022-11-30
-  content: NIH (under the Department of Health And Human Services) is looking to fill their open Deputy CISO slot! This is a supervisory role at a critically important agency!
-
 - title: Census Bureau - Emerging Technology Fellowship (GS 15)
   url: https://www.xd.gov/apply/
   date: 2022-11-21
   closes: 2022-12-15
   content: The Census Bureau's Emerging Technology Fellowship is now accepting applicants! They're looking for folks with broad experience in programming, data, AI, and other disciplines to improve data-driven government services through the xD program!
 
-- title: Technology Modernization Fund - Technical Investment Managers (GS 14-15)
-  date: 2022-11-18
-  closes: 2022-11-28
-  url: https://tmf.cio.gov/team/
-  content: The TMF is a fund for IT improvement overseen by GSA. This is one of the coolest programs in government, and as a Technical Investment Manager, you can help shape some of the most impactful and visible projects in government!
-
 - title: Library of Congress - Digital Projects Coordinator (GS 14)
   url: https://www.usajobs.gov/job/690107400
   date: 2022-11-18
   closes: 2022-12-09
   content: The LOC is a great place to work, and right now they're looking for a coordinator for digital projects in Discovery and Preservation Services.
-
-- title: Department of Veterans Affairs - Deputy Chief Information Officer (SES)
-  url: https://www.usajobs.gov/Job/689549500
-  date: 2022-11-17
-  closes: 2022-11-30
-  content: The VA is hiring for a Deputy CIO for the Benefits Appeals and Memorials divisions (two of the three big areas). I enjoyed my time working with this team doing incredibly important work supporting our Veterans!
-
-- title: Farm Production and Conservation - Assistant Chief Information Officer (SES)
-  url: https://www.usajobs.gov/job/689477600
-  date: 2022-11-16
-  closes: 2022-12-08
-  content: FPAC (part of USDA) serves employees and customers across the Farm Service Agency (FSA), the Natural Resource Conservation Service (NRCS) and the Risk Management Agency (RMA). THe ACIO is responsible for planning, directing, and coordinating the Mission Area's information technology program.
-
-- title: Department of Transportation - Deputy Chief Data Officer (GS 15)
-  url: https://www.usajobs.gov/job/687408500
-  date: 2022-11-03
-  closes: 2022-12-05
-  content: The US Department of Transportation is hiring a Deputy Chief Data Officer. This is an amazing role for managing their enterprise data efforts and improving customer experience!
 
 - title: California State - Deputy Director of Service Innovation
   url: https://innovation.ca.gov/join-us/deputy-director-service-innovation/
