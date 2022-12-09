@@ -30,6 +30,9 @@ permalink: /foaf.rdf
     <foaf:mbox rdf:resource="mailto:{{ site.author.email }}"/>
     {%- endif %}
     <foaf:homepage rdf:resource="{{ site.url }}"/>
+    {%- if site.author.image %}
+    <foaf:depicts rdf:resource="{{ site.author.image }}"/>
+    {%- endif %}
     {%- if site.author.social %}
     {%- for social in site.author.social %}
     <foaf:holdsAccount>
