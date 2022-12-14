@@ -9,6 +9,12 @@ layout: default
 
   <section class="post-content">
     {{ content }}
+
+  {% if page.link %}
+    <p>
+      <a class="btn" href="{{ page.link }}">Check It Out</a>
+    </p>
+  {% endif %}
   </section>
 
 </article>

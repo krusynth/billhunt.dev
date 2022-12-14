@@ -102,3 +102,10 @@ collections:
 
 feed:
   posts_limit: 30
+
+defaults:
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
