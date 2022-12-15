@@ -106,6 +106,6 @@ feed:
 defaults:
   -
     scope:
-      path: "" # all files
+      path: "_recommended"
     values:
       layout: "page"
