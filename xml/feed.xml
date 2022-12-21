@@ -3,5 +3,5 @@ title: Full Feed
 permalink: /feed.xml
 ---
 
-{% assign items = site.posts | concat: site.recommended | concat: site.data.jobs | sort: 'date' | reverse -%}
+{% assign items = site.posts | concat: site.recommended | sort: 'date' | reverse -%}
 {% include feed.xml items=items %}
