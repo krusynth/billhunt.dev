@@ -1,3 +1,9 @@
+- title: Library of Congress - IT Specialist (GS 14 Supervisory)
+  url: https://www.usajobs.gov/job/697302800
+  date: 2023-01-03
+  closes: 2023-01-12
+  content: The LOC is looking for a supervisory IT operations manager. This role oversees staff supporting Windows and Mac workstations, conferencing, printers, and mobile devices.
+
 - title: Department of Veterans Affairs - Supervisory IT Specialist (GS 14 Supervisory)
   url: https://www.usajobs.gov/job/697462600
   date: 2022-12-30
@@ -16,23 +22,11 @@
   closes: 2023-01-13
   content: NARA is hiring for their Deputy CIO! Talk about a dream job, this is one not to miss!
 
-- title: Department of Veterans Affairs - Digital Service Various Roles (GS 15)
-  url: https://www.usajobs.gov/job/694113000
-  date: 2022-12-19
-  closes: 2022-12-30
-  content: The VA is hiring <strong>ten</strong> experts in data science, software engineering, product design, product management, and user experience (UX) on my old Digital Service team. (It looks like someone copied-and-pasted wrong for this posting, it is <strong>not</strong> for the Senior Director as stated in the heading.)
-
 - title: General Services Administration - Senior Designer (GS 15)
   url: https://www.usajobs.gov/job/693941200
   date: 2022-12-16
   closes: 2023-01-06
   content: GSA is hiring for a senior designer on their service delivery team! This is a remote position!
-
-- title: Department of Labor - Emerging Technology and Artificial Intelligence Supervisor (GS 15)
-  url: https://www.usajobs.gov/job/694585500
-  date: 2022-12-16
-  closes: 2022-12-27
-  content: DOL is hiring a supervisor to lead their Emerging Technology and Artificial Intelligence Center of Excellence! This appears to be a broad, hands-on role.
 
 - title: Department of Transportation - Data Scientist (GS 14)
   url: https://www.usajobs.gov/job/694768900
@@ -45,42 +39,6 @@
   date: 2022-12-14
   closes: 2023-01-06
   content: The VA is looking for a new Chief Enterprise Architect. In this role, you'll be setting the technology standards and direction for the agency, and over see a team of 40+ architects. This position was recently moved into my old team at the VA, under the CTO and adjacent to the Digital Service team!
-
-- title: Census Bureau - Website CMS Manager (GS 13)
-  url: https://www.usajobs.gov/job/694540100
-  date: 2022-12-14
-  closes: 2022-12-28
-  content: The Census Bureau (under the Department of Commerce) is hiring IT specialists to help run their main website content management system and associated webservers.
-
-- title: Census Bureau - Cloud Engineers (GS 14)
-  url: https://www.usajobs.gov/job/693502100
-  date: 2022-12-09
-  closes: 2022-12-29
-  content: The Census Bureau (under the Department of Commerce) is hiring cloud engineers! Experience with DevSecOps/Security/SRE needed.
-
-- title: Health And Human Services - Data Scientists (GS 9-12)
-  url: https://www.usajobs.gov/job/692391400
-  date: 2022-12-05
-  closes: 2022-12-16
-  content: The Department of Health and Human Services (HHS) Office of Refugee Resettlement (ORR) is hiring for data scientists from entry level to seasoned professionals!
-
-- title: Census Bureau - Middleware Sysadmin (GS 14)
-  url: https://www.usajobs.gov/job/691966600
-  date: 2022-12-02
-  closes: 2022-12-15
-  content: The Census Bureau (under the Deparment of Commerce) is hiring a sysadmin to serve as a subject matter expert for middleware applications.
-
-- title: Department of the Treasury - Customer Experience Strategist (GS 15)
-  url: https://www.usajobs.gov/job/691829700
-  date: 2022-12-01
-  closes: 2022-12-14
-  content: The Treasury Department is hiring for CX roles in their Office of Strategic Planning and Performance Improvement!  CX positions at the GS-15 level are pretty rare, so this is a great opportunity for a senior-level practitioner!
-
-- title: Department of Housing and Urban Development - Chief Technology Officer (SES)
-  url: https://www.usajobs.gov/job/691575800
-  date: 2022-11-29
-  closes: 2022-12-30
-  content: HUD is looking for a Chief Technology Officer to oversee their technology execution. This includes policy oversight, including their Enterprise Architecture division.
 
 - title: NYC Office of Technology and Innovation - Assistant Commissioner, Digital Services
   url: https://a127-jobs.nyc.gov/psc/nycjobs/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=560717&PostingSeq=1&
