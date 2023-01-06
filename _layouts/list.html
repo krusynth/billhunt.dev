@@ -46,7 +46,7 @@ layout: default
               {{ content | markdownify }}
             </p>
             <p class="action-box">
-              <a href="{{ post.url }}" class="btn" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>{% if page.action %}{{ page.action }}{% else %}Check It Out{% endif %}</a>
+              <a href="{{ post.url }}" class="btn" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>{% if post.action %}{{ post.action }}{% elsif page.action %}{{ page.action }}{% else %}Check It Out{% endif %}</a>
             </p>
           </section>
         </article>

@@ -250,7 +250,7 @@ layout: default
             {% endif %}
           </p>
           <p class="action-box">
-            <a href="{{ post.url }}" class="btn">Apply</a>
+            <a href="{{ post.url }}" class="btn">{% if post.action %}{{ post.action }}{% else %}Apply{% endif %}</a>
           </p>
         </section>
       </article>
