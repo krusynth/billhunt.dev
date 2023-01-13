@@ -175,7 +175,7 @@ volunteer:
     At heart, I believe in collaboration, transparency, and equity to make things better - teams, software, and government.
   </p>
   <p>
-    Please feel free to reach me at <a href="mailto:hello@billhunt.email">hello@billhunt.email</a>
+    Please feel free to reach me at <a href="mailto:hello@billhunt.email">hello@billhunt.email</a>. No sales emails, please!
   </p>
   <h2 class="subsection-title">Highlights</h2>
   <h3 class="subsubsection-title">Work</h3>
