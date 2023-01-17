@@ -1,6 +1,5 @@
 ---
 title: Federal IT Policy Recommendations
-author: Bill Hunt
 type: page
 date: 2020-12-21T00:00:00+00:00
 permalink: /policy-recs/

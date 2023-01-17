@@ -54,9 +54,9 @@ layout: default
         </article>
         <article class="tab-target" id="stickers">
           <p>
-            Get a Move Carefully and Fix Things Sticker for FREE!
+            I'm giving out <strong>Move Carefully and Fix Things</strong> and <strong>Govpunk</strong> stickers for FREE!
           </p>
-          <a class="btn" href="/move-carefully/" up-follow>Get a Sticker!</a>
+          <a class="btn" href="/move-carefully/" up-follow>Get a FREE Sticker!</a>
         </article>
         <article class="tab-target" id="eopbot">
           <p>
@@ -74,6 +74,53 @@ layout: default
     </div>
 
     <h2 class="section-title">Featured</h2>
+
+  <!-- This loops through the paginated posts -->
+  {% assign featured_posts = site.posts | where:"featured","true" %}
+    {% for post in featured_posts -%}
+      <article class="post-multiple">
+        <header class="post-header hoverable">
+          <span class="featured-icon">★</span>
+          <h3 class="post-title"><a href="{{ post.url }}" up-follow>{{ post.title }}</a></h3>
+        </header>
+        <section class="post-content">
+          {% if post.image %}
+            <p>
+              <img src="https://billhunt.dev{{ post.image }}" class="featured-image">
+            </p>
+          {% endif %}
+          <p>
+            <span class="date">
+              {{ post.date | date: site.date_format  }}
+            </span> –
+          {% if post.excerpt %}
+            {{ post.excerpt }}
+          {% else %}
+            {{ post.content | strip_html | truncatewords:75 }}
+          {% endif %}
+          </p>
+          <p class="action-box">
+            <a href="{{ post.url }}" class="btn" up-follow>Read This</a>
+          </p>
+        </section>
+      </article>
+    {% endfor %}
+
+    <!--article class="post-multiple">
+      <header class="post-header hoverable">
+        <span class="featured-icon">★</span>
+        <h3 class="post-title"><a href="/stickers/" up-follow>New FREE Stickers!</a></h3>
+      </header>
+      <section class="post-content">
+        <img alt="A Govpunk sticker, white text on a red eleven-pointed star with a black background, next to a Move Carefully and Fix Things sticker, with white lettering on a blue background" src="https://billhunt.dev/uploads/2023/01/stickers.jpg">
+        <p>
+          New Year, New Stickers, same supporting of good causes! Caring is punk rock!
+        </p>
+        <p class="action-box">
+          <a href="/move-carefully/" class="btn" up-follow>Get a free sticker!</a>
+        </p>
+      </section>
+    </article-->
 
     <article class="post-multiple">
       <header class="post-header hoverable">
@@ -106,52 +153,7 @@ layout: default
       </section>
     </article>
 
-    <article class="post-multiple">
-      <header class="post-header hoverable">
-        <span class="featured-icon">★</span>
-        <h3 class="post-title"><a href="/move-carefully/" up-follow>Move Carefully and Fix Things Stickers</a></h3>
-      </header>
-      <section class="post-content">
-        <img alt="Photo of Move Carefully and Fix Things stickers" src="https://billhunt.dev/uploads/2021/02/movecarefully-photo.jpg">
-        <p>
-          After my <a href="/blog/2020/11/09/welcome-home/">little post on joining government service</a>, a lot of people asked about stickers for “Move Carefully and Fix Things." I had some made and now I want to give them to you for free! (But maybe we can also help good causes at the same time!)
-        </p>
-        <p class="action-box">
-          <a href="/move-carefully/" class="btn" up-follow>Get a free sticker!</a>
-        </p>
-      </section>
-    </article>
 
-  <!-- This loops through the paginated posts -->
-  {% assign featured_posts = site.posts | where:"featured","true" %}
-    {% for post in featured_posts -%}
-      <article class="post-multiple">
-        <header class="post-header hoverable">
-          <span class="featured-icon">★</span>
-          <h3 class="post-title"><a href="{{ post.url }}" up-follow>{{ post.title }}</a></h3>
-        </header>
-        <section class="post-content">
-          {% if post.image %}
-            <p>
-              <img src="https://billhunt.dev{{ post.image }}" class="featured-image">
-            </p>
-          {% endif %}
-          <p>
-            <span class="date">
-              {{ post.date | date: site.date_format  }}
-            </span> –
-          {% if post.excerpt %}
-            {{ post.excerpt }}
-          {% else %}
-            {{ post.content | strip_html | truncatewords:75 }}
-          {% endif %}
-          </p>
-          <p class="action-box">
-            <a href="{{ post.url }}" class="btn" up-follow>Read This</a>
-          </p>
-        </section>
-      </article>
-    {% endfor %}
   </section>
 </div>
 
