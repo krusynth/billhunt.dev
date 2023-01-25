@@ -61,7 +61,7 @@ h3 {
 }
 
 p {
-  margin: 0 0 0.5rem;
+  margin: 0 0 1rem;
 }
 
 p:last-child {
@@ -200,7 +200,7 @@ blockquote {
   @extend %major-border;
 
   font-size: 0.75rem;
-  line-height: 1.25;
+  line-height: 1.4;
   background: $white;
   margin-bottom: $grid-gutter-width;
   // min-height: 70vh;
@@ -265,7 +265,8 @@ blockquote {
 .post-single {
   @include dotbg(lighten($blue, 20%));
   @include bordered-box($blue);
-  line-height: 1.5;
+  line-height: 1.75;
+  text-align: justify;
 
   padding-top: $grid-gutter-width;
 
