@@ -51,7 +51,7 @@ Tough love time: if you can't afford to market your product, you probably also c
 
 For labor/services contracts: An agency doesn't need to have ever heard of you before you submit a response to an RFP. In fact, it's usually better that we haven't. Every RFP will ask for details of your previous performance; this along with your key personnel (the staff who will be doing the work - usually we ask for their resumes) and price are the main things that matter here. And if you don't have relevant previous experience, you're probably not going to win the bid.
 
-_"As an federal employee, cold calls are a good way for me to learn about new offerings and approaches."_
+_"As a federal employee, cold calls are a good way for me to learn about new offerings and approaches."_
 
 Please, please, **please** spend more time engaging in the community outside of your agency. It's important to stay on top of changes in your field. Again, there are lots of conferences and events going on all the time, where you can learn about new solutions. For instance, the CIO Council & GSA host a wide variety of [working groups](https://digital.gov/communities/) that are open to government employees. And here in DC there are the alphabet soup of non-profits that host in-person and virtual events which are free for government employees: [ATARC](https://atarc.org/), [ACT-IAC](https://www.actiac.org/), [AFCEA](https://www.afcea.org/), [AFFIRM](https://www.affirm.org/) just to name a few.
 
@@ -61,7 +61,7 @@ _"You should remember that the cold caller you're turning away today might be yo
 If they're any good at their job, they'll know why I didn't waste their time.
 
 
-_"It's annoying when vendors contact agencies right before the end of a fiscal year, or right after a budget has been passed."_
+_"As a federal employee, it's annoying when vendors contact agencies right before the end of a fiscal year, or right after a budget has been passed."_
 
 Strongly agreed. It's important for vendors to know that [agencies budget 2-3 years in advance](https://digitalpolicy.us/policies/budget-finance/). When an agency receives money, it's already been allocated and people know where it's going. Now, end-of-year purchasing with unused funds **does** often happen, but that's _almost never_ done with a new vendor, because contracting takes so long.
 
