@@ -18,7 +18,8 @@ Well, that post got a *lot* of attention - at the moment, it's one of the most p
 
 I also received a lot of comments and questions on that post. **I don't want to waste your time, and I don't want you to waste mine either**, so below I've suggested a few strategies on how salespeople can be more effective at their jobs with less or *no* cold-calling.
 
-Speaking of not wasting time... You may not agree with everything I've stated here - and that's ok! I'm definitely overgeneralizing, and moreover your experience will differ from my own experience as a vendor. But, and I want to be absolutely clear here - **you don't need to tell me about it.**  Sending a dozen comments on how Very Wrong I Am On The Internet will not make either of our lives any better and is not a good use of time.{:.banner}
+{:.banner}
+Speaking of not wasting time... You may not agree with everything I've stated here - and that's ok! I'm definitely overgeneralizing, and moreover your experience will differ from my own experience as a vendor. But, and I want to be absolutely clear here - **you don't need to tell me about it.**  Sending a dozen comments on how Very Wrong I Am On The Internet will not make either of our lives any better and is not a good use of time.
 
 ---
 
