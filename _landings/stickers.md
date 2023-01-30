@@ -17,7 +17,7 @@ Once again, I want to give you all these stickers for **FREE** again! No strings
 
 Now, I know lots of folks tend to donate food directly to these organizations, but  food banks end up getting a lot of garbage they can't redistribute that way. (I still have nightmares about the endless cans of cranberry sauce that would show up after thanksgiving and sit around for years.) On the other hand, food banks have really great deals with distributors - they can often get up to **ten real meals for every dollar** - that's incredible buying power. The moral of the story is that it's **almost always better to donate cash to these organizations**.
 
-So here's what we're going to do: **I will send you a sticker, or two stickers, for free, anywhere in the world.** Just email me your name & address at [hello+stickers@billhunt.email](mailto:hello+movecarefully@billhunt.email) and tell me if you want one or two stickers. You can do just one, or two of one, or one of each, or whatever. Just let me know what you want!
+So here's what we're going to do: **I will send you a sticker, or two stickers, for free, anywhere in the world.** Just email me your name & address at [hello+stickers@billhunt.email](mailto:hello+stickers@billhunt.email) and tell me if you want one or two stickers. You can do just one, or two of one, or one of each, or whatever. Just let me know what you want!
 
 And if you want to donate money directly to your local food bank/pantry/whatever, just forward me the receipt and I'll add it to the total amount on this page! You really don't have to, but it's nice to encourage other folks by seeing numbers go up!
 
