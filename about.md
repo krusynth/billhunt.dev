@@ -177,7 +177,7 @@ volunteer:
   <p>
     Please feel free to reach me at <a href="mailto:hello@billhunt.email">hello@billhunt.email</a>. No sales emails, please!
   </p>
-  <h2 class="subsection-title">Highlights</h2>
+  <h2 class="section-title">Highlights</h2>
   <h3 class="subsubsection-title">Work</h3>
   <ul class="about-highlights">
     <li>{% far fa-user-tie %} U.S. Securities and Exchange Commission – Assistant Director, Cloud Center of Excellence</li>
