@@ -33,9 +33,10 @@ Not finding what you're looking for on this list? Here are some other great jobs
       <li><a href="https://techjobsforgood.com/">Tech Jobs for Good</a></li>
       <li><a href="https://technical.ly/jobs/">Technical.ly</a></li>
       <li><a href="https://jobs.all-hands.us/jobs">All Hands</a></li>
-      <li><a href="https://important-jobs.pallet.com/jobs">Important Jobs</a></li>
+      <li><a href="https://important-jobs.pallet.com/jobs">Pallet Important Jobs</a></li>
       <li><a href="https://edsjobslist.com/">Ed's Clean Energy Jobs List</a></li>
       <li><a href="https://www.bwork.com/candidate/job_search/quick/results?sort_field=post_date&sort_dir=desc">B Work</a></li>
+      <li><a href="https://www.digitalrights.community/job-board">Digital Rights</a></li>
       <li><a href="https://docs.google.com/spreadsheets/d/1dFVoF6f9VU5pjaGhyyvQaBN0n6ae-iLCtlvsO1N2jhA/edit#gid=0">Ethical Tech Jobs Boards Megalist</a></li>
       <li><a href="https://docs.google.com/spreadsheets/d/1VpYIEC7MhA_6VVORk5S9CDuccx_tEvFVefeDTilenXQ/edit#gid=0">Fellowships Megalist</a></li>
     </ul>
