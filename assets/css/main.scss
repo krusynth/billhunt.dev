@@ -237,6 +237,25 @@ blockquote {
   }
 }
 
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: $grid-gutter-width;
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    & > * {
+      width: 30%;
+      max-width: 30%;
+    }
+  }
+}
+
 .post-multiple {
   @include bordered-box($blue);
   display: flex;
