@@ -23,6 +23,9 @@ Not finding what you're looking for on this list? Here are some other great jobs
       <li><a href="https://jobs.thebridgework.com/">The Bridge</a></li>
       <li><a href="https://www.ilpfoundry.us/jobs/">Internet Law and Policy Foundry</a></li>
       <li><a href="https://www.progressivedatajobs.org/job-postings/">Progressive Data Jobs</a></li>
+      <li><a href="https://elgljobs.com/">Engaging Local Government Leaders</a></li>
+      <li><a href="https://gogovernment.org/fellowship/ipa-talent-exchange-program/#candidate">Partnership for Public Service</a></li>
+      <li><a href="https://www.justicetech.download/">Justice Tech Download</a></li>
     </ul>
   </section>
   <section>
