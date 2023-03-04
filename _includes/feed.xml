@@ -11,14 +11,16 @@
   </author>
   <rights type="text">All content copyright © {{ site.author.name }}. All rights reserved.</rights>
   {% for post in include.items limit:site.feed.posts_limit -%}
-
-    {%- assign url = post.url | replace: '&', '&amp;'-%}
-    {%- if post.closes -%}
-      {%- assign category = 'Jobs' -%}
-    {%- elsif post.id -%}
-      {%- assign url = url | prepend: site.url -%}
-      {%- assign category = post.category | default:'' -%}
-    {%- endif -%}
+  {%- assign url = post.url | replace: '&', '&amp;'-%}
+  {%- if post.closes -%}
+    {%- assign category = 'Jobs' -%}
+  {%- elsif post.id -%}
+    {%- assign url = url | prepend: site.url -%}
+    {%- assign category = post.category | default:'' -%}
+    {%- if post.category == 'Recommended' -%}
+      {%- assign url = post.link -%}
+    {%- endif %}
+  {%- endif -%}
 
   {%- assign now = 'now' | date: '%s' -%}
   {%- assign closes = post.closes | date: '%s' -%}
@@ -35,6 +37,9 @@
     <content type="html">{{ post.content | markdownify | strip | xml_escape }}
       {%- if post.closes %}&lt;p&gt;Closes {{ post.closes | date: date_format }}.&lt;/p&gt;{% endif -%}
       {%- if post.id -%}
+        {%- if post.category == 'Recommended' -%}
+          &lt;p&gt;&lt;a href=&quot;{{ url | xml_escape }}&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+        {%- endif -%}
       {%- elsif post.closes -%}
         &lt;p&gt;&lt;a href=&quot;{{ url | xml_escape }}&quot;&gt;Apply here!&lt;/a&gt;&lt;/p&gt;
       {%- else -%}
