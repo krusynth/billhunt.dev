@@ -40,10 +40,11 @@
   closes: 2023-03-22
   content: The FTC is hiring for an Information System Security Officer to manage cybersecurity for their Tech Lab.
 
-- title: Department of Veterans Affairs - IT Program Managers (GS 14, supervisory, remote)
+- title: Department of Veterans Affairs - IT Program Managers (GS 14, supervisory)
   url: https://www.usajobs.gov/job/709989600
   date: 2023-03-02
   closes: 2023-03-08
+  remote: true
   content: The VA is hiring for multiple program managers. These are supervisory positions, and all remote!
 
 - title: Centers for Disease Control and Prevention - IT Specialist (GS 15, supervisory)

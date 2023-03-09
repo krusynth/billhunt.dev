@@ -1,11 +1,11 @@
 ---
-title : Jobs
-permalink: /jobs.xml
+title : USAJobs
+permalink: /usajobs.xml
 ---
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
-{%- for post in site.data.jobs  %}
+{%- for post in site.data.usajobs  %}
   {% assign closes = post.closes | date: '%s' %}
 
   {% if closes == nil or closes == '' or closes > now  %}
@@ -17,6 +17,11 @@ permalink: /jobs.xml
     {% endif %}
 
     {% assign content = post.content %}
+    {% for job in site.data.jobs %}
+      {% if job.url contains post.id %}
+        {% assign content = job.content %}
+      {% endif %}
+    {% endfor %}
 
     {% if post.closes %}
       {% assign post_closes = post.closes | date: site.date_format %}
@@ -27,6 +32,8 @@ permalink: /jobs.xml
     {% assign content = content | append: afterwards %}
 
     {% assign post = post | setval: 'content', content %}
+
+    {% assign post = post | setval: 'date', post.posted %}
 
     {% assign items = items | push: post %}
   {% endif %}

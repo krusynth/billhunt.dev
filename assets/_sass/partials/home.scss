@@ -60,7 +60,7 @@
   }
 }
 
-.jobs {
+.jobs, .usajobs {
   $jobs-color: $purple;
 
   @include dotbg(lighten($jobs-color, 20%));
@@ -73,6 +73,21 @@
     background-color: $jobs-color;
   }
 }
+
+.links {
+  $links-color: $blue;
+
+  @include dotbg(lighten($links-color, 20%));
+  @include standard-padding;
+
+  .post-multiple {
+    @include bordered-box($links-color);
+  }
+  .btn {
+    background-color: $links-color;
+  }
+}
+
 
 .featured-icon {
   color: $white;

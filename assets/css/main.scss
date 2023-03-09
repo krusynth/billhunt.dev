@@ -256,6 +256,21 @@ blockquote {
   }
 }
 
+.column {
+  padding-left: 1rem;
+
+  @media (min-width: $breakpoint-md) {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+  }
+
+  .heading {
+    list-style: none;
+    margin-left: -1rem;
+  }
+}
+
 .post-multiple {
   @include bordered-box($blue);
   display: flex;

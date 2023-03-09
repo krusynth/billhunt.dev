@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text" xml:lang="en">{{ site.title }} +++ {{ page.title }}</title>
+  <title type="text" xml:lang="en">{{ site.title }} – {{ page.title }}</title>
   <link type="application/atom+xml" href="{{ site.url }}/feed.xml" rel="self"/>
   <link href="{{ site.url }}/"/>
   <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
@@ -11,45 +11,34 @@
   </author>
   <rights type="text">All content copyright © {{ site.author.name }}. All rights reserved.</rights>
   {% for post in include.items limit:site.feed.posts_limit -%}
-  {%- assign url = post.url | replace: '&', '&amp;'-%}
-  {%- if post.closes -%}
-    {%- assign category = 'Jobs' -%}
-  {%- elsif post.id -%}
-    {%- assign url = url | prepend: site.url -%}
-    {%- assign category = post.category | default:'' -%}
-    {%- if post.category == 'Recommended' -%}
-      {%- assign url = post.link -%}
-    {%- endif %}
-  {%- endif -%}
+  {%- assign url = post.link | replace: '&', '&amp;'-%}
 
-  {%- assign now = 'now' | date: '%s' -%}
-  {%- assign closes = post.closes | date: '%s' -%}
-  {%- if closes == nil or closes == '' or closes > now  -%}
+  {%- assign content = post.content -%}
+  {%- if post.afterwards %}
+    {% assign content = content | append: post.afterwards %}
+  {% endif -%}
+  {%- assign content = content | markdownify | strip | xml_escape -%}
+
+  {%- if post.date -%}
+    {%- assign postdate = post.date -%}
+  {%- else -%}
+    {%- assign postdate = 'now' | date: '%s' -%}
+  {%- endif %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>
     <link rel="alternate" type="text/html" href="{{ url }}" />
     {%- if post.parent %}
     <link rel="related" href="{{ post.parent }}" />
     {%- endif %}
-    <published>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</published>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <published>{{ postdate | date_to_xmlschema }}</published>
+    <updated>{{ postdate | date_to_xmlschema }}</updated>
     <id>{{ url }}</id>
-    <content type="html">{{ post.content | markdownify | strip | xml_escape }}
-      {%- if post.closes %}&lt;p&gt;Closes {{ post.closes | date: date_format }}.&lt;/p&gt;{% endif -%}
-      {%- if post.id -%}
-        {%- if post.category == 'Recommended' -%}
-          &lt;p&gt;&lt;a href=&quot;{{ url | xml_escape }}&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
-        {%- endif -%}
-      {%- elsif post.closes -%}
-        &lt;p&gt;&lt;a href=&quot;{{ url | xml_escape }}&quot;&gt;Apply here!&lt;/a&gt;&lt;/p&gt;
-      {%- else -%}
-        &lt;p&gt;&lt;a href=&quot;{{ url | xml_escape }}&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
-      {%- endif -%}
+    <content type="html">
+      {{ content }}
     </content>
-    {%- if category != ""  %}
-    <category term="{{ category }}" />
+    {%- if post.category and post.category != "" %}
+    <category term="{{ post.category }}" />
     {%- endif %}
   </entry>
-  {% endif -%}
-  {% endfor %}
+  {%- endfor %}
 </feed>
