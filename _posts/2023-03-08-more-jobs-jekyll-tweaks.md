@@ -10,13 +10,13 @@ excerpt: I've added more job postings from USAJobs and wrote a script to pull fr
 
 It's been a lot of work for me to keep my [jobs page](/jobs/) up-to-date. Previously, I've been crawling through LinkedIn a couple times a day to try to find all the relevant IT jobs. However, many were still getting missed. So I signed up for the [USAJobs API](https://developer.usajobs.gov/), and wrote [a script to scrape relevant technology jobs](https://github.com/krusynth/usajobs-feed) from it. (As always, that script is open source, so you can take it and manipulate it for your own regular searches.) My default settings only searches for GS-12 and above, technology-related job series (2210, 1550, 1560), does not include defense, intelligence, and law-enforcement agencies: DOD, DOJ, and most of DHS are excluded (except for CISA and FEMA).
 
-I only post the most interesting results on my jobs page, but I figured some folks would want access to the full list of positions, so I've set up [a new page for all the results from that search](/jobs/usajobs/), and it has its own [RSS feed](/usajobs.xml) as well. I'm not 100% happy with this setup, since the main jobs feed has a few jobs that are not federal jobs, and thus don't show up on the usajobs feed, so there's no "comprehensive" jobs feed today; you'll have to check both to see all the jobs. But that's work for another day.
+I only post the most interesting results on my jobs page, but I figured some folks would want access to the full firehose of positions, so I've set up [a new page for all the results from that search](/jobs/usajobs/), and it has its own [RSS feed](/usajobs.xml) as well. I'm not 100% happy with this setup, since the main jobs feed has a few jobs that are not federal jobs, and thus don't show up on the usajobs feed, so there's no "comprehensive" jobs feed today; you'll have to check both to see all the jobs. But that's work for another day.
 
 As a result of these additions, I realized that my site was quickly becoming a spaghetti mess of code. To clean this up, I've rationalized the growing number of RSS feeds, only these are now discoverable:
 
 * [Main Feed](/feed.xml) - only includes [my posts](/blog/), and [posts from my recommended section](/recommended/). No jobs on this feed.
-* [Jobs Feed](/jobs.xml) - everything on the [jobs page](/jobs/).
-* [USAJobs Feed](/usajobs.xml) - everything on the [usajobs page](/jobs/usajobs/).
+* [Jobs Feed](/jobs.xml) - my classic [interesting jobs page](/jobs/)  feed.
+* [USAJobs Feed](/usajobs.xml) - my [usajobs firehose](/jobs/usajobs/) of federal jobs that are IT-related.
 * [Enderprise Architecture Feed](https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ) - my [YouTube videogame series](https://www.youtube.com/@EnderpriseArchitecture)
 
 I also completely redid both the [RSS feed template](https://github.com/krusynth/billhunt.dev/blob/www/_includes/feed.xml) and the [list template](https://github.com/krusynth/billhunt.dev/blob/www/_layouts/list.html) to simplify showing many different types of content using a single layout. To achieve this, I've had to do some truly unholy hacks to Jekyll.
