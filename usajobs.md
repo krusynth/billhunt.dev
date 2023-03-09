@@ -21,6 +21,7 @@ This is a list of all USAJobs postings that match all of the following criteria:
 
 For my curated list that also includes non-federal jobs, check out the **[main jobs page](/jobs/)**.
 
+For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
 
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}

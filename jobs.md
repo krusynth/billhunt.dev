@@ -13,6 +13,8 @@ You can follow this list with the RSS link above, and I also repost them to <a h
 
 These are mostly senior positions, and include a few non-federal jobs. For a more comprehensive list of only federal technology jobs, check out my **[USAJobs page](/jobs/usajobs/)**.
 
+For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
+
 Not finding what you're looking for? Here are some other great jobs boards:
 
 * {:.heading} **Public Interest Tech**

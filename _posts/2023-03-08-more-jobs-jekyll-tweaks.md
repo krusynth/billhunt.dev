@@ -12,6 +12,8 @@ It's been a lot of work for me to keep my [jobs page](/jobs/) up-to-date. Previo
 
 I only post the most interesting results on my jobs page, but I figured some folks would want access to the full firehose of positions, so I've set up [a new page for all the results from that search](/jobs/usajobs/), and it has its own [RSS feed](/usajobs.xml) as well. I'm not 100% happy with this setup, since the main jobs feed has a few jobs that are not federal jobs, and thus don't show up on the usajobs feed, so there's no "comprehensive" jobs feed today; you'll have to check both to see all the jobs. But that's work for another day.
 
+I've also added a lot of documentation on my Digital Policy website around [pay grades and how the GS system works](https://digitalpolicy.us/policies/hiring/#pay-grades).
+
 As a result of these additions, I realized that my site was quickly becoming a spaghetti mess of code. To clean this up, I've rationalized the growing number of RSS feeds, only these are now discoverable:
 
 * [Main Feed](/feed.xml) - only includes [my posts](/blog/), and [posts from my recommended section](/recommended/). No jobs on this feed.
