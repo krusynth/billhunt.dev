@@ -26,6 +26,9 @@ For my curated list that also includes non-federal jobs, check out the **[main j
 {% assign now = 'now' | date: '%s' %}
 
 {%- for post in site.data.usajobs  %}
+  {% assign title = post.agency | append: ' - ' | append: post.title %}
+  {% assign post = post | setval: 'title', title %}
+
   {% for job in site.data.jobs %}
     {% if job.url contains post.id %}
       {% assign post = post | setval: 'content', job.content %}
@@ -40,6 +43,6 @@ For my curated list that also includes non-federal jobs, check out the **[main j
   {% assign items = items | push: post %}
 {% endfor -%}
 
-{% assign items = items | sort: 'date' | reverse %}
+{% assign items = items | sort: 'posted' | reverse %}
 {% assign page = page | setval: 'items', items %}
 
