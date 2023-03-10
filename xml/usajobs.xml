@@ -20,22 +20,19 @@ permalink: /usajobs.xml
       {% assign post = post | setval: 'title', title %}
     {% endif %}
 
-    {% assign content = post.content %}
     {% for job in site.data.jobs %}
       {% if job.url contains post.id %}
-        {% assign content = job.content %}
+        {% assign post = post | setval: 'content', job.content %}
       {% endif %}
     {% endfor %}
 
-    {% if post.closes %}
-      {% assign post_closes = post.closes | date: site.date_format %}
-      {% assign content = content | append: ' <p>Closes ' | append: post_closes | append: </p>' %}
-    {% endif %}
-
     {% capture afterwards %}<p><a href="{{ post.link }}">Check it out!</a></p>{% endcapture %}
-    {% assign content = content | append: afterwards %}
 
-    {% assign post = post | setval: 'content', content %}
+    {% if post.closes %}
+      {% capture closes %}<p>Closes {{ post.closes | date: site.date_format }}</p>{% endcapture %}
+      {% assign afterwards = afterwards | prepend: closes %}
+    {% endif %}
+    {% assign post = post | setval: 'afterwards', afterwards %}
 
     {% assign post = post | setval: 'date', post.posted %}
 

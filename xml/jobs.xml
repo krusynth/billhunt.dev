@@ -16,17 +16,15 @@ permalink: /jobs.xml
       {% assign post = post | setval: 'title', title %}
     {% endif %}
 
-    {% assign content = post.content %}
+    {% capture afterwards %}<p><a href="{{ post.link }}">Check it out!</a></p>{% endcapture %}
 
     {% if post.closes %}
-      {% assign post_closes = post.closes | date: site.date_format %}
-      {% assign content = content | append: ' <p>Closes ' | append: post_closes | append: </p>' %}
+      {% capture closes %}<p>Closes {{ post.closes | date: site.date_format }}</p>{% endcapture %}
+      {% assign afterwards = afterwards | prepend: closes %}
     {% endif %}
+    {% assign post = post | setval: 'afterwards', afterwards %}
 
-    {% capture afterwards %}<p><a href="{{ post.link }}">Check it out!</a></p>{% endcapture %}
-    {% assign content = content | append: afterwards %}
-
-    {% assign post = post | setval: 'content', content %}
+    {% assign post = post | setval: 'afterwards', afterwards %}
 
     {% assign items = items | push: post %}
   {% endif %}

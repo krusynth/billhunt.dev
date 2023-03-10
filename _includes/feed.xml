@@ -13,11 +13,11 @@
   {% for post in include.items limit:site.feed.posts_limit -%}
   {%- assign url = post.link | replace: '&', '&amp;'-%}
 
-  {%- assign content = post.content -%}
+  {%- assign content = post.content | markdownify -%}
   {%- if post.afterwards %}
     {% assign content = content | append: post.afterwards %}
   {% endif -%}
-  {%- assign content = content | markdownify | strip | xml_escape -%}
+  {%- assign content = content | strip | xml_escape -%}
 
   {%- if post.date -%}
     {%- assign postdate = post.date -%}
