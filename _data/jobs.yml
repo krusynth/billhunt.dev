@@ -1,17 +1,48 @@
+- title: Department of Labor - Director of Enterprise Data Services (GS 15 supervisory)
+  url: https://www.usajobs.gov/job/717728100
+  date: 2023-04-12
+  closes: 2023-04-19
+  content: Labor is hiring for their Director of Enterprise Data Services.
 
+- title: Library of Congress - UX/QA Division Chief (GS 15 supervisory)
+  url: https://www.usajobs.gov/job/718337700
+  date: 2023-04-12
+  closes: 2023-04-21
+  content: The LoC is hiring for an IT Division Chief over the User Experience Design and Quality Assurance and Testing areas.
+
+- title: Centers for Disease Control and Prevention - IT Project Manager (GS 14)
+  url: https://www.usajobs.gov/job/718531900
+  date: 2023-04-12
+  closes: 2023-04-19
+  remote: true
+  content: The CDC has two openings for IT Project Managers. These are remote positions!
+
+- title: Department of Agriculture - IT Project Manager (GS 14 supervisory)
+  url: https://www.usajobs.gov/job/718603100
+  date: 2023-04-12
+  closes: 2023-04-17
+  remote: true
+  content: USDA is hiring for an IT Project Manager. This is a remote position!
+
+- title: Department of Labor - Web Content Manager (GS 15 supervisory)
+  url: https://www.usajobs.gov/job/718628600
+  date: 2023-04-12
+  closes: 2023-04-17
+  remote: true
+  content: Labor is hiring for a Web Content Manager. This is a supervisory GS 15 position and is fully remote!
+
+- title: Federal Deposit Insurance Corporation - Data Management Specialist (GS 13 equivalent)
+  url: https://www.usajobs.gov/job/718679700
+  date: 2023-04-12
+  closes: 2023-04-17
+  remote: true
+  content: FDIC is hiring for an IT Specialist with a focus on data management. FDIC has special pay and incentives, and this role caps at $226K and is fully remote!
 
 - title: Department of the Treasury - Data and Product Operations Supervisor (GS 14 equivalent)
   url: https://www.usajobs.gov/job/717306500
   date: 2023-04-05
   closes: 2023-04-19
   content: Treasury is hiring for their Data and Product Operations Supervisor in the Office of the Chief Technology Officer. This is a GS 14 equivalent position but caps at $270K!
-
-- title: Centers for Disease Control and Prevention - Systems Analysis Specialist (GS 14)
-  url: https://www.usajobs.gov/job/717473900
-  date: 2023-04-05
-  closes: 2023-04-10
-  remote: true
-  content: The CDC is hiring for multiple Systems Analysis Specialists. These are remote positions.
 
 - title: Social Security Administration - Deputy Associate Commissioner for Benefit Information Systems (SES)
   url: https://www.usajobs.gov/job/716487600
@@ -26,60 +57,12 @@
   remote: true
   content: Login.gov is hiring a Deputy Director to serve as the primary advisor to the Login.gov Director on all matters pertaining to delivery, strategy and program direction. This is a remote position!
 
-- title: General Services Administration - Login.gov Security Specialist (GS 15)
-  url: https://www.usajobs.gov/job/716625800
-  date: 2023-04-04
-  closes: 2023-04-10
-  remote: true
-  content: The Login.gov team is hiring for their Principal Advisor and Senior Identity Fraud Specialist reporting to the Login.gov Security Branch Chief. This is one of the best projects in government and an amazing team to join! This is a non-supervisory GS 15 position and is fully remote!
-
-- title: General Services Administration - IT Security Specialist (GS 15)
-  url: https://www.usajobs.gov/job/716626000
-  date: 2023-04-04
-  closes: 2023-04-10
-  remote: true
-  content: The Technology Transformation Service within GSA is hiring for multiple cybersecurity specialists. These are all non-supervisory GS 15 positions that are fully remote!
-
-- title: Department of Veterans Affairs - IT Policy and Planning Specialist (GS 15)
-  url: https://www.usajobs.gov/job/716705400
-  date: 2023-04-04
-  closes: 2023-04-07
-  remote: true
-  content: The VA is hiring for an IT Specialist to act as the Senior Technical Advisor to the Deputy Chief Information Security Officer for Information Security Programs and Logistics. This is a non-supervisory GS 15 and a remote position!
-
 - title: Consumer Financial Protection Bureau - Technical Product Manager (GS 13 equivalent)
   url: https://www.usajobs.gov/job/716874200
   date: 2023-04-04
   closes: 2023-04-12
   remote: true
   content: CFPB is hiring a Technical Product Manager. CFPB has special pay, this role caps at $197K and is fully remote!
-
-- title: Department of Labor - IT Program Manager (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/716040500
-  date: 2023-03-31
-  closes: 2023-04-04
-  remote: true
-  content: Labor is hiring several IT Program Managers.  These are fully remote positions!
-
-- title: Department of Labor - IT Program Manager (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/716082700
-  date: 2023-03-31
-  closes: 2023-04-04
-  remote: true
-  content: Labor is hiring several IT Program Managers.  These are fully remote positions!
-
-- title: Commodity Futures Trading Commission - Cybersecurity Specialist (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/716201900
-  date: 2023-03-31
-  closes: 2023-04-05
-  content: The CFTC is hiring for a Data Leak Prevention specialist in their Cyber and Physical Security Branch. This position caps at $234K!
-
-- title: Consumer Financial Protection Bureau - Cloud DevOps Engineer (GS 13 equivalent)
-  url: https://www.usajobs.gov/job/716327400
-  date: 2023-03-31
-  closes: 2023-04-07
-  remote: true
-  content: CFPB is hiring a Cloud DevOps Engineer. This is a GS 13 equivalent but the role caps at $197K and is a fully remote position!
 
 - title: Federal Emergency Management Agency - Cloud Program Manager (GS 15 supervisory)
   url: https://www.usajobs.gov/job/716606800
@@ -93,106 +76,11 @@
   closes: 2023-04-12
   content: FDIC is hiring an IT specialist with expertise in privacy policy. FDIC has special pay and benefits, and this role caps at $250K!
 
-- title: General Services Administration - Senior Design Strategist (GS 14)
-  url: https://www.usajobs.gov/job/715193400
-  date: 2023-03-24
-  closes: 2023-04-07
-  remote: true
-  content: GSA's Office of Customer Experience is hiring a Senior Design Strategist. This is a fantastic team with a government-wide impact, and it's a fully-remote position!
-
-- title: General Services Administration - Login.gov Deputy Director (GS 15)
-  url: https://join.tts.gsa.gov/join/logindeputydirect/
-  date: 2023-03-24
-  closes:
-  remote: true
-  content: GSA will be hiring for their Deputy Director of the Login.gov program in the near future. They are having an informational session about the role on Tuesday, March 28th 1-2PM ET. Follow the link for more details!
-
-- title: Federal Housing Finance Agency - Chief Information Officer (SES)
-  url: https://www.usajobs.gov/job/714564600
-  date: 2023-03-24
-  closes: 2023-04-03
-  content: FHFA is hiring for their Chief Information Officer! You'll need an SES-formatted resume with ECQs to apply. The pay cap on this position is $303K!
-
-- title: Federal Deposit Insurance Corporation - MS Power Platform Developer/Architect (GS 13 equivalent)
-  url: https://www.usajobs.gov/job/714555400
-  date: 2023-03-24
-  closes: 2023-04-05
-  content: FDIC is hiring for an IT specialist with expertise with the Microsoft Power Platform. FDIC has special pay and benefits, and this role caps at $198K!
-
-- title: Office of the Director of National Intelligence - Chief of IT Solutions Delivery (GS 15)
-  url: https://www.usajobs.gov/job/714409100
-  date: 2023-03-24
-  closes: 2023-04-05
-  content: ODNI is hiring for their Chief of IT Solutions Delivery.
-
 - title: Federal Communications Commission - Associate CIO for Infrastructure (GS 15)
   url: https://www.usajobs.gov/job/714403300
   date: 2023-03-24
   closes: 2023-04-18
   content: FCC is hiring for their Associate CIO for IT Infrastructure.
-
-- title: U.S. Agency for International Development - Lead Enterprise Architect (GS 15)
-  url: https://www.usajobs.gov/job/713965000
-  date: 2023-03-21
-  closes: 2023-03-30
-  remote: true
-  content: USAID is hiring for their Lead Enterprise Architect to oversee their enterprise architecture efforts and design their target state roadmap. This is a non-supervisory GS 15 position, and it's remote!
-
-- title: U.S. Courts - Cloud Security Specialist (GS 13-15 equivalent)
-  url: https://www.usajobs.gov/job/713336400
-  date: 2023-03-17
-  closes: 2023-03-31
-  remote: true
-  content: U.S. Courts is hiring for a security operations team lead, in the Hosting Services Division (HSD) to secure and support the Cloud Hosting and Networks Office (CHNO). This is a non-supervisory role, and is a remote job!
-
-- title: National Gallery of Art - Oracle Specialist (GS 14-15)
-  url: https://www.usajobs.gov/job/713404800
-  date: 2023-03-17
-  closes: 2023-03-31
-  content: The National Gallery of Art is hiring for an IT Specialist to work on their Oracle-based financial management system.
-
-- title: Library of Congress - IT Division Chiefs (GS 15, supervisory)
-  url: https://www.usajobs.gov/job/713004400
-  date: 2023-03-15
-  closes: 2023-03-29
-  content: LoC has two open positions for IT Division Chiefs.
-
-- title: Department of the Treasury - Cybersecurity Specialist (GS 14-15 equivalent)
-  url: https://www.usajobs.gov/job/711757100
-  date: 2023-03-10
-  closes: 2023-03-31
-  remote: true
-  content: The Treasury is hiring for a Cybersecurity Specialist to support their Security Assessment and Authorization (SA&A) program. This is a remote position!
-
-- title: Department of the Treasury - Chief Resource Manager (SL)
-  url: https://www.usajobs.gov/job/711980700
-  date: 2023-03-10
-  closes: 2023-04-10
-  content: Treasury is hiring for their Chief Resource Manager in the Office of the Chief Information Officer. This is an unusual title, but the role involves advising the CIO on matters including policy, budget strategy, resource allocation, program initiatives, best practices, guidelines and processes and standards. This is a Senior Leadership position, so you'll need a Senior Executive Service-formatted resume to apply.
-
-- title: Department of the Treasury - Deputy Associate Chief Information Officer for Enterprise Applications (SES)
-  url: https://www.usajobs.gov/job/710699600
-  date: 2023-03-08
-  closes: 2023-04-06
-  content: The Treasury is hiring for one of their Deputy Associate Chief Information Officer slots, this one is in their Enterprise Applications division. This is a senior executive service position and you'll need an SES-formatted resume to apply.
-
-- title: Centers for Medicare & Medicaid Services - Data Scientist (GS 13, remote)
-  url: https://www.usajobs.gov/job/709580700
-  date: 2023-03-01
-  closes: 2023-03-29
-  content: CMS (part of the Department of Health & Human Services) is hiring for a Data Scientist. This is a remote position!
-
-- title: National Institute of Standards and Technology - Systems Administrator (GS 13 equivalent, remote)
-  url: https://www.usajobs.gov/job/709591200
-  date: 2023-03-01
-  closes: 2023-03-29
-  content: NIST is hiring for a sysadmin. Note that this is a 4-year term position, but it is a remote job!
-
-- title: Department of Veterans Affairs - Office of Inspector General - Chief Data Officer (SES, supervisory)
-  url: https://www.usajobs.gov/job/709213200
-  date: 2023-02-28
-  closes: 2023-03-29
-  content: The VA OIG is hiring for its Chief Data Officer.  This is a senior executive service position, so you will need an SES-formatted resume with ECQs to apply.
 
 - title: Department of Transportation - Deputy Chief Data Officer (GS 15, supervisory)
   url: https://www.usajobs.gov/job/706554300
