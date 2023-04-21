@@ -35,8 +35,12 @@
   tags: [art, puppetry]
 
 - name: Erin Kissane
-  url: https://incisive.nu/
+  url: https://erinkissane.com/
   tags: [writing, research]
+
+- name: Anne Petersen
+  url: https://annepetersen.is/
+  tags: [user experience, govtech]
 
 - name: Alex Howard
   url: https://digiphile.info/
