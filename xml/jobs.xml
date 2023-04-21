@@ -1,6 +1,7 @@
 ---
 title : Jobs
 permalink: /jobs.xml
+action: Apply
 ---
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
@@ -16,7 +17,7 @@ permalink: /jobs.xml
       {% assign post = post | setval: 'title', title %}
     {% endif %}
 
-    {% capture afterwards %}<p><a href="{{ post.link }}">Check it out!</a></p>{% endcapture %}
+    {% capture afterwards %}<p><a href="{{ post.link }}">{{ page.action }}</a></p>{% endcapture %}
 
     {% if post.closes %}
       {% capture closes %}<p>Closes {{ post.closes | date: site.date_format }}</p>{% endcapture %}
