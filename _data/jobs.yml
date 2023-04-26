@@ -1,22 +1,48 @@
+- title: Securities and Exchange Commission - Cybersecurity Assessment Specialist (GS 14 equivalent)
+  url: https://www.usajobs.gov/job/721814300
+  date: 2023-04-26
+  closes: 2023-05-09
+  content: The SEC is hiring three Cybersecurity experts to join their System Authorization and Assessment team. The SEC has special pay and benefits and these roles cap at $238K!
+
+- title: General Services Administration - 18F Product Director (GS 15 supervisory)
+  url: https://join.tts.gsa.gov/join/18fproductdirector23/
+  date: 2023-04-26
+  closes: 2023-05-02
+  remote: true
+  content: 18F is hiring for their Product Director! This is an amazing team building technical solutions across government. This a remote position!
+
+- title: General Services Administration - 18F Engineering Director (GS 15 supervisory)
+  url: https://join.tts.gsa.gov/join/18f-engineering-director-2023/
+  date: 2023-04-26
+  closes: 2023-05-02
+  remote: true
+  content: 18F is hiring for their Engineering Director! This is an amazing team building technical solutions across government. This a remote position!
+
+- title: Department of Veterans Affairs - OIT Chief of Staff (GS 15 supervisory)
+  url: https://www.usajobs.gov/job/721006800
+  date: 2023-04-26
+  closes: 2023-05-01
+  remote: true
+  content: The VA is hiring for their Chief of Staff in the OIT division, supporting the Deputy Chief Information Officer. This is a remote position!
+
+- title: Office of the Director of National Intelligence - Deputy Chief of Staff (GS 14 supervisory)
+  url: https://www.usajobs.gov/job/721255700
+  date: 2023-04-26
+  closes: 2023-05-08
+  content: ODNI is hiring for their Deputy Chief of Staff in the Chief Information Office.
+
+- title: Library of Congress - Application Developers (GS 14)
+  url: https://www.usajobs.gov/job/720849300
+  date: 2023-04-26
+  closes: 2023-05-04
+  remote: true
+  content: The LoC is hiring two application developers to support the FOLIO Library platform. These are remote positions!
+
 - title: Administrative Office of the U.S. Courts - Chief Information Security Officer (SES)
   url: https://www.usajobs.gov/job/720080900
   date: 2023-04-19
   closes: 2023-05-17
   content: U.S. Courts is hiring for their CISO. The pay cap for this role is just under $220K.
-
-- title: Department of Veterans Affairs - Architecture and Engineering Service Director (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/720210400
-  date: 2023-04-19
-  closes: 2023-04-25
-  remote: true
-  content: The VA is hiring for a director in one of their Architecture and Engineering Service divisions. This is a remote job!
-
-- title: Department of Veterans Affairs - Product Line Manager (GS 14 supervisory)
-  url: https://www.usajobs.gov/job/720368600
-  date: 2023-04-19
-  closes: 2023-04-25
-  remote: true
-  content: The VA is hiring for a Product Line Manager in their Software Product Management division. This is a remote position.
 
 - title: Patent and Trademark Office - Data Management Specialist (GS 14)
   url: https://www.usajobs.gov/job/720541400
@@ -44,12 +70,6 @@
   closes: 2023-05-02
   content: The LoC is hiring for their Cloud Program Office Chief!  This is an amazing job at a great agency.
 
-- title: Department of Veterans Affairs - Portfolio Lead (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/719149100
-  date: 2023-04-14
-  closes: 2023-04-21
-  content: The VA is hiring for their Portfolio Lead for the Office of the CTO. This is a remote position!
-
 - title: Securities and Exchange Commission - IT Security Specialist (GS 14 equivalent)
   url: https://www.usajobs.gov/job/719439300
   date: 2023-04-14
@@ -67,12 +87,6 @@
   date: 2023-04-14
   closes: 2023-04-27
   content: "The SEC is hiring for many roles right now! This posting is for two IT Specialists with expertise in the Microsoft cloud: M365, Azure, etc. The SEC has special pay and benefits and this role caps at $238K!"
-
-- title: Library of Congress - UX/QA Division Chief (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/718337700
-  date: 2023-04-12
-  closes: 2023-04-21
-  content: The LoC is hiring for an IT Division Chief over the User Experience Design and Quality Assurance and Testing areas.
 
 - title: Department of Transportation - Deputy Chief Data Officer (GS 15, supervisory)
   url: https://www.usajobs.gov/job/706554300
