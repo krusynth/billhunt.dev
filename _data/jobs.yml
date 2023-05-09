@@ -17,13 +17,13 @@
   content: The Congressional Budget Office is one of the key legislative branch offices, which helps to determine the financial impact of various policy decisions. This is an incredible role supporting the IT of that organization!
 
 - title: Federal Deposit Insurance Corporation - Senior Cybersecurity Specialist (GS 15 equivalent)
-  urL: https://www.usajobs.gov/job/724372200
+  url: https://www.usajobs.gov/job/724372200
   date: 2023-05-09
   closes: 2023-05-22
   content: FDIC is hiring for a Senior IT Specialist to help assist with security reviews & audits. This is a rare non-supervisory GS 15, and FDIC features special pay and benefits - this role caps at $250K!
 
 - title: Federal Deposit Insurance Corporation - Data Management Specialist (GS 13 equivalent)
-  urL: https://www.usajobs.gov/job/724372200
+  url: https://www.usajobs.gov/job/724372200
   date: 2023-05-09
   closes: 2023-05-22
   content: FDIC is hiring an IT Specialist to manage and support their databases. The FDIC features special pay and benefits - this role caps at just under $200k!
@@ -91,109 +91,17 @@
   closes: 2023-05-12
   content: FDIC is hiring for a MuleSoft Integration Architect on their Platform Services Section. FDIC has special pay and benefits, and the cap on this position is just under $200K!
 
-- title: Centers for Disease Control and Prevention - IT Specialist (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/722616500
-  date: 2023-04-28
-  closes: 2023-05-03
-  remote: true
-  content: The CDC is hiring a supervisory IT Specialist.  This is a remote position!
-
-- title: Centers for Disease Control and Prevention - Project Manager (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/722616500
-  date: 2023-04-28
-  closes: 2023-05-02
-  remote: true
-  content: The CDC is hiring a supervisory IT Specialist to serve as the Shared Analytics Zone (SAZ) Platform Owner, and oversee other project work.  This is a remote position!
-
 - title: Securities and Exchange Commission - Cybersecurity Assessment Specialist (GS 14 equivalent)
   url: https://www.usajobs.gov/job/721814300
   date: 2023-04-26
   closes: 2023-05-09
   content: The SEC is hiring three Cybersecurity experts to join their System Authorization and Assessment team. The SEC has special pay and benefits and these roles cap at $238K!
 
-- title: General Services Administration - 18F Product Director (GS 15 supervisory)
-  url: https://join.tts.gsa.gov/join/18fproductdirector23/
-  date: 2023-04-26
-  closes: 2023-05-02
-  remote: true
-  content: 18F is hiring for their Product Director! This is an amazing team building technical solutions across government. This a remote position!
-
-- title: General Services Administration - 18F Engineering Director (GS 15 supervisory)
-  url: https://join.tts.gsa.gov/join/18f-engineering-director-2023/
-  date: 2023-04-26
-  closes: 2023-05-02
-  remote: true
-  content: 18F is hiring for their Engineering Director! This is an amazing team building technical solutions across government. This a remote position!
-
-- title: Department of Veterans Affairs - OIT Chief of Staff (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/721006800
-  date: 2023-04-26
-  closes: 2023-05-01
-  remote: true
-  content: The VA is hiring for their Chief of Staff in the OIT division, supporting the Deputy Chief Information Officer. This is a remote position!
-
-- title: Office of the Director of National Intelligence - Deputy Chief of Staff (GS 14 supervisory)
-  url: https://www.usajobs.gov/job/721255700
-  date: 2023-04-26
-  closes: 2023-05-08
-  content: ODNI is hiring for their Deputy Chief of Staff in the Chief Information Office.
-
-- title: Library of Congress - Application Developers (GS 14)
-  url: https://www.usajobs.gov/job/720849300
-  date: 2023-04-26
-  closes: 2023-05-04
-  remote: true
-  content: The LoC is hiring two application developers to support the FOLIO Library platform. These are remote positions!
-
 - title: Administrative Office of the U.S. Courts - Chief Information Security Officer (SES)
   url: https://www.usajobs.gov/job/720080900
   date: 2023-04-19
   closes: 2023-05-17
   content: U.S. Courts is hiring for their CISO. The pay cap for this role is just under $220K.
-
-- title: Patent and Trademark Office - Data Management Specialist (GS 14)
-  url: https://www.usajobs.gov/job/720541400
-  date: 2023-04-19
-  closes: 2023-05-03
-  remote: true
-  content: PTO is hiring a Data Management Specialist. This is a remote position.
-
-- title: Supreme Court of the United States - Cyber Incident Response Analysts (GS 13 equivalent)
-  url: https://www.usajobs.gov/job/719699200
-  date: 2023-04-18
-  closes: 2023-04-28
-  content: SCOTUS is hiring three Cyber Incident Response Analysts.
-
-- title: Americorps - IT Project Manager (GS 13 equivalent)
-  url: https://www.usajobs.gov/job/719846100
-  date: 2023-04-18
-  closes: 2023-05-01
-  remote: true
-  content: Americorps is a fantastic volunteer program that helps localities across the country. They're currently hiring a IT Project Manager, and this is a remote role!
-
-- title: Library of Congress - Chief, Cloud Program Office (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/719981200
-  date: 2023-04-18
-  closes: 2023-05-02
-  content: The LoC is hiring for their Cloud Program Office Chief!  This is an amazing job at a great agency.
-
-- title: Securities and Exchange Commission - IT Security Specialist (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/719439300
-  date: 2023-04-14
-  closes: 2023-05-03
-  content: The SEC is hiring for many roles right now! This posting is for an IT Security Specialist with expertise in Continuous Authorization & Monitoring practices. The SEC has special pay and benefits and this role caps at $238K!
-
-- title: Securities and Exchange Commission - Microsoft Cloud Security Specialist (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/719432700
-  date: 2023-04-14
-  closes: 2023-04-27
-  content: "The SEC is hiring for many roles right now! This posting is for an IT Specialists with expertise in Security in the Microsoft cloud: M365, Azure, etc. The SEC has special pay and benefits and this role caps at $238K!"
-
-- title: Securities and Exchange Commission - Microsoft Cloud Specialists (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/719425100
-  date: 2023-04-14
-  closes: 2023-04-27
-  content: "The SEC is hiring for many roles right now! This posting is for two IT Specialists with expertise in the Microsoft cloud: M365, Azure, etc. The SEC has special pay and benefits and this role caps at $238K!"
 
 - title: Department of Transportation - Deputy Chief Data Officer (GS 15, supervisory)
   url: https://www.usajobs.gov/job/706554300
