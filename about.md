@@ -11,8 +11,16 @@ experience:
     start: May 2021
     end: Present
     description: |+
-      Currently, I lead the Cloud Center of Excellence at the SEC, overseeing modernization efforts of our many applications and tools for regulatory oversight.
+      Currently, I lead the Cloud Center of Excellence at the SEC, overseeing modernization efforts of our many applications and tools for regulatory oversight. This is a brand-new team at the SEC, responsible for driving cloud adoption and managing our Amazon Web Services environment. We also provide training and resources to the rest of the Commission. In this role, I've been able to speed the adoption of modern practices in agile software development, budgeting, and cloud security.
+
+      In May 2023, I was [appointed to the Federal Secure Cloud Advisory Committee (FSCAC)](https://www.gsa.gov/about-us/newsroom/news-releases/-gsa-administrator-appoints-inaugural-members-to-the-federal-secure-cloud-advisory-committee-05122023), better known as the FedRAMP oversight board, by GSA Administrator Robin Carnahan. That same month, [GSA accepted my proposal for a 10X accelerator project](https://10x.gsa.gov/posts/2023-selected-projects/) on digital identity and mastodon for government.
     highlights:
+      - name: Federal Secure Cloud Advisory Committee
+        type: group
+        link: https://www.gsa.gov/about-us/newsroom/news-releases/-gsa-administrator-appoints-inaugural-members-to-the-federal-secure-cloud-advisory-committee-05122023
+      - name: 10X Digital Identity Project
+        type: document
+        link: https://10x.gsa.gov/posts/2023-selected-projects/
       - name: FedTech Magazine – 2021 Top 30 Federal IT Influencers
         type: award
         link: https://fedtechmagazine.com/article/2021/07/30-federal-it-influencers-worth-follow-2021
@@ -181,6 +189,7 @@ volunteer:
   <h3 class="subsubsection-title">Work</h3>
   <ul class="about-highlights">
     <li>{% far fa-user-tie %} U.S. Securities and Exchange Commission – Assistant Director, Cloud Center of Excellence</li>
+    <li>{% fas fa-users %} Federal Secure Cloud Advisory Committee - Appointee</li>
     <li>{% far fa-university %} US Federal CIO Council – <a href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/executive-committee/">Cloud & Infrastructure Community of Practice</a> Executive Committee Member</li>
     <li>{% far fa-book-open %} <a href="https://atarc.org/atarc-board/">ATARC</a> Board Member and <a href="https://atarc.org/working-groups/cloud-working-group/">Cloud & Infrastructure Working Group</a> Government Chair</li>
   </ul>
@@ -230,7 +239,7 @@ volunteer:
 
 " %}
         {% for p in desc %}<p>
-          {{ p }}
+          {{ p | markdownify }}
         </p>{% endfor %}
       </div>
       {% if job.highlights %}
