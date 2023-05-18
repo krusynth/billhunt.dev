@@ -2,7 +2,7 @@
 {%- if post.afterwards %}
   {% assign content = content | append: post.afterwards %}
 {% endif -%}
-<article class="post-multiple">
+<article class="post-multiple {{ post.classes }}">
   <header class="post-header hoverable">
     <h3 class="post-title"><a href="{{ post.url }}" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>
       {{ post.title }}

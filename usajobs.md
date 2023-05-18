@@ -3,7 +3,7 @@ layout: default
 title: USAJobs Listings
 permalink: /jobs/usajobs/
 datum: usajobs
-layout: list
+layout: jobs
 action: 'Apply'
 feed:
   title: RSS feed of these USAJobs listings
@@ -26,9 +26,23 @@ For an explanation of pay grades, term positions, the senior executive service, 
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
+{% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau' | split:',' %}
+
 {%- for post in site.data.usajobs  %}
   {% assign title = post.agency | append: ' - ' | append: post.title %}
   {% assign post = post | setval: 'title', title %}
+
+  {% assign classes = 'job-post' %}
+  {% if specialpay contains post.agency %}
+    {% assign classes = classes | append: ' special-pay' %}
+  {% endif %}
+  {% if post.title contains 'INFOSEC' or post.title contains 'Security' %}
+    {% assign classes = classes | append: ' security' %}
+  {% endif %}
+  {% if post.remote %}
+    {% assign classes = classes | append: ' remote' %}
+  {% endif %}
+  {% assign post = post | setval: 'classes', classes %}
 
   {% for job in site.data.jobs %}
     {% if job.url contains post.id %}

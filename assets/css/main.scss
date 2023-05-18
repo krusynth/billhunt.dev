@@ -131,7 +131,11 @@ a:not([href]):not([class]) {
       color: inherit;
       background-color: inherit;
     }
+  }
 
+  &.inactive {
+    color: lighten($dark, 20%);
+    background-color: #aaa;
 
   }
 }
@@ -168,7 +172,7 @@ blockquote {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .nowrap {
@@ -407,6 +411,19 @@ blockquote {
     border-top: none;
   }
 }
+
+.filters {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 0.25rem 1rem;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+  }
+}
+
 
 /**
  * Pagination
