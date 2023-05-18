@@ -1,5 +1,4 @@
 ---
-layout: default
 title: USAJobs Listings
 permalink: /jobs/usajobs/
 datum: usajobs

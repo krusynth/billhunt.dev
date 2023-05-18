@@ -1,9 +1,8 @@
 ---
-layout: default
 title: Cool Govtech Jobs
 permalink: /jobs/
 datum: jobs
-layout: list
+layout: jobs
 action: 'Apply'
 feed:
   title: Follow jobs list only, with RSS
@@ -50,7 +49,24 @@ Not finding what you're looking for? Here are some other great jobs boards:
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
+{% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau' | split:',' %}
+
 {%- for post in site.data.jobs  %}
+  {% assign classes = 'job-post' %}
+  {% for agency in specialpay %}
+    {% if post.title contains agency %}
+      {% assign classes = classes | append: ' special-pay' %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if post.title contains 'INFOSEC' or post.title contains 'Security' %}
+    {% assign classes = classes | append: ' security' %}
+  {% endif %}
+  {% if post.remote %}
+    {% assign classes = classes | append: ' remote' %}
+  {% endif %}
+  {% assign post = post | setval: 'classes', classes %}
+
   {% if post.closes %}
     {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
     {% assign post = post | setval: 'afterwards', afterwards %}
