@@ -42,10 +42,13 @@ function init_web_music_player() {
       dataArray,
       animationLoop;
 
+  const refreshRate = 50;
+
   let tagline = document.getElementById('tagline');
   const taglineDefault = tagline.innerHTML;
 
   const player = document.createElement('audio');
+  player.setAttribute('crossorigin', 'anonymous');
 
   const bars = [...(document.getElementsByClassName('nav-pages')[0].getElementsByTagName('li'))].reverse();
   const colors = ['vis-green', 'vis-green', 'vis-green', 'vis-yellow', 'vis-yellow', 'vis-yellow', 'vis-red', 'vis-red'];
@@ -58,7 +61,7 @@ function init_web_music_player() {
 
     document.getElementsByClassName('navbar-nav')[0].classList.add('vis');
 
-    animationLoop = setInterval(draw, 75);
+    animationLoop = setInterval(draw, refreshRate);
   }
 
   function pauseHandler() {
@@ -108,7 +111,7 @@ function init_web_music_player() {
     const track = audioContext.createMediaElementSource(player);
     track.connect(audioContext.destination);
 
-    console.log('dest', audioContext.destination, track);
+    // console.log('dest', audioContext.destination, track);
 
     // Attach an analyser.
     analyser = audioContext.createAnalyser();
