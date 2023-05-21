@@ -75,8 +75,8 @@ function init_web_music_player() {
   player.addEventListener('pause', pauseHandler);
   player.addEventListener('ended', pauseHandler);
 
-  // const path = 'https://static.billhunt.dev/assets/audio/mp3/';
-  const path = 'http://localhost:8000/assets/mp3/';
+  const path = 'https://static.billhunt.dev/assets/audio/mp3/';
+  // const path = 'http://localhost:8000/assets/mp3/';
 
   const selectlist = document.getElementById('audiofile');
 
