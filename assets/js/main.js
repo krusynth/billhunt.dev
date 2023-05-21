@@ -21,8 +21,8 @@ function init_tabs(tabgroup) {
       const link = tab.getElementsByTagName('a')[0];
       link.addEventListener('click', function(e) {
         e.preventDefault();
-        for(const elm of tabs) {
-          elm.classList.remove('active');
+        for(const tab of tabs) {
+          tab.classList.remove('active');
         }
         this.parentElement.classList.add('active');
 
@@ -36,14 +36,47 @@ function init_tabs(tabgroup) {
 }
 
 function init_web_music_player() {
+  let audioContext,
+      analyser,
+      processor,
+      dataArray,
+      animationLoop;
+
   let tagline = document.getElementById('tagline');
-  const tagline0 = tagline.innerHTML;
-  const tagline1 = 'Take me to the Pizza Hut';
-  const tagline2 = 'learn to swim';
+  const taglineDefault = tagline.innerHTML;
 
   const player = document.createElement('audio');
 
-  const path = 'https://static.billhunt.dev/assets/audio/mp3/';
+  const bars = [...(document.getElementsByClassName('nav-pages')[0].getElementsByTagName('li'))].reverse();
+  const colors = ['vis-green', 'vis-green', 'vis-green', 'vis-yellow', 'vis-yellow', 'vis-yellow', 'vis-red', 'vis-red'];
+
+
+  function playHandler() {
+    console.log('playing');
+    document.getElementById('playbutton').classList.add('hide');
+    document.getElementById('pausebutton').classList.remove('hide');
+
+    document.getElementsByClassName('navbar-nav')[0].classList.add('vis');
+
+    animationLoop = setInterval(draw, 75);
+  }
+
+  function pauseHandler() {
+    console.log('paused');
+    document.getElementById('playbutton').classList.remove('hide');
+    document.getElementById('pausebutton').classList.add('hide');
+
+    document.getElementsByClassName('navbar-nav')[0].classList.remove('vis');
+
+    clearInterval(animationLoop);
+  }
+
+  player.addEventListener('playing', playHandler);
+  player.addEventListener('pause', pauseHandler);
+  player.addEventListener('ended', pauseHandler);
+
+  // const path = 'https://static.billhunt.dev/assets/audio/mp3/';
+  const path = 'http://localhost:8000/assets/mp3/';
 
   const selectlist = document.getElementById('audiofile');
 
@@ -52,7 +85,6 @@ function init_web_music_player() {
     document.getElementById('playbutton').classList.remove('hide');
     document.getElementById('pausebutton').classList.add('hide');
   });
-
 
   function isPlaying() {
     return !player.paused;
@@ -68,42 +100,115 @@ function init_web_music_player() {
     playPause();
   }
 
+  function initAnalyser() {
+    console.log('initAnalyser');
+    // Create an AudioContext and attach it.
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    audioContext = new AudioContext();
+    const track = audioContext.createMediaElementSource(player);
+    track.connect(audioContext.destination);
+
+    console.log('dest', audioContext.destination, track);
+
+    // Attach an analyser.
+    analyser = audioContext.createAnalyser();
+    analyser.smoothingTimeConstant = 0.3;
+    analyser.fftSize = 32;
+    track.connect(analyser);
+
+    const bufferLength = analyser.frequencyBinCount;
+    dataArray = new Uint8Array(bufferLength);
+
+    // Check if context is in suspended state (autoplay policy)
+    if (audioContext.state === "suspended") {
+      audioContext.resume();
+    }
+  }
+
+  function visualize(val) {
+    let fixed = val;
+    if(val > 1) { fixed = 1; }
+    if(val < 0) { fixed = 0; }
+
+    if(val !== false) {
+      bars.forEach((bar, i) => {
+        // console.log( (i/bars.length), fixed );
+        if(fixed >= (i / bars.length)) {
+          bar.classList.add(colors[i]);
+          bar.classList.remove('vis-black');
+        }
+        else {
+          bar.classList.remove(colors[i]);
+          bar.classList.add('vis-black');
+        }
+      });
+    }
+    else {
+      bars.forEach((bar, i) => {
+        bar.classList.remove(colors[i]);
+        bar.classList.remove('vis-black');
+      });
+    }
+  }
+
+  function draw() {
+    // const drawVisual = requestAnimationFrame(draw);
+
+    analyser.getByteTimeDomainData(dataArray);
+    // const avg = dataArray.reduce((acc, el) => acc + el, 0) / dataArray.length / 128- .53125 - .125; // Magic numbers.
+    let avg = Math.max(...dataArray) /128;
+    // Fix with magic numbers
+    avg = (avg - 1) * 2 ;
+
+    visualize(avg);
+  }
+
   function playPause() {
-    // Start a new track
+    // We can't load the analyser until the user interacts with the page.
+    if(!audioContext) {
+      initAnalyser();
+    }
+
     let value = selectlist.options[selectlist.selectedIndex].value;
     let file = path + value;
+
+    // Start a new track
     if(player.src != file) {
       player.pause();
       player.src = file;
       player.load();
-    }
 
-    if(value === 'Offspring-All_I_Want.midi.mp3') {
-      document.body.classList.add('taxi');
-      tagline.innerHTML = tagline1;
-    }
-    else if(value === 'Tool-Aenima.midi.mp3') {
-      document.body.classList.remove('taxi');
-      tagline.innerHTML = tagline2;
-    }
-    else {
-      document.body.classList.remove('taxi');
-      tagline.innerHTML = tagline0;
+      for(const cls of document.body.classList) {
+        if(cls.match(/^music-/)) {
+          document.body.classList.remove(cls);
+        }
+      }
+
+      switch(value) {
+        case 'KMFDM-Megalomaniac.midi.mp3':
+          document.body.classList.add('music-kmfdm');
+          tagline.innerHTML = 'Better Than The Best';
+          break;
+
+        case 'Offspring-All_I_Want.midi.mp3':
+          document.body.classList.add('music-taxi');
+          tagline.innerHTML = 'Take me to the Pizza Hut';
+          break;
+
+        case 'Tool-Aenima.midi.mp3':
+          tagline.innerHTML = 'learn to swim';
+          break;
+
+        default:
+          tagline.innerHTML = taglineDefault;
+      }
     }
 
     if(isPlaying()) {
-      console.log('playing');
       player.pause();
-
-      document.getElementById('playbutton').classList.remove('hide');
-      document.getElementById('pausebutton').classList.add('hide');
     }
     else {
-      console.log('stopped');
       player.play();
-
-      document.getElementById('playbutton').classList.add('hide');
-      document.getElementById('pausebutton').classList.remove('hide');
     }
   }
 

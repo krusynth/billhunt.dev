@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const jobs = document.getElementsByClassName('job-post');
+  const filters = document.getElementsByClassName('filter-button');
+
+  [...filters].forEach(elm => {
+    elm.addEventListener('click', (e) => {
+      console.log(e.target.classList);
+      if(e.target.classList.contains('inactive')) {
+        e.target.classList.remove('inactive');
+      }
+      else {
+        e.target.classList.add('inactive');
+      }
+
+      doFilter();
+    })
+  });
+
+  function doFilter() {
+    let filtered = [...filters].reduce((acc, elm) => {
+      if(!elm.classList.contains('inactive')) {
+        acc.push(elm.dataset.filter);
+      }
+      return acc;
+    }, []);
+
+    [...jobs].forEach(elm => {
+      elm.classList.remove('hide');
+      filtered.forEach(filter => {
+        if(!elm.classList.contains(filter)) {
+          elm.classList.add('hide');
+        }
+      });
+    });
+
+    console.log('filtered', filtered);
+  }
+});
+</script>
+
+<article class="page-{{page.title | slugify }}">
+  {% if page.banner %}
+    <section class="banner stickers">
+      {{ page.banner | markdownify }}
+    </section>
+  {% endif %}
+  <section class="{{page.datum}} content-container">
+    <h2 class="section-title">
+      {{ page.title }}
+      {% if page.feed %}
+        <a href="{{ page.feed.link }}" class="rss-link" title="{{ page.feed.title }}"><span class="icon fas fa-rss"></span></a>
+      {% endif %}
+    </h2>
+    {% if page.content.size > 0 %}
+      <div class="post-content">
+        {{ content }}
+      </div>
+    {% endif %}
+    <div class="post-content">
+      <strong>Filters</strong>
+      <ul class="filters">
+        <li><button class="filter-button btn inactive" data-filter="special-pay">Special Pay Agencies</button></li>
+        <li><button class="filter-button btn inactive" data-filter="security">Security Jobs</button></li>
+        <li><button class="filter-button btn inactive" data-filter="remote">Remote Jobs</button></li>
+    </div>
+    <div class="posts-container">
+      {% for post in page.items %}
+        {% include card.html %}
+      {% endfor %}
+    </div>
+  </section>
+</article>

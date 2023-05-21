@@ -1,0 +1,25 @@
+.navbar-nav.vis {
+  background-color: $dark;
+
+  .nav-item {
+    transition: all 0.2s;
+
+    background-color: rgba($dark, 1);
+
+    &.vis-green {
+      transition: all 0s;
+      background-color: rgba($green, 1);
+    }
+
+    &.vis-red {
+      transition: all 0s;
+      background-color: rgba($red, 1);
+    }
+
+    &.vis-yellow {
+      transition: all 0s;
+      background-color: rgba($lemon, 1);
+    }
+  }
+}
+

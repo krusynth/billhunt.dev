@@ -49,9 +49,8 @@ $special-font-stack: 'Silkscreen', monospace;
 
 @include web-fonts(
   ("Montserrat", "montserrat", (500, 700)),
-  // ("Raleway", "raleway-v22-latin", (400, (400, italic), 600)),
-  // ("Sacramento", "sacramento-v8-latin", (400))
-  ("Silkscreen", "silkscreen", (400, 800))
+  ("Silkscreen", "silkscreen", (400, 800)),
+  ("HelveticaCompressed", "helvetica-compressed", (700))
 );
 
 // $font-weight-normal: normal !default;

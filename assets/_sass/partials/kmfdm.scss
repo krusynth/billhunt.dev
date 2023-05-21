@@ -1,0 +1,131 @@
+.music-kmfdm {
+  $kmfdm-red: #dd0000;
+  $kmfdm-black: #000000;
+
+  color: $kmfdm-red;
+  background: $kmfdm-black;
+  font-family: Helvetica, Arial, sans-serif;
+
+  %kmfdm-title {
+    font-family: HelveticaCompressed, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    // letter-spacing: -0.05em;
+  }
+
+  a {
+    color: $kmfdm-red;
+  }
+
+  .navbar-brand {
+    @extend %kmfdm-title;
+    color: $red;
+    background: none;
+    -webkit-text-fill-color: $kmfdm-red;
+    -webkit-text-stroke: 1px  $kmfdm-red;
+  }
+
+  .navbar-tagline {
+    font-family: HelveticaCompressed, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 2.5rem;
+  }
+
+  .about-header,
+  .audioplayer-block,
+  .navbar-nav,
+  .branding,
+  .navbar {
+    background: transparent;
+    border: none;
+    // color: $kmfdm-red;
+    background: $kmfdm-black;
+  }
+
+  .navbar-tagline,
+  .about-description,
+  .nav-link {
+    color: $kmfdm-red;
+    // background: $kmfdm-black;
+  }
+
+  .nav-link {
+    // border: 2px solid $kmfdm-black;
+  }
+
+  .nav-link:hover,
+  .nav-link:active {
+    border-color: $kmfdm-red;
+    // color: $kmfdm-black;
+  }
+
+  .featured-image {
+    -webkit-filter: grayscale(100%) brightness(50%) contrast(500%) sepia(100%) hue-rotate(-35deg) saturate(1500%) brightness(90%);
+    filter: grayscale(100%) brightness(50%) contrast(500%) sepia(100%) hue-rotate(-35deg) saturate(1500%) brightness(90%);
+    opacity: 1;
+  }
+
+  .player-button {
+    background-color: $kmfdm-red;
+  }
+
+  .project-tabs .tab.active {
+    border-bottom-color: $kmfdm-red;
+    background-color: $kmfdm-red;
+  }
+
+  .content, .post-single {
+    background: $kmfdm-black;
+    color: $kmfdm-black;
+  }
+
+  .banner {
+    background-color: $kmfdm-red;
+    color: $kmfdm-black;
+    border:none;
+  }
+
+  .post-single .post-header {
+    background-color: $kmfdm-red;
+    color: $kmfdm-black;
+    border:none;
+
+    .post-title {
+      @extend %kmfdm-title;
+    }
+  }
+
+  .featured, .shop, .posts, .recommended, .jobs {
+    background: $kmfdm-black;
+    border: 10px $kmfdm-red solid;
+  }
+
+  .section-title {
+    text-shadow: none;
+  }
+
+  .btn {
+    background-color: $kmfdm-red;
+    &:hover {
+      background-color: lighten($kmfdm-red, 10%);
+    }
+  }
+
+  .post-multiple {
+    .post-header {
+      background-color: $kmfdm-red;
+    }
+    .btn {
+      background-color: $kmfdm-red;
+      &:hover {
+        background-color: lighten($kmfdm-red, 10%);
+      }
+    }
+  }
+
+  .page-footer {
+    background-color: $kmfdm-red;
+  }
+}
