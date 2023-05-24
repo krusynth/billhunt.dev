@@ -1,3 +1,31 @@
+
+
+- title: General Services Administration - IT Program Manager (GS 15)
+  url: https://www.usajobs.gov/job/727385100
+  date: 2023-05-24
+  closes: 2023-06-07
+  remote: true
+  content: GSA is hiring for IT Program Managers in the Federal Acquisition Service. These are non-supervisory GS 15 roles, and fully remote!
+
+- title: Federal Deposit Insurance Corporation - Senior Cybersecurity Specialist (GS 14 equivalent)
+  url: https://www.usajobs.gov/job/727455700
+  date: 2023-05-24
+  closes: 2023-06-06
+  content: FDIC is hiring for a Senior Cybersecurity Specialist in its Cyber Risk Management Section. The FDIC features special pay and benefits, this role caps at $235K!
+
+- title: Department of the Treasury - Application Architect (GS 15)
+  url: https://www.usajobs.gov/job/727545100
+  date: 2023-05-24
+  closes: 2023-06-06
+  remote: true
+  content: Treasury is hiring two Application Architects for the MuleSoft Anypoint platform. These are non-supervisory GS 15s and fully remote!
+
+- title: Commodity Futures Trading Commission - Chief Data Scientist (GS 15 equivalent)
+  url: https://www.usajobs.gov/job/727677600
+  date: 2023-05-24
+  closes: 2023-06-08
+  content: CFTC is hiring for their Chief Data Scientist. This is a non-supervisory GS 15 equivalent role, but the pay caps at $272K!
+
 - title: Securities and Exchange Commission - Cybersecurity Analyst (GS 14 equivalent)
   url: https://www.usajobs.gov/job/726125400
   date: 2023-05-17
@@ -9,12 +37,6 @@
   date: 2023-05-17
   closes: 2023-06-23
   content: GSA is accepting application for the next class of PIFs!  This is an exciting fellowship program for mid-to-senior-level entrepreneurs, executives, and technologists of all kinds! Don't miss out on this!
-
-- title: National Technical Information Service - Associate Deputy Chief Information Officer (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/725722000
-  date: 2023-05-17
-  closes: 2023-05-22
-  content: NTIS (not to be confused with NIST!) is hiring for an Associate Deputy Chief Information Officer. This is a rare executive role at a GS 15 level!
 
 - title: Federal Deposit Insurance Corporation - Cloud Automation Specialist (GS 13 equivalent)
   url: https://www.usajobs.gov/job/726103500
@@ -28,35 +50,11 @@
   closes: 2023-06-13
   content: HUD is hiring for their Assistant Chief Information Officer for Customer Relationship and Performance Management. This is a senior executive service role and you'll need an SES-formatted resume with ECQs to apply.
 
-- title: Federal Communications Commission - Deputy Chief Information Officer (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/725197400
-  date: 2023-05-11
-  closes: 2023-05-23
-  content: The FCC is hiring for their Deputy Chief Information Officer for Technology Engagement & Strategy. This is an extremely rare non-SES DCIO role!
-
-- title: Securities and Exchange Commission - Network Operations (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/723878100
-  date: 2023-05-09
-  closes: 2023-05-18
-  content: The SEC is hiring for an IT Specialist in their Network Operations Branch. The SEC features special pay and benefits - this role caps at $238K!
-
 - title: Congressional Budget Office - Deputy Chief Information Officer (GS 14-15 equivalent, supervisory)
   url: https://www.usajobs.gov/job/724720700
   date: 2023-05-09
   closes: 2023-05-30
   content: The Congressional Budget Office is one of the key legislative branch offices, which helps to determine the financial impact of various policy decisions. This is an incredible role supporting the IT of that organization!
-
-- title: Federal Deposit Insurance Corporation - Senior Cybersecurity Specialist (GS 15 equivalent)
-  url: https://www.usajobs.gov/job/724372200
-  date: 2023-05-09
-  closes: 2023-05-22
-  content: FDIC is hiring for a Senior IT Specialist to help assist with security reviews & audits. This is a rare non-supervisory GS 15, and FDIC features special pay and benefits - this role caps at $250K!
-
-- title: Federal Deposit Insurance Corporation - Data Management Specialist (GS 13 equivalent)
-  url: https://www.usajobs.gov/job/724372200
-  date: 2023-05-09
-  closes: 2023-05-22
-  content: FDIC is hiring an IT Specialist to manage and support their databases. The FDIC features special pay and benefits - this role caps at just under $200k!
 
 - title: National Nuclear Security Administration - Deputy Chief Information Officer (SES)
   url: https://www.usajobs.gov/job/724346500
@@ -64,36 +62,11 @@
   closes: 2023-06-07
   content: The National Nuclear Security Administration is hiring for their Deputy Associate Administrator for Information Management and Deputy Chief Information Officer. This is a senior executive service role, and you'll need an SES-formatted resume with ECQs to apply.
 
-- title: Department of Energy - Deputy Chief Information Officer for Enterprise Operations and Shared Services (SES)
-  url: https://www.usajobs.gov/job/724100300
-  date: 2023-05-09
-  closes: 2023-05-18
-  content: DoE is hiring for one of their DCIO slots, overseeing their enterprise-wide IT. This is a senior executive service role, and you'll need an SES-formatted resume with ECQs to apply.
-
-- title: Library of Congress - Senior Program Manager (GS 15)
-  url: https://www.usajobs.gov/job/723877400
-  date: 2023-05-09
-  closes: 2023-05-19
-  content: The LoC is hiring for a Senior Program Manager in their Customer Liaison Services Division. This is a rare non-supervisory GS 15 role!
-
-- title: Railroad Retirement Board - Chief Data Officer (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/723411800
-  date: 2023-05-04
-  closes: 2023-05-17
-  remote: true
-  content: RRB is hiring for their Chief Data Officer. This is a remote position!
-
 - title: Federal Reserve System Board of Governors - Technology Business Analyst (GS 13-15 equivalent)
   url: https://www.usajobs.gov/job/722483800
   date: 2023-04-28
   closes: 2023-05-26
   content: The Federal Reserve System is hiring for a Technology Business Analyst. The pay range for this position is $101K - $219K!
-
-- title: Administrative Office of the U.S. Courts - Chief Information Security Officer (SES)
-  url: https://www.usajobs.gov/job/720080900
-  date: 2023-04-19
-  closes: 2023-05-17
-  content: U.S. Courts is hiring for their CISO. The pay cap for this role is just under $220K.
 
 - title: Colorado Digital Service - Engineering Lead
   url: https://www.governmentjobs.com/careers/colorado/jobs/3808703/digital-service-expert-engineering-lead-remote-anywhere-from-colorado?keywords=Digital%20Service%20Expert%20Engineering%20Lead&pagetype=jobOpportunitiesJobs
