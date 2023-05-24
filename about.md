@@ -151,7 +151,7 @@ volunteer:
     end: Present
   - title: Cloud & Infrastructure Working Group Chair
     start: September 2019
-    end: Present
+    end: May 2023
   - company: American Council for Technology and Industry Advisory Council (ACT-IAC)
     title: Customer Experience (CX) Working Group Board Member
     start: September 2019
@@ -191,7 +191,7 @@ volunteer:
     <li>{% far fa-user-tie %} U.S. Securities and Exchange Commission – Assistant Director, Cloud Center of Excellence</li>
     <li>{% fas fa-users %} Federal Secure Cloud Advisory Committee - Appointee</li>
     <li>{% far fa-university %} US Federal CIO Council – <a href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/executive-committee/">Cloud & Infrastructure Community of Practice</a> Executive Committee Member</li>
-    <li>{% far fa-book-open %} <a href="https://atarc.org/atarc-board/">ATARC</a> Board Member and <a href="https://atarc.org/working-groups/cloud-working-group/">Cloud & Infrastructure Working Group</a> Government Chair</li>
+    <li>{% far fa-book-open %} <a href="https://atarc.org/atarc-board/">ATARC</a> Advisory Board Member</li>
   </ul>
   <h3 class="subsubsection-title">Previous Work</h3>
   <ul class="about-highlights">
@@ -235,12 +235,14 @@ volunteer:
         </h3>
       </div>
       <div class="job-description">
-        {% assign desc = job.description | split: "
+        {% assign desc = job.description | trim | split: "
 
 " %}
-        {% for p in desc %}<p>
-          {{ p | markdownify }}
-        </p>{% endfor %}
+        {% for p in desc %}
+          {% if p %}
+            {{ p | markdownify }}
+          {% endif %}
+        {% endfor %}
       </div>
       {% if job.highlights %}
       <div class="job-accomplishments">
