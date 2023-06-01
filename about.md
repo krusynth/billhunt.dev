@@ -148,7 +148,7 @@ volunteer:
   - company: Advanced Technology Academic Research Center (ATARC)
     title: Government Advisory Board Member
     start: October 2018
-    end: Present
+    end: June 2023
   - title: Cloud & Infrastructure Working Group Chair
     start: September 2019
     end: May 2023
@@ -191,7 +191,6 @@ volunteer:
     <li>{% far fa-user-tie %} U.S. Securities and Exchange Commission – Assistant Director, Cloud Center of Excellence</li>
     <li>{% fas fa-users %} Federal Secure Cloud Advisory Committee - Appointee</li>
     <li>{% far fa-university %} US Federal CIO Council – <a href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/executive-committee/">Cloud & Infrastructure Community of Practice</a> Executive Committee Member</li>
-    <li>{% far fa-book-open %} <a href="https://atarc.org/atarc-board/">ATARC</a> Advisory Board Member</li>
   </ul>
   <h3 class="subsubsection-title">Previous Work</h3>
   <ul class="about-highlights">
