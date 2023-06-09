@@ -5,19 +5,42 @@
   remote: true
   content: GSA is hiring for the FedRAMP Director under the Technology Transformation Service. I cannot stress enough that this is one of the MOST IMPORTANT positions in the government today! If you have experience running major programs and deep knowledge of federal cybersecurity requirements, this is one to check out! And it's 100% remote!
 
+- title: Securities and Exchange Commission - IT Operations Specialist (GS 15 equivalent)
+  url: https://www.usajobs.gov/job/730944800
+  date: 2023-06-09
+  closes: 2023-06-26
+  content: The SEC is hiring for an specialist in the IT Operations division, overseeing the Infrastructure Support Services contract and other functions. The SEC's SK 16 rank is a non-supervisory subject matter expert, but only requires a year of GS 14 or similar experience (not GS 15!).  The SEC features special pay and benefits and this role caps at $272K!
+
+- title: Securities and Exchange Commission - Cybersecurity Specialist (GS 15 equivalent)
+  url: https://www.usajobs.gov/job/730218800
+  date: 2023-06-09
+  closes: 2023-06-22
+  content: The SEC is hiring for a cybersecurity specialist, overseeing the Infrastructure Support Services contract and other functions. The SEC's SK 16 rank is a non-supervisory subject matter expert, but only requires a year of GS 14 or similar experience (not GS 15!).  The SEC features special pay and benefits and this role caps at $272K!
+
 - title: Securities and Exchange Commission - Cybersecurity Engineer (GS 14 equivalent)
   url: https://www.usajobs.gov/job/730674100
   date: 2023-06-09
   closes: 2023-06-23
   content: The SEC is hiring for a Cybersecurity Engineer with practical experience in Zero Trust architecture and tools. The SEC features special pay and benefits and this role caps at $238K!
 
+- title: Federal Deposit Insurance Corporation - Salesforce Technical Architect (GS 13-14)
+  url: https://www.usajobs.gov/job/730460100
+  date: 2023-06-09
+  closes: 2023-06-22
+  content: FDIC is hiring a Salesforce Technical Architect. FDIC features special pay and benefits and this role caps at $235K!
+
+- title: General Services Administration - Director of Marketing & Outreach (GS 15 supervisory)
+  url: https://join.tts.gsa.gov/join/TTS-Outreach-Director-DHA-Term/
+  date: 2023-06-09
+  closes: 2023-06-14
+  remote: true
+  content: GSA is hiring for their Director of Marketing & Outreach for the Technology Transformation Service! This is an amazing role at an excellent organization. It's also a fully-remote position!
+
 - title: National Aeronautics and Space Administration - Network Operations Specialist (GS 15 supervisory)
   url: https://www.usajobs.gov/job/730079800
   date: 2023-06-09
   closes: 2023-06-12
   content: NASA is hiring for a supervisory Network Operations Specialist.
-
-
 
 - title: Peace Corps - Chief Information Officer (SES, supervisory)
   url: https://www.usajobs.gov/job/729299900
