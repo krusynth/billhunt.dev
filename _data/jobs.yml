@@ -1,8 +1,63 @@
-- title: Maryland Family and Medical Leave Insurance - Director of Digital Services
-  url: https://www.jobapscloud.com/MD/sup/bulpreview.asp?R1=23&R2=001640&R3=0005
-  date: 2023-06-28
-  closes: 2023-07-12
-  content: The state of Maryland FAMLI team is hiring for their Director of Digital Services!
+- title: General Services Administration - Login.gov Deputy Director (GS 15)
+  url: https://www.usajobs.gov/job/735637900
+  date: 2023-07-12
+  closes: 2023-07-24
+  content: GSA is hiring for the Deputy Director of Login.gov! This is an amazing program that interacts with dozens of government services across federal, state, tribal, and local programs! Don't miss out on this one!
+
+- title: Securities and Exchange Commission - Data Officer (GS 15 equivalent)
+  url: https://www.usajobs.gov/job/735820000
+  date: 2023-07-12
+  closes: 2023-07-21
+  content: The SEC is hiring for a Data Officer in the Division of Trading and Markets, to help develop and manage the division's data strategy. (SK 16s are typically non-supervisory domain area specialists.) The SEC has special pay and benefits and this role caps at $272K!
+
+- title: Securities and Exchange Commission - Supervisory IT Specialist (GS 15 equivalent)
+  url: https://www.usajobs.gov/job/736272700
+  date: 2023-07-12
+  closes: 2023-07-24
+  content: The SEC is hiring for a Supervisory IT Specialist in the Division of Examinations. (SK 17s are typically second-level managers overseeing branch chiefs.) The SEC has special pay and benefits and this role caps at $272K!
+
+- title: Library of Congress - Enterprise Architects (GS 14)
+  url: https://www.usajobs.gov/job/735575600
+  date: 2023-07-12
+  closes: 2023-07-20
+  content: The LoC is hiring two IT Specialists in their Enterprise Architecture division.
+
+- title: Commodity Futures Trading Commission - Security Solutions Architect (GS 15 equivalent)
+  url: https://www.usajobs.gov/job/735560500
+  date: 2023-07-12
+  closes: 2023-07-19
+  content: The CFTC is hiring a Security Solutions Architect. This is a rare non-supervisory GS 15 equivalent position. The CTFC has special pay and benefits and this role caps at $272K!
+
+- title: Farm Credit Administration - Data Scientist (GS 12-14)
+  url: https://www.usajobs.gov/job/735691900
+  date: 2023-07-12
+  closes: 2023-07-18
+  content: The Farm Credit Administration is hiring a Data Scientist in their Office of Data Analytics and Economics.
+
+- title: National Endowment for the Humanities - Humanities Data Scientist (GS 14)
+  url: https://www.usajobs.gov/job/735706500
+  date: 2023-07-12
+  closes: 2023-07-31
+  content: The NEH is hiring for a data scientist to help with evaluating grant programs and their impact against the national humanities landscape.
+
+- title: Centers for Disease Control and Prevention - Data Scientist (GS 14)
+  url: https://www.usajobs.gov/job/736348300
+  date: 2023-07-12
+  closes: 2023-07-18
+  remote: true
+  content: The CDC is hiring a Data Scientist. This is a remote position!
+
+- title: Department of the Treasury - Enterprise Architect (GS 14 equivalent, supervisory)
+  url: https://www.usajobs.gov/job/736418700
+  date: 2023-07-12
+  closes: 2023-07-24
+  content: Treasury is hiring for an Enterprise Architect to oversee a team in the Office of Financial Research. As Treasury is a financial agency, this role caps at $236K!
+
+- title: Department of Transportation - Infrastructure & Operations Supervisor (GS 15)
+  url: https://www.usajobs.gov/job/736658000
+  date: 2023-07-12
+  closes: 2023-10-10
+  content: DOT is hiring for three supervisors in their Infrastructure & Operations division.
 
 - title: General Services Administration - Deputy Chief Information Officer (SES)
   url: https://www.usajobs.gov/job/732942700
@@ -16,18 +71,6 @@
   closes: 2023-07-26
   content: The Bureau of Economic Analysis is hiring their Chief Data Scientist! This is a senior leadership (SL) position and you'll need an SES-formatted resume with ECQs to apply.
 
-- title: Department of the Treasury - Senior Developer (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/734011000
-  date: 2023-06-27
-  closes: 2023-07-12
-  content: Treasury is hiring a senior developer. This role caps at $270K!
-
-- title: Securities and Exchange Commission - Deputy Chief Data Officer (GS 15 equivalent)
-  url: https://www.usajobs.gov/job/732665600
-  date: 2023-06-23
-  closes: 2023-07-05
-  content: The SEC is hiring their Deputy Chief Data Officer! The SEC features special pay and benefits and this role caps at $272K!
-
 - title: U.S. Census Bureau - Chief, Application Development and Services Division (SES)
   url: https://www.usajobs.gov/job/732707300
   date: 2023-06-23
@@ -40,93 +83,11 @@
   closes: 2023-06-30
   content: State is hiring an IT Specialist in its Front Office of the Bureau of Administration. This is a rare non-supervisory GS 15 position!
 
-- title: Department of the Treasury - Supervisory IT Specialist (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/733384600
-  date: 2023-06-23
-  closes: 2023-07-07
-  content: Treasury is hiring a Supervisory IT Specialist to oversee analytic software platforms and data systems in the Office of Financial Research. Alhough this is a GS 14 equivalent position, the pay for this role caps at an astonishing $270K!
-
-- title: Centers for Disease Control and Prevention - Data Management Specialists (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/732242600
-  date: 2023-06-20
-  closes: 2023-06-23
-  remote: true
-  content: CDC is hiring eight data management specialists in the Office of Public Health Data, Surveillance, and Technology. These are remote positions!
-
-- title: Department of Education - Supervisory Information Technology Specialist (GS 15)
-  url: https://www.usajobs.gov/job/732292400
-  date: 2023-06-20
-  closes: 2023-06-30
-  content: Education is hiring for a Supervisory Information Technology Specialist in their Operational Support Services Branch.
-
-- title: Library of Congress - Supervisory Information Technology Specialist (GS 14)
-  url: https://www.usajobs.gov/job/731246500
-  date: 2023-06-20
-  closes: 2023-06-28
-  content: LoC is hiring for a Supervisory Information Technology Specialist in the Platform Services Division.
-
-- title: General Services Administration - Cybersecurity Specialists (GS 15)
-  url: https://www.usajobs.gov/job/732418000
-  date: 2023-06-20
-  closes: 2023-07-03
-  remote: true
-  content: GSA is hiring for several Cybersecurity Specialists in the Federal Acquisition Service. These are rare non-supervisory GS 15s and remote positions!
-
-- title: Office of Personnel Management - UX Designer (GS 14)
-  url: https://www.usajobs.gov/job/732316200
-  date: 2023-06-20
-  closes: 2023-06-23
-  remote: true
-  content: OPM is hiring for a UX Designer.  This is a remote position!
-
-- title: Office of Personnel Management - Product Manager (GS 14)
-  url: https://www.usajobs.gov/job/732318600
-  date: 2023-06-20
-  closes: 2023-06-23
-  remote: true
-  content: OPM is hiring for a product manager.  This is a remote position!
-
-- title: Securities and Exchange Commission - IT Specialists (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/731027600
-  date: 2023-06-14
-  closes: 2023-06-26
-  content: The SEC is hiring two IT Specialists with a focus on application management in cloud environments. The SEC features special pay and benefits and this role caps at $238K!
-
 - title: Department of Transportation - Supervisory IT Project Manager (GS 15)
   url: https://www.usajobs.gov/job/731782800
   date: 2023-06-14
   closes: 2023-07-14
   content: DOT is hiring for a Supervisory IT Project Manager in their Application and Digital Solutions division.
-
-- title: Securities and Exchange Commission - IT Operations Specialist (GS 15 equivalent)
-  url: https://www.usajobs.gov/job/730944800
-  date: 2023-06-09
-  closes: 2023-06-26
-  content: The SEC is hiring for an specialist in the IT Operations division, overseeing the Infrastructure Support Services contract and other functions. The SEC's SK 16 rank is a non-supervisory subject matter expert, but only requires a year of GS 14 or similar experience (not GS 15!).  The SEC features special pay and benefits and this role caps at $272K!
-
-- title: Securities and Exchange Commission - Cybersecurity Engineer (GS 14 equivalent)
-  url: https://www.usajobs.gov/job/730674100
-  date: 2023-06-09
-  closes: 2023-06-23
-  content: The SEC is hiring for a Cybersecurity Engineer with practical experience in Zero Trust architecture and tools. The SEC features special pay and benefits and this role caps at $238K!
-
-- title: Department of Veterans Affairs - Executive Director, Portfolio Management (SES, supervisory)
-  url: https://www.usajobs.gov/job/729380600
-  date: 2023-06-06
-  closes: 2023-06-30
-  content: The VA is hiring for their Executive Director of Portfolio Management, responsible for a large portfolio of custom code, low/no-code, and SaaS software products. This is a senior executive service role and you'll need an SES-formatted resume with ECQs to apply.
-
-- title: Bureau of the Fiscal Service - Chief Information Security Officer (SES)
-  url: https://www.usajobs.gov/job/729073400
-  date: 2023-06-06
-  closes: 2023-06-30
-  content: Bureau of the Fiscal Service (under the Treasury Department) is hiring for their CISO!  This is a senior executive service role and you'll need an SES-formatted resume with ECQs to apply.
-
-- title: General Services Administration - Presidential Innovation Fellows (GS 15)
-  url: https://www.usajobs.gov/job/724308900
-  date: 2023-05-17
-  closes: 2023-06-23
-  content: GSA is accepting application for the next class of PIFs!  This is an exciting fellowship program for mid-to-senior-level entrepreneurs, executives, and technologists of all kinds! Don't miss out on this!
 
 - title: Colorado Digital Service - Engineering Lead
   url: https://www.governmentjobs.com/careers/colorado/jobs/3808703/digital-service-expert-engineering-lead-remote-anywhere-from-colorado?keywords=Digital%20Service%20Expert%20Engineering%20Lead&pagetype=jobOpportunitiesJobs
