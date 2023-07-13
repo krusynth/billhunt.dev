@@ -49,7 +49,7 @@ Not finding what you're looking for? Here are some other great jobs boards:
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
-{% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau' | split:',' %}
+{% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission' | split:',' %}
 
 {%- for post in site.data.jobs  %}
   {% assign classes = 'job-post' %}
