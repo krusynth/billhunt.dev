@@ -1,3 +1,56 @@
+- title: Department of Labor - IT Specialist (GS 14)
+  url: https://www.usajobs.gov/job/738917600
+  date: 2023-07-27
+  closes: 2023-08-08
+  remote: true
+  content: DOL is hiring an IT Specialist in their Business Applications Services Directorate. This is a remote position.
+
+- title: Securities and Exchange Commission - Cybersecurity Specialist (GS 14 equivalent)
+  url: https://www.usajobs.gov/job/738968500
+  date: 2023-07-27
+  closes: 2023-08-08
+  content: The SEC is hiring a Cybersecurity Specialist. This agency features special pay and benefits and this role caps at $238K!
+
+- title: Federal Energy Regulatory Commission - Cybersecurity Specialist (GS 14)
+  url: https://www.usajobs.gov/job/739141900
+  date: 2023-07-27
+  closes: 2023-08-08
+  remote: true
+  content: FERC is hiring for a Cybersecurity Specialist. This is a remote position!
+
+- title: Federal Emergency Management Agency - Supervisory Systems Analysis Engineer (GS 15)
+  url: https://www.usajobs.gov/job/739193700
+  date: 2023-07-27
+  closes: 2023-08-09
+  remote: true
+  content: FEMA is hiring for a Supervisory Systems Analysis Engineer. This is a remote position!
+
+- title: Federal Emergency Management Agency - Supervisory Software Engineer (GS 15)
+  url: https://www.usajobs.gov/job/739196600
+  date: 2023-07-27
+  closes: 2023-08-09
+  remote: true
+  content: FEMA is hiring for a Supervisory Software Engineer. This is a remote position!
+
+- title: National Science Foundation - Deputy Chief Information Officer (SES)
+  url: https://www.usajobs.gov/job/739334300
+  date: 2023-07-27
+  closes: 2023-08-28
+  content: NSF is hiring for their Deputy Head of the Office of Business Information Technology Services (BIT) and Deputy Chief Information Officer! This is a senior excutive service position and you'll need an SES-formatted resume with ECQs to apply.
+
+- title: U.S. Census Bureau - Application Architects (GS 15)
+  url: https://www.usajobs.gov/job/739335800
+  date: 2023-07-27
+  closes: 2023-08-08
+  content: Census is hiring for several Application Architects in their Suitland, MD office. These are rare non-supervisory GS 15 positions!
+
+- title: Federal Emergency Management Agency - Systems Analysis Specialists (GS 14)
+  url: https://www.usajobs.gov/job/739520200
+  date: 2023-07-27
+  closes: 2023-08-09
+  remote: true
+  content: FEMA is hiring two Systems Analysis Specialists in the Office of Policy & Program Analysis. These are remote positions!
+
 - title: Consumer Financial Protection Bureau - Deputy Chief Information Officer (GS 15 equivalent, supervisory)
   url: https://www.usajobs.gov/job/738521000
   date: 2023-07-24
@@ -42,13 +95,6 @@
   closes: 2023-08-02
   content: The Senate is hiring for their CISO! This is an amazing opportunity to help modernize government operations.
 
-- title: Railroad Retirement Board - User Experience Architect (GS 13)
-  url: https://www.usajobs.gov/job/738324000
-  date: 2023-07-24
-  closes: 2023-07-26
-  remote: true
-  content: The RRB is hiring a User Experience Architect! This is a remote position.
-
 - title: Centers for Disease Control and Prevention - IT Project Manager (GS 14 supervisory)
   url: https://www.usajobs.gov/job/738394300
   date: 2023-07-24
@@ -63,42 +109,17 @@
   remote: true
   content: The RRB is hiring a Supervisory IT Specialist lead a team of software engineers to design, develop, and deploy opensource, cloud-based applications. This is a remote position!
 
-- title: General Services Administration - Login.gov Deputy Director (GS 15 supervisory)
-  url: https://www.usajobs.gov/job/735637900
-  date: 2023-07-12
-  closes: 2023-07-24
-  remote: true
-  content: GSA is hiring for the Deputy Director of Login.gov! This is an amazing program that interacts with dozens of government services across federal, state, tribal, and local programs! This is also a remote position! Don't miss out on this one!
-
-- title: Securities and Exchange Commission - Supervisory IT Specialist (GS 15 equivalent)
-  url: https://www.usajobs.gov/job/736272700
-  date: 2023-07-12
-  closes: 2023-07-24
-  content: The SEC is hiring for a Supervisory IT Specialist in the Division of Examinations. (SK 17s are typically second-level managers overseeing branch chiefs.) The SEC has special pay and benefits and this role caps at $272K!
-
 - title: National Endowment for the Humanities - Humanities Data Scientist (GS 14)
   url: https://www.usajobs.gov/job/735706500
   date: 2023-07-12
   closes: 2023-07-31
   content: The NEH is hiring for a data scientist to help with evaluating grant programs and their impact against the national humanities landscape.
 
-- title: Department of the Treasury - Enterprise Architect (GS 14 equivalent, supervisory)
-  url: https://www.usajobs.gov/job/736418700
-  date: 2023-07-12
-  closes: 2023-07-24
-  content: Treasury is hiring for an Enterprise Architect to oversee a team in the Office of Financial Research. As Treasury is a financial agency, this role caps at $236K!
-
 - title: Department of Transportation - Infrastructure & Operations Supervisor (GS 15)
   url: https://www.usajobs.gov/job/736658000
   date: 2023-07-12
   closes: 2023-10-10
   content: DOT is hiring for three supervisors in their Infrastructure & Operations division.
-
-- title: Bureau of Economic Analysis - Chief Data Scientist (SL)
-  url: https://www.usajobs.gov/job/733626200
-  date: 2023-06-27
-  closes: 2023-07-26
-  content: The Bureau of Economic Analysis is hiring their Chief Data Scientist! This is a senior leadership (SL) position and you'll need an SES-formatted resume with ECQs to apply.
 
 - title: Colorado Digital Service - Engineering Lead
   url: https://www.governmentjobs.com/careers/colorado/jobs/3808703/digital-service-expert-engineering-lead-remote-anywhere-from-colorado?keywords=Digital%20Service%20Expert%20Engineering%20Lead&pagetype=jobOpportunitiesJobs
