@@ -1,11 +1,11 @@
 ---
-title: USAJobs Listings
+title: All Job Listings
 permalink: /jobs/usajobs/
 datum: usajobs
 layout: jobs
 action: 'Apply'
 feed:
-  title: RSS feed of these USAJobs listings
+  title: RSS feed of the full jobs list
   link: /usajobs.xml
 ---
 
@@ -18,17 +18,23 @@ This is a list of all USAJobs postings that match all of the following criteria:
 
 [The script I use to fetch these positions from the USAJobs API is available on GitHub.](https://github.com/krusynth/usajobs-feed)
 
-For my curated list that also includes non-federal jobs, check out the **[main jobs page](/jobs/)**.
+Note: this list also includes non-federal civic tech and public interest jobs that caught my eye.
+
+For my curated list, check out the **[main jobs page](/jobs/)**.
 
 For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
+
+**All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies.**
 
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
 {% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission' | split:',' %}
 
-{%- for post in site.data.usajobs  %}
-  {% assign title = post.agency | append: ' - ' | append: post.title %}
+{% assign posts = site.data.usajobs %}
+{%- for post in posts  %}
+  {% assign title = post.agency %}
+  {% assign title = title | append: ' - ' | append: post.title %}
   {% assign post = post | setval: 'title', title %}
 
   {% assign classes = 'job-post' %}

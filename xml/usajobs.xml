@@ -1,31 +1,27 @@
 ---
-title : USAJobs
+title : Full Jobs Feed
 permalink: /usajobs.xml
 action: Apply
 ---
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
-{%- for post in site.data.usajobs  %}
+{% assign posts = site.data.usajobs %}
+{%- for post in posts  %}
   {% assign closes = post.closes | date: '%s' %}
 
   {% if closes == nil or closes == '' or closes > now  %}
     {% assign post = post | setval: 'category', 'Jobs' %}
     {% assign post = post | setval: 'link', post.url %}
 
-    {% assign title = post.agency | append: ' - ' | append: post.title %}
+    {% assign title = post.agency %}
+    {% assign title = title | append: ' - ' | append: post.title %}
     {% assign post = post | setval: 'title', title %}
 
     {% if post.remote %}
       {% assign title = post.title | append: ' (Remote)' %}
       {% assign post = post | setval: 'title', title %}
     {% endif %}
-
-    {% for job in site.data.jobs %}
-      {% if job.url contains post.id %}
-        {% assign post = post | setval: 'content', job.content %}
-      {% endif %}
-    {% endfor %}
 
     {% capture afterwards %}<p><a href="{{ post.link }}">{{ page.action }}</a></p>{% endcapture %}
 

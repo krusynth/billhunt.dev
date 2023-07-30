@@ -10,9 +10,11 @@ feed:
 ---
 You can follow this list with the RSS link above, and I also repost them to <a href="https://mastodon.publicinterest.town/@jobs">Public Interest Jobs on Mastodon</a>!
 
-These are mostly senior positions, and include a few non-federal jobs. For a more comprehensive list of only federal technology jobs, check out my **[USAJobs page](/jobs/usajobs/)**.
+This is a **curated** list of mostly senior positions. It includes a few non-federal jobs. For a more comprehensive list of federal jobs, check out my **[All Job Listings page](/jobs/usajobs/)**.
 
 For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
+
+**All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies.**
 
 Not finding what you're looking for? Here are some other great jobs boards:
 
@@ -51,14 +53,16 @@ Not finding what you're looking for? Here are some other great jobs boards:
 
 {% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission' | split:',' %}
 
-{%- for post in site.data.jobs  %}
+{% assign posts = site.data.usajobs | where_exp:"job", "job.content" %}
+{%- for post in posts %}
+  {% assign title = post.agency %}
+  {% assign title = title | append: ' - ' | append: post.title %}
+  {% assign post = post | setval: 'title', title %}
+
   {% assign classes = 'job-post' %}
-  {% for agency in specialpay %}
-    {% if post.title contains agency %}
-      {% assign classes = classes | append: ' special-pay' %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
+  {% if specialpay contains post.agency %}
+    {% assign classes = classes | append: ' special-pay' %}
+  {% endif %}
   {% if post.title contains 'INFOSEC' or post.title contains 'Security' %}
     {% assign classes = classes | append: ' security' %}
   {% endif %}

@@ -1,17 +1,23 @@
 ---
-title : Jobs
+title : Curated Jobs Feed
 permalink: /jobs.xml
 action: Apply
 ---
 {%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
-{%- for post in site.data.jobs  %}
+{%- assign posts = site.data.usajobs | where_exp:"job", "job.content" -%}
+{%- for post in posts  %}
   {% assign closes = post.closes | date: '%s' %}
 
   {% if closes == nil or closes == '' or closes > now  %}
     {% assign post = post | setval: 'category', 'Jobs' %}
     {% assign post = post | setval: 'link', post.url %}
+
+    {% assign title = post.agency %}
+    {% assign title = title | append: ' - ' | append: post.title %}
+    {% assign post = post | setval: 'title', title %}
+
     {% if post.remote %}
       {% assign title = post.title | append: ' (Remote)' %}
       {% assign post = post | setval: 'title', title %}
@@ -25,7 +31,7 @@ action: Apply
     {% endif %}
     {% assign post = post | setval: 'afterwards', afterwards %}
 
-    {% assign post = post | setval: 'afterwards', afterwards %}
+    {% assign post = post | setval: 'date', post.posted %}
 
     {% assign items = items | push: post %}
   {% endif %}
