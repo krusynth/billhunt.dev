@@ -19,7 +19,7 @@ action: Apply
     {% assign post = post | setval: 'title', title %}
 
     {% if post.remote %}
-      {% assign title = post.title | append: ' (Remote)' %}
+      {% assign title = title | append: ' (Remote)' %}
       {% assign post = post | setval: 'title', title %}
     {% endif %}
 

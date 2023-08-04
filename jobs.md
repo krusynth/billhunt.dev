@@ -57,7 +57,11 @@ Not finding what you're looking for? Here are some other great jobs boards:
 {%- for post in posts %}
   {% assign title = post.agency %}
   {% assign title = title | append: ' - ' | append: post.title %}
-  {% assign post = post | setval: 'title', title %}
+
+  {% if post.grade %}
+    {% assign title = title | append: ' (' | append: post.grade | append: ')' %}
+  {% endif %}
+
 
   {% assign classes = 'job-post' %}
   {% if specialpay contains post.agency %}
@@ -68,8 +72,11 @@ Not finding what you're looking for? Here are some other great jobs boards:
   {% endif %}
   {% if post.remote %}
     {% assign classes = classes | append: ' remote' %}
+    {% assign title = title | append: ' (Remote)' %}
   {% endif %}
+
   {% assign post = post | setval: 'classes', classes %}
+  {% assign post = post | setval: 'title', title %}
 
   {% if post.closes %}
     {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
@@ -79,5 +86,5 @@ Not finding what you're looking for? Here are some other great jobs boards:
   {% assign items = items | push: post %}
 {% endfor -%}
 
-{% assign items = items | sort: 'date' | reverse %}
+{% assign items = items | sort: 'posted' | reverse %}
 {% assign page = page | setval: 'items', items %}

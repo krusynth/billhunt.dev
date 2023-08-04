@@ -35,7 +35,11 @@ For an explanation of pay grades, term positions, the senior executive service, 
 {%- for post in posts  %}
   {% assign title = post.agency %}
   {% assign title = title | append: ' - ' | append: post.title %}
-  {% assign post = post | setval: 'title', title %}
+
+  {% if post.grade %}
+    {% assign title = title | append: ' (' | append: post.grade | append: ')' %}
+  {% endif %}
+
 
   {% assign classes = 'job-post' %}
   {% if specialpay contains post.agency %}
@@ -46,14 +50,11 @@ For an explanation of pay grades, term positions, the senior executive service, 
   {% endif %}
   {% if post.remote %}
     {% assign classes = classes | append: ' remote' %}
+    {% assign title = title | append: ' (Remote)' %}
   {% endif %}
-  {% assign post = post | setval: 'classes', classes %}
 
-  {% for job in site.data.jobs %}
-    {% if job.url contains post.id %}
-      {% assign post = post | setval: 'content', job.content %}
-    {% endif %}
-  {% endfor %}
+  {% assign post = post | setval: 'classes', classes %}
+  {% assign post = post | setval: 'title', title %}
 
   {% if post.closes %}
     {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}

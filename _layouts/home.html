@@ -236,7 +236,6 @@ layout: default
 {%- for post in posts limit: 3 %}
   {% assign title = post.agency %}
   {% assign title = title | append: ' - ' | append: post.title %}
-  {% assign post = post | setval: 'title', title %}
 
   {% assign classes = 'job-post' %}
   {% if specialpay contains post.agency %}
@@ -247,8 +246,10 @@ layout: default
   {% endif %}
   {% if post.remote %}
     {% assign classes = classes | append: ' remote' %}
+    {% assign title = title | append: ' (Remote)' %}
   {% endif %}
   {% assign post = post | setval: 'classes', classes %}
+  {% assign post = post | setval: 'title', title %}
 
   {% if post.closes %}
     {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
