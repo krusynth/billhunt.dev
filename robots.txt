@@ -3,3 +3,6 @@ Disallow: /blog/
 Disallow: /recommended/
 Disallow: /links/
 Disallow: /jobs/
+
+User-agent: GPTBot
+Disallow: /
