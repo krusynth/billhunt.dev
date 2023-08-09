@@ -86,5 +86,4 @@ Not finding what you're looking for? Here are some other great jobs boards:
   {% assign items = items | push: post %}
 {% endfor -%}
 
-{% assign items = items | sort: 'posted' | reverse %}
 {% assign page = page | setval: 'items', items %}

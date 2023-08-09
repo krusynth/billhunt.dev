@@ -64,6 +64,5 @@ For an explanation of pay grades, term positions, the senior executive service, 
   {% assign items = items | push: post %}
 {% endfor -%}
 
-{% assign items = items | sort: 'posted' | reverse %}
 {% assign page = page | setval: 'items', items %}
 
