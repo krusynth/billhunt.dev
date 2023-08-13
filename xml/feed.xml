@@ -1,6 +1,7 @@
 ---
 title: Posts
 permalink: /feed.xml
+layout: atom
 ---
 {%- assign items = "" | split:"/" -%}
 

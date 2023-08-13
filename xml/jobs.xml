@@ -2,41 +2,43 @@
 title : Curated Jobs Feed
 permalink: /jobs.xml
 action: Apply
+layout: atom
 ---
-{%- assign items = "" | split:"/" -%}
-{% assign now = 'now' | date: '%s' %}
+
+{%- assign now = 'now' | date: '%s' -%}
 
 {%- assign posts = site.data.usajobs | where_exp:"job", "job.content" -%}
-{%- for post in posts  %}
-  {% assign closes = post.closes | date: '%s' %}
+{%- for post in posts  -%}
+  {%- assign closes = post.closes | date: '%s' -%}
 
-  {% if closes == nil or closes == '' or closes > now  %}
-    {% assign post = post | setval: 'category', 'Jobs' %}
-    {% assign post = post | setval: 'link', post.url %}
+  {%- if closes == nil or closes == '' or closes > now  -%}
 
-    {% assign title = post.agency %}
-    {% assign title = title | append: ' - ' | append: post.title %}
-    {% assign post = post | setval: 'title', title %}
+    {%- assign url = post.url | replace: '&', '&amp;'-%}
 
-    {% if post.remote %}
-      {% assign title = title | append: ' (Remote)' %}
-      {% assign post = post | setval: 'title', title %}
-    {% endif %}
+    {%- assign title = post.agency | append: ' - ' | append: post.title -%}
 
-    {% capture afterwards %}<p><a href="{{ post.link }}">{{ page.action }}</a></p>{% endcapture %}
+    {%- if post.remote -%}
+      {%- assign title = title | append: ' (Remote)' -%}
+    {%- endif -%}
 
-    {% if post.closes %}
-      {% capture closes %}<p>Closes {{ post.closes | date: site.date_format }}</p>{% endcapture %}
-      {% assign afterwards = afterwards | prepend: closes %}
-    {% endif %}
-    {% assign post = post | setval: 'afterwards', afterwards %}
+    {%- assign description = post.content | markdownify -%}
 
-    {% assign post = post | setval: 'date', post.posted %}
+    {%- if post.closes -%}
+      {%- capture closes -%}<p>Closes {{ post.closes | date: site.date_format }}</p>{%- endcapture -%}
+      {%- assign description = description | append: closes -%}
+    {%- endif -%}
 
-    {% assign items = items | push: post %}
-  {% endif %}
-{% endfor -%}
+    {%- capture afterwards -%}<p><a href="{{ post.link }}">{{ page.action }}</a></p>{%- endcapture -%}
+    {%- assign description = description | append: afterwards -%}
 
-{% assign items = items | sort: 'date' | reverse %}
+    {%- assign description = description | strip | xml_escape -%}
 
-{%- include feed.xml items=items %}
+    {%- include job-card.xml
+         title=title
+         postdate=post.posted
+         description=description
+         url=url
+     -%}
+
+  {%- endif -%}
+{%- endfor -%}

@@ -48,20 +48,19 @@ Not finding what you're looking for? Here are some other great jobs boards:
 * [Fellowships Megalist](https://docs.google.com/spreadsheets/d/1VpYIEC7MhA_6VVORk5S9CDuccx_tEvFVefeDTilenXQ/edit#gid=0)
 {:.column}
 
-{%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
 {% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission' | split:',' %}
 
+{% capture jobs -%}
+
 {% assign posts = site.data.usajobs | where_exp:"job", "job.content" %}
 {%- for post in posts %}
-  {% assign title = post.agency %}
-  {% assign title = title | append: ' - ' | append: post.title %}
+  {% assign title = post.agency | append: ' - ' | append: post.title %}
 
   {% if post.grade %}
     {% assign title = title | append: ' (' | append: post.grade | append: ')' %}
   {% endif %}
-
 
   {% assign classes = 'job-post' %}
   {% if specialpay contains post.agency %}
@@ -75,15 +74,22 @@ Not finding what you're looking for? Here are some other great jobs boards:
     {% assign title = title | append: ' (Remote)' %}
   {% endif %}
 
-  {% assign post = post | setval: 'classes', classes %}
-  {% assign post = post | setval: 'title', title %}
-
+  {% assign description = post.content %}
   {% if post.closes %}
     {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
-    {% assign post = post | setval: 'afterwards', afterwards %}
+    {% assign description = description | append: afterwards %}
   {% endif %}
+  {% assign url = post.url %}
+  {% assign image = post.image %}
 
-  {% assign items = items | push: post %}
+  {% include card-template.html
+     title=title
+     url=url
+     image=image
+     description=description
+     classes=classes
+  %}
 {% endfor -%}
 
-{% assign page = page | setval: 'items', items %}
+{%- endcapture -%}
+{%- assign page = page | setval: 'jobs', jobs -%}

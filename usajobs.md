@@ -26,20 +26,19 @@ For an explanation of pay grades, term positions, the senior executive service, 
 
 **All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies.**
 
-{%- assign items = "" | split:"/" -%}
 {% assign now = 'now' | date: '%s' %}
 
 {% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission' | split:',' %}
 
+{% capture jobs -%}
+
 {% assign posts = site.data.usajobs %}
-{%- for post in posts  %}
-  {% assign title = post.agency %}
-  {% assign title = title | append: ' - ' | append: post.title %}
+{%- for post in posts %}
+  {% assign title = post.agency | append: ' - ' | append: post.title %}
 
   {% if post.grade %}
     {% assign title = title | append: ' (' | append: post.grade | append: ')' %}
   {% endif %}
-
 
   {% assign classes = 'job-post' %}
   {% if specialpay contains post.agency %}
@@ -53,16 +52,20 @@ For an explanation of pay grades, term positions, the senior executive service, 
     {% assign title = title | append: ' (Remote)' %}
   {% endif %}
 
-  {% assign post = post | setval: 'classes', classes %}
-  {% assign post = post | setval: 'title', title %}
-
+  {% assign description = post.content %}
   {% if post.closes %}
     {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
-    {% assign post = post | setval: 'afterwards', afterwards %}
+    {% assign description = description | append: afterwards %}
   {% endif %}
 
-  {% assign items = items | push: post %}
+  {% include card-template.html
+     title=title
+     image=post.image
+     description=description
+     url=post.url
+     classes=classes
+%}
 {% endfor -%}
 
-{% assign page = page | setval: 'items', items %}
-
+{%- endcapture -%}
+{%- assign page = page | setval: 'jobs', jobs -%}

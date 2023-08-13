@@ -1,24 +1,13 @@
-{%- assign content = post.content -%}
+{%- assign description = post.content -%}
 {%- if post.afterwards %}
-  {% assign content = content | append: post.afterwards %}
+  {% assign description = description | append: post.afterwards %}
 {% endif -%}
-<article class="post-multiple {{ post.classes }}">
-  <header class="post-header hoverable">
-    <h3 class="post-title"><a href="{{ post.url }}" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>
-      {{ post.title }}
-    </a></h3>
-  </header>
-  <section class="post-content">
-    {% if post.image %}
-      <p class="featured-image-box">
-        <a href="{{ post.url }}" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>
-          <img src="{{ post.image }}" class="featured-image" alt="Image of {{ post.title }}">
-        </a>
-      </p>
-    {% endif %}
-    {{ content | markdownify }}
-    <p class="action-box">
-      <a href="{{ post.url }}" class="btn" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>{% if post.action %}{{ post.action }}{% elsif page.action %}{{ page.action }}{% else %}Check It Out{% endif %}</a>
-    </p>
-  </section>
-</article>
+
+{% include card-template.html
+     title=post.title
+     image=post.image
+     description=description
+     url=post.url
+     action=post.action
+     classes=post.classes
+%}

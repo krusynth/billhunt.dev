@@ -1,0 +1,20 @@
+<article class="post-multiple {{ classes }}">
+  <header class="post-header hoverable">
+    <h3 class="post-title"><a href="{{ url }}" {% if url contains 'http' %}{% else %}up-follow{% endif %}>
+      {{ title }}
+    </a></h3>
+  </header>
+  <section class="post-content">
+    {% if image %}
+      <p class="featured-image-box">
+        <a href="{{ url }}" {% if url contains 'http' %}{% else %}up-follow{% endif %}>
+          <img src="{{ image }}" class="featured-image" alt="Image of {{ title }}">
+        </a>
+      </p>
+    {% endif %}
+    {{ description | markdownify }}
+    <p class="action-box">
+      <a href="{{ url }}" class="btn" {% if url contains 'http' %}{% else %}up-follow{% endif %}>{% if action %}{{ action }}{% elsif page.action %}{{ page.action }}{% else %}Check It Out{% endif %}</a>
+    </p>
+  </section>
+</article>

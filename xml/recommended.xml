@@ -1,6 +1,7 @@
 ---
 title : Recommended Posts
 permalink: /recommended.xml
+layout: atom
 ---
 {%- assign items = "" | split:"/" -%}
 
