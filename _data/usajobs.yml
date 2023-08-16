@@ -1,3 +1,293 @@
+- id: '742274400'
+  posted: '2023-08-09T00:00:00.0000'
+  closes: '2023-09-11T23:59:59.9970'
+  agency: U.S. Census Bureau
+  title: Chief Technology Officer
+  grade: ES 00
+  url: https://www.usajobs.gov/GetJob/ViewDetails/742274400
+  remote: false
+  source: other
+  content: >-
+    Census is hiring for their CTO! This is a senior executive service position and you'll need an SES-formatted resume to apply.
+- id: '738819700'
+  posted: '2023-08-14T00:00:00.0000'
+  closes: '2023-08-28T23:59:59.9970'
+  agency: Judicial Branch - Administrative Office of the U.S. Courts
+  title: Information Technology Specialist (Data Management)
+  grade: AD 00
+  url: https://www.usajobs.gov/GetJob/ViewDetails/738819700
+  remote: false
+  source: usajobs
+- id: '742682100'
+  posted: '2023-08-14T00:00:00.0000'
+  closes: '2023-08-25T23:59:59.9970'
+  agency: Environmental Protection Agency
+  title: IT Specialist (APPSW)
+  grade: GS 12
+  url: https://www.usajobs.gov/GetJob/ViewDetails/742682100
+  remote: false
+  source: usajobs
+- id: '742852000'
+  posted: '2023-08-14T00:00:00.0000'
+  closes: '2023-08-18T23:59:59.9970'
+  agency: >-
+    Department of Veterans Affairs - Deputy Assistant Secretary for Information
+    and Technology
+  title: IT Specialist (Systems Analysis)
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/742852000
+  remote: true
+  source: usajobs
+- id: '742855800'
+  posted: '2023-08-14T00:00:00.0000'
+  closes: '2023-08-18T23:59:59.9970'
+  agency: >-
+    Department of Veterans Affairs - Deputy Assistant Secretary for Information
+    and Technology
+  title: IT Specialist (Systems Administration)
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/742855800
+  remote: true
+  source: usajobs
+- id: '742912800'
+  posted: '2023-08-14T00:00:00.0000'
+  closes: '2023-09-04T23:59:59.9970'
+  agency: >-
+    Department of Agriculture - Farm Production and Conservation (FPAC) Business
+    Center
+  title: Assistant Chief Information Officer
+  grade: ES 00
+  url: https://www.usajobs.gov/GetJob/ViewDetails/742912800
+  remote: false
+  source: usajobs
+  content: >-
+    USDA is hiring for their Assistant Chief Information Officer in the FPAC Business Center! This is a senior executive service position and you'll need an SES-formatted resume with ECQs to apply.
+- id: '742952900'
+  posted: '2023-08-14T00:00:00.0000'
+  closes: '2023-08-23T23:59:59.9970'
+  agency: Department of the Treasury - Bureau of the Fiscal Service
+  title: Lead Information Technology Specialist (INFOSEC)
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/742952900
+  remote: false
+  source: usajobs
+- id: '743052000'
+  posted: '2023-08-14T00:00:00.0000'
+  closes: '2023-08-25T23:59:59.9970'
+  agency: Department of the Interior - Geological Survey
+  title: Interdisciplinary Computer Scientist/Computer Engineer
+  grade: GS 12
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743052000
+  remote: false
+  source: usajobs
+- id: '743060400'
+  posted: '2023-08-14T00:00:00.0000'
+  closes: '2023-08-25T23:59:59.9970'
+  agency: Railroad Retirement Board
+  title: IT Project Manager (APPSW)
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743060400
+  remote: false
+  source: usajobs
+- id: '743102300'
+  posted: '2023-08-13T18:12:57.5330'
+  closes: '2023-09-05T23:59:59.9970'
+  agency: Legislative Branch - Architect of the Capitol
+  title: Information Technology Specialist (Systems Application)
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743102300
+  remote: false
+  source: usajobs
+- id: '743116600'
+  posted: '2023-08-15T00:00:00.0000'
+  closes: '2023-08-21T23:59:59.9970'
+  agency: Department of Agriculture - Animal and Plant Health Inspection Service
+  title: Information Technology Specialist (System Analysis-Customer Support)
+  grade: GS 12
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743116600
+  remote: false
+  source: usajobs
+- id: '743129200'
+  posted: '2023-08-14T10:38:30.7430'
+  closes: '2023-08-24T23:59:59.9970'
+  agency: >-
+    Department of Homeland Security - Cybersecurity and Infrastructure Security
+    Agency
+  title: IT CYBERSECURITY SPECIALIST (INFOSEC)
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743129200
+  remote: false
+  source: usajobs
+- id: '743169800'
+  posted: '2023-08-14T10:44:20.6270'
+  closes: '2023-08-28T23:59:59.9970'
+  agency: Securities and Exchange Commission
+  title: INFORMATION TECHNOLOGY SPECIALIST (INFOSEC) - CLOUD/VOIP SPECIALIST
+  grade: SK 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743169800
+  remote: false
+  source: usajobs
+- id: '743193700'
+  posted: '2023-08-15T00:00:00.0000'
+  closes: '2023-08-28T23:59:59.9970'
+  agency: Department of Commerce - National Oceanic and Atmospheric Administration
+  title: IT Specialist (Applications Software)
+  grade: ZP 4
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743193700
+  remote: false
+  source: usajobs
+- id: '743210700'
+  posted: '2023-08-14T12:26:01.0870'
+  closes: '2023-08-28T23:59:59.9970'
+  agency: General Services Administration - Office of the Chief Information Officer
+  title: IT Project Manager
+  grade: GS 14
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743210700
+  remote: true
+  source: usajobs
+- id: '743252900'
+  posted: '2023-08-14T14:07:38.1600'
+  closes: '2023-08-29T23:59:59.9970'
+  agency: Office of the Director of National Intelligence
+  title: Cyber Assessment Lead
+  grade: GS 14
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743252900
+  remote: false
+  source: usajobs
+- id: '743322800'
+  posted: '2023-08-14T17:02:09.4700'
+  closes: '2023-08-28T23:59:59.9970'
+  agency: 'Smithsonian Institution'
+  title: Chief Data Officer
+  grade: SL 00
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743322800
+  remote: false
+  source: usajobs
+  content: >-
+    The Smithsonian is hiring for their Chief Data Officer!  This is a Senior Leadership (SL) position (not an SES position)!
+- id: '743349100'
+  posted: '2023-08-15T00:00:00.0000'
+  closes: '2023-08-21T23:59:59.9970'
+  agency: Department of the Treasury - Treasury, Departmental Offices
+  title: IT Specialist (INFOSEC)
+  grade: GS 14
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743349100
+  remote: false
+  source: usajobs
+- id: '743381400'
+  posted: '2023-08-16T00:00:00.0000'
+  closes: '2023-08-25T23:59:59.9970'
+  agency: Department of Transportation - Federal Aviation Administration
+  title: IT Specialist (Systems Analysis)
+  grade: FV H
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743381400
+  remote: false
+  source: usajobs
+- id: '743428700'
+  posted: '2023-08-16T00:00:00.0000'
+  closes: '2023-08-22T23:59:59.9970'
+  agency: Department of Commerce - National Institute of Standards and Technology
+  title: IT Specialist (Applications Software)
+  grade: ZP 3
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743428700
+  remote: false
+  source: usajobs
+- id: '743484800'
+  posted: '2023-08-16T00:00:00.0000'
+  closes: '2023-09-15T23:59:59.9970'
+  agency: Judicial Branch - Administrative Office of the U.S. Courts
+  title: Deputy Chief Information Security Officer
+  grade: AD 00
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743484800
+  remote: false
+  source: usajobs
+- id: '743500300'
+  posted: '2023-08-16T00:00:00.0000'
+  closes: '2023-08-25T23:59:59.9970'
+  agency: >-
+    Department of Transportation - Pipeline and Hazardous Materials Safety
+    Administration
+  title: IT Cybersecurity Specialist (INFOSEC) - DIRECT HIRE
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743500300
+  remote: false
+  source: usajobs
+- id: '743521100'
+  posted: '2023-08-16T00:00:00.0000'
+  closes: '2023-08-30T23:59:59.9970'
+  agency: >-
+    Department of Homeland Security - Cybersecurity and Infrastructure Security
+    Agency
+  title: Supervisory Information Technology Specialist (INFOSEC)
+  grade: GS 14
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743521100
+  remote: false
+  source: usajobs
+- id: '743526800'
+  posted: '2023-08-15T14:27:37.4730'
+  closes: '2023-08-21T23:59:59.9970'
+  agency: Department of Health and Human Services - Indian Health Service
+  title: Supv IT Specialist (APPSW)-HIT Independent IV & V Manager
+  grade: GS 14
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743526800
+  remote: true
+  source: usajobs
+- id: '743605000'
+  posted: '2023-08-15T18:05:32.0700'
+  closes: '2023-08-29T23:59:59.9970'
+  agency: Department of Commerce - Patent and Trademark Office
+  title: IT Specialist
+  grade: GS 14
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743605000
+  remote: false
+  source: usajobs
+- id: '743625100'
+  posted: '2023-08-16T00:00:00.0000'
+  closes: '2023-08-29T23:59:59.9970'
+  agency: Department of Health and Human Services - Program Support Center
+  title: IT Specialist (SYSANALYSIS)
+  grade: GS 14
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743625100
+  remote: false
+  source: usajobs
+- id: '743627800'
+  posted: '2023-08-16T09:55:13.0070'
+  closes: '2023-08-25T23:59:59.9970'
+  agency: >-
+    Department of Agriculture - Farm Production and Conservation (FPAC) Business
+    Center
+  title: IT Project Manager
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743627800
+  remote: true
+  source: usajobs
+- id: '743696600'
+  posted: '2023-08-16T10:46:29.5930'
+  closes: '2023-08-25T23:59:59.9970'
+  agency: Department of the Treasury - Internal Revenue Service
+  title: Information Technology Specialist (Direct Hire)
+  grade: GS 12
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743696600
+  remote: false
+  source: usajobs
+- id: '743712900'
+  posted: '2023-08-16T11:26:10.8230'
+  closes: '2023-08-29T23:59:59.9970'
+  agency: Department of Homeland Security - Federal Emergency Management Agency
+  title: Information Technology Specialist
+  grade: GS 12
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743712900
+  remote: false
+  source: usajobs
+- id: '743735300'
+  posted: '2023-08-16T12:07:42.1630'
+  closes: '2023-08-25T23:59:59.9970'
+  agency: Department of Energy - Bonneville Power Administration
+  title: IT Specialist (SYSADMIN/INFOSEC)
+  grade: GS 13
+  url: https://www.usajobs.gov/GetJob/ViewDetails/743735300
+  remote: false
+  source: usajobs
 - id: '736562400'
   posted: '2023-08-11T00:00:00.0000'
   closes: '2023-08-25T23:59:59.9970'
@@ -227,12 +517,16 @@
 - id: '742639700'
   posted: '2023-08-11T00:00:00.0000'
   closes: '2023-09-11T23:59:59.9970'
-  agency: Department of Transportation - Office of the Secretary of Transportation
+  agency: Department of Transportation
   title: Associate Chief Information Officer for Application and Digital Solutions
   grade: ES 00
   url: https://www.usajobs.gov/GetJob/ViewDetails/742639700
   remote: false
   source: usajobs
+  content: >-
+    DoT is hiring for their ACIO for Application and Digital Solutions! This is
+    a senior executive service position and you'll need an SES-formatted resume
+    with ECQs to apply.
 - id: '742641900'
   posted: '2023-08-11T00:00:00.0000'
   closes: '2023-08-18T23:59:59.9970'
@@ -262,17 +556,6 @@
   title: SUPERVISORY INFORMATION TECHNOLOGY SPECIALIST (INFOSEC)
   grade: GS 14
   url: https://www.usajobs.gov/GetJob/ViewDetails/742663200
-  remote: false
-  source: usajobs
-- id: '742752300'
-  posted: '2023-08-11T00:00:00.0000'
-  closes: '2023-08-15T23:59:59.9970'
-  agency: >-
-    National Aeronautics and Space Administration - George C. Marshall Space
-    Flight Center
-  title: Information Technology Specialist (Data Management) (Direct Hire)
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/742752300
   remote: false
   source: usajobs
 - id: '742758300'
@@ -314,14 +597,13 @@
 - id: '742851800'
   posted: '2023-08-11T08:28:17.6430'
   closes: '2023-08-24T23:59:59.9970'
-  agency: >-
-    Department of Labor - Office of the Assistant Secretary for Administration
-    and Management
+  agency: Department of Labor
   title: IT Specialist (Enterprise Architecture)
   grade: GS 14
   url: https://www.usajobs.gov/GetJob/ViewDetails/742851800
   remote: true
   source: usajobs
+  content: Labor is hiring for an enterprise architect. This is a remote position!
 - id: '742866400'
   posted: '2023-08-11T09:14:13.9470'
   closes: '2023-08-17T23:59:59.9970'
@@ -330,15 +612,6 @@
   grade: GS 13
   url: https://www.usajobs.gov/GetJob/ViewDetails/742866400
   remote: false
-  source: usajobs
-- id: '742868500'
-  posted: '2023-08-11T09:18:48.4870'
-  closes: '2023-08-17T23:59:59.9970'
-  agency: Railroad Retirement Board
-  title: Supervisory IT Specialist (Network Services)
-  grade: GS 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/742868500
-  remote: true
   source: usajobs
 - id: '742894600'
   posted: '2023-08-11T10:16:42.6770'
@@ -385,19 +658,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/740652300
   remote: false
   source: usajobs
-- id: '741341000'
-  posted: '2023-08-07T00:00:00.0000'
-  closes: '2023-08-13T23:59:59.9970'
-  agency: Department of the Treasury
-  title: Public Key Infrastructure Program Manager
-  grade: GS 15
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741341000
-  remote: true
-  source: usajobs
-  content: >-
-    Treasury is hiring for a program manager for their Public Key Infrastructure
-    (PKI) Policy Management Authority (PMA). This is a rare non-supervisory,
-    fully remote GS 15 role, but requires deep subject matter expertise in PKI.
 - id: '741460500'
   posted: '2023-08-07T00:00:00.0000'
   closes: '2023-08-21T23:59:59.9970'
@@ -405,15 +665,6 @@
   title: Computer Scientist
   grade: GS 15
   url: https://www.usajobs.gov/GetJob/ViewDetails/741460500
-  remote: false
-  source: usajobs
-- id: '741560200'
-  posted: '2023-08-07T00:00:00.0000'
-  closes: '2023-08-11T23:59:59.9970'
-  agency: Department of Agriculture - Office of the Chief Information Officer
-  title: IT CYBERSECURITY SPECIALIST
-  grade: GS 12
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741560200
   remote: false
   source: usajobs
 - id: '741597500'
@@ -443,15 +694,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741642200
   remote: false
   source: usajobs
-- id: '741648900'
-  posted: '2023-08-04T16:57:13.3370'
-  closes: '2023-08-14T23:59:59.9970'
-  agency: District of Columbia Courts
-  title: Audio Electronic Technician
-  grade: JS 10
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741648900
-  remote: false
-  source: usajobs
 - id: '741650300'
   posted: '2023-08-05T00:00:00.0000'
   closes: '2023-08-14T23:59:59.9970'
@@ -459,17 +701,6 @@
   title: IT Specialist
   grade: GS 13
   url: https://www.usajobs.gov/GetJob/ViewDetails/741650300
-  remote: false
-  source: usajobs
-- id: '741656600'
-  posted: '2023-08-07T00:00:00.0000'
-  closes: '2023-08-14T23:59:59.9970'
-  agency: >-
-    Department of Veterans Affairs - Deputy Assistant Secretary for Information
-    and Technology
-  title: Lead IT Specialist (INFOSEC)
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741656600
   remote: false
   source: usajobs
 - id: '741696600'
@@ -498,15 +729,6 @@
   grade: GS 13
   url: https://www.usajobs.gov/GetJob/ViewDetails/741738800
   remote: false
-  source: usajobs
-- id: '741774600'
-  posted: '2023-08-08T00:00:00.0000'
-  closes: '2023-08-14T23:59:59.9970'
-  agency: Office of Personnel Management
-  title: Supervisory IT Cybersecurity Specialist
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741774600
-  remote: true
   source: usajobs
 - id: '741820100'
   posted: '2023-08-07T12:29:56.7770'
@@ -550,15 +772,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741881800
   remote: false
   source: usajobs
-- id: '741919300'
-  posted: '2023-08-07T16:37:08.0700'
-  closes: '2023-08-14T23:59:59.9970'
-  agency: Department of Homeland Security - Federal Emergency Management Agency
-  title: Information Technology Specialist (CUSTSPT)
-  grade: IC 11
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741919300
-  remote: false
-  source: usajobs
 - id: '741946300'
   posted: '2023-08-07T19:28:09.8600'
   closes: '2023-08-14T23:59:59.9970'
@@ -570,18 +783,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741946300
   remote: true
   source: usajobs
-- id: '741974200'
-  posted: '2023-08-09T00:00:00.0000'
-  closes: '2023-08-15T23:59:59.9970'
-  agency: Federal Deposit Insurance Corporation
-  title: Cyber Risk Managers
-  grade: CG 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741974200
-  remote: false
-  source: usajobs
-  content: >-
-    FDIC is hiring two Cybersecurity Specialists in their Cyber Risk Management
-    Section. FDIC features special pay and benefits and this role caps at $235K!
 - id: '741989600'
   posted: '2023-08-08T08:58:05.2100'
   closes: '2023-08-14T23:59:59.9970'
@@ -591,16 +792,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741989600
   remote: false
   source: usajobs
-- id: '742004400'
-  posted: '2023-08-08T09:41:35.3000'
-  closes: '2023-08-15T23:59:59.9970'
-  agency: Department of Transportation
-  title: IT Project Manager
-  grade: GS 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/742004400
-  remote: true
-  source: usajobs
-  content: DoT is hiring an IT Project Manager. This is a remote position!
 - id: '742022000'
   posted: '2023-08-02T00:00:00.0000'
   closes: '2023-08-23T23:59:59.9970'
@@ -672,15 +863,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/742215200
   remote: false
   source: usajobs
-- id: '739787900'
-  posted: '2023-07-31T00:00:00.0000'
-  closes: '2023-08-10T23:59:59.9970'
-  agency: Department of Commerce - National Oceanic and Atmospheric Administration
-  title: Supervisory IT Specialist (INFOSEC)
-  grade: ZP 4
-  url: https://www.usajobs.gov/GetJob/ViewDetails/739787900
-  remote: false
-  source: usajobs
 - id: '739981600'
   posted: '2023-07-31T00:00:00.0000'
   closes: '2023-08-14T23:59:59.9970'
@@ -688,15 +870,6 @@
   title: Information Technology Specialist
   grade: GS 14
   url: https://www.usajobs.gov/GetJob/ViewDetails/739981600
-  remote: false
-  source: usajobs
-- id: '740072000'
-  posted: '2023-08-02T00:00:00.0000'
-  closes: '2023-08-15T23:59:59.9970'
-  agency: Department of the Interior - Bureau of Land Management
-  title: IT Specialist (SysAdmin)
-  grade: GS 12
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740072000
   remote: false
   source: usajobs
 - id: '740137600'
@@ -708,15 +881,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/740137600
   remote: false
   source: usajobs
-- id: '740273200'
-  posted: '2023-07-31T08:05:23.7300'
-  closes: '2023-08-16T23:59:59.9970'
-  agency: Legislative Branch - Architect of the Capitol
-  title: Information Technology Specialist
-  grade: GS 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740273200
-  remote: false
-  source: usajobs
 - id: '740295700'
   posted: '2023-08-01T00:00:00.0000'
   closes: '2023-08-14T23:59:59.9970'
@@ -726,15 +890,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/740295700
   remote: false
   source: usajobs
-- id: '740441300'
-  posted: '2023-07-31T15:27:28.9300'
-  closes: '2023-08-15T23:59:59.9970'
-  agency: National Science Foundation
-  title: Interdisciplinary (Education and Workforce Program Director)
-  grade: AD 4
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740441300
-  remote: false
-  source: usajobs
 - id: '740464600'
   posted: '2023-08-01T00:00:00.0000'
   closes: '2024-07-31T23:59:59.9970'
@@ -742,17 +897,6 @@
   title: Supervisory Information Technology Specialist (Security)
   grade: AD 00
   url: https://www.usajobs.gov/GetJob/ViewDetails/740464600
-  remote: false
-  source: usajobs
-- id: '740713700'
-  posted: '2023-08-01T14:57:27.7800'
-  closes: '2023-08-16T23:59:59.9970'
-  agency: >-
-    Department of Homeland Security - Cybersecurity and Infrastructure Security
-    Agency
-  title: Information Technology Specialist (INFOSEC)
-  grade: GS 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740713700
   remote: false
   source: usajobs
 - id: '740755900'
@@ -769,15 +913,6 @@
     Controls Program within the Division of Examinations. SK 16 roles are GS 15
     equivalent, but reserved for non-supervisory subject matter experts. The SEC
     features special pay and benefits and this role caps at $272K!
-- id: '740781200'
-  posted: '2023-08-01T17:45:26.4530'
-  closes: '2023-08-18T23:59:59.9970'
-  agency: Federal Communications Commission
-  title: Supervisory IT Specialist (Infosec) (Cybersecurity Operations Manager)
-  grade: GS 15
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740781200
-  remote: false
-  source: usajobs
 - id: '740798400'
   posted: '2023-08-02T00:00:00.0000'
   closes: '2023-08-23T23:59:59.9970'
@@ -785,15 +920,6 @@
   title: Information Technology Specialist (INFOSEC)
   grade: GS 13
   url: https://www.usajobs.gov/GetJob/ViewDetails/740798400
-  remote: false
-  source: usajobs
-- id: '740814800'
-  posted: '2023-08-03T00:00:00.0000'
-  closes: '2023-08-14T23:59:59.9970'
-  agency: Department of the Treasury - Bureau of the Fiscal Service
-  title: Lead IT Specialist (APPSW)
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740814800
   remote: false
   source: usajobs
 - id: '740817600'
@@ -818,15 +944,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/740829600
   remote: false
   source: usajobs
-- id: '740833600'
-  posted: '2023-08-02T08:36:31.8300'
-  closes: '2023-08-16T23:59:59.9970'
-  agency: Department of Homeland Security - Federal Emergency Management Agency
-  title: IT Specialist (SYSADMIN)
-  grade: IC 11
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740833600
-  remote: false
-  source: usajobs
 - id: '740874100'
   posted: '2023-08-02T10:10:10.1970'
   closes: '2023-08-16T23:59:59.9970'
@@ -835,15 +952,6 @@
   grade: GS 12
   url: https://www.usajobs.gov/GetJob/ViewDetails/740874100
   remote: false
-  source: usajobs
-- id: '740908000'
-  posted: '2023-08-03T00:00:00.0000'
-  closes: '2023-08-09T23:59:59.9970'
-  agency: Office of Personnel Management
-  title: IT Specialist (ENTARCH)
-  grade: GS 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740908000
-  remote: true
   source: usajobs
 - id: '740925400'
   posted: '2023-08-02T12:02:45.9970'
@@ -857,15 +965,6 @@
   content: >-
     USAID is hiring a data scientist, roles are available at either the GS 13 or
     14 level. This is a remote position!
-- id: '740979200'
-  posted: '2023-08-03T00:00:00.0000'
-  closes: '2023-08-09T23:59:59.9970'
-  agency: Department of Agriculture - Office of the Chief Information Officer
-  title: IT Cybersecurity Specialist (RSK)
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/740979200
-  remote: false
-  source: usajobs
 - id: '740983400'
   posted: '2023-08-04T00:00:00.0000'
   closes: '2023-08-23T23:59:59.9970'
@@ -893,15 +992,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741010600
   remote: false
   source: usajobs
-- id: '741011000'
-  posted: '2023-08-02T15:04:44.7070'
-  closes: '2023-08-11T23:59:59.9970'
-  agency: Department of Energy - Bonneville Power Administration
-  title: IT Specialist (APPSW)
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741011000
-  remote: false
-  source: usajobs
 - id: '741079800'
   posted: '2023-08-04T00:00:00.0000'
   closes: '2023-08-14T23:59:59.9970'
@@ -922,15 +1012,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741147100
   remote: false
   source: usajobs
-- id: '741174300'
-  posted: '2023-08-03T10:21:54.3900'
-  closes: '2023-08-07T23:59:59.9970'
-  agency: Department of Homeland Security - Federal Emergency Management Agency
-  title: Supervisory IT Specialist (Operations)
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741174300
-  remote: false
-  source: usajobs
 - id: '741213600'
   posted: '2023-08-03T11:48:35.1770'
   closes: '2023-08-16T23:59:59.9970'
@@ -938,15 +1019,6 @@
   title: ITSPEC (APPSW)
   grade: GS 14
   url: https://www.usajobs.gov/GetJob/ViewDetails/741213600
-  remote: false
-  source: usajobs
-- id: '741263600'
-  posted: '2023-08-04T00:00:00.0000'
-  closes: '2023-08-10T23:59:59.9970'
-  agency: Department of Commerce - National Institute of Standards and Technology
-  title: IT Specialist (Customer Support)
-  grade: ZP 4
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741263600
   remote: false
   source: usajobs
 - id: '741267000'
@@ -960,17 +1032,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741267000
   remote: true
   source: usajobs
-- id: '741268200'
-  posted: '2023-08-04T00:00:00.0000'
-  closes: '2023-08-14T23:59:59.9970'
-  agency: >-
-    Department of Homeland Security - Cybersecurity and Infrastructure Security
-    Agency
-  title: IT CYBERSECURITY SPECIALIST (INFOSEC)
-  grade: GS 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741268200
-  remote: true
-  source: usajobs
 - id: '741275400'
   posted: '2023-08-04T00:00:00.0000'
   closes: '2023-08-14T23:59:59.9970'
@@ -982,17 +1043,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741275400
   remote: false
   source: usajobs
-- id: '741277400'
-  posted: '2023-08-04T00:00:00.0000'
-  closes: '2023-08-14T23:59:59.9970'
-  agency: >-
-    Department of Homeland Security - Cybersecurity and Infrastructure Security
-    Agency
-  title: IT Cybersecurity Specialist (INFOSEC)
-  grade: GS 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741277400
-  remote: true
-  source: usajobs
 - id: '741317600'
   posted: '2023-08-04T00:00:00.0000'
   closes: '2023-08-18T23:59:59.9970'
@@ -1002,19 +1052,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/741317600
   remote: false
   source: usajobs
-- id: '741336000'
-  posted: '2023-08-04T00:00:00.0000'
-  closes: '2023-08-17T23:59:59.9970'
-  agency: Department of Labor
-  title: Director of Data Services
-  grade: GS 15
-  url: https://www.usajobs.gov/GetJob/ViewDetails/741336000
-  remote: true
-  source: usajobs
-  content: >-
-    DoL is hiring for their Director of Data Services, overseeing and directing
-    data management and analytics teams to design and implement enterprise-wide
-    data management, business intelligence and advanced analytics projects.
 - id: '741344600'
   posted: '2023-08-04T00:00:00.0000'
   closes: '2023-08-18T23:59:59.9970'
@@ -1033,15 +1070,6 @@
   title: Supervisory IT Specialist
   grade: GS 15
   url: https://www.usajobs.gov/GetJob/ViewDetails/741561400
-  remote: false
-  source: usajobs
-- id: '739831300'
-  posted: '2023-07-28T00:00:00.0000'
-  closes: '2023-08-10T23:59:59.9970'
-  agency: Department of State - Department of State - Agency Wide
-  title: Information Technology Management (CUSTSPT)
-  grade: GS 12
-  url: https://www.usajobs.gov/GetJob/ViewDetails/739831300
   remote: false
   source: usajobs
 - id: '739893800'
@@ -1066,15 +1094,6 @@
     Senior Congressional Innovation Fellowship (mid-career), Congressional
     Innovation Fellowship (early-career), and the Congressional Digital Service
     Fellowship.
-- id: '739821000'
-  posted: '2023-07-27T13:31:51.5270'
-  closes: '2023-08-09T23:59:59.9970'
-  agency: Environmental Protection Agency
-  title: Computer Scientist
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/739821000
-  remote: false
-  source: usajobs
 - id: '739625500'
   posted: '2023-07-27T10:38:34.8800'
   closes: '2023-08-05T23:59:59.9970'
@@ -1082,15 +1101,6 @@
   title: IT Specialist
   grade: GS 13
   url: https://www.usajobs.gov/GetJob/ViewDetails/739625500
-  remote: false
-  source: usajobs
-- id: '739598800'
-  posted: '2023-07-26T16:02:54.8730'
-  closes: '2023-08-14T23:59:59.9970'
-  agency: Legislative Branch - Architect of the Capitol
-  title: Information Technology Specialist (Security)
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/739598800
   remote: false
   source: usajobs
 - id: '739567800'
@@ -1102,22 +1112,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/739567800
   remote: false
   source: usajobs
-- id: '739334300'
-  posted: '2023-07-26T06:13:07.7630'
-  closes: '2023-08-28T23:59:59.9970'
-  agency: National Science Foundation
-  title: >-
-    Deputy Office Head, Office of Business Information Technology Services &
-    Deputy CIO
-  grade: ES 00
-  url: https://www.usajobs.gov/GetJob/ViewDetails/739334300
-  remote: false
-  source: usajobs
-  content: >
-    NSF is hiring for their Deputy Head of the Office of Business Information
-    Technology Services (BIT) and Deputy Chief Information Officer! This is a
-    senior excutive service position and yo'll need an SES-formatted resume with
-    ECQs to apply.
 - id: '739152800'
   posted: '2023-07-25T12:28:10.8370'
   closes: '2023-08-01T23:59:59.9970'
@@ -1125,15 +1119,6 @@
   title: IT Specialist  (CUSTSPT)
   grade: IC 11
   url: https://www.usajobs.gov/GetJob/ViewDetails/739152800
-  remote: false
-  source: usajobs
-- id: '738924700'
-  posted: '2023-07-24T14:50:11.9570'
-  closes: '2023-08-08T23:59:59.9970'
-  agency: Office of the Director of National Intelligence
-  title: IT Services Program Manager
-  grade: GS 14
-  url: https://www.usajobs.gov/GetJob/ViewDetails/738924700
   remote: false
   source: usajobs
 - id: '738744600'
@@ -1145,17 +1130,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/738744600
   remote: false
   source: usajobs
-- id: '738639700'
-  posted: '2023-07-24T00:00:00.0000'
-  closes: '2023-08-02T23:59:59.9970'
-  agency: >-
-    Department of Health and Human Services - Centers for Medicare & Medicaid
-    Services
-  title: IT Specialist (Security)
-  grade: GS 13
-  url: https://www.usajobs.gov/GetJob/ViewDetails/738639700
-  remote: false
-  source: usajobs
 - id: '738366900'
   posted: '2023-07-20T10:10:28.6900'
   closes: '2023-08-02T23:59:59.9970'
@@ -1165,18 +1139,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/738366900
   remote: false
   source: usajobs
-- id: '738097600'
-  posted: '2023-07-21T00:00:00.0000'
-  closes: '2023-07-27T23:59:59.9970'
-  agency: Department of Agriculture - Office of the Chief Information Officer
-  title: Director of Digital Services
-  grade: GS 15
-  url: https://www.usajobs.gov/GetJob/ViewDetails/738097600
-  remote: false
-  source: usajobs
-  content: >-
-    USDA is hiring for their Director of Digital Services! This is a fantastic
-    opportunity at an agency with a huge mission!
 - id: '737795700'
   posted: '2023-07-18T11:17:43.3430'
   closes: '2023-08-01T23:59:59.9970'
@@ -1184,15 +1146,6 @@
   title: Information Technology Specialist (Customer Support/Network)
   grade: GS 12
   url: https://www.usajobs.gov/GetJob/ViewDetails/737795700
-  remote: false
-  source: usajobs
-- id: '737303600'
-  posted: '2023-07-17T00:00:00.0000'
-  closes: '2023-07-31T23:59:59.9970'
-  agency: Department of Commerce - National Oceanic and Atmospheric Administration
-  title: IT Specialist (SYSADMIN/CUSTSPT)
-  grade: ZP 3
-  url: https://www.usajobs.gov/GetJob/ViewDetails/737303600
   remote: false
   source: usajobs
 - id: '734574900'
