@@ -57,6 +57,8 @@ For an explanation of pay grades, term positions, the senior executive service, 
     {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
     {% assign description = description | append: afterwards %}
   {% endif %}
+  {% assign url = post.url %}
+  {% assign image = post.image %}
 
   {% include card-template.html
      title=title
