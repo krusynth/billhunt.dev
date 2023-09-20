@@ -1,20 +1,20 @@
-<article class="post-multiple {{ classes }}">
+<article class="post-multiple {{ include.classes }}">
   <header class="post-header hoverable">
-    <h3 class="post-title"><a href="{{ url }}" {% if url contains 'http' %}{% else %}up-follow{% endif %}>
-      {{ title }}
+    <h3 class="post-title"><a href="{{ include.url }}" {% if include.url contains 'http' %}{% else %}up-follow{% endif %}>
+      {{ include.title }}
     </a></h3>
   </header>
   <section class="post-content">
-    {% if image %}
+    {% if include.image %}
       <p class="featured-image-box">
-        <a href="{{ url }}" {% if url contains 'http' %}{% else %}up-follow{% endif %}>
-          <img src="{{ image }}" class="featured-image" alt="Image of {{ title }}">
+        <a href="{{ include.url }}" {% if include.url contains 'http' %}{% else %}up-follow{% endif %}>
+          <img src="{{ include.image }}" class="featured-image" alt="Image of {{ include.title }}">
         </a>
       </p>
     {% endif %}
-    {{ description | markdownify }}
+    {{ include.description | markdownify }}
     <p class="action-box">
-      <a href="{{ url }}" class="btn" {% if url contains 'http' %}{% else %}up-follow{% endif %}>{% if action %}{{ action }}{% elsif page.action %}{{ page.action }}{% else %}Check It Out{% endif %}</a>
+      <a href="{{ include.url }}" class="btn" {% if include.url contains 'http' %}{% else %}up-follow{% endif %}>{% if include.action %}{{ include.action }}{% elsif page.action %}{{ page.action }}{% else %}Check It Out{% endif %}</a>
     </p>
   </section>
 </article>

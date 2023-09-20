@@ -19,8 +19,10 @@ layout: default
 
   <div class="posts-container">
     {% for post in paginator.posts %}
+
       {% assign url = post.url %}
-      {% if post.link %}{% assign url = post.link %}{% endif %}
+      {% if post.link %}{% unless post.link contains site.url %}{% assign url = post.link %}{% endunless %}{% endif %}
+
       <article class="post-multiple">
         <header class="post-header hoverable">
           <h3 class="post-title"><a href="{{ url }}"{% if url contains 'http' %}{% else %}up-follow{% endif %}>{{ post.title }}</a></h3>
