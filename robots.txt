@@ -1,8 +1,5 @@
-User-agent: Googlebot
-Disallow: /blog/
-Disallow: /recommended/
-Disallow: /links/
-Disallow: /jobs/
+User-agent: Google-Extended
+Disallow: /
 
 User-agent: GPTBot
 Disallow: /
