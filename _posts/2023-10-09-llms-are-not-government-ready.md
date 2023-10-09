@@ -31,7 +31,7 @@ At a minimum, LLMs should expose neither the additional training data that a cus
 Although the government can attempt to prohibit federal staff from putting sensitive information into queries of the systems, inevitably someone will break the rule, as was seen in the [Samsung leak in ChatGPT](https://cybernews.com/security/chatgpt-samsung-leak-explained-lessons/). But as these platforms are still very new and being rapidly - perhaps _carelessly_ - developed, even experienced developers working for megacorporations can accidentally expose huge amounts of sensitive information with a single accidental command, [as happened with Microsoft earlier this year](https://techcrunch.com/2023/09/18/microsoft-ai-researchers-accidentally-exposed-terabytes-of-internal-sensitive-data/
 ).
 
-That's the most obvious concern, and it exists for any IT system. The other two require a hard look at how the LLMs actually work.
+That's the most obvious concern, and it exists for any IT system. The other concerns require a hard look at how the LLMs actually work.
 
 
 ## Risk 2: Dangerous Source Data
