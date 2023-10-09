@@ -70,4 +70,4 @@ If these bots cannot even be trusted to produce true information, why would anyo
 
 I remain a futurist, and a cyberpunk, yet I find myself frequently [reconsidering the Luddites](https://www.newyorker.com/books/page-turner/rethinking-the-luddites-in-the-age-of-ai).  The increased use of AI is inevitable, and I do have faith that the models will be improved over time.
 
-But for now, the current state of the art is a bunch of lying, racists, garbage bots - snake oil salesmen and shysters of the modern age. The government should not put its trust in these tools for a long, long time. They are simply outside of our tolerance for risk.
+But for now, the current state of the art is a bunch of lying, racist, garbage bots - snake oil salesmen and shysters of the modern age. The government should not put its trust in these tools for a long, long time. They are simply outside of our tolerance for risk.
