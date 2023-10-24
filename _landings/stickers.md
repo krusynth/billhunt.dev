@@ -7,9 +7,9 @@ layout: page
 excerpt: I make stickers, and I'd like to send you some for free!
 ---
 
-It's coming up on two years since I launched my [original sticker project](/move-carefully/), and in that time I've given out nearly 800 stickers, and we've raised over $1700 for charity! However, things must evolve to grow!
+It's coming up on three years since I launched my [original sticker project](/move-carefully/)! In that time I've given out over a thousand stickers to 16 countries around the world, and we've raised $4,159.72 for charity as of October 24, 2023!
 
-Today, to go along with my **Move Carefully and Fix Things** stickers I'm announcing the launch of an additional sticker design, based on my popular t-shirts: **Govpunk**!
+I have two different sticker designs which I'm giving out: **Move Carefully and Fix Things** and **Govpunk**.
 
 ![A Govpunk sticker, white text on a red eleven-pointed star with a black background, next to a Move Carefully and Fix Things sticker, with white lettering on a blue background.](https://billhunt.dev/uploads/2023/01/stickers.jpg)
 
