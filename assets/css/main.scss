@@ -138,7 +138,42 @@ a:not([href]):not([class]) {
   &.inactive {
     color: lighten($dark, 20%);
     background-color: #aaa;
+  }
+}
 
+.checkbox-btn {
+  input[type="checkbox"],
+  input[type="radio"], {
+    position: absolute;
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:not(:checked) + span,
+  input[type="radio"]:not(:checked) + span, {
+    color: lighten($dark, 20%);
+    background-color: #aaa;
+  }
+
+  input[type="checkbox"]:checked + span,
+  input[type="radio"]:checked + span {
+    top: 5px;
+    box-shadow: none;
+    color: $white;
+    // background-color: lighten($blue, 5%);
+  }
+  .jobs & {
+    input[type="checkbox"]:checked + span,
+    input[type="radio"]:checked + span {
+      background-color: $purple;
+    }
+  }
+}
+
+.radio-group {
+  white-space: nowrap;
+
+  label {
+    margin-right: -5px;
   }
 }
 

@@ -73,6 +73,13 @@ Not finding what you're looking for? Here are some other great jobs boards:
     {% assign classes = classes | append: ' remote' %}
     {% assign title = title | append: ' (Remote)' %}
   {% endif %}
+  {% if post.grade contains 'ES' %}
+    {% assign classes = classes | append: ' grade-ses grade-15 grade-14' %}
+  {% elsif post.grade contains '15' %}
+    {% assign classes = classes | append: ' grade-15 grade-14' %}
+  {% elsif post.grade contains '14' %}
+    {% assign classes = classes | append: ' grade-14' %}
+  {% endif %}
 
   {% assign description = post.content %}
   {% if post.closes %}
