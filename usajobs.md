@@ -53,7 +53,7 @@ For an explanation of pay grades, term positions, the senior executive service, 
   {% endif %}
   {% if post.grade contains 'ES' %}
     {% assign classes = classes | append: ' grade-ses grade-15 grade-14' %}
-  {% elsif post.grade contains '15' %}
+  {% elsif post.grade contains '15' or post.grade contains '16' or post.grade contains '17' %}
     {% assign classes = classes | append: ' grade-15 grade-14' %}
   {% elsif post.grade contains '14' %}
     {% assign classes = classes | append: ' grade-14' %}
