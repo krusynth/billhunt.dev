@@ -24,7 +24,7 @@ For my curated list, check out the **[main jobs page](/jobs/)**.
 
 For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
 
-**All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies.**
+**All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies. The filters provided may miss posts with unusual naming or grade scales.**
 
 {% assign now = 'now' | date: '%s' %}
 
