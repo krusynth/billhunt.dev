@@ -1065,6 +1065,7 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/755358600
   remote: false
   source: usajobs
+  content: The Bureau of Industry and Security is hiring for their CIO! This is a senior executive service position and you'll need an SES-formatted resume to apply.
 - id: '754571700'
   posted: '2023-10-16T00:00:00.0000'
   closes: '2023-10-20T23:59:59.9970'
