@@ -27,7 +27,7 @@ All descriptions below are added by me, based on my knowledge of the agency and 
 
 {% assign now = 'now' | date: '%s' %}
 
-{% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission,National Credit Union Administration' | split:',' %}
+{% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission,National Credit Union Administration,Department of the Treasury - Office of Financial Research' | split:',' %}
 
 {% capture jobs -%}
 
@@ -40,7 +40,7 @@ All descriptions below are added by me, based on my knowledge of the agency and 
   {% endif %}
 
   {% assign classes = 'job-post' %}
-  {% if specialpay contains post.agency %}
+  {% if specialpay contains post.agency or post.grade contains 'OR' %}
     {% assign classes = classes | append: ' special-pay' %}
   {% endif %}
   {% if post.title contains 'INFOSEC' or post.title contains 'Security' %}

@@ -50,7 +50,7 @@ Not finding what you're looking for? Here are some other great jobs boards:
 
 {% assign now = 'now' | date: '%s' %}
 
-{% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission,National Credit Union Administration' | split:',' %}
+{% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission,National Credit Union Administration,Department of the Treasury - Office of Financial Research' | split:',' %}
 
 {% capture jobs -%}
 
@@ -63,7 +63,7 @@ Not finding what you're looking for? Here are some other great jobs boards:
   {% endif %}
 
   {% assign classes = 'job-post' %}
-  {% if specialpay contains post.agency %}
+  {% if specialpay contains post.agency or post.grade contains 'OR' %}
     {% assign classes = classes | append: ' special-pay' %}
   {% endif %}
   {% if post.title contains 'INFOSEC' or post.title contains 'Security' %}
