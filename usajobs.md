@@ -8,6 +8,7 @@ feed:
   title: RSS feed of the full jobs list
   link: /usajobs.xml
 ---
+For my curated list, check out the **[main jobs page](/jobs/)**.
 
 This is a list of all USAJobs postings that match all of the following criteria:
 
@@ -18,13 +19,11 @@ This is a list of all USAJobs postings that match all of the following criteria:
 
 [The script I use to fetch these positions from the USAJobs API is available on GitHub.](https://github.com/krusynth/usajobs-feed)
 
-Note: this list also includes non-federal civic tech and public interest jobs that caught my eye.
-
-For my curated list, check out the **[main jobs page](/jobs/)**.
+This list also includes non-federal civic tech and public interest jobs that caught my eye.
 
 For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
 
-**All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies. The filters provided may miss posts with unusual naming or grade scales.**
+All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies. The filters provided may miss posts with unusual naming or grade scales.
 
 {% assign now = 'now' | date: '%s' %}
 
