@@ -32,48 +32,8 @@ All descriptions below are added by me, based on my knowledge of the agency and 
 {% capture jobs -%}
 
 {% assign posts = site.data.usajobs %}
-{%- for post in posts %}
-  {% assign title = post.agency | append: ' - ' | append: post.title %}
 
-  {% if post.grade %}
-    {% assign title = title | append: ' (' | append: post.grade | append: ')' %}
-  {% endif %}
-
-  {% assign classes = 'job-post' %}
-  {% if specialpay contains post.agency or post.grade contains 'OR' %}
-    {% assign classes = classes | append: ' special-pay' %}
-  {% endif %}
-  {% if post.title contains 'INFOSEC' or post.title contains 'Security' %}
-    {% assign classes = classes | append: ' security' %}
-  {% endif %}
-  {% if post.remote %}
-    {% assign classes = classes | append: ' remote' %}
-    {% assign title = title | append: ' (Remote)' %}
-  {% endif %}
-  {% if post.grade contains 'ES' %}
-    {% assign classes = classes | append: ' grade-ses grade-15 grade-14' %}
-  {% elsif post.grade contains '15' or post.grade contains '16' or post.grade contains '17' %}
-    {% assign classes = classes | append: ' grade-15 grade-14' %}
-  {% elsif post.grade contains '14' %}
-    {% assign classes = classes | append: ' grade-14' %}
-  {% endif %}
-
-  {% assign description = post.content %}
-  {% if post.closes %}
-    {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
-    {% assign description = description | append: afterwards %}
-  {% endif %}
-  {% assign url = post.url %}
-  {% assign image = post.image %}
-
-  {% include card-template.html
-     title=title
-     image=post.image
-     description=description
-     url=post.url
-     classes=classes
-%}
-{% endfor -%}
+{% include jobs-list.html posts=posts %}
 
 {%- endcapture -%}
 {%- assign page = page | setval: 'jobs', jobs -%}

@@ -1,0 +1,88 @@
+{%- for post in posts %}
+  {% assign title = post.agency | append: ' - ' | append: post.title %}
+
+  {% assign classes = 'job-post' %}
+  {% if post.specialPay %}
+    {% assign classes = classes | append: ' special-pay' %}
+  {% endif %}
+
+  {% assign titleLower = post.title | downcase %}
+  {% if titleLower contains 'infosec' or titleLower contains 'security' %}
+    {% assign classes = classes | append: ' security' %}
+  {% endif %}
+
+  {% if post.lowGrade == post.highGrade %}
+    {% if post.lowGradeEquiv %}
+      {% assign grade = post.lowGradeEquiv %}
+      {% assign gradeText = post.lowGradeEquiv | append: ' equivalent' %}
+    {% else %}
+      {% assign grade = post.lowGrade %}
+      {% assign gradeText = post.lowGrade %}
+    {% endif %}
+
+  {% else %}
+    {% if post.lowGradeEquiv %}
+      {% assign grade = post.highGradeEquiv %}
+      {% assign gradeText = post.lowGradeEquiv | append: '-' | append: post.highGradeEquiv | append: ' equivalent' %}
+    {% else %}
+      {% assign grade = post.highGrade %}
+      {% assign gradeText = post.lowGrade | append: '-' | append: post.highGrade %}
+    {% endif %}
+  {% endif %}
+
+  {% assign title = title | append: ' (' | append: gradeText | append: ')' %}
+
+  {% if grade contains 'ES' %}
+    {% assign classes = classes | append: ' grade-ses grade-15 grade-14' %}
+
+  {% elsif grade contains '15' or post.grade contains '16' or post.grade contains '17' %}
+    {% assign classes = classes | append: ' grade-15 grade-14' %}
+
+  {% elsif grade contains '14' %}
+    {% assign classes = classes | append: ' grade-14' %}
+  {% endif %}
+
+  {% if post.remote %}
+    {% assign classes = classes | append: ' remote' %}
+    {% assign title = title | append: ' (Remote)' %}
+  {% endif %}
+
+  {% assign description = post.content %}
+  {% if post.salaryMin && post.salaryMax %}
+    {% capture afterwards -%}
+      {%- assign figs = post.salaryMin | append: '' | size -%}
+      {%- if figs == 5 -%}
+        ${{ post.salaryMin | slice: 0,2 }},{{ post.salaryMin | slice: 2,3 }}
+      {%- elsif figs == 6 -%}
+        ${{ post.salaryMin | slice: 0,3 }},{{ post.salaryMin | slice: 3,3 }}
+      {%- else -%}
+        ${{ post.salaryMin}}
+      {%- endif -%}
+      -
+      {%- assign figs = post.salaryMax | append: '' | size -%}
+      {%- if figs == 5 -%}
+        ${{ post.salaryMax | slice: 0,2 }},{{ post.salaryMax | slice: 2,3 }}
+      {%- elsif figs == 6 -%}
+        ${{ post.salaryMax | slice: 0,3 }},{{ post.salaryMax | slice: 3,3 }}
+      {%- else -%}
+        ${{ post.salaryMax}}
+      {%- endif -%}
+    {% endcapture %}
+    {% assign description = description | append: ' Salary ' | append: afterwards %}
+  {% endif %}
+  {% if post.closes %}
+    {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
+    {% assign description = description | append: afterwards %}
+  {% endif %}
+
+  {% assign url = post.url %}
+  {% assign image = post.image %}
+
+  {% include card-template.html
+     title=title
+     url=url
+     image=image
+     description=description
+     classes=classes
+  %}
+{% endfor -%}
