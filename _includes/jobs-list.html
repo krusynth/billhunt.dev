@@ -48,6 +48,7 @@
   {% endif %}
 
   {% assign description = post.content %}
+
   {% if post.salaryMin && post.salaryMax %}
     {% capture afterwards -%}
       {%- assign figs = post.salaryMin | append: '' | size -%}
