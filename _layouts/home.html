@@ -232,7 +232,7 @@ layout: default
       <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fas fa-rss"></span></a>
     </h2>
 
-    {% assign posts = site.data.usajobs | where_exp:"job", "job.content" | limit: 3 %}
+    {% assign posts = site.data.usajobs | where_exp:"job", "job.content" | slice: 0, 3 %}
     {% include jobs-list.html posts=posts %}
 
     <a href="/jobs/" class="btn" up-follow>More Jobs</a>
