@@ -1,15 +1,272 @@
-- id: '752747400'
-  posted: '2023-11-01T00:00:00.0000'
-  closes: '2023-11-15T23:59:59.9970'
+- id: '759003500'
+  posted: '2023-11-13T00:00:00.0000'
+  closes: '2023-11-27T23:59:59.9970'
+  agency: Department of the Interior - Bureau of Land Management
+  title: IT Specialist (APPSW)
+  lowGrade: GS 12
+  highGrade: GS 12
+  salaryMin: 82830
+  salaryMax: 107680
+  url: https://www.usajobs.gov/GetJob/ViewDetails/759003500
+  remote: true
+  source: usajobs
+- id: '760030200'
+  posted: '2023-11-13T00:00:00.0000'
+  closes: '2023-11-17T23:59:59.9970'
+  agency: Railroad Retirement Board
+  title: User Experience Architect
+  lowGrade: GS 13
+  highGrade: GS 13
+  salaryMin: 84546
+  salaryMax: 109908
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760030200
+  remote: true
+  source: usajobs
+  content: The Railroad Retirement Board is hiring a User Experience Architect. This is a remote position!
+- id: '760046200'
+  posted: '2023-11-13T00:00:00.0000'
+  closes: '2023-11-28T23:59:59.9970'
+  agency: Legislative Branch - Library of Congress
+  title: Head Network Management Section
+  lowGrade: GS 14
+  highGrade: GS 14
+  salaryMin: 132368
+  salaryMax: 172075
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760046200
+  remote: false
+  source: usajobs
+- id: '760075800'
+  posted: '2023-11-13T00:00:00.0000'
+  closes: '2023-11-27T23:59:59.9970'
+  agency: Department of Commerce - National Oceanic and Atmospheric Administration
+  title: IT Specialist (Network Services)
+  lowGrade: ZP 3
+  highGrade: ZP 3
+  salaryMin: 81961
+  salaryMax: 121239
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760075800
+  remote: false
+  source: usajobs
+- id: '760165200'
+  posted: '2023-11-13T00:00:00.0000'
+  closes: '2023-11-17T23:59:59.9970'
+  agency: Department of Agriculture - Office of the Chief Information Officer
+  title: IT CYBERSECURITY SPECIALIST (CIR)
+  lowGrade: GS 13
+  highGrade: GS 13
+  salaryMin: 84546
+  salaryMax: 109908
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760165200
+  remote: false
+  source: usajobs
+- id: '760184100'
+  posted: '2023-11-13T00:00:00.0000'
+  closes: '2023-11-24T23:59:59.9970'
+  agency: Federal Deposit Insurance Corporation
+  title: Salesforce Technical Architect
+  lowGrade: CG 13
+  highGrade: CG 14
+  salaryMin: 122864
+  salaryMax: 235067
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760184100
+  remote: false
+  source: usajobs
+  specialPay: true
+  lowGradeEquiv: GS 13
+  highGradeEquiv: GS 14
+  content: FDIC is hiring for a Salesforce Technical Architect.
+- id: '760316800'
+  posted: '2023-11-14T00:00:00.0000'
+  closes: '2023-11-20T23:59:59.9970'
+  agency: Department of the Treasury - Treasury, Departmental Offices
+  title: Information Technology Specialist (Policy & Planning)
+  lowGrade: GS 12
+  highGrade: GS 14
+  salaryMin: 94199
+  salaryMax: 172075
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760316800
+  remote: false
+  source: usajobs
+- id: '760361500'
+  posted: '2023-11-13T12:53:12.9830'
+  closes: '2023-11-28T23:59:59.9970'
+  agency: Federal Maritime Commission
+  title: Computer Scientist
+  lowGrade: GS 14
+  highGrade: GS 14
+  salaryMin: 132368
+  salaryMax: 172075
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760361500
+  remote: false
+  source: usajobs
+- id: '760433200'
+  posted: '2023-11-14T09:43:33.7430'
+  closes: '2023-11-29T23:59:59.9970'
+  agency: Department of Veterans Affairs - Veterans Affairs, Inspector General
+  title: Information Technology Specialist (INFOSEC)
+  lowGrade: GS 14
+  highGrade: GS 14
+  salaryMin: 132368
+  salaryMax: 172075
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760433200
+  remote: false
+  source: usajobs
+- id: '760457100'
+  posted: '2023-11-14T00:00:00.0000'
+  closes: '2023-11-27T23:59:59.9970'
+  agency: Department of Commerce - National Oceanic and Atmospheric Administration
+  title: IT Specialist (Applications Software)
+  lowGrade: ZP 2
+  highGrade: ZP 3
+  salaryMin: 53105
+  salaryMax: 122459
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760457100
+  remote: false
+  source: usajobs
+- id: '760485000'
+  posted: '2023-11-14T08:03:34.7870'
+  closes: '2023-11-18T23:59:59.9970'
+  agency: Department of the Treasury - Bureau of Engraving and Printing
+  title: Information Technology Specialist (INFOSEC)
+  lowGrade: GS 13
+  highGrade: GS 13
+  salaryMin: 106841
+  salaryMax: 145617
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760485000
+  remote: false
+  source: usajobs
+- id: '760487100'
+  posted: '2023-11-14T08:10:50.0170'
+  closes: '2023-11-28T23:59:59.9970'
+  agency: Department of the Treasury - U.S. Mint
+  title: IT Specialist (CUSTSPT) (Senior Specialist Data Center)
+  lowGrade: GS 13
+  highGrade: GS 13
+  salaryMin: 112015
+  salaryMax: 145617
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760487100
+  remote: false
+  source: usajobs
+- id: '760503800'
+  posted: '2023-11-15T00:00:00.0000'
+  closes: '2023-11-24T23:59:59.9970'
+  agency: >-
+    Department of Homeland Security - Cybersecurity and Infrastructure Security
+    Agency
+  title: Supervisory IT Cybersecurity Specialist (INFOSEC)
+  lowGrade: GS 15
+  highGrade: GS 15
+  salaryMin: 155700
+  salaryMax: 183500
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760503800
+  remote: false
+  source: usajobs
+- id: '760515500'
+  posted: '2023-11-15T00:00:00.0000'
+  closes: '2023-11-29T23:59:59.9970'
   agency: Judicial Branch - Administrative Office of the U.S. Courts
-  title: Information Technology Specialist (Applications Software)
+  title: Supervisory Information Technology Specialist (Security)
   lowGrade: AD 00
   highGrade: AD 00
   salaryMin: 94199
   salaryMax: 176555
-  url: https://www.usajobs.gov/GetJob/ViewDetails/752747400
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760515500
   remote: false
   source: usajobs
+- id: '760516400'
+  posted: '2023-11-15T00:00:00.0000'
+  closes: '2023-11-29T23:59:59.9970'
+  agency: Department of the Interior - National Park Service
+  title: IT Specialist (Customer Support)
+  lowGrade: GS 12
+  highGrade: GS 12
+  salaryMin: 92279
+  salaryMax: 119964
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760516400
+  remote: false
+  source: usajobs
+- id: '760559700'
+  posted: '2023-11-14T11:54:03.7870'
+  closes: '2023-11-28T23:59:59.9970'
+  agency: Department of Commerce - Patent and Trademark Office
+  title: Data Management Specialist
+  lowGrade: GS 14
+  highGrade: GS 14
+  salaryMin: 132368
+  salaryMax: 172075
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760559700
+  remote: true
+  source: usajobs
+  content: PTO is hiring for a Data Management Specialist on their Enterprise Architecture team to help drive the delivery of their new Configuration Management Database. This is a remote position!
+- id: '760584200'
+  posted: '2023-11-15T00:00:00.0000'
+  closes: '2023-11-22T23:59:59.9970'
+  agency: >-
+    Department of Veterans Affairs - Deputy Assistant Secretary for Information
+    and Technology
+  title: Supervisory IT Specialist (Operating Systems/Systems Administration)
+  lowGrade: GS 13
+  highGrade: GS 13
+  salaryMin: 84546
+  salaryMax: 109908
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760584200
+  remote: false
+  source: usajobs
+- id: '760598100'
+  posted: '2023-11-14T12:56:45.5930'
+  closes: '2023-11-20T23:59:59.9970'
+  agency: >-
+    Department of Veterans Affairs - Immediate Office of the Assistant Secretary
+    for Information and Technology
+  title: IT Specialist (PLCYPLN)
+  lowGrade: GS 14
+  highGrade: GS 14
+  salaryMin: 116393
+  salaryMax: 183500
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760598100
+  remote: true
+  source: usajobs
+- id: '760729000'
+  posted: '2023-11-14T18:26:37.2630'
+  closes: '2023-11-28T23:59:59.9970'
+  agency: >-
+    Department of Health and Human Services - Centers for Disease Control and
+    Prevention
+  title: Computer Scientist (Informatics)
+  lowGrade: GS 11
+  highGrade: GS 12
+  salaryMin: 69107
+  salaryMax: 107680
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760729000
+  remote: true
+  source: usajobs
+- id: '760753400'
+  posted: '2023-11-15T07:11:08.6100'
+  closes: '2023-11-21T23:59:59.9970'
+  agency: Department of Veterans Affairs - Veterans Health Administration
+  title: Computer Scientist
+  lowGrade: GS 12
+  highGrade: GS 12
+  salaryMin: 83634
+  salaryMax: 108724
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760753400
+  remote: false
+  source: usajobs
+- id: '760850300'
+  posted: '2023-11-15T11:35:22.2730'
+  closes: '2023-11-28T23:59:59.9970'
+  agency: Federal Deposit Insurance Corporation
+  title: Senior IT Specialist (INFOSEC)
+  lowGrade: CG 14
+  highGrade: CG 14
+  salaryMin: 145188
+  salaryMax: 235067
+  url: https://www.usajobs.gov/GetJob/ViewDetails/760850300
+  remote: false
+  source: usajobs
+  specialPay: true
+  lowGradeEquiv: GS 14
+  highGradeEquiv: GS 14
 - id: '757387300'
   posted: '2023-10-31T00:00:00.0000'
   closes: '2023-11-14T23:59:59.9970'
@@ -25,18 +282,6 @@
   specialPay: true
   lowGradeEquiv: GS 14
   highGradeEquiv: GS 14
-- id: '757640700'
-  posted: '2023-10-30T00:00:00.0000'
-  closes: '2023-11-13T23:59:59.9970'
-  agency: Department of Commerce - National Oceanic and Atmospheric Administration
-  title: Data Scientist
-  lowGrade: ZP 3
-  highGrade: ZP 3
-  salaryMin: 69107
-  salaryMax: 122459
-  url: https://www.usajobs.gov/GetJob/ViewDetails/757640700
-  remote: false
-  source: usajobs
 - id: '757640800'
   posted: '2023-10-30T00:00:00.0000'
   closes: '2023-11-13T23:59:59.9970'
@@ -47,18 +292,6 @@
   salaryMin: 46696
   salaryMax: 92995
   url: https://www.usajobs.gov/GetJob/ViewDetails/757640800
-  remote: false
-  source: usajobs
-- id: '757641900'
-  posted: '2023-10-30T00:00:00.0000'
-  closes: '2023-11-13T23:59:59.9970'
-  agency: Department of Commerce - National Oceanic and Atmospheric Administration
-  title: IT Specialist (Applications Software)
-  lowGrade: ZP 3
-  highGrade: ZP 3
-  salaryMin: 77738
-  salaryMax: 121128
-  url: https://www.usajobs.gov/GetJob/ViewDetails/757641900
   remote: false
   source: usajobs
 - id: '757678800'
@@ -78,18 +311,6 @@
     is an incredible program that recruits mid-to-senior-level entrepreneurs,
     executives, and technologists to solve hard problems in government! Don't
     miss out on this!
-- id: '757714300'
-  posted: '2023-10-31T00:00:00.0000'
-  closes: '2023-11-14T23:59:59.9970'
-  agency: Department of Commerce - National Oceanic and Atmospheric Administration
-  title: IT Specialist
-  lowGrade: GS 13
-  highGrade: GS 13
-  salaryMin: 112015
-  salaryMax: 145617
-  url: https://www.usajobs.gov/GetJob/ViewDetails/757714300
-  remote: false
-  source: usajobs
 - id: '757745800'
   posted: '2023-10-31T00:00:00.0000'
   closes: '2023-11-14T23:59:59.9970'
@@ -100,18 +321,6 @@
   salaryMin: 85508
   salaryMax: 133236
   url: https://www.usajobs.gov/GetJob/ViewDetails/757745800
-  remote: false
-  source: usajobs
-- id: '757817100'
-  posted: '2023-10-30T00:00:00.0000'
-  closes: '2023-11-13T23:59:59.9970'
-  agency: Department of Energy - Bonneville Power Administration
-  title: IT Specialist (SYSADMIN/SYSANALYSIS)
-  lowGrade: GS 13
-  highGrade: GS 13
-  salaryMin: 105666
-  salaryMax: 137363
-  url: https://www.usajobs.gov/GetJob/ViewDetails/757817100
   remote: false
   source: usajobs
 - id: '757825500'
@@ -129,18 +338,6 @@
   content: >-
     The FCC is hiring for a Senior Applications Developer! This is a rare
     non-supervisory GS 15 position and completely remote!
-- id: '758055800'
-  posted: '2023-11-01T00:00:00.0000'
-  closes: '2023-11-21T23:59:59.9970'
-  agency: Department of Transportation - Federal Aviation Administration
-  title: Data Scientist
-  lowGrade: FV H
-  highGrade: FV H
-  salaryMin: 79225
-  salaryMax: 122805
-  url: https://www.usajobs.gov/GetJob/ViewDetails/758055800
-  remote: false
-  source: usajobs
 - id: '758073700'
   posted: '2023-10-31T12:54:42.8600'
   closes: '2024-02-14T23:59:59.9970'
@@ -151,20 +348,6 @@
   salaryMin: 44740
   salaryMax: 176300
   url: https://www.usajobs.gov/GetJob/ViewDetails/758073700
-  remote: true
-  source: usajobs
-- id: '758087900'
-  posted: '2023-10-31T00:00:00.0000'
-  closes: '2023-11-14T23:59:59.9970'
-  agency: >-
-    Department of Health and Human Services - Centers for Disease Control and
-    Prevention
-  title: Data Scientist
-  lowGrade: GS 14
-  highGrade: GS 14
-  salaryMin: 116393
-  salaryMax: 151308
-  url: https://www.usajobs.gov/GetJob/ViewDetails/758087900
   remote: true
   source: usajobs
 - id: '758107500'
@@ -179,18 +362,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/758107500
   remote: false
   source: usajobs
-- id: '758108600'
-  posted: '2023-10-31T14:00:15.0230'
-  closes: '2023-11-14T23:59:59.9970'
-  agency: Federal Communications Commission
-  title: Information Systems Security Officer (Infosec)
-  lowGrade: GS 13
-  highGrade: GS 13
-  salaryMin: 112015
-  salaryMax: 145617
-  url: https://www.usajobs.gov/GetJob/ViewDetails/758108600
-  remote: false
-  source: usajobs
 - id: '758137600'
   posted: '2023-11-01T00:00:00.0000'
   closes: '2023-11-15T23:59:59.9970'
@@ -201,18 +372,6 @@
   salaryMin: 112015
   salaryMax: 172075
   url: https://www.usajobs.gov/GetJob/ViewDetails/758137600
-  remote: false
-  source: usajobs
-- id: '758195600'
-  posted: '2023-11-01T00:00:00.0000'
-  closes: '2023-11-14T23:59:59.9970'
-  agency: Department of Commerce - National Oceanic and Atmospheric Administration
-  title: IT Specialist
-  lowGrade: GS 13
-  highGrade: GS 13
-  salaryMin: 112015
-  salaryMax: 145617
-  url: https://www.usajobs.gov/GetJob/ViewDetails/758195600
   remote: false
   source: usajobs
 - id: '758226000'
@@ -241,18 +400,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/758279600
   remote: false
   source: usajobs
-- id: '758287100'
-  posted: '2023-11-02T00:00:00.0000'
-  closes: '2023-11-13T23:59:59.9970'
-  agency: Department of the Treasury - Bureau of the Fiscal Service
-  title: IT Specialist (ENTARCH)
-  lowGrade: GS 14
-  highGrade: GS 14
-  salaryMin: 116393
-  salaryMax: 172075
-  url: https://www.usajobs.gov/GetJob/ViewDetails/758287100
-  remote: false
-  source: usajobs
 - id: '758333500'
   posted: '2023-11-01T12:14:07.0630'
   closes: '2023-11-13T23:59:59.9970'
@@ -263,18 +410,6 @@
   salaryMin: 94199
   salaryMax: 122459
   url: https://www.usajobs.gov/GetJob/ViewDetails/758333500
-  remote: false
-  source: usajobs
-- id: '758457800'
-  posted: '2023-11-09T00:00:00.0000'
-  closes: '2023-11-14T23:59:59.9970'
-  agency: National Aeronautics and Space Administration - Goddard Space Flight Center
-  title: Information Technology Specialist (Policy and Planning) (Direct Hire)
-  lowGrade: GS 13
-  highGrade: GS 13
-  salaryMin: 98496
-  salaryMax: 128043
-  url: https://www.usajobs.gov/GetJob/ViewDetails/758457800
   remote: false
   source: usajobs
 - id: '758478900'
@@ -299,18 +434,6 @@
   salaryMin: 78592
   salaryMax: 122459
   url: https://www.usajobs.gov/GetJob/ViewDetails/758582800
-  remote: false
-  source: usajobs
-- id: '758584700'
-  posted: '2023-11-02T13:26:00.8830'
-  closes: '2023-11-13T23:59:59.9970'
-  agency: Department of Energy - Department of Energy - Agency Wide
-  title: IT Cybersecurity Specialist (CYBERMGT)
-  lowGrade: GS 15
-  highGrade: GS 15
-  salaryMin: 155700
-  salaryMax: 183500
-  url: https://www.usajobs.gov/GetJob/ViewDetails/758584700
   remote: false
   source: usajobs
 - id: '758680800'
@@ -675,20 +798,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/759586600
   remote: false
   source: usajobs
-- id: '759602900'
-  posted: '2023-11-08T00:00:00.0000'
-  closes: '2023-11-13T23:59:59.9970'
-  agency: >-
-    Department of Homeland Security - Cybersecurity and Infrastructure Security
-    Agency
-  title: IT CYBERSECURITY SPECIALIST (INFOSEC)
-  lowGrade: GS 13
-  highGrade: GS 14
-  salaryMin: 84546
-  salaryMax: 129878
-  url: https://www.usajobs.gov/GetJob/ViewDetails/759602900
-  remote: true
-  source: usajobs
 - id: '759648400'
   posted: '2023-11-09T00:00:00.0000'
   closes: '2023-11-27T23:59:59.9970'
@@ -700,18 +809,6 @@
   salaryMax: 176555
   url: https://www.usajobs.gov/GetJob/ViewDetails/759648400
   remote: false
-  source: usajobs
-- id: '759671600'
-  posted: '2023-11-09T00:00:00.0000'
-  closes: '2023-11-13T23:59:59.9970'
-  agency: Department of Health and Human Services - National Institutes of Health
-  title: Information Technology Specialist (INFOSEC)
-  lowGrade: GS 11
-  highGrade: GS 13
-  salaryMin: 69107
-  salaryMax: 158432
-  url: https://www.usajobs.gov/GetJob/ViewDetails/759671600
-  remote: true
   source: usajobs
 - id: '759672300'
   posted: '2023-11-08T12:32:37.6000'
