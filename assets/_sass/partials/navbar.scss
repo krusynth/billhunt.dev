@@ -22,6 +22,8 @@
   }
 
   @media (min-width: $breakpoint-md) {
+    margin-top: 5px;
+
     display: grid;
     gap: $grid-gutter-width $grid-gutter-width;
     grid-template-columns: ($column-width - $grid-gutter-width) 1fr ($column-width - $grid-gutter-width);

@@ -118,10 +118,9 @@ a:not([href]):not([class]) {
   @extend %shadow-float;
   &:hover {
     top: 5px;
-    box-shadow: none;
     color: $white;
-    // background-color: lighten($blue, 5%);
-    opacity: 0.80;
+    background-color: lighten($blue, 10%);
+    box-shadow: none;
   }
 
   &.disabled {
@@ -531,7 +530,7 @@ blockquote {
 
   background-color: $sienna;
   color: $white;
-
+  margin-bottom: 15px;
 
   font-size: 0.85em;
 

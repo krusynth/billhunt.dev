@@ -107,7 +107,7 @@ $special-font-stack: 'Silkscreen', monospace;
 
 
 @mixin shadow() {
-  box-shadow: 10px 0px rgba(00,00,00,0.4);
+  box-shadow: 10px 5px rgba(00,00,00,0.4);
 }
 
 %shadow-float {
