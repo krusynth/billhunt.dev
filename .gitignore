@@ -11,3 +11,5 @@ assets/npm/
 log
 demo
 .jekyll-cache
+.bundle
+vendor
