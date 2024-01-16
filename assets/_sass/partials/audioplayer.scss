@@ -23,4 +23,8 @@
   font-size: 0.75rem;
   flex-grow: 1;
   overflow: hidden;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 332px;
+  }
 }
