@@ -161,9 +161,11 @@ layout: default
 
 <div class="col">
   <section class="posts">
-    <h2 class="section-title">Recent Posts
+    <header class="section-header">
+      <h2 class="section-title">Recent Posts</h2>
       <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fas fa-rss"></span></a>
-    </h2>
+    </header>
+
     {% for post in normal_posts limit:6 %}
       <article class="post-multiple">
         <header class="post-header hoverable">
@@ -197,7 +199,9 @@ layout: default
 
 <div class="col">
   <section class="recommended">
-    <h2 class="section-title">Recommended</h2>
+    <header class="section-header">
+      <h2 class="section-title">Recommended</h2>
+    </header>
     {% assign recommended = site.recommended | reverse%}
     {% for post in recommended limit:3 %}
       <article class="post-multiple">
@@ -228,9 +232,10 @@ layout: default
   </section>
 
   <section class="jobs">
-    <h2 class="section-title">Cool Jobs
+    <header class="section-header">
+      <h2 class="section-title">Cool Jobs</h2>
       <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fas fa-rss"></span></a>
-    </h2>
+    </header>
 
     {% assign posts = site.data.usajobs | where_exp:"job", "job.content" | slice: 0, 3 %}
     {% include jobs-list.html posts=posts %}
