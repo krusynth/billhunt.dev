@@ -146,14 +146,22 @@ $special-font-stack: 'Silkscreen', monospace;
 
 
 // Dimensions
-$bg-dot-size: 2px;
-$bg-dot-space: 4px;
-@mixin dotbg($dot-color, $bg-color: $white, $dot-size: $bg-dot-size, $dot-space: $bg-dot-space) {
-  background:
-    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
-  background-size: $dot-space $dot-space;
+@mixin dotbg($dot-color) {
+  @if $dot-color == $lemon {
+    background: url('/assets/images/bg-yellow.png');
+  }
+  @else if $dot-color == $sienna {
+    background: url('/assets/images/bg-red.png');
+  }
+  @else if $dot-color == $green {
+    background: url('/assets/images/bg-green.png');
+  }
+  @else if $dot-color == $purple {
+    background: url('/assets/images/bg-purple.png');
+  }
+  @else {
+    background: url('/assets/images/bg-blue.png');
+  }
 }
 
 @mixin linebg($line-color, $bg-color: $white, $line-size: $bg-dot-size, $line-space: $bg-dot-size) {

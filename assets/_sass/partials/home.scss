@@ -10,7 +10,7 @@
 }
 
 .posts {
-  @include dotbg(lighten($blue, 20%));
+  @include dotbg($blue);
   @include standard-padding;
 }
 
@@ -26,7 +26,7 @@
 .shop {
   $feature-color: $sienna;
 
-  @include dotbg(lighten($feature-color, 20%));
+  @include dotbg($feature-color);
   @include standard-padding;
 
 
@@ -49,7 +49,7 @@
 .recommended {
   $recommended-color: $green;
 
-  @include dotbg(lighten($recommended-color, 20%));
+  @include dotbg($recommended-color);
   @include standard-padding;
 
   .post-multiple {
@@ -63,7 +63,7 @@
 .jobs, .usajobs {
   $jobs-color: $purple;
 
-  @include dotbg(lighten($jobs-color, 20%));
+  @include dotbg($jobs-color);
   @include standard-padding;
 
   .post-multiple {
@@ -77,7 +77,7 @@
 .links {
   $links-color: $blue;
 
-  @include dotbg(lighten($links-color, 20%));
+  @include dotbg($links-color);
   @include standard-padding;
 
   .post-multiple {
@@ -130,7 +130,6 @@
     top: 5px;
     box-shadow: none;
     color: $white;
-    // background-color: lighten($blue, 5%);
     opacity: 0.80;
   }
 

@@ -23,7 +23,7 @@
 body {
   margin: 0;
   padding: 0;
-  @include dotbg($lemon, $white);
+  @include dotbg($lemon);
 
   font-family: $main-font-stack;
   @extend %font-normal;
@@ -124,7 +124,7 @@ a:not([href]):not([class]) {
   }
 
   &.disabled {
-    color: lighten($dark, 20%);
+    color: $dark;
     background-color: #aaa;
     box-shadow: none;
     &:hover {
@@ -135,7 +135,7 @@ a:not([href]):not([class]) {
   }
 
   &.inactive {
-    color: lighten($dark, 20%);
+    color: $dark;
     background-color: #aaa;
   }
 }
@@ -149,7 +149,7 @@ a:not([href]):not([class]) {
 
   input[type="checkbox"]:not(:checked) + span,
   input[type="radio"]:not(:checked) + span, {
-    color: lighten($dark, 20%);
+    color: $dark;
     background-color: #aaa;
   }
 
@@ -329,7 +329,7 @@ blockquote {
 }
 
 .post-single {
-  @include dotbg(lighten($blue, 20%));
+  @include dotbg($blue);
   @include bordered-box($blue);
   line-height: 1.75;
   text-align: justify;
