@@ -1,0 +1,17 @@
+---
+title: Links
+permalink: /links.opml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head>
+    <title>{{ site.author.name }}'s Reading List</title>
+  </head>
+  <body>
+    {% for entry in site.data.links %}
+      {%- if entry.rss %}
+      <outline text="{{ entry.name }}" title="{{ entry.name }}" type="rss" xmlUrl="{{ entry.rss }}" htmlUrl="{{ entry.url }}"/>
+      {% endif -%}
+    {%- endfor %}
+  </body>
+</opml>

@@ -9,12 +9,22 @@ layout: default
     </section>
   {% endif %}
   <section class="{{page.datum}} content-container">
-    <h2 class="section-title">
-      {{ page.title }}
-      {% if page.feed %}
-        <a href="{{ page.feed.link }}" class="rss-link" title="{{ page.feed.title }}"><span class="icon fas fa-rss"></span></a>
+    <header class="section-header">
+      <h2 class="section-title">{{ page.title }}</h2>
+      {% if page.metalinks %}
+        <ol class="meta-links">
+          {% for meta in page.metalinks %}
+            {%- assign icon = "fas fa-rss" -%}
+            {%- if meta.icon -%}
+              {%- assign icon = meta.icon -%}
+            {%- endif -%}
+            <li>
+              <a href="{{ meta.link }}" class="rss-link" title="{{ meta.title }}"><span class="icon {{ icon }}"></span></a>
+            </li>
+          {% endfor %}
+        </ol>
       {% endif %}
-    </h2>
+    </header>
     {% if page.content.size > 0 %}
       <div class="post-content">
         {{ content }}

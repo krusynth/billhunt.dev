@@ -4,9 +4,9 @@ permalink: /jobs/usajobs/
 datum: usajobs
 layout: jobs
 action: 'Apply'
-feed:
-  title: RSS feed of the full jobs list
-  link: /usajobs.xml
+metalinks:
+  - title: RSS feed of the full jobs list
+    link: /usajobs.xml
 ---
 For my curated list, check out the **[main jobs page](/jobs/)**.
 

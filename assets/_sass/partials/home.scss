@@ -111,6 +111,7 @@
 .rss-link {
   // @include linebg($blue, $white);
   // -webkit-text-stroke: 2px $dark;
+  display: inline-block;
   position: relative;
   top: 0;
   width: 24px;
@@ -129,7 +130,6 @@
   &:hover {
     top: 5px;
     box-shadow: none;
-    color: $white;
     opacity: 0.80;
   }
 
@@ -140,5 +140,10 @@
     text-shadow: none;
     padding: 0;
     display: inline-block;
+  }
+
+  .fa-users {
+    left: 2px;
+    top: 4px;
   }
 }

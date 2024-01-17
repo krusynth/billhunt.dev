@@ -4,9 +4,9 @@ permalink: /jobs/
 datum: jobs
 layout: jobs
 action: 'Apply'
-feed:
-  title: Follow jobs list only, with RSS
-  link: /jobs.xml
+metalinks:
+  - title: Follow jobs list only, with RSS
+    link: /jobs.xml
 ---
 This is a **curated** list of mostly senior positions. It includes a few non-federal jobs. For a more comprehensive list of federal jobs, check out my **[All Job Listings page](/jobs/usajobs/)**.
 
