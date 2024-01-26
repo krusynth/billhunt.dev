@@ -101,11 +101,11 @@
   margin-left: -18px;
   width: 32px;
   height: 32px;
-  padding-left: 1px;
   border-radius: 30px;
   @extend %bordered;
   font-size: 30px;
-  line-height: 21px;
+  line-height: 0.85;
+  text-align: center;
 }
 
 .rss-link {
