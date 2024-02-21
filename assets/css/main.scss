@@ -339,6 +339,7 @@ blockquote {
   .post-content {
     background-color: $white;
     @include standard-padding;
+    min-height: 50vh;
   }
 
   .post-title {
@@ -707,5 +708,19 @@ blockquote {
       color: $white;
       padding: $grid-gutter-width;
     }
+  }
+}
+
+/* Search */
+
+.search-results {
+  margin-top: 1rem;
+
+  .search-article {
+    margin-bottom: 1rem;
+  }
+
+  .search-article-title {
+    margin-bottom: 0;
   }
 }

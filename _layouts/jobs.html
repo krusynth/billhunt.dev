@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<article class="page-{{page.title | slugify }}">
+<article class="page-{{page.title | slugify }}" data-pagefind-body>
   {% if page.banner %}
     <section class="banner stickers">
       {{ page.banner | markdownify }}

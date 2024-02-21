@@ -13,3 +13,4 @@ demo
 .jekyll-cache
 .bundle
 vendor
+assets/pagefind/

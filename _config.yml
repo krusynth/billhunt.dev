@@ -19,6 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal website and blog of Bill Hunt
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: https://billhunt.dev # the base hostname & protocol for your site, e.g. http://example.com
+static_url: https://static.billhunt.dev
 
 repository: "krusynth/billhunt.dev"
 
@@ -86,6 +87,7 @@ exclude:
   - config
   - log
   - demo
+  - assets/pagefind
 
 symlinks:
   # - _uploads
