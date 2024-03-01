@@ -584,45 +584,34 @@ blockquote {
 
 .old-button {
   display: inline-block;
-  height: (30px + 6px);
-  width: (100px + 6px);
+  height: 31px;
+  width: 88px;
   background-size: contain;
-  border-width: 3px;
-  border-style: solid;
-  border-top-color: $white;
-  border-left-color: $white;
-  border-right-color: $dark;
-  border-bottom-color: $dark;
   color: transparent !important;
-  transition: all .1s ease-in-out;
 
-
-  &:hover {
-    border-top-color: $dark;
-    border-left-color: $dark;
-    border-right-color: $white;
-    border-bottom-color: $white;
+  &.no-ai {
+    background-image: url('/assets/images/buttons/human-88x31.gif');
   }
 
   &.netscape {
-    background-image: url('/assets/images/buttons/netscape4-100x30.gif');
+    background-image: url('/assets/images/buttons/netscape3-88x31.gif');
 
     &:hover {
-      background-image: url('/assets/images/buttons/netscape4-100x30-ani.gif');
+      background-image: url('/assets/images/buttons/netscape3-88x31-ani.gif');
     }
     @media (max-width: $breakpoint-md) {
-      background-image: url('/assets/images/buttons/netscape4-100x30-ani.gif');
+      background-image: url('/assets/images/buttons/netscape3-88x31-ani.gif');
     }
   }
 
   &.jekyll {
-    background-image: url('/assets/images/buttons/jekyll-100x30.png');
+    background-image: url('/assets/images/buttons/jekyll-88x31.gif');
 
     &:hover {
-      background-image: url('/assets/images/buttons/jekyll-100x30-ani.gif');
+      background-image: url('/assets/images/buttons/jekyll-88x31-ani.gif');
     }
     @media (max-width: $breakpoint-md) {
-      background-image: url('/assets/images/buttons/jekyll-100x30-ani.gif');
+      background-image: url('/assets/images/buttons/jekyll-88x31-ani.gif');
     }
   }
 }
