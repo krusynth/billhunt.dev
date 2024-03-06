@@ -38,7 +38,7 @@ pagination:
   sort_reverse: true
   per_page: 12
   title: ":title"
-  permalink: "/blog/:num/"
+  permalink: "/:num/"
 
 autopages:
   enabled: true
