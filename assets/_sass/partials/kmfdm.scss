@@ -67,6 +67,11 @@
     opacity: 1;
   }
 
+  .featured-icon, .rss-link {
+    background-color: $white;
+    color: $kmfdm-red;
+  }
+
   .player-button {
     background-color: $kmfdm-red;
   }
@@ -91,9 +96,13 @@
     background-color: $kmfdm-red;
     color: $kmfdm-black;
     border:none;
+  }
 
-    .post-title {
-      @extend %kmfdm-title;
+  .post-title {
+    @extend %kmfdm-title;
+
+    a {
+      color: $kmfdm-black;
     }
   }
 
@@ -107,7 +116,13 @@
   }
 
   .btn {
+    font-family: HelveticaCompressed, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+
     background-color: $kmfdm-red;
+    color: $white;
     &:hover {
       background-color: lighten($kmfdm-red, 10%);
     }
@@ -116,6 +131,10 @@
   .post-multiple {
     .post-header {
       background-color: $kmfdm-red;
+
+      &.hoverable:hover {
+        background-color: lighten($kmfdm-red, 10%);
+      }
     }
     .btn {
       background-color: $kmfdm-red;
