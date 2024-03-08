@@ -25,6 +25,8 @@ Salary numbers below are the base rate, locality pay will increase these numbers
 
 All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies. The filters provided may miss posts with unusual naming or grade scales.
 
+Is this your first time applying for a federal government job? Check out the [18F guide to federal hiring](https://join.tts.gsa.gov/hiring-process/), which includes details on how to write your first federal resume!
+
 {% assign now = 'now' | date: '%s' %}
 
 {% assign specialpay = 'Securities and Exchange Commission,Federal Deposit Insurance Corporation,Consumer Financial Protection Bureau,Commodity Futures Trading Commission,National Credit Union Administration,Department of the Treasury - Office of Financial Research' | split:',' %}
