@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head>
+    <title>Bill Hunt's Reading List</title>
+  </head>
+  <body>
+    
+      <outline text="Waldo Jaquith" title="Waldo Jaquith" type="rss" xmlUrl="https://waldo.jaquith.org/feed/" htmlUrl="https://waldo.jaquith.org/"/>
+      
+      <outline text="Vyki Englert" title="Vyki Englert" type="rss" xmlUrl="https://medium.com/feed/@vyki_e" htmlUrl="https://medium.com/@vyki_e"/>
+      
+      <outline text="Hunter Owens" title="Hunter Owens" type="rss" xmlUrl="https://hunterowens.net/feed.xml" htmlUrl="https://hunterowens.net/"/>
+      
+      <outline text="Lauren Ancona" title="Lauren Ancona" type="rss" xmlUrl="https://laurenancona.com/feed.xml" htmlUrl="https://laurenancona.com/"/>
+      
+      <outline text="Matt Bailey" title="Matt Bailey" type="rss" xmlUrl="https://mattmattmatt.org/feed.xml" htmlUrl="https://mattmattmatt.org/"/>
+      
+      <outline text="Rebecca Williams" title="Rebecca Williams" type="rss" xmlUrl="https://rebeccawilliams.info/rss/" htmlUrl="https://rebeccawilliams.info/"/>
+      
+      <outline text="Brodrick Jones" title="Brodrick Jones" type="rss" xmlUrl="https://www.jigsawfanclub.com/blog-feed.xml" htmlUrl="https://www.jigsawfanclub.com/"/>
+      
+      <outline text="Erin Kissane" title="Erin Kissane" type="rss" xmlUrl="https://erinkissane.com/feed.rss" htmlUrl="https://erinkissane.com/"/>
+      
+      <outline text="Anne Petersen" title="Anne Petersen" type="rss" xmlUrl="https://annepetersen.is/feed/" htmlUrl="https://annepetersen.is/"/>
+      
+      <outline text="Alex Howard" title="Alex Howard" type="rss" xmlUrl="https://digiphile.info/feed/" htmlUrl="https://digiphile.info/"/>
+      
+      <outline text="Zac Cohn" title="Zac Cohn" type="rss" xmlUrl="https://blog.zaccohn.com/feed.xml" htmlUrl="https://www.zaccohn.com/"/>
+      
+      <outline text="Travis Biggs" title="Travis Biggs" type="rss" xmlUrl="https://garden.travisbriggs.com/feed.xml" htmlUrl="https://travisbriggs.com/"/>
+      
+      <outline text="Matt Zagaja" title="Matt Zagaja" type="rss" xmlUrl="https://www.zagaja.com/feed.xml" htmlUrl="https://www.zagaja.com/"/>
+      
+      <outline text="Dave Zvenyach" title="Dave Zvenyach" type="rss" xmlUrl="https://vdavez.com/posts/index.xml" htmlUrl="https://vdavez.com"/>
+      
+      <outline text="Eric Mill" title="Eric Mill" type="rss" xmlUrl="https://konklone.com/rss.xml" htmlUrl="https://konklone.com/"/>
+      
+      <outline text="Tom MacWright" title="Tom MacWright" type="rss" xmlUrl="https://macwright.com/rss.xml" htmlUrl="https://macwright.com/"/>
+      
+      <outline text="Dave Guarino" title="Dave Guarino" type="rss" xmlUrl="https://www.daveguarino.com/feed/feed.xml" htmlUrl="https://www.daveguarino.com/"/>
+      
+      <outline text="Sean Boots" title="Sean Boots" type="rss" xmlUrl="https://sboots.ca/index.xml" htmlUrl="https://sboots.ca/"/>
+      
+      <outline text="Jacob Kaplan-Moss" title="Jacob Kaplan-Moss" type="rss" xmlUrl="https://jacobian.org/index.xml" htmlUrl="https://jacobian.org/"/>
+      
+      <outline text="Sarah Glassmeyer" title="Sarah Glassmeyer" type="rss" xmlUrl="https://sarahglassmeyer.com/?feed=rss2" htmlUrl="https://sarahglassmeyer.com/"/>
+      
+      <outline text="Gareth Branwyn" title="Gareth Branwyn" type="rss" xmlUrl="https://garstipsandtools.com/feed" htmlUrl="https://garstipsandtools.com/"/>
+      
+  </body>
+</opml>
