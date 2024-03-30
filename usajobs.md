@@ -21,7 +21,7 @@ This is a list of all USAJobs postings that match all of the following criteria:
 
 This list also includes non-federal civic tech and public interest jobs that caught my eye.
 
-Salary numbers below are the base rate, locality pay will increase these numbers (when eligible). For example, the Washington DC area has a +32.49% adjustment for 2023. For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
+Salary numbers below are *usually* the base rate, locality pay will increase these numbers (when eligible). For example, the Washington DC area has a +32.49% adjustment for 2023. For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
 
 All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies. The filters provided may miss posts with unusual naming or grade scales.
 
