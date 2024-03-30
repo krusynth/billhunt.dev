@@ -32,13 +32,16 @@
 
   {% assign title = title | append: ' (' | append: gradeText | append: ')' %}
 
-  {% if grade contains 'ES' %}
+  {% assign payScale = grade | slice: 0,2 %}
+  {% assign payGrade = grade | slice: 3,2 | trim %}
+
+  {% if payScale == 'ES' %}
     {% assign classes = classes | append: ' grade-ses grade-15 grade-14' %}
 
-  {% elsif grade contains '15' or post.grade contains '16' or post.grade contains '17' %}
+  {% elsif payGrade == '15' or payGrade == '16' or payGrade == '17' %}
     {% assign classes = classes | append: ' grade-15 grade-14' %}
 
-  {% elsif grade contains '14' %}
+  {% elsif payGrade == '14' %}
     {% assign classes = classes | append: ' grade-14' %}
   {% endif %}
 
@@ -48,6 +51,10 @@
   {% endif %}
 
   {% assign description = post.content %}
+
+  {% if post.ses or payScale == 'ES' %}
+    {% assign description = description | append: " This is a senior executive service (SES) position, and you'll an [SES-formatted resume, ECQs, and MTQs](https://digitalpolicy.us/policies/hiring/#ses) to apply." %}
+  {% endif %}
 
   {% if post.salaryMin && post.salaryMax %}
     {% capture afterwards -%}
@@ -71,6 +78,7 @@
     {% endcapture %}
     {% assign description = description | append: ' Salary ' | append: afterwards %}
   {% endif %}
+
   {% if post.closes %}
     {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
     {% assign description = description | append: afterwards %}
