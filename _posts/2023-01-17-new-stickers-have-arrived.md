@@ -7,7 +7,6 @@ permalink: /blog/2023/01/17/new-stickers/
 layout: post
 image: /uploads/2023/01/stickers.jpg
 excerpt: My "Move Carefully and Fix Things" stickers were so popular that I've added a new design!
-featured: true
 ---
 
 ![A Govpunk sticker, white text on a red eleven-pointed star with a black background, next to a Move Carefully and Fix Things sticker, with white lettering on a blue background.](https://billhunt.dev/uploads/2023/01/stickers.jpg)
