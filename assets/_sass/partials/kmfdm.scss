@@ -124,6 +124,11 @@
 
   .section-title {
     text-shadow: none;
+    color: $kmfdm-red;
+    font-family: HelveticaCompressed, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
   }
 
   .btn {
