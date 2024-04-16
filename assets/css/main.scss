@@ -588,32 +588,6 @@ blockquote {
   width: 88px;
   background-size: contain;
   color: transparent !important;
-
-  &.no-ai {
-    background-image: url('/assets/images/buttons/human-88x31.gif');
-  }
-
-  &.netscape {
-    background-image: url('/assets/images/buttons/netscape3-88x31.gif');
-
-    &:hover {
-      background-image: url('/assets/images/buttons/netscape3-88x31-ani.gif');
-    }
-    @media (max-width: $breakpoint-md) {
-      background-image: url('/assets/images/buttons/netscape3-88x31-ani.gif');
-    }
-  }
-
-  &.jekyll {
-    background-image: url('/assets/images/buttons/jekyll-88x31.gif');
-
-    &:hover {
-      background-image: url('/assets/images/buttons/jekyll-88x31-ani.gif');
-    }
-    @media (max-width: $breakpoint-md) {
-      background-image: url('/assets/images/buttons/jekyll-88x31-ani.gif');
-    }
-  }
 }
 
 /* Reusable Tabs */
