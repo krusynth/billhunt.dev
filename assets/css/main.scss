@@ -548,14 +548,11 @@ blockquote {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
+  gap: 0.5rem;
+
 
   @media (max-width: $breakpoint-md) {
     flex-direction: column;
-    .credits {
-      padding-top: 5px;
-      border-top: 2px dotted $white;
-      margin-top: 5px;
-    }
   }
 
   & > * {
@@ -578,9 +575,10 @@ blockquote {
 
 .oldschool-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: $grid-gutter-width / 2;
+  justify-content: center;
 }
-
 
 .old-button {
   display: inline-block;
@@ -588,6 +586,25 @@ blockquote {
   width: 88px;
   background-size: contain;
   color: transparent !important;
+}
+
+.webring-title {
+  margin-bottom: 5px;
+  display: block;
+
+  a {
+    @extend %semibold;
+  }
+}
+
+.webring-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  margin: 0 0 5px;
+  padding: 0;
+  justify-content: space-around;
 }
 
 /* Reusable Tabs */
