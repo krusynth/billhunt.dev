@@ -5,18 +5,21 @@ datum: jobs
 layout: jobs
 action: 'Apply'
 metalinks:
-  - title: Follow jobs list only, with RSS
+  - title: Featured-only Cool Gov Tech Jobs RSS feed
     link: /jobs.xml
+    icon: far fa-fire
+  - title: ALL Cool Gov Tech Jobs RSS Feed
+    link: /usajobs.xml
 ---
-This is a **curated** list of mostly senior positions. It includes a few non-federal jobs. For a more comprehensive list of federal jobs, check out my **[All Job Listings page](/jobs/usajobs/)**.
-
-You can follow this list with the RSS link above, and I also repost them to <a href="https://mastodon.publicinterest.town/@jobs">Public Interest Jobs on Mastodon</a>!
+You can follow this list with the RSS links above. I also repost featured jobs  to <a href="https://mastodon.publicinterest.town/@jobs">Public Interest Jobs on Mastodon</a>!
 
 Salary numbers below are *usually* the base rate, locality pay will increase these numbers (when eligible). For example, the Washington DC area has a +32.49% adjustment for 2023. For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
 
 All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies. The filters provided may miss posts with unusual naming or grade scales.
 
 Is this your first time applying for a federal government job? Check out the [18F guide to federal hiring](https://join.tts.gsa.gov/hiring-process/), which includes details on how to write your first federal resume!
+
+**Featured** jobs are ones that caught my eye as particularly interesting! This is the default filter, you can **unselect** the filter with the button below to see all jobs.
 
 <details>
 
@@ -54,7 +57,6 @@ Is this your first time applying for a federal government job? Check out the [18
   <li><a href="https://docs.google.com/spreadsheets/d/1VpYIEC7MhA_6VVORk5S9CDuccx_tEvFVefeDTilenXQ/edit#gid=0">Fellowships Megalist</a></li>
 </ul>
 
-
 </div>
 </details>
 
@@ -62,7 +64,7 @@ Is this your first time applying for a federal government job? Check out the [18
 
 {% capture jobs -%}
 
-{% assign posts = site.data.usajobs | where_exp:"job", "job.content" %}
+{% assign posts = site.data.usajobs %}
 
 {% include jobs-list.html posts=posts %}
 

@@ -1,63 +1,71 @@
 {%- for post in posts %}
-  {% assign title = post.agency | append: ' - ' | append: post.title %}
+  {%- assign title = post.agency | append: ' - ' | append: post.title %}
 
-  {% assign classes = 'job-post' %}
-  {% if post.specialPay %}
-    {% assign classes = classes | append: ' special-pay' %}
-  {% endif %}
+  {%- assign classes = 'job-post' %}
+  {%- if post.specialPay %}
+    {%- assign classes = classes | append: ' special-pay' %}
+  {%- endif %}
 
-  {% assign titleLower = post.title | downcase %}
-  {% if titleLower contains 'infosec' or titleLower contains 'security' %}
-    {% assign classes = classes | append: ' security' %}
-  {% endif %}
+  {%- assign titleLower = post.title | downcase %}
+  {%- if titleLower contains 'infosec' or titleLower contains 'security' %}
+    {%- assign classes = classes | append: ' security' %}
+  {%- endif %}
 
-  {% if post.lowGrade == post.highGrade %}
-    {% if post.lowGradeEquiv %}
-      {% assign grade = post.lowGradeEquiv %}
-      {% assign gradeText = post.lowGradeEquiv | append: ' equivalent' %}
-    {% else %}
-      {% assign grade = post.lowGrade %}
-      {% assign gradeText = post.lowGrade %}
-    {% endif %}
+  {%- if post.lowGrade == post.highGrade %}
+    {%- if post.lowGradeEquiv %}
+      {%- assign grade = post.lowGradeEquiv %}
+      {%- assign gradeText = post.lowGradeEquiv | append: ' equivalent' %}
+    {%- else %}
+      {%- assign grade = post.lowGrade %}
+      {%- assign gradeText = post.lowGrade %}
+    {%- endif %}
 
-  {% else %}
-    {% if post.lowGradeEquiv %}
-      {% assign grade = post.highGradeEquiv %}
-      {% assign gradeText = post.lowGradeEquiv | append: '-' | append: post.highGradeEquiv | append: ' equivalent' %}
-    {% else %}
-      {% assign grade = post.highGrade %}
-      {% assign gradeText = post.lowGrade | append: '-' | append: post.highGrade %}
-    {% endif %}
-  {% endif %}
+  {%- else %}
+    {%- if post.lowGradeEquiv %}
+      {%- assign grade = post.highGradeEquiv %}
+      {%- assign gradeText = post.lowGradeEquiv | append: '-' | append: post.highGradeEquiv | append: ' equivalent' %}
+    {%- else %}
+      {%- assign grade = post.highGrade %}
+      {%- assign gradeText = post.lowGrade | append: '-' | append: post.highGrade %}
+    {%- endif %}
+  {%- endif %}
 
-  {% assign title = title | append: ' (' | append: gradeText | append: ')' %}
+  {%- assign title = title | append: ' (' | append: gradeText | append: ')' %}
 
-  {% assign payScale = grade | slice: 0,2 %}
-  {% assign payGrade = grade | slice: 3,2 | trim %}
+  {%- assign payScale = grade | slice: 0,2 %}
+  {%- assign payGrade = grade | slice: 3,2 | trim %}
 
-  {% if payScale == 'ES' %}
-    {% assign classes = classes | append: ' grade-ses grade-15 grade-14' %}
+  {%- if payScale == 'ES' %}
+    {%- assign classes = classes | append: ' grade-ses grade-15 grade-14' %}
 
-  {% elsif payGrade == '15' or payGrade == '16' or payGrade == '17' %}
-    {% assign classes = classes | append: ' grade-15 grade-14' %}
+  {%- elsif payGrade == '15' or payGrade == '16' or payGrade == '17' %}
+    {%- assign classes = classes | append: ' grade-15 grade-14' %}
 
-  {% elsif payGrade == '14' %}
-    {% assign classes = classes | append: ' grade-14' %}
-  {% endif %}
+  {%- elsif payGrade == '14' %}
+    {%- assign classes = classes | append: ' grade-14' %}
+  {%- endif %}
 
-  {% if post.remote %}
-    {% assign classes = classes | append: ' remote' %}
-    {% assign title = title | append: ' (Remote)' %}
-  {% endif %}
+  {%- if post.remote %}
+    {%- assign classes = classes | append: ' remote' %}
+    {%- assign title = title | append: ' (Remote)' %}
+  {%- endif %}
 
-  {% assign description = post.content %}
+  {%- assign description = post.content %}
 
-  {% if post.ses or payScale == 'ES' %}
-    {% assign description = description | append: " This is a senior executive service (SES) position, and you'll an [SES-formatted resume, ECQs, and MTQs](https://digitalpolicy.us/policies/hiring/#ses) to apply." %}
-  {% endif %}
+  {%- if post.content %}
+    {%- assign badge = '<span class="badge-hot" title="Featured"><span class="icon far fa-fire"></span><span class="sr-only">Featured</span></span>' %}
+    {%- assign classes = classes | append: ' hot' %}
+  {%- else %}
+    {%- assign badge = '' %}
+  {%- endif %}
 
-  {% if post.salaryMin && post.salaryMax %}
-    {% capture afterwards -%}
+
+  {%- if post.ses or payScale == 'ES' %}
+    {%- assign description = description | append: " This is a senior executive service (SES) position, and you'll an [SES-formatted resume, ECQs, and MTQs](https://digitalpolicy.us/policies/hiring/#ses) to apply." %}
+  {%- endif %}
+
+  {%- if post.salaryMin && post.salaryMax %}
+    {%- capture afterwards -%}
       {%- assign figs = post.salaryMin | append: '' | size -%}
       {%- if figs == 5 -%}
         ${{ post.salaryMin | slice: 0,2 }},{{ post.salaryMin | slice: 2,3 }}
@@ -75,23 +83,24 @@
       {%- else -%}
         ${{ post.salaryMax}}
       {%- endif -%}
-    {% endcapture %}
-    {% assign description = description | append: ' Salary ' | append: afterwards %}
-  {% endif %}
+    {%- endcapture %}
+    {%- assign description = description | append: ' Salary ' | append: afterwards %}
+  {%- endif %}
 
-  {% if post.closes %}
-    {% capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{% endcapture %}
-    {% assign description = description | append: afterwards %}
-  {% endif %}
+  {%- if post.closes %}
+    {%- capture afterwards %} **Closes {{ post.closes | date: site.date_format }}**{%- endcapture %}
+    {%- assign description = description | append: afterwards %}
+  {%- endif %}
 
-  {% assign url = post.url %}
-  {% assign image = post.image %}
+  {%- assign url = post.url %}
+  {%- assign image = post.image %}
 
-  {% include card-template.html
+  {%- include card-template.html
      title=title
      url=url
      image=image
      description=description
      classes=classes
+     badge=badge
   %}
-{% endfor -%}
+{%- endfor -%}

@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('filtered', filtered);
   }
+
+  // Initial filtering on load.
+  doFilter();
 });
 </script>
 
@@ -69,6 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
       <strong>Filters</strong>
       <ul class="filters">
         <li>
+          <label for="hot" class="checkbox-btn">
+            <input name="hot" type="checkbox" id="hot" value="hot" class="filter" checked>
+            <span class="filter-button btn">Featured <span class="icon far fa-fire"></span></span>
+          </label>
+        </li>
+        <li>
           <label for="special-pay" class="checkbox-btn">
             <input name="special-pay" type="checkbox" id="special-pay" value="special-pay" class="filter">
             <span class="filter-button btn">Special Pay Agencies</span>
@@ -89,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>
           <div class="radio-group" role="radiogroup">
             <label for="grade-all" class="checkbox-btn">
-              <input type="radio" name="grade" id="grade-all" value="" checked class="filter">
+              <input type="radio" name="grade" id="grade-all" value="" class="filter" checked>
               <span class="filter-button btn">All Grades</span>
             </label>
             <label for="grade-ses" class="checkbox-btn">
@@ -106,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </label>
           </div>
         </li>
+      </ul>
     </div>
     <div class="posts-container">
       {{ page.jobs }}

@@ -8,7 +8,7 @@ metalinks:
   - title: RSS feed of the full jobs list
     link: /usajobs.xml
 ---
-For my curated list, check out the **[main jobs page](/jobs/)**.
+**This page is going away! Please use the filters on the [main jobs page](/jobs/) instead! The RSS links will both continue to work, however!**
 
 This is a list of all USAJobs postings that match all of the following criteria:
 
