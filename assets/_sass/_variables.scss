@@ -200,12 +200,9 @@ $special-font-stack: 'Silkscreen', monospace;
     background-color: $bgcolor;
 
     display: flex;
-    flex-direction: column;
-    @media (min-width: $breakpoint-md) {
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-    }
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 
     &.hoverable {
       &:hover {
