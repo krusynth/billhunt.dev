@@ -3,6 +3,7 @@
     <h3 class="post-title"><a href="{{ include.url }}" {% if include.url contains 'http' %}{% else %}up-follow{% endif %}>
       {{ include.title }}
     </a></h3>
+    {% if include.badge %}<span class="badge">{{ include.badge }}</span>{% endif %}
   </header>
   <section class="post-content">
     {% if include.image %}

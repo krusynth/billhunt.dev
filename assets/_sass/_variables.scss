@@ -194,6 +194,7 @@ $special-font-stack: 'Silkscreen', monospace;
     border-top-right-radius: 30px;
     overflow: hidden;
     margin-bottom: 0;
+    padding-right: 10px;
 
     color:  $white;
     background-color: $bgcolor;
@@ -242,4 +243,20 @@ $special-font-stack: 'Silkscreen', monospace;
 
 %minor-border {
   border: 1px solid $dark;
+}
+
+/** Animations **/
+
+.bounce {
+  animation: bounce 2s ease infinite;
+  display: inline-block;
+}
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
 }

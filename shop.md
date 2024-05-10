@@ -14,4 +14,6 @@ Please note: I do not make any profit off of these items. All CafePress items su
 
 Cafepress manages all shop orders for shirts. They do all the work here, please contact them about any problems!
 
+**Second note: there's a Cafepress bug that shows the price of items as being much, much higher on the product page than they actually are.  Add the item to your cart to see the "real" price!**
+
 {% assign page = page | setval: 'items', site.data.shop %}
