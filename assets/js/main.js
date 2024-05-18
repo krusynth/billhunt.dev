@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 function init_tabs(tabgroup) {
-  console.log('init tabs');
     const tabs = tabgroup.getElementsByClassName('tab');
     const target = document.getElementById(tabgroup.dataset.target);
 
