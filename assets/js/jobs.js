@@ -16,7 +16,6 @@ function doLoad() {
   const urlParams = new URLSearchParams(window.location.search);
 
   if(urlParams.size > 0) {
-    console.log('here');
     [...filters].forEach(elm => {
       if(urlParams.get(elm.name) == elm.value) {
         elm.checked = 'checked';
@@ -50,7 +49,6 @@ function doFilter() {
   const jobs = document.getElementsByClassName('job-post');
 
   let formData = getFormData();
-  console.log('filtering', formData);
 
   [...jobs].forEach(elm => {
     elm.classList.remove('hide');
