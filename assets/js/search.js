@@ -9,6 +9,9 @@ async function init() {
   const searchText = urlParams.get('search');
 
 	const form = document.getElementById('search-form');
+
+	if(!form) return;
+
 	form.querySelector('#search').value = searchText;
   const resultContainer = document.getElementById('results');
 
