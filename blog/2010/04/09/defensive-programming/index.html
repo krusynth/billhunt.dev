@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Defensive Programming | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Defensive Programming" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As a web developer, the greater part of my job is not creating new apps, but hacking together disparate software packages into Frankensteinian amalgamations that (supposedly) work together seamlessly.  This is universally a headache, as the original authors tend to write code thinking that their app is the only one that will be installed.  WordPress, Vanilla, and Interspire’s Email Marketer are some of the worst offenders that I struggle with regularly." />
+<meta property="og:description" content="As a web developer, the greater part of my job is not creating new apps, but hacking together disparate software packages into Frankensteinian amalgamations that (supposedly) work together seamlessly.  This is universally a headache, as the original authors tend to write code thinking that their app is the only one that will be installed.  WordPress, Vanilla, and Interspire’s Email Marketer are some of the worst offenders that I struggle with regularly." />
+<link rel="canonical" href="https://billhunt.dev/blog/2010/04/09/defensive-programming/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2010/04/09/defensive-programming/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2010-04-09T19:51:42+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Defensive Programming" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2010-04-09T19:51:42+00:00","datePublished":"2010-04-09T19:51:42+00:00","description":"As a web developer, the greater part of my job is not creating new apps, but hacking together disparate software packages into Frankensteinian amalgamations that (supposedly) work together seamlessly.  This is universally a headache, as the original authors tend to write code thinking that their app is the only one that will be installed.  WordPress, Vanilla, and Interspire’s Email Marketer are some of the worst offenders that I struggle with regularly.","headline":"Defensive Programming","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2010/04/09/defensive-programming/"},"url":"https://billhunt.dev/blog/2010/04/09/defensive-programming/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-defensive-programming" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">Defensive Programming</h1>
+    <time datetime="2010-04-09T19:51:42+00:00" class="post-date">
+      2010.04.09
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <p>As a web developer, the greater part of my job is not creating new apps, but hacking together disparate software packages into Frankensteinian amalgamations that (supposedly) work together seamlessly.  This is universally a headache, as the original authors tend to write code thinking that their app is the only one that will be installed.  <a href="http://wordpress.org">WordPress</a>, <a href="http://vanillaforums.org/">Vanilla</a>, and <a href="http://www.interspire.com/emailmarketer/">Interspire’s Email Marketer</a> are some of the worst offenders that I struggle with regularly.</p>
+
+<p>When coding your own brilliant application, there are a few simple things you can do to avoid potential collisions and headaches later, especially if anyone else will be using your code.  Here are a few areas to pay attention to.<!--more--></p>
+
+<h3 id="namespace">Namespace</h3>
+
+<p>First and foremost, you need to watch out for collisions. If you’re not using a language with built-in namespacing (e.g. PHP &lt;5.3), you’ll need to manage this manually. Some areas that you need to watch out for are:</p>
+
+<ul>
+  <li>Class Names</li>
+  <li>Session Variables</li>
+  <li>Local Variables</li>
+  <li>Constants &amp; Globals</li>
+  <li>Database Tables</li>
+</ul>
+
+<p>Most databases already have a “users” table somewhere, and an app of any size is likely to have a variable named “args” or “params” (or two, or ten…). For most cases, it’s usually enough to prefix your names with your application name.  Keeping your names verbose helps, too.</p>
+
+<h3 id="program-flow">Program Flow</h3>
+
+<p>When writing code, it’s always a good idea to keep everything to small, reusable functions.  This is especially true of published apps, because your users are very likely to be using your code in ways that your original app is not.  Try to break things down to the smallest possible chunks, even if it looks pedantic in your application.  For instance, break up your createUser() function into separate functions to add the user to the user table, subscribing the user to an email list, adding the user to the default group, etc.</p>
+
+<p>Assume that your code will be executing inside of someone else’s code.  Try not to use print and echo statements when you can simply pass returned values – only print as the final step.  (An easy way to fake this is to use output buffering.)  You never know where your output is going anyway – so don’t assume that it will be a particular format – it may end up as HTML, an email body, or in the error log depending on how it’s implemented.</p>
+
+<p>Pay special attention to any implicit defaults or rules that your code expects.  Don’t force the code to expect complicated series of objects or parameters that any one else wouldn’t immediately understand.  Don’t rely on database restrictions to impose your business rules.</p>
+
+<p>Assume that your code will be glued into an existing user system at some point – make your user system as user-friendly as possible.  Create big wide hooks that anyone can use later to interact with your user system.  Actually, do this for everything.  (Ok, WordPress, you got that one right at least.)</p>
+
+<p>Keep things wrapped up in nice containers.  Don’t just leave large procedural chunks lying around for others to trip over.  Don’t forget to give some attention to your configuration files on this front.</p>
+
+<p><strong>Don’t use globals.  Don’t use globals.  For the love of God, don’t use globals.  I don’t care how clever you think you are (I’m looking at you, <a href="http://wordpress.org">WordPress</a>), you’re going to screw everyone else up if you use globals.</strong></p>
+
+<h3 id="dont-step-on-toes">Don’t Step On Toes</h3>
+
+<p>When you’re managing your resources, it’s a good idea to be courteous of others.  If you’re using a database connection or local file, keep a copy of the handle around instead of relying on the implicit “last opened” scheme many languages offer.  And since you’re all such brilliant developers, I don’t have to remind you to make sure to clean up after yourself – closing any connections that you opened, deleting any temporary files you’ve created, and cleaning up any objects you’re done using.  Even better, write error handling into all of your code so these things are done automatically even if something fails!</p>
+
+<p>One particularly abused area is Session/Cookie management.  I cannot begin to list the number of applications that hijack the session and fill/clear it wantonly.  In general, you should never be destroying a session, or blanking out the entire cookie.  Always sandbox off your content into a hash (using namespaces again), so that you can remove only the content you added.  Also, don’t ever set the session name directly – just use the default.  (At least, in PHP you can’t use two different sessions simultaneously – setting the session name removes the ability to use any other session).</p>
+
+<h3 id="in-conclusion">In conclusion…</h3>
+
+<p>Do be a considerate programmer.  Do keep good fences (as they make for good neighbors).  Don’t build giant monoliths (as they attract groups of violent monkeys).  Stick to these rules and you’ll save everyone a lot of trouble in the long run.</p>
+
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

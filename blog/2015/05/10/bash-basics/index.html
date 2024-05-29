@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Bash Basics | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Bash Basics" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want." />
+<meta property="og:description" content="Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want." />
+<link rel="canonical" href="https://billhunt.dev/blog/2015/05/10/bash-basics/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2015/05/10/bash-basics/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-05-11T02:12:18+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Bash Basics" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2015-05-11T02:12:18+00:00","datePublished":"2015-05-11T02:12:18+00:00","description":"Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want.","headline":"Bash Basics","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2015/05/10/bash-basics/"},"url":"https://billhunt.dev/blog/2015/05/10/bash-basics/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-bash-basics" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">Bash Basics</h1>
+    <time datetime="2015-05-11T02:12:18+00:00" class="post-date">
+      2015.05.11
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <p>Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want.</p>
+
+<p>Let me start with the conclusion first. <strong>The next time you have to transform or manipulate your data, look around for what Unix tools already exist first.</strong>  It might take you a little longer to figure out all of the flags and parameters you need, and you’ll have to dig through some unfriendly documentation, but you’ll have a new, far more flexible tool in your toolbox the next time around.</p>
+
+<p>Before you settle on a policy, see if you can get the one on an <a href="http://www.moneyexpert.com/car-insurance/">insurance cash back deal</a> from a comparison site.</p>
+
+<p>This is part 1 of a series on Unix tools. <!--more--> Read the other parts:</p>
+
+<ol>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/bash-basics/">Bash Basics</a></li>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/unix-tools/">Unix Tools</a></li>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/managing-data-with-unix-tools/">Managing Data with Unix Tools</a></li>
+</ol>
+
+<h3 id="assumptions">Assumptions</h3>
+
+<p>I’ll assume you know the very basics here – what a <a href="http://en.wikipedia.org/wiki/Man_page">man page</a> is, how to create an <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-2.html#ss2.1">executable bash script</a>, <a href="http://cli.learncodethehardway.org/book/ex1.html">how to open a terminal window</a>, and how to use basic utilities.  If you don’t know any of those, you should start with one of the many intros to the command line available.  <a href="http://cli.learncodethehardway.org/book/">This intro by Zed Shaw is a good place to start</a>.</p>
+
+<h3 id="the-shell">The Shell</h3>
+
+<p>Bash is the default shell on most systems these days, but what we’re covering here will mostly work for zsh or other shells – though some syntax elements will be different.</p>
+
+<p>First off, Bash is a powerful tool by itself. Even with no additional packages added, you get variables, loops, expansions &amp; regular expressions, and much more. Here’s <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">a good guide with more information on using bash</a>. I’ll assume you know the basics from here on out, and show you what you can do with them.</p>
+
+<h3 id="advanced-paths">Advanced Paths</h3>
+
+<p>If you want to work with several directory paths in a row that are very similar, you can pass a list to the shell using curly braces <code class="language-plaintext highlighter-rouge">{}</code> and it’ll expand that list automagically. Let’s say I wanted to setup a few directories for a new project’s test suite. Rather than running a lot of duplicated commands, I could pass a few lists instead.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p ./test/{unit,fixtures}
+&gt; Creates ./test/unit and ./test/fixtures
+mkdir -p ./test/unit/{controllers,models}
+&gt; Creates ./test/unit/controllers and ./test/unit/models
+</code></pre></div></div>
+
+<p>Note that we’ve passed the <code class="language-plaintext highlighter-rouge">-p</code> flag to <code class="language-plaintext highlighter-rouge">mkdir</code> so that it’ll create all of the directories up the chain, even <code class="language-plaintext highlighter-rouge">./test</code> here.</p>
+
+<p>We can also use pattern matching with brackets <code class="language-plaintext highlighter-rouge">[]</code>. For instance, if you’ve got a lot of files that you want to separate alphabetically, you use a letter pattern:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv ./[A-H]* /Volumes/Library/A-H/
+mv ./[I-O]* /Volumes/Library/I-O/
+mv ./[P-Z]* /Volumes/Library/P-Z/
+</code></pre></div></div>
+
+<p>This will have broken your library up into three sets. You can also use that matching later in the string:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv ./A[a-k]* /Volumes/Library/Aa-Ak/
+mv ./A[l-z]* /Volumes/Library/Al-Az/
+</code></pre></div></div>
+
+<p>Now, by default most systems will be <em>case sensitive</em>, so you will have left behind all of your files starting with a lowercase letter. This is less than ideal, so we can set a flag to tell the system to be case insensitive for file matching. This type of matching is known as <em>globbing</em>, and to set this flag, we run <code class="language-plaintext highlighter-rouge">shopt -s nocaseglob</code>. (In zsh this would be <code class="language-plaintext highlighter-rouge">unsetopt CASE_GLOB</code>) If you just run that on your shell, it’ll stick on the current session until you unset it with <code class="language-plaintext highlighter-rouge">shopt -u nocaseglob</code>. You might even want to add that to your <code class="language-plaintext highlighter-rouge">.bash_profile</code>. Bash, however, also allows us to set environment variables for just the current execution, by wrapping the commands in parentheses:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(shopt -s nocaseglob ; mv ./[A-H]* /Volumes/Library/A-H/)
+</code></pre></div></div>
+
+<p>This will only use case insensitive globbing for that single command, and then will turn the value back off.</p>
+
+<h3 id="loops">Loops</h3>
+
+<p>Bash allows you to make use of some rather powerful <code class="language-plaintext highlighter-rouge">for</code> loops. I frequently use loops to automate boring manual work, like converting a bunch of RAW image files into web-friendly JPEGs of appropriate size:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for i in *.CR2; do
+    dcraw -c -a -w -v $i | convert - -resize '1000x1000' -colorspace gray $i.jpg;
+done;
+</code></pre></div></div>
+
+<p>(You could run that as a one-liner as well, the line breaks are just here to make this readable.) Here, I’m taking all of the <code class="language-plaintext highlighter-rouge">.CR2</code> files in the current directory, passing those to <code class="language-plaintext highlighter-rouge">dcraw</code> to translate the format from RAW into JPEG, then <code class="language-plaintext highlighter-rouge">&lt;a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-4.html"&gt;piping&lt;/a&gt;</code> the output to ImageMagick, which shrinks it to web-size of no more than 1000 pixels on a side and makes everything black and white, which is extra-artsy.</p>
+
+<p>I use a similar command in our legal docs repo to convert our source Markdown files into a variety of formats, using <code class="language-plaintext highlighter-rouge">pandoc</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for myfile in $( ls ./markdown ); do
+  echo Converting $myfile;
+  for fmt in html docx pdf; do
+    filetrim=${myfile%???};
+    pandoc -o "./"$fmt"/"$filetrim"."$fmt -f markdown "./markdown/"$myfile;
+  done;
+done
+</code></pre></div></div>
+
+<p>This one is a little fancier, as we’re doing a bunch of things with nested loops, file name trimming, etc. Let’s break it down:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for myfile in $( ls ./markdown ); do
+</code></pre></div></div>
+
+<p>First off, grab a list of the files in the <code class="language-plaintext highlighter-rouge">./markdown</code> folder. Use the variable <code class="language-plaintext highlighter-rouge">$myfile</code> to store the current file’s name.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for fmt in html docx pdf; do
+</code></pre></div></div>
+
+<p>Now we’ve got a loop within a loop. We’re creating a list of the format’s we’ll be using (<code class="language-plaintext highlighter-rouge">html</code>, <code class="language-plaintext highlighter-rouge">docx</code>, and <code class="language-plaintext highlighter-rouge">pdf</code>) and storing the current format in the variable <code class="language-plaintext highlighter-rouge">$fmt</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>filetrim=${myfile%???};
+</code></pre></div></div>
+
+<p>Here’s a useful bit – we’re trimming the <em>last three characters</em> (using <code class="language-plaintext highlighter-rouge">%???</code>) from the string, which is the extension (<code class="language-plaintext highlighter-rouge">.md</code>). Another valid pattern would be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>filetrim=${myfile%.*};
+</code></pre></div></div>
+
+<p>which simply removes the entire extension, regardless of how long it is.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pandoc -o "./"$fmt"/"$filetrim"."$fmt -f markdown "./markdown/"$myfile;
+</code></pre></div></div>
+
+<p>Here we’re passing all of our variables we’ve assembled back to pandoc. We’re quoting the strings we want hardcoded in there, so that they’re not misinterpreted as part of the variable name, which would cause this to throw errors.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>done;
+done
+</code></pre></div></div>
+
+<p>And then we’re closing out both of our for loops.</p>
+
+<h3 id="wrapping-up">Wrapping Up</h3>
+
+<p>You can also use builtin utilities to do simple tasks, like appending content to files:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "name=core1" &gt;&gt; ./solr/core.properties
+</code></pre></div></div>
+
+<p>That’s it for now, continue on to the next part, <a href="http://krues8dr.com/blog/2015/05/10/unix-tools/">Unix Tools</a>.</p>
+
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

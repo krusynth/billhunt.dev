@@ -1,0 +1,177 @@
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:admin="http://webns.net/mvcb/">
+
+  <foaf:PersonalProfileDocument rdf:about="">
+    <foaf:maker rdf:resource="#me"/>
+    <foaf:primaryTopic rdf:resource="#me"/>
+    <admin:generatorAgent rdf:resource="https://github.com/krusynth/billhunt.dev/blob/www/xml/foaf.rdf"/>
+  </foaf:PersonalProfileDocument>
+
+  <foaf:Person rdf:ID="me">
+    <foaf:name>Bill Hunt</foaf:name>
+    <foaf:nick>krusynth</foaf:nick>
+    <foaf:mbox rdf:resource="mailto:hello@billhunt.email"/>
+    <foaf:homepage rdf:resource="https://billhunt.dev"/>
+    <foaf:depicts rdf:resource="https://billhunt.dev/uploads/2009/03/bill-hunt.jpg"/>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="https://mastodon.publicinterest.town/@krusynth"></foaf:OnlineAccount>
+    </foaf:holdsAccount>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="https://github.com/krusynth"></foaf:OnlineAccount>
+    </foaf:holdsAccount>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="https://www.linkedin.com/in/krusynth/"></foaf:OnlineAccount>
+    </foaf:holdsAccount>
+  </foaf:Person>
+
+  <!-- Links to Other Folks -->
+
+  
+  <foaf:Person rdf:ID="waldo-jaquith">
+    <foaf:name>Waldo Jaquith</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://waldo.jaquith.org/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="vyki-englert">
+    <foaf:name>Vyki Englert</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://medium.com/@vyki_e"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="hunter-owens">
+    <foaf:name>Hunter Owens</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://hunterowens.net/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="lauren-ancona">
+    <foaf:name>Lauren Ancona</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://laurenancona.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="noah-krohn">
+    <foaf:name>Noah Krohn</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://monkeyguild.org/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="matt-bailey">
+    <foaf:name>Matt Bailey</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://mattmattmatt.org/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="rebecca-williams">
+    <foaf:name>Rebecca Williams</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://rebeccawilliams.info/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="justin-grimes">
+    <foaf:name>Justin Grimes</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://justgrimes.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="brodrick-jones">
+    <foaf:name>Brodrick Jones</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://www.jigsawfanclub.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="erin-kissane">
+    <foaf:name>Erin Kissane</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://erinkissane.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="anne-petersen">
+    <foaf:name>Anne Petersen</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://annepetersen.is/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="alex-howard">
+    <foaf:name>Alex Howard</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://digiphile.info/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="zac-cohn">
+    <foaf:name>Zac Cohn</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://www.zaccohn.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="travis-biggs">
+    <foaf:name>Travis Biggs</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://travisbriggs.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="matt-zagaja">
+    <foaf:name>Matt Zagaja</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://www.zagaja.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="dave-zvenyach">
+    <foaf:name>Dave Zvenyach</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://vdavez.com"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="eric-mill">
+    <foaf:name>Eric Mill</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://konklone.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="tom-macwright">
+    <foaf:name>Tom MacWright</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://macwright.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="dave-guarino">
+    <foaf:name>Dave Guarino</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://www.daveguarino.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="phil-ashlock">
+    <foaf:name>Phil Ashlock</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://phil.ashlock.us"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="sean-boots">
+    <foaf:name>Sean Boots</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://sboots.ca/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="jacob-kaplan-moss">
+    <foaf:name>Jacob Kaplan-Moss</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://jacobian.org/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="sarah-glassmeyer">
+    <foaf:name>Sarah Glassmeyer</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://sarahglassmeyer.com/"/>
+      <foaf:knows rdf:resource="#me"/>
+  </foaf:Person>
+  
+  <foaf:Person rdf:ID="gareth-branwyn">
+    <foaf:name>Gareth Branwyn</foaf:name>
+    <rdfs:seeAlso rdf:resource="https://garstipsandtools.com/"/>
+  </foaf:Person>
+  
+
+</rdf:RDF>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text" xml:lang="en">Bill Hunt – Recommended Posts</title>
+  <link type="application/atom+xml" href="https://billhunt.dev/feed.xml" rel="self"/>
+  <link href="https://billhunt.dev/"/>
+  <updated>2024-05-29T19:48:41Z</updated>
+  <id>https://billhunt.dev/</id>
+  <author>
+    <name>Bill Hunt</name>
+    <email>hello@billhunt.email</email>
+  </author>
+  <rights type="text">All content copyright © Bill Hunt. All rights reserved.</rights>
+
+<entry>
+  <title>We Can Have A Different Web</title>
+  <link rel="alternate" type="text/html" href="https://www.citationneeded.news/we-can-have-a-different-web/" />
+  <published>2024-05-03T00:00:00+00:00</published>
+  <updated>2024-05-03T00:00:00+00:00</updated>
+  <id>https://www.citationneeded.news/we-can-have-a-different-web/</id>
+  <content type="html">
+    &lt;p&gt;Molly White talks about how we can reclain the web, and rebuild what we’ve lost.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.citationneeded.news/we-can-have-a-different-web/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>They're Looting The Internet</title>
+  <link rel="alternate" type="text/html" href="https://www.wheresyoured.at/the-great-looting-of-the-internet/" />
+  <published>2024-04-16T00:00:00+00:00</published>
+  <updated>2024-04-16T00:00:00+00:00</updated>
+  <id>https://www.wheresyoured.at/the-great-looting-of-the-internet/</id>
+  <content type="html">
+    &lt;p&gt;This is a must-read piece from Ed Zitron describing how the major internet corporations have become actively hostile to users.&lt;br /&gt;&lt;br /&gt;“It’s the hallmark of a tech industry dedicated to creating problems that it charges you to solve, a sickly beast borne of venture capital and a lack of innovation. When you’re rich and powerful, you no longer face real problems, and as a result fail to consider the solutions that would measurably improve a person’s life.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.wheresyoured.at/the-great-looting-of-the-internet/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>On Values</title>
+  <link rel="alternate" type="text/html" href="https://another.rodeo/values/" />
+  <published>2024-04-09T00:00:00+00:00</published>
+  <updated>2024-04-09T00:00:00+00:00</updated>
+  <id>https://another.rodeo/values/</id>
+  <content type="html">
+    &lt;p&gt;Carter Baxter talks about how as a culture we’ve traded ethical values for shareholder value.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://another.rodeo/values/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>The LLMentalist Effect</title>
+  <link rel="alternate" type="text/html" href="https://softwarecrisis.dev/letters/llmentalist/" />
+  <published>2024-04-09T00:00:00+00:00</published>
+  <updated>2024-04-09T00:00:00+00:00</updated>
+  <id>https://softwarecrisis.dev/letters/llmentalist/</id>
+  <content type="html">
+    &lt;p&gt;Baldur Bjarnason lays out how the current AI-obsession is backed by chicanery usually employed by psychics.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://softwarecrisis.dev/letters/llmentalist/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Robots.txt to block AI bots</title>
+  <link rel="alternate" type="text/html" href="https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/" />
+  <published>2024-03-27T00:00:00+00:00</published>
+  <updated>2024-03-27T00:00:00+00:00</updated>
+  <id>https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/</id>
+  <content type="html">
+    &lt;p&gt;Cory Dransfeldt provides this excellent list of AI scraping bots to put in your disallow list for robots.txt.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>How Web 2.0 killed the Internet</title>
+  <link rel="alternate" type="text/html" href="https://ar.al/notes/how-web-2-0-killed-the-internet/" />
+  <published>2024-03-27T00:00:00+00:00</published>
+  <updated>2024-03-27T00:00:00+00:00</updated>
+  <id>https://ar.al/notes/how-web-2-0-killed-the-internet/</id>
+  <content type="html">
+    &lt;p&gt;This old post from Aral Balkan about the failed promise of open APIs still rings true a decade later.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ar.al/notes/how-web-2-0-killed-the-internet/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Have We Reached Peak AI?</title>
+  <link rel="alternate" type="text/html" href="https://www.wheresyoured.at/peakai/" />
+  <published>2024-03-21T00:00:00+00:00</published>
+  <updated>2024-03-21T00:00:00+00:00</updated>
+  <id>https://www.wheresyoured.at/peakai/</id>
+  <content type="html">
+    &lt;p&gt;Ed Zitron does an incredible job of separating hype from fact in his recent article about AI.
+&lt;br /&gt;&lt;br /&gt;
+“Sam Altman desperately needs you to believe that generative AI will be essential, inevitable and intractable, because if you don’t, you’ll suddenly realize that trillions of dollars of market capitalization and revenue are being blown on something remarkably mediocre.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.wheresyoured.at/peakai/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Jakob Is Wrong</title>
+  <link rel="alternate" type="text/html" href="https://buttondown.email/practicaltips/archive/we-need-to-talk-about-jakob/" />
+  <published>2024-03-07T00:00:00+00:00</published>
+  <updated>2024-03-07T00:00:00+00:00</updated>
+  <id>https://buttondown.email/practicaltips/archive/we-need-to-talk-about-jakob/</id>
+  <content type="html">
+    &lt;p&gt;Matt May has posted an excellent response to &lt;a href=&quot;https://jakobnielsenphd.substack.com/p/accessibility-generative-ui?utm_source=practicaltips&amp;amp;utm_medium=email&amp;amp;utm_campaign=we-need-to-talk-about-jakob&quot;&gt;Jakob Nielsen’s awful screed that accessibility has failed&lt;/a&gt; and we should leave it up to the robots to sort out.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://buttondown.email/practicaltips/archive/we-need-to-talk-about-jakob/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Practical Infrastructure Ops</title>
+  <link rel="alternate" type="text/html" href="https://cep.dev/posts/every-infrastructure-decision-i-endorse-or-regret-after-4-years-running-infrastructure-at-a-startup/" />
+  <published>2024-02-27T00:00:00+00:00</published>
+  <updated>2024-02-27T00:00:00+00:00</updated>
+  <id>https://cep.dev/posts/every-infrastructure-decision-i-endorse-or-regret-after-4-years-running-infrastructure-at-a-startup/</id>
+  <content type="html">
+    &lt;p&gt;Jack Lindamood gives a long list of lessons learned when running large-scale performant cloud infrastructure for small- to medium-sized teams.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cep.dev/posts/every-infrastructure-decision-i-endorse-or-regret-after-4-years-running-infrastructure-at-a-startup/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Where Have All The Websites Gone</title>
+  <link rel="alternate" type="text/html" href="https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/" />
+  <published>2024-01-18T00:00:00+00:00</published>
+  <updated>2024-01-18T00:00:00+00:00</updated>
+  <id>https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/</id>
+  <content type="html">
+    &lt;p&gt;Jason Velazquez explores the current state of the web and the death of personal websites, and how to fix it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Technical Project Oversight for Senior Management</title>
+  <link rel="alternate" type="text/html" href="https://waldo.jaquith.org/blog/2023/05/principal-oversee-software/" />
+  <published>2023-12-08T00:00:00+00:00</published>
+  <updated>2023-12-08T00:00:00+00:00</updated>
+  <id>https://waldo.jaquith.org/blog/2023/05/principal-oversee-software/</id>
+  <content type="html">
+    &lt;p&gt;I was just revisiting this article from Waldo Jaquith that he posted back in May to share with my organization, and I figure some folks didn’t see it the first time around. This is a great summary of how senior management can prevent the dreaded moments when software projects magically go from green to red on the status board.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://waldo.jaquith.org/blog/2023/05/principal-oversee-software/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Scroll to Text Fragments</title>
+  <link rel="alternate" type="text/html" href="https://til.simonwillison.net/html/scroll-to-text" />
+  <published>2023-11-21T00:00:00+00:00</published>
+  <updated>2023-11-21T00:00:00+00:00</updated>
+  <id>https://til.simonwillison.net/html/scroll-to-text</id>
+  <content type="html">
+    &lt;p&gt;Simon Willison shares this tip on using URL Fragment Text Directives, a way of deep linking to elements in a web page even when there aren’t available ids for anchors.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://til.simonwillison.net/html/scroll-to-text&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Why can't our tech billionaires learn anything new?</title>
+  <link rel="alternate" type="text/html" href="https://davekarpf.substack.com/p/why-cant-our-tech-billionaires-learn" />
+  <published>2023-10-27T00:00:00+00:00</published>
+  <updated>2023-10-27T00:00:00+00:00</updated>
+  <id>https://davekarpf.substack.com/p/why-cant-our-tech-billionaires-learn</id>
+  <content type="html">
+    &lt;p&gt;Dave Karpf provides this excellent teardown of Marc Andreesen’s garbage “techno-optimist manifesto.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://davekarpf.substack.com/p/why-cant-our-tech-billionaires-learn&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Politics: What Americans Want</title>
+  <link rel="alternate" type="text/html" href="https://pluralistic.net/2023/10/18/the-people-no/" />
+  <published>2023-10-23T00:00:00+00:00</published>
+  <updated>2023-10-23T00:00:00+00:00</updated>
+  <id>https://pluralistic.net/2023/10/18/the-people-no/</id>
+  <content type="html">
+    &lt;p&gt;Cory Doctorow goes through a lot of compelling research on how out-of-touch American politics is with what the American people actually want.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pluralistic.net/2023/10/18/the-people-no/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Occult Strategies</title>
+  <link rel="alternate" type="text/html" href="https://www.kickstarter.com/projects/notacult/occult-strategies" />
+  <published>2023-10-19T00:00:00+00:00</published>
+  <updated>2023-10-19T00:00:00+00:00</updated>
+  <id>https://www.kickstarter.com/projects/notacult/occult-strategies</id>
+  <content type="html">
+    &lt;p&gt;Via &lt;a href=&quot;https://boingboing.net/author/gareth_branwyn&quot;&gt;Gareth Branwyn’s blog&lt;/a&gt;, some of you weirdos might love this riff on the Oblique Strategies deck by Brian Eno and Peter Schmidt: Occult Strategies. I just backed it!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.kickstarter.com/projects/notacult/occult-strategies&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Speak Softly and Carry a Long Roadmap</title>
+  <link rel="alternate" type="text/html" href="https://concrete.ghost.io/speak-softly-and-carry-a-long-roadmap/" />
+  <published>2023-10-17T00:00:00+00:00</published>
+  <updated>2023-10-17T00:00:00+00:00</updated>
+  <id>https://concrete.ghost.io/speak-softly-and-carry-a-long-roadmap/</id>
+  <content type="html">
+    &lt;p&gt;I had missed this when Matthew Burton published it at the beginning of the year, but this compelling piece makes a call for a long term view of IT modernization in the US government.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://concrete.ghost.io/speak-softly-and-carry-a-long-roadmap/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Web Rot is Erasing Our Images</title>
+  <link rel="alternate" type="text/html" href="https://www.dpreview.com/opinion/0517674260/web-rot-is-erasing-our-images-and-videos" />
+  <published>2023-08-31T00:00:00+00:00</published>
+  <updated>2023-08-31T00:00:00+00:00</updated>
+  <id>https://www.dpreview.com/opinion/0517674260/web-rot-is-erasing-our-images-and-videos</id>
+  <content type="html">
+    &lt;p&gt;This compelling piece on DPReview documents how the current state of the internet is causing us to lose massive amounts of knowledge. All the more reason to build your own backups and long-term plans for your content!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.dpreview.com/opinion/0517674260/web-rot-is-erasing-our-images-and-videos&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Remove the Consultants</title>
+  <link rel="alternate" type="text/html" href="https://bellmar.medium.com/the-first-thing-we-do-lets-kill-all-the-consultants-bc64bcebf1b5" />
+  <published>2023-08-10T00:00:00+00:00</published>
+  <updated>2023-08-10T00:00:00+00:00</updated>
+  <id>https://bellmar.medium.com/the-first-thing-we-do-lets-kill-all-the-consultants-bc64bcebf1b5</id>
+  <content type="html">
+    &lt;p&gt;The brilliant Marianne Bellotti gives a practical approach to eliminating costly consultants in your organization in favor of upskilling and training. I’ve always been a huge fan of this approach, and is exactly how my team is currently modernizing our organization!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://bellmar.medium.com/the-first-thing-we-do-lets-kill-all-the-consultants-bc64bcebf1b5&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Luddites and AI</title>
+  <link rel="alternate" type="text/html" href="https://thenib.com/im-a-luddite/" />
+  <published>2023-07-19T00:00:00+00:00</published>
+  <updated>2023-07-19T00:00:00+00:00</updated>
+  <id>https://thenib.com/im-a-luddite/</id>
+  <content type="html">
+    &lt;p&gt;In the Nib this week, Tom Humberstone gives an excellent history of the Luddite movement, and how it reflects the current growing concerns around AI in creative work.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://thenib.com/im-a-luddite/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Rad Reader for RSS</title>
+  <link rel="alternate" type="text/html" href="https://cblgh.itch.io/rad-reader" />
+  <published>2023-07-10T00:00:00+00:00</published>
+  <updated>2023-07-10T00:00:00+00:00</updated>
+  <id>https://cblgh.itch.io/rad-reader</id>
+  <content type="html">
+    &lt;p&gt;Y’all know I love RSS! &lt;a href=&quot;https://merveilles.town/@cblgh&quot;&gt;Alexander Cobleigh&lt;/a&gt; has put together a nice RSS reader app for the desktop, and it’s only $5 right now!”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cblgh.itch.io/rad-reader&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Too Many Zooz - Brasshouse music</title>
+  <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?app=desktop&amp;v=mD2xXNg_Vy8" />
+  <published>2023-06-30T00:00:00+00:00</published>
+  <updated>2023-06-30T00:00:00+00:00</updated>
+  <id>https://www.youtube.com/watch?app=desktop&amp;v=mD2xXNg_Vy8</id>
+  <content type="html">
+    &lt;p&gt;I shared this already on Mastodon, but it occurs to me that many folks aren’t familiar with Too Many Zooz, one of my favorite brasshouse bands. They were recently on tour with Moon Hooch and Lucky Chops, all of which are also worth checking out.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?app=desktop&amp;v=mD2xXNg_Vy8&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>HTMX</title>
+  <link rel="alternate" type="text/html" href="https://quii.dev/HTMX_is_the_Future" />
+  <published>2023-05-09T00:00:00+00:00</published>
+  <updated>2023-05-09T00:00:00+00:00</updated>
+  <id>https://quii.dev/HTMX_is_the_Future</id>
+  <content type="html">
+    &lt;p&gt;Chris James discusses &lt;a href=&quot;https://htmx.org/&quot;&gt;HTMX&lt;/a&gt;, an HTML-enhancement JavaScript library (similar to &lt;a href=&quot;https://unpoly.com/&quot;&gt;Unpoly&lt;/a&gt; which I use on this site), and the trending rise of HTML-over-the-wire replacing thicker libraries like React.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://quii.dev/HTMX_is_the_Future&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>React and Flash</title>
+  <link rel="alternate" type="text/html" href="https://remotesynthesis.com/blog/the-price-of-developer-tools/" />
+  <published>2023-03-01T00:00:00+00:00</published>
+  <updated>2023-03-01T00:00:00+00:00</updated>
+  <id>https://remotesynthesis.com/blog/the-price-of-developer-tools/</id>
+  <content type="html">
+    &lt;p&gt;Brian Rinaldi makes a compelling comparison between React and Adobe Flash, the inevitability of change, and how overly-attached developers suffer as a result.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://remotesynthesis.com/blog/the-price-of-developer-tools/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>How To Pay HCD Study Participants In Government</title>
+  <link rel="alternate" type="text/html" href="https://medium.com/u-s-digital-response/navigating-the-sticky-web-of-research-compensation-8e9853f210bb" />
+  <published>2023-02-15T00:00:00+00:00</published>
+  <updated>2023-02-15T00:00:00+00:00</updated>
+  <id>https://medium.com/u-s-digital-response/navigating-the-sticky-web-of-research-compensation-8e9853f210bb</id>
+  <content type="html">
+    &lt;p&gt;This article from the U.S. Digital Response team breaks down methods for government agencies to pay participants in user testing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/u-s-digital-response/navigating-the-sticky-web-of-research-compensation-8e9853f210bb&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Exiting Technology Projects</title>
+  <link rel="alternate" type="text/html" href="https://cdm16501.contentdm.oclc.org/digital/collection/tech/id/1102" />
+  <published>2023-01-06T00:00:00+00:00</published>
+  <updated>2023-01-06T00:00:00+00:00</updated>
+  <id>https://cdm16501.contentdm.oclc.org/digital/collection/tech/id/1102</id>
+  <content type="html">
+    &lt;p&gt;As I’m starting a few new projects, I’m revisiting this guide from &lt;a href=&quot;https://keith.porca.ro/&quot;&gt;Keith Porcaro&lt;/a&gt; and friends on how to shut down tech projects. It’s always a good idea to begin with the end in mind!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cdm16501.contentdm.oclc.org/digital/collection/tech/id/1102&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Breaking up with JavaScript Frontends</title>
+  <link rel="alternate" type="text/html" href="http://triskweline.de/unpoly-rugb/" />
+  <published>2023-01-04T00:00:00+00:00</published>
+  <updated>2023-01-04T00:00:00+00:00</updated>
+  <id>http://triskweline.de/unpoly-rugb/</id>
+  <content type="html">
+    &lt;p&gt;I really enjoyed this presentation from Henning Koch, the author of unpoly.js about replacing React/Vue/Angular with the much, much thinner unpoly library.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://triskweline.de/unpoly-rugb/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Building for Longevity</title>
+  <link rel="alternate" type="text/html" href="https://sethetter.com/posts/building-for-longevity/" />
+  <published>2023-01-03T00:00:00+00:00</published>
+  <updated>2023-01-03T00:00:00+00:00</updated>
+  <id>https://sethetter.com/posts/building-for-longevity/</id>
+  <content type="html">
+    &lt;p&gt;I thoroughly enjoyed this post from Seth Etter on building technology for longevity.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://sethetter.com/posts/building-for-longevity/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Government Domain Name Rationalization</title>
+  <link rel="alternate" type="text/html" href="https://medium.com/@aanatecture/7-step-workshop-642cf6f39b7b" />
+  <published>2022-12-09T00:00:00+00:00</published>
+  <updated>2022-12-09T00:00:00+00:00</updated>
+  <id>https://medium.com/@aanatecture/7-step-workshop-642cf6f39b7b</id>
+  <content type="html">
+    &lt;p&gt;&lt;a href=&quot;https://anamonroe.com/&quot;&gt;Ana Monroe&lt;/a&gt; shared this workshop that GSA performed to rationalize its wide assortment of domain names. Government agencies typically have lots of different vanity domain names for new programs, and it makes it &lt;em&gt;very&lt;/em&gt; hard for people to find these programs as a result.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@aanatecture/7-step-workshop-642cf6f39b7b&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Basecamp Moving Out Of The Cloud</title>
+  <link rel="alternate" type="text/html" href="https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0" />
+  <published>2022-11-01T00:00:00+00:00</published>
+  <updated>2022-11-01T00:00:00+00:00</updated>
+  <id>https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0</id>
+  <content type="html">
+    &lt;p&gt;I generally don’t like to repost DHH, but I saw this morning that Basecamp is moving out of the AWS Cloud because it’s not cost effective for them. For those of y’all who have read my &lt;a href=&quot;https://billhunt.dev/blog/2021/02/28/cloudbusting/&quot;&gt;Cloudbusting&lt;/a&gt; and &lt;a href=&quot;https://billhunt.dev/blog/2021/03/07/cloud-strategy-guide/&quot;&gt;Cloud Strategy Guide&lt;/a&gt; articles, this should sound familiar.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Run Your Own Social Network</title>
+  <link rel="alternate" type="text/html" href="https://runyourown.social/" />
+  <published>2022-11-01T00:00:00+00:00</published>
+  <updated>2022-11-01T00:00:00+00:00</updated>
+  <id>https://runyourown.social/</id>
+  <content type="html">
+    &lt;p&gt;With the implosion of Twitter, it’s a good time to revisit this post from &lt;a href=&quot;https://tinysubversions.com/&quot;&gt;Darius Kazemi&lt;/a&gt; on some of the philsophical aspects of running a Mastodon (or Hometown) server for your friends &amp;amp; colleagues!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://runyourown.social/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+
+</feed>

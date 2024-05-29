@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Upgrading Solr from 4.2 to 4.3+ on CentOS 6.4 | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Upgrading Solr from 4.2 to 4.3+ on CentOS 6.4" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I ran into an issue with a Solr configuration that was working for me locally, but not on our CentOS 6.4 server. I’ve documented below all of the issues I encountered along the way, as the upgrade from Solr 4.2 to 4.3+ is a pretty nasty one, due to major changes in the logging system (LOG4J / SLF4J)" />
+<meta property="og:description" content="I ran into an issue with a Solr configuration that was working for me locally, but not on our CentOS 6.4 server. I’ve documented below all of the issues I encountered along the way, as the upgrade from Solr 4.2 to 4.3+ is a pretty nasty one, due to major changes in the logging system (LOG4J / SLF4J)" />
+<link rel="canonical" href="https://billhunt.dev/blog/2013/11/01/upgrading-solr-from-4-2-to-4-3-on-centos-6-4/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2013/11/01/upgrading-solr-from-4-2-to-4-3-on-centos-6-4/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-11-01T13:50:49+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Upgrading Solr from 4.2 to 4.3+ on CentOS 6.4" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2013-11-01T13:50:49+00:00","datePublished":"2013-11-01T13:50:49+00:00","description":"I ran into an issue with a Solr configuration that was working for me locally, but not on our CentOS 6.4 server. I’ve documented below all of the issues I encountered along the way, as the upgrade from Solr 4.2 to 4.3+ is a pretty nasty one, due to major changes in the logging system (LOG4J / SLF4J)","headline":"Upgrading Solr from 4.2 to 4.3+ on CentOS 6.4","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2013/11/01/upgrading-solr-from-4-2-to-4-3-on-centos-6-4/"},"url":"https://billhunt.dev/blog/2013/11/01/upgrading-solr-from-4-2-to-4-3-on-centos-6-4/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-upgrading-solr-from-4-2-to-4-3-on-centos-6-4" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">Upgrading Solr from 4.2 to 4.3+ on CentOS 6.4</h1>
+    <time datetime="2013-11-01T13:50:49+00:00" class="post-date">
+      2013.11.01
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <p>I ran into an issue with a Solr configuration that was working for me locally, but not on our CentOS 6.4 server. I’ve documented below all of the issues I encountered along the way, as the upgrade from Solr 4.2 to 4.3+ is a pretty nasty one, due to major changes in the logging system (<strong>LOG4J / SLF4J</strong>)</p>
+
+<!--more-->
+
+<div style="border: 3px solid #ee0000; border-radius: 5px; padding: 5px 10px; background-color: #fff9f9; margin-bottom: 1em;">
+  <strong>Update: as of January 2015,</strong> I have been unable to get Solr 4.10 to run on Tomcat 6, so I&#8217;ve defaulted to just using the example Jetty server that&#8217;s bundled with it.  It&#8217;s less than ideal, but it works.  <a href="http://blogs.pigrider.com/blogs/62">Here&#8217;s good documentation on that process</a>.
+</div>
+
+<h3 id="lucenesolr-43--the-beginning">Lucene/Solr 4.3+ : The Beginning</h3>
+
+<p>The awesome guys at <a href="http://www.opensourceconnections.com/">Open Source Connections</a> had created a custom tokenizer for Solr for <a href="http://www.statedecoded.com/">The State Decoded</a>, which was suddenly throwing this new error:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.lang.IllegalArgumentException: No enum const class org.apache.lucene.util.Version.LUCENE_43
+</code></pre></div></div>
+
+<p>Which I guessed to mean that they’d specified to use Lucene 4.3 (or in my case, Solr 4.3) in the <code class="language-plaintext highlighter-rouge">solr_home/conf/solrconfig.xml file</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;luceneMatchVersion&gt;LUCENE_43&lt;/luceneMatchVersion&gt;
+</code></pre></div></div>
+
+<p>Since CentOS 6.4 only comes with Solr 4.2 out of the box, I tried changing that to <code class="language-plaintext highlighter-rouge">LUCENE_42</code> but received even more intimidating errors:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] fieldType "descendent_facet_hierarchical": Plugin init failure for [schema.xml] analyzer/tokenizer: Error instantiating class: 'com.o19s.RegexPathHierarchyTokenizerFactory'
+</code></pre></div></div>
+
+<p><a href="https://github.com/statedecoded/statedecoded/issues/491#issuecomment-27504360">The full stack dump is here</a></p>
+
+<p>We guessed that the package needed to be rebuilt from source.</p>
+
+<h3 id="maven">Maven</h3>
+
+<p>To do that, first I had to install Maven, which was missing from CentOS. <a href="http://preilly.me/2013/05/10/how-to-install-maven-on-centos/">Following the instructions here</a>, I went to the <a href="http://maven.apache.org/download.cgi">Maven site</a> and found the download link for the latest version (in my case, that was 3.1.1). I grabbed that file and stored it in my /usr/local directory (for ease of use), unzipping as usual:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd;
+wget http://apache.tradebit.com/pub/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz
+tar -xzf ./apache-maven-3.1.1-bin.tar.gz -C /usr/local
+</code></pre></div></div>
+
+<p>Then I created a link to it:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ln -s apache-maven-3.1.1 maven
+</code></pre></div></div>
+
+<p>And added a native profile loader:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /etc/profile.d/maven.sh
+</code></pre></div></div>
+
+<p>To add it to the path:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export M2_HOME=/usr/local/maven
+export PATH=${M2_HOME}/bin:${PATH}
+</code></pre></div></div>
+
+<h3 id="jdk">JDK</h3>
+
+<p>Now, after all of that, apparently I still did not have the Java Development Kit (aka JDK) installed. You’d think that the package OpenJDK would provide this, by the name, but it turns out that that only contains the Java Virual Machine (JVM). I discovered this as maven complained about <strong>a missing file <code class="language-plaintext highlighter-rouge">tools.jar</code></strong></p>
+
+<p>So, I checked <code class="language-plaintext highlighter-rouge">yum</code> for the latest version and installed it:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo yum list jdk
+sudo yum install java-1.6.0-openjdk-devel
+</code></pre></div></div>
+
+<p>And added another profile loader:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /etc/profile.d/java.sh
+</code></pre></div></div>
+
+<p>for that path:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64
+</code></pre></div></div>
+
+<p>A quick log out and log in fixed up my paths to use those. All that being done, I tried rebuilding the solr tokenizer, but it still didn’t work. I needed to upgrade Solr first.</p>
+
+<h3 id="upgrading-to-solr43">Upgrading to Solr4.3+</h3>
+
+<p>Now, between Solr 4.2 and Solr 4.3, they removed the native <strong>LOG4J</strong> support that is by default needed to run Solr. So there are a lot of extra steps here.</p>
+
+<p><em><rant>Seriously, why they would do this, I have no idea. You install the Solr package, and it just won&#8217;t run. And there&#8217;s absolutely no documentation on exactly how to fix it. The developers just broke it and left everyone to figure it out on their own. I cannot begin to express my frustration or count the number of hours I lost on this step. </rant></em></p>
+
+<h4 id="a-note-on-tomcat-logging">A note on Tomcat logging</h4>
+
+<p>As you’re going through and starting and restarting tomcat (<code class="language-plaintext highlighter-rouge">sudo service tomcat6 restart</code>),</p>
+
+<p>you’ll probably want to keep an eye on the log file here:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>less /var/log/tomcat6/localhost.[DATE].log
+</code></pre></div></div>
+
+<p>Most frustratingly, I found that any errors encountered during the <em>startup of Tomcat</em> <strong>were not actually logged until you shut it down</strong>. This is generally <em>not</em> how most Apache projects handle logging. (Again, WTF.) So the only way to know if you still had an issue was to restart *twice*.</p>
+
+<p>Unfortunately, every time that Tomcat encountered a configuration error, it would <strong>delete my web app configuration file entirely</strong>. (Aside: <strong>Seriously why would anyone think this is a good idea?</strong>) So I had to create it multiple times. That file lives under the Catalina configuration directory here:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/tomcat6/Catalina/localhost/solr.xml
+</code></pre></div></div>
+
+<p>And looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Context docBase="/opt/solr/solr.war" debug="0" crossContext="false" &gt;
+   &lt;Environment name="solr/home" type="java.lang.String" value="/opt/solr" override="true"/&gt;
+&lt;/Context&gt;
+</code></pre></div></div>
+
+<h4 id="now-back-to-the-good-part">Now back to the good part</h4>
+
+<p>Now, I was finally ready to install the latest version of Solr. I headed over to the <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">Solr downloads page</a> and found that 4.5.1 was the latest. I grabbed the download from that page (after several redirects in between), and extracted it to my home directory:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://mirrors.gigenet.com/apache/lucene/solr/4.5.1/solr-4.5.1.tgz
+tar -xzf ./solr-4.5.1.tgz
+</code></pre></div></div>
+
+<p>Now, solr does not actually need to be built, just copied over. The previous installation of solr on the system was under <code class="language-plaintext highlighter-rouge">/opt/solr</code>, and just in case I broke everything, I wanted to keep a copy of that. If you’re not upgrading from a previous version, you don’t need to do this to move that out of the way:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mv /opt/solr /opt/solr-4.2.1
+</code></pre></div></div>
+
+<p>Then I copied the new version of solr’s example to the opt directory, and symlinked it into place.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo cp -R ~/solr-4.5.1/example/solr /opt/solr-4.5.1
+cd /opt
+sudo ln -s solr-4.5.1 solr
+</code></pre></div></div>
+
+<p>I needed the solr.war file as well, and also symlinked that.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /opt/solr
+sudo cp ~/solr-4.5.1/dist/solr-4.5.1.war ./
+sudo ln -s solr-4.5.1.war solr.war
+</code></pre></div></div>
+
+<p>Next, I received nasty errors in the localhost.log about missing SLF4J:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SEVERE: Exception starting filter SolrRequestFilter
+org.apache.solr.common.SolrException: &lt;strong&gt;Could not find necessary SLF4j logging jars.&lt;/strong&gt; If using Jetty, the SLF4j logging jars need to go in the jetty lib/ext directory. For other containers, the corresponding directory should be used. For more information, see: http://wiki.apache.org/solr/SolrLogging
+</code></pre></div></div>
+
+<p>I assumed you needed to provide the extra libraries to tomcat in the obvious way:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo cp ~/solr-4.5.1/example/lib/ext/* /var/lib/tomcat6/lib/
+sudo cp ~/solr-4.5.1/dist/solrj-lib/* /var/lib/tomcat6/lib/
+</code></pre></div></div>
+
+<p>And others to solr:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo cp -R ~/solr-4.5.1/dist/* /opt/solr/lib/
+</code></pre></div></div>
+
+<p>But apparently the libraries needed to be somewhere else also, which I found absolutely no documentation on anywhere. <a href="#install-lucene-solar-with-tomcat-on-windows/">This post finally got me to the right answer</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo cp ~/solr-4.5.1/dist/solrj-lib/* /var/lib/tomcat6/webapps/solr/WEB-INF/lib/
+</code></pre></div></div>
+
+<p>Last, I needed to tweak the default solr file for the <strong>multicore support</strong> that we needed, allowing us to run multiple Solr indexes on one box.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /opt/solr/solr.xml
+</code></pre></div></div>
+
+<p>and a added new line for the second core:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;cores adminPath="/admin/cores" defaultCoreName="collection1" host="${host:}" hostPort="${jetty.port:}" hostConte    xt="${hostContext:}" zkClientTimeout="${zkClientTimeout:15000}"&gt;
+    &lt;core name="collection1" instanceDir="collection1" /&gt;
+    &lt;core name="baltimorecode_dev_www" instanceDir="baltimorecode/www/staging/statedecoded" /&gt;
+&lt;/cores&gt;
+</code></pre></div></div>
+
+<h3 id="finally-rebuilding-the-custom-solr-tokenizer">Finally Rebuilding the custom Solr tokenizer</h3>
+
+<p>From there, I just needed to rebuild the custom tokenizer that we had.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /opt/solr/baltimorecode/www/staging/statedecoded/src/
+
+sudo mvn package
+
+cp target/regex-path-tokenizer-0.0.1-SNAPSHOT.jar ../lib/regex-path-tokenizer-0.0.1-SNAPSHOT.jar
+</code></pre></div></div>
+
+<p>A final restart of tomcat:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service tomcat6 restart
+</code></pre></div></div>
+
+<p>And I could hit the localhost version of solr for that core!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lynx http://localhost:8080/solr/baltimorecode_dev_www/admin/ping
+</code></pre></div></div>
+
+<p>I created an SSH Tunnel to verify that this was indeed working as expected:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -L 8009:localhost:8080 user@removtehost.org -N
+</code></pre></div></div>
+
+<p>And then fired up a browser to point at <code class="language-plaintext highlighter-rouge">http://localhost:8009/solr/</code> and solr was running perfectly.</p>
+
+<h3 id="finishing-up">Finishing Up</h3>
+
+<p>The last little thing that caught me up in my sleep-deprived state was that the <strong>PHP Solarium</strong> package requires <code class="language-plaintext highlighter-rouge">allow_url_fopen</code> to be set to <code class="language-plaintext highlighter-rouge">On</code>. This seems rather obvious, but is not the default value on CentOS.</p>
+
+<p>That was a long day.</p>
+
+<p>Here are a few of the articles that I used to get this far:</p>
+
+<ol>
+  <li><a href="http://preilly.me/2013/05/10/how-to-install-maven-on-centos/">Patrick Reilly: How to install maven on CentOS</a></li>
+  <li><a href="http://wiki.apache.org/solr/CoreAdmin">Solr: MultiCore</a></li>
+  <li><a href="http://tomcat.apache.org/tomcat-5.5-doc/config/http.html">Apache Tomcat configuration: HTTP Connectors</a></li>
+  <li><a href="http://andres.jaimes.net/878/setup-lucene-solr-centos-tomcat/">Andrew Jaimes: Installing Lucene/Solr on CentOS with Tomcat</a></li>
+  <li><a href="https://github.com/hipsnip-cookbooks/solr/issues/1">Hipsnip Cookbooks issues: Solr Fails to start missing SLF4j</a></li>
+  <li><a href="http://stackoverflow.com/questions/16415948/solr-4-3-tomcat6-ubuntu-installation-exception">StackOverflow: Solr 4.3 Tomcat6 Ubuntu installation exception</a> (More confusing than helpful.)</li>
+</ol>
+<li id="install-lucene-solar-with-tomcat-on-windows">
+  <a href="http://liuweipingblog.cn/java/install-lucene-solar-with-tomcat-on-windows/">Xrigher: Install Lucene Solar with Tomcat on Windows</a> (This was the one that got me to the right answer!)
+</li>
+
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text" xml:lang="en">Bill Hunt – Curated Jobs Feed</title>
+  <link type="application/atom+xml" href="https://billhunt.dev/feed.xml" rel="self"/>
+  <link href="https://billhunt.dev/"/>
+  <updated>2024-05-29T19:48:41Z</updated>
+  <id>https://billhunt.dev/</id>
+  <author>
+    <name>Bill Hunt</name>
+    <email>hello@billhunt.email</email>
+  </author>
+  <rights type="text">All content copyright © Bill Hunt. All rights reserved.</rights>
+  <entry>
+    <title>Department of Commerce - U.S. Census Bureau - Chief Economic Applications Division (ES 00)</title>
+    <link rel="alternate" type="text/html" href="https://www.usajobs.gov/GetJob/ViewDetails/792925600" />
+    <published></published>
+    <updated></updated>
+    <id>https://www.usajobs.gov/GetJob/ViewDetails/792925600</id>
+    <content type="html">
+      &lt;p&gt;Census is hiring for their Chief of their Economic Applications Division. Note that this job is located at their Suitland, MD location.&lt;/p&gt;
+&lt;p&gt;Salary $147,649-$221,900&lt;/p&gt;
+    &lt;p&gt;Closes 2024.06.24&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;Apply&lt;/a&gt;&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
+    <title>Department of Health and Human Services - Centers for Disease Control and Prevention - Public Notice for Direct Hire (Data Modernization) - Data Scientist (GS 7-GS 15) (Remote)</title>
+    <link rel="alternate" type="text/html" href="https://www.usajobs.gov/GetJob/ViewDetails/793152700" />
+    <published></published>
+    <updated></updated>
+    <id>https://www.usajobs.gov/GetJob/ViewDetails/793152700</id>
+    <content type="html">
+      &lt;p&gt;The CDC has an open call for Data Scientists for a variety of roles at different levels of expertise from entry-level to super senior! You can apply to them all through this one job posting.&lt;/p&gt;
+&lt;p&gt;Salary $49,025-$186,854&lt;/p&gt;
+    &lt;p&gt;Closes 2024.09.30&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;Apply&lt;/a&gt;&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
+    <title>Department of the Treasury - Office of the Inspector General for Tax Administration - Chief Technology Officer (GS 15) (Remote)</title>
+    <link rel="alternate" type="text/html" href="https://www.usajobs.gov/GetJob/ViewDetails/793196500" />
+    <published></published>
+    <updated></updated>
+    <id>https://www.usajobs.gov/GetJob/ViewDetails/793196500</id>
+    <content type="html">
+      &lt;p&gt;Treasury’s IG for Tax Administration is hiring for their CTO!&lt;/p&gt;
+&lt;p&gt;Salary $143,736-$191,900&lt;/p&gt;
+    &lt;p&gt;Closes 2024.06.12&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;Apply&lt;/a&gt;&lt;/p&gt;
+    </content>
+  </entry>
+
+</feed>

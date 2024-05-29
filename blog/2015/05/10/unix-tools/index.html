@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unix Tools | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unix Tools" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want." />
+<meta property="og:description" content="Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want." />
+<link rel="canonical" href="https://billhunt.dev/blog/2015/05/10/unix-tools/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2015/05/10/unix-tools/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-05-11T02:19:21+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unix Tools" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2015-05-11T02:19:21+00:00","datePublished":"2015-05-11T02:19:21+00:00","description":"Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want.","headline":"Unix Tools","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2015/05/10/unix-tools/"},"url":"https://billhunt.dev/blog/2015/05/10/unix-tools/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-unix-tools" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">Unix Tools</h1>
+    <time datetime="2015-05-11T02:19:21+00:00" class="post-date">
+      2015.05.11
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <p>Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want.</p>
+
+<p>Let me start with the conclusion first. <strong>The next time you have to transform or manipulate your data, look around for what Unix tools already exist first.</strong>  It might take you a little longer to figure out all of the flags and parameters you need, and you’ll have to dig through some unfriendly documentation, but you’ll have a new, far more flexible tool in your toolbox the next time around.</p>
+
+<p>This is part 2 of a series on Unix tools. <!--more--> Read the other parts:</p>
+
+<ol>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/bash-basics/">Bash Basics</a></li>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/unix-tools/">Unix Tools</a></li>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/managing-data-with-unix-tools/">Managing Data with Unix Tools</a></li>
+</ol>
+
+<h3 id="find-a-better-ls"><code class="language-plaintext highlighter-rouge">find</code>, a better <code class="language-plaintext highlighter-rouge">ls</code></h3>
+
+<p>Now, savvy readers will get their hackles up over that last example, because we’re using <code class="language-plaintext highlighter-rouge">ls</code> to list our files before processing. ls is a great utility for listing files, but the results it outputs are potentially dangerous, as it doesn’t do any escaping. It’s also a rather single-purpose tool.</p>
+
+<p>Instead, we can use the <code class="language-plaintext highlighter-rouge">find</code> utility in our advanced commands, which is safer. By default, `find .` will give you a <strong>recursive</strong> directory listing. Adding the `-type` flag will allow you to filter to directories or files only. (Note that this has to come after the directory path!)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find ./test -type f
+&gt; Lists all files in the ./test directory, all the way down.
+find . -type d
+&gt; Lists all directories in the current directory and below.
+</code></pre></div></div>
+
+<p>That last example is a bit problematic, because find will include the current directory (<code class="language-plaintext highlighter-rouge">.</code>) in the list, which is usually undesirable. Smartly, find can also do both regular expression and simple pattern matching. To just match the name of something, using standard wildcards, use the <code class="language-plaintext highlighter-rouge">-name</code> flag; to use a regular expression, use the <code class="language-plaintext highlighter-rouge">-regex</code> flag. You can even tell it what flavor of regular expression you want to use with <code class="language-plaintext highlighter-rouge">-regextype</code> – I usually prefer <code class="language-plaintext highlighter-rouge">posix-extended</code>, myself.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find ./temp -name "App*"
+&gt; Returns all files &amp; directories from the ./temp directory down that start with "App"
+find ./temp -type f -regextype posix-extended -regex '.*-[0-9]{1,6}.xml'
+&gt; Find all files that end in 1 to 6 digits and have a .xml extension
+</code></pre></div></div>
+
+<p>Now, once you have your files, you’ll probably want to manipulate them. find provides you a few different ways of manipulating the results it finds. The <code class="language-plaintext highlighter-rouge">-exec</code> flag allows you to run commands on the output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find  ./* -type d -name "Temp*" -exec rm -R {} \;
+&gt; Removes all folders that start with Temp.
+</code></pre></div></div>
+
+<p>Note that you need that trailing <code class="language-plaintext highlighter-rouge">\;</code> to tell exec that you’re done writing your command. Although if you just want to remove some files, you can just use <code class="language-plaintext highlighter-rouge">-delete</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find  ./* -type d -name "Temp*" -delete
+&gt; Removes all folders that start with Temp.
+</code></pre></div></div>
+
+<h3 id="grep-the-most-important-command"><code class="language-plaintext highlighter-rouge">grep</code>, the most important command</h3>
+
+<p>This is just a brief break to make sure you know about <code class="language-plaintext highlighter-rouge">grep</code>. Grep searches for matching text <em>within the contents</em> of files. It’s a fantastic first-pass tool to narrow down your results. For instance, if I wanted to find all of the config files in my current directory that had port 8080 set:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep 8080 *
+&gt; Apple.cfg:8080
+</code></pre></div></div>
+
+<p>To make this more useful, there are a handful of flags you want to use. Most of the time, you probably want this search to be recursive, so you’ll add <code class="language-plaintext highlighter-rouge">-R</code>. You’ll also probably want to pass the output of this command to some other command to process the list, in which case the matched text that is returned after the <code class="language-plaintext highlighter-rouge">:</code> is actually a problem – so use <code class="language-plaintext highlighter-rouge">-l</code> (that’s lowercase-L) to only show the files matched, not the match text. <code class="language-plaintext highlighter-rouge">-i</code> will give you case-insensitive matches. And most importantly, <code class="language-plaintext highlighter-rouge">-e &lt;em&gt;pattern&lt;/em&gt;</code> allows you to supply a regular expression pattern to match, or <code class="language-plaintext highlighter-rouge">-E</code> uses “extended” regular expressions.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep -RilE "Ap{2}.*" .
+&gt; Returns all files that contain the "App" either upper or lowercase.
+</code></pre></div></div>
+
+<p>grep can also be used as a simple filter, to return only entries that match a given pattern:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat /var/log/httpd/*-access.log | grep "04\/May\/2015"
+&gt; Returns only log rows that have the 4th of May in them, from all of our Apache log files.
+</code></pre></div></div>
+
+<p>You can also tell grep to negative-match with <code class="language-plaintext highlighter-rouge">-v</code>, to <em>remove</em> matching entries from the results.</p>
+
+<p><em>Will points out that there’s also <code class="language-plaintext highlighter-rouge">fgrep</code>, which is faster for fixed patterns, but cannot handle regular expressions.</em></p>
+
+<h3 id="xargs-the-list-handler"><code class="language-plaintext highlighter-rouge">xargs</code>, the list handler</h3>
+
+<p>Now, once you’ve got your files from find or grep, you’ll want to manipulate them. <code class="language-plaintext highlighter-rouge">xargs</code> has a single purpose – it takes a list of files and performs a command (or several commands) on them. Whatever command you give it, xargs will pass each file in turn to, with the filename as the input. For instance, you can output the contents of all the files in a directory:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find ./* -type f | xargs cat
+</code></pre></div></div>
+
+<p>You can also construct more complicated commands by using the filename as a variable, which we assign with <code class="language-plaintext highlighter-rouge">-I &lt;em&gt;variable&lt;/em&gt;</code>. It’s usually best to use something uncommon so it doesn’t cause other problems – the value of <code class="language-plaintext highlighter-rouge">{}</code> is what is usually used in examples:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find ./* -type f | xargs -I {} mv {} {}.bak
+&gt; Renames all files to add .bak to the end of the name
+</code></pre></div></div>
+
+<p>xargs can also fire off these commands in parallel, so if you have multiple processors (or multicore processors), you can fork separate threads and use them. We use the <code class="language-plaintext highlighter-rouge">-P</code> flag to tell it to run processes in parallel and give it a number for how many processes to run. <a href="http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html">Here’s an article on using xargs as a hadoop replacement.</a></p>
+
+<p>xargs is one of my most used tools, as you can construct very long and complicated commands using the output of other commands.</p>
+
+<h3 id="sed-the-search-and-replace-powertool"><code class="language-plaintext highlighter-rouge">sed</code>, the search-and-replace powertool</h3>
+
+<p><code class="language-plaintext highlighter-rouge">sed</code> is an amazingly powerful utility – . It’s main use is to find and replace text across files. For instance, if I want to change the port of a service in a config file, I can do so easily:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sed -i '' 's/8080/8983/g' ./config.yml
+</code></pre></div></div>
+
+<p>No need to open the file and edit it, just edit in place. You can also combine this with find to edit multiple files:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sed -i '' 's/8080/8983/g' $(find ./config/ -type f -name '*yml' )
+</code></pre></div></div>
+
+<p>Here, we’re capturing the results of find and passing it to sed with <code class="language-plaintext highlighter-rouge">$( )</code>. You could also use <code class="language-plaintext highlighter-rouge">xargs</code> or find’s <code class="language-plaintext highlighter-rouge">-exec</code> flag as discussed above.</p>
+
+<p>It can also find values in a given file. One thing I often use it for is filtering down to a particular date range in a large log file. For instance, if I just care about a few days in an Apache log file, I can tell sed to get just the rows from the start date to the end date:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sed -n '/04\/May\/2015/,/06\/May\/2015/ p'  /var/log/httpd/access.log
+&gt; Returns lines from the file that start on 04/May/2015, and stops at the first instance of 06/May/2015
+</code></pre></div></div>
+
+<p>You’d need about <a href="http://ychaouche.informatick.net/logsearch">20 lines of Python</a> to do the same thing. This is just a taste of what sed can do, it’s very useful.</p>
+
+<p><em><a href="https://twitter.com/ozzydidact">Ozzy</a> also points out that there’s <a href="http://stedolan.github.io/jq/">jq</a> which is like sed for JSON.</em></p>
+
+<p>That’s it for now, continue on to the next part, <a href="http://krues8dr.com/blog/2015/05/10/managing-data-with-unix-tools/">Manipulating Data with Unix Tools</a>.</p>
+
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

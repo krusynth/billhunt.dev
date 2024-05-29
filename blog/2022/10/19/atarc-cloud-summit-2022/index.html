@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ATARC Cloud Summit 2022 – Complexity | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="ATARC Cloud Summit 2022 – Complexity" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An annotated version of my talk from this year’s ATARC Cloud Summit." />
+<meta property="og:description" content="An annotated version of my talk from this year’s ATARC Cloud Summit." />
+<link rel="canonical" href="https://billhunt.dev/blog/2022/10/19/atarc-cloud-summit-2022/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2022/10/19/atarc-cloud-summit-2022/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-19T13:16:45+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ATARC Cloud Summit 2022 – Complexity" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2022-10-19T13:16:45+00:00","datePublished":"2022-10-19T13:16:45+00:00","description":"An annotated version of my talk from this year’s ATARC Cloud Summit.","headline":"ATARC Cloud Summit 2022 – Complexity","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2022/10/19/atarc-cloud-summit-2022/"},"url":"https://billhunt.dev/blog/2022/10/19/atarc-cloud-summit-2022/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-atarc-cloud-summit-2022-complexity" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">ATARC Cloud Summit 2022 – Complexity</h1>
+    <time datetime="2022-10-19T13:16:45+00:00" class="post-date">
+      2022.10.19
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <p>I’ve been invited to deliver the “Visionary Keynote” at the <a href="https://atarc.org/event/2022-cloud-summit/">2022 ATARC Cloud Summit</a>. The post below is a summary of my comments, annotated with links for reference.</p>
+
+<hr />
+
+<p>First off, “visionary” is a pretty tall order for a fifteen minute talk. I will confess that I actually asked some other folks to take this slot instead, people who are way smarter than me. Unfortunately, they had to cancel at the last minute, so you’re stuck with me, a mediocre white dude. I’ll do my best though.</p>
+
+<p>It’s been a few years since I spoke at the ATARC Cloud Summit. The last time, I <em>think</em> I was still at <a href="https://digitalpolicy.us/info/policymaking-offices/#ofcio">The Office of Management and Budget</a> as the Cloud Policy Lead for the US Government - but I’ve since left there, so don’t take anything I say here as official policy. I next went to the Small Business Administration - which most folks had never even heard of until two years ago - where I found myself very suddenly supporting pandemic relief efforts, of course mostly around cloud services. And about a year and a half ago I joined the Securities and Exchange Commission to run their new cloud program.</p>
+
+<p>Before I get into the looking-ahead stuff, let’s take a quick victory lap. The government has had some good cloud successes recently. Clearly some of you listened to my rants when I was at OMB because every major federal agency received an <a href="https://oversight.house.gov/legislation/hearings/fitara-140">A on their FITARA Scorecards for Data Center Optimization for the last year</a>. I think most agencies were failing the last time I was here, so that’s a huge shift away from on-prem and into the cloud.</p>
+
+<p>The pandemic also spurred most agencies into adopting cloud tools more rapidly, particularly around productivity, collaboration tools, service management, and other key areas. The <a href="https://tmf.cio.gov/">Technology Modernization Fund</a> has also been making a lot of loans for improvement projects as well. Overall, we’re seeing lots of multi-million dollar investments in modernization across government.</p>
+
+<p>That all being said: I’m not going to stand up here and yell a bunch of buzzwords that you should go invest in. I’m not going to talk about synthetic data or web3 or whatever is hip this week. We’re not doing resume-driven development today.</p>
+
+<p>No, instead we need to talk about how we’re still failing to use the cloud effectively. I’m now at my fourth federal agency, and I’m still seeing the same basic mistakes being made government-wide.</p>
+
+<p>Ernst &amp; Young just did a survey and <a href="https://www.ey.com/en_gl/government-digital-innovation/how-can-government-workers-and-technology-align-to-serve-future-citizens">only 7% of government leaders say that their organization is reaching its digital transformation goals.</a>. Just 7%! And that matches what I’m seeing when I talk to my colleagues across government. This means that just buying a bunch of cloud is not magically making us successful at IT modernization. Which will come as a surprise to no one.</p>
+
+<p>Now, when I was here last, I told y’all the three top reasons to move to cloud: better security, more capability, and increased speed to deliver solutions. (Note that cost savings is <strong>not</strong> on that list.) But we, as a government, love to fall back into comfortable patterns and familiar policies - so we keep copying old behaviors into new environments - and those behaviors are dragging down any potential benefits here.</p>
+
+<p>I spend a lot of my time working on how to fix this, and I’ve realized an important fact: we are not “Cloud Architects” or “Site Reliability Engineers” or “Data Center Practitioners.”  We are actually <strong>Complexity Wranglers</strong>.  Down there in the part of the job description that says “other duties as assigned” - buried in that bit is our main role: to assess and manage complexity in IT systems.</p>
+
+<p>The purpose of cloud is <em>not</em> to just give you a place to put your apps that isn’t a government data center. No, the purpose is to make complexity <em>more manageable</em>. The cloud itself is never going to reduce how complex your architecture <em>actually</em> is - you’re just moving that complexity to less-visible places, or shifting the responsibility around. And in some cases that’s good, and in some cases that’s … less good.</p>
+
+<p>Let me give you an example: I’m at a data-centric agency, and compute makes up about 60% of my cloud bill right now. Every time I see someone create a virtual machine in my environment instead of using a managed service, I consider that a failure. When I see a new EC2 box spun up instead of a Fargate instance or some other managed service, that to me means someone doesn’t know a better way to solve the problem at hand than to just use the same old solutions they’ve been using for a decade or more: get a server and run some code on it. Letting your cloud vendor be responsible for some of that complexity is the whole point of using these services. (This isn’t an endorsement for that vendor in particular, that’s just an anecdotal example - please feel free to substitute your own favorite cloud vendor in there instead; the principle is the same.)</p>
+
+<p>This is also why I’m no longer really worried about vendor lock-in for Infrastructure-as-a-Service; if you can just pick everything up and shift to a new provider easily, you haven’t properly invested in a solution. It’s like having a new apartment and living out of cardboard boxes six months after you moved in. If you’re just using the cloud for compute and storage, you may as well stay in your data enter where it’s cheaper. Moving up the stack is <em>good complexity</em>, the kind we need to invest in.</p>
+
+<p>By the way, this is right there in the <a href="https://digitalpolicy.us/policies/procurement/#far">Federal Acquisition Regulations, Part 12</a>: <strong>buy before build</strong>. Use Commercial-off-the-Shelf (COTS) software. Don’t cobble together your own solutions for solved problems.</p>
+
+<p>Now on the other end of the spectrum, I see people spending way too much money on over-architected, painfully convoluted solutions. This is particularly problematic with Platform-as-a-Service offerings and low-code/no-code tools. For instance, I’ve seen quite a few organizations using one rather well-known Customer Relationship Management (CRM) platform as a content management system or data management platform. That takes a <em>lot</em> of custom coding to make work, and you probably would be better off with just a database somewhere. I’ve also seen agencies build some truly tortuous custom apps on top of service management platforms, where all they actually needed was a spreadsheet and maybe a couple of interns. This is <em>bad complexity</em>.</p>
+
+<p>So, if we’re complexity-wranglers, we need strategies to deal with complexity, and to differentiate good complexity from bad. Here are a few.</p>
+
+<p><strong>1. Eliminate complexity.</strong> The absolutely simplest way to deal with complexity is, of course, to eliminate it. I can’t count the number of teams who show up on my doorstep with a project plan to use React and Redux and whatever other Javascript tech is popular this week. That stuff is <strong>incredibly expensive</strong> to build and maintain, and honestly you can create a vastly better customer experience without it - just a little progressive enhancement on your webforms will go a long way.</p>
+
+<p>Similarly I get a lot of architecture diagrams for massive high-availability systems with eight nines of uptime and triple-redundant failover - that are internal-only and have less than a dozen users. Users that only work 9-4:30, five days a week. Each nine you add to your availability is going to add a zero to the end of the price, and make it that much more complex than it needs to be.</p>
+
+<p>The other thing the FAR will tell you is that you should be changing your business requirements to fit the software, rather than the other way around. That means making some compromises with your business units to get to something that’s affordable and manageable.</p>
+
+<p><strong>2. Run smaller projects.</strong> We also know that large “big bang” projects almost always fail. The Standish Group’s reports (<a href="https://www.standishgroup.com/sample_research_files/Haze4.pdf">HAZE</a>, <a href="https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf">CHAOS</a>) get cited a lot - they tell us that only 13% of government technology projects over $6 million succeed, only 8% of over $10 million succeed. That’s a terrible success rate! However, those under $1 million have a <strong>70% success rate!</strong> So the obvious solution here is, just do smaller projects. Smaller projects are inherently less complex. Also incrementally fund projects from ideation, to pilot, and into active development, don’t just give millions of dollars to a vendor who promises they will get it done. This will also give you time and options to evaluate if the tradeoffs in complexity are worth it. GSA’s <a href="https://10x.gsa.gov/">10X model</a> is a good example, and the <a href="https://derisking-guide.18f.gov/">18F project de-risking guide</a>, is also super-useful.</p>
+
+<p><strong>3. Do your homework.</strong> There’s a brilliant public servant in the Canadian government named Sean Boots and he talks about <a href="https://sboots.ca/2020/09/16/fake-cots-and-the-one-day-rule/">fake COTS and the one-day rule</a>. That is, if it takes more than a day to implement the solution, it’s not a real COTS product. A lot of y’all will remember the “business intelligence” solutions everyone was pushing in the 90s-00s, where you buy the tool and then you spend the next 18 months configuring it to get that “intelligence” back out. We’re doing the same thing today with a bunch of new buzzwords. You need to research tools thoroughly before falling into a hype-trap.</p>
+
+<p><strong>4. Collaborate across agencies.</strong> A great way to research tools and trade best practices is by talking to other federal agencies who have tried things already. ATARC has a lot of working groups, including one for <a href="https://atarc.org/mission-areas/cloud-working-group/">Cloud &amp; Infrastructure</a>. The Federal CIO Council also has a <a href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/">Cloud &amp; Infrastructure Community of Practice</a>. Full disclaimer: I’m on the board of both. These are super-helpful places to share information about cloud tools and services.</p>
+
+<p><strong>5. Develop your cynicism.</strong> You should also work on developing a keen nose for sniffing out BS and thus reducible complexity. This is especially important as we keep delving further into AI/ML/RPA, and other trendy automation tools. Training the models necessary to get value out of those tools takes a lot of time and a lot of data and a lot of money - and you still may not end up with a usable solution. If it sounds too good to be true, it probably is.</p>
+
+<p><strong>6. Find the balance.</strong> There’s no one-size-fits-all amount of complexity that will work for every team. You need to build to your budget and capacity. You’re going to get more value the further up the stack you go, but that will also increase the knowledge needed to manage the solutions. A good rule of thumb is to not outpace what your fed staff can keep up with; contractors come and go but at the end of the day the feds will be making the most critical decisions about the technologies. But that also means you need to invest in upskilling those fed staff.</p>
+
+<p>We’re short on time, so I’ve tried to be brief. If you want to learn more, please check out the resources I mentioned earlier, or check out my <a href="https://billhunt.dev/blog/2021/03/07/cloud-strategy-guide/">Cloud Strategy Guide</a>.</p>
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

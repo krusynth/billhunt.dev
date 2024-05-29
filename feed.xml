@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text" xml:lang="en">Bill Hunt – Posts</title>
+  <link type="application/atom+xml" href="https://billhunt.dev/feed.xml" rel="self"/>
+  <link href="https://billhunt.dev/"/>
+  <updated>2024-05-29T19:48:41Z</updated>
+  <id>https://billhunt.dev/</id>
+  <author>
+    <name>Bill Hunt</name>
+    <email>hello@billhunt.email</email>
+  </author>
+  <rights type="text">All content copyright © Bill Hunt. All rights reserved.</rights>
+
+<entry>
+  <title>Series Three Shirts</title>
+  <link rel="alternate" type="text/html" href="https://billhunt.dev/blog/2024/05/08/series-three-shirts/" />
+  <published>2024-05-08T14:33:20+00:00</published>
+  <updated>2024-05-08T14:33:20+00:00</updated>
+  <id>https://billhunt.dev/blog/2024/05/08/series-three-shirts/</id>
+  <content type="html">
+    &lt;p&gt;I’ve just released &lt;strong&gt;SIX NEW SHIRT DESIGNS&lt;/strong&gt; for my series three run, celebrating a variety of hot topics including Login.gov, the DATA Act of 2014, Artificial Intelligence, and Agile software development.  &lt;a href=&quot;/shop/&quot;&gt;Check them out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+</entry>
+<entry>
+  <title>We Can Have A Different Web</title>
+  <link rel="alternate" type="text/html" href="https://www.citationneeded.news/we-can-have-a-different-web/" />
+  <published>2024-05-03T00:00:00+00:00</published>
+  <updated>2024-05-03T00:00:00+00:00</updated>
+  <id>https://www.citationneeded.news/we-can-have-a-different-web/</id>
+  <content type="html">
+    &lt;p&gt;Molly White talks about how we can reclain the web, and rebuild what we’ve lost.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.citationneeded.news/we-can-have-a-different-web/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>They're Looting The Internet</title>
+  <link rel="alternate" type="text/html" href="https://www.wheresyoured.at/the-great-looting-of-the-internet/" />
+  <published>2024-04-16T00:00:00+00:00</published>
+  <updated>2024-04-16T00:00:00+00:00</updated>
+  <id>https://www.wheresyoured.at/the-great-looting-of-the-internet/</id>
+  <content type="html">
+    &lt;p&gt;This is a must-read piece from Ed Zitron describing how the major internet corporations have become actively hostile to users.&lt;br /&gt;&lt;br /&gt;“It’s the hallmark of a tech industry dedicated to creating problems that it charges you to solve, a sickly beast borne of venture capital and a lack of innovation. When you’re rich and powerful, you no longer face real problems, and as a result fail to consider the solutions that would measurably improve a person’s life.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.wheresyoured.at/the-great-looting-of-the-internet/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>On Values</title>
+  <link rel="alternate" type="text/html" href="https://another.rodeo/values/" />
+  <published>2024-04-09T00:00:00+00:00</published>
+  <updated>2024-04-09T00:00:00+00:00</updated>
+  <id>https://another.rodeo/values/</id>
+  <content type="html">
+    &lt;p&gt;Carter Baxter talks about how as a culture we’ve traded ethical values for shareholder value.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://another.rodeo/values/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>The LLMentalist Effect</title>
+  <link rel="alternate" type="text/html" href="https://softwarecrisis.dev/letters/llmentalist/" />
+  <published>2024-04-09T00:00:00+00:00</published>
+  <updated>2024-04-09T00:00:00+00:00</updated>
+  <id>https://softwarecrisis.dev/letters/llmentalist/</id>
+  <content type="html">
+    &lt;p&gt;Baldur Bjarnason lays out how the current AI-obsession is backed by chicanery usually employed by psychics.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://softwarecrisis.dev/letters/llmentalist/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>How Web 2.0 killed the Internet</title>
+  <link rel="alternate" type="text/html" href="https://ar.al/notes/how-web-2-0-killed-the-internet/" />
+  <published>2024-03-27T00:00:00+00:00</published>
+  <updated>2024-03-27T00:00:00+00:00</updated>
+  <id>https://ar.al/notes/how-web-2-0-killed-the-internet/</id>
+  <content type="html">
+    &lt;p&gt;This old post from Aral Balkan about the failed promise of open APIs still rings true a decade later.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ar.al/notes/how-web-2-0-killed-the-internet/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Robots.txt to block AI bots</title>
+  <link rel="alternate" type="text/html" href="https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/" />
+  <published>2024-03-27T00:00:00+00:00</published>
+  <updated>2024-03-27T00:00:00+00:00</updated>
+  <id>https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/</id>
+  <content type="html">
+    &lt;p&gt;Cory Dransfeldt provides this excellent list of AI scraping bots to put in your disallow list for robots.txt.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Have We Reached Peak AI?</title>
+  <link rel="alternate" type="text/html" href="https://www.wheresyoured.at/peakai/" />
+  <published>2024-03-21T00:00:00+00:00</published>
+  <updated>2024-03-21T00:00:00+00:00</updated>
+  <id>https://www.wheresyoured.at/peakai/</id>
+  <content type="html">
+    &lt;p&gt;Ed Zitron does an incredible job of separating hype from fact in his recent article about AI.
+&lt;br /&gt;&lt;br /&gt;
+“Sam Altman desperately needs you to believe that generative AI will be essential, inevitable and intractable, because if you don’t, you’ll suddenly realize that trillions of dollars of market capitalization and revenue are being blown on something remarkably mediocre.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.wheresyoured.at/peakai/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Jakob Is Wrong</title>
+  <link rel="alternate" type="text/html" href="https://buttondown.email/practicaltips/archive/we-need-to-talk-about-jakob/" />
+  <published>2024-03-07T00:00:00+00:00</published>
+  <updated>2024-03-07T00:00:00+00:00</updated>
+  <id>https://buttondown.email/practicaltips/archive/we-need-to-talk-about-jakob/</id>
+  <content type="html">
+    &lt;p&gt;Matt May has posted an excellent response to &lt;a href=&quot;https://jakobnielsenphd.substack.com/p/accessibility-generative-ui?utm_source=practicaltips&amp;amp;utm_medium=email&amp;amp;utm_campaign=we-need-to-talk-about-jakob&quot;&gt;Jakob Nielsen’s awful screed that accessibility has failed&lt;/a&gt; and we should leave it up to the robots to sort out.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://buttondown.email/practicaltips/archive/we-need-to-talk-about-jakob/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Practical Infrastructure Ops</title>
+  <link rel="alternate" type="text/html" href="https://cep.dev/posts/every-infrastructure-decision-i-endorse-or-regret-after-4-years-running-infrastructure-at-a-startup/" />
+  <published>2024-02-27T00:00:00+00:00</published>
+  <updated>2024-02-27T00:00:00+00:00</updated>
+  <id>https://cep.dev/posts/every-infrastructure-decision-i-endorse-or-regret-after-4-years-running-infrastructure-at-a-startup/</id>
+  <content type="html">
+    &lt;p&gt;Jack Lindamood gives a long list of lessons learned when running large-scale performant cloud infrastructure for small- to medium-sized teams.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cep.dev/posts/every-infrastructure-decision-i-endorse-or-regret-after-4-years-running-infrastructure-at-a-startup/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Where Have All The Websites Gone</title>
+  <link rel="alternate" type="text/html" href="https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/" />
+  <published>2024-01-18T00:00:00+00:00</published>
+  <updated>2024-01-18T00:00:00+00:00</updated>
+  <id>https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/</id>
+  <content type="html">
+    &lt;p&gt;Jason Velazquez explores the current state of the web and the death of personal websites, and how to fix it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Technical Project Oversight for Senior Management</title>
+  <link rel="alternate" type="text/html" href="https://waldo.jaquith.org/blog/2023/05/principal-oversee-software/" />
+  <published>2023-12-08T00:00:00+00:00</published>
+  <updated>2023-12-08T00:00:00+00:00</updated>
+  <id>https://waldo.jaquith.org/blog/2023/05/principal-oversee-software/</id>
+  <content type="html">
+    &lt;p&gt;I was just revisiting this article from Waldo Jaquith that he posted back in May to share with my organization, and I figure some folks didn’t see it the first time around. This is a great summary of how senior management can prevent the dreaded moments when software projects magically go from green to red on the status board.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://waldo.jaquith.org/blog/2023/05/principal-oversee-software/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Scroll to Text Fragments</title>
+  <link rel="alternate" type="text/html" href="https://til.simonwillison.net/html/scroll-to-text" />
+  <published>2023-11-21T00:00:00+00:00</published>
+  <updated>2023-11-21T00:00:00+00:00</updated>
+  <id>https://til.simonwillison.net/html/scroll-to-text</id>
+  <content type="html">
+    &lt;p&gt;Simon Willison shares this tip on using URL Fragment Text Directives, a way of deep linking to elements in a web page even when there aren’t available ids for anchors.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://til.simonwillison.net/html/scroll-to-text&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Why can't our tech billionaires learn anything new?</title>
+  <link rel="alternate" type="text/html" href="https://davekarpf.substack.com/p/why-cant-our-tech-billionaires-learn" />
+  <published>2023-10-27T00:00:00+00:00</published>
+  <updated>2023-10-27T00:00:00+00:00</updated>
+  <id>https://davekarpf.substack.com/p/why-cant-our-tech-billionaires-learn</id>
+  <content type="html">
+    &lt;p&gt;Dave Karpf provides this excellent teardown of Marc Andreesen’s garbage “techno-optimist manifesto.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://davekarpf.substack.com/p/why-cant-our-tech-billionaires-learn&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Politics: What Americans Want</title>
+  <link rel="alternate" type="text/html" href="https://pluralistic.net/2023/10/18/the-people-no/" />
+  <published>2023-10-23T00:00:00+00:00</published>
+  <updated>2023-10-23T00:00:00+00:00</updated>
+  <id>https://pluralistic.net/2023/10/18/the-people-no/</id>
+  <content type="html">
+    &lt;p&gt;Cory Doctorow goes through a lot of compelling research on how out-of-touch American politics is with what the American people actually want.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pluralistic.net/2023/10/18/the-people-no/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Occult Strategies</title>
+  <link rel="alternate" type="text/html" href="https://www.kickstarter.com/projects/notacult/occult-strategies" />
+  <published>2023-10-19T00:00:00+00:00</published>
+  <updated>2023-10-19T00:00:00+00:00</updated>
+  <id>https://www.kickstarter.com/projects/notacult/occult-strategies</id>
+  <content type="html">
+    &lt;p&gt;Via &lt;a href=&quot;https://boingboing.net/author/gareth_branwyn&quot;&gt;Gareth Branwyn’s blog&lt;/a&gt;, some of you weirdos might love this riff on the Oblique Strategies deck by Brian Eno and Peter Schmidt: Occult Strategies. I just backed it!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.kickstarter.com/projects/notacult/occult-strategies&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Speak Softly and Carry a Long Roadmap</title>
+  <link rel="alternate" type="text/html" href="https://concrete.ghost.io/speak-softly-and-carry-a-long-roadmap/" />
+  <published>2023-10-17T00:00:00+00:00</published>
+  <updated>2023-10-17T00:00:00+00:00</updated>
+  <id>https://concrete.ghost.io/speak-softly-and-carry-a-long-roadmap/</id>
+  <content type="html">
+    &lt;p&gt;I had missed this when Matthew Burton published it at the beginning of the year, but this compelling piece makes a call for a long term view of IT modernization in the US government.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://concrete.ghost.io/speak-softly-and-carry-a-long-roadmap/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>LLMs Are Not Ready for Government Use</title>
+  <link rel="alternate" type="text/html" href="https://billhunt.dev/blog/2023/10/09/llms-are-not-government-ready/" />
+  <published>2023-10-09T17:23:48+00:00</published>
+  <updated>2023-10-09T17:23:48+00:00</updated>
+  <id>https://billhunt.dev/blog/2023/10/09/llms-are-not-government-ready/</id>
+  <content type="html">
+    &lt;p&gt;The latest buzzword in govtech these days is Artificial Intelligence (AI), specifically that buzzy new flavor, &lt;strong&gt;Large Language Models&lt;/strong&gt; or LLMs.  Any day now, we expect the White House to &lt;a href=&quot;https://federalnewsnetwork.com/artificial-intelligence/2023/09/draft-omb-memo-details-10-new-requirements-to-manage-ai/&quot;&gt;release updated guidance on AI usage&lt;/a&gt; in government. Given the &lt;a href=&quot;https://www.whitehouse.gov/ostp/ai-bill-of-rights/&quot;&gt;milquetoast previous offering&lt;/a&gt; that was released earlier this year, it is unlikely that we will see an aggressive stance on limiting usage.&lt;/p&gt;
+
+&lt;p&gt;Government technology is entirely about &lt;em&gt;risk avoidance&lt;/em&gt;, though we call it “risk mitigation” or “risk management.” The current state of LLMs expose the government to risks that cannot be managed or avoided. There are &lt;strong&gt;four primary concerns&lt;/strong&gt; where any CIO should be evaluating if these tools will put their organization well outside of an acceptable risk tolerance.&lt;/p&gt;
+
+&lt;h2 id=&quot;llms-in-a-nutshell&quot;&gt;LLMs in a Nutshell&lt;/h2&gt;
+
+&lt;p&gt;Before we dive in, it’s important to understand how LLMs work.  The secret sauce is right there in the name - these are artificial intelligence models trained on large amounts of text to process language.&lt;/p&gt;
+
+&lt;p&gt;To massively oversimplify, they make predictions based on how often they see certain words together. It’s like those word-association games: if I say “sail,” you’ll probably say “boat.” And if you’re of a similar age and background as myself, you might think of &lt;a href=&quot;https://www.youtube.com/watch?v=tgIqecROs5M&quot;&gt;a certain song&lt;/a&gt;. And moreover, if you’re a person who looks at cat memes on the internet, you may think of a &lt;a href=&quot;https://www.youtube.com/watch?v=Awf45u6zrP0&quot;&gt;certain video&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;LLMs look at a vast amount of content - training data sets - fed to them by their creators, to create the base knowledge to process information.  On top of that, they’re sometimes fed additional data by a given customer, to tailor their abilities to predict even further for a specific use case. These two sources of data are combined to make predictions when you ask them questions.&lt;/p&gt;
+
+&lt;h2 id=&quot;risk-1-exposure-of-data&quot;&gt;Risk 1: Exposure of Data&lt;/h2&gt;
+
+&lt;p&gt;Table stakes for any government software system of any sort is that it cannot leak private data. If you can’t assure that, you have no business being in the field. Though, even some of the &lt;a href=&quot;https://techcrunch.com/2023/09/08/microsoft-hacker-china-government-storm-0558/&quot;&gt;biggest players are struggling with these basics&lt;/a&gt; these days.&lt;/p&gt;
+
+&lt;p&gt;At a minimum, LLMs should expose neither the additional training data that a customer feeds into the system, nor any information that is leaked by asking questions of the data. Effectively, a customer’s interactions with the system should be siloed away from all other data.&lt;/p&gt;
+
+&lt;p&gt;Although the government can attempt to prohibit federal staff from putting sensitive information into queries of the systems, inevitably someone will break the rule, as was seen in the &lt;a href=&quot;https://cybernews.com/security/chatgpt-samsung-leak-explained-lessons/&quot;&gt;Samsung leak in ChatGPT&lt;/a&gt;. But as these platforms are still very new and being rapidly - perhaps &lt;em&gt;carelessly&lt;/em&gt; - developed, even experienced developers working for megacorporations can accidentally expose huge amounts of sensitive information with a single accidental command, &lt;a href=&quot;https://techcrunch.com/2023/09/18/microsoft-ai-researchers-accidentally-exposed-terabytes-of-internal-sensitive-data/&quot;&gt;as happened with Microsoft earlier this year&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;That’s the most obvious concern, and it exists for any IT system. The other concerns require a hard look at how the LLMs actually work.&lt;/p&gt;
+
+&lt;h2 id=&quot;risk-2-dangerous-source-data&quot;&gt;Risk 2: Dangerous Source Data&lt;/h2&gt;
+
+&lt;p&gt;LLMs must be trained on &lt;em&gt;something&lt;/em&gt;, various large bodies of text. However, companies are not disclosing where they are getting this training data from, which presents a series of issues for the government.&lt;/p&gt;
+
+&lt;p&gt;Most notably, there is &lt;a href=&quot;https://www.theatlantic.com/technology/archive/2023/09/books3-ai-training-meta-copyright-infringement-lawsuit/675411/&quot;&gt;extensive documented evidence&lt;/a&gt; that most companies are using copyrighted works to feed their training data. Many are being blatant about this theft of intellectual property, requiring that &lt;a href=&quot;https://www.theverge.com/2023/9/28/23894779/google-ai-extended-training-data-toggle-bard-vertex&quot;&gt;content creators &lt;em&gt;opt out&lt;/em&gt; of being included in training data&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;(I’ll also mention that I have personally attempted to opt out from such training activities, and in some cases been completely unable to do so. For instance, after filling out &lt;a href=&quot;https://www.facebook.com/help/contact/1266025207620918&quot;&gt;Facebook’s opt out form&lt;/a&gt; I was contacted by their support team who effectively said they don’t have a way to do that.)&lt;/p&gt;
+
+&lt;p&gt;Imagine if you’re a writer, and you had to go tell every single other writer individually that they’re not allowed to copy your text and use it in their own work - that would be impossible! These companies know what they’re doing is in violation of copyright, and are avoiding prosecution by not giving out their list of sources. Although the obvious illegality of this has not yet been tested in court, &lt;a href=&quot;https://www.theartnewspaper.com/2023/09/02/artificial-intelligence-lawsuit-decision-us-copyright-law&quot;&gt;the Supreme Court &lt;em&gt;has&lt;/em&gt; ruled that the resulting content generated by these models is not protected&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Any use of these technologies where the result is a public document may result in huge liability for an organization. For the government, since everything is FOIA-able, any such document may present an issue. This is a risk the government cannot afford to take.&lt;/p&gt;
+
+&lt;h2 id=&quot;risk-3-offensive-source-data&quot;&gt;Risk 3: Offensive Source Data&lt;/h2&gt;
+
+&lt;p&gt;The last thing that must be considered is the nature of the initial training data. It’s clear that most companies are training their data off of content on the internet, which may or may not be heavily biased. We’ve seen the largest corporations in the world attempt to create chatbots repeatedly, only to have them be filled with racist language and questionable content. (I’ve discussed this previously in my &lt;a href=&quot;https://billhunt.dev/blog/2020/12/21/ai-ml-rpa-principles/&quot;&gt;Principles for Automation&lt;/a&gt; article.)&lt;/p&gt;
+
+&lt;p&gt;Microsoft has failed at this &lt;a href=&quot;https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist&quot;&gt;time&lt;/a&gt; and &lt;a href=&quot;https://www.theverge.com/2023/2/15/23599072/microsoft-ai-bing-personality-conversations-spy-employees-webcams&quot;&gt;time again&lt;/a&gt;. Most recently, their AI-powered search became filled with &lt;a href=&quot;https://www.cpomagazine.com/cyber-security/microsoft-bing-ai-chatbot-poisoned-with-malicious-ads/&quot;&gt;malicious advertisements&lt;/a&gt;. This bias has been exposed in a number of other ways, such as &lt;a href=&quot;https://www.npr.org/sections/goatsandsoda/2023/10/06/1201840678/ai-was-asked-to-create-images-of-black-african-docs-treating-white-kids-howd-it-&quot;&gt;Midjourney creating offensive images of Black doctors&lt;/a&gt;.  These toys are reading horrible things on the internet and spitting them back out.&lt;/p&gt;
+
+&lt;p&gt;No organization wants to field a lawsuit due to a racist chatbot dealing with the public or an employee.&lt;/p&gt;
+
+&lt;h2 id=&quot;risk-4-misinformation&quot;&gt;Risk 4: Misinformation&lt;/h2&gt;
+
+&lt;p&gt;Even if these LLMs are set to filter out this sort of content, the simple fact remains that they are unable to produce truthful information. &lt;a href=&quot;https://www.washingtonpost.com/technology/2023/10/07/amazon-alexa-news-2020-election-misinformation/&quot;&gt;Amazon’s Alexa recently started spreading 2020 election misinformation&lt;/a&gt;. A study of &lt;a href=&quot;https://www.theregister.com/2023/08/07/chatgpt_stack_overflow_ai/&quot;&gt;ChatGPT showed less than half of its answers as correct&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For a government agency, this could prove disastrous. If a group of malicious actors were to feed deliberately-incorrect information into a known training data set, they could manipulate the outcomes of that LLM - effectively a modern exploit similar to a “&lt;a href=&quot;Google Bomb&quot;&gt;Google Bomb&lt;/a&gt;.” For instance, if an agency was looking for a particular type of fraud, and someone poisoned the source data with “Company X commits fraud all the time,” the bots will find ways to inject that into the results, potentially setting up that company for unwarranted investigation. Since social media is a known source of training data for many companies, this is likely &lt;em&gt;occurring already&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Moreover, the risk of foreign actors exploiting this is huge. &lt;a href=&quot;https://www.wired.com/story/russia-secondary-infektion-disinformation/&quot;&gt;Russia’s manipulation of the media to run disinformation campaigns&lt;/a&gt; is well known at this point, but the depth of this infection is unknown. This poisoning could have a disastrous effect on law enforcement or military organizations using these sorts of tools to gain an edge. A methodology could also exploit the opposite. For instance, training false “all clear” signals to cybersecurity bots being used to detect network or system exploits, to better hide cyber attacks. The possibilities are endless.&lt;/p&gt;
+
+&lt;p&gt;If these bots cannot even be trusted to produce true information, why would anyone consider using them? Why would we cheat and copy the answers off the person who always fails the test? Especially if that person wants us to fail?&lt;/p&gt;
+
+&lt;h2 id=&quot;inevitability&quot;&gt;Inevitability&lt;/h2&gt;
+
+&lt;p&gt;I remain a futurist, and a cyberpunk, yet I find myself frequently &lt;a href=&quot;https://www.newyorker.com/books/page-turner/rethinking-the-luddites-in-the-age-of-ai&quot;&gt;reconsidering the Luddites&lt;/a&gt;.  The increased use of AI is inevitable, and I do have faith that the models will be improved over time.&lt;/p&gt;
+
+&lt;p&gt;But for now, the current state of the art is a bunch of lying, racist, garbage bots - snake oil salesmen and shysters of the modern age. The government should not put its trust in these tools for a long, long time. They are simply outside of our tolerance for risk.&lt;/p&gt;
+  </content>
+</entry>
+<entry>
+  <title>Web Rot is Erasing Our Images</title>
+  <link rel="alternate" type="text/html" href="https://www.dpreview.com/opinion/0517674260/web-rot-is-erasing-our-images-and-videos" />
+  <published>2023-08-31T00:00:00+00:00</published>
+  <updated>2023-08-31T00:00:00+00:00</updated>
+  <id>https://www.dpreview.com/opinion/0517674260/web-rot-is-erasing-our-images-and-videos</id>
+  <content type="html">
+    &lt;p&gt;This compelling piece on DPReview documents how the current state of the internet is causing us to lose massive amounts of knowledge. All the more reason to build your own backups and long-term plans for your content!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.dpreview.com/opinion/0517674260/web-rot-is-erasing-our-images-and-videos&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Remove the Consultants</title>
+  <link rel="alternate" type="text/html" href="https://bellmar.medium.com/the-first-thing-we-do-lets-kill-all-the-consultants-bc64bcebf1b5" />
+  <published>2023-08-10T00:00:00+00:00</published>
+  <updated>2023-08-10T00:00:00+00:00</updated>
+  <id>https://bellmar.medium.com/the-first-thing-we-do-lets-kill-all-the-consultants-bc64bcebf1b5</id>
+  <content type="html">
+    &lt;p&gt;The brilliant Marianne Bellotti gives a practical approach to eliminating costly consultants in your organization in favor of upskilling and training. I’ve always been a huge fan of this approach, and is exactly how my team is currently modernizing our organization!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://bellmar.medium.com/the-first-thing-we-do-lets-kill-all-the-consultants-bc64bcebf1b5&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Jobs Page Updates</title>
+  <link rel="alternate" type="text/html" href="https://billhunt.dev/blog/2023/07/30/jobs-page-updates/" />
+  <published>2023-07-30T14:20:30+00:00</published>
+  <updated>2023-07-30T14:20:30+00:00</updated>
+  <id>https://billhunt.dev/blog/2023/07/30/jobs-page-updates/</id>
+  <content type="html">
+    &lt;p&gt;I’ve made some changes to my two jobs pages and associated RSSfeeds. It has become somewhat laborious to maintain my curated jobs feed, because of all the copying-and-pasting, as well as maintaining two separate but similar jekyll pages.&lt;/p&gt;
+
+&lt;p&gt;I also didn’t love that my full feed didn’t include the non-federal jobs that I found, since I only post jobs that I think would be relevant to my wider audience here.&lt;/p&gt;
+
+&lt;p&gt;If you don’t like that change I’m sorry, but I don’t post &lt;em&gt;very many&lt;/em&gt; of these other roles so it shouldn’t be too noisy.&lt;/p&gt;
+
+&lt;p&gt;As such, I’ve updated my site to only use the usajobs data file as the main feed, and I’m adding curated content &lt;em&gt;to that&lt;/em&gt; file. The only major change for most people who use this site will be that extra jobs will start to show up in what was originally known as the USAJobs feed.&lt;/p&gt;
+
+&lt;p&gt;I don’t want to break all the links by changing paths, but the page &amp;amp; RSS feed titles will change.&lt;/p&gt;
+
+&lt;p&gt;I’ve also updated &lt;a href=&quot;https://github.com/krusynth/usajobs-feed&quot;&gt;my associated USAJobs scraper&lt;/a&gt; so that it merges new data, rather than just overwriting the data file with the latest info. In this way, any custom descriptions, titles, or external job posts will persist across runs of the script. This also could allow for other job data sources to be added to the file as well in the future, but I’m not sure where I’d pull those from yet.&lt;/p&gt;
+
+&lt;p&gt;Please let me know if you see any bugs or major issues!&lt;/p&gt;
+  </content>
+</entry>
+<entry>
+  <title>Luddites and AI</title>
+  <link rel="alternate" type="text/html" href="https://thenib.com/im-a-luddite/" />
+  <published>2023-07-19T00:00:00+00:00</published>
+  <updated>2023-07-19T00:00:00+00:00</updated>
+  <id>https://thenib.com/im-a-luddite/</id>
+  <content type="html">
+    &lt;p&gt;In the Nib this week, Tom Humberstone gives an excellent history of the Luddite movement, and how it reflects the current growing concerns around AI in creative work.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://thenib.com/im-a-luddite/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Rad Reader for RSS</title>
+  <link rel="alternate" type="text/html" href="https://cblgh.itch.io/rad-reader" />
+  <published>2023-07-10T00:00:00+00:00</published>
+  <updated>2023-07-10T00:00:00+00:00</updated>
+  <id>https://cblgh.itch.io/rad-reader</id>
+  <content type="html">
+    &lt;p&gt;Y’all know I love RSS! &lt;a href=&quot;https://merveilles.town/@cblgh&quot;&gt;Alexander Cobleigh&lt;/a&gt; has put together a nice RSS reader app for the desktop, and it’s only $5 right now!”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cblgh.itch.io/rad-reader&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Too Many Zooz - Brasshouse music</title>
+  <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?app=desktop&amp;v=mD2xXNg_Vy8" />
+  <published>2023-06-30T00:00:00+00:00</published>
+  <updated>2023-06-30T00:00:00+00:00</updated>
+  <id>https://www.youtube.com/watch?app=desktop&amp;v=mD2xXNg_Vy8</id>
+  <content type="html">
+    &lt;p&gt;I shared this already on Mastodon, but it occurs to me that many folks aren’t familiar with Too Many Zooz, one of my favorite brasshouse bands. They were recently on tour with Moon Hooch and Lucky Chops, all of which are also worth checking out.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?app=desktop&amp;v=mD2xXNg_Vy8&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>HTMX</title>
+  <link rel="alternate" type="text/html" href="https://quii.dev/HTMX_is_the_Future" />
+  <published>2023-05-09T00:00:00+00:00</published>
+  <updated>2023-05-09T00:00:00+00:00</updated>
+  <id>https://quii.dev/HTMX_is_the_Future</id>
+  <content type="html">
+    &lt;p&gt;Chris James discusses &lt;a href=&quot;https://htmx.org/&quot;&gt;HTMX&lt;/a&gt;, an HTML-enhancement JavaScript library (similar to &lt;a href=&quot;https://unpoly.com/&quot;&gt;Unpoly&lt;/a&gt; which I use on this site), and the trending rise of HTML-over-the-wire replacing thicker libraries like React.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://quii.dev/HTMX_is_the_Future&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>More Jobs, USAJobs Scraper, Jekyll Tweaks</title>
+  <link rel="alternate" type="text/html" href="https://billhunt.dev/blog/2023/03/08/usajobs-jekyll-tweaks/" />
+  <published>2023-03-09T02:06:59+00:00</published>
+  <updated>2023-03-09T02:06:59+00:00</updated>
+  <id>https://billhunt.dev/blog/2023/03/08/usajobs-jekyll-tweaks/</id>
+  <content type="html">
+    &lt;p&gt;It’s been a lot of work for me to keep my &lt;a href=&quot;/jobs/&quot;&gt;jobs page&lt;/a&gt; up-to-date. Previously, I’ve been crawling through LinkedIn a couple times a day to try to find all the relevant IT jobs. However, many were still getting missed. So I signed up for the &lt;a href=&quot;https://developer.usajobs.gov/&quot;&gt;USAJobs API&lt;/a&gt;, and wrote &lt;a href=&quot;https://github.com/krusynth/usajobs-feed&quot;&gt;a script to scrape relevant technology jobs&lt;/a&gt; from it. (As always, that script is open source, so you can take it and manipulate it for your own regular searches.) My default settings only searches for GS-12 and above, technology-related job series (2210, 1550, 1560), does not include defense, intelligence, and law-enforcement agencies: DOD, DOJ, and most of DHS are excluded (except for CISA and FEMA).&lt;/p&gt;
+
+&lt;p&gt;I only post the most interesting results on my jobs page, but I figured some folks would want access to the full firehose of positions, so I’ve set up &lt;a href=&quot;/jobs/usajobs/&quot;&gt;a new page for all the results from that search&lt;/a&gt;, and it has its own &lt;a href=&quot;/usajobs.xml&quot;&gt;RSS feed&lt;/a&gt; as well. I’m not 100% happy with this setup, since the main jobs feed has a few jobs that are not federal jobs, and thus don’t show up on the usajobs feed, so there’s no “comprehensive” jobs feed today; you’ll have to check both to see all the jobs. But that’s work for another day.&lt;/p&gt;
+
+&lt;p&gt;I’ve also added a lot of documentation on my Digital Policy website around &lt;a href=&quot;https://digitalpolicy.us/policies/hiring/#pay-grades&quot;&gt;pay grades and how the GS system works&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a result of these additions, I realized that my site was quickly becoming a spaghetti mess of code. To clean this up, I’ve rationalized the growing number of RSS feeds, only these are now discoverable:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/feed.xml&quot;&gt;Main Feed&lt;/a&gt; - only includes &lt;a href=&quot;/blog/&quot;&gt;my posts&lt;/a&gt;, and &lt;a href=&quot;/recommended/&quot;&gt;posts from my recommended section&lt;/a&gt;. No jobs on this feed.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/jobs.xml&quot;&gt;Jobs Feed&lt;/a&gt; - my classic &lt;a href=&quot;/jobs/&quot;&gt;interesting jobs page&lt;/a&gt;  feed.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/usajobs.xml&quot;&gt;USAJobs Feed&lt;/a&gt; - my &lt;a href=&quot;/jobs/usajobs/&quot;&gt;usajobs firehose&lt;/a&gt; of federal jobs that are IT-related.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ&quot;&gt;Enderprise Architecture Feed&lt;/a&gt; - my &lt;a href=&quot;https://www.youtube.com/@EnderpriseArchitecture&quot;&gt;YouTube videogame series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also completely redid both the &lt;a href=&quot;https://github.com/krusynth/billhunt.dev/blob/www/_includes/feed.xml&quot;&gt;RSS feed template&lt;/a&gt; and the &lt;a href=&quot;https://github.com/krusynth/billhunt.dev/blob/www/_layouts/list.html&quot;&gt;list template&lt;/a&gt; to simplify showing many different types of content using a single layout. To achieve this, I’ve had to do some truly unholy hacks to Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Jekyll - well, &lt;a href=&quot;https://shopify.github.io/liquid/&quot;&gt;Liquid&lt;/a&gt;, technically - allows you to set your own custom variables on a page, but it doesn’t allow you to set the value of hash elements. So I wrote &lt;a href=&quot;https://github.com/krusynth/billhunt.dev/blob/www/_plugins/setval.rb&quot;&gt;a plugin to allow you to do this&lt;/a&gt;. The HUGE caveat here is that pre-defined values are &lt;em&gt;not&lt;/em&gt; writable - meaning if you have a loop of posts, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;post.content&lt;/code&gt; cannot be overridden - it’ll throw an error. To get around that, I’m hacking in new values instead, things like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;post.afterwards&lt;/code&gt; for content I want to append to the bottom of the post.&lt;/p&gt;
+
+&lt;p&gt;For pages like the main RSS feed, I’m also using some hacks to create empty arrays, and then iterate through the various content types, massaging them into new formats that work with the simplified templates. In this way, I have been able to remove most of &lt;a href=&quot;https://github.com/krusynth/billhunt.dev/blob/f0935e5593e759f5337d3afddd79fb508fb8f479/_includes/feed.xml#L13-L42&quot;&gt;the custom handling logic from the templates&lt;/a&gt;, and put it all into &lt;a href=&quot;https://raw.githubusercontent.com/krusynth/billhunt.dev/www/jobs.md&quot;&gt;the individual pages&lt;/a&gt;. It’s much cleaner this way.&lt;/p&gt;
+
+&lt;p&gt;Though I really, really wish Jekyll natively supported the manipulation of hashes and arrays. I was unable to find a way to create an entirely new Hash, and I would love a way to override predefined values as well. Ah well.&lt;/p&gt;
+
+&lt;p&gt;So that’s a lot of new stuff! Hopefully some of you folks will find some of these various hacks and tools useful!&lt;/p&gt;
+  </content>
+</entry>
+<entry>
+  <title>React and Flash</title>
+  <link rel="alternate" type="text/html" href="https://remotesynthesis.com/blog/the-price-of-developer-tools/" />
+  <published>2023-03-01T00:00:00+00:00</published>
+  <updated>2023-03-01T00:00:00+00:00</updated>
+  <id>https://remotesynthesis.com/blog/the-price-of-developer-tools/</id>
+  <content type="html">
+    &lt;p&gt;Brian Rinaldi makes a compelling comparison between React and Adobe Flash, the inevitability of change, and how overly-attached developers suffer as a result.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://remotesynthesis.com/blog/the-price-of-developer-tools/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>How To Pay HCD Study Participants In Government</title>
+  <link rel="alternate" type="text/html" href="https://medium.com/u-s-digital-response/navigating-the-sticky-web-of-research-compensation-8e9853f210bb" />
+  <published>2023-02-15T00:00:00+00:00</published>
+  <updated>2023-02-15T00:00:00+00:00</updated>
+  <id>https://medium.com/u-s-digital-response/navigating-the-sticky-web-of-research-compensation-8e9853f210bb</id>
+  <content type="html">
+    &lt;p&gt;This article from the U.S. Digital Response team breaks down methods for government agencies to pay participants in user testing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/u-s-digital-response/navigating-the-sticky-web-of-research-compensation-8e9853f210bb&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <category term="Recommended" />
+</entry>
+<entry>
+  <title>Government Sales</title>
+  <link rel="alternate" type="text/html" href="https://billhunt.dev/blog/2023/01/24/government-sales/" />
+  <published>2023-01-24T13:20:45+00:00</published>
+  <updated>2023-01-24T13:20:45+00:00</updated>
+  <id>https://billhunt.dev/blog/2023/01/24/government-sales/</id>
+  <content type="html">
+    &lt;p&gt;&lt;strong&gt;As a strong reminder - my comments on this website are my own and do not reflect the views or perspectives or official policies of any government agency.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Recently I posted a tiny rant on LinkedIn about how, having been on both sides of the fence, I am utterly baffled by vendors cold-calling a government employee to try to sell the government something. As I explained there - I &lt;strong&gt;do not buy anything&lt;/strong&gt;, instead the government has a very long and arduous process of solicitation and evaluation in which I am only peripherally involved.&lt;/p&gt;
+
+&lt;p&gt;Well, that post got a &lt;em&gt;lot&lt;/em&gt; of attention - at the moment, it’s one of the most popular things I’ve posted on LinkedIn with &lt;strong&gt;over 25,000 views.&lt;/strong&gt; (I wish &lt;a href=&quot;https://www.youtube.com/@EnderpriseArchitecture&quot;&gt;my YouTube channel&lt;/a&gt; was getting those numbers!)&lt;/p&gt;
+
+&lt;p&gt;I also received a lot of comments and questions on that post. &lt;strong&gt;I don’t want to waste your time, and I don’t want you to waste mine either&lt;/strong&gt;, so below I’ve suggested a few strategies on how salespeople can be more effective at their jobs with less or &lt;em&gt;no&lt;/em&gt; cold-calling.&lt;/p&gt;
+
+&lt;p class=&quot;banner&quot;&gt;Speaking of not wasting time… You may not agree with everything I’ve stated here - and that’s ok! I’m definitely overgeneralizing, and moreover your experience will differ from my own experience as a vendor. But, and I want to be absolutely clear here - &lt;strong&gt;you don’t need to tell me about it.&lt;/strong&gt;  Sending a dozen comments on how Very Wrong I Am On The Internet will not make either of our lives any better and is not a good use of time.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Before we dive in, let me take a second to briefly explain how government purchasing &lt;em&gt;actually&lt;/em&gt; works. I’ve written &lt;a href=&quot;https://digitalpolicy.us/policies/procurement/&quot;&gt;a much longer version&lt;/a&gt;, but the short-short version is this:&lt;/p&gt;
+
+&lt;p&gt;First, if an agency is buying something, they’ll issue a &lt;a href=&quot;https://www.acquisition.gov/far/52.215-3&quot;&gt;Request for Information (RFI)&lt;/a&gt;, a &lt;a href=&quot;https://www.acquisition.gov/far/15.203&quot;&gt;Request for Proposal (RFP)&lt;/a&gt;, or a &lt;a href=&quot;https://www.acquisition.gov/far/8.402#FAR_8_402__d468e65&quot;&gt;Request for Quotation&lt;/a&gt;.  When those are issued, they’re &lt;a href=&quot;https://sam.gov/content/opportunities&quot;&gt;posted publicly and you can search for them&lt;/a&gt;. If they have not issued one of these, the agency is not buying. Period. There’s no reason to reach out to them directly.&lt;/p&gt;
+
+&lt;p&gt;All communication is done via this process. It’s all but &lt;strong&gt;forbidden&lt;/strong&gt; for government staff to engage with vendors outside of this process. The intention is to eliminate corruption in awards, to &lt;strong&gt;prevent purchases due to personal connections&lt;/strong&gt; - the exact sort of strategy that traditional salespeople use through activities like cold calling. Preexisting relationships mean we actually have to &lt;strong&gt;recuse&lt;/strong&gt; ourselves from the evaluation process, so unlike the private sector, building relationships is actually &lt;strong&gt;bad for business.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Second, the [civilian] agencies &lt;em&gt;almost always&lt;/em&gt; buy things through &lt;a href=&quot;https://www.sba.gov/federal-contracting/contracting-assistance-programs/8a-business-development-program&quot;&gt;8(a)-certified small businesses&lt;/a&gt; because we have small business quotas. If you’re selling &lt;em&gt;services&lt;/em&gt; and are not 8(a)-certified, you should consider finding one to partner with. If you’re selling a &lt;em&gt;technology product&lt;/em&gt; like a desktop app or a cloud service, agencies almost always buy through an 8(a) &lt;a href=&quot;https://digitalpolicy.us/policies/procurement/#vendors&quot;&gt;Value-Added Reseller&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Third, if your product is cloud-related, it &lt;a href=&quot;https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/assets/egov_docs/fedrampmemo.pdf&quot;&gt;must&lt;/a&gt; be &lt;a href=&quot;https://www.fedramp.gov/&quot;&gt;FedRAMP-certified&lt;/a&gt;. No FedRAMP certification, and we probably won’t even look at it.&lt;/p&gt;
+
+&lt;p&gt;Again, there are always exceptions to these rules - but those are very broad strokes that are mostly true, most of the time.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;On to the comments. Since many were similar, I’m combining or summarizing here.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“The acquisition process is opaque, and vendors don’t know who they should be pitching at the agency.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, per above - contacting someone in the technology division will not improve your chances, as they are not the buyers. If anything, you’re hurting your actual chances. If you want to make a sale, look at the open RFPs - that’s where your buyers are.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“How can I make people aware of my product or service without cold calling?”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For products: if the first time I’m hearing about your offering is from a cold call or random meeting, you have failed - or rather, your marketing team has. As a technologist in government, my primary job is serving the mission, and I do that by staying on top of trends in technology. So you should have whitepapers and be giving demos and talks at events and conferences, being in the places where your customers already are.&lt;/p&gt;
+
+&lt;p&gt;Tough love time: if you can’t afford to market your product, you probably also can’t afford to meet federal security requirements, and thus you probably don’t have a viable business model for government sales.&lt;/p&gt;
+
+&lt;p&gt;For labor/services contracts: An agency doesn’t need to have ever heard of you before you submit a response to an RFP. In fact, it’s usually better that we haven’t. Every RFP will ask for details of your previous performance; this along with your key personnel (the staff who will be doing the work - usually we ask for their resumes) and price are the main things that matter here. And if you don’t have relevant previous experience, you’re probably not going to win the bid.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“As a federal employee, cold calls are a good way for me to learn about new offerings and approaches.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Please, please, &lt;strong&gt;please&lt;/strong&gt; spend more time engaging in the community outside of your agency. It’s important to stay on top of changes in your field. Again, there are lots of conferences and events going on all the time, where you can learn about new solutions. For instance, the CIO Council &amp;amp; GSA host a wide variety of &lt;a href=&quot;https://digital.gov/communities/&quot;&gt;working groups&lt;/a&gt; that are open to government employees. And here in DC there are the alphabet soup of non-profits that host in-person and virtual events which are free for government employees: &lt;a href=&quot;https://atarc.org/&quot;&gt;ATARC&lt;/a&gt;, &lt;a href=&quot;https://www.actiac.org/&quot;&gt;ACT-IAC&lt;/a&gt;, &lt;a href=&quot;https://www.afcea.org/&quot;&gt;AFCEA&lt;/a&gt;, &lt;a href=&quot;https://www.affirm.org/&quot;&gt;AFFIRM&lt;/a&gt; just to name a few.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“You should remember that the cold caller you’re turning away today might be your boss tomorrow! Or you might be applying at that company some day!”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If they’re any good at their job, they’ll know why I didn’t waste their time.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“As a federal employee, it’s annoying when vendors contact agencies right before the end of a fiscal year, or right after a budget has been passed.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Strongly agreed. It’s important for vendors to know that &lt;a href=&quot;https://digitalpolicy.us/policies/budget-finance/&quot;&gt;agencies budget 2-3 years in advance&lt;/a&gt;. When an agency receives money, it’s already been allocated and people know where it’s going. Now, end-of-year purchasing with unused funds &lt;strong&gt;does&lt;/strong&gt; often happen, but that’s &lt;em&gt;almost never&lt;/em&gt; done with a new vendor, because contracting takes so long.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“It’s possible that they just think you’re a cool person and want to make a personal connection with you because of all the great stuff you do!”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I do get a lot of really nice notes from folks, as a result of the &lt;a href=&quot;https://billhunt.dev/blog/2023/01/03/2022-recap/&quot;&gt;ridiculously large number of weird little projects I have&lt;/a&gt;. And &lt;strong&gt;I absolutely love receiving these&lt;/strong&gt; - keep ‘em coming!!! However, authentic messages from folks who want to show appreciation or collaborate on something are &lt;strong&gt;very different&lt;/strong&gt; than folks who just want me to buy something from them.&lt;/p&gt;
+
+&lt;p&gt;Just to be absolutely clear: &lt;strong&gt;I will never have a sales call with someone just because they’ve supported one of my projects.&lt;/strong&gt; That’s not how any of this works.&lt;/p&gt;
+
+&lt;p&gt;But &lt;strong&gt;I’m always happy to chat with folks who like to make weird stuff just because they like weird stuff.&lt;/strong&gt; Just don’t try to sell me anything.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“But I did millions of dollars in government sales from cold-calling! It works!”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Most likely, you found out about an existing opportunity that you could have discovered if you just searched for the RFP on the public website. And you could probably add another zero onto your sales number if you were better at searching.&lt;/p&gt;
+
+&lt;p&gt;There is no question that there exist individual with influence over IT purchasing that do not follow the legal guidelines, and if you happen to reach one of those questionable and/or corrupt few, you can sway them. &lt;strong&gt;I’m not one of them.&lt;/strong&gt; I strongly suggest you spend more time improving your offerings and less time on useless sales calls.&lt;/p&gt;
+  </content>
+</entry>
+<entry>
+  <title>New Stickers Have Arrived!</title>
+  <link rel="alternate" type="text/html" href="https://billhunt.dev/blog/2023/01/17/new-stickers/" />
+  <published>2023-01-17T17:43:42+00:00</published>
+  <updated>2023-01-17T17:43:42+00:00</updated>
+  <id>https://billhunt.dev/blog/2023/01/17/new-stickers/</id>
+  <content type="html">
+    &lt;p&gt;&lt;img src=&quot;https://billhunt.dev/uploads/2023/01/stickers.jpg&quot; alt=&quot;A Govpunk sticker, white text on a red eleven-pointed star with a black background, next to a Move Carefully and Fix Things sticker, with white lettering on a blue background.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, it’s a new year, so it’s time to relaunch my sticker program! I’ve added an additional new sticker design as well, &lt;strong&gt;Govpunk&lt;/strong&gt;, in addition to my old &lt;strong&gt;Move Carefully and Fix Things&lt;/strong&gt; stickers!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/stickers/&quot; class=&quot;btn&quot;&gt;Get a Free Sticker here!&lt;/a&gt;&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>

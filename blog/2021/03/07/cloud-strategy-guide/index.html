@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Cloud Strategy Guide | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Cloud Strategy Guide" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Strategies for successful cloud management and implementation." />
+<meta property="og:description" content="Strategies for successful cloud management and implementation." />
+<link rel="canonical" href="https://billhunt.dev/blog/2021/03/07/cloud-strategy-guide/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2021/03/07/cloud-strategy-guide/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:image" content="https://billhunt.dev/uploads/2021/02/cloud-strategy-guide.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-07T22:54:47+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://billhunt.dev/uploads/2021/02/cloud-strategy-guide.png" />
+<meta property="twitter:title" content="Cloud Strategy Guide" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2021-03-07T22:54:47+00:00","datePublished":"2021-03-07T22:54:47+00:00","description":"Strategies for successful cloud management and implementation.","headline":"Cloud Strategy Guide","image":"https://billhunt.dev/uploads/2021/02/cloud-strategy-guide.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2021/03/07/cloud-strategy-guide/"},"url":"https://billhunt.dev/blog/2021/03/07/cloud-strategy-guide/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-cloud-strategy-guide" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">Cloud Strategy Guide</h1>
+    <time datetime="2021-03-07T22:54:47+00:00" class="post-date">
+      2021.03.07
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <div class="wrapper-outer">
+<div class="wrapper-inner">
+   <div class="wrapper-subtitle">
+    <span class="fas fa-bars outlined"></span>
+    <span class="subtitle-first outlined">Cloud</span>
+    <span class="fas fa-bars outlined"></span>
+  </div>
+  <span class="subtitle-wrapper-text top-text">Strategy</span>
+  <span class="subtitle-wrapper-text bottom-text">Guide</span>
+</div>
+</div>
+
+<p>In <strong><a href="/blog/2021/02/28/cloudbusting/">part one</a></strong>, I discussed many of the myths around cloud use in government. In this article, I will describe critical strategies to address these myths that every organization should embrace before, during, and after moving to the cloud. These strategies are generally intended for civilian Federal agencies of the United States, but the recommendations below apply to any public sector organization - and even some private organizations as well.</p>
+
+<p><em>Both guides are available to download as <a href="/uploads/2021/03/CloudGuide.pdf">a single PDF <span class="fas fa-cloud-download-alt fa-lg"></span> </a></em></p>
+
+<ol class="table-of-contents">
+  <li><a href="#chapter-1---migrate-pragmatically">Chapter 1 - Migrate Pragmatically</a></li>
+  <li><a href="#chapter-2---plan-to-your-budget--staff">Chapter 2 - Plan to Your Budget &amp; Staff</a></li>
+  <li><a href="#chapter-3---embrace-new-security-models">Chapter 3 - Embrace New Security Models</a></li>
+  <li><a href="#chapter-4---understand-what-youre-buying">Chapter 4 - Understand What You’re Buying</a></li>
+  <li><a href="#chapter-5---build-a-family-farm">Chapter 5 - Build a Family Farm</a></li>
+  <li><a href="#epilogue---getting-more-help">Epilogue - Getting More Help</a></li>
+</ol>
+
+<h2 id="chapter-1---migrate-pragmatically">Chapter 1 - Migrate Pragmatically</h2>
+
+<p>The first thing to accept is that not all projects are appropriate for the cloud, and not all organizations have the skills necessary to fully take advantage of the cloud. With that as a starting point, an organization needs to come up with a way to rationalize its application portfolio, to determine what should stay on-premises and what should be modernized.  As a general rule, “lift-and-shift” - moving an application without rewriting it for the cloud environment - is <em>almost never cost-effective</em> for Infrastructure as a Service (IaaS) offerings unless it’s already a <em>very</em> modern system in the first place. On the other hand, basic websites with mostly static content are ideal for moving into Software as a Service (SaaS) or Platform as a Service (PaaS) offerings.</p>
+
+<p>The CIO Council’s <a href="https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf">Application Rationalization Playbook</a> (disclaimer: another document I worked on) is a useful starting point for this evaluation. Specifically, an agency should work up a thorough analysis of alternatives between various SaaS, PaaS, and IaaS offerings against the existing on-prem setup, or a hybrid environment. A major consideration here will be the Total Cost of Ownership (TCO), which should take into account not just service costs, but also staffing, support, and training costs. However, the lowest priced option may not always be the best choice (as I’ll be covering below).</p>
+
+<p><a href="https://cloud.gov/">Cloud.gov</a>, is an offering from the General Services Administration (GSA) that bundles several Amazon Web Services (AWS) offerings in a government-friendly “procurement wrapper” can make migration even easier for agencies. It’s an excellent platform for small agencies, or for large agencies that just want to prototype a new concept quickly.</p>
+
+<p>When you do start moving applications, it’s important to start tagging your assets - accounts, virtual machines, workflows, etc. - as early as possible to make accounting easier. Always include the project name and the customer organization at a minimum. Some providers also allow you to easily isolate a project or office’s services into a resource group, and this can also simplify this process. This is very important to allow easy payback or showback of funds, but for these models remember to include in these costs the TCO aspects not captured - e.g. staff time and contractor resources.</p>
+
+<p>I strongly recommend agencies take a very <em>cynical</em> stance on so-called low-code/no-code platforms, customer-relationship management tools (CRMs), and workflow management solutions. Many of you may remember the promises of “Business Intelligence” solutions in decades past, where agencies were fleeced for billions of dollars in configuration costs - these solutions are simply using a new buzzword for the same idea. These all promise to reduce costs but are often vastly more expensive than just building a tool from scratch - and the agency becomes <em>completely</em> locked-in to a single vendor until they replace the application entirely. The brilliant <a href="https://twitter.com/sboots">Sean Boots</a> of the Canadian Digital Service has presented a <a href="https://sboots.ca/2020/09/16/fake-cots-and-the-one-day-rule/">“1-day rule” to help identify these boondoggles</a>.</p>
+
+<table class="checklist">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Checklist</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="far fa-balance-scale-right"></span></td>
+      <td>Rationalize the application portfolio</td>
+    </tr>
+    <tr>
+      <td><span class="fa-stack"><span class="far fa-truck fa-stack-1x"></span><span class="far fa-ban fa-stack-2x"></span></span></td>
+      <td>Don’t lift-and-shift</td>
+    </tr>
+    <tr>
+      <td><span class="fa-stack"><span class="fas fa-university fa-stack-1x"></span><span class="fal fa-cloud fa-stack-2x"></span></span></td>
+      <td>Use cloud.gov</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-tag"></span></td>
+      <td>Properly tag cloud assets</td>
+    </tr>
+    <tr>
+      <td><span class="fa-stack"><span class="fas fa-snake fa-stack-1x"></span><span class="far fa-ban fa-stack-2x"></span></span></td>
+      <td>Avoid low-code/no-code/crm snake oil</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="chapter-2---plan-to-your-budget--staff">Chapter 2 - Plan to Your Budget &amp; Staff</h2>
+
+<p>The easiest way to avoid risks and unexpected costs is to simplify as much as possible. Civilian agencies should not be investing in bleeding-edge technology solutions - they’re too risky and expensive to maintain. Instead, pick the simplest possible solution that can be supported by your staff. The average agency should be aiming to stay well behind the <a href="https://en.wikipedia.org/wiki/Hype_cycle">“hype curve” into the “plateau of productivity.”</a> 
+Since most of the complexity is hidden from the customer, SaaS and commercial-off-the-shelf (COTS) tools are less risky than PaaS and IaaS options overall (provided you follow the 1-day rule above). This goes beyond just cloud, and applies to most anything you’re <em>building</em>. Most agencies, for instance, also should absolutely not be attempting to build a fancy React/Redux/GraphQL single-page application when a plain Wordpress or Drupal website with a few plugins will fulfill the customer’s needs. Building native mobile applications should be <em>completely avoided</em> by most organizations as these can cost millions of dollars a year just for upkeep - instead they should build mobile-friendly, responsive websites. Any custom application or tool may not be a sustainable solution given the high complexity and cost of engineers. This also means that agencies should be simplifying their <em>requirements</em> to the minimum necessary when comparing alternatives, not just the software itself. Avoiding “one-off” projects and special requests will save massive amounts of time and money.</p>
+
+<p>Instead, agencies must be actively investing in <em>their staff</em>. Agencies should allocate two to three times the standard training budget for IT and technology-adjacent staff, including project managers, program managers, and acquisition professionals. Some vendors provide a limited amount complementary training, but inevitably agencies need more than these free offerings. This training should include non-IT topics as well, including diversity awareness training, accessibility, plain language writing, project management, agile development techniques, and budgeting and procurement. <a href="https://www.gsa.gov/about-us/events-and-training/gsa-training-programs/training-opportunities-for-federal-employees">GSA offers a variety of programs</a> covering many of these areas.</p>
+
+<p>This must also include hands-on training - sitting through a webinar is no replacement for actual practical engineering experience. These staff need to be given the time and flexibility to practice these skills to develop them - building small test projects and trying out tools. The best teams are constantly changing and learning, so setting aside up to 10% or more of the staff’s time just for practice is not unreasonable - some <a href="https://en.wikipedia.org/wiki/20%25_Project">private sector companies set aside 20%</a>. All of these investments will pay off richly for agencies. Also, make sure your staff is cross-trained and able to fill gaps as they occur.</p>
+
+<p>As your staff begins to understand the new cloud paradigms, it will be important to modify your existing processes to handle the agility the cloud brings. Instead of slow, end-to-end, waterfall process “monorails”, set operational parameters as “guiderails.” Your acquisition process should be modified so that cloud can be purchased like a utility. You should not need to have a Change Control Board meeting anytime someone wants to create, resize, or destroy a virtual server. Plan a cost range that the entire project will fit within and review as needs change, along with monthly or quarterly portfolio reviews to stay on top of the budget. Instead of codified “gold disk” server images maintained by your team, consider template security rules.</p>
+
+<table class="checklist">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Checklist</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="far fa-bicycle"></span></td>
+      <td>Simplify the requirements and architecture</td>
+    </tr>
+    <tr>
+      <td><span class="fa-stack"><span class="far fa-mobile-alt fa-stack-1x"></span><span class="far fa-ban fa-stack-2x"></span></span></td>
+      <td>No mobile apps, avoid single-page webapps</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-user-graduate"></span></td>
+      <td>Train and cross-train your staff</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-chess-clock"></span></td>
+      <td>Allocate time for personal development</td>
+    </tr>
+    <tr>
+      <td><span class="fas fa-subway"></span></td>
+      <td>Update processes to set guardrails instead of monorails</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="chapter-3---embrace-new-security-models">Chapter 3 - Embrace New Security Models</h2>
+
+<p>Agencies must be able to manage the security of everything they run. Going back to the previous strategy, an agency should not deploy anything it cannot manage, and that goes for security as well. This is equally true in on-premises environments, but new operating models require new security models. Both your operations and security teams will need to be familiar with just about every setting that can be changed in your cloud environment - and how to lock them down to prevent exploitation.</p>
+
+<p>Organizations should no longer assume that a solution is secure just because they did an up-front initial review. The Federal government uses a security review process for services and applications known as the Authorization (or Authority) To Operate (ATO), but the implementation varies from agency to agency. Traditionally this is a series of <a href="https://nvd.nist.gov/800-53">standard security controls</a> that are reviewed, checklist-style, by an agency once every three years. However, agencies that have excelled at cloud security have moved to Continuous Authorization, using monitoring tools to actively verify that the security controls are being met and maintained, twenty-four hours a day and seven days a week.</p>
+
+<p>However, these monitoring checks still must evolve with the products being monitored to make sure new vulnerabilities have not appeared outside the scope of existing checks. As per usual with cybersecurity, vigilance is key. Since attackers are constantly evolving their methods, tools that <em>automate security responses</em> as well should be used whenever practical - especially built-in, native from the large vendors that are constantly evolving to meet these threats.</p>
+
+<p>To help combat this second issue, the Federal government has been moving away from so-called “castle-and-moat” perimeter-based security methods which only monitor network traffic. Instead, an approach known as Zero Trust has appeared, taking a data-first methodology of protecting systems instead of <em>just</em> the perimeter, verifying user identities in real-time, and allowing staff to only have access to the minimum amount of information necessary to fulfill the task at hand. In this way, when the perimeter is <em>inevitably</em> breached, the data assets contained within are still secure.</p>
+
+<p>It also should go without saying that teams should be using multi-factor authentication on all privileged accounts. Whether developers or administrators, using more than just a username and password will dramatically reduce the risk of exploitation. The Federal government has “<a href="https://www.fedidcard.gov/">PIV cards</a>” that are generally used on most devices, but if the vendor does not support them, implementing a token system via any of the commercially-available platforms is fine: Google Authenticator, 1Password, Microsoft Authenticator, and YubiKey are all worth looking at. However, organizations should completely avoid text-message codes sent to phones, as these are easily intercepted.</p>
+
+<p>For public customers that will need to login or prove their identies, <a href="/blog/2021/02/18/login-gov-for-everyone/">all U.S. government agencies should be using Login.gov</a>.</p>
+
+<table class="checklist">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Checklist</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="far fa-toggle-on"></span></td>
+      <td>Research all product configuration settings</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-binoculars"></span></td>
+      <td>Implement continuous monitoring, not just compliance</td>
+    </tr>
+    <tr>
+      <td><span class="fas fa-cogs"></span></td>
+      <td>Use security automation tools</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-fingerprint"></span></td>
+      <td>Leverage zero-trust practices to protect your data</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-id-badge"></span></td>
+      <td>Use MFA &amp; Login.gov</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="chapter-4---understand-what-youre-buying">Chapter 4 - Understand What You’re Buying</h2>
+
+<p>Cloud isn’t going to make your teeth whiter or your breath fresher or fix all of your problems, regardless of what the salespeople tell you. You need to know <em>exactly</em> what you’re buying. Before making an investment, make sure you fully understand what capabilities you’re purchasing and what parts you - and the vendor - will be responsible for.</p>
+
+<p>If your evaluation team does not have technical expertise, bring engineers into the conversation early, to sort the truth from the sales pitch. As discussed in the previous article, you may not be getting autoscaling or load balancing or other features you’ve assumed just happen “automatically” - and if available these features definitely will not be free. You may have to build more “glue” between services than you assume, and someone will have to maintain this connective tissue.</p>
+
+<p>Also keep in mind that the government cloud regions (or “govcloud” by some vendors’ naming) provide different versions of these tools than the commercial ones. As a result, not all features or solutions will be available - so again, plan ahead. Though, in most cases, civilian agencies not dealing with highly-sensitive data should consider using the commercial versions whenever possible - the security differences are not so great as to be insurmountable, but the functionality limitations are huge.</p>
+
+<p>Before implementing a service, do careful research on the service limits - maximum traffic or number of virtual machines or emails that can be sent, etc.. Do <em>not</em> just trust what you are told by a vendor’s engineers or customer representatives - most of the time, they also do not know about these limits until you run aground on them. You should estimate your expected usage - number of site visits and/or users and/or emails, etc., and actually spend the time to search through user forums to make sure no one has hit a limit related to what you’re doing.</p>
+
+<p>Customer Experience (CX) is another area where the private sector has been building people-friendly interfaces into their SaaS solutions, and agencies can skip a lot of the hard work and directly benefit from the results. Metrics and feedback-loops are often built-in as well. Maximizing these built-in elements can radically improve an agency’s public satisfaction scores at little or no additional cost.</p>
+
+<table class="checklist">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Checklist</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="nowrap far"><span class="fas fa-chess-queen-alt"></span><span class="far fa-chess-pawn-alt"></span></span></td>
+      <td>Validate assumptions; know your responsibilities</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-door-open"></span></td>
+      <td>Consider commercial cloud instead of govcloud</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-unicorn"></span></td>
+      <td>Research service limits in advance</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-comment-alt-smile"></span></td>
+      <td>Leverage built-in CX tools</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="chapter-5---build-a-family-farm">Chapter 5 - Build a Family Farm</h2>
+
+<p>Given that agency IT budgets continue to be cut, and <a href="https://www.whitehouse.gov/wp-content/uploads/2020/02/hist16z1_fy21.xlsx">staffing has not increased in 40 years</a>, agencies are largely unprepared to completely rewrite and replace all of their legacy systems.  Moreover, “IT Modernization” as a concept is an unending pursuit, as in <a href="https://en.wikipedia.org/wiki/Zeno%2527s_paradoxes%23Achilles_and_the_tortoise">Zeno’s paradox of Achilles chasing the Tortoise,</a> software written today is legacy tomorrow. Agencies will need to use <a href="https://www.congress.gov/bill/115th-congress/house-bill/2227/text">all available funding sources</a> to overcome their deep technical debt, prioritizing those that present the <em>greatest risk</em>: those that are unmaintained, frequently used by customers, and lacking in resilience and redundancy. Under this scrutiny, agencies may find that their public websites are a bigger risk than older backend systems.</p>
+
+<p>Also, rather than replacing entire large monolithic systems, they should <a href="https://www.appdynamics.com/blog/product/strangler-pattern-migrate-to-microservices-from-a-monolithic-app/">pull off pieces and replace them independently</a> as resources are available.  This can be done by isolating functions and building <a href="https://en.wikipedia.org/wiki/Microservices">microservices</a>, but that approach can often lead to expensive, unnecessary complexity. Agencies should not be afraid to build a newer parallel monolith adjacent to the existing one - again, keep in mind that it’s not the size that’s the concern, but the complexity and sustainability.</p>
+
+<p>That all being said, the government does have major shortcomings in redundancy today, and too many systems have a single point of failure. At a minimum, agencies should be using cloud for data backup of critical systems whenever possible. I also strongly recommend agencies consider creating load balancing and caching layers in the cloud in front of on-premise public-facing systems to deal with unexpected loads.</p>
+
+<p>One final concern is automation. Many organizations begin their cloud journey with unrealistic goals for maturity. The practice of Infrastructure as Code is incredibly popular at the moment, where we talk about treating virtual servers as “cattle, not pets.” An unprepared agency may immediately think that they need to be using all of the most cutting edge <a href="https://www.docker.com/">tools</a> and <a href="https://kubernetes.io/">technologies</a> at first, but this would be a critical mistake. Instead, following the principles relating to complexity in the sections above, agencies should aim to create a “family farm” - <a href="https://www.youtube.com/watch?v=_ICzo5r-7vY">only automating that which they can realistically manage</a>. For instance, there is absolutely nothing wrong with only using a few virtual machines and load balancers instead of a fully configuration-only architecture. The great thing about cloud is you can evolve as your team grows, but it’s incredibly difficult to reduce complexity you’ve invested in if your team shrinks.</p>
+
+<table class="checklist">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Checklist</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="far fa-exclamation-triangle"></span></td>
+      <td>Assess technical debt by risk</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-crop-alt"></span></td>
+      <td>Replace monoliths a piece at a time</td>
+    </tr>
+    <tr>
+      <td><span class="fa-stack"><span class="fas fa-robot fa-stack-1x"></span><span class="far fa-ban fa-stack-2x"></span></span></td>
+      <td>Don’t over-automate</td>
+    </tr>
+    <tr>
+      <td><span class="far fa-copy"></span></td>
+      <td>Use cloud backups and load balancing as soon as possible</td>
+    </tr>
+    <tr>
+      <td><span class="fas fa-tractor"></span></td>
+      <td>Build a small “family farm” to start</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="epilogue---getting-more-help">Epilogue - Getting More Help</h2>
+
+<p>These strategies are a starting point towards a successful cloud rollout. If you run into trouble, want to talk shop with your peers, or would like to share your own strategies and experiences, there are several communities to engage with:</p>
+
+<ul>
+  <li>
+    <p>The Federal CIO Council <a href="https://digital.gov/communities/cloud-infrastructure/">Cloud and Infrastructure Community of Practice</a> is the main Federal group for discussing these topics. However, they are currently in the process of changing their charter to allow any U.S. government staff to participate: Federal, state, and local. Membership is free.</p>
+  </li>
+  <li>
+    <p>The ATARC <a href="https://atarc.org/working-groups/cloud-working-group/">Cloud and Infrastructure Working Group</a> is free and open to any government staff, though private sector companies must pay to be members.</p>
+  </li>
+  <li>
+    <p><a href="https://atarc.org/event/cloud-coffee/">Cloud &amp; Coffee</a> (presented by ATARC &amp; MorphWorks) is a biweekly podcast hosted by myself and <a href="https://www.linkedin.com/in/chris-oglesby-94234112/">Chris Oglesby</a>. Each episode, we chat with a guest about their personal experience with technology modernization, and there’s a live Q&amp;A open during the chat. Any ATARC member can participate; old episodes are <a href="https://open.spotify.com/show/6AU2VxO4j7dtDls4ouxdIq?si=YwhQcD7XRGWvxSQJKRmmbw">publicly available on Spotify</a>.</p>
+  </li>
+</ul>
+
+<p><span class="fas fa-broom secret-button" title="ITS A SECRET TO EVERYBODY"></span></p>
+
+<div class="secret-wrapper" style="display:none"></div>
+
+<script>
+$(document).ready(function() {
+
+/* Strategy Guide secret */
+$('.fa-broom.secret-button').click(function() {
+  $('.secret-wrapper').show();
+});
+
+$('.secret-wrapper').click(function() {
+  $('.secret-wrapper').hide();
+});
+
+});
+</script>
+
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

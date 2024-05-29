@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>More Jobs, USAJobs Scraper, Jekyll Tweaks | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="More Jobs, USAJobs Scraper, Jekyll Tweaks" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’ve added more job postings from USAJobs and wrote a script to pull from their API. I’ve also made some ridiculous changes to abuse Jekyll to make this site work better." />
+<meta property="og:description" content="I’ve added more job postings from USAJobs and wrote a script to pull from their API. I’ve also made some ridiculous changes to abuse Jekyll to make this site work better." />
+<link rel="canonical" href="https://billhunt.dev/blog/2023/03/08/usajobs-jekyll-tweaks/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2023/03/08/usajobs-jekyll-tweaks/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-09T02:06:59+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="More Jobs, USAJobs Scraper, Jekyll Tweaks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2023-03-09T02:06:59+00:00","datePublished":"2023-03-09T02:06:59+00:00","description":"I’ve added more job postings from USAJobs and wrote a script to pull from their API. I’ve also made some ridiculous changes to abuse Jekyll to make this site work better.","headline":"More Jobs, USAJobs Scraper, Jekyll Tweaks","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2023/03/08/usajobs-jekyll-tweaks/"},"url":"https://billhunt.dev/blog/2023/03/08/usajobs-jekyll-tweaks/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-more-jobs-usajobs-scraper-jekyll-tweaks" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">More Jobs, USAJobs Scraper, Jekyll Tweaks</h1>
+    <time datetime="2023-03-09T02:06:59+00:00" class="post-date">
+      2023.03.09
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <p>It’s been a lot of work for me to keep my <a href="/jobs/">jobs page</a> up-to-date. Previously, I’ve been crawling through LinkedIn a couple times a day to try to find all the relevant IT jobs. However, many were still getting missed. So I signed up for the <a href="https://developer.usajobs.gov/">USAJobs API</a>, and wrote <a href="https://github.com/krusynth/usajobs-feed">a script to scrape relevant technology jobs</a> from it. (As always, that script is open source, so you can take it and manipulate it for your own regular searches.) My default settings only searches for GS-12 and above, technology-related job series (2210, 1550, 1560), does not include defense, intelligence, and law-enforcement agencies: DOD, DOJ, and most of DHS are excluded (except for CISA and FEMA).</p>
+
+<p>I only post the most interesting results on my jobs page, but I figured some folks would want access to the full firehose of positions, so I’ve set up <a href="/jobs/usajobs/">a new page for all the results from that search</a>, and it has its own <a href="/usajobs.xml">RSS feed</a> as well. I’m not 100% happy with this setup, since the main jobs feed has a few jobs that are not federal jobs, and thus don’t show up on the usajobs feed, so there’s no “comprehensive” jobs feed today; you’ll have to check both to see all the jobs. But that’s work for another day.</p>
+
+<p>I’ve also added a lot of documentation on my Digital Policy website around <a href="https://digitalpolicy.us/policies/hiring/#pay-grades">pay grades and how the GS system works</a>.</p>
+
+<p>As a result of these additions, I realized that my site was quickly becoming a spaghetti mess of code. To clean this up, I’ve rationalized the growing number of RSS feeds, only these are now discoverable:</p>
+
+<ul>
+  <li><a href="/feed.xml">Main Feed</a> - only includes <a href="/blog/">my posts</a>, and <a href="/recommended/">posts from my recommended section</a>. No jobs on this feed.</li>
+  <li><a href="/jobs.xml">Jobs Feed</a> - my classic <a href="/jobs/">interesting jobs page</a>  feed.</li>
+  <li><a href="/usajobs.xml">USAJobs Feed</a> - my <a href="/jobs/usajobs/">usajobs firehose</a> of federal jobs that are IT-related.</li>
+  <li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">Enderprise Architecture Feed</a> - my <a href="https://www.youtube.com/@EnderpriseArchitecture">YouTube videogame series</a></li>
+</ul>
+
+<p>I also completely redid both the <a href="https://github.com/krusynth/billhunt.dev/blob/www/_includes/feed.xml">RSS feed template</a> and the <a href="https://github.com/krusynth/billhunt.dev/blob/www/_layouts/list.html">list template</a> to simplify showing many different types of content using a single layout. To achieve this, I’ve had to do some truly unholy hacks to Jekyll.</p>
+
+<p>Jekyll - well, <a href="https://shopify.github.io/liquid/">Liquid</a>, technically - allows you to set your own custom variables on a page, but it doesn’t allow you to set the value of hash elements. So I wrote <a href="https://github.com/krusynth/billhunt.dev/blob/www/_plugins/setval.rb">a plugin to allow you to do this</a>. The HUGE caveat here is that pre-defined values are <em>not</em> writable - meaning if you have a loop of posts, the <code class="language-plaintext highlighter-rouge">post.content</code> cannot be overridden - it’ll throw an error. To get around that, I’m hacking in new values instead, things like <code class="language-plaintext highlighter-rouge">post.afterwards</code> for content I want to append to the bottom of the post.</p>
+
+<p>For pages like the main RSS feed, I’m also using some hacks to create empty arrays, and then iterate through the various content types, massaging them into new formats that work with the simplified templates. In this way, I have been able to remove most of <a href="https://github.com/krusynth/billhunt.dev/blob/f0935e5593e759f5337d3afddd79fb508fb8f479/_includes/feed.xml#L13-L42">the custom handling logic from the templates</a>, and put it all into <a href="https://raw.githubusercontent.com/krusynth/billhunt.dev/www/jobs.md">the individual pages</a>. It’s much cleaner this way.</p>
+
+<p>Though I really, really wish Jekyll natively supported the manipulation of hashes and arrays. I was unable to find a way to create an entirely new Hash, and I would love a way to override predefined values as well. Ah well.</p>
+
+<p>So that’s a lot of new stuff! Hopefully some of you folks will find some of these various hacks and tools useful!</p>
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Building Govify.org | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Building Govify.org" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Brief Summary" />
+<meta property="og:description" content="A Brief Summary" />
+<link rel="canonical" href="https://billhunt.dev/blog/2014/04/10/building-govify-org/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2014/04/10/building-govify-org/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-04-11T00:01:41+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Building Govify.org" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2014-04-11T00:01:41+00:00","datePublished":"2014-04-11T00:01:41+00:00","description":"A Brief Summary","headline":"Building Govify.org","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2014/04/10/building-govify-org/"},"url":"https://billhunt.dev/blog/2014/04/10/building-govify-org/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-building-govify-org" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">Building Govify.org</h1>
+    <time datetime="2014-04-11T00:01:41+00:00" class="post-date">
+      2014.04.11
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <h3 dir="ltr">
+  A Brief Summary
+</h3>
+
+<p dir="ltr">
+  After a hackathon a few months back, we were joking about creating an easy way to take the data we&#8217;d painstakingly parsed from PDFs, word documents, and XML files, and &#8220;translate&#8221; it back into a format that government agencies are used to. Many of us have been shell-shocked in dealing with PDFs from government agencies, which are often scanned documents, off kilter and photocopied many times over. Fundamentally, they&#8217;re very difficult to pry information out of. For the OpenGov Foundation&#8217;s April Fools&#8217; prank, we created <a href="http://govify.org">Govify.org</a>, a tool to convert plain text into truly ugly PDFs.
+</p>
+
+<h3 dir="ltr">
+  <!--more-->Implementation
+</h3>
+
+<p dir="ltr">
+  A quick, [one-line ImageMagick command](https://gist.github.com/krues8dr/9437567), was the first version. We quickly produced a few sample documents, and decided that it would be fantastic if users could upload their own files and convert them. Very quickly it became clear that the process might take a couple of seconds, and a decent amount of CPU &#8211; so to deal with any sort of load, we&#8217;d need a modular, decentralized process, rather than a single webpage to do everything.
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  Hidden troll of <a href="https://twitter.com/FoundOpenGov">@FoundOpenGov</a>&#8216;s Govify is that front end is PHP, deploy is Ruby, worker is Python, &amp; conversion is a shell script. <a href="https://twitter.com/search?q=%23nailedit&amp;src=hash">#nailedit</a>
+</p>
+
+<p dir="ltr">
+  — Ben Balter (@BenBalter) <a href="https://twitter.com/BenBalter/statuses/451011271018942464">April 1, 2014</a>
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  As <a href="https://twitter.com/BenBalter/">Ben Balter</a> points out, there are a lot of moving pieces to this relatively-simple setup. Govify.org is actually a combination of PHP, Compass + SASS, Capistrano, Apache and Varnish, Rackspace Cloud services and their graet API tools, Python and Supervisord, and ImageMagick with a bash script wrapper. Why in the world would you use such a hodgepodge of tools across so many languages? Or, as most people are asking these days, &#8220;why not just build the whole thing with Node.js?&#8221;
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  The short answer is, the top concern was time. We put the whole project together in a weekend, using very small pushes to build standalone, modular systems. We reused components wherever possible and tried to wholly avoid known pitfalls via the shortest route around them. A step by step breakdown of those challenges follow.
+</p>
+
+<h4 dir="ltr">
+  Rough Draft
+</h4>
+
+<p dir="ltr">
+  We started with just a single <a href="https://gist.github.com/krues8dr/9437567">ImageMagick command</a>, which:
+</p>
+
+<li dir="ltr">
+  <p dir="ltr">
+    Takes text as an input
+  </p>
+</li>
+
+<li dir="ltr">
+  <p dir="ltr">
+    Fills the text into separate images
+  </p>
+</li>
+
+<li dir="ltr">
+  <p dir="ltr">
+    Adds noise to the images
+  </p>
+</li>
+
+<li dir="ltr">
+  <p dir="ltr">
+    Rotates the images randomly
+  </p>
+</li>
+
+<li dir="ltr">
+  <p dir="ltr">
+    And finally outputs all of the pages as a PDF.
+  </p>
+</li>
+
+<p dir="ltr">
+  Using that to create a few sample documents, we began putting together a rough website to show them off. Like everyone else who needs to build a website in zero time, we threw <a href="http://getbootstrap.com/">Bootstrap onto a really basic template (generated with </a><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>. We use a few <a href="http://sass-lang.com/">SASS</a> libraries &#8211; <a href="http://compass-style.org/">Compass</a>, <a href="https://github.com/jlong/sass-bootstrap">SASS Bootstrap</a>, and <a href="https://github.com/meticulous/keanu">Keanu</a> &#8211; to get some nice helpers, and copied in our standard brand styles that we use everywhere else. A few minutes in photoshop and some filler text later, and we had a full website.
+</p>
+
+<p dir="ltr">
+  We needed a nice way to deploy the site as we make changes, and our preferred tool is <a href="http://capistranorb.com/">Capistrano</a>. There are other tools available, like Fabric for Python or Rocketeer for PHP, but Capistrano excels in being easy to use, easy to modify, and mostly standalone. It&#8217;s also been around for a very long time and the one that we&#8217;ve been using the longest.
+</p>
+
+<p dir="ltr">
+  We&#8217;re using <a href="http://www.rackspace.com/">Rackspace</a> for most of our hosting, so we stood up box with Varnish in front of Apache and stuck the files on there. Website shipped! <img alt="ship it!" src="https://lh4.googleusercontent.com/nJEFt67pywgNqyUI18Uao5KQA3IBaz1SAnxMS3muVM4HitF7AHqu5EwaKTdISXXEr-cHbRBf437T3HcXIweOREJP_nXfiMRS-XeyC67dRYzx77Q2BBq5Mq_Z54dut_n75A" width="20px;" height="20px;" />
+</p>
+
+<h4 dir="ltr">
+  Web Uploading
+</h4>
+
+<p dir="ltr">
+  Once that was done, we made the decision to allow users to upload their own files. At OpenGov, we&#8217;re primarily a PHP shop, so we decided to use PHP. OK, OK &#8211; stop groaning already. PHP is not the most elegant language in the world, and never will be. It has lots of horns and warts, and people like to trash it as a result. That being said, there are a few things it&#8217;s great at.
+</p>
+
+<p dir="ltr">
+  First and foremost, it&#8217;s incredibly easy to optimize. Tools like <a href="http://www.php.net/manual/en/book.apc.php">APC</a> and <a href="https://github.com/facebook/hhvm">HipHop VM</a> which allow you to take existing PHP scripts and make them run *very* well. The variety and diversity of optimization tools for PHP make it a very attractive language for dealing with high-performance apps, generally.
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  Second, it&#8217;s a &#8220;web-first&#8221; language, rather than one that&#8217;s been repurposed for the web &#8211; and as a result, it&#8217;s very quick to build handlers for common web-tasks without using a single additional library or package. (And most of those tasks are very well documented on the PHP website as well.) <a href="http://www.php.net/manual/en/features.file-upload.php">Handling file uploads in PHP is a very simple pattern.</a>
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  So in no time at all, we were able to create a basic form where users could input a file to upload, have that file processed on the server, and output back our PDF. Using the native PHP ImageMagick functions to translate the files seemed like a lot of extra work for very little benefit, so we ran kept that part as <a href="https://github.com/opengovfoundation/govify">a tiny shell script</a>.
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  At this point however, we realized that the file processing iself was slow enough that any significant load could bring slow the server considerably. Rather than spinning up a bunch of identical servers, a job queue seemed like an ideal solution.
+</p>
+
+<h4 dir="ltr">
+  Creating a Job Queue
+</h4>
+
+<p dir="ltr">
+  A very common pattern for large websites that do processing of data is the job queue, where single items that need processing are added to a list somewhere by one application, and pulled off the list to be processed by another. (<a href="http://upload.wikimedia.org/wikipedia/commons/0/0c/Thread_pool.svg">Visual explanation</a>, from the Wikipedia Thread Queue article.) Since we&#8217;re using Rackspace already, we were able to use Rackspace Cloud Files to store our files for processing, and the Rackspace Queue to share the messages across the pieces of the application. The entire Rackspace Cloud stack is controllable via their API, and there are nice libraries for many languages available.
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  On our frontend, we were able to drop in the <a href="https://github.com/rackspace/php-opencloud/">php-opencloud library</a> to get access to the API. Instead of just storing the file locally, we push it up to Rackspace Cloud Files, and then insert a message into our queue, listing the details of the job. We also now collect the user&#8217;s email address, so that we can email to let them know that their file is ready.
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  The backend processing, however, presented a different set of challenges. Generally, you want an always-running process that is constantly checking the queue for new files to process. For processes that take a variable amount of time, you don&#8217;t want just a Cron job, since the processes can start stacking up and choke the server &#8211; instead we just have a single run loop that runs indefinitely, a daemon or service.
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  For all the things that PHP is good at, memory management is not on the list. Garbage collection is not done very well, so large processes can start eating memory rapidly. PHP also has a hard memory limit, which will just kill the process in an uncatchable way when it dies.
+</p>
+
+<p> </p>
+
+<p dir="ltr">
+  Python, on the other hand, does a rather admirable job of this. Creating a quick script to get the job back out of the Rackspace Queue, pull down the file to be manipulared, and push that file back up was a rather simple task using the <a href="https://github.com/rackspace/pyrax">Rackspace Pyrax library</a>. After several failed attempts in trying to use both the python-daemon and daemonize packages as a runner for the script, we reverted to using <a href="http://supervisord.org/">Supervisor</a> to keep the script going instead.
+</p>
+
+<p> </p>
+
+<h4 dir="ltr">
+  Final Thoughts
+</h4>
+
+<p dir="ltr">
+  Obviously, this isn&#8217;t the most elegant architecture ever created. It would have made far more sense to use a single language for the whole application &#8211; most likely Python, even though very little is shared across the different pieces aside from the API.
+</p>
+
+<p dir="ltr">
+  That being said, this thing scales remarkably well. Everything is nicely decentralized, and would perform well under significant load. However, we didn&#8217;t really get very significant load from our little prank &#8211; most people were just viewing the site and example PDFs, and very few were uploading their own. Sometimes overengineering is its own reward.
+</p>
+
+<p dir="ltr">
+  Not bad for three days of work, if I do say so myself.
+</p>
+
+<p dir="ltr">
+  All of the pieces are available on Github and GPL2 licensed for examining, forking, and commenting on.
+</p>
+
+<li dir="ltr">
+  <p dir="ltr">
+    <a href="https://github.com/opengovfoundation/govify">Govify Shell Script</a>
+  </p>
+</li>
+
+<li dir="ltr">
+  <p dir="ltr">
+    <a href="https://github.com/opengovfoundation/govify-site">Govify Web Site &amp; Uploader</a>
+  </p>
+</li>
+
+<li dir="ltr">
+  <p dir="ltr">
+    <a href="https://github.com/opengovfoundation/govify-worker">Govify Worker Script</a>
+  </p>
+</li>
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

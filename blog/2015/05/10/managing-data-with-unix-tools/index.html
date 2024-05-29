@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Managing Data with Unix Tools | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Managing Data with Unix Tools" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want." />
+<meta property="og:description" content="Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want." />
+<link rel="canonical" href="https://billhunt.dev/blog/2015/05/10/managing-data-with-unix-tools/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2015/05/10/managing-data-with-unix-tools/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-05-11T03:15:47+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Managing Data with Unix Tools" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2015-05-11T03:15:47+00:00","datePublished":"2015-05-11T03:15:47+00:00","description":"Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want.","headline":"Managing Data with Unix Tools","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2015/05/10/managing-data-with-unix-tools/"},"url":"https://billhunt.dev/blog/2015/05/10/managing-data-with-unix-tools/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-managing-data-with-unix-tools" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">Managing Data with Unix Tools</h1>
+    <time datetime="2015-05-11T03:15:47+00:00" class="post-date">
+      2015.05.11
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <p>Most Unix systems (including OS X) provide a large number of fantastic tools for manipulating data right out of the box.  If you have been writing small Python/Ruby/Node scripts to perform transformations or just to manage your data, you’ll probably find that there are already tools written to do what you want.</p>
+
+<p>Let me start with the conclusion first. <strong>The next time you have to transform or manipulate your data, look around for what Unix tools already exist first.</strong>  It might take you a little longer to figure out all of the flags and parameters you need, and you’ll have to dig through some unfriendly documentation, but you’ll have a new, far more flexible tool in your toolbox the next time around.</p>
+
+<p>This is part 3 of a series on Unix tools. <!--more-->Read the other parts:</p>
+
+<ol>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/bash-basics/">Bash Basics</a></li>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/unix-tools/">Unix Tools</a></li>
+  <li><a href="http://krues8dr.com/blog/2015/05/10/managing-data-with-unix-tools/">Managing Data with Unix Tools</a></li>
+</ol>
+
+<h3 id="awk-a-tool-for-spreadsheets--logs"><code class="language-plaintext highlighter-rouge">awk</code>, a tool for spreadsheets &amp; logs</h3>
+
+<p><code class="language-plaintext highlighter-rouge">awk</code> is a tool to work with spreadsheets, logs, and other column-based data. Given some <a href="https://gist.githubusercontent.com/krues8dr/cf68b573542ad905099e/raw/ed50cdd69f3a1c307da4360c1af6153821e905d2/data.csv">generic CSV data</a>, we can manipulate the columns to get what we want out. For instance, if we want to remove some of the personally identifying information, we can drop the name and relationship columns:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>awk -F ',' 'BEGIN { OFS=","} {print $2,$4,$5}' data.csv
+&gt; Returns the columns Age,Job,Favorite Thing from the csv.
+</code></pre></div></div>
+
+<p>Here, we’re telling awk that the input column separator is <code class="language-plaintext highlighter-rouge">,</code> with the <code class="language-plaintext highlighter-rouge">-F</code> flag, and we’re also telling it to use a comma to separate the output in the actual expression with <code class="language-plaintext highlighter-rouge">{ OFS=","}</code>. Then we’re telling it to only output columns 2, 4, and 5 (<code class="language-plaintext highlighter-rouge">{print $2,$4,$5}</code>).</p>
+
+<p>We can also use it to parse log files. Given a standard Apache combined log, we can get a list of all IP addresses easily:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>awk '{print $1}' access_log
+</code></pre></div></div>
+
+<p>And then we can pass that through the <code class="language-plaintext highlighter-rouge">sort</code> utility to put them in order, and the <code class="language-plaintext highlighter-rouge">uniq</code> utility to remove duplicates (with <code class="language-plaintext highlighter-rouge">-u</code> for unique) or even get a count of how many times each visitor has hit our site (with <code class="language-plaintext highlighter-rouge">-c</code> for count).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>awk '{print $1}' ./access.log | sort | uniq -c
+&gt; Outputs each IP address with a count of how many visits.
+</code></pre></div></div>
+
+<p>You can do a whole lot more with awk too, including <a href="http://www.shellhacks.com/en/Printing-Specific-Columns-Fields-in-Bash-using-AWK">scripting inside the expression</a>.</p>
+
+<h3 id="filtering-and-analysis-with-grep-and-sed">Filtering and Analysis with <code class="language-plaintext highlighter-rouge">grep</code> and <code class="language-plaintext highlighter-rouge">sed</code></h3>
+
+<p>If you’re using more sophisticated tools like <a href="http://goaccess.io/">goaccess</a> to analyze your logs, you can preprocess the logs with the tools we’ve covered in the previous articles in this series, <a href="http://krues8dr.com/blog/2015/05/10/bash-basics/">Bash Basics</a>, <a href="http://krues8dr.com/blog/2015/05/10/unix-tools/">Unix Tools</a>. To just get a couple of days from the logs:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sed -n '/04\/May\/2015/,/06\/May\/2015/ p'  /var/log/httpd/access.log | goaccess -a
+&gt; Passes log entries for May 4th and 5th only to goaccess
+</code></pre></div></div>
+
+<p>Or if you need to process multiple log files:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat /var/log/httpd/*-access.log | grep "04\/May\/2015" | goaccess -a
+&gt; Parses only log rows that have the 4th of May in them, from all of our Apache log files.
+</code></pre></div></div>
+
+<p>&lt;/code&gt;</p>
+
+<h3 id="parsing-files-with-bash">Parsing Files with Bash</h3>
+
+<p>Going back to our initial post, you can actually do a lot with just bash alone. We can even use <code class="language-plaintext highlighter-rouge">for</code> loops to iterate over spreadsheets, instead of sed or awk. I sent <a href="https://github.com/krues8dr/gitter/blob/8171a77c6ea9404dd05968774fb20460547c5bbe/gitter.sh">a pull request</a> the other day to remove a python script that fed into a bash script, so the bash script would do all the work. The original is designed to take a spreadsheet, and for each row it pulls the listed git repo and zips it up.</p>
+
+<p>Here’s the updated script. Keep in mind that though this is a bash script, this could also be run directly from the command line.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+INPUT=respondents.csv
+[ ! -f $INPUT ] &amp;&amp; { echo "$INPUT file not found"; exit 99; }
+
+(tail -n +2 $INPUT ; echo )| while IFS=, read RESPONDENT REPOSITORY
+do
+	echo "Fetching $REPOSITORY"
+	REPO="$(basename $REPOSITORY)"
+
+	REPONAME="${REPO%.git}"
+
+	git clone $REPOSITORY &amp;&amp; tar -czf responses/$RESPONDENT.tar.gz $REPONAME &amp;&amp; rm -rf $REPONAME
+done
+</code></pre></div></div>
+
+<p>Let’s go through this a piece at a time:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INPUT=respondents.csv
+[ ! -f $INPUT ] &amp;&amp; { echo "$INPUT file not found"; exit 99; }
+</code></pre></div></div>
+
+<p>First, we hard code our input file, and if that file doesn’t exist in the current directory, we exit with an error code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail -n +2 $INPUT
+</code></pre></div></div>
+
+<p>We take the input file and skip the first line using <code class="language-plaintext highlighter-rouge">tail</code> by passing it <code class="language-plaintext highlighter-rouge">-n +2</code>, so that we don’t try to process the headers. The results of that might not have a trailing newline, but we need one for bash to process the last line in the file. We append an extra <code class="language-plaintext highlighter-rouge">echo</code> to output a blank newline. We then pipe this to <code class="language-plaintext highlighter-rouge">while</code>, which reads in the results of this operation.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while IFS=, read RESPONDENT REPOSITORY
+</code></pre></div></div>
+
+<p>Now we loop over each line of the file, and use <code class="language-plaintext highlighter-rouge">IFS</code> to tell the parser to use <code class="language-plaintext highlighter-rouge">,</code> as the column separator. <code class="language-plaintext highlighter-rouge">read</code> here takes the two columns and puts them into the next two variables, <code class="language-plaintext highlighter-rouge">RESPONDENT</code> and <code class="language-plaintext highlighter-rouge">REPOSITORY</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>REPO="$(basename $REPOSITORY)"
+REPONAME="${REPO%.git}"
+</code></pre></div></div>
+
+<p>Here’re we’re doing some string manipulation, using <code class="language-plaintext highlighter-rouge">basename</code> to get just the name of the repo from the full repo path, and <code class="language-plaintext highlighter-rouge">${REPO%.git}</code> drops the <code class="language-plaintext highlighter-rouge">.git</code> from the name and stores it in <code class="language-plaintext highlighter-rouge">REPONAME</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone $REPOSITORY &amp;&amp; tar -czf responses/$RESPONDENT.tar.gz $REPONAME &amp;&amp; rm -rf $REPONAME
+</code></pre></div></div>
+
+<p>Finally, we’re using all of the variables we’ve created to assemble our commands, to clone the repo, tar the results, and remove the cloned repo file.</p>
+
+<p>You can do even more with bash and unix tools, hopefully this is enough to get you started working with the many tools your system comes installed with!</p>
+
+<p><a href="https://twitter.com/mheadd">Mark Headd</a> also wrote <a href="http://civic.io/2015/02/03/command-line-data-science/">a great article on command line data science</a>, and recommended this <a href="https://sysadmincasts.com/episodes/28-cli-monday-cat-grep-awk-sort-and-uniq">Sysadmin Casts episode on command line tools</a>.</p>
+
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>

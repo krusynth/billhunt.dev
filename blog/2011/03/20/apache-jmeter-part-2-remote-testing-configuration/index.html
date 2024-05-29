@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--.  ,--,                          ,-. ,-.
+ |  | /  /                         __| |_| |
+ |  |/  / _ __ _   _ ____ _   _ _ (__, ._| |___
+ |      \| `__| | | Y ___| |_| | `_  \ | | ,_. \
+ |  |\   \ |  | |_| |___ \___, | | | | | | | | |
+ |__| \___\|  '.__,_|____/ __| |_| |_|_| |_| |_|
+                          '----><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Apache JMeter: Part 2 – Remote Testing Configuration | Bill Hunt</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Apache JMeter: Part 2 – Remote Testing Configuration" />
+<meta name="author" content="Bill Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Let’s say you’ve already gotten through the basics of JMeter and you’re ready to start setting up your testing. If you’re doing any sort of remote testing, you’ll inevitably need to know how to setup your client/server relationships." />
+<meta property="og:description" content="Let’s say you’ve already gotten through the basics of JMeter and you’re ready to start setting up your testing. If you’re doing any sort of remote testing, you’ll inevitably need to know how to setup your client/server relationships." />
+<link rel="canonical" href="https://billhunt.dev/blog/2011/03/20/apache-jmeter-part-2-remote-testing-configuration/" />
+<meta property="og:url" content="https://billhunt.dev/blog/2011/03/20/apache-jmeter-part-2-remote-testing-configuration/" />
+<meta property="og:site_name" content="Bill Hunt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2011-03-20T18:39:49+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Apache JMeter: Part 2 – Remote Testing Configuration" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bill Hunt"},"dateModified":"2011-03-20T18:39:49+00:00","datePublished":"2011-03-20T18:39:49+00:00","description":"Let’s say you’ve already gotten through the basics of JMeter and you’re ready to start setting up your testing. If you’re doing any sort of remote testing, you’ll inevitably need to know how to setup your client/server relationships.","headline":"Apache JMeter: Part 2 – Remote Testing Configuration","mainEntityOfPage":{"@type":"WebPage","@id":"https://billhunt.dev/blog/2011/03/20/apache-jmeter-part-2-remote-testing-configuration/"},"url":"https://billhunt.dev/blog/2011/03/20/apache-jmeter-part-2-remote-testing-configuration/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css?1717012121">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css?1717012121">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Posts" href="https://billhunt.dev/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - Featured Jobs " href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title=" - USAJobs List" href="https://billhunt.dev/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="https://billhunt.dev/foaf.rdf" />
+  
+
+  <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
+  <link rel="me" href="https://mastodon.cloud/@krusynth" />
+
+  <script src="https://static.billhunt.dev/js/jquery.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?1717012121"></script>
+  <script type="module" src="/assets/js/main.js?1717012121"></script>
+  <script src="/assets/js/search.js?1717012121"></script>
+  <script src="/assets/js/jobs.js?1717012121"></script>
+  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg container">
+  <div class="branding">
+    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>Bill Hunt</a>
+    <div class="about-description">
+      U.S. Gov Civic Technologist & Policy Expert
+    </div>
+  </div>
+
+  <div class="navlink-container">
+    <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/about/" up-follow>About</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
+      </li>
+      <li class="nav-item nav-page">
+        <a class="nav-link" href="/links/" up-follow>Links</a>
+      </li>
+      <li class="mastodon nav-item nav-social">
+        <a href="https://mastodon.publicinterest.town/@krusynth" title="Mastodon" class="nav-link" rel="me"><span class="fab fa-mastodon icon"></span></a>
+      </li>
+        
+      <li class="github nav-item nav-social">
+        <a href="https://github.com/krusynth" title="GitHub" class="nav-link" rel="me"><span class="fab fa-github icon"></span></a>
+      </li>
+        
+      <li class="linkedin nav-item nav-social">
+        <a href="https://www.linkedin.com/in/krusynth/" title="LinkedIn" class="nav-link" rel="me"><span class="fab fa-linkedin icon"></span></a>
+      </li>
+        
+      
+    </ul>
+  </div>
+
+  <div class="audioplayer-block">
+    <div id="audioplayer" class="audioplayer">
+      <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
+      <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="about-header">
+    <div class="navbar-tagline" id="tagline">Move carefully and fix things</div>
+  </section>
+</nav>
+<div class="content" id="main" up-main>
+        <section class="banner stickers">
+    If you’d like to show everyone that you also want to <strong>Move Carefully and Fix Things</strong> or that you're a <strong>Govpunk</strong>, I’d like to send you a sticker for free! <a href="/stickers/"><strong>Here’s how to get yours!</strong></a>
+</section>
+
+<article class="post-single page-apache-jmeter-part-2-remote-testing-configuration" data-pagefind-body>
+  <header class="post-header">
+    <h1 class="post-title">Apache JMeter: Part 2 – Remote Testing Configuration</h1>
+    <time datetime="2011-03-20T18:39:49+00:00" class="post-date">
+      2011.03.20
+    </time>
+  </header>
+  <section class="post-content">
+      
+      
+      
+      
+      
+        <div class="old-warning">
+          <strong>Note:</strong> This post is old and the information in it may not be accurate. Please proceed with caution!
+        </div>
+      
+
+    <p>Let’s say you’ve <a href="/2011/03/19/apache-jmeter-part-1-the-basics/">already gotten through the basics of JMeter</a> and you’re ready to start setting up your testing. If you’re doing any sort of remote testing, you’ll inevitably need to know how to setup your client/server relationships. <!--more--></p>
+
+<p>The vast majority of JMeter’s configuration is done through a single file, the <code class="language-plaintext highlighter-rouge">jmeter.properties</code> file (which lives inside of the JMeter <code class="language-plaintext highlighter-rouge">bin/</code> directory). Any of the properties in this file can be overridden by options on the command line – but since this is Java we’re talking about, the method is ridiculous (code for Linux/Mac):</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;br /&gt;
+jmeter -J&lt;em&gt;propertyname1=value1&lt;/em&gt; -J&lt;em&gt;propertyname1=value1&lt;/em&gt;&lt;br /&gt;
+</code></p>
+
+<p>Of course, that doesn’t work for every option. For instance, to tell the server that you want it to <strong>listen for the initial request on a port that’s not random</strong>, you have to do so as an environment variable set on the same line before you make the call to the server. Truly and utterly bizarre:</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;br /&gt;
+SERVER_PORT=1660 jmeter-server&lt;br /&gt;
+</code></p>
+
+<p><strong>As noted below, the server_port only sets the port used for the initial request from the client to the server to begin testing, the response from the server to the client will be sent on a totally random port. I also found that the setting above did not work for setting the listening port at all!</strong></p>
+
+<h3 id="server-slave-configuration">Server (Slave) Configuration</h3>
+
+<p>The server configuration is ridiculously easy. The server just does what it’s told, so you only have to tell it what port to listen on. In the <code class="language-plaintext highlighter-rouge">jmeter.properties</code> file, you only need to set the <code class="language-plaintext highlighter-rouge">server.rmi.localport</code> value to whatever port you want. (You can also set this from the command line using <code class="language-plaintext highlighter-rouge">-J</code>, see the example above.) <strong>Note that you MUST set this option to keep the server from listening on a random port!</strong> The jquery “default” is 1099.</p>
+
+<p><strong>Also note that if you’re having trouble with the Client not being able to talk to the Server, you need to restart the Client after you’ve made any changes to the Server. This is very counter-intuitive!</strong></p>
+
+<p>Now, you may encounter a case where the server is trying to respond to the client (master) but looking up the <strong>wrong IP address</strong> for the hostname. The fix is easy, simply add a record in your <a href="http://en.wikipedia.org/wiki/Hosts_(file)">hosts file</a> (often /etc/hosts) for the correct address.</p>
+
+<p>Last, you should be aware that the server responds to the client’s request on a different port than the server_port specified – it will return test results on a <strong>random high-numbered port</strong> (45000-70000?). If you haven’t opened up your firewall to account for this, it may cause the server to throw a nasty connection error. <strong>Note that there is no way to set the response port by default in JMeter.</strong> However, if you feel like getting your hands dirty, you can <strong><a href="/2011/03/22/apache-jmeter-part-3-hacking-jmeter-to-customize-the-listening-port-on-the-client/">hack the source to add this option</a></strong></p>
+
+<h3 id="client-master-configuration">Client (Master) Configuration</h3>
+
+<p>The client configuration is only a little more difficult. You’ll need to set the <code class="language-plaintext highlighter-rouge">server_port</code> to the same value you used for the server, again in the <code class="language-plaintext highlighter-rouge">jmeter.properties</code> file. You’ll also need to set the <code class="language-plaintext highlighter-rouge">remote_hosts</code> – this should be a comma-separated list of all of the servers’ hostnames or IP addresses. For example:</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;br /&gt;
+remote_hosts=ec2-50-17-92-85.compute-1.amazonaws.com,ec2-50-17-94-90.compute-1.amazonaws &lt;a href="http://biturlz.com/otO2oiE"&gt;team task management&lt;/a&gt;.com&lt;br /&gt;
+</code></p>
+
+<p>That’s it! Once you’ve got that all setup, you should be able to start jmeter and have the list of servers appear under the <code class="language-plaintext highlighter-rouge">Run &gt; Remote Start</code> menu. Note that this does not start up the servers – you’ll still need to start them manually on each machine – it merely runs the current test on the already-running servers. You can also use <code class="language-plaintext highlighter-rouge">Run &gt; Remote Start All</code> to run the current test on all servers at once.</p>
+
+<p>As a final note, you might need to take a look at <code class="language-plaintext highlighter-rouge">jmeter.log</code>, also under the <code class="language-plaintext highlighter-rouge">JMeter bin/ directory</code> to debug anything that’s not working correctly. There are often a few useful messages in there to help you along the way.</p>
+
+
+  </section>
+
+</article>
+
+    </div>
+<footer class="page-footer">
+  <div class="webring">
+    <script src="https://pitwebring.billhunt.dev/webring.js"></script>
+    <script>showWebring(true);</script>
+  </div>
+
+  <div class="webring">
+    <div class="webring-title">
+      Member of the <a href="https://webring.obeythesystem.com/" rel="nofollow">Obey the System Webring</a>.
+    </div>
+    <nav class="webring-nav">
+      <ul class="webring-links">
+        <li><a href="https://webring.obeythesystem.com/page?=previous" rel="nofollow">← previous</a></li>
+        <li><a href="https://webring.obeythesystem.com/page?=next" rel="nofollow">next →</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="oldschool-buttons">
+    <a href="https://pitwebring.billhunt.dev/" class="old-button" title="Public Interest Tech Webring"><img src="/assets/images/buttons/pitwebring-88x31.gif" alt="" aria-hidden="true"></a>
+    <a href="https://webring.obeythesystem.com/" class="old-button" rel="nofollow"><img src="https://webring.obeythesystem.com/ots_webring_button_1.gif" alt="OTS Webring Button"></a>
+    <span class="old-button"><img src="/assets/images/buttons/human-88x31.gif" alt="Human-Made - No AI"></span>
+    <a href="https://jekyllrb.com/" title="Built With Jekyll" class="old-button"><img src="/assets/images/buttons/jekyll-88x31-ani.gif" alt="" aria-hidden="true"></a>
+    <a href="https://archive.org/download/netscape-navigator-4.0.4/netscape-navigator-4.0.4.png" class="old-button" title="This links to an image of the Netscape install CD"><img src="/assets/images/buttons/netscape3-88x31-ani.gif" alt="Get Netscape 3.0"></a>
+  </div>
+</footer>
+</body>
+
+</html>
