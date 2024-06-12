@@ -157,6 +157,13 @@
   }
 }
 
+.badge {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
 .badge-hot {
   @extend %circle-icon;
   background-color: $sienna;

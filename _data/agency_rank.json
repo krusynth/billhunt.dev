@@ -1,0 +1,294 @@
+{
+	"National Indian Gaming Commission": {
+		"value": 93.6,
+		"rank": 1
+	},
+	"National Endowment for the Humanities": {
+		"value": 90.5,
+		"rank": 2
+	},
+	"Pension Benefit Guaranty Corporation": {
+		"value": 88.1,
+		"rank": 3
+	},
+	"Government Accountability Office": {
+		"value": 87.2,
+		"rank": 4
+	},
+	"U.S. Office of Special Counsel": {
+		"value": 86.2,
+		"rank": 5
+	},
+	"General Services Administration": {
+		"value": 84.5,
+		"rank": 6
+	},
+	"Farm Credit Administration": {
+		"value": 83.5,
+		"rank": 7
+	},
+	"Securities and Exchange Commission": {
+		"value": 82.9,
+		"rank": 8
+	},
+	"Federal Energy Regulatory Commission": {
+		"value": 82.6,
+		"rank": 9
+	},
+	"Federal Labor Relations Authority": {
+		"value": 82.6,
+		"rank": 10
+	},
+	"National Aeronautics and Space Administration": {
+		"value": 82.5,
+		"rank": 11
+	},
+	"Selective Service System": {
+		"value": 79,
+		"rank": 12
+	},
+	"Defense Nuclear Facilities Safety Board": {
+		"value": 78.2,
+		"rank": 13
+	},
+	"Environmental Protection Agency": {
+		"value": 77.9,
+		"rank": 14
+	},
+	"Department of Energy": {
+		"value": 77,
+		"rank": 15
+	},
+	"Small Business Administration": {
+		"value": 76.9,
+		"rank": 16
+	},
+	"National Science Foundation": {
+		"value": 76.3,
+		"rank": 17
+	},
+	"Office of Management and Budget": {
+		"value": 76.1,
+		"rank": 18
+	},
+	"National Credit Union Administration": {
+		"value": 75.4,
+		"rank": 19
+	},
+	"Federal Trade Commission": {
+		"value": 75.4,
+		"rank": 20
+	},
+	"Office of Personnel Management": {
+		"value": 75.4,
+		"rank": 21
+	},
+	"Department of Health and Human Services": {
+		"value": 75.2,
+		"rank": 22
+	},
+	"U.S. International Trade Commission": {
+		"value": 75,
+		"rank": 23
+	},
+	"Equal Employment Opportunity Commission": {
+		"value": 74.1,
+		"rank": 24
+	},
+	"Federal Communications Commission": {
+		"value": 73.6,
+		"rank": 25
+	},
+	"Peace Corps": {
+		"value": 73.5,
+		"rank": 26
+	},
+	"Railroad Retirement Board": {
+		"value": 73,
+		"rank": 27
+	},
+	"Consumer Product Safety Commission": {
+		"value": 73,
+		"rank": 28
+	},
+	"Intelligence Community": {
+		"value": 72.6,
+		"rank": 29
+	},
+	"Smithsonian Institution ": {
+		"value": 72.5,
+		"rank": 30
+	},
+	"AmeriCorps": {
+		"value": 72.4,
+		"rank": 31
+	},
+	"Library of Congress": {
+		"value": 72.3,
+		"rank": 32
+	},
+	"Department of Commerce": {
+		"value": 72.1,
+		"rank": 33
+	},
+	"Department of Labor": {
+		"value": 71.9,
+		"rank": 34
+	},
+	"Department of Housing and Urban Development": {
+		"value": 71.9,
+		"rank": 35
+	},
+	"Department of Veterans Affairs": {
+		"value": 71.8,
+		"rank": 36
+	},
+	"Consumer Financial Protection Bureau": {
+		"value": 71,
+		"rank": 37
+	},
+	"Department of Transportation": {
+		"value": 70.9,
+		"rank": 38
+	},
+	"Surface Transportation Board": {
+		"value": 70.9,
+		"rank": 39
+	},
+	"Federal Retirement Thrift Investment Board": {
+		"value": 70.3,
+		"rank": 40
+	},
+	"National Endowment for the Arts": {
+		"value": 69.9,
+		"rank": 41
+	},
+	"Department of Education": {
+		"value": 68.8,
+		"rank": 42
+	},
+	"National Transportation Safety Board": {
+		"value": 68.7,
+		"rank": 43
+	},
+	"Department of the Treasury": {
+		"value": 68.4,
+		"rank": 44
+	},
+	"Department of the Interior": {
+		"value": 68.3,
+		"rank": 45
+	},
+	"Department of the Army": {
+		"value": 67.6,
+		"rank": 46
+	},
+	"U.S. Agency for Global Media": {
+		"value": 67.4,
+		"rank": 47
+	},
+	"National Labor Relations Board": {
+		"value": 67.3,
+		"rank": 48
+	},
+	"Commodity Futures Trading Commission": {
+		"value": 67.3,
+		"rank": 49
+	},
+	"Department of the Air Force": {
+		"value": 67.2,
+		"rank": 50
+	},
+	"National Archives and Records Administration": {
+		"value": 65.9,
+		"rank": 51
+	},
+	"International Boundary and Water Commission": {
+		"value": 65.6,
+		"rank": 52
+	},
+	"Nuclear Regulatory Commission": {
+		"value": 65,
+		"rank": 53
+	},
+	"Department of Agriculture": {
+		"value": 64.7,
+		"rank": 54
+	},
+	"Department of the Navy": {
+		"value": 64.7,
+		"rank": 55
+	},
+	"Office of the Secretary of Defense, Joint Staff, Defense Agencies, and Department of Defense Field Activities": {
+		"value": 63.7,
+		"rank": 56
+	},
+	"Federal Maritime Commission": {
+		"value": 62.9,
+		"rank": 57
+	},
+	"National Gallery of Art": {
+		"value": 62.8,
+		"rank": 58
+	},
+	"U.S. Agency for International Development": {
+		"value": 62.7,
+		"rank": 59
+	},
+	"U.S. International Development Finance Corporation": {
+		"value": 62.7,
+		"rank": 60
+	},
+	"Federal Deposit Insurance Corporation": {
+		"value": 62,
+		"rank": 61
+	},
+	"Department of Homeland Security": {
+		"value": 60.8,
+		"rank": 62
+	},
+	"Department of State": {
+		"value": 60.8,
+		"rank": 63
+	},
+	"Office of the U.S. Trade Representative": {
+		"value": 60.8,
+		"rank": 64
+	},
+	"Federal Housing Finance Agency": {
+		"value": 60.6,
+		"rank": 65
+	},
+	"Federal Mediation and Conciliation Service": {
+		"value": 58.8,
+		"rank": 66
+	},
+	"Millennium Challenge Corporation": {
+		"value": 58.2,
+		"rank": 67
+	},
+	"Court Services and Offender Supervision Agency": {
+		"value": 57.7,
+		"rank": 68
+	},
+	"Department of Justice": {
+		"value": 57.5,
+		"rank": 69
+	},
+	"Merit Systems Protection Board": {
+		"value": 55.6,
+		"rank": 70
+	},
+	"Federal Election Commission": {
+		"value": 55.1,
+		"rank": 71
+	},
+	"Social Security Administration": {
+		"value": 52.1,
+		"rank": 72
+	},
+	"Export-Import Bank of the United States": {
+		"value": 40.6,
+		"rank": 73
+	}
+}

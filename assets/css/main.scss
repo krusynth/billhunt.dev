@@ -704,3 +704,26 @@ blockquote {
     margin-bottom: 0;
   }
 }
+
+/* Jobs Ranking */
+.agency-rank {
+  @extend %circle-icon;
+  width:auto;
+  font-weight: bold;
+  padding: 3px 5px;
+}
+
+.rank-high {
+  background-color: $green;
+  color: $dark;
+}
+
+.rank-mid {
+  background-color: $lemon;
+  color: $dark;
+}
+
+.rank-low {
+  background-color: $red;
+  color: $dark;
+}

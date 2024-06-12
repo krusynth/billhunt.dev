@@ -21,6 +21,8 @@ Is this your first time applying for a federal government job? Check out the [18
 
 **Featured** jobs are ones that caught my eye as particularly interesting! This is the default filter, you can **unselect** the filter with the button below to see all jobs.
 
+Some agencies will have a colored circle with a number in it, which is that agency's score out of 100 from its employees' ratings in the [Federal Employee Viewpoint Survey](https://www.opm.gov/fevs/) (FEVS). Not all agencies participate in the FEVS, but use a similar survey system and those are shown here; many do not have a survey and those do not have a rank. This data is pulled from the [Best Places to Work](https://bestplacestowork.org/) data.
+
 <details>
 
 <summary>Not finding what you're looking for? Here are some other great jobs boards</summary>

@@ -169,7 +169,7 @@ layout: default
       <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fas fa-rss"></span></a>
     </header>
 
-    {% for post in normal_posts limit:6 %}
+    {% for post in normal_posts limit:4 %}
       <article class="post-multiple">
         <header class="post-header hoverable">
           <h3 class="post-title"><a href="{{ post.url }}" up-follow>{{ post.title }}</a></h3>
