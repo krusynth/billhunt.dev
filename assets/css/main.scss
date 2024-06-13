@@ -54,11 +54,11 @@ h3 {
   font-size: 0.9rem;
 }
 
-p {
+p, details {
   margin: 0 0 1rem;
 }
 
-p:last-child {
+p:last-child, details:last-child {
   margin-bottom: 0;
 }
 

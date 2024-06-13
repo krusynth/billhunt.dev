@@ -62,6 +62,9 @@
   {%- endif %}
 
   {%- assign agency_rank = site.data.agency_rank[agency_bits.last] -%}
+  {%- if !agency_rank.value or agency_rank.value == nil -%}
+    {%- assign agency_rank = site.data.agency_rank[agency_bits.first] -%}
+  {% endif %}
   {%- if agency_rank -%}
     {%- if agency_rank.value > 80 -%}{%- assign rank_class = "rank-high" -%}
     {%- elsif agency_rank.value > 60 -%}{%- assign rank_class = "rank-mid" -%}

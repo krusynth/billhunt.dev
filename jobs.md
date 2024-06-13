@@ -13,15 +13,23 @@ metalinks:
 ---
 You can follow this list with the RSS links above. I also repost featured jobs  to <a href="https://mastodon.publicinterest.town/@jobs">Public Interest Jobs on Mastodon</a>!
 
-Salary numbers below are *usually* the base rate, locality pay will increase these numbers (when eligible). For example, the Washington DC area has a +32.49% adjustment for 2023. For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the [Digital Policy Guide page on hiring](https://digitalpolicy.us/policies/hiring/).
+<span class="icon far fa-fire"></span> **Featured** jobs are ones that caught my eye as particularly interesting! This is the default filter, you can **unselect** the filter with the button below to see all jobs.
 
-All descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies. The filters provided may miss posts with unusual naming or grade scales.
-
-Is this your first time applying for a federal government job? Check out the [18F guide to federal hiring](https://join.tts.gsa.gov/hiring-process/), which includes details on how to write your first federal resume!
-
-**Featured** jobs are ones that caught my eye as particularly interesting! This is the default filter, you can **unselect** the filter with the button below to see all jobs.
-
-Some agencies will have a colored circle with a number in it, which is that agency's score out of 100 from its employees' ratings in the [Federal Employee Viewpoint Survey](https://www.opm.gov/fevs/) (FEVS). Not all agencies participate in the FEVS, but use a similar survey system and those are shown here; many do not have a survey and those do not have a rank. This data is pulled from the [Best Places to Work](https://bestplacestowork.org/) data.
+<details>
+<summary><strong>First time here? Haven't been here in a while? Here's how this works!</strong></summary>
+<p>
+  Any descriptions below are added by me, based on my knowledge of the agency and role as posted; this content is not from the original posts and as such there may be inaccuracies. The filters provided may miss posts with unusual naming or grade scales. Not all positions listed as cybersecurity or infosec are actually cybersecurity posts, instead these are using the <a href="https://digitalpolicy.us/policies/hiring/#job-series">2210 loophole</a> and may just be general IT roles. Read the descriptions on the USAJobs posting carefully.
+</p>
+<p>
+  Salary numbers below are <em>usually</em> the base rate, locality pay will increase these numbers (when eligible). For example, the Washington DC area has a +32.49% adjustment for 2023. For an explanation of pay grades, term positions, the senior executive service, and other government-specific information, check out the <a href="https://digitalpolicy.us/policies/hiring/">Digital Policy Guide page on hiring</a>.
+</p>
+<p>
+  Is this your first time applying for a federal government job? Check out the <a href="https://join.tts.gsa.gov/hiring-process/">18F guide to federal hiring</a>, which includes details on how to write your first federal resume! If you're applying. However, for a <a href="https://digitalpolicy.us/policies/hiring/#ses">Senior Executive Service</a> role, you'll need an <a href="https://www.opm.gov/policy-data-oversight/senior-executive-service/reference-materials/guidetosesquals_2010.pdf">entirely different, highly-specialized resume format</a>.
+</p>
+<p>
+  Some agencies will have a colored circle with a number in it, which is that agency's score out of 100 from its employees' ratings in the <a href="https://www.opm.gov/fevs/">Federal Employee Viewpoint Survey</a> (FEVS). Not all agencies participate in the FEVS, but use a similar survey system and those are shown here; many do not have a survey and those do not have a rank. This data is pulled from the <a href="https://bestplacestowork.org/">Best Places to Work</a> data. Also, note that some agencies are huge and each sub-component may be different - the FEVS data has more granular breakdowns that I don't have access to here, so do your own research as well.
+</p>
+</details>
 
 <details>
 
