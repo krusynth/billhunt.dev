@@ -39,7 +39,7 @@
   {%- assign payScale = grade | slice: 0,2 %}
   {%- assign payGrade = grade | slice: 3,2 | trim %}
 
-  {%- if payScale == 'ES' %}
+  {%- if payScale == 'ES' or payScale == 'SL' %}
     {%- assign classes = classes | append: ' grade-ses grade-15 grade-14' %}
 
   {%- elsif payGrade == '15' or payGrade == '16' or payGrade == '17' %}
@@ -77,7 +77,11 @@
   {%- endif -%}
 
   {%- if post.ses or payScale == 'ES' %}
-    {%- assign description = description | append: " This is a senior executive service (SES) position, and you'll an [SES-formatted resume, ECQs, and MTQs](https://digitalpolicy.us/policies/hiring/#ses) to apply." %}
+    {%- assign description = description | append: " This is a Senior Executive Service (SES) position, and you'll need an [SES-formatted resume, ECQs, and MTQs](https://digitalpolicy.us/policies/hiring/#ses) to apply." %}
+  {%- endif %}
+
+  {%- if post.sl or payScale == 'SL' %}
+    {%- assign description = description | append: " This is a Senior Level (SL) position, and you'll need an [SES-formatted resume, ECQs, and MTQs](https://digitalpolicy.us/policies/hiring/#ses) to apply." %}
   {%- endif %}
 
   {%- if post.salaryMin && post.salaryMax %}
