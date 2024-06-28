@@ -39,6 +39,7 @@ You can follow this list with the RSS links above. I also repost featured jobs  
 <ul class="column">
   <li class="heading"><strong>Public Interest Tech</strong></li>
   <li><a href="https://www.usajobs.gov/">USAJobs</a></li>
+  <li><a href="https://dscovery.fly.dev/">Digital Services Coalition Jobs</a></li>
   <li><a href="https://jobs.blacksincivictech.org/">Blacks in Civic Tech</a></li>
   <li><a href="https://twitter.com/opengovjobs">Demand Progress - Open Gov Jobs</a></li>
   <li><a href="https://civictechjobs.codeforamerica.org/">Code for America</a></li>
