@@ -57,7 +57,7 @@
   {%- assign description = post.content %}
 
   {%- if post.content %}
-    {%- assign badge = badge | append: '<span class="badge-hot" title="Featured"><span class="icon far fa-fire"></span><span class="sr-only">Featured</span></span>' %}
+    {%- assign badge = badge | append: '<span class="badge-hot" title="Featured"><span class="icon far fa-fire"></span><span class="sr-only">Featured </span></span>' %}
     {%- assign classes = classes | append: ' hot' %}
   {%- endif %}
 
@@ -71,7 +71,7 @@
     {%- else -%}{%- assign rank_class = "rank-low" -%}
     {%- endif -%}
     {%- capture rank -%}
-      <span class="sr-only">Rating</span><span class="agency-rank {{ rank_class }}">{{ agency_rank.value }}</span>
+      <span class="sr-only">(FEVS Score </span><span class="agency-rank {{ rank_class }}">{{ agency_rank.value }}</span><span class="sr-only">/100)</span>
     {%- endcapture -%}
     {%- assign badge = badge | append: rank -%}
   {%- endif -%}
