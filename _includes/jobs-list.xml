@@ -7,6 +7,8 @@
 
     {%- assign title = post.agency | append: ' - ' | append: post.title -%}
 
+    {%- assign agency_bits = post.agency | split: ' - ' %}
+
     {%- if post.lowGrade == post.highGrade %}
       {% if post.lowGradeEquiv %}
         {% assign grade = post.lowGradeEquiv %}
@@ -32,38 +34,51 @@
       {%- assign title = title | append: ' (Remote)' -%}
     {%- endif -%}
 
+    {%- assign agency_rank = site.data.agency_rank[agency_bits.last] -%}
+    {%- if !agency_rank.value or agency_rank.value == nil -%}
+      {%- assign agency_rank = site.data.agency_rank[agency_bits.first] -%}
+    {% endif %}
+    {%- if agency_rank -%}
+      {%- if agency_rank.value > 80 -%}{%- assign rank_class = "rank-high" -%}
+      {%- elsif agency_rank.value > 60 -%}{%- assign rank_class = "rank-mid" -%}
+      {%- else -%}{%- assign rank_class = "rank-low" -%}
+      {%- endif -%}
+      {%- capture rank %} (FEVS Score {{ agency_rank.value }}/100){%- endcapture -%}
+      {%- assign title = title | append: rank -%}
+    {%- endif -%}
+
     {%- assign description = post.content | markdownify -%}
 
-  {% if post.salaryMin && post.salaryMax %}
-    {% capture afterwards -%}
-      <p>Salary {% assign figs = post.salaryMin | append: '' | size -%}
-      {%- if figs == 5 -%}
-        ${{ post.salaryMin | slice: 0,2 }},{{ post.salaryMin | slice: 2,3 }}
-      {%- elsif figs == 6 -%}
-        ${{ post.salaryMin | slice: 0,3 }},{{ post.salaryMin | slice: 3,3 }}
-      {%- else -%}
-        ${{ post.salaryMin}}
-      {%- endif -%}
-      -
-      {%- assign figs = post.salaryMax | append: '' | size -%}
-      {%- if figs == 5 -%}
-        ${{ post.salaryMax | slice: 0,2 }},{{ post.salaryMax | slice: 2,3 }}
-      {%- elsif figs == 6 -%}
-        ${{ post.salaryMax | slice: 0,3 }},{{ post.salaryMax | slice: 3,3 }}
-      {%- else -%}
-        ${{ post.salaryMax}}
-      {%- endif -%}
-    </p>
-    {% endcapture %}
-    {% assign description = description | append: afterwards %}
-  {% endif %}
+    {% if post.salaryMin && post.salaryMax %}
+      {% capture afterwards -%}
+        <p>Salary {% assign figs = post.salaryMin | append: '' | size -%}
+        {%- if figs == 5 -%}
+          ${{ post.salaryMin | slice: 0,2 }},{{ post.salaryMin | slice: 2,3 }}
+        {%- elsif figs == 6 -%}
+          ${{ post.salaryMin | slice: 0,3 }},{{ post.salaryMin | slice: 3,3 }}
+        {%- else -%}
+          ${{ post.salaryMin}}
+        {%- endif -%}
+        -
+        {%- assign figs = post.salaryMax | append: '' | size -%}
+        {%- if figs == 5 -%}
+          ${{ post.salaryMax | slice: 0,2 }},{{ post.salaryMax | slice: 2,3 }}
+        {%- elsif figs == 6 -%}
+          ${{ post.salaryMax | slice: 0,3 }},{{ post.salaryMax | slice: 3,3 }}
+        {%- else -%}
+          ${{ post.salaryMax}}
+        {%- endif -%}
+      </p>
+      {% endcapture %}
+      {% assign description = description | append: afterwards %}
+    {% endif %}
 
     {%- if post.closes -%}
       {%- capture closes -%}<p>Closes {{ post.closes | date: site.date_format }}</p>{%- endcapture -%}
       {%- assign description = description | append: closes -%}
     {%- endif -%}
 
-    {%- capture afterwards -%}<p><a href="{{ post.link }}">{{ page.action }}</a></p>{%- endcapture -%}
+    {%- capture afterwards -%}<p><a href="{{ url }}">{{ page.action }}</a></p>{%- endcapture -%}
     {%- assign description = description | append: afterwards -%}
 
     {%- assign description = description | strip | xml_escape -%}
