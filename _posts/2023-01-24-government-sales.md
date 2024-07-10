@@ -23,6 +23,12 @@ Speaking of not wasting time... You may not agree with everything I've stated he
 
 ---
 
+**Update: want to let everyone at that next conference know that you can't buy their tools? Want to save time? Check out the [new shirt in my shop!](/shop/)**
+
+[![No Purchasing Authority](https://billhunt.dev/uploads/2024/05/no-purchasing-authority-shirt.jpg)](/shop/)
+
+---
+
 Before we dive in, let me take a second to briefly explain how government purchasing _actually_ works. I've written [a much longer version](https://digitalpolicy.us/policies/procurement/), but the short-short version is this:
 
 First, if an agency is buying something, they'll issue a [Request for Information (RFI)](https://www.acquisition.gov/far/52.215-3), a [Request for Proposal (RFP)](https://www.acquisition.gov/far/15.203), or a [Request for Quotation](https://www.acquisition.gov/far/8.402#FAR_8_402__d468e65).  When those are issued, they're [posted publicly and you can search for them](https://sam.gov/content/opportunities). If they have not issued one of these, the agency is not buying. Period. There's no reason to reach out to them directly.
