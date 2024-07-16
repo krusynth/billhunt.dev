@@ -63,6 +63,10 @@
   @extend %navbox;
   grid-area: branding;
   text-align: center;
+
+  @media (max-width: $breakpoint-md) {
+    border-bottom: none;
+  }
 }
 
 .navbar-brand {
@@ -115,6 +119,10 @@
   list-style: none;
 
   @extend %navbox;
+
+  @media (max-width: $breakpoint-md) {
+    border-bottom: none;
+  }
 }
 
 .nav-item {
@@ -160,7 +168,10 @@
 .audioplayer-block {
   grid-area: player;
   @extend %navbox;
-  // align-self: end;
+
+  @media (max-width: $breakpoint-md) {
+    border-bottom: none;
+  }
 }
 
 .about-header {
