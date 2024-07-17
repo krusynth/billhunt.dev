@@ -106,19 +106,23 @@ layout: default
       </article>
     {% endfor %}
 
-
     <article class="post-multiple">
       <header class="post-header hoverable">
         <span class="featured-icon">★</span>
-        <h3 class="post-title"><a href="/shop/" up-follow>Govpunk T-Shirts!</a></h3>
+        <h3 class="post-title"><a href="https://www.youtube.com/@EnderpriseArchitecture">YouTube</a></h3>
       </header>
       <section class="post-content">
-        <img class="featured-image" alt="Photo of Govpunk T-Shirts" src="https://billhunt.dev/uploads/2022/09/tshirts-small.jpg">
         <p>
-          There are now over a dozen t-shirt designs in my shop!
+          Check out the latest episode of my YouTube gaming series, <strong>Enderprise Architecture</strong>!
+        </p>
+        <p>
+          <strong>{{ site.data.youtube.title }}</strong>
+        </p>
+        <p>
+          <img src="{{ site.data.youtube.thumbnail }}" class="youtube-image">
         </p>
         <p class="action-box">
-          <a href="/shop/" class="btn" up-follow>Get Dressed!</a>
+          <a href="{{ site.data.youtube.thumbnail }}" class="btn">Watch The Video!</a>
         </p>
       </section>
     </article>
@@ -142,20 +146,15 @@ layout: default
     <article class="post-multiple">
       <header class="post-header hoverable">
         <span class="featured-icon">★</span>
-        <h3 class="post-title"><a href="https://www.youtube.com/@EnderpriseArchitecture">YouTube</a></h3>
+        <h3 class="post-title"><a href="/shop/" up-follow>Govpunk T-Shirts!</a></h3>
       </header>
       <section class="post-content">
+        <img class="featured-image" alt="Photo of Govpunk T-Shirts" src="https://billhunt.dev/uploads/2022/09/tshirts-small.jpg">
         <p>
-          Check out the latest episode of my YouTube gaming series, Enderprise Architecture!
-        </p>
-        <p>
-          <strong>{{ site.data.youtube.title }}</strong>
-        </p>
-        <p>
-          <img src="{{ site.data.youtube.thumbnail }}" class="youtube-image">
+          There are now over a dozen t-shirt designs in my shop!
         </p>
         <p class="action-box">
-          <a href="{{ site.data.youtube.thumbnail }}" class="btn">Watch The Video!</a>
+          <a href="/shop/" class="btn" up-follow>Get Dressed!</a>
         </p>
       </section>
     </article>
