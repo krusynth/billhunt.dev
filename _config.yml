@@ -62,6 +62,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-seo-tag
+  - jekyll-webmention_io
 
 # A list of the pages to display in the navigation bar
 header_pages:
@@ -111,3 +112,13 @@ defaults:
       path: "_recommended"
     values:
       layout: "page"
+
+webmentions:
+  username: billhunt.dev
+  bad_uri_policy:
+    default: ban
+    blacklist:
+      - "//billhunt.dev"
+      - "//krues8dr.com"
+  pages: true
+  collections: true
