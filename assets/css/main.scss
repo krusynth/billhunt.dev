@@ -422,6 +422,13 @@ blockquote {
   text-align: center;
 }
 
+.youtube-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/9;
+}
+
 .spaced-list li {
   margin-bottom: 1.5rem;
 }

@@ -20,11 +20,9 @@ group :jekyll_plugins do
   gem "jekyll-webmention_io"
 end
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
-
 group :development do
   gem "capistrano", "~> 3.11", require: false
-  gem 'capistrano-scm-static', '~> 0.0.3', require: false
+  gem "capistrano-scm-static", "~> 0.0.3", require: false
+  gem "dotenv"
+  gem "nokogiri"
 end
