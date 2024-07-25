@@ -1,13 +1,19 @@
 {%- for post in posts  -%}
   {%- assign closes = post.closes | date: '%s' -%}
 
-  {%- if closes == nil or closes == '' or closes > now  -%}
+  {%- if closes == nil or closes == '' or closes > now -%}
 
     {%- assign url = post.url | replace: '&', '&amp;'-%}
 
     {%- assign title = post.agency | append: ' - ' | append: post.title -%}
 
-    {%- assign agency_bits = post.agency | split: ' - ' %}
+    {%- assign agency_bits = post.agency | split: ' - ' -%}
+
+    {%- assign categories = '' -%}
+
+    {%- if post.content -%}
+      {%- assign categories = categories | append: ' Featured' -%}
+    {%- endif -%}
 
     {%- if post.lowGrade == post.highGrade %}
       {% if post.lowGradeEquiv %}
@@ -32,6 +38,7 @@
 
     {%- if post.remote -%}
       {%- assign title = title | append: ' (Remote)' -%}
+      {%- assign categories = categories | append: ' Remote' %}
     {%- endif -%}
 
     {%- assign agency_rank = site.data.agency_rank[agency_bits.last] -%}
@@ -39,10 +46,6 @@
       {%- assign agency_rank = site.data.agency_rank[agency_bits.first] -%}
     {% endif %}
     {%- if agency_rank -%}
-      {%- if agency_rank.value > 80 -%}{%- assign rank_class = "rank-high" -%}
-      {%- elsif agency_rank.value > 60 -%}{%- assign rank_class = "rank-mid" -%}
-      {%- else -%}{%- assign rank_class = "rank-low" -%}
-      {%- endif -%}
       {%- capture rank %} (FEVS Score {{ agency_rank.value }}/100){%- endcapture -%}
       {%- assign title = title | append: rank -%}
     {%- endif -%}
@@ -73,6 +76,20 @@
       {% assign description = description | append: afterwards %}
     {% endif %}
 
+    {%- assign payScale = grade | slice: 0,2 %}
+    {%- assign payGrade = grade | slice: 3,2 | trim %}
+
+    {%- if post.ses or payScale == 'ES' %}
+      {%- capture SESNote %} This is a Senior Executive Service (SES) position, and you'll need an <a href="https://digitalpolicy.us/policies/hiring/#ses">SES-formatted resume, ECQs, and MTQs</a> to apply.{%- endcapture -%}
+      {%- assign description = description | append: SESNote %}
+      {%- assign categories = categories | append: ' SES' %}
+    {%- endif %}
+
+    {%- if post.sl or payScale == 'SL' %}
+      {%- capture SLNote %} This is a Senior Level (SL) position, and you'll need an <a href="https://digitalpolicy.us/policies/hiring/#ses">SES-formatted resume, ECQs, and MTQs</a> to apply.{%- endcapture -%}
+      {%- assign description = description | append: SLNote %}
+    {%- endif %}
+
     {%- if post.closes -%}
       {%- capture closes -%}<p>Closes {{ post.closes | date: site.date_format }}</p>{%- endcapture -%}
       {%- assign description = description | append: closes -%}
@@ -83,10 +100,13 @@
 
     {%- assign description = description | strip | xml_escape -%}
 
+    {%- assign categories = categories | split: ' ' -%}
+
     {%- include job-card.xml
          title=title
          postdate=post.posted
          description=description
+         categories=categories
          url=url
      -%}
 
