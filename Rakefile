@@ -5,7 +5,7 @@ require "nokogiri"
 require "dotenv/tasks"
 
 desc 'Get latest EA video from YouTube'
-task :geteavideo => :dotenv do
+task :youtube => :dotenv do
 	ea_feed = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ'
 	feed = Nokogiri::XML(URI.open(ea_feed))
 	feed.remove_namespaces!
@@ -25,7 +25,7 @@ task :geteavideo => :dotenv do
 end
 
 desc 'Get all agency rankings from Partnership for Public Service'
-task :getrankings => :dotenv do
+task :fevs => :dotenv do
 	files = [
 	  "https://ourpublicservice.io/api/bptw-rankings-overall/year/2023/size/large/type/overall/parent/null/limit/9999",
 	  "https://ourpublicservice.io/api/bptw-rankings-overall/year/2023/size/mid/type/overall/parent/null/limit/9999",
@@ -65,4 +65,35 @@ task :getrankings => :dotenv do
 
 	puts 'Done'
 
+end
+
+desc 'Get latest AI-blocking robots.txt'
+task :robots do
+	url = 'https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/main/robots.txt'
+
+	contents = URI.open(url).read
+
+	contents.prepend(<<~HERE
+		---
+		---
+
+		Sitemap: {{ site.url }}/sitemap.xml
+
+		User-agent: *
+		Disallow:
+
+		User-agent: AdsBot-Google
+		User-agent: AwarioRssBot
+		User-agent: AwarioSmartBot
+		User-agent: DataForSeoBot
+		User-agent: magpie-crawler
+		User-agent: peer39_crawler
+		User-agent: peer39_crawler/1.0
+		HERE
+	)
+
+	filename = './robots.txt'
+	File.open(filename, 'w') { |file| file.write(contents) }
+
+	puts 'Done'
 end
