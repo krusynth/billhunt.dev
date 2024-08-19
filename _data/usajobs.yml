@@ -698,23 +698,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/803955600
   remote: true
   source: usajobs
-- id: '804005300'
-  posted: '2024-08-12T00:00:00.0000'
-  closes: '2024-09-24T23:59:59.9970'
-  agency: Environmental Protection Agency
-  department: Other Agencies and Independent Organizations
-  organization: Environmental Protection Agency
-  title: >-
-    Deputy Director, Office of Digital Services and Technical Architecture
-    (Chief Artificial Intelligence Officer)
-  lowGrade: ES 00
-  highGrade: ES 00
-  salaryMin: 191901
-  salaryMax: 221900
-  url: https://www.usajobs.gov/GetJob/ViewDetails/804005300
-  remote: false
-  source: usajobs
-  content: EPA is hiring for their Chief AI Officer!
 - id: '804034100'
   posted: '2024-08-12T00:00:00.0000'
   closes: '2024-08-26T23:59:59.9970'
