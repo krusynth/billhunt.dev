@@ -1,9 +1,10 @@
-<nav class="navbar navbar-expand-lg container">
+<nav class="navbar navbar-expand-lg container h-card">
   <div class="branding">
-    <a class="navbar-brand" rel="author" href="/" title="Bill Hunt | Home" up-follow>{{ site.title | escape }}</a>
-    <div class="about-description">
+    <a class="navbar-brand p-name u-url" rel="author" href="/" title="Bill Hunt | Home" up-follow>{{ site.title | escape }}</a>
+    <div class="about-description p-note">
       U.S. Gov Civic Technologist & Policy Expert
     </div>
+    <a hidden class="u-email" href="{{ site.author.email }}">{{ site.author.email }}</a>
   </div>
 
   <div class="navlink-container">
