@@ -39,7 +39,7 @@ async function init() {
 			if(results.results.length) {
 			  const promiseMap = results.results.slice(0, 50).map(async result => {
 					const data = await result.data();
-					console.log(result.id, data);
+					// console.log(result.id, data);
 
 					let row = template.content.cloneNode(true);
 
@@ -48,7 +48,7 @@ async function init() {
           // console.log('url', data.raw_url, data.url);
           // const url = data.raw_url.replace('/assets/', '/');
 
-					console.log(result);
+					// console.log(result);
 
 					row.querySelector('#title').innerHTML = data.meta.title;
 					row.querySelector('#content').innerHTML = data.excerpt;
