@@ -97,3 +97,13 @@ task :robots do
 
 	puts 'Done'
 end
+
+desc 'Send webmentions'
+task :webmention do
+	sh 'JEKYLL_ENV=production bundle exec jekyll webmention'
+end
+
+desc 'Build search index with pagefind'
+task :search do
+	sh 'npx pagefind --site _site --output-subdir ../assets/pagefind && aws s3 sync --endpoint=https://nyc3.digitaloceanspaces.com --acl public-read ./assets/pagefind s3://billhunt/assets/pagefind'
+end
