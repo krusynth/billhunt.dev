@@ -5,7 +5,7 @@
 {%- endif -%}
 {% if webmentions.size > 0 %}
   <div class="webmentions"{{ html_proofer_attr }}{% unless webmention_types=="" %} data-webmention-types="{{ webmention_types }}"{% endunless %}>
-    <h2>Mentions</h2>
+    <h2 id="mentions">Mentions</h2>
     <p>This article was mentioned around the web on the following sites:</p>
     <ol class="webmentions__list">
       {% for webmention in webmentions %}

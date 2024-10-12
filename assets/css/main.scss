@@ -477,6 +477,16 @@ blockquote {
   }
 }
 
+.webmentions {
+  border-top: 2px solid $dark;
+  margin-top: $grid-gutter-width;
+  padding-top: $grid-gutter-width /2;
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
 
 /**
  * Pagination
