@@ -33,7 +33,7 @@ Creating inherent blocklists that can *easily be shared and subscribed to* would
 
 ---
 
-The problem of discoverability that I've talked about before (see previous link in the paragraph above) remains. If anything, this problem is now far worse since Google and other search engines have stopped scraping websites and are now filled with garbage. Indie federated search remains one of my dream projects, for another day.
+The problem of discoverability that I've talked about before (see previous link in the paragraph above) remains. If anything, this problem is now far worse since [Google and other search engines have stopped scraping websites](https://www.vincentschmalbach.com/google-now-defaults-to-not-indexing-your-content/) and are now filled with garbage. Indie federated search remains one of my dream projects, for another day.
 
 In the meantime, the only way for us to start taking back the web is to talk about each other and the awesome work everyone else is doing, rather than just talking about ourselves all the time. This is a paradigm shift back to when the web was young, when we would lift each other up - rather than the navel-gazing content-creation capitalist app-based hellscape we're currently trapped in. We must actively water each other's gardens so that we can share fruit in the future.
 
