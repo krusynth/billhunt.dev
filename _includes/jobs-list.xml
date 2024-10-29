@@ -1,0 +1,114 @@
+{%- for post in posts  -%}
+  {%- assign closes = post.closes | date: '%s' -%}
+
+  {%- if closes == nil or closes == '' or closes > now -%}
+
+    {%- assign url = post.url | replace: '&', '&amp;'-%}
+
+    {%- assign title = post.agency | append: ' - ' | append: post.title -%}
+
+    {%- assign agency_bits = post.agency | split: ' - ' -%}
+
+    {%- assign categories = '' -%}
+
+    {%- if post.content -%}
+      {%- assign categories = categories | append: ' Featured' -%}
+    {%- endif -%}
+
+    {%- if post.lowGrade == post.highGrade %}
+      {% if post.lowGradeEquiv %}
+        {% assign grade = post.lowGradeEquiv %}
+        {% assign gradeText = post.lowGradeEquiv | append: ' equivalent' %}
+      {% else %}
+        {% assign grade = post.lowGrade %}
+        {% assign gradeText = post.lowGrade %}
+      {% endif %}
+
+    {% else %}
+      {% if post.lowGradeEquiv %}
+        {% assign grade = post.highGradeEquiv %}
+        {% assign gradeText = post.lowGradeEquiv | append: '-' | append: post.highGradeEquiv | append: ' equivalent' %}
+      {% else %}
+        {% assign grade = post.highGrade %}
+        {% assign gradeText = post.lowGrade | append: '-' | append: post.highGrade %}
+      {% endif %}
+    {% endif -%}
+
+    {% assign title = title | append: ' (' | append: gradeText | append: ')' %}
+
+    {%- if post.remote -%}
+      {%- assign title = title | append: ' (Remote)' -%}
+      {%- assign categories = categories | append: ' Remote' %}
+    {%- endif -%}
+
+    {%- assign agency_rank = site.data.agency_rank[agency_bits.last] -%}
+    {%- if !agency_rank.value or agency_rank.value == nil -%}
+      {%- assign agency_rank = site.data.agency_rank[agency_bits.first] -%}
+    {% endif %}
+    {%- if agency_rank -%}
+      {%- capture rank %} (FEVS Score {{ agency_rank.value }}/100){%- endcapture -%}
+      {%- assign title = title | append: rank -%}
+    {%- endif -%}
+
+    {%- assign description = post.content | markdownify -%}
+
+    {% if post.salaryMin && post.salaryMax %}
+      {% capture afterwards -%}
+        <p>Salary {% assign figs = post.salaryMin | append: '' | size -%}
+        {%- if figs == 5 -%}
+          ${{ post.salaryMin | slice: 0,2 }},{{ post.salaryMin | slice: 2,3 }}
+        {%- elsif figs == 6 -%}
+          ${{ post.salaryMin | slice: 0,3 }},{{ post.salaryMin | slice: 3,3 }}
+        {%- else -%}
+          ${{ post.salaryMin}}
+        {%- endif -%}
+        -
+        {%- assign figs = post.salaryMax | append: '' | size -%}
+        {%- if figs == 5 -%}
+          ${{ post.salaryMax | slice: 0,2 }},{{ post.salaryMax | slice: 2,3 }}
+        {%- elsif figs == 6 -%}
+          ${{ post.salaryMax | slice: 0,3 }},{{ post.salaryMax | slice: 3,3 }}
+        {%- else -%}
+          ${{ post.salaryMax}}
+        {%- endif -%}
+      </p>
+      {% endcapture %}
+      {% assign description = description | append: afterwards %}
+    {% endif %}
+
+    {%- assign payScale = grade | slice: 0,2 %}
+    {%- assign payGrade = grade | slice: 3,2 | trim %}
+
+    {%- if post.ses or payScale == 'ES' %}
+      {%- capture SESNote %} This is a Senior Executive Service (SES) position, and you'll need an <a href="https://digitalpolicy.us/policies/hiring/#ses">SES-formatted resume, ECQs, and MTQs</a> to apply.{%- endcapture -%}
+      {%- assign description = description | append: SESNote %}
+      {%- assign categories = categories | append: ' SES' %}
+    {%- endif %}
+
+    {%- if post.sl or payScale == 'SL' %}
+      {%- capture SLNote %} This is a Senior Level (SL) position, and you'll need an <a href="https://digitalpolicy.us/policies/hiring/#ses">SES-formatted resume, ECQs, and MTQs</a> to apply.{%- endcapture -%}
+      {%- assign description = description | append: SLNote %}
+    {%- endif %}
+
+    {%- if post.closes -%}
+      {%- capture closes -%}<p>Closes {{ post.closes | date: site.date_format }}</p>{%- endcapture -%}
+      {%- assign description = description | append: closes -%}
+    {%- endif -%}
+
+    {%- capture afterwards -%}<p><a href="{{ url }}">{{ page.action }}</a></p>{%- endcapture -%}
+    {%- assign description = description | append: afterwards -%}
+
+    {%- assign description = description | strip | xml_escape -%}
+
+    {%- assign categories = categories | split: ' ' -%}
+
+    {%- include job-card.xml
+         title=title
+         postdate=post.posted
+         description=description
+         categories=categories
+         url=url
+     -%}
+
+  {%- endif -%}
+{%- endfor -%}

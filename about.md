@@ -11,8 +11,16 @@ experience:
     start: May 2021
     end: Present
     description: |+
-      Currently, I lead the Cloud Center of Excellence at the SEC, overseeing modernization efforts of our many applications and tools for regulatory oversight.
+      Currently, I lead the Cloud Center of Excellence at the SEC, overseeing modernization efforts of our many applications and tools for regulatory oversight. This is a brand-new team at the SEC, responsible for driving cloud adoption and managing our Amazon Web Services environment. We also provide training and resources to the rest of the Commission. In this role, I've been able to speed the adoption of modern practices in agile software development, budgeting, and cloud security.
+
+      In May 2023, I was [appointed to the Federal Secure Cloud Advisory Committee (FSCAC)](https://www.gsa.gov/about-us/newsroom/news-releases/-gsa-administrator-appoints-inaugural-members-to-the-federal-secure-cloud-advisory-committee-05122023), better known as the FedRAMP oversight board, by GSA Administrator Robin Carnahan. That same month, [GSA accepted my proposal for a 10X accelerator project](https://10x.gsa.gov/posts/2023-selected-projects/) on digital identity and mastodon for government.
     highlights:
+      - name: Federal Secure Cloud Advisory Committee
+        type: group
+        link: https://www.gsa.gov/about-us/newsroom/news-releases/-gsa-administrator-appoints-inaugural-members-to-the-federal-secure-cloud-advisory-committee-05122023
+      - name: 10X Digital Identity Project
+        type: document
+        link: https://10x.gsa.gov/posts/2023-selected-projects/
       - name: FedTech Magazine – 2021 Top 30 Federal IT Influencers
         type: award
         link: https://fedtechmagazine.com/article/2021/07/30-federal-it-influencers-worth-follow-2021
@@ -140,10 +148,10 @@ volunteer:
   - company: Advanced Technology Academic Research Center (ATARC)
     title: Government Advisory Board Member
     start: October 2018
-    end: Present
+    end: June 2023
   - title: Cloud & Infrastructure Working Group Chair
     start: September 2019
-    end: Present
+    end: May 2023
   - company: American Council for Technology and Industry Advisory Council (ACT-IAC)
     title: Customer Experience (CX) Working Group Board Member
     start: September 2019
@@ -174,13 +182,15 @@ volunteer:
   <p>
     At heart, I believe in collaboration, transparency, and equity to make things better - teams, software, and government.
   </p>
-
-  <h2 class="subsection-title">Highlights</h2>
+  <p>
+    Please feel free to reach me at <a href="mailto:hello@billhunt.email">hello@billhunt.email</a>. No sales emails, please!
+  </p>
+  <h2 class="section-title">Highlights</h2>
   <h3 class="subsubsection-title">Work</h3>
   <ul class="about-highlights">
     <li>{% far fa-user-tie %} U.S. Securities and Exchange Commission – Assistant Director, Cloud Center of Excellence</li>
+    <li>{% fas fa-users %} Federal Secure Cloud Advisory Committee - Appointee</li>
     <li>{% far fa-university %} US Federal CIO Council – <a href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/executive-committee/">Cloud & Infrastructure Community of Practice</a> Executive Committee Member</li>
-    <li>{% far fa-book-open %} <a href="https://atarc.org/atarc-board/">ATARC</a> Board Member and <a href="https://atarc.org/working-groups/cloud-working-group/">Cloud & Infrastructure Working Group</a> Government Chair</li>
   </ul>
   <h3 class="subsubsection-title">Previous Work</h3>
   <ul class="about-highlights">
@@ -192,7 +202,7 @@ volunteer:
   <h3 class="subsubsection-title">Projects</h3>
   <ul class="about-highlights">
     <li>{% far fa-book %} <a href="https://digitalpolicy.us/">Digital Policy Guide</a> - a brief introduction to key laws, policies, and guidance surrounding the practice of information technology in government.</li>
-    <li>{% far fa-robot %} <a href="https://twitter.com/EOPbot">@EOPbot</a> - a Twitter bot that tweets presidential actions as they happen</li>
+    <li>{% far fa-robot %} <a href="https://botsin.space/@EOPbot">EOPbot</a> - a Mastodon bot that posts presidential actions as they happen</li>
     <li>{% far fa-link %} <a href="https://billhunt.dev/civic-tech-webring/">The Civic Tech Webring</a> - a collection of blogs for-and-by civic-tech-minded humans</li>
     <li>{% far fa-search %} <a href="https://job.hunt.works/">Job.Hunt.Works</a> - a website to make job searching easier</li>
   </ul>
@@ -224,12 +234,14 @@ volunteer:
         </h3>
       </div>
       <div class="job-description">
-        {% assign desc = job.description | split: "
+        {% assign desc = job.description | trim | split: "
 
 " %}
-        {% for p in desc %}<p>
-          {{ p }}
-        </p>{% endfor %}
+        {% for p in desc %}
+          {% if p %}
+            {{ p | markdownify }}
+          {% endif %}
+        {% endfor %}
       </div>
       {% if job.highlights %}
       <div class="job-accomplishments">

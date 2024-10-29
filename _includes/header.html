@@ -1,24 +1,31 @@
-<nav class="navbar navbar-expand-lg container">
+<nav class="navbar navbar-expand-lg container h-card">
   <div class="branding">
-    <a class="navbar-brand" rel="author" href="/" up-follow>{{ site.title | escape }}</a>
-    <div class="about-description">
+    <a class="navbar-brand p-name u-url" rel="author" href="/" title="Bill Hunt | Home" up-follow>{{ site.title | escape }}</a>
+    <div class="about-description p-note">
       U.S. Gov Civic Technologist & Policy Expert
     </div>
+    <a hidden class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
   </div>
 
   <div class="navlink-container">
     <ul class="nav navbar-nav nav-pages">
+      <li class="nav-item nav-page nav-search" id="nav-search">
+        <a class="nav-link" href="/search/" title="Search" up-follow><span class="fa-magnifying-glass fas"></span></a>
+      </li>
       <li class="nav-item nav-page">
-        <a class="nav-link" href="/" up-follow>Blog</a>
+        <a class="nav-link" href="/blog/" up-follow>Blog</a>
       </li>
       <li class="nav-item nav-page">
         <a class="nav-link" href="/about/" up-follow>About</a>
       </li>
       <li class="nav-item nav-page">
-        <a class="nav-link" href="/contact/" up-follow>Contact</a>
+        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+      </li>
+       <li class="nav-item nav-page">
+        <a class="nav-link" href="/jobs/" up-follow>Jobs</a>
       </li>
       <li class="nav-item nav-page">
-        <a class="nav-link" href="/shop/" up-follow>Shop</a>
+        <a class="nav-link" href="/links/" up-follow>Links</a>
       </li>
       {%- if site.author.social %}
         {%- for social in site.author.social %}
@@ -34,19 +41,19 @@
     <div id="audioplayer" class="audioplayer">
       <button id="playpause" class="player-button"><span class="fas fa-play" id="playbutton"></span><span class="fas fa-pause hide" id="pausebutton"></span></button>
       <select id="audiofile" class="player-button tracklist" aria-label="Track to Play">
-        <option value="Michael_Jackson-Thriller.mid">Michael Jackson - Thriller</option>
-        <option value="Nine_Inch_Nails-Head_Like_A_Hole.mid">Nine Inch Nails - Head Like A Hole</option>
-        <option value="Prodigy-Breathe.mid">Prodigy - Breathe</option>
-        <option value="Sisters_of_Mercy-Temple_of_Love.mid">Sisters of Mercy - Temple of Love</option>
-        <option value="The_Cult-She_Sells_Sancturary.mid">The Cult - She Sells Sancturary</option>
-        <option value="KMFDM-Megalomaniac.mid">KMFDM - Megalomaniac</option>
-        <option value="Tool-Aenima.mid">Tool - Aenima</option>
-        <option value="Rammstein-Engel.mid">Rammstein - Engel</option>
-        <option value="Rancid-TimeBomb.mid">Rancid - TimeBomb</option>
-        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.mid">Mighty Mighty Bosstones - The Impression That I Get</option>
-        <option value="Offspring-All_I_Want.mid">Offspring - All I Want</option>
-        <option value="Smashing_Pumpkins-1979.mid">Smashing Pumpkins - 1979</option>
-        <option value="Nirvana-Heart_Shaped_Box.mid">Nirvana - Heart Shaped Box</option>
+        <option value="Michael_Jackson-Thriller.midi.mp3">Michael Jackson - Thriller</option>
+        <option value="Nine_Inch_Nails-Head_Like_A_Hole.midi.mp3">Nine Inch Nails - Head Like A Hole</option>
+        <option value="Prodigy-Breathe.midi.mp3">Prodigy - Breathe</option>
+        <option value="Sisters_of_Mercy-Temple_of_Love.midi.mp3">Sisters of Mercy - Temple of Love</option>
+        <option value="The_Cult-She_Sells_Sancturary.midi.mp3">The Cult - She Sells Sancturary</option>
+        <option value="KMFDM-Megalomaniac.midi.mp3">KMFDM - Megalomaniac</option>
+        <option value="Tool-Aenima.midi.mp3">Tool - Aenima</option>
+        <option value="Rammstein-Engel.midi.mp3">Rammstein - Engel</option>
+        <option value="Rancid-TimeBomb.midi.mp3">Rancid - TimeBomb</option>
+        <option value="Mighty_Mighty_Bosstones-The_Impression_That_I_Get.midi.mp3">Mighty Mighty Bosstones - The Impression That I Get</option>
+        <option value="Offspring-All_I_Want.midi.mp3">Offspring - All I Want</option>
+        <option value="Smashing_Pumpkins-1979.midi.mp3">Smashing Pumpkins - 1979</option>
+        <option value="Nirvana-Heart_Shaped_Box.midi.mp3">Nirvana - Heart Shaped Box</option>
       </select>
     </div>
   </div>

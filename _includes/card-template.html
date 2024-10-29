@@ -1,0 +1,22 @@
+<article class="post-multiple {{ include.classes }}">
+  <header class="post-header hoverable">
+    {% if include.pull %}<span class="pull">{{ include.pull }}</span>{% endif %}
+    <h3 class="post-title"><a href="{{ include.url }}" {% if include.url contains 'http' %}{% else %}up-follow{% endif %}>
+      {{ include.title }}
+    </a></h3>
+    {% if include.badge %}<span class="badge">{{ include.badge }}</span>{% endif %}
+  </header>
+  <section class="post-content">
+    {% if include.image %}
+      <p class="featured-image-box">
+        <a href="{{ include.url }}" {% if include.url contains 'http' %}{% else %}up-follow{% endif %}>
+          <img src="{{ include.image }}" class="featured-image" alt="Image of {{ include.title }}">
+        </a>
+      </p>
+    {% endif %}
+    {{ include.description | markdownify }}
+    <p class="action-box">
+      <a href="{{ include.url }}" class="btn" {% if include.url contains 'http' %}{% else %}up-follow{% endif %}>{% if include.action %}{{ include.action }}{% elsif page.action %}{{ page.action }}{% else %}Check It Out{% endif %}</a>
+    </p>
+  </section>
+</article>

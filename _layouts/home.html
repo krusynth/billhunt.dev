@@ -8,13 +8,13 @@ layout: default
     <h2 class="section-title">Projects</h2>
     <div class="post-multiple project-tabs">
       <ul class="tabgroup" data-target="projects">
-        <li class="tab active">
+        <li class="tab">
           <a href="#videogames">
             <span class="icon fal fa-gamepad-modern"></span>
             <span class="tab-title">Games</span>
           </a>
         </li>
-        <li class="tab">
+        <li class="tab active">
           <a href="#shirts">
             <span class="icon fal fa-shirt"></span>
             <span class="tab-title">Shirts</span>
@@ -40,29 +40,29 @@ layout: default
         </li>
       </ul>
       <section id="projects" class="tab-target-container">
-        <article class="tab-target active" id="videogames">
+        <article class="tab-target" id="videogames">
           <p>
             Enderprise Architecture, my YouTube gaming channel
           </p>
           <a class="btn" href="https://www.youtube.com/channel/UCSL7BIdwgBEZ09BpD9xPPYQ">Watch Now!</a>
         </article>
-        <article class="tab-target" id="shirts">
+        <article class="tab-target active" id="shirts">
           <p>
-            Govpunk T-shirts
+            Govpunk T-shirts!
           </p>
           <a class="btn" href="/shop/" up-follow>Get Dressed!</a>
         </article>
         <article class="tab-target" id="stickers">
           <p>
-            Get a Move Carefully and Fix Things Sticker for FREE!
+            I'm giving out <strong>Move Carefully and Fix Things</strong> and <strong>Govpunk</strong> stickers for FREE!
           </p>
-          <a class="btn" href="/move-carefully/" up-follow>Get a Sticker!</a>
+          <a class="btn" href="/stickers/" up-follow>Get a FREE Sticker!</a>
         </article>
         <article class="tab-target" id="eopbot">
           <p>
-            My White House policy tweeting bot, @EOPbot!
+            EOPbot: my White House policy bot!
           </p>
-          <a class="btn" href="https://twitter.com/EOPbot">Follow @EOPbot!</a>
+          <a class="btn" href="https://botsin.space/@EOPbot">Follow EOPbot on mastodon!</a>
         </article>
         <article class="tab-target" id="policy">
           <p>
@@ -74,53 +74,6 @@ layout: default
     </div>
 
     <h2 class="section-title">Featured</h2>
-
-    <article class="post-multiple">
-      <header class="post-header hoverable">
-        <span class="featured-icon">★</span>
-        <h3 class="post-title"><a href="https://www.youtube.com/channel/UCSL7BIdwgBEZ09BpD9xPPYQ" up-follow>Enderprise Architecture</a></h3>
-      </header>
-      <section class="post-content">
-        <p>
-          For the last year, I've been thinking about starting a YouTube channel for playing Minecraft, Satisfactory, and other games - and I finally did it! The first few episodes of <strong>Enderprise Architecture</strong> are online, where I play the new Update 6 of Satisfactory! Don't forget to like and subscribe!!!
-        </p>
-        <p class="action-box">
-          <a href="https://www.youtube.com/channel/UCSL7BIdwgBEZ09BpD9xPPYQ" class="btn" up-follow>Check out the channel!</a>
-        </p>
-      </section>
-    </article>
-
-    <article class="post-multiple">
-      <header class="post-header hoverable">
-        <span class="featured-icon">★</span>
-        <h3 class="post-title"><a href="/shop/" up-follow>Govpunk T-Shirts!</a></h3>
-      </header>
-      <section class="post-content">
-        <img alt="Photo of Govpunk T-Shirts" src="https://billhunt.dev/uploads/2022/09/tshirts-small.jpg">
-        <p>
-          I've been spending my downtime designing some government IT-inspired t-shirts, in line with my <strong>#govpunk</strong> concept. Folks on social media liked them enough that I've actually put them up for sale! Note that I make no money from these, I just want more weird things out in the world.
-        </p>
-        <p class="action-box">
-          <a href="/shop/" class="btn" up-follow>Check out the shirts!</a>
-        </p>
-      </section>
-    </article>
-
-    <article class="post-multiple">
-      <header class="post-header hoverable">
-        <span class="featured-icon">★</span>
-        <h3 class="post-title"><a href="/move-carefully/" up-follow>Move Carefully and Fix Things Stickers</a></h3>
-      </header>
-      <section class="post-content">
-        <img alt="Photo of Move Carefully and Fix Things stickers" src="https://billhunt.dev/uploads/2021/02/movecarefully-photo.jpg">
-        <p>
-          After my <a href="/blog/2020/11/09/welcome-home/">little post on joining government service</a>, a lot of people asked about stickers for “Move Carefully and Fix Things." I had some made and now I want to give them to you for free! (But maybe we can also help good causes at the same time!)
-        </p>
-        <p class="action-box">
-          <a href="/move-carefully/" class="btn" up-follow>Get a free sticker!</a>
-        </p>
-      </section>
-    </article>
 
   <!-- This loops through the paginated posts -->
   {% assign featured_posts = site.posts | where:"featured","true" %}
@@ -152,6 +105,62 @@ layout: default
         </section>
       </article>
     {% endfor %}
+
+    <article class="post-multiple">
+      <header class="post-header hoverable">
+        <span class="featured-icon">★</span>
+        <h3 class="post-title"><a href="https://www.youtube.com/@EnderpriseArchitecture">YouTube</a></h3>
+        <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ" class="rss-link" title="Follow my YouTube stream with RSS"><span class="icon fas fa-rss"></span></a>
+
+      </header>
+      <section class="post-content">
+        <p>
+          Check out the latest episode of my YouTube gaming series, <a href="https://www.youtube.com/@EnderpriseArchitecture"><strong>Enderprise Architecture</strong></a>!
+        </p>
+        <p>
+          <strong>{{ site.data.youtube.title }}</strong>
+        </p>
+        <p>
+          <a href="{{ site.data.youtube.link }}"><img src="{{ site.data.youtube.thumbnail }}" class="youtube-image"></a>
+        </p>
+        <p class="action-box">
+          <a href="{{ site.data.youtube.link }}" class="btn">Watch The Video!</a>
+        </p>
+      </section>
+    </article>
+
+    <article class="post-multiple">
+      <header class="post-header hoverable">
+        <span class="featured-icon">★</span>
+        <h3 class="post-title"><a href="/stickers/" up-follow>FREE Stickers!</a></h3>
+      </header>
+      <section class="post-content">
+        <img class="featured-image" alt="A Govpunk sticker, white text on a red eleven-pointed star with a black background, next to a Move Carefully and Fix Things sticker, with white lettering on a blue background" src="https://billhunt.dev/uploads/2023/01/stickers.jpg">
+        <p>
+          Get free stickers and help out a good cause! Caring is punk rock!
+        </p>
+        <p class="action-box">
+          <a href="/move-carefully/" class="btn" up-follow>Get a free sticker!</a>
+        </p>
+      </section>
+    </article>
+
+    <article class="post-multiple">
+      <header class="post-header hoverable">
+        <span class="featured-icon">★</span>
+        <h3 class="post-title"><a href="/shop/" up-follow>Govpunk T-Shirts!</a></h3>
+      </header>
+      <section class="post-content">
+        <img class="featured-image" alt="Photo of Govpunk T-Shirts" src="https://billhunt.dev/uploads/2022/09/tshirts-small.jpg">
+        <p>
+          There are now over a dozen t-shirt designs in my shop!
+        </p>
+        <p class="action-box">
+          <a href="/shop/" class="btn" up-follow>Get Dressed!</a>
+        </p>
+      </section>
+    </article>
+
   </section>
 </div>
 
@@ -159,10 +168,12 @@ layout: default
 
 <div class="col">
   <section class="posts">
-    <h2 class="section-title">Recent Posts
+    <header class="section-header">
+      <h2 class="section-title">Recent Posts</h2>
       <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fas fa-rss"></span></a>
-    </h2>
-    {% for post in normal_posts limit:6 %}
+    </header>
+
+    {% for post in normal_posts limit:4 %}
       <article class="post-multiple">
         <header class="post-header hoverable">
           <h3 class="post-title"><a href="{{ post.url }}" up-follow>{{ post.title }}</a></h3>
@@ -195,7 +206,9 @@ layout: default
 
 <div class="col">
   <section class="recommended">
-    <h2 class="section-title">Recommended</h2>
+    <header class="section-header">
+      <h2 class="section-title">Recommended</h2>
+    </header>
     {% assign recommended = site.recommended | reverse%}
     {% for post in recommended limit:3 %}
       <article class="post-multiple">
@@ -226,36 +239,14 @@ layout: default
   </section>
 
   <section class="jobs">
-    <h2 class="section-title">Cool Jobs
+    <header class="section-header">
+      <h2 class="section-title">Cool Jobs</h2>
       <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fas fa-rss"></span></a>
-    </h2>
-    {% for post in site.data.jobs limit:3 %}
-      {%- assign now = 'now' | date: '%s' -%}
-      {%- assign closes = post.closes | date: '%s' -%}
-      {%- if closes == nil or closes == '' or closes > now  -%}
-      <article class="post-multiple">
-        {% if post.title %}
-          <header class="post-header hoverable">
-            <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          </header>
-        {% endif %}
-        <section class="post-content">
-          <p>
-            <strong>{{ post.date | date: site.date_format }}</strong> –
-            {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
-            {% if post.closes %}
-               <span class="date">
-                Closes {{ post.closes | date: site.date_format  }}
-              </span>
-            {% endif %}
-          </p>
-          <p class="action-box">
-            <a href="{{ post.url }}" class="btn">Apply</a>
-          </p>
-        </section>
-      </article>
-      {% endif %}
-    {% endfor %}
+    </header>
+
+    {% assign posts = site.data.usajobs | where_exp:"job", "job.content" | slice: 0, 3 %}
+    {% include jobs-list.html posts=posts %}
+
     <a href="/jobs/" class="btn" up-follow>More Jobs</a>
   </section>
 </div>

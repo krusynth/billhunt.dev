@@ -1,6 +1,3 @@
-// import MidiPlayer from '/assets/js/web-midi-player.js';
-const { 'web-midi-player': { default: MidiPlayer } } = window;
-
 up.history.config.restoreTargets=[':main'];
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -11,12 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   up.compiler('.tabgroup', init_tabs);
 
-  init_web_midi_player();
+  init_web_music_player();
 
 }, false);
 
 function init_tabs(tabgroup) {
-  console.log('init tabs');
     const tabs = tabgroup.getElementsByClassName('tab');
     const target = document.getElementById(tabgroup.dataset.target);
 
@@ -24,8 +20,8 @@ function init_tabs(tabgroup) {
       const link = tab.getElementsByTagName('a')[0];
       link.addEventListener('click', function(e) {
         e.preventDefault();
-        for(const elm of tabs) {
-          elm.classList.remove('active');
+        for(const tab of tabs) {
+          tab.classList.remove('active');
         }
         this.parentElement.classList.add('active');
 
@@ -38,70 +34,192 @@ function init_tabs(tabgroup) {
     }
 }
 
-function init_web_midi_player() {
-  let state = null;
-  let tagline = document.getElementById('tagline');
-  let tagline0 = tagline.innerHTML;
-  let tagline1 = 'Take me to the Pizza Hut';
-  let tagline2 = 'learn to swim';
+function init_web_music_player() {
+  let audioContext,
+      analyser,
+      processor,
+      dataArray,
+      animationLoop;
 
-  function stateMachine (event) {
-    state = event.event;
-    // console.log(state);
+  const refreshRate = 50;
+
+  let tagline = document.getElementById('tagline');
+  const taglineDefault = tagline.innerHTML;
+
+  const player = document.createElement('audio');
+  player.setAttribute('crossorigin', 'anonymous');
+
+  const bars = [...(document.getElementsByClassName('nav-pages')[0].getElementsByTagName('li'))].reverse();
+  const colors = ['vis-green', 'vis-green', 'vis-green', 'vis-yellow', 'vis-yellow', 'vis-yellow', 'vis-red', 'vis-red'];
+
+
+  function playHandler() {
+    console.log('playing');
+    document.getElementById('playbutton').classList.add('hide');
+    document.getElementById('pausebutton').classList.remove('hide');
+
+    document.getElementsByClassName('navbar-nav')[0].classList.add('vis');
+
+    animationLoop = setInterval(draw, refreshRate);
   }
 
-  const midiPlayer = new MidiPlayer({
-    patchUrl: 'https://static.billhunt.dev/assets/audio/patches/',
-    eventLogger: stateMachine
-  });
+  function pauseHandler() {
+    console.log('paused');
+    document.getElementById('playbutton').classList.remove('hide');
+    document.getElementById('pausebutton').classList.add('hide');
 
-  let path = 'https://static.billhunt.dev/assets/audio/';
+    document.getElementsByClassName('navbar-nav')[0].classList.remove('vis');
 
-  let selectlist = document.getElementById('audiofile');
+    clearInterval(animationLoop);
+  }
+
+  player.addEventListener('playing', playHandler);
+  player.addEventListener('pause', pauseHandler);
+  player.addEventListener('ended', pauseHandler);
+
+  const path = 'https://static.billhunt.dev/assets/audio/mp3/';
+  // const path = 'http://localhost:8000/assets/mp3/';
+
+  const selectlist = document.getElementById('audiofile');
 
   selectlist.addEventListener('change', function(e) {
     // console.log('change');
-    midiPlayer.stop();
     document.getElementById('playbutton').classList.remove('hide');
     document.getElementById('pausebutton').classList.add('hide');
   });
 
+  function isPlaying() {
+    return !player.paused;
+  }
+
+  function nextTrack() {
+    let next = selectlist.selectedIndex + 1
+    if(next > selectlist.options.length) {
+      next = 0;
+    }
+
+    selectlist.options[next].selected = true;
+    playPause();
+  }
+
+  function initAnalyser() {
+    console.log('initAnalyser');
+    // Create an AudioContext and attach it.
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    audioContext = new AudioContext();
+    const track = audioContext.createMediaElementSource(player);
+    track.connect(audioContext.destination);
+
+    // console.log('dest', audioContext.destination, track);
+
+    // Attach an analyser.
+    analyser = audioContext.createAnalyser();
+    analyser.smoothingTimeConstant = 0.3;
+    analyser.fftSize = 32;
+    track.connect(analyser);
+
+    const bufferLength = analyser.frequencyBinCount;
+    dataArray = new Uint8Array(bufferLength);
+
+    // Check if context is in suspended state (autoplay policy)
+    if (audioContext.state === "suspended") {
+      audioContext.resume();
+    }
+  }
+
+  function visualize(val) {
+    let fixed = val;
+    if(val > 1) { fixed = 1; }
+    if(val < 0) { fixed = 0; }
+
+    if(val !== false) {
+      bars.forEach((bar, i) => {
+        // console.log( (i/bars.length), fixed );
+        if(fixed >= (i / bars.length)) {
+          bar.classList.add(colors[i]);
+          bar.classList.remove('vis-black');
+        }
+        else {
+          bar.classList.remove(colors[i]);
+          bar.classList.add('vis-black');
+        }
+      });
+    }
+    else {
+      bars.forEach((bar, i) => {
+        bar.classList.remove(colors[i]);
+        bar.classList.remove('vis-black');
+      });
+    }
+  }
+
+  function draw() {
+    // const drawVisual = requestAnimationFrame(draw);
+
+    analyser.getByteTimeDomainData(dataArray);
+    // const avg = dataArray.reduce((acc, el) => acc + el, 0) / dataArray.length / 128- .53125 - .125; // Magic numbers.
+    let avg = Math.max(...dataArray) /128;
+    // Fix with magic numbers
+    avg = (avg - 1) * 2 ;
+
+    visualize(avg);
+  }
+
+  function playPause() {
+    // We can't load the analyser until the user interacts with the page.
+    if(!audioContext) {
+      initAnalyser();
+    }
+
+    let value = selectlist.options[selectlist.selectedIndex].value;
+    let file = path + value;
+
+    // Start a new track
+    if(player.src != file) {
+      player.pause();
+      player.src = file;
+      player.load();
+
+      for(const cls of document.body.classList) {
+        if(cls.match(/^music-/)) {
+          document.body.classList.remove(cls);
+        }
+      }
+
+      switch(value) {
+        case 'KMFDM-Megalomaniac.midi.mp3':
+          document.body.classList.add('music-kmfdm');
+          tagline.innerHTML = 'Better Than The Best';
+          break;
+
+        case 'Offspring-All_I_Want.midi.mp3':
+          document.body.classList.add('music-taxi');
+          tagline.innerHTML = 'Take me to the Pizza Hut';
+          break;
+
+        case 'Tool-Aenima.midi.mp3':
+          tagline.innerHTML = 'learn to swim';
+          break;
+
+        default:
+          tagline.innerHTML = taglineDefault;
+      }
+    }
+
+    if(isPlaying()) {
+      player.pause();
+    }
+    else {
+      player.play();
+    }
+  }
 
   document.getElementById('playpause').addEventListener('click', e => {
     e.preventDefault();
-    if(state === 'MIDI_PLAY') {
-      midiPlayer.pause();
-
-      document.getElementById('playbutton').classList.remove('hide');
-      document.getElementById('pausebutton').classList.add('hide');
-    }
-    else if(state === 'MIDI_PAUSE') {
-      midiPlayer.resume();
-
-      document.getElementById('playbutton').classList.add('hide');
-      document.getElementById('pausebutton').classList.remove('hide');
-    }
-    else {
-      let file = selectlist.options[selectlist.selectedIndex].value;
-      midiPlayer.play({ url: path + file });
-
-      document.getElementById('playbutton').classList.add('hide');
-      document.getElementById('pausebutton').classList.remove('hide');
-
-      if(file === 'Offspring-All_I_Want.mid') {
-        document.body.classList.add('taxi');
-        tagline.innerHTML = tagline1;
-      }
-      else if(file === 'Tool-Aenima.mid') {
-        document.body.classList.remove('taxi');
-        tagline.innerHTML = tagline2;
-      }
-      else {
-        document.body.classList.remove('taxi');
-        tagline.innerHTML = tagline0;
-      }
-    }
+    playPause();
   });
+
+  // player.addEventListener("ended", nextTrack);
 }
 
 

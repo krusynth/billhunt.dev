@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="page-{{page.title | slugify }}">
   {% if page.banner %}
     <section class="banner stickers">
@@ -8,46 +9,30 @@ layout: default
     </section>
   {% endif %}
   <section class="{{page.datum}} content-container">
-    <h2 class="section-title">
-      {{ page.title }}
-      {% if page.datum == 'jobs' %}
-        <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fas fa-rss"></span></a>
+    <header class="section-header">
+      <h2 class="section-title">{{ page.title }}</h2>
+      {% if page.metalinks %}
+        <ol class="meta-links">
+          {% for meta in page.metalinks %}
+            {%- assign icon = "fas fa-rss" -%}
+            {%- if meta.icon -%}
+              {%- assign icon = meta.icon -%}
+            {%- endif -%}
+            <li>
+              <a href="{{ meta.link }}" class="rss-link" title="{{ meta.title }}"><span class="icon {{ icon }}"></span></a>
+            </li>
+          {% endfor %}
+        </ol>
       {% endif %}
-    </h2>
+    </header>
     {% if page.content.size > 0 %}
       <div class="post-content">
-        {{ page.content | markdownify }}
+        {{ content }}
       </div>
     {% endif %}
     <div class="posts-container">
-      {% for post in site.data[page.datum] %}
-        {% assign content = post.content %}
-        {% if post.date and post.date != "" %}
-          {% assign post_date = post.date | date: site.date_format %}
-          {% assign content = content | prepend: '**{:.date} – '  | prepend: post_date | prepend: '**' %}
-        {% endif %}
-        {% if post.closes %}
-          {% assign post_closes = post.closes | date: site.date_format %}
-          {% assign content = content | append: ' **Closes ' | append: post_closes | append: '**' %}
-        {% endif %}
-        <article class="post-multiple">
-          <header class="post-header hoverable">
-            <h3 class="post-title"><a href="{{ post.url }}" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>{{ post.title }}</a></h3>
-          </header>
-          <section class="post-content">
-            {% if post.image %}
-              <p class="featured-image-box">
-                <img src="{{ post.image }}" class="featured-image" alt="Image of {{ post.title }}">
-              </p>
-            {% endif %}
-            <p>
-              {{ content | markdownify }}
-            </p>
-            <p class="action-box">
-              <a href="{{ post.url }}" class="btn" {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>{% if page.action %}{{ page.action }}{% else %}Check It Out{% endif %}</a>
-            </p>
-          </section>
-        </article>
+      {% for post in page.items %}
+        {% include card.html %}
       {% endfor %}
     </div>
   </section>

@@ -8,11 +8,13 @@ permalink: /foaf.rdf
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:admin="http://webns.net/mvcb/">
+
   <foaf:PersonalProfileDocument rdf:about="">
     <foaf:maker rdf:resource="#me"/>
     <foaf:primaryTopic rdf:resource="#me"/>
-    <admin:generatorAgent rdf:resource="https://github.com/krusynth/billhunt.dev/blob/www/xml/foaf.rdf"/>
+    <admin:generatorAgent rdf:resource="https://github.com/{{ site.repository }}/blob/www/xml/foaf.rdf"/>
   </foaf:PersonalProfileDocument>
+
   <foaf:Person rdf:ID="me">
     <foaf:name>{{ site.author.name }}</foaf:name>
     {%- if site.author.givenName %}
@@ -28,12 +30,32 @@ permalink: /foaf.rdf
     <foaf:mbox rdf:resource="mailto:{{ site.author.email }}"/>
     {%- endif %}
     <foaf:homepage rdf:resource="{{ site.url }}"/>
+    {%- if site.author.image %}
+    <foaf:depicts rdf:resource="{{ site.author.image }}"/>
+    {%- endif %}
     {%- if site.author.social %}
-      <foaf:account>
-      {%- for social in site.author.social %}
-          <foaf:OnlineAccount rdf:about="{{ social[1] }}"></foaf:OnlineAccount>
-      {%- endfor %}
-      <foaf:account>
+    {%- for social in site.author.social %}
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="{{ social[1] }}"></foaf:OnlineAccount>
+    </foaf:holdsAccount>
+    {%- endfor %}
     {%- endif %}
   </foaf:Person>
+
+  <!-- Links to Other Folks -->
+
+  {% for entry in site.data.links %}
+  <foaf:Person rdf:ID="{{ entry.name | slugify }}">
+    <foaf:name>{{ entry.name }}</foaf:name>
+    <rdfs:seeAlso rdf:resource="{{ entry.url }}"/>
+    {%- if entry.notmutual != true %}
+      {% comment %}
+        <!-- Alternatively, you may want to just not-show notmutuals,
+        in which case the if block goes around the foaf:Person element. -->
+      {% endcomment -%}
+    <foaf:knows rdf:resource="#me"/>
+    {%- endif %}
+  </foaf:Person>
+  {% endfor %}
+
 </rdf:RDF>

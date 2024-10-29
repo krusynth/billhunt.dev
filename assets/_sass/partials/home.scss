@@ -10,7 +10,7 @@
 }
 
 .posts {
-  @include dotbg(lighten($blue, 20%));
+  @include dotbg($blue);
   @include standard-padding;
 }
 
@@ -26,7 +26,7 @@
 .shop {
   $feature-color: $sienna;
 
-  @include dotbg(lighten($feature-color, 20%));
+  @include dotbg($feature-color);
   @include standard-padding;
 
 
@@ -49,21 +49,21 @@
 .recommended {
   $recommended-color: $green;
 
-  @include dotbg(lighten($recommended-color, 20%));
+  @include dotbg($recommended-color);
   @include standard-padding;
 
   .post-multiple {
     @include bordered-box($recommended-color);
   }
-  .btn {
+  .btn, .page-number {
     background-color: $recommended-color;
   }
 }
 
-.jobs {
+.jobs, .usajobs {
   $jobs-color: $purple;
 
-  @include dotbg(lighten($jobs-color, 20%));
+  @include dotbg($jobs-color);
   @include standard-padding;
 
   .post-multiple {
@@ -73,6 +73,21 @@
     background-color: $jobs-color;
   }
 }
+
+.links {
+  $links-color: $blue;
+
+  @include dotbg($links-color);
+  @include standard-padding;
+
+  .post-multiple {
+    @include bordered-box($links-color);
+  }
+  .btn {
+    background-color: $links-color;
+  }
+}
+
 
 .featured-icon {
   color: $white;
@@ -86,16 +101,15 @@
   margin-left: -18px;
   width: 32px;
   height: 32px;
-  padding-left: 1px;
   border-radius: 30px;
   @extend %bordered;
   font-size: 30px;
-  line-height: 23px
+  line-height: 0.85;
+  text-align: center;
 }
 
-.rss-link {
-  // @include linebg($blue, $white);
-  // -webkit-text-stroke: 2px $dark;
+%circle-icon {
+  display: inline-block;
   position: relative;
   top: 0;
   width: 24px;
@@ -104,6 +118,19 @@
   @extend %bordered;
   font-size: 14px;
   line-height: 1;
+
+  .icon {
+    position: relative;
+    left: 5px;
+    top: 2px;
+    text-shadow: none;
+    padding: 0;
+    display: inline-block;
+  }
+}
+
+.rss-link {
+  @extend %circle-icon;
 
   color: $dark;
   background-color: $lemon;
@@ -114,17 +141,38 @@
   &:hover {
     top: 5px;
     box-shadow: none;
-    color: $white;
-    // background-color: lighten($blue, 5%);
     opacity: 0.80;
   }
 
+
+  .fa-users {
+    left: 2px;
+    top: 4px;
+  }
+
+  .fa-fire {
+    font-size: 1rem;
+    left: 3px;
+    top: 3px;
+  }
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+.badge-hot {
+  @extend %circle-icon;
+  background-color: $sienna;
+  color: $white;
+
   .icon {
+    font-size: 0.95rem;
     position: relative;
-    left: 5px;
+    left: 4px;
     top: 2px;
-    text-shadow: none;
-    padding: 0;
-    display: inline-block;
   }
 }

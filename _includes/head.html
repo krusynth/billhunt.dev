@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css?" | append: timestamp | relative_url }}">
   <link rel="stylesheet" media="print" href="{{ "/assets/css/print.css?" | append: timestamp | relative_url }}">
 
-  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - All Content" href="{{ site.url }}/feed.xml" />
-  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Posts Only" href="{{ site.url }}/posts.xml" />
-  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Jobs Only" href="{{ site.url }}/jobs.xml" />
-  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Recommended Links Only" href="{{ site.url }}/recommended.xml" />
-  <link rel="meta" type="application/rdf+xml" title="FOAF" href="/foaf.rdf" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Posts" href="{{ site.url }}/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Featured Jobs " href="{{ site.url }}/jobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Full USAJobs List" href="{{ site.url }}/usajobs.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Enderprise Architecture YouTube Series" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSL7BIdwgBEZ09BpD9xPPYQ">
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="{{ site.url }}/foaf.rdf" />
   {% if page.parent -%}
   <link rev="child" href="{{ page.parent }}" />
   {%- endif %}
@@ -19,10 +20,13 @@
   <link rel="me" href="https://mastodon.publicinterest.town/@krusynth" />
   <link rel="me" href="https://mastodon.cloud/@krusynth" />
 
-  <script src="https://static.billhunt.dev/assets/js/jquery.min.js?{{ timestamp }}"></script>
-  <script src="https://static.billhunt.dev/assets/js/unpoly.min.js?{{ timestamp }}"></script>
-  <script src="https://static.billhunt.dev/assets/js/fontawesome-6/fontawesome.min.js?{{ timestamp }}"></script>
-  <script src="https://static.billhunt.dev/assets/js/web-midi-player.js?{{ timestamp }}"></script>
+  <link rel="webmention" href="https://webmention.io/billhunt.dev/webmention" />
+
+  <script src="{{ site.static_url }}/js/jquery.min.js?{{ timestamp }}"></script>
+  <script src="{{ site.static_url }}/assets/js/unpoly.min.js?{{ timestamp }}"></script>
+  <script src="{{ site.static_url }}/assets/js/fontawesome-6/fontawesome.min.js?{{ timestamp }}"></script>
   <script type="module" src="/assets/js/main.js?{{ timestamp }}"></script>
-  <script src="https://static.billhunt.dev/assets/js/blink-polyfill.js"></script>
+  <script src="/assets/js/search.js?{{ timestamp }}"></script>
+  <script src="/assets/js/jobs.js?{{ timestamp }}"></script>
+  <script src="{{ site.static_url }}/assets/js/blink-polyfill.js"></script>
 </head>

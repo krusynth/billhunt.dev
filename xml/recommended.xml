@@ -1,7 +1,18 @@
 ---
 title : Recommended Posts
 permalink: /recommended.xml
+layout: atom
 ---
+{%- assign items = "" | split:"/" -%}
 
-{% assign items = site.recommended | sort: "date" | reverse -%}
+{%- for post in site.recommended -%}
+  {%- assign post = post | setval: 'category', 'Recommended' -%}
+  {% capture afterwards %}<p><a href="{{ post.link }}">Check it out!</a></p>{% endcapture %}
+  {% assign post = post | setval: 'afterwards', afterwards %}
+
+  {%- assign items = items | push: post %}
+{%- endfor -%}
+
+{% assign items = items | sort: 'date' | reverse -%}
+
 {% include feed.xml items=items %}

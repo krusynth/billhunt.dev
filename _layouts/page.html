@@ -2,13 +2,19 @@
 layout: default
 ---
 
-<article class="post-single page-{{page.title | slugify }}">
+<article class="post-single page-{{page.title | slugify }}" data-pagefind-body>
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
   <section class="post-content">
     {{ content }}
+
+  {% if page.link %}
+    <p>
+      <a class="btn" href="{{ page.link }}">Check It Out</a>
+    </p>
+  {% endif %}
   </section>
 
 </article>

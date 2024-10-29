@@ -3,13 +3,19 @@ layout: default
 ---
 
 <section class="posts content-container {{ page.title | slugify }}">
-  <h2 class="section-title">{{ page.title }}
-    {% if page.title == 'Blog' %}
-      <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fas fa-rss"></span></a>
-    {% elsif page.title == 'recommended' %}
-      <a href="/recommended.xml" class="rss-link" title="Follow recommended posts only with RSS"><span class="icon fas fa-rss"></span></a>
-    {% endif %}
-  </h2>
+
+  <header class="section-header">
+    <h2 class="section-title">{{ page.title }}</h2>
+      <ol class="meta-links">
+          <li>
+            {% if page.title == 'Blog' %}
+              <a href="/feed.xml" class="rss-link" title="Follow this site with RSS"><span class="icon fas fa-rss"></span></a>
+            {% elsif page.title == 'recommended' %}
+              <a href="/recommended.xml" class="rss-link" title="Follow recommended posts only with RSS"><span class="icon fas fa-rss"></span></a>
+            {% endif %}
+          </li>
+      </ol>
+  </header>
 
   {% if page.content and page.content != '' %}
     <section class="banner">
@@ -19,8 +25,10 @@ layout: default
 
   <div class="posts-container">
     {% for post in paginator.posts %}
+
       {% assign url = post.url %}
-      {% if post.link %}{% assign url = post.link %}{% endif %}
+      {% if post.link %}{% unless post.link contains site.url %}{% assign url = post.link %}{% endunless %}{% endif %}
+
       <article class="post-multiple">
         <header class="post-header hoverable">
           <h3 class="post-title"><a href="{{ url }}"{% if url contains 'http' %}{% else %}up-follow{% endif %}>{{ post.title }}</a></h3>
@@ -61,7 +69,7 @@ layout: default
     {% else %}
       <span class="previous btn disabled">▶</span>
     {% endif %}
-    <span class="page_number ">
+    <span class="page-number ">
       {{ paginator.page }}
     </span>
     {% if paginator.next_page %}

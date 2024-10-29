@@ -1,0 +1,11 @@
+---
+title : Full Jobs Feed
+permalink: /usajobs.xml
+action: Apply
+layout: atom
+---
+
+{%- assign now = 'now' | date: '%s' -%}
+
+{%- assign posts = site.data.usajobs -%}
+{% include jobs-list.xml posts=posts %}

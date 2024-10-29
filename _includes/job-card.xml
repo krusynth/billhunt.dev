@@ -1,0 +1,17 @@
+  <entry>
+    <title>{{ title | xml_escape }}</title>
+    <link rel="alternate" type="text/html" href="{{ url }}" />
+    <published>{{ postdate | date_to_xmlschema }}</published>
+    <updated>{{ postdate | date_to_xmlschema }}</updated>
+    <id>{{ url }}</id>
+    {%- if categories -%}
+      {%- for category in categories -%}
+        {%- if category.size > 0 %}
+    <category>{{ category }}</category>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif %}
+    <content type="html">
+      {{ description }}
+    </content>
+  </entry>

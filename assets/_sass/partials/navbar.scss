@@ -22,6 +22,8 @@
   }
 
   @media (min-width: $breakpoint-md) {
+    margin-top: 5px;
+
     display: grid;
     gap: $grid-gutter-width $grid-gutter-width;
     grid-template-columns: ($column-width - $grid-gutter-width) 1fr ($column-width - $grid-gutter-width);
@@ -61,6 +63,10 @@
   @extend %navbox;
   grid-area: branding;
   text-align: center;
+
+  @media (max-width: $breakpoint-md) {
+    border-bottom: none;
+  }
 }
 
 .navbar-brand {
@@ -113,6 +119,10 @@
   list-style: none;
 
   @extend %navbox;
+
+  @media (max-width: $breakpoint-md) {
+    border-bottom: none;
+  }
 }
 
 .nav-item {
@@ -132,8 +142,8 @@
 .nav-link {
   display: inline-block;
   width: 100%;
-  padding: 3px 6px;
-  height: 21px;
+  padding: 3px 4px;
+  // height: 21px;
   margin: 0;
   font-family: $special-font-stack;
   font-size: 0.75rem;
@@ -158,7 +168,10 @@
 .audioplayer-block {
   grid-area: player;
   @extend %navbox;
-  // align-self: end;
+
+  @media (max-width: $breakpoint-md) {
+    border-bottom: none;
+  }
 }
 
 .about-header {

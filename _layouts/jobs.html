@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<article class="page-{{page.title | slugify }}" id="jobs-form" data-pagefind-body>
+  {% if page.banner %}
+    <section class="banner stickers">
+      {{ page.banner | markdownify }}
+    </section>
+  {% endif %}
+  <section class="{{page.datum}} content-container">
+    <header class="section-header">
+      <h2 class="section-title">{{ page.title }}</h2>
+      {% if page.metalinks %}
+        <ol class="meta-links">
+          {% for meta in page.metalinks %}
+            {%- assign icon = "fas fa-rss" -%}
+            {%- if meta.icon -%}
+              {%- assign icon = meta.icon -%}
+            {%- endif -%}
+            <li>
+              <a href="{{ meta.link }}" class="rss-link" title="{{ meta.title }}"><span class="icon {{ icon }}"></span></a>
+            </li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+    </header>
+    {% if page.content.size > 0 %}
+      <div class="post-content">
+        {{ content }}
+      </div>
+    {% endif %}
+    <div class="post-content">
+      <strong>Filters</strong>
+      <ul class="filters">
+        <li>
+          <label for="hot" class="checkbox-btn">
+            <input name="hot" type="checkbox" id="hot" value="hot" class="filter" checked>
+            <span class="filter-button btn">Featured <span class="icon far fa-fire"></span></span>
+          </label>
+        </li>
+        <li>
+          <label for="special-pay" class="checkbox-btn">
+            <input name="special-pay" type="checkbox" id="special-pay" value="special-pay" class="filter">
+            <span class="filter-button btn">Special Pay Agencies</span>
+          </label>
+        </li>
+        <li>
+          <label for="security" class="checkbox-btn">
+            <input name="security" type="checkbox" id="security" value="security" class="filter">
+            <span class="filter-button btn">Cybersecurity Jobs</span>
+          </label>
+        </li>
+        <li>
+          <label for="remote" class="checkbox-btn">
+            <input name="remote" type="checkbox" value="remote" id="remote" class="filter">
+            <span class="filter-button btn">Remote</span>
+          </label>
+        </li>
+        <li>
+          <div class="radio-group" role="radiogroup">
+            <label for="grade-all" class="checkbox-btn">
+              <input type="radio" name="grade" id="grade-all" value="" class="filter" checked>
+              <span class="filter-button btn">All Grades</span>
+            </label>
+            <label for="grade-ses" class="checkbox-btn">
+              <input type="radio" name="grade" id="grade-ses" value="grade-ses" class="filter">
+              <span class="filter-button btn">SES</span>
+            </label>
+            <label for="grade-15" class="checkbox-btn">
+              <input type="radio" name="grade" id="grade-15" value="grade-15" class="filter">
+              <span class="filter-button btn">GS 15+</span>
+            </label>
+            <label for="grade-14" class="checkbox-btn">
+              <input type="radio" name="grade" id="grade-14" value="grade-14" class="filter">
+              <span class="filter-button btn">GS 14+</span>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="posts-container">
+      {{ page.jobs }}
+    </div>
+  </section>
+</article>

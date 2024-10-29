@@ -1,7 +1,11 @@
 ---
-title : Jobs
+title : Curated Jobs Feed
 permalink: /jobs.xml
+action: Apply
+layout: atom
 ---
 
-{% assign items = site.data.jobs | sort: 'date' | reverse -%}
-{% include feed.xml items=items %}
+{%- assign now = 'now' | date: '%s' -%}
+
+{%- assign posts = site.data.usajobs | where_exp:"job", "job.content" -%}
+{% include jobs-list.xml posts=posts %}

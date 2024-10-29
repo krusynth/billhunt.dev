@@ -1,0 +1,14 @@
+{%- assign description = post.content -%}
+{%- if post.afterwards %}
+  {% assign description = description | append: post.afterwards %}
+{% endif -%}
+
+{% include card-template.html
+     title=post.title
+     image=post.image
+     description=description
+     url=post.url
+     action=post.action
+     classes=post.classes
+     badge=post.badge
+%}

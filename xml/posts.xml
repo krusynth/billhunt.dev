@@ -1,7 +1,18 @@
 ---
 title : Posts Only
 permalink: /posts.xml
+layout: atom
 ---
 
-{% assign items = site.posts -%}
+{%- assign items = "" | split:"/" -%}
+
+{%- for post in site.posts -%}
+  {%- assign link = post.url | prepend: site.url -%}
+  {%- assign post = post | setval: 'link', link %}
+  {%- assign items = items | push: post %}
+{%- endfor -%}
+
+{% assign items = items | sort: 'date' | reverse -%}
+
 {% include feed.xml items=items %}
+

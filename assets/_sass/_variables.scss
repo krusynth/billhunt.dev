@@ -49,9 +49,8 @@ $special-font-stack: 'Silkscreen', monospace;
 
 @include web-fonts(
   ("Montserrat", "montserrat", (500, 700)),
-  // ("Raleway", "raleway-v22-latin", (400, (400, italic), 600)),
-  // ("Sacramento", "sacramento-v8-latin", (400))
-  ("Silkscreen", "silkscreen", (400, 800))
+  ("Silkscreen", "silkscreen", (400, 800)),
+  ("HelveticaCompressed", "helvetica-compressed", (700))
 );
 
 // $font-weight-normal: normal !default;
@@ -108,7 +107,7 @@ $special-font-stack: 'Silkscreen', monospace;
 
 
 @mixin shadow() {
-  box-shadow: 10px 0px rgba(00,00,00,0.4);
+  box-shadow: 10px 5px rgba(00,00,00,0.4);
 }
 
 %shadow-float {
@@ -147,14 +146,22 @@ $special-font-stack: 'Silkscreen', monospace;
 
 
 // Dimensions
-$bg-dot-size: 2px;
-$bg-dot-space: 4px;
-@mixin dotbg($dot-color, $bg-color: $white, $dot-size: $bg-dot-size, $dot-space: $bg-dot-space) {
-  background:
-    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
-  background-size: $dot-space $dot-space;
+@mixin dotbg($dot-color) {
+  @if $dot-color == $lemon {
+    background: url('/assets/images/bg-yellow.png');
+  }
+  @else if $dot-color == $sienna {
+    background: url('/assets/images/bg-red.png');
+  }
+  @else if $dot-color == $green {
+    background: url('/assets/images/bg-green.png');
+  }
+  @else if $dot-color == $purple {
+    background: url('/assets/images/bg-purple.png');
+  }
+  @else {
+    background: url('/assets/images/bg-blue.png');
+  }
 }
 
 @mixin linebg($line-color, $bg-color: $white, $line-size: $bg-dot-size, $line-space: $bg-dot-size) {
@@ -187,17 +194,15 @@ $bg-dot-space: 4px;
     border-top-right-radius: 30px;
     overflow: hidden;
     margin-bottom: 0;
+    padding-right: 10px;
 
     color:  $white;
     background-color: $bgcolor;
 
     display: flex;
-    flex-direction: column;
-    @media (min-width: $breakpoint-md) {
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-    }
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 
     &.hoverable {
       &:hover {
@@ -205,7 +210,9 @@ $bg-dot-space: 4px;
         color: $white;
       }
     }
+  }
 
+  .post-title {
     a {
       display: block;
       padding: 1px 7px;
@@ -235,4 +242,34 @@ $bg-dot-space: 4px;
 
 %minor-border {
   border: 1px solid $dark;
+}
+
+.sr-only { /* Screen Reader Only */
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+    clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+    clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+    white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+/** Animations **/
+
+.bounce {
+  animation: bounce 2s ease infinite;
+  display: inline-block;
+}
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
 }

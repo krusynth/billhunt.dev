@@ -1,0 +1,117 @@
+- name: Waldo Jaquith
+  url: https://waldo.jaquith.org/
+  rss: https://waldo.jaquith.org/feed/
+  tags: [civic tech, govtech]
+
+- name: Vyki Englert
+  url: https://medium.com/@vyki_e
+  rss: https://medium.com/feed/@vyki_e
+  tags: [civic tech, govtech]
+
+- name: Hunter Owens
+  url: https://hunterowens.net/
+  rss: https://hunterowens.net/feed.xml
+  tags: [civic tech, govtech]
+
+- name: Lauren Ancona
+  url: https://laurenancona.com/
+  rss: https://laurenancona.com/feed.xml
+  tags: [neurodivergence, govtech]
+
+- name: Noah Krohn
+  url: https://monkeyguild.org/
+  tags: [tech, baking]
+
+- name: Matt Bailey
+  url: https://mattmattmatt.org/
+  rss: https://mattmattmatt.org/feed.xml
+  tags: [human rights, music]
+
+- name: Rebecca Williams
+  url: https://rebeccawilliams.info/
+  rss: https://rebeccawilliams.info/rss/
+  tags: [policy, tech]
+
+- name: Justin Grimes
+  url: https://justgrimes.com/
+  tags: [civic tech, policy]
+
+- name: Brodrick Jones
+  url: https://www.jigsawfanclub.com/
+  rss: https://www.jigsawfanclub.com/blog-feed.xml
+  tags: [art, puppetry]
+
+- name: Erin Kissane
+  url: https://erinkissane.com/
+  rss: https://erinkissane.com/feed.rss
+  tags: [writing, research]
+
+- name: Anne Petersen
+  url: https://annepetersen.is/
+  rss: https://annepetersen.is/feed/
+  tags: [user experience, govtech]
+
+- name: Alex Howard
+  url: https://digiphile.info/
+  rss: https://digiphile.info/feed/
+  tags: [opengov, journalism]
+
+- name: Zac Cohn
+  url: https://www.zaccohn.com/
+  rss: https://blog.zaccohn.com/feed.xml
+  tags: [tech, govtech]
+
+- name: Travis Biggs
+  url: https://travisbriggs.com/
+  rss: https://garden.travisbriggs.com/feed.xml
+  tags: [music, tech]
+
+- name: Matt Zagaja
+  url: https://www.zagaja.com/
+  rss: https://www.zagaja.com/feed.xml
+  tags: [civic tech, govtech]
+
+- name: Dave Zvenyach
+  url: https://vdavez.com
+  rss: https://vdavez.com/posts/index.xml
+  tags: [govtech, procurement]
+
+- name: Eric Mill
+  url: https://konklone.com/
+  rss: https://konklone.com/rss.xml
+  tags: [civic tech, govtech]
+
+- name: Tom MacWright
+  url: https://macwright.com/
+  rss: https://macwright.com/rss.xml
+  tags: [tech, maps]
+
+- name: Dave Guarino
+  url: https://www.daveguarino.com/
+  rss: https://www.daveguarino.com/feed/feed.xml
+  tags: [govtech, civic tech]
+
+- name: Phil Ashlock
+  url: https://phil.ashlock.us
+  tags: [govtech, opengov]
+
+- name: Sean Boots
+  url: https://sboots.ca/
+  rss: https://sboots.ca/index.xml
+  tags: [govtech, policy]
+
+- name: Jacob Kaplan-Moss
+  url: https://jacobian.org/
+  rss: https://jacobian.org/index.xml
+  tags: [tect, management]
+
+- name: Sarah Glassmeyer
+  url: https://sarahglassmeyer.com/
+  rss: https://sarahglassmeyer.com/?feed=rss2
+  tags: [legal tech, tech]
+
+- name: Gareth Branwyn
+  url: https://garstipsandtools.com/
+  rss: https://garstipsandtools.com/feed
+  tags: [making, cyberpunk]
+  notmutual: true

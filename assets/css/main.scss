@@ -2,14 +2,6 @@
 ---
 @import "variables";
 
-
-// @import "bootstrap/scss/bootstrap";
-// @import "bootstrap_customization";
-// @import "@fortawesome/fontawesome-pro/scss/fontawesome.scss";
-// @import "@fortawesome/fontawesome-pro/scss/solid.scss";
-// @import "@fortawesome/fontawesome-pro/scss/regular.scss";
-// @import "@fortawesome/fontawesome-pro/scss/light.scss";
-// @import "@fortawesome/fontawesome-pro/scss/brands.scss";
 @import "partials/fontawesome";
 @import "partials/navbar";
 @import "partials/webring";
@@ -20,6 +12,8 @@
 @import "partials/taxi";
 @import "partials/halloweeeen";
 @import "partials/bytes";
+@import "partials/kmfdm";
+@import "partials/audio-visualizer";
 
 *,
 *::before,
@@ -30,7 +24,7 @@
 body {
   margin: 0;
   padding: 0;
-  @include dotbg($lemon, $white);
+  @include dotbg($lemon);
 
   font-family: $main-font-stack;
   @extend %font-normal;
@@ -61,11 +55,11 @@ h3 {
   font-size: 0.9rem;
 }
 
-p {
-  margin: 0 0 0.5rem;
+p, details {
+  margin: 0 0 1rem;
 }
 
-p:last-child {
+p:last-child, details:last-child {
   margin-bottom: 0;
 }
 
@@ -91,7 +85,7 @@ input {
   font-size: .85em;
 }
 
-a {
+a, summary {
   text-decoration: none;
   color: $link-color;
 }
@@ -125,14 +119,13 @@ a:not([href]):not([class]) {
   @extend %shadow-float;
   &:hover {
     top: 5px;
-    box-shadow: none;
     color: $white;
-    // background-color: lighten($blue, 5%);
-    opacity: 0.80;
+    background-color: lighten($blue, 10%);
+    box-shadow: none;
   }
 
   &.disabled {
-    color: lighten($dark, 20%);
+    color: $dark;
     background-color: #aaa;
     box-shadow: none;
     &:hover {
@@ -140,8 +133,47 @@ a:not([href]):not([class]) {
       color: inherit;
       background-color: inherit;
     }
+  }
 
+  &.inactive {
+    color: $dark;
+    background-color: #aaa;
+  }
+}
 
+.checkbox-btn {
+  input[type="checkbox"],
+  input[type="radio"], {
+    position: absolute;
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:not(:checked) + span,
+  input[type="radio"]:not(:checked) + span, {
+    color: $dark;
+    background-color: #aaa;
+  }
+
+  input[type="checkbox"]:checked + span,
+  input[type="radio"]:checked + span {
+    top: 5px;
+    box-shadow: none;
+    color: $white;
+    // background-color: lighten($blue, 5%);
+  }
+  .jobs & {
+    input[type="checkbox"]:checked + span,
+    input[type="radio"]:checked + span {
+      background-color: $purple;
+    }
+  }
+}
+
+.radio-group {
+  white-space: nowrap;
+
+  label {
+    margin-right: -5px;
   }
 }
 
@@ -160,6 +192,10 @@ hr {
 code {
   font-family: $code-font;
   background-color: rgba(99,99,99,0.2);
+  &.block, .block & {
+    display: block;
+    padding: $grid-gutter-width;
+  }
 }
 
 blockquote {
@@ -173,11 +209,22 @@ blockquote {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .nowrap {
   white-space: nowrap;
+}
+
+.column-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 0;
+
+  li {
+    margin-left: 1rem;
+  }
 }
 
 .content {
@@ -186,7 +233,7 @@ blockquote {
   @extend %major-border;
 
   font-size: 0.75rem;
-  line-height: 1.25;
+  line-height: 1.4;
   background: $white;
   margin-bottom: $grid-gutter-width;
   // min-height: 70vh;
@@ -231,6 +278,40 @@ blockquote {
   }
 }
 
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: $grid-gutter-width;
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    & > * {
+      width: 30%;
+      max-width: 30%;
+    }
+  }
+}
+
+.column {
+  padding-left: 1rem;
+
+  @media (min-width: $breakpoint-md) {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+  }
+
+  .heading {
+    list-style: none;
+    margin-left: -1rem;
+  }
+}
+
 .post-multiple {
   @include bordered-box($blue);
   display: flex;
@@ -240,6 +321,7 @@ blockquote {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    text-align: justify;
   }
 }
 
@@ -248,15 +330,17 @@ blockquote {
 }
 
 .post-single {
-  @include dotbg(lighten($blue, 20%));
+  @include dotbg($blue);
   @include bordered-box($blue);
-  line-height: 1.5;
+  line-height: 1.75;
+  text-align: justify;
 
   padding-top: $grid-gutter-width;
 
   .post-content {
     background-color: $white;
     @include standard-padding;
+    min-height: 50vh;
   }
 
   .post-title {
@@ -289,17 +373,26 @@ blockquote {
   }
 }
 
-.section-title {
+.section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
+.section-title {
   font-family: $special-font-stack;
   font-size: 1.2rem;
   @include text-outline($white, 2px);
   margin-bottom: 0;
 }
 
+.meta-links {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
 
 .post-title {
   margin-bottom: 0;
@@ -328,6 +421,13 @@ blockquote {
 
 .featured-image-box {
   text-align: center;
+}
+
+.youtube-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/9;
 }
 
 .spaced-list li {
@@ -366,6 +466,29 @@ blockquote {
   }
 }
 
+.filters {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 0.25rem 1rem;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+  }
+}
+
+.webmentions {
+  border-top: 2px solid $dark;
+  margin-top: $grid-gutter-width;
+  padding-top: $grid-gutter-width /2;
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
 /**
  * Pagination
  */
@@ -376,26 +499,6 @@ blockquote {
   align-items: center;
   margin: 0.5rem 0 0;
 
-  .page_number {
-    display: block;
-    text-align: center;
-    color: $white;
-    background-color: $blue;
-    line-height: 34px;
-    border: 2px solid $dark;
-    border-radius: 30px;
-    margin: 0 0 0.25rem;
-    width: 40px;
-    height: 40px;
-
-    font-family: $special-font-stack;
-    font-size: 1.5rem;
-
-    @extend %shadow-float;
-
-    z-index: 2;
-  }
-
   .disabled {
     opacity: 0;
   }
@@ -403,23 +506,42 @@ blockquote {
   .btn {
     border: 2px solid $dark;
   }
+}
 
-  .previous {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    padding-right: 7px;
-    margin-right: -2px;
-    z-index: 1;
-  }
+.page-number {
+  display: block;
+  text-align: center;
+  color: $white;
+  background-color: $blue;
+  line-height: 34px;
+  border: 2px solid $dark;
+  border-radius: 30px;
+  margin: 0 0 0.25rem;
+  width: 40px;
+  height: 40px;
 
-  .next {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding-left: 7px;
-    margin-left: -2px;
-    z-index: 3;
-  }
+  font-family: $special-font-stack;
+  font-size: 1.5rem;
 
+  @extend %shadow-float;
+
+  z-index: 2;
+}
+
+.previous {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-right: 7px;
+  margin-right: -2px;
+  z-index: 1;
+}
+
+.next {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-left: 7px;
+  margin-left: -2px;
+  z-index: 3;
 }
 
 /**
@@ -436,7 +558,7 @@ blockquote {
 
   background-color: $sienna;
   color: $white;
-
+  margin-bottom: 15px;
 
   font-size: 0.85em;
 
@@ -444,14 +566,11 @@ blockquote {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
+  gap: 0.5rem;
+
 
   @media (max-width: $breakpoint-md) {
     flex-direction: column;
-    .credits {
-      padding-top: 5px;
-      border-top: 2px dotted $white;
-      margin-top: 5px;
-    }
   }
 
   & > * {
@@ -474,53 +593,36 @@ blockquote {
 
 .oldschool-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: $grid-gutter-width / 2;
+  justify-content: center;
 }
-
 
 .old-button {
   display: inline-block;
-  height: (30px + 6px);
-  width: (100px + 6px);
+  height: 31px;
+  width: 88px;
   background-size: contain;
-  border-width: 3px;
-  border-style: solid;
-  border-top-color: $white;
-  border-left-color: $white;
-  border-right-color: $dark;
-  border-bottom-color: $dark;
   color: transparent !important;
-  transition: all .1s ease-in-out;
+}
 
+.webring-title {
+  margin-bottom: 5px;
+  display: block;
 
-  &:hover {
-    border-top-color: $dark;
-    border-left-color: $dark;
-    border-right-color: $white;
-    border-bottom-color: $white;
+  a {
+    @extend %semibold;
   }
+}
 
-  &.netscape {
-    background-image: url('/assets/images/buttons/netscape4-100x30.gif');
-
-    &:hover {
-      background-image: url('/assets/images/buttons/netscape4-100x30-ani.gif');
-    }
-    @media (max-width: $breakpoint-md) {
-      background-image: url('/assets/images/buttons/netscape4-100x30-ani.gif');
-    }
-  }
-
-  &.jekyll {
-    background-image: url('/assets/images/buttons/jekyll-100x30.png');
-
-    &:hover {
-      background-image: url('/assets/images/buttons/jekyll-100x30-ani.gif');
-    }
-    @media (max-width: $breakpoint-md) {
-      background-image: url('/assets/images/buttons/jekyll-100x30-ani.gif');
-    }
-  }
+.webring-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  margin: 0 0 5px;
+  padding: 0;
+  justify-content: space-around;
 }
 
 /* Reusable Tabs */
@@ -605,4 +707,41 @@ blockquote {
       padding: $grid-gutter-width;
     }
   }
+}
+
+/* Search */
+
+.search-results {
+  margin-top: 1rem;
+
+  .search-article {
+    margin-bottom: 1rem;
+  }
+
+  .search-article-title {
+    margin-bottom: 0;
+  }
+}
+
+/* Jobs Ranking */
+.agency-rank {
+  @extend %circle-icon;
+  width:auto;
+  font-weight: bold;
+  padding: 3px 5px;
+}
+
+.rank-high {
+  background-color: $green;
+  color: $dark;
+}
+
+.rank-mid {
+  background-color: $lemon;
+  color: $dark;
+}
+
+.rank-low {
+  background-color: $red;
+  color: $dark;
 }
