@@ -1,5 +1,15 @@
 $pumpkin: #E6530D;
 
+@font-face {
+    font-family: oldenglishpixel2;
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url($font-path + 'old-english-gothic-pixel/old-english-gothic-pixel-regular.otf') format('opentype'), /* Safari, Android, iOS */
+         url('old-english-gothic-pixel/old-english-gothic-pixel-regular') format('truetype'); /* Safari, Android, iOS */
+}
+
+
 #halloweeeen {
   background: $pumpkin url('/assets/images/bats.png');
   /* Bats from www.textures4photoshop.com */
@@ -66,6 +76,13 @@ $pumpkin: #E6530D;
   .about-header {
     background-color: black;
     border: none;
+  }
+
+  .section-title {
+    font-family: oldenglishpixel2;
+    font-size: 1.6rem;
+    /* @include text-outline($white, 2px);
+    margin-bottom: 0; */
   }
 
   .navbar-tagline {
