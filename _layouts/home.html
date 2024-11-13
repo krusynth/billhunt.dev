@@ -181,7 +181,7 @@ layout: default
         <section class="post-content">
           {% if post.image %}
             <p>
-              <img src="https://billhunt.dev{{ post.image }}" class="featured-image">
+              <img src="{{ site.url }}{{ post.image }}" class="featured-image">
             </p>
           {% endif %}
           <p>

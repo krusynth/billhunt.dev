@@ -10,7 +10,7 @@
     {% if include.image %}
       <p class="featured-image-box">
         <a href="{{ include.url }}" {% if include.url contains 'http' %}{% else %}up-follow{% endif %}>
-          <img src="{{ include.image }}" class="featured-image" alt="Image of {{ include.title }}">
+          <img src="{{ site.url }}{{ include.image }}" class="featured-image" alt="Image of {{ include.title }}">
         </a>
       </p>
     {% endif %}
