@@ -43,10 +43,16 @@
 
             <div class="webmention__meta">
               <a class="webmention__source u-url" href="{{ webmention.uri }}" rel="nofollow">
+
+                {% if webmention.title %}
                 <span class="webmention__name p-name">{{ webmention.title }}</span>
+                {% endif %}
+
+                {% if webmention.title and webmention.pubdate %}
+                  &mdash;
+                {% endif %}
 
                 {% if webmention.pubdate %}
-                  &mdash;
                   <time class="webmention__pubdate dt-published"
                         datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
                 {% endif %}

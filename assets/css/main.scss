@@ -486,6 +486,15 @@ blockquote {
     font-size: 1rem;
     margin-bottom: 0;
   }
+
+  .webmention__author__photo {
+    float: left;
+    margin-right: $grid-gutter-width;
+
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 /**
