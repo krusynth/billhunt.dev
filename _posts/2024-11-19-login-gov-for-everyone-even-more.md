@@ -2,8 +2,8 @@
 title: "Login.gov for Everyone (Even More)!"
 author: Bill Hunt
 type: post
-date: 2024-12-06-T15:10:53-0500
-permalink: /blog/2024/11/19/login-gov-for-everyone-even-more/
+date: 2024-12-06-T06:10:53-0500
+permalink: /blog/2024/12/06/login-gov-for-everyone-even-more/
 layout: post
 excerpt: GSA has changed its policy and now Login.gov can be used by any U.S. government agency - federal, state, local, or tribal!
 ---

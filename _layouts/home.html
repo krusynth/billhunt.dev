@@ -164,7 +164,7 @@ layout: default
   </section>
 </div>
 
-{% assign normal_posts = site.posts | where:"featured",nil %}
+{% assign normal_posts = site.posts | where:"featured", empty | where:"hidden", empty  %}
 
 <div class="col">
   <section class="posts">
