@@ -72,11 +72,18 @@ You can follow this list with the RSS links above. I also repost featured jobs  
 </div>
 </details>
 
-{% assign now = 'now' | date: '%s' %}
+
+{% assign posts = "" | split: ',' %}
+{% capture yesterday %}{{'now' | date: '%s' | minus: 86400 }}{% endcapture %}
+
+{%- for job in site.data.usajobs %}
+  {% capture closes %}{{ job.closes | date: '%s' | plus: 0 }}{% endcapture %}
+  {% if closes > yesterday %}
+    {% assign posts = posts | push: job %}
+  {% endif %}
+{% endfor %}
 
 {% capture jobs -%}
-
-{% assign posts = site.data.usajobs %}
 
 {% include jobs-list.html posts=posts %}
 

@@ -243,8 +243,23 @@ layout: default
       <h2 class="section-title">Cool Jobs</h2>
       <a href="/jobs.xml" class="rss-link" title="Follow jobs list only, with RSS"><span class="icon fas fa-rss"></span></a>
     </header>
+    {% assign posts = "" | split: ',' %}
+    {% capture yesterday %}{{'now' | date: '%s' | minus: 86400 }}{% endcapture %}
 
-    {% assign posts = site.data.usajobs | where_exp:"job", "job.content" | slice: 0, 3 %}
+    {%- for job in site.data.usajobs %}
+      {% capture closes %}{{ job.closes | date: '%s' | plus: 0 }}{% endcapture %}
+
+      {% if job.content and closes > yesterday %}
+        {% assign posts = posts | push: job %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign posts = posts | slice: 0, 3 %}
+
+    {% if posts.size == 0 %}
+      {% assign posts = site.data.usajobs | slice: 0, 3 %}
+    {% endif %}
+
     {% include jobs-list.html posts=posts %}
 
     <a href="/jobs/" class="btn" up-follow>More Jobs</a>

@@ -49,15 +49,27 @@ function doFilter() {
   const jobs = document.getElementsByClassName('job-post');
 
   let formData = getFormData();
+  let countInvisible = 0;
 
   [...jobs].forEach(elm => {
     elm.classList.remove('hide');
     for( const [filter, value] of Object.entries(formData)) {
       if(!elm.classList.contains(value)) {
         elm.classList.add('hide');
+        countInvisible++;
       }
     };
   });
+
+  const noJobs = document.getElementById('noJobs');
+  if(countInvisible == jobs.length) {
+    // Everything is invisible
+    noJobs.classList.remove('hide')
+    console.log('no matching jobs');
+  }
+  else {
+    noJobs.classList.add('hide')
+  }
 
   // Show hot by default, not all
   if(typeof formData.hot === 'undefined') {
