@@ -1,3 +1,12 @@
+<entry>
+  <title>Federal Hiring Freeze</title>
+  <published>2025-01-21 00:00:00</published>
+  <updated>2025-01-21 00:00:00</updated>
+  <id>https://www.whitehouse.gov/presidential-actions/2025/01/hiring-freeze/</id>
+  <content type="html">
+On January 20th, 2025, <a href="https://www.whitehouse.gov/presidential-actions/2025/01/hiring-freeze/">the President instituted a hiring freeze for the federal government</a>, which may last as long as 90 days. Only critical roles may be filled during this freeze.
+  </content>
+</entry>
 {%- for post in posts  -%}
   {%- assign closes = post.closes | date: '%s' -%}
 

@@ -11,6 +11,10 @@ metalinks:
   - title: ALL Cool Gov Tech Jobs RSS Feed
     link: /usajobs.xml
 ---
+<strong>On January 20th, 2025, <a href="https://www.whitehouse.gov/presidential-actions/2025/01/hiring-freeze/">the President instituted a hiring freeze for the federal government</a>, which may last as long as 90 days. Only critical roles may be filled during this freeze.</strong>
+
+<hr>
+
 You can follow this list with the RSS links above. I also repost featured jobs  to <a href="https://mastodon.publicinterest.town/@jobs">Public Interest Jobs on Mastodon</a>!
 
 <span class="icon far fa-fire"></span> **Featured** jobs are ones that caught my eye as particularly interesting! This is the default filter, you can **unselect** the filter with the button below to see all jobs.
