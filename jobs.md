@@ -35,7 +35,7 @@ You can follow this list with the RSS links above. I also repost featured jobs  
 </p>
 </details>
 
-<details>
+<details open>
 
 <summary>Not finding what you're looking for? Here are some other great jobs boards</summary>
 <div>
