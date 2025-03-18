@@ -1,15 +1,57 @@
-- id: '832216300'
-  posted: '2025-02-28T00:00:00.0000'
-  closes: '2025-03-14T23:59:59.9970'
-  agency: Judicial Branch - Administrative Office of the U.S. Courts
+- id: '830427000'
+  posted: '2025-03-13T12:34:13.6670'
+  closes: '2025-04-13T23:59:59.9970'
+  agency: Judicial Branch - U.S. Courts
   department: Judicial Branch
-  organization: Administrative Office of the U.S. Courts
-  title: Information Technology Specialist (Systems Analysis)
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 84601
-  salaryMax: 160920
-  url: https://www.usajobs.gov/GetJob/ViewDetails/832216300
+  organization: U.S. Courts
+  title: Assistant Systems Manager
+  lowGrade: CL 29
+  highGrade: CL 30
+  salaryMin: 84284
+  salaryMax: 161910
+  url: https://www.usajobs.gov/GetJob/ViewDetails/830427000
+  remote: false
+  source: usajobs
+- id: '833737700'
+  posted: '2025-03-17T11:31:17.9800'
+  closes: '2025-04-14T23:59:59.9970'
+  agency: Judicial Branch - U. S. Sentencing Commission
+  department: Judicial Branch
+  organization: U. S. Sentencing Commission
+  title: Information Technology Specialist
+  lowGrade: JS 9
+  highGrade: JS 12
+  salaryMin: 69923
+  salaryMax: 131826
+  url: https://www.usajobs.gov/GetJob/ViewDetails/833737700
+  remote: false
+  source: usajobs
+- id: '833746100'
+  posted: '2025-03-17T13:00:56.0900'
+  closes: '2025-04-01T23:59:59.9970'
+  agency: Legislative Branch - U.S. Capitol Police
+  department: Legislative Branch
+  organization: U.S. Capitol Police
+  title: IT Specialist (Applications Software)
+  lowGrade: CP 12
+  highGrade: CP 12
+  salaryMin: 163777
+  salaryMax: 202226
+  url: https://www.usajobs.gov/GetJob/ViewDetails/833746100
+  remote: false
+  source: usajobs
+- id: '833746200'
+  posted: '2025-03-17T13:00:56.1530'
+  closes: '2025-04-01T23:59:59.9970'
+  agency: Legislative Branch - U.S. Capitol Police
+  department: Legislative Branch
+  organization: U.S. Capitol Police
+  title: IT Specialist (Applications Software)
+  lowGrade: CP 12
+  highGrade: CP 12
+  salaryMin: 163777
+  salaryMax: 202226
+  url: https://www.usajobs.gov/GetJob/ViewDetails/833746200
   remote: false
   source: usajobs
 - id: '832612200'
@@ -26,20 +68,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/832612200
   remote: false
   source: usajobs
-- id: '833121500'
-  posted: '2025-02-28T00:00:00.0000'
-  closes: '2025-03-30T23:59:59.9970'
-  agency: Judicial Branch - U.S. Courts
-  department: Judicial Branch
-  organization: U.S. Courts
-  title: Programmer/Systems Administrator
-  lowGrade: CL 28
-  highGrade: CL 29
-  salaryMin: 71602
-  salaryMax: 138401
-  url: https://www.usajobs.gov/GetJob/ViewDetails/833121500
-  remote: false
-  source: usajobs
 - id: '833131600'
   posted: '2025-03-03T18:59:45.6730'
   closes: '2025-06-03T23:59:59.9970'
@@ -52,20 +80,6 @@
   salaryMin: 67306
   salaryMax: 120196
   url: https://www.usajobs.gov/GetJob/ViewDetails/833131600
-  remote: false
-  source: usajobs
-- id: '833214100'
-  posted: '2025-03-05T08:49:42.8670'
-  closes: '2025-03-14T23:59:59.9970'
-  agency: Department of Homeland Security - Federal Emergency Management Agency
-  department: Department of Homeland Security
-  organization: Federal Emergency Management Agency
-  title: IT Specialist (SYSADMIN)
-  lowGrade: IC 13
-  highGrade: IC 13
-  salaryMin: 120579
-  salaryMax: 156755
-  url: https://www.usajobs.gov/GetJob/ViewDetails/833214100
   remote: false
   source: usajobs
 - id: '833288300'
@@ -110,20 +124,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/833334400
   remote: false
   source: usajobs
-- id: '833374400'
-  posted: '2025-03-07T13:21:04.5600'
-  closes: '2025-03-20T23:59:59.9970'
-  agency: Legislative Branch - Government Publishing Office
-  department: Legislative Branch
-  organization: Government Publishing Office
-  title: Information Technology Specialist (INFOSEC)
-  lowGrade: PG 13
-  highGrade: PG 13
-  salaryMin: 120579
-  salaryMax: 156755
-  url: https://www.usajobs.gov/GetJob/ViewDetails/833374400
-  remote: false
-  source: usajobs
 - id: '830296600'
   posted: '2025-02-10T00:00:00.0000'
   closes: '2025-02-24T23:59:59.9970'
@@ -136,20 +136,6 @@
   salaryMin: 101402
   salaryMax: 190061
   url: https://www.usajobs.gov/GetJob/ViewDetails/830296600
-  remote: false
-  source: usajobs
-- id: '831068500'
-  posted: '2025-02-21T00:00:00.0000'
-  closes: '2025-03-06T23:59:59.9970'
-  agency: Judicial Branch - Administrative Office of the U.S. Courts
-  department: Judicial Branch
-  organization: Administrative Office of the U.S. Courts
-  title: Supervisory Information Technology Specialist (Security)
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 167617
-  salaryMax: 207500
-  url: https://www.usajobs.gov/GetJob/ViewDetails/831068500
   remote: false
   source: usajobs
 - id: '831176900'
@@ -166,20 +152,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/831176900
   remote: false
   source: usajobs
-- id: '831457500'
-  posted: '2025-02-14T00:00:00.0000'
-  closes: '2025-02-28T23:59:59.9970'
-  agency: Judicial Branch - Administrative Office of the U.S. Courts
-  department: Judicial Branch
-  organization: Administrative Office of the U.S. Courts
-  title: Supervisory Information  Technology Specialist
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 148645
-  salaryMax: 207500
-  url: https://www.usajobs.gov/GetJob/ViewDetails/831457500
-  remote: false
-  source: usajobs
 - id: '831495300'
   posted: '2025-02-14T10:36:06.1530'
   closes: '2025-02-28T23:59:59.9970'
@@ -192,20 +164,6 @@
   salaryMin: 120579
   salaryMax: 155755
   url: https://www.usajobs.gov/GetJob/ViewDetails/831495300
-  remote: false
-  source: usajobs
-- id: '831559200'
-  posted: '2025-02-13T18:00:22.1630'
-  closes: '2025-02-28T23:59:59.9970'
-  agency: Legislative Branch - House of Representatives
-  department: Legislative Branch
-  organization: House of Representatives
-  title: Chief Operations Officer
-  lowGrade: HS 14
-  highGrade: HS 14
-  salaryMin: 193866
-  salaryMax: 193866
-  url: https://www.usajobs.gov/GetJob/ViewDetails/831559200
   remote: false
   source: usajobs
 - id: '831587600'
@@ -222,20 +180,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/831587600
   remote: false
   source: usajobs
-- id: '831732000'
-  posted: '2025-02-19T00:00:00.0000'
-  closes: '2025-03-05T23:59:59.9970'
-  agency: Judicial Branch - Administrative Office of the U.S. Courts
-  department: Judicial Branch
-  organization: Administrative Office of the U.S. Courts
-  title: Information Technology Specialist (Network Services)
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 101402
-  salaryMax: 190061
-  url: https://www.usajobs.gov/GetJob/ViewDetails/831732000
-  remote: false
-  source: usajobs
 - id: '832100800'
   posted: '2025-02-20T16:00:27.8430'
   closes: '2025-03-06T23:59:59.9970'
@@ -248,20 +192,6 @@
   salaryMin: 121134
   salaryMax: 137622
   url: https://www.usajobs.gov/GetJob/ViewDetails/832100800
-  remote: false
-  source: usajobs
-- id: '830694700'
-  posted: '2025-02-06T15:00:34.1630'
-  closes: '2025-02-20T23:59:59.9970'
-  agency: Legislative Branch - Senate
-  department: Legislative Branch
-  organization: Senate
-  title: 'Cybersecurity Specialist-CTIC #5348'
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 84248
-  salaryMax: 147434
-  url: https://www.usajobs.gov/GetJob/ViewDetails/830694700
   remote: false
   source: usajobs
 - id: '1'
@@ -278,20 +208,6 @@
   remote: false
   source: other
   content: The City of Baltimore is hiring for their CIO!
-- id: '830187200'
-  posted: '2025-02-03T00:00:00.0000'
-  closes: '2025-02-10T23:59:59.9970'
-  agency: Department of Homeland Security - Federal Emergency Management Agency
-  department: Department of Homeland Security
-  organization: Federal Emergency Management Agency
-  title: Supervisory IT Specialist (Operations)
-  lowGrade: GS 13
-  highGrade: GS 13
-  salaryMin: 116123
-  salaryMax: 150962
-  url: https://www.usajobs.gov/GetJob/ViewDetails/830187200
-  remote: false
-  source: usajobs
 - id: '829355300'
   posted: '2025-01-27T07:06:59.7300'
   closes: '2025-02-10T23:59:59.9970'
@@ -306,20 +222,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/829355300
   remote: false
   source: usajobs
-- id: '829809100'
-  posted: '2025-01-29T18:00:37.2700'
-  closes: '2025-02-12T23:59:59.9970'
-  agency: Legislative Branch - Senate
-  department: Legislative Branch
-  organization: Senate
-  title: 'Technology Solutions Architect #557'
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 139009
-  salaryMax: 189558
-  url: https://www.usajobs.gov/GetJob/ViewDetails/829809100
-  remote: false
-  source: usajobs
 - id: '828868100'
   posted: '2025-01-21T00:00:00.0000'
   closes: '2025-02-03T23:59:59.9970'
@@ -332,19 +234,5 @@
   salaryMin: 150160
   salaryMax: 225700
   url: https://www.usajobs.gov/GetJob/ViewDetails/828868100
-  remote: false
-  source: usajobs
-- id: '824204900'
-  posted: '2024-12-16T09:18:49.8630'
-  closes: '2024-12-31T23:59:59.9970'
-  agency: Department of Homeland Security - Federal Emergency Management Agency
-  department: Department of Homeland Security
-  organization: Federal Emergency Management Agency
-  title: IT Specialist (ENTARCH)
-  lowGrade: IC 14
-  highGrade: IC 14
-  salaryMin: 132753
-  salaryMax: 181216
-  url: https://www.usajobs.gov/GetJob/ViewDetails/824204900
   remote: false
   source: usajobs
