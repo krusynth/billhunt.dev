@@ -1,3 +1,17 @@
+- id: '833936600'
+  posted: '2025-03-20T09:51:37.8700'
+  closes: '2025-04-02T23:59:59.9970'
+  agency: Legislative Branch - Library of Congress
+  department: Legislative Branch
+  organization: Library of Congress
+  title: Information Technology Specialist (Systems Analyst)
+  lowGrade: GS 13
+  highGrade: GS 13
+  salaryMin: 120579
+  salaryMax: 156755
+  url: https://www.usajobs.gov/GetJob/ViewDetails/833936600
+  remote: true
+  source: usajobs
 - id: '830427000'
   posted: '2025-03-13T12:34:13.6670'
   closes: '2025-04-13T23:59:59.9970'
@@ -54,20 +68,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/833746200
   remote: false
   source: usajobs
-- id: '832612200'
-  posted: '2025-02-26T11:08:46.6070'
-  closes: '2025-03-12T23:59:59.9970'
-  agency: Judicial Branch - Supreme Court of the United States
-  department: Judicial Branch
-  organization: Supreme Court of the United States
-  title: Information Technology - Auditor
-  lowGrade: GG 13
-  highGrade: GG 14
-  salaryMin: 120579
-  salaryMax: 185234
-  url: https://www.usajobs.gov/GetJob/ViewDetails/832612200
-  remote: false
-  source: usajobs
 - id: '833131600'
   posted: '2025-03-03T18:59:45.6730'
   closes: '2025-06-03T23:59:59.9970'
@@ -96,20 +96,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/833288300
   remote: false
   source: usajobs
-- id: '833309500'
-  posted: '2025-03-06T13:26:45.9430'
-  closes: '2025-06-06T23:59:59.9970'
-  agency: Judicial Branch - U.S. Courts
-  department: Judicial Branch
-  organization: U.S. Courts
-  title: IT Support Specialist I
-  lowGrade: CL 27
-  highGrade: CL 27
-  salaryMin: 59133
-  salaryMax: 96147
-  url: https://www.usajobs.gov/GetJob/ViewDetails/833309500
-  remote: false
-  source: usajobs
 - id: '833334400'
   posted: '2025-03-06T17:00:29.2000'
   closes: '2025-03-20T23:59:59.9970'
@@ -122,20 +108,6 @@
   salaryMin: 99518
   salaryMax: 175868
   url: https://www.usajobs.gov/GetJob/ViewDetails/833334400
-  remote: false
-  source: usajobs
-- id: '830296600'
-  posted: '2025-02-10T00:00:00.0000'
-  closes: '2025-02-24T23:59:59.9970'
-  agency: Judicial Branch - Administrative Office of the U.S. Courts
-  department: Judicial Branch
-  organization: Administrative Office of the U.S. Courts
-  title: Information Technology Specialist (Systems Analysis)
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 101402
-  salaryMax: 190061
-  url: https://www.usajobs.gov/GetJob/ViewDetails/830296600
   remote: false
   source: usajobs
 - id: '831176900'
@@ -152,20 +124,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/831176900
   remote: false
   source: usajobs
-- id: '831495300'
-  posted: '2025-02-14T10:36:06.1530'
-  closes: '2025-02-28T23:59:59.9970'
-  agency: Department of Homeland Security - Federal Emergency Management Agency
-  department: Department of Homeland Security
-  organization: Federal Emergency Management Agency
-  title: Information Technology Specialist (SysAdmin)
-  lowGrade: GS 13
-  highGrade: GS 13
-  salaryMin: 120579
-  salaryMax: 155755
-  url: https://www.usajobs.gov/GetJob/ViewDetails/831495300
-  remote: false
-  source: usajobs
 - id: '831587600'
   posted: '2025-02-14T09:32:12.4100'
   closes: '2025-03-03T23:59:59.9970'
@@ -178,20 +136,6 @@
   salaryMin: 120579
   salaryMax: 185234
   url: https://www.usajobs.gov/GetJob/ViewDetails/831587600
-  remote: false
-  source: usajobs
-- id: '832100800'
-  posted: '2025-02-20T16:00:27.8430'
-  closes: '2025-03-06T23:59:59.9970'
-  agency: Legislative Branch - House of Representatives
-  department: Legislative Branch
-  organization: House of Representatives
-  title: Technology Service Desk Supervisor, IT Customer Solutions
-  lowGrade: HS 10
-  highGrade: HS 11
-  salaryMin: 121134
-  salaryMax: 137622
-  url: https://www.usajobs.gov/GetJob/ViewDetails/832100800
   remote: false
   source: usajobs
 - id: '1'
@@ -208,20 +152,6 @@
   remote: false
   source: other
   content: The City of Baltimore is hiring for their CIO!
-- id: '829355300'
-  posted: '2025-01-27T07:06:59.7300'
-  closes: '2025-02-10T23:59:59.9970'
-  agency: 'Smithsonian Institution '
-  department: Other Agencies and Independent Organizations
-  organization: 'Smithsonian Institution '
-  title: Supervisory Information Technology Specialist (Data Mgmt)
-  lowGrade: GS 15
-  highGrade: GS 15
-  salaryMin: 167603
-  salaryMax: 195200
-  url: https://www.usajobs.gov/GetJob/ViewDetails/829355300
-  remote: false
-  source: usajobs
 - id: '828868100'
   posted: '2025-01-21T00:00:00.0000'
   closes: '2025-02-03T23:59:59.9970'
