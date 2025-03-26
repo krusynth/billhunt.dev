@@ -6,7 +6,7 @@ date: 2025-03-02-T12:03:34-0500
 permalink: /blog/2025/03/02/five-actions-to-save-democracy/
 layout: post
 excerpt: There are a lot of articles right now telling folks to call their elected representatives or show up to protests or to do one-day boycotts, as ways of showing resistance to the current administration and the shocking things being done to the U.S. government and democracies all over the world. These actions are important, but they do nothing to address the actual root causes of the problems we're currently facing.
-
+featured: true
 ---
 
 There are a lot of articles right now telling folks to call their elected representatives or show up to protests or to do one-day boycotts, as ways of showing resistance to the current administration and the shocking things being done to the U.S. government and democracies all over the world. These actions are important, but they do nothing to address the *actual root causes of the problems we're currently facing*.
