@@ -53,6 +53,12 @@ $special-font-stack: 'Silkscreen', monospace;
   ("HelveticaCompressed", "helvetica-compressed", (700))
 );
 
+@font-face {
+  font-family: 'Winds7';
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://static.billhunt.dev/assets/fonts/somepx/Winds%207.ttf") format("truetype"); }
+
 // $font-weight-normal: normal !default;
 
 // $color-main-bg: #332e2b; // Warm Charcoal
