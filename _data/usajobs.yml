@@ -1,3 +1,14 @@
+- id: '00241'
+  posted: '2025-04-10T00:00:00.0000'
+  closes: '2025-04-24T23:59:59.9970'
+  agency: 'Library of Virginia'
+  title: Chief Technology Officer
+  salaryMin: 150000
+  salaryMax: 160000
+  url: https://www.lva.virginia.gov/about/staff/jobs/00241%20Re-advertisement%20for%20Chief%20Technology%20Officer%204.10.2025.pdf
+  remote: false
+  source: custom
+  content: The Library of Virginia (in Richmond, VA) is hiring for their very first CTO! This appears to be the most senior technology role.
 - id: '202500043'
   posted: '2025-04-12T00:00:00.0000'
   closes: '2025-05-08T23:59:59.9970'
