@@ -14,4 +14,9 @@ Please note: I do not make any profit off of these items. All CafePress items su
 
 Cafepress manages all shop orders for shirts. They do all the work here, please contact them about any problems!
 
+**Check out these other gov-supporting shops!**
+
+* [CFPB Union Shop](https://cfpbunion.shop)
+* [Spoon Shop](https://www.cafepress.com/shop/spoon)
+
 {% assign page = page | setval: 'items', site.data.shop %}
