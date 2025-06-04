@@ -1,15 +1,57 @@
-- id: '836134400'
-  posted: '2025-05-13T00:00:00.0000'
-  closes: '2025-05-27T23:59:59.9970'
+- id: '837051700'
+  posted: '2025-06-03T00:00:00.0000'
+  closes: '2025-06-17T23:59:59.9970'
   agency: Judicial Branch - Administrative Office of the U.S. Courts
   department: Judicial Branch
   organization: Administrative Office of the U.S. Courts
-  title: Information Technology Specialist (Enterprise Architecture)
+  title: Information Technology Specialist (Network Services)
   lowGrade: AD 00
   highGrade: AD 00
-  salaryMin: 106932
-  salaryMax: 195200
-  url: https://www.usajobs.gov/GetJob/ViewDetails/836134400
+  salaryMin: 101402
+  salaryMax: 190061
+  url: https://www.usajobs.gov/GetJob/ViewDetails/837051700
+  remote: false
+  source: usajobs
+- id: '837599200'
+  posted: '2025-05-23T17:56:16.2070'
+  closes: '2025-08-01T23:59:59.9970'
+  agency: Judicial Branch - U.S. Courts
+  department: Judicial Branch
+  organization: U.S. Courts
+  title: Applications Administrator
+  lowGrade: CL 28
+  highGrade: CL 28
+  salaryMin: 74158
+  salaryMax: 120518
+  url: https://www.usajobs.gov/GetJob/ViewDetails/837599200
+  remote: false
+  source: usajobs
+- id: '837950000'
+  posted: '2025-06-03T00:00:00.0000'
+  closes: '2025-06-17T23:59:59.9970'
+  agency: Judicial Branch - Administrative Office of the U.S. Courts
+  department: Judicial Branch
+  organization: Administrative Office of the U.S. Courts
+  title: Information Technology Specialist (Security)
+  lowGrade: AD 00
+  highGrade: AD 00
+  salaryMin: 101402
+  salaryMax: 190061
+  url: https://www.usajobs.gov/GetJob/ViewDetails/837950000
+  remote: false
+  source: usajobs
+- id: '837970200'
+  posted: '2025-06-02T13:53:08.0730'
+  closes: '2025-06-06T23:59:59.9970'
+  agency: Department of Health and Human Services - Indian Health Service
+  department: Department of Health and Human Services
+  organization: Indian Health Service
+  title: Supervisory Information Technology Specialist (Security)
+  lowGrade: GS 14
+  highGrade: GS 14
+  salaryMin: 142488
+  salaryMax: 185234
+  url: https://www.usajobs.gov/GetJob/ViewDetails/837970200
   remote: false
   source: usajobs
 - id: '836596800'
@@ -26,20 +68,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/836596800
   remote: false
   source: usajobs
-- id: '836736600'
-  posted: '2025-05-09T00:00:00.0000'
-  closes: '2025-05-23T23:59:59.9970'
-  agency: Department of Transportation - Office of the Secretary of Transportation
-  department: Department of Transportation
-  organization: Office of the Secretary of Transportation
-  title: Information Technology Specialist (INFOSEC) - DIRECT HIRE
-  lowGrade: GS 14
-  highGrade: GS 14
-  salaryMin: 141041
-  salaryMax: 183353
-  url: https://www.usajobs.gov/GetJob/ViewDetails/836736600
-  remote: false
-  source: usajobs
 - id: '836821000'
   posted: '2025-05-13T00:00:00.0000'
   closes: '2025-05-22T23:59:59.9970'
@@ -52,22 +80,6 @@
   salaryMin: 142488
   salaryMax: 185234
   url: https://www.usajobs.gov/GetJob/ViewDetails/836821000
-  remote: false
-  source: usajobs
-- id: '835447100'
-  posted: '2025-04-21T00:00:00.0000'
-  closes: '2025-04-30T23:59:59.9970'
-  agency: >-
-    Department of Health and Human Services - Centers for Medicare & Medicaid
-    Services
-  department: Department of Health and Human Services
-  organization: Centers for Medicare & Medicaid Services
-  title: IT Cybersecurity Specialist
-  lowGrade: GS 14
-  highGrade: GS 14
-  salaryMin: 142488
-  salaryMax: 185234
-  url: https://www.usajobs.gov/GetJob/ViewDetails/835447100
   remote: false
   source: usajobs
 - id: '835521800'
@@ -84,20 +96,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/835521800
   remote: false
   source: usajobs
-- id: '835949700'
-  posted: '2025-04-25T11:01:01.2330'
-  closes: '2025-05-16T23:59:59.9970'
-  agency: Legislative Branch - U.S. Capitol Police
-  department: Legislative Branch
-  organization: U.S. Capitol Police
-  title: Data Scientist - OIG
-  lowGrade: CP 13
-  highGrade: CP 13
-  salaryMin: 182866
-  salaryMax: 210366
-  url: https://www.usajobs.gov/GetJob/ViewDetails/835949700
-  remote: false
-  source: usajobs
 - id: '835970000'
   posted: '2025-04-28T00:00:00.0000'
   closes: '2025-05-02T23:59:59.9970'
@@ -110,20 +108,6 @@
   salaryMin: 98811
   salaryMax: 128460
   url: https://www.usajobs.gov/GetJob/ViewDetails/835970000
-  remote: false
-  source: usajobs
-- id: '836099800'
-  posted: '2025-04-29T10:55:09.9830'
-  closes: '2025-05-05T23:59:59.9970'
-  agency: Department of Health and Human Services - Indian Health Service
-  department: Department of Health and Human Services
-  organization: Indian Health Service
-  title: Supervisory Information Technology Specialist (Policy and Planning)
-  lowGrade: GS 15
-  highGrade: GS 15
-  salaryMin: 167603
-  salaryMax: 195200
-  url: https://www.usajobs.gov/GetJob/ViewDetails/836099800
   remote: false
   source: usajobs
 - id: '00241'
@@ -152,20 +136,6 @@
   remote: false
   source: custom
   content: Rockville is hiring for their DCIO!
-- id: '834476200'
-  posted: '2025-03-31T12:23:22.4530'
-  closes: '2025-04-14T23:59:59.9970'
-  agency: Judicial Branch - Supreme Court of the United States
-  department: Judicial Branch
-  organization: Supreme Court of the United States
-  title: IT Specialist (Workstation Administrator)
-  lowGrade: GG 11
-  highGrade: GG 11
-  salaryMin: 84601
-  salaryMax: 131826
-  url: https://www.usajobs.gov/GetJob/ViewDetails/834476200
-  remote: false
-  source: usajobs
 - id: '834721300'
   posted: '2025-04-03T16:23:27.6430'
   closes: '2025-04-17T23:59:59.9970'
@@ -178,20 +148,6 @@
   salaryMin: 120579
   salaryMax: 185234
   url: https://www.usajobs.gov/GetJob/ViewDetails/834721300
-  remote: false
-  source: usajobs
-- id: '834853100'
-  posted: '2025-04-07T14:00:40.3270'
-  closes: '2025-04-22T23:59:59.9970'
-  agency: Legislative Branch - House of Representatives
-  department: Legislative Branch
-  organization: House of Representatives
-  title: Systems Engineer
-  lowGrade: HS 10
-  highGrade: HS 11
-  salaryMin: 121134
-  salaryMax: 137622
-  url: https://www.usajobs.gov/GetJob/ViewDetails/834853100
   remote: false
   source: usajobs
 - id: '833334400'
