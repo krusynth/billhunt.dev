@@ -1,15 +1,113 @@
-- id: '837051700'
-  posted: '2025-06-03T00:00:00.0000'
-  closes: '2025-06-17T23:59:59.9970'
+- id: '838261900'
+  posted: '2025-06-06T00:00:00.0000'
+  closes: '2025-06-20T23:59:59.9970'
   agency: Judicial Branch - Administrative Office of the U.S. Courts
   department: Judicial Branch
   organization: Administrative Office of the U.S. Courts
-  title: Information Technology Specialist (Network Services)
+  title: Information Technology Specialist (Security)
   lowGrade: AD 00
   highGrade: AD 00
   salaryMin: 101402
   salaryMax: 190061
-  url: https://www.usajobs.gov/GetJob/ViewDetails/837051700
+  url: https://www.usajobs.gov/GetJob/ViewDetails/838261900
+  remote: false
+  source: usajobs
+- id: '838269100'
+  posted: '2025-06-05T15:24:25.5000'
+  closes: '2025-06-25T23:59:59.9970'
+  agency: Department of State
+  department: Department of State
+  organization: Department of State - Agency Wide
+  title: Information Technology Specialist or Data Scientist
+  lowGrade: GS 09
+  highGrade: GS 14
+  salaryMin: 69923
+  salaryMax: 185234
+  url: https://www.usajobs.gov/GetJob/ViewDetails/838269100
+  remote: false
+  source: usajobs
+- id: '838274300'
+  posted: '2025-06-05T15:55:15.1270'
+  closes: '2025-06-25T23:59:59.9970'
+  agency: Department of State
+  department: Department of State
+  organization: Department of State - Agency Wide
+  title: INFORMATION TECHNOLOGY (INFOSEC/AUDITOR)
+  lowGrade: GS 12
+  highGrade: GS 13
+  salaryMin: 101401
+  salaryMax: 156755
+  url: https://www.usajobs.gov/GetJob/ViewDetails/838274300
+  remote: false
+  source: usajobs
+- id: '838313700'
+  posted: '2025-06-06T09:43:53.8730'
+  closes: '2025-07-04T23:59:59.9970'
+  agency: Judicial Branch - U.S. Courts
+  department: Judicial Branch
+  organization: U.S. Courts
+  title: Case Management and Applications Specialist
+  lowGrade: CL 27
+  highGrade: CL 27
+  salaryMin: 62533
+  salaryMax: 101675
+  url: https://www.usajobs.gov/GetJob/ViewDetails/838313700
+  remote: false
+  source: usajobs
+- id: '838713700'
+  posted: '2025-06-12T13:00:33.3070'
+  closes: '2025-06-27T23:59:59.9970'
+  agency: Legislative Branch - House of Representatives
+  department: Legislative Branch
+  organization: House of Representatives
+  title: Senior Internet Systems Specialist
+  lowGrade: HS 11
+  highGrade: HS 13
+  salaryMin: 137622
+  salaryMax: 145882
+  url: https://www.usajobs.gov/GetJob/ViewDetails/838713700
+  remote: false
+  source: usajobs
+- id: '838725500'
+  posted: '2025-06-16T14:00:22.4470'
+  closes: '2025-07-30T23:59:59.9970'
+  agency: Department of Housing and Urban Development
+  department: Department of Housing and Urban Development
+  organization: Office of the Chief Information Officer
+  title: Chief Information Security Officer
+  lowGrade: ES 00
+  highGrade: ES 00
+  salaryMin: 150160
+  salaryMax: 225700
+  url: https://www.usajobs.gov/GetJob/ViewDetails/838725500
+  remote: false
+  source: usajobs
+- id: '838784600'
+  posted: '2025-06-13T10:11:05.6170'
+  closes: '2025-06-30T23:59:59.9970'
+  agency: Legislative Branch - Library of Congress
+  department: Legislative Branch
+  organization: Library of Congress
+  title: IT Asset Management Specialist
+  lowGrade: GS 13
+  highGrade: GS 13
+  salaryMin: 120579
+  salaryMax: 156755
+  url: https://www.usajobs.gov/GetJob/ViewDetails/838784600
+  remote: false
+  source: usajobs
+- id: '838932900'
+  posted: '2025-06-16T17:00:21.3230'
+  closes: '2025-06-30T23:59:59.9970'
+  agency: Legislative Branch - Senate
+  department: Legislative Branch
+  organization: Senate
+  title: 'Information Assurance Branch Manager #5216'
+  lowGrade: AD 00
+  highGrade: AD 00
+  salaryMin: 151646
+  salaryMax: 197983
+  url: https://www.usajobs.gov/GetJob/ViewDetails/838932900
   remote: false
   source: usajobs
 - id: '837599200'
@@ -26,20 +124,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/837599200
   remote: false
   source: usajobs
-- id: '837950000'
-  posted: '2025-06-03T00:00:00.0000'
-  closes: '2025-06-17T23:59:59.9970'
-  agency: Judicial Branch - Administrative Office of the U.S. Courts
-  department: Judicial Branch
-  organization: Administrative Office of the U.S. Courts
-  title: Information Technology Specialist (Security)
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 101402
-  salaryMax: 190061
-  url: https://www.usajobs.gov/GetJob/ViewDetails/837950000
-  remote: false
-  source: usajobs
 - id: '837970200'
   posted: '2025-06-02T13:53:08.0730'
   closes: '2025-06-06T23:59:59.9970'
@@ -54,20 +138,6 @@
   url: https://www.usajobs.gov/GetJob/ViewDetails/837970200
   remote: false
   source: usajobs
-- id: '836596800'
-  posted: '2025-05-07T13:47:54.4900'
-  closes: '2025-05-30T23:59:59.9970'
-  agency: Judicial Branch - U.S. Courts
-  department: Judicial Branch
-  organization: U.S. Courts
-  title: Network Systems Engineer
-  lowGrade: CL 28
-  highGrade: CL 28
-  salaryMin: 78585
-  salaryMax: 127712
-  url: https://www.usajobs.gov/GetJob/ViewDetails/836596800
-  remote: false
-  source: usajobs
 - id: '836821000'
   posted: '2025-05-13T00:00:00.0000'
   closes: '2025-05-22T23:59:59.9970'
@@ -80,20 +150,6 @@
   salaryMin: 142488
   salaryMax: 185234
   url: https://www.usajobs.gov/GetJob/ViewDetails/836821000
-  remote: false
-  source: usajobs
-- id: '835521800'
-  posted: '2025-04-28T00:00:00.0000'
-  closes: '2025-05-12T23:59:59.9970'
-  agency: Judicial Branch - Administrative Office of the U.S. Courts
-  department: Judicial Branch
-  organization: Administrative Office of the U.S. Courts
-  title: Supervisory Information Technology Specialist (Security)
-  lowGrade: AD 00
-  highGrade: AD 00
-  salaryMin: 120579
-  salaryMax: 195200
-  url: https://www.usajobs.gov/GetJob/ViewDetails/835521800
   remote: false
   source: usajobs
 - id: '835970000'
@@ -136,20 +192,6 @@
   remote: false
   source: custom
   content: Rockville is hiring for their DCIO!
-- id: '834721300'
-  posted: '2025-04-03T16:23:27.6430'
-  closes: '2025-04-17T23:59:59.9970'
-  agency: Judicial Branch - Supreme Court of the United States
-  department: Judicial Branch
-  organization: Supreme Court of the United States
-  title: Senior IT Specialist (Data Loss Prevention Security Engineer)
-  lowGrade: GG 13
-  highGrade: GG 14
-  salaryMin: 120579
-  salaryMax: 185234
-  url: https://www.usajobs.gov/GetJob/ViewDetails/834721300
-  remote: false
-  source: usajobs
 - id: '833334400'
   posted: '2025-03-06T17:00:29.2000'
   closes: '2025-03-20T23:59:59.9970'
